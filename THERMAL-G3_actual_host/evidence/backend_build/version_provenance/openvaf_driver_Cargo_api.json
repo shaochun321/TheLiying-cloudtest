@@ -1,0 +1,18 @@
+{
+  "name": "Cargo.toml",
+  "path": "openvaf/openvaf-driver/Cargo.toml",
+  "sha": "2163620fceaeb60f2037301e47e4986a092021a3",
+  "size": 772,
+  "url": "https://api.github.com/repos/dwarning/OpenVAF/contents/openvaf/openvaf-driver/Cargo.toml?ref=1.0.0",
+  "html_url": "https://github.com/dwarning/OpenVAF/blob/1.0.0/openvaf/openvaf-driver/Cargo.toml",
+  "git_url": "https://api.github.com/repos/dwarning/OpenVAF/git/blobs/2163620fceaeb60f2037301e47e4986a092021a3",
+  "download_url": "https://raw.githubusercontent.com/dwarning/OpenVAF/1.0.0/openvaf/openvaf-driver/Cargo.toml",
+  "type": "file",
+  "content": "W3BhY2thZ2VdCm5hbWUgPSAib3BlbnZhZi1kcml2ZXIiCnZlcnNpb24gPSAi\nMjMuNS4wIgphdXRob3JzID0gWyJEU1BPTSJdCmVkaXRpb24gPSAiMjAyMSIK\nbGljZW5zZSA9ICJHUEwtMy4wIgoKW1tiaW5dXQpuYW1lID0gIm9wZW52YWYi\nCnBhdGggPSAic3JjL21haW4ucnMiCmRvY3Rlc3QgPSBmYWxzZQp0ZXN0ID0g\nZmFsc2UKCltkZXBlbmRlbmNpZXNdCgpvcGVudmFmID0geyB2ZXJzaW9uID0g\nIjAuMS4yIiwgcGF0aCA9ICIuLi9vcGVudmFmIiB9CgpjbGFwID0gIj00LjMi\nCmRpcmVjdG9yaWVzLW5leHQgPSAiMiIKcGF0aC1hYnNvbHV0aXplID0gIjMu\nMS4wIgphbnlob3cgPSAiMSIKdGVybWNvbG9yID0gIjEuMiIKY2FtaW5vID0g\nIjEuMS40IgplbnZfbG9nZ2VyID0geyB2ZXJzaW9uID0gIjAuMTAuMCIsIGRl\nZmF1bHQtZmVhdHVyZXMgPSBmYWxzZSwgZmVhdHVyZXMgPSBbImF1dG8tY29s\nb3IiXSB9CmxvZyA9ICIwLjQuMTkiCmJhY2t0cmFjZS1leHQgPSAiMC4yLjEi\nCmJhY2t0cmFjZSA9ICIwLjMuNjgiCgptaW1hbGxvYyA9IHsgdmVyc2lvbiA9\nICIqIiwgZGVmYXVsdC1mZWF0dXJlcyA9IGZhbHNlfQoKW2Rldi1kZXBlbmRl\nbmNpZXNdCnhzaGVsbCA9ICIwLjIuMyIKc3RkeCA9IHsgdmVyc2lvbiA9ICIw\nLjAuMCIsIHBhdGggPSAiLi4vLi4vbGliL3N0ZHgiIH0KbWluaV9oYXJuZXNz\nID0geyB2ZXJzaW9uID0gIjAuMC4xIiwgcGF0aCA9ICIuLi8uLi9saWIvbWlu\naV9oYXJuZXNzIiB9CgpbW3Rlc3RdXQpuYW1lID0gImNsaSIKaGFybmVzcyA9\nIGZhbHNlCg==\n",
+  "encoding": "base64",
+  "_links": {
+    "self": "https://api.github.com/repos/dwarning/OpenVAF/contents/openvaf/openvaf-driver/Cargo.toml?ref=1.0.0",
+    "git": "https://api.github.com/repos/dwarning/OpenVAF/git/blobs/2163620fceaeb60f2037301e47e4986a092021a3",
+    "html": "https://github.com/dwarning/OpenVAF/blob/1.0.0/openvaf/openvaf-driver/Cargo.toml"
+  }
+}

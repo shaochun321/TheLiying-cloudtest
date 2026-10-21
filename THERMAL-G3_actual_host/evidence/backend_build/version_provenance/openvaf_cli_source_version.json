@@ -1,0 +1,16 @@
+{
+  "tag": "1.0.0",
+  "source_html_url": "https://github.com/dwarning/OpenVAF/blob/1.0.0/openvaf/openvaf/Cargo.toml",
+  "git_blob_sha": "b12cf0fe7da1c144ce3c3f176c4d91e06925ee5e",
+  "package": {
+    "name": "openvaf",
+    "version": "0.1.2",
+    "authors": [
+      "DSPOM"
+    ],
+    "edition": "2021",
+    "license": "GPL-3.0"
+  },
+  "version_matches_binary_output": false,
+  "tool_asset_downloaded": false
+}

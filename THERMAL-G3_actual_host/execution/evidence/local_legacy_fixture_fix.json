@@ -1,0 +1,2389 @@
+{
+  "Q1_MOTHER_PROTOCOL": {
+    "result": "PASS",
+    "gates": {
+      "G0": {
+        "gates": {
+          "idle_before": {
+            "result": "PASS",
+            "q": 0,
+            "p": 0
+          },
+          "weak_no_entry": {
+            "result": "PASS",
+            "q": 0,
+            "p": 0,
+            "expected_du": 0.33495149495135046,
+            "signed_move": 0.33495149495135046
+          },
+          "trace_charged_at_q_end": {
+            "result": "PASS",
+            "min_V": 2.6703,
+            "req_V": 1.503608130063116,
+            "n": 4
+          },
+          "rec_charged_at_q_end": {
+            "result": "PASS",
+            "min_V": 2.8982327851061527,
+            "req_V": 2.0015178095252835,
+            "n": 4
+          },
+          "valid_entry": {
+            "result": "PASS",
+            "q": 1,
+            "closed": 1,
+            "p": 1
+          },
+          "max_exit": {
+            "result": "PASS",
+            "q": 2,
+            "open": 0,
+            "q_end": 0.0
+          },
+          "withdraw_recovery": {
+            "result": "PASS",
+            "q_end": 0.0,
+            "aq_end": 0.0,
+            "p_end": 0.0,
+            "rec_end": 0.059277043931134546,
+            "rec_max": 1.106604261927848,
+            "vrec_req": 2.0015178095252835,
+            "vm_end": 0.989,
+            "new_q": 0
+          },
+          "re_arm": {
+            "result": "PASS",
+            "q": 1,
+            "closed": 1,
+            "p": 1
+          },
+          "idle_others_active": {
+            "result": "PASS",
+            "q": 0,
+            "p": 0
+          }
+        },
+        "overall": "PASS"
+      },
+      "Sigma": {
+        "gates": {
+          "idle_before": {
+            "result": "PASS",
+            "q": 0,
+            "p": 0
+          },
+          "weak_no_entry": {
+            "result": "PASS",
+            "q": 0,
+            "p": 0,
+            "expected_du": -0.18397279101207956,
+            "signed_move": 0.18397279101207953
+          },
+          "trace_charged_at_q_end": {
+            "result": "PASS",
+            "min_V": 2.6703,
+            "req_V": 1.503608130063116,
+            "n": 4
+          },
+          "rec_charged_at_q_end": {
+            "result": "PASS",
+            "min_V": 2.8982327851061527,
+            "req_V": 1.9701214809235255,
+            "n": 4
+          },
+          "valid_entry": {
+            "result": "PASS",
+            "q": 1,
+            "closed": 1,
+            "p": 1
+          },
+          "max_exit": {
+            "result": "PASS",
+            "q": 2,
+            "open": 0,
+            "q_end": 0.0
+          },
+          "withdraw_recovery": {
+            "result": "PASS",
+            "q_end": 0.0,
+            "aq_end": 0.0,
+            "p_end": 0.0,
+            "rec_end": 0.05645487382875855,
+            "rec_max": 1.0668503793971822,
+            "vrec_req": 1.9701214809235255,
+            "vm_end": 0.989,
+            "new_q": 0
+          },
+          "re_arm": {
+            "result": "PASS",
+            "q": 1,
+            "closed": 1,
+            "p": 1
+          },
+          "idle_others_active": {
+            "result": "PASS",
+            "q": 0,
+            "p": 0
+          }
+        },
+        "overall": "PASS"
+      },
+      "Theta_Cdir": {
+        "gates": {
+          "idle_before": {
+            "result": "PASS",
+            "q": 0,
+            "p": 0
+          },
+          "weak_no_entry": {
+            "result": "PASS",
+            "q": 0,
+            "p": 0,
+            "expected_du": 1.6769649757859385e-06,
+            "signed_move": 1.6769649757719662e-06
+          },
+          "trace_charged_at_q_end": {
+            "result": "PASS",
+            "min_V": 2.6703,
+            "req_V": 1.503608130063116,
+            "n": 4
+          },
+          "rec_charged_at_q_end": {
+            "result": "PASS",
+            "min_V": 2.901769371348568,
+            "req_V": 2.120500329026,
+            "n": 4
+          },
+          "valid_entry": {
+            "result": "PASS",
+            "q": 1,
+            "closed": 1,
+            "p": 1
+          },
+          "max_exit": {
+            "result": "PASS",
+            "q": 2,
+            "open": 0,
+            "q_end": 0.0
+          },
+          "withdraw_recovery": {
+            "result": "PASS",
+            "q_end": 0.0,
+            "aq_end": 0.0,
+            "p_end": 0.0,
+            "rec_end": 5.662581204982394e-06,
+            "rec_max": 1.1906112545762166,
+            "vrec_req": 2.120500329026,
+            "vm_end": 0.989,
+            "new_q": 0
+          },
+          "re_arm": {
+            "result": "PASS",
+            "q": 1,
+            "closed": 1,
+            "p": 1
+          },
+          "idle_others_active": {
+            "result": "PASS",
+            "q": 0,
+            "p": 0
+          }
+        },
+        "overall": "PASS"
+      },
+      "joint": "PASS",
+      "physical_ledger": {
+        "nodes": {
+          "g0_vm": {
+            "kcl_p99": 2.1160720603397153e-17,
+            "kcl_peak": 2.1666509805574672e-17,
+            "kcl": true,
+            "energy_net_J": -5.895772199256441e-26,
+            "energy_abs_J": 8.1616263944932e-07,
+            "energy": true,
+            "cap_mismatch_J": 9.822306402222173e-20,
+            "cap": true,
+            "n_terms": 10,
+            "result": "PASS"
+          },
+          "g0_vmd": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 2.418729309284844e-25,
+            "energy": true,
+            "cap_mismatch_J": 4.7069615416670605e-42,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          },
+          "g0_vms": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          },
+          "sg_vm": {
+            "kcl_p99": 1.8017688541242883e-17,
+            "kcl_peak": 1.8117717408473452e-17,
+            "kcl": true,
+            "energy_net_J": -3.4966755821286733e-26,
+            "energy_abs_J": 4.033619612042115e-07,
+            "energy": true,
+            "cap_mismatch_J": 6.605533499603457e-20,
+            "cap": true,
+            "n_terms": 8,
+            "result": "PASS"
+          },
+          "sg_vmd": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 2.418729309284844e-25,
+            "energy": true,
+            "cap_mismatch_J": 4.7069615416670605e-42,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          },
+          "sg_vms": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          },
+          "tc_vm": {
+            "kcl_p99": 2.386192242187889e-17,
+            "kcl_peak": 2.386192242187889e-17,
+            "kcl": true,
+            "energy_net_J": -3.9026992866994504e-25,
+            "energy_abs_J": 2.501478196536027e-06,
+            "energy": true,
+            "cap_mismatch_J": 1.0126973455587521e-17,
+            "cap": true,
+            "n_terms": 8,
+            "result": "PASS"
+          },
+          "tc_vmd": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 2.418729309284844e-25,
+            "energy": true,
+            "cap_mismatch_J": 4.7069615416670605e-42,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          },
+          "tc_vms": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          }
+        },
+        "scope": "KCL/charge/energy at ledger nodes only",
+        "supply_energy_J": -0.0,
+        "fails": [],
+        "result": "PASS"
+      }
+    },
+    "measured_readback": {
+      "schema": "thermal_g3_q1r.measured.2",
+      "G0": {
+        "offline_estimate": {
+          "q_width_min_s": 0.005120000000000012,
+          "q_width_max_s": 0.019259999999999552,
+          "T_entry_valid_max_s": 0.08614557168140766,
+          "activity_window_s": 1.5239240244357597,
+          "Vrec_req_V": 2.0015178095252835,
+          "z_req_V": 1.503608130063116,
+          "weak_expected_du_V": 0.33495149495135046
+        },
+        "q": [
+          {
+            "segment": "valid",
+            "t_up": 13.5395,
+            "t_down": 13.5495,
+            "width_s": 0.009999999999999787,
+            "rec_at_end_V": 2.901769371348612,
+            "op_at_at_end_V": 2.6703
+          },
+          {
+            "segment": "max",
+            "t_up": 16.0995,
+            "t_down": 16.110500000000002,
+            "width_s": 0.011000000000002785,
+            "rec_at_end_V": 2.8982327851061527,
+            "op_at_at_end_V": 2.6703
+          },
+          {
+            "segment": "max",
+            "t_up": 16.4005,
+            "t_down": 16.4095,
+            "width_s": 0.009000000000000341,
+            "rec_at_end_V": 2.9017693713486055,
+            "op_at_at_end_V": 2.6703
+          },
+          {
+            "segment": "reinput",
+            "t_up": 19.649500000000003,
+            "t_down": 19.6605,
+            "width_s": 0.01099999999999568,
+            "rec_at_end_V": 2.8982327851061656,
+            "op_at_at_end_V": 2.6703
+          }
+        ],
+        "q_width_min_s": 0.009000000000000341,
+        "q_width_max_s": 0.011000000000002785,
+        "rec_at_q_end_min_V": 2.8982327851061527,
+        "op_at_at_q_end_min_V": 2.6703,
+        "entry_delay_valid_s": 0.0495000000000001,
+        "activity_window_s": {
+          "valid": 1.5099999999999998,
+          "reinput": 1.5109999999999957
+        },
+        "vm_peak_max_seg_V": 1.089,
+        "weak_vm_pre_V": 0.989,
+        "weak_signed_extreme_du_V": 0.33495149495135046,
+        "branches": {
+          "cg0_cm": {
+            "kind": "C",
+            "per_segment": {
+              "weak": {
+                "charge_C": -1.674757474759727e-08,
+                "mean_A": -3.045013590472227e-08
+              },
+              "valid": {
+                "charge_C": 7.031035206700735e-24,
+                "mean_A": 4.3943970041879554e-23
+              },
+              "max": {
+                "charge_C": -1.2301786786511974e-23,
+                "mean_A": -1.0697205901314773e-23
+              },
+              "withdraw": {
+                "charge_C": -9.550891600431086e-39,
+                "mean_A": -3.979538166846282e-39
+              },
+              "reinput": {
+                "charge_C": -1.6543612251060553e-24,
+                "mean_A": -1.0339757656912837e-23
+              }
+            }
+          },
+          "rg0_rm": {
+            "kind": "R",
+            "per_segment": {
+              "weak": {
+                "charge_C": 1.840558464757668e-07,
+                "mean_A": 3.346469935923028e-07
+              },
+              "valid": {
+                "charge_C": 9.999999999999786e-10,
+                "mean_A": 6.249999999999861e-09
+              },
+              "max": {
+                "charge_C": 1.9999999999999567e-09,
+                "mean_A": 1.7391304347825732e-09
+              },
+              "withdraw": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "reinput": {
+                "charge_C": 1.099999999999923e-09,
+                "mean_A": 6.874999999999512e-09
+              }
+            }
+          },
+          "ng0_km1": {
+            "kind": "M",
+            "per_segment": {
+              "weak": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "valid": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "max": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "withdraw": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "reinput": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              }
+            }
+          },
+          "ng0_dis": {
+            "kind": "M",
+            "per_segment": {
+              "weak": {
+                "charge_C": -1.6730826335438215e-07,
+                "mean_A": -3.041968424625126e-07
+              },
+              "valid": {
+                "charge_C": -9.99999999999985e-10,
+                "mean_A": -6.2499999999999005e-09
+              },
+              "max": {
+                "charge_C": -1.9999999999999476e-09,
+                "mean_A": -1.7391304347825652e-09
+              },
+              "withdraw": {
+                "charge_C": 9.550891600431086e-39,
+                "mean_A": 3.979538166846282e-39
+              },
+              "reinput": {
+                "charge_C": -1.0999999999999222e-09,
+                "mean_A": -6.874999999999507e-09
+              }
+            }
+          },
+          "ng0_sh1": {
+            "kind": "M",
+            "per_segment": {
+              "weak": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "valid": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "max": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "withdraw": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "reinput": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              }
+            }
+          },
+          "ng0_porm": {
+            "kind": "M",
+            "per_segment": {
+              "weak": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "valid": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "max": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "withdraw": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "reinput": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              }
+            }
+          },
+          "vg0_aweak": {
+            "kind": "V",
+            "per_segment": {
+              "weak": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "valid": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "max": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "withdraw": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "reinput": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              }
+            }
+          },
+          "vg0_avalid": {
+            "kind": "V",
+            "per_segment": {
+              "weak": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "valid": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "max": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "withdraw": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "reinput": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              }
+            }
+          },
+          "vg0_amax": {
+            "kind": "V",
+            "per_segment": {
+              "weak": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "valid": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "max": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "withdraw": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "reinput": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              }
+            }
+          },
+          "cpar_g0_vm": {
+            "kind": "C",
+            "per_segment": {
+              "weak": {
+                "charge_C": -8.373787373798632e-15,
+                "mean_A": -1.5225067952361128e-14
+              },
+              "valid": {
+                "charge_C": 2.9582283945787943e-30,
+                "mean_A": 1.8488927466117447e-29
+              },
+              "max": {
+                "charge_C": -5.20875365870691e-30,
+                "mean_A": -4.529351007571232e-30
+              },
+              "withdraw": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "reinput": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              }
+            }
+          }
+        }
+      },
+      "Sigma": {
+        "offline_estimate": {
+          "q_width_min_s": 0.005080000000000012,
+          "q_width_max_s": 0.013559999999999784,
+          "T_entry_valid_max_s": 0.13420272701604302,
+          "activity_window_s": 1.5239240244357597,
+          "Vrec_req_V": 1.9701214809235255,
+          "z_req_V": 1.503608130063116,
+          "weak_expected_du_V": -0.18397279101207956
+        },
+        "q": [
+          {
+            "segment": "valid",
+            "t_up": 25.1695,
+            "t_down": 25.180500000000002,
+            "width_s": 0.011000000000002785,
+            "rec_at_end_V": 2.8982327851061527,
+            "op_at_at_end_V": 2.6703
+          },
+          {
+            "segment": "max",
+            "t_up": 27.7795,
+            "t_down": 27.7905,
+            "width_s": 0.011000000000002785,
+            "rec_at_end_V": 2.8982327851061527,
+            "op_at_at_end_V": 2.6703
+          },
+          {
+            "segment": "max",
+            "t_up": 28.079500000000003,
+            "t_down": 28.0895,
+            "width_s": 0.00999999999999801,
+            "rec_at_end_V": 2.901769371348606,
+            "op_at_at_end_V": 2.6703
+          },
+          {
+            "segment": "reinput",
+            "t_up": 31.369500000000002,
+            "t_down": 31.380499999999998,
+            "width_s": 0.01099999999999568,
+            "rec_at_end_V": 2.8982327851061656,
+            "op_at_at_end_V": 2.6703
+          }
+        ],
+        "q_width_min_s": 0.00999999999999801,
+        "q_width_max_s": 0.011000000000002785,
+        "rec_at_q_end_min_V": 2.8982327851061527,
+        "op_at_at_q_end_min_V": 2.6703,
+        "entry_delay_valid_s": 0.04949999999999832,
+        "activity_window_s": {
+          "valid": 1.5110000000000028,
+          "reinput": 1.509999999999998
+        },
+        "vm_peak_max_seg_V": 1.089,
+        "weak_vm_pre_V": 0.989,
+        "weak_signed_extreme_du_V": -0.18397279101207953,
+        "branches": {
+          "csg_cm": {
+            "kind": "C",
+            "per_segment": {
+              "weak": {
+                "charge_C": 9.198639550571296e-09,
+                "mean_A": 1.672479918285688e-08
+              },
+              "valid": {
+                "charge_C": -7.083996407592459e-24,
+                "mean_A": -3.541998203796242e-23
+              },
+              "max": {
+                "charge_C": -7.10665010692826e-20,
+                "mean_A": -6.022584836379883e-20
+              },
+              "withdraw": {
+                "charge_C": -8.081523661903227e-39,
+                "mean_A": -3.353329320291795e-39
+              },
+              "reinput": {
+                "charge_C": -2.842170943043874e-24,
+                "mean_A": -1.421085471521942e-23
+              }
+            }
+          },
+          "rsg_rm": {
+            "kind": "R",
+            "per_segment": {
+              "weak": {
+                "charge_C": -1.0109304866113772e-07,
+                "mean_A": -1.8380554302025016e-07
+              },
+              "valid": {
+                "charge_C": 1.099999999999923e-09,
+                "mean_A": 5.499999999999635e-09
+              },
+              "max": {
+                "charge_C": 2.0999999999999013e-09,
+                "mean_A": 1.7796610169490695e-09
+              },
+              "withdraw": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "reinput": {
+                "charge_C": 1.099999999999923e-09,
+                "mean_A": 5.499999999999635e-09
+              }
+            }
+          },
+          "nsg_km1": {
+            "kind": "M",
+            "per_segment": {
+              "weak": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "valid": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "max": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "withdraw": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "reinput": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              }
+            }
+          },
+          "nsg_dis": {
+            "kind": "M",
+            "per_segment": {
+              "weak": {
+                "charge_C": 9.189440451124664e-08,
+                "mean_A": 1.6708073547499366e-07
+              },
+              "valid": {
+                "charge_C": -1.0999999999999168e-09,
+                "mean_A": -5.499999999999603e-09
+              },
+              "max": {
+                "charge_C": -2.099999999928835e-09,
+                "mean_A": -1.7796610168888437e-09
+              },
+              "withdraw": {
+                "charge_C": 1.065291755432698e-38,
+                "mean_A": 4.420297740384639e-39
+              },
+              "reinput": {
+                "charge_C": -1.09999999999992e-09,
+                "mean_A": -5.49999999999962e-09
+              }
+            }
+          },
+          "nsg_sh1": {
+            "kind": "M",
+            "per_segment": {
+              "weak": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "valid": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "max": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "withdraw": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "reinput": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              }
+            }
+          },
+          "nsg_porm": {
+            "kind": "M",
+            "per_segment": {
+              "weak": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "valid": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "max": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "withdraw": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "reinput": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              }
+            }
+          },
+          "vsg_aota": {
+            "kind": "V",
+            "per_segment": {
+              "weak": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "valid": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "max": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "withdraw": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "reinput": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              }
+            }
+          },
+          "cpar_sg_vm": {
+            "kind": "C",
+            "per_segment": {
+              "weak": {
+                "charge_C": 4.599319775285647e-15,
+                "mean_A": 8.362399591428438e-15
+              },
+              "valid": {
+                "charge_C": -2.5232190545831218e-30,
+                "mean_A": -1.2616095272915654e-29
+              },
+              "max": {
+                "charge_C": -3.553415831790571e-26,
+                "mean_A": -3.011369348975061e-26
+              },
+              "withdraw": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "reinput": {
+                "charge_C": 1.5663633892008636e-31,
+                "mean_A": 7.831816946004346e-31
+              }
+            }
+          }
+        }
+      },
+      "Theta_Cdir": {
+        "offline_estimate": {
+          "q_width_min_s": 0.016979999999999645,
+          "q_width_max_s": 0.0401799999999987,
+          "T_entry_valid_max_s": null,
+          "activity_window_s": 1.5239240244357597,
+          "Vrec_req_V": 2.120500329026,
+          "z_req_V": 1.503608130063116,
+          "weak_expected_du_V": 1.6769649757859385e-06
+        },
+        "q": [
+          {
+            "segment": "valid",
+            "t_up": 52.2795,
+            "t_down": 52.289500000000004,
+            "width_s": 0.010000000000005116,
+            "rec_at_end_V": 2.901769371348568,
+            "op_at_at_end_V": 2.6703
+          },
+          {
+            "segment": "max",
+            "t_up": 70.6795,
+            "t_down": 70.68950000000001,
+            "width_s": 0.010000000000005116,
+            "rec_at_end_V": 2.901769371348568,
+            "op_at_at_end_V": 2.6703
+          },
+          {
+            "segment": "max",
+            "t_up": 70.9795,
+            "t_down": 70.98949999999999,
+            "width_s": 0.009999999999990905,
+            "rec_at_end_V": 2.9017693713486183,
+            "op_at_at_end_V": 2.6703
+          },
+          {
+            "segment": "reinput",
+            "t_up": 81.8195,
+            "t_down": 81.8295,
+            "width_s": 0.009999999999990905,
+            "rec_at_end_V": 2.9017693713486183,
+            "op_at_at_end_V": 2.6703
+          }
+        ],
+        "q_width_min_s": 0.009999999999990905,
+        "q_width_max_s": 0.010000000000005116,
+        "rec_at_q_end_min_V": 2.901769371348568,
+        "op_at_at_q_end_min_V": 2.6703,
+        "entry_delay_valid_s": 0.049500000000001876,
+        "activity_window_s": {
+          "valid": 1.5100000000000051,
+          "reinput": 1.509999999999991
+        },
+        "vm_peak_max_seg_V": 1.089,
+        "weak_vm_pre_V": 0.989,
+        "weak_signed_extreme_du_V": 1.6769649757719662e-06,
+        "branches": {
+          "ctc_cm": {
+            "kind": "C",
+            "per_segment": {
+              "weak": {
+                "charge_C": -1.2577237318367014e-12,
+                "mean_A": -1.524513614347517e-13
+              },
+              "valid": {
+                "charge_C": -9.264422860593922e-23,
+                "mean_A": -1.1095117198316072e-23
+              },
+              "max": {
+                "charge_C": -6.3952708053373786e-18,
+                "mean_A": -5.867220922327852e-18
+              },
+              "withdraw": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "reinput": {
+                "charge_C": -3.1976354026686893e-18,
+                "mean_A": -3.8295034762499236e-19
+              }
+            }
+          },
+          "rtc_rm": {
+            "kind": "R",
+            "per_segment": {
+              "weak": {
+                "charge_C": 1.3834122567630834e-11,
+                "mean_A": 1.6768633415310102e-12
+              },
+              "valid": {
+                "charge_C": 9.99999999999801e-10,
+                "mean_A": 1.197604790418923e-10
+              },
+              "max": {
+                "charge_C": 1.999999999999602e-09,
+                "mean_A": 1.83486238532073e-09
+              },
+              "withdraw": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "reinput": {
+                "charge_C": 9.99999999999801e-10,
+                "mean_A": 1.197604790418922e-10
+              }
+            }
+          },
+          "ntc_km1": {
+            "kind": "M",
+            "per_segment": {
+              "weak": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "valid": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "max": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "withdraw": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "reinput": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              }
+            }
+          },
+          "ntc_dis": {
+            "kind": "M",
+            "per_segment": {
+              "weak": {
+                "charge_C": -1.2576398793870007e-11,
+                "mean_A": -1.5244119750145464e-12
+              },
+              "valid": {
+                "charge_C": -9.999999999997178e-10,
+                "mean_A": -1.1976047904188236e-10
+              },
+              "max": {
+                "charge_C": -1.9999999936043633e-09,
+                "mean_A": -1.8348623794535385e-09
+              },
+              "withdraw": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "reinput": {
+                "charge_C": -9.999999968021816e-10,
+                "mean_A": -1.197604786589438e-10
+              }
+            }
+          },
+          "ntc_sh1": {
+            "kind": "M",
+            "per_segment": {
+              "weak": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "valid": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "max": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "withdraw": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "reinput": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              }
+            }
+          },
+          "ntc_porm": {
+            "kind": "M",
+            "per_segment": {
+              "weak": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "valid": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "max": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "withdraw": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "reinput": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              }
+            }
+          },
+          "vtc_arel": {
+            "kind": "V",
+            "per_segment": {
+              "weak": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "valid": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "max": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "withdraw": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "reinput": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              }
+            }
+          },
+          "cpar_tc_vm": {
+            "kind": "C",
+            "per_segment": {
+              "weak": {
+                "charge_C": -4.1924124394556714e-20,
+                "mean_A": -5.081712047825056e-21
+              },
+              "valid": {
+                "charge_C": -2.7610131682735378e-30,
+                "mean_A": -3.3066025967347754e-31
+              },
+              "max": {
+                "charge_C": -2.131730935569688e-25,
+                "mean_A": -1.9557164546510839e-25
+              },
+              "withdraw": {
+                "charge_C": 0.0,
+                "mean_A": 0.0
+              },
+              "reinput": {
+                "charge_C": -1.065865467784844e-25,
+                "mean_A": -1.2764855901614885e-26
+              }
+            }
+          }
+        }
+      },
+      "status": "MEASURED"
+    }
+  },
+  "Q1_MOTHER_HALFSTEP": {
+    "result": "PASS",
+    "gates": {
+      "halfstep": {
+        "events": {
+          "v(g0_q)": {
+            "a": 4,
+            "b": 4,
+            "same": true,
+            "max_dt": 0.0
+          },
+          "v(g0_op_aq)": {
+            "a": 3,
+            "b": 3,
+            "same": true,
+            "max_dt": 0.0
+          },
+          "v(g0_op_p)": {
+            "a": 3,
+            "b": 3,
+            "same": true,
+            "max_dt": 0.0
+          },
+          "v(sg_q)": {
+            "a": 4,
+            "b": 4,
+            "same": true,
+            "max_dt": 0.0
+          },
+          "v(sg_op_aq)": {
+            "a": 3,
+            "b": 3,
+            "same": true,
+            "max_dt": 0.0
+          },
+          "v(sg_op_p)": {
+            "a": 3,
+            "b": 3,
+            "same": true,
+            "max_dt": 0.0
+          },
+          "v(tc_q)": {
+            "a": 4,
+            "b": 4,
+            "same": true,
+            "max_dt": 0.0
+          },
+          "v(tc_op_aq)": {
+            "a": 3,
+            "b": 3,
+            "same": true,
+            "max_dt": 0.0
+          },
+          "v(tc_op_p)": {
+            "a": 3,
+            "b": 3,
+            "same": true,
+            "max_dt": 0.0
+          }
+        },
+        "charge": {
+          "g0_reset": {
+            "a": 0.0,
+            "b": 0.0,
+            "ok": true
+          },
+          "sg_reset": {
+            "a": 0.0,
+            "b": 0.0,
+            "ok": true
+          },
+          "tc_reset": {
+            "a": 0.0,
+            "b": 0.0,
+            "ok": true
+          }
+        },
+        "peaks": {
+          "v(g0_vm)": {
+            "a": 1.3239514949513504,
+            "b": 1.3239514949513504,
+            "ok": true
+          },
+          "v(g0_h)": {
+            "a": 1.2,
+            "b": 1.2,
+            "ok": true
+          },
+          "v(g0_rec)": {
+            "a": 2.935582378394312,
+            "b": 2.935582378394312,
+            "ok": true
+          },
+          "v(g0_op_at)": {
+            "a": 2.6703,
+            "b": 2.6703,
+            "ok": true
+          },
+          "v(sg_vm)": {
+            "a": 1.089,
+            "b": 1.089,
+            "ok": true
+          },
+          "v(sg_h)": {
+            "a": 1.2,
+            "b": 1.2,
+            "ok": true
+          },
+          "v(sg_rec)": {
+            "a": 2.935582378394312,
+            "b": 2.935582378394312,
+            "ok": true
+          },
+          "v(sg_op_at)": {
+            "a": 2.6703,
+            "b": 2.6703,
+            "ok": true
+          },
+          "v(tc_vm)": {
+            "a": 1.089,
+            "b": 1.089,
+            "ok": true
+          },
+          "v(tc_h)": {
+            "a": 1.2,
+            "b": 1.2,
+            "ok": true
+          },
+          "v(tc_rec)": {
+            "a": 2.935582378394274,
+            "b": 2.935582378394274,
+            "ok": true
+          },
+          "v(tc_op_at)": {
+            "a": 2.6703,
+            "b": 2.6703,
+            "ok": true
+          }
+        },
+        "fails": [],
+        "result": "PASS"
+      },
+      "physical_ledger": {
+        "nodes": {
+          "g0_vm": {
+            "kcl_p99": 2.1160720603397153e-17,
+            "kcl_peak": 2.1666509805574672e-17,
+            "kcl": true,
+            "energy_net_J": -5.895772199256441e-26,
+            "energy_abs_J": 8.1616263944932e-07,
+            "energy": true,
+            "cap_mismatch_J": 9.822306402222173e-20,
+            "cap": true,
+            "n_terms": 10,
+            "result": "PASS"
+          },
+          "g0_vmd": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 2.418729309284844e-25,
+            "energy": true,
+            "cap_mismatch_J": 4.7069615416670605e-42,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          },
+          "g0_vms": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          },
+          "sg_vm": {
+            "kcl_p99": 1.8017688541242883e-17,
+            "kcl_peak": 1.8117717408473452e-17,
+            "kcl": true,
+            "energy_net_J": -3.4966755821286733e-26,
+            "energy_abs_J": 4.033619612042115e-07,
+            "energy": true,
+            "cap_mismatch_J": 6.605533499603457e-20,
+            "cap": true,
+            "n_terms": 8,
+            "result": "PASS"
+          },
+          "sg_vmd": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 2.418729309284844e-25,
+            "energy": true,
+            "cap_mismatch_J": 4.7069615416670605e-42,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          },
+          "sg_vms": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          },
+          "tc_vm": {
+            "kcl_p99": 2.386192242187889e-17,
+            "kcl_peak": 2.386192242187889e-17,
+            "kcl": true,
+            "energy_net_J": -3.9026992866994504e-25,
+            "energy_abs_J": 2.501478196536027e-06,
+            "energy": true,
+            "cap_mismatch_J": 1.0126973455587521e-17,
+            "cap": true,
+            "n_terms": 8,
+            "result": "PASS"
+          },
+          "tc_vmd": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 2.418729309284844e-25,
+            "energy": true,
+            "cap_mismatch_J": 4.7069615416670605e-42,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          },
+          "tc_vms": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          }
+        },
+        "scope": "KCL/charge/energy at ledger nodes only",
+        "supply_energy_J": -0.0,
+        "fails": [],
+        "result": "PASS"
+      }
+    }
+  },
+  "G0_W": {
+    "result": "PASS",
+    "gates": {
+      "step1_recruitment_order": {
+        "result": "PASS",
+        "first_q_s": {
+          "1": 10.950500000000002,
+          "2": 11.000499999999999,
+          "3": 11.0505,
+          "4": 11.1005,
+          "5": 11.150500000000001,
+          "6": 11.200500000000002,
+          "7": 11.250499999999999,
+          "8": 11.3005,
+          "9": 11.3505,
+          "10": 11.400500000000001
+        }
+      },
+      "step1_and_in_common_trace_window": {
+        "result": "PASS",
+        "window": [
+          11.403,
+          18.599
+        ],
+        "t_and": 11.410499999999999
+      },
+      "step1_collector_after_and": {
+        "result": "PASS",
+        "t_col": 11.4305
+      },
+      "step1_port_once_after_collector": {
+        "result": "PASS",
+        "n_p": 1
+      },
+      "step1_returned": {
+        "result": "PASS"
+      },
+      "step2_recruitment_order": {
+        "result": "PASS",
+        "first_q_s": {
+          "1": 38.0495,
+          "2": 38.099500000000006,
+          "3": 38.1495,
+          "4": 38.1995,
+          "5": 38.2495,
+          "6": 38.2995,
+          "7": 38.349500000000006,
+          "8": 38.3995,
+          "9": 38.4495,
+          "10": 38.4995
+        }
+      },
+      "step2_and_in_common_trace_window": {
+        "result": "PASS",
+        "window": [
+          38.502,
+          45.699
+        ],
+        "t_and": 38.5095
+      },
+      "step2_collector_after_and": {
+        "result": "PASS",
+        "t_col": 38.5295
+      },
+      "step2_port_once_after_collector": {
+        "result": "PASS",
+        "n_p": 1
+      },
+      "step2_returned": {
+        "result": "PASS"
+      },
+      "physical_ledger": {
+        "nodes": {
+          "gw1_col_vm": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 8,
+            "result": "PASS"
+          },
+          "gw1_col_vmd": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          },
+          "gw1_col_vms": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          }
+        },
+        "scope": "KCL/charge/energy at ledger nodes only",
+        "supply_energy_J": -0.0,
+        "fails": [],
+        "result": "PASS"
+      }
+    }
+  },
+  "G0_C": {
+    "result": "PASS",
+    "gates": {
+      "step1_recruitment_order": {
+        "result": "PASS",
+        "first_q_s": {
+          "1": 10.950500000000002,
+          "2": 11.000499999999999,
+          "3": 11.0505,
+          "4": 11.1005,
+          "5": 11.150500000000001,
+          "6": 11.200500000000002,
+          "7": 11.250499999999999,
+          "8": 11.3005,
+          "9": 11.3505,
+          "10": 11.400500000000001
+        }
+      },
+      "step1_and_in_common_trace_window": {
+        "result": "PASS",
+        "window": [
+          11.403,
+          18.599
+        ],
+        "t_and": 11.410499999999999
+      },
+      "step1_collector_after_and": {
+        "result": "PASS",
+        "t_col": 11.4305
+      },
+      "step1_port_once_after_collector": {
+        "result": "PASS",
+        "n_p": 1
+      },
+      "step1_returned": {
+        "result": "PASS"
+      },
+      "step2_recruitment_order": {
+        "result": "PASS",
+        "first_q_s": {
+          "1": 38.0495,
+          "2": 38.099500000000006,
+          "3": 38.1495,
+          "4": 38.1995,
+          "5": 38.2495,
+          "6": 38.2995,
+          "7": 38.349500000000006,
+          "8": 38.3995,
+          "9": 38.4495,
+          "10": 38.4995
+        }
+      },
+      "step2_and_in_common_trace_window": {
+        "result": "PASS",
+        "window": [
+          38.502,
+          45.699
+        ],
+        "t_and": 38.5095
+      },
+      "step2_collector_after_and": {
+        "result": "PASS",
+        "t_col": 38.5295
+      },
+      "step2_port_once_after_collector": {
+        "result": "PASS",
+        "n_p": 1
+      },
+      "step2_returned": {
+        "result": "PASS"
+      },
+      "physical_ledger": {
+        "nodes": {
+          "gc1_col_vm": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 8,
+            "result": "PASS"
+          },
+          "gc1_col_vmd": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          },
+          "gc1_col_vms": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          }
+        },
+        "scope": "KCL/charge/energy at ledger nodes only",
+        "supply_energy_J": -0.0,
+        "fails": [],
+        "result": "PASS"
+      }
+    }
+  },
+  "G0_CUT_K1": {
+    "result": "PASS",
+    "gates": {
+      "step1_cut_source_still_fires": {
+        "result": "PASS"
+      },
+      "step1_no_group_output": {
+        "result": "PASS",
+        "t_and": null,
+        "t_col": null,
+        "n_p": 0
+      },
+      "step2_cut_source_still_fires": {
+        "result": "PASS"
+      },
+      "step2_no_group_output": {
+        "result": "PASS",
+        "t_and": null,
+        "t_col": null,
+        "n_p": 0
+      },
+      "uncut_ensembles_as_baseline": {
+        "result": "PASS"
+      },
+      "physical_ledger": {
+        "nodes": {
+          "gw1_col_vm": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 8,
+            "result": "PASS"
+          },
+          "gw1_col_vmd": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          },
+          "gw1_col_vms": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          }
+        },
+        "scope": "KCL/charge/energy at ledger nodes only",
+        "supply_energy_J": -0.0,
+        "fails": [],
+        "result": "PASS"
+      }
+    }
+  },
+  "G0_CUT_K10": {
+    "result": "PASS",
+    "gates": {
+      "step1_cut_source_still_fires": {
+        "result": "PASS"
+      },
+      "step1_no_group_output": {
+        "result": "PASS",
+        "t_and": null,
+        "t_col": null,
+        "n_p": 0
+      },
+      "step2_cut_source_still_fires": {
+        "result": "PASS"
+      },
+      "step2_no_group_output": {
+        "result": "PASS",
+        "t_and": null,
+        "t_col": null,
+        "n_p": 0
+      },
+      "uncut_ensembles_as_baseline": {
+        "result": "PASS"
+      },
+      "physical_ledger": {
+        "nodes": {
+          "gw1_col_vm": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 8,
+            "result": "PASS"
+          },
+          "gw1_col_vmd": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          },
+          "gw1_col_vms": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          }
+        },
+        "scope": "KCL/charge/energy at ledger nodes only",
+        "supply_energy_J": -0.0,
+        "fails": [],
+        "result": "PASS"
+      }
+    }
+  },
+  "NUM_G0_HALFSTEP": {
+    "result": "PASS",
+    "gates": {
+      "halfstep": {
+        "events": {
+          "v(gw1_col_q)": {
+            "a": 2,
+            "b": 2,
+            "same": true,
+            "max_dt": 0.0
+          },
+          "v(gw1_op_aq)": {
+            "a": 2,
+            "b": 2,
+            "same": true,
+            "max_dt": 0.0
+          },
+          "v(gw1_op_p)": {
+            "a": 2,
+            "b": 2,
+            "same": true,
+            "max_dt": 0.0
+          }
+        },
+        "charge": {
+          "gw1_col_reset": {
+            "a": -0.0002913054545454545,
+            "b": -0.0002913054545454545,
+            "ok": true
+          }
+        },
+        "peaks": {
+          "v(gw1_col_vm)": {
+            "a": 0.0,
+            "b": 0.0,
+            "ok": true
+          },
+          "v(gw1_col_h)": {
+            "a": 0.0,
+            "b": 0.0,
+            "ok": true
+          },
+          "v(gw1_col_rec)": {
+            "a": 0.0,
+            "b": 0.0,
+            "ok": true
+          },
+          "v(gw1_op_at)": {
+            "a": 0.0,
+            "b": 0.0,
+            "ok": true
+          }
+        },
+        "fails": [],
+        "result": "PASS"
+      },
+      "physical_ledger": {
+        "nodes": {
+          "gw1_col_vm": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 8,
+            "result": "PASS"
+          },
+          "gw1_col_vmd": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          },
+          "gw1_col_vms": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          }
+        },
+        "scope": "KCL/charge/energy at ledger nodes only",
+        "supply_energy_J": -0.0,
+        "fails": [],
+        "result": "PASS"
+      }
+    }
+  },
+  "INVALID_SYNC": {
+    "result": "PASS",
+    "gates": {
+      "parents_actually_synchronous": {
+        "result": "PASS",
+        "dt": 0.0
+      },
+      "no_cdir_either_direction": {
+        "result": "PASS"
+      },
+      "rails_flat": {
+        "result": "PASS"
+      },
+      "returned": {
+        "result": "PASS"
+      },
+      "theta_support_all_events": {
+        "result": "PASS",
+        "n_events": 1,
+        "unsupported": {},
+        "unmeasured": {},
+        "events": {
+          "thw12f_": [
+            {
+              "t_q": 11.3505,
+              "scope": "complete vm ledger node",
+              "anchor_s": 0.0,
+              "anchor": "record start",
+              "ok": true,
+              "cause": [
+                11.128,
+                12.502
+              ],
+              "stretch_start_s": 0.0,
+              "u_entry_state_V": 0.24346389826676795,
+              "supported_state_V": 0.24330304691148197,
+              "checks": {
+                "membrane_rose": true,
+                "account_closes": true,
+                "net_charge_sufficient": true,
+                "retained_state_supported": true,
+                "source_history_valid": true
+              },
+              "account_from_anchor": {
+                "Q_in_C": 4.106018644269046e-07,
+                "Q_sh_C": 0.0,
+                "Q_leak_C": 2.7267956605878047e-08,
+                "Q_other_C": 1.8138048247678282e-08,
+                "Q_cap_C": 3.6519585957334684e-07,
+                "Q_net_C": 3.651958595733482e-07,
+                "residual_C": 1.376428539288238e-21,
+                "throughput_C": 4.562513331794107e-07,
+                "Q_in_supported_C": 4.106018644269046e-07,
+                "Q_in_outside_support_C": 0.0
+              },
+              "account_stretch": {
+                "Q_in_C": 4.106018644269046e-07,
+                "Q_sh_C": 0.0,
+                "Q_leak_C": 2.7267956605878047e-08,
+                "Q_other_C": 1.8138048247678282e-08,
+                "Q_cap_C": 3.6519585957334684e-07,
+                "Q_net_C": 3.651958595733482e-07,
+                "residual_C": 1.376428539288238e-21,
+                "throughput_C": 4.562513331794107e-07,
+                "Q_in_supported_C": 4.106018644269046e-07,
+                "Q_in_outside_support_C": 0.0
+              },
+              "source_ledger": [
+                {
+                  "start_s": 0.0,
+                  "end_s": 11.126,
+                  "cause_with_tolerance": false,
+                  "account": {
+                    "Q_in_C": 0.0,
+                    "Q_sh_C": 0.0,
+                    "Q_leak_C": 0.0,
+                    "Q_other_C": -4.2632565566734165e-23,
+                    "Q_cap_C": 0.0,
+                    "Q_net_C": 4.2632565566734165e-23,
+                    "residual_C": 4.2632565566734165e-23,
+                    "throughput_C": 6.805436441411251e-19,
+                    "Q_in_supported_C": 0.0,
+                    "Q_in_outside_support_C": 0.0
+                  },
+                  "supported_state_start_V": 0.0,
+                  "supported_state_end_V": 0.0
+                },
+                {
+                  "start_s": 11.126,
+                  "end_s": 11.351,
+                  "cause_with_tolerance": true,
+                  "account": {
+                    "Q_in_C": 4.106018644269046e-07,
+                    "Q_sh_C": 0.0,
+                    "Q_leak_C": 2.7267956605878047e-08,
+                    "Q_other_C": 1.8138048247678325e-08,
+                    "Q_cap_C": 3.6519585957334684e-07,
+                    "Q_net_C": 3.6519585957334816e-07,
+                    "residual_C": 1.3234889800848443e-21,
+                    "throughput_C": 4.5625133317873014e-07,
+                    "Q_in_supported_C": 4.106018644269046e-07,
+                    "Q_in_outside_support_C": 0.0
+                  },
+                  "supported_state_start_V": 0.0,
+                  "supported_state_end_V": 0.24330304691148197
+                }
+              ],
+              "account_sample_s": 11.351,
+              "why": ""
+            }
+          ],
+          "thw12r_": []
+        }
+      },
+      "sigma_spatial_support_all_events": {
+        "result": "PASS",
+        "n_events": 1,
+        "unsupported": {},
+        "unmeasured": {},
+        "events": {
+          "sgw12f_": [
+            {
+              "t_q": 11.1005,
+              "scope": "complete vm ledger node",
+              "anchor_s": 0.0,
+              "anchor": "record start",
+              "ok": true,
+              "cause": [
+                11.006,
+                12.503
+              ],
+              "stretch_start_s": 0.0,
+              "u_entry_state_V": 0.24346389826676795,
+              "supported_state_V": 0.24346389826676793,
+              "checks": {
+                "membrane_rose": true,
+                "account_closes": true,
+                "net_charge_sufficient": true,
+                "retained_state_supported": true,
+                "source_history_valid": true
+              },
+              "account_from_anchor": {
+                "Q_in_C": 3.712824448568198e-08,
+                "Q_sh_C": 0.0,
+                "Q_leak_C": 1.1686267116804871e-08,
+                "Q_other_C": 1.0955753690052648e-09,
+                "Q_cap_C": 2.4346401999871705e-08,
+                "Q_net_C": 2.4346401999871847e-08,
+                "residual_C": 1.4227506535912076e-22,
+                "throughput_C": 5.01535508698044e-08,
+                "Q_in_supported_C": 3.712824448568198e-08,
+                "Q_in_outside_support_C": 0.0
+              },
+              "account_stretch": {
+                "Q_in_C": 3.712824448568198e-08,
+                "Q_sh_C": 0.0,
+                "Q_leak_C": 1.1686267116804871e-08,
+                "Q_other_C": 1.0955753690052648e-09,
+                "Q_cap_C": 2.4346401999871705e-08,
+                "Q_net_C": 2.4346401999871847e-08,
+                "residual_C": 1.4227506535912076e-22,
+                "throughput_C": 5.01535508698044e-08,
+                "Q_in_supported_C": 3.712824448568198e-08,
+                "Q_in_outside_support_C": 0.0
+              },
+              "source_ledger": [
+                {
+                  "start_s": 0.0,
+                  "end_s": 11.004,
+                  "cause_with_tolerance": false,
+                  "account": {
+                    "Q_in_C": 0.0,
+                    "Q_sh_C": 0.0,
+                    "Q_leak_C": 0.0,
+                    "Q_other_C": -2.8421723641287175e-24,
+                    "Q_cap_C": 0.0,
+                    "Q_net_C": 2.8421723641287175e-24,
+                    "residual_C": 2.8421723641287175e-24,
+                    "throughput_C": 4.4937587249195075e-20,
+                    "Q_in_supported_C": 0.0,
+                    "Q_in_outside_support_C": 0.0
+                  },
+                  "supported_state_start_V": 0.0,
+                  "supported_state_end_V": 0.0
+                },
+                {
+                  "start_s": 11.004,
+                  "end_s": 11.101,
+                  "cause_with_tolerance": true,
+                  "account": {
+                    "Q_in_C": 3.712824448568198e-08,
+                    "Q_sh_C": 0.0,
+                    "Q_leak_C": 1.1686267116804871e-08,
+                    "Q_other_C": 1.0955753690052677e-09,
+                    "Q_cap_C": 2.4346401999871705e-08,
+                    "Q_net_C": 2.4346401999871844e-08,
+                    "residual_C": 1.3896634290890865e-22,
+                    "throughput_C": 5.015355086975946e-08,
+                    "Q_in_supported_C": 3.712824448568198e-08,
+                    "Q_in_outside_support_C": 0.0
+                  },
+                  "supported_state_start_V": 0.0,
+                  "supported_state_end_V": 0.24346389826676793
+                }
+              ],
+              "account_sample_s": 11.101,
+              "why": ""
+            }
+          ],
+          "sgw12r_": []
+        }
+      },
+      "cdir_hs_from_matching_sigma": {
+        "result": "PASS",
+        "n_events": 1,
+        "unsupported": {},
+        "unmeasured": {},
+        "events": {
+          "cdw12f_": [
+            {
+              "t_q": 11.229332802037195,
+              "ok": true,
+              "why": "hs rose without a matching \u03a3 activity"
+            }
+          ],
+          "cdw12r_": []
+        }
+      },
+      "cdir_support_all_events": {
+        "result": "PASS",
+        "n_events": 0,
+        "unsupported": {},
+        "unmeasured": {},
+        "events": {
+          "cdw12f_": [],
+          "cdw12r_": []
+        }
+      },
+      "cdir_conflict_consistent": {
+        "result": "PASS",
+        "why": []
+      },
+      "ports_canonical": {
+        "result": "PASS",
+        "why": [],
+        "n": 0
+      },
+      "load_consumed_in_cdir_activity": {
+        "result": "PASS",
+        "why": []
+      },
+      "load_pos_quiet_outside_cdir_activity": {
+        "result": "PASS",
+        "max_rise_V": 0.0
+      },
+      "load_neg_quiet_outside_cdir_activity": {
+        "result": "PASS",
+        "max_rise_V": 0.0
+      },
+      "physical_ledger": {
+        "nodes": {
+          "thw12f_vm": {
+            "kcl_p99": 1.9374524930666593e-17,
+            "kcl_peak": 2.0919791781776936e-17,
+            "kcl": true,
+            "energy_net_J": -1.7847328356171427e-23,
+            "energy_abs_J": 1.734331361680874e-06,
+            "energy": true,
+            "cap_mismatch_J": 9.791291541821808e-21,
+            "cap": true,
+            "n_terms": 8,
+            "result": "PASS"
+          },
+          "thw12f_vmd": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          },
+          "thw12f_vms": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          },
+          "thw12r_vm": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 8,
+            "result": "PASS"
+          },
+          "thw12r_vmd": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          },
+          "thw12r_vms": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          },
+          "sgw12f_vm": {
+            "kcl_p99": 2.7510485639199596e-17,
+            "kcl_peak": 2.921138776542835e-17,
+            "kcl": true,
+            "energy_net_J": 1.6920832540603917e-24,
+            "energy_abs_J": 1.4622544050200248e-07,
+            "energy": true,
+            "cap_mismatch_J": 4.17465215979423e-22,
+            "cap": true,
+            "n_terms": 9,
+            "result": "PASS"
+          },
+          "sgw12f_vmd": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          },
+          "sgw12f_vms": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          },
+          "sgw12r_vm": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 9,
+            "result": "PASS"
+          },
+          "sgw12r_vmd": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          },
+          "sgw12r_vms": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          },
+          "cdw12f_vm": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 9,
+            "result": "PASS"
+          },
+          "cdw12f_vmd": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          },
+          "cdw12f_vms": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          },
+          "cdw12r_vm": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 9,
+            "result": "PASS"
+          },
+          "cdw12r_vmd": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          },
+          "cdw12r_vms": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 3,
+            "result": "PASS"
+          },
+          "load_pos": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 4,
+            "result": "PASS"
+          },
+          "load_neg": {
+            "kcl_p99": 0.0,
+            "kcl_peak": 0.0,
+            "kcl": true,
+            "energy_net_J": 0.0,
+            "energy_abs_J": 0.0,
+            "energy": true,
+            "cap_mismatch_J": 0.0,
+            "cap": true,
+            "n_terms": 4,
+            "result": "PASS"
+          }
+        },
+        "scope": "KCL/charge/energy at ledger nodes only",
+        "supply_energy_J": -0.0,
+        "fails": [],
+        "result": "PASS"
+      }
+    }
+  }
+}

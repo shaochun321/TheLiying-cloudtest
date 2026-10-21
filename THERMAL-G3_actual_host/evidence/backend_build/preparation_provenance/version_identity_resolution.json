@@ -1,0 +1,16 @@
+{
+  "status": "RELEASE_TAG_AND_INTERNAL_CLI_VERSION_CORRESPONDENCE_VERIFIED",
+  "release_tag": "1.0.0",
+  "actual_cli_output": "openvaf 23.5.0",
+  "binary_sha256": "4c3da9c10c1373dc5455b53911bda62eb7582857dbea27dcf72df60d3c618fcd",
+  "release_asset_size": 56307341,
+  "release_asset_url": "https://github.com/dwarning/OpenVAF/releases/download/1.0.0/openvaf.gz",
+  "tagged_driver_source_url": "https://github.com/dwarning/OpenVAF/blob/1.0.0/openvaf/openvaf-driver/Cargo.toml",
+  "tagged_driver_git_blob_sha": "2163620fceaeb60f2037301e47e4986a092021a3",
+  "original_command_exit_code": 1,
+  "original_script_sha256": "fb6c99b4e808ba0ed5e217bfcd023ae6b70d258337fe7f6c86df8d2c650e12b1",
+  "fixed_script_sha256": "7baaa7139b3a404080e37fcff7486a91c5b006d8667184f6c667bc35322bb47a",
+  "project_code_or_model_changed": false,
+  "correction_scope": "Preparation helper identity guard, truthful report fields and follow-up registration version text only",
+  "tool_assets_downloaded_this_command": false
+}

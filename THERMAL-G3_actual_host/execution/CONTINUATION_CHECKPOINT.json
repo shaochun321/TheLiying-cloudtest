@@ -1,0 +1,23 @@
+{
+ "schema": "thermal_g3.software_handoff.1",
+ "status": "ORIGINAL_D_SOFTWARE_CHECKS_PASS_REAL_BACKEND_NOT_READY",
+ "freeze_sha256": "9d042b00195dbac895f2db3677ef4754f115b68063914a3075fb0975a9b02673",
+ "completed": [
+  "tools/_block.py integrated into main selfcheck",
+  "signed net-charge account and continuous source evidence",
+  "fixed positive/negative pairs",
+  "complete no-solver selfcheck",
+  "33 static decks"
+ ],
+ "next_breakpoint": "Provision the actual execution host's real backend and create a matching host freeze; no circuit solve authorized",
+ "launch_permission_written": false,
+ "real_solver_starts": 0,
+ "remaining": [
+  "ngspice-47 Linux installation and binary identity",
+  "OpenVAF 1.0.0 compiler identity",
+  "native Linux OSDI built with -D__NGSPICE__ from supplied sources",
+  "real host backend registration and matching new backend freeze",
+  "raw-output volume and retrieval verification on the actual execution host",
+  "user authorization for the eventual real-backend freeze (not requested or produced here)"
+ ]
+}

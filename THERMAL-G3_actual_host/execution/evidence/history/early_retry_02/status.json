@@ -1,0 +1,5 @@
+{
+  "status": "INTERRUPTED_WITH_CTRL_C",
+  "reason": "Full first-attempt JSON also identified INVALID_SYNC synthetic Theta preloading before history cause; stopped this early retry and diagnosed locally",
+  "production_solver_starts": 0
+}

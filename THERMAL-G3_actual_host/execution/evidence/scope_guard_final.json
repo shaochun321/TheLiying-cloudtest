@@ -1,0 +1,33 @@
+{
+ "protected_files_unchanged": {
+  "config.py": true,
+  "netlists/params.py": true,
+  "netlists/build.py": true,
+  "netlists/build_thermal_g3.py": true,
+  "netlists/neuron_nrc.py": true,
+  "netlists/bundle_physical.py": true,
+  "netlists/occurrence_port.py": true,
+  "netlists/spatial_graph.py": true,
+  "prereg/cases_q1r.json": true,
+  "prereg/protocol_q1r_joint.json": true,
+  "runtime/coordinator.py": true,
+  "runtime/supervisor.py": true,
+  "models/c05_ekv26_typ.lib": true
+ },
+ "real_solver_starts": 0,
+ "production_permission_present": false,
+ "production_q1_ledger_present": false,
+ "historical_workstation_source_manifest_preserved": true,
+ "scientific_matrix_unchanged": {
+  "qualification": 2,
+  "formal": 31
+ },
+ "budget_unchanged": {
+  "dev_closed": 24,
+  "qualification": 2,
+  "formal": 31,
+  "rerun": 4,
+  "total": 61,
+  "global_wall_cap_s": 172800
+ }
+}

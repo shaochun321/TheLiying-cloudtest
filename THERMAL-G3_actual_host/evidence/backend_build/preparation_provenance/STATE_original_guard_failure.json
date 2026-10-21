@@ -1,0 +1,21 @@
+{
+  "asset_identity": "thermal-g3-ngspice47-dwarning-openvaf100-20261020",
+  "completed": [
+    "unpack_sources",
+    "unpack_project",
+    "ngspice_configure",
+    "ngspice_make",
+    "ngspice_install",
+    "openvaf_version",
+    "ngspice_version"
+  ],
+  "circuit_analyses_started": 0,
+  "project_root": "/workspace/scratch/8fecea1ba044/offline_backend_kit_20261020/host_work/execution/thermal_g3_q1r_runpack_9d042b00/thermal_g3_q1",
+  "status": "STOPPED_AT_PREPARATION_ERROR",
+  "current_step": "ngspice_version",
+  "command": [
+    "/workspace/scratch/8fecea1ba044/offline_backend_kit_20261020/host_work/native/bin/ngspice",
+    "-v"
+  ],
+  "error": "RuntimeError: Actual OpenVAF version differs; do not forge registration"
+}

@@ -1,0 +1,48 @@
+{"rec": "start", "analysis_id": "dev-001", "kind": "dev", "tag": "np1_g0_single_site", "purpose": "DEV-A N-P1 + one-site warm/cool G0 bench: power-up, recruitment, collector, port", "analysis": "tran 1m 36 0 2m", "version": "DEV-A", "t": "2026-10-08 06:37:08"}
+{"rec": "end", "analysis_id": "dev-001", "error": "ngspice reported 'simulation(s) aborted'", "wall_s": 8.729532241821289, "points": 123, "t": "2026-10-08 06:37:17"}
+{"rec": "start", "analysis_id": "dev-002", "kind": "dev", "tag": "np1_g0_single_site_cnode", "purpose": "DEV-A rerun of the same bench with registered C_NODE on every node (dev-001 aborted: timestep too small at 32 ms)", "analysis": "tran 1m 36 0 2m", "version": "DEV-A", "t": "2026-10-08 06:38:23"}
+{"rec": "end", "analysis_id": "dev-002", "error": "ngspice reported 'simulation(s) aborted'", "wall_s": 21.07434105873108, "points": 1012, "t": "2026-10-08 06:38:44"}
+{"rec": "start", "analysis_id": "dev-003", "kind": "dev", "tag": "np1_g0_single_site_por", "purpose": "DEV-A bench after POR fix (regenerative release + PMOS mean switch)", "analysis": "tran 1m 36 0 2m", "version": "DEV-A", "t": "2026-10-08 06:40:31"}
+{"rec": "end", "analysis_id": "dev-003", "error": null, "wall_s": 90.2582859992981, "points": 19495, "t": "2026-10-08 06:42:01"}
+{"rec": "start", "analysis_id": "dev-004", "kind": "dev", "tag": "np1_g0_single_site_v2", "purpose": "DEV-A bench after node-name aliasing fix (da/dA)", "analysis": "tran 1m 36 0 2m", "version": "DEV-A", "t": "2026-10-08 06:43:19"}
+{"rec": "end", "analysis_id": "dev-004", "error": "ngspice reported 'simulation(s) aborted'", "wall_s": 35.03879451751709, "points": 4821, "t": "2026-10-08 06:43:54"}
+{"rec": "start", "analysis_id": "dev-005", "kind": "dev", "tag": "np1_g0_single_site_v3", "purpose": "DEV-A same bench with R1/R3 solver options (dev-004 aborted 6.90 s, reltol 1e-4)", "analysis": "tran 1m 36 0 2m", "version": "DEV-A", "t": "2026-10-08 06:44:31"}
+{"rec": "end", "analysis_id": "dev-005", "error": "ngspice reported 'simulation(s) aborted'", "wall_s": 88.20051193237305, "points": 10378, "t": "2026-10-08 06:46:00"}
+{"rec": "start", "analysis_id": "dev-006", "kind": "dev", "tag": "np1_g0_single_site_v4", "purpose": "DEV-A bench after regenerative timer reset (dev-005 latch parked at pb 0.74 V)", "analysis": "tran 1m 36 0 2m", "version": "DEV-A", "t": "2026-10-08 06:47:10"}
+{"rec": "end", "analysis_id": "dev-006", "error": null, "wall_s": 2869.1017184257507, "points": 250275, "t": "2026-10-08 07:34:59"}
+{"rec": "start", "analysis_id": "dev-007", "kind": "dev", "tag": "np1_g0_single_site_v5", "purpose": "DEV-A same bench after latch reset-race fix (R_dis), KLU solver", "analysis": "tran 1m 36 0 2m", "version": "DEV-A", "t": "2026-10-08 07:40:39"}
+{"rec": "end", "analysis_id": "dev-007", "error": null, "wall_s": 3221.3666820526123, "points": 262348, "t": "2026-10-08 08:34:21"}
+{"rec": "start", "analysis_id": "dev-008", "kind": "dev", "tag": "np1_g0_single_site_v6", "purpose": "DEV-A same netlist as dev-007, solver chgtol 1e-17: is the 17-latch simultaneous flip numerical?", "analysis": "tran 1m 36 0 2m", "version": "DEV-A", "t": "2026-10-08 08:37:44"}
+{"rec": "end", "analysis_id": "dev-008", "error": null, "wall_s": 4138.280673503876, "points": 578016, "t": "2026-10-08 09:46:43"}
+{"rec": "start", "analysis_id": "dev-009", "kind": "dev", "tag": "np1_g0_single_site_v7", "purpose": "DEV-A same netlist as dev-007/008, Newton itl4 default (10): spurious basin-jump test", "analysis": "tran 1m 36 0 2m", "version": "DEV-A", "t": "2026-10-08 09:49:48"}
+{"rec": "end", "analysis_id": "dev-009", "error": null, "wall_s": 2897.7251222133636, "points": 272958, "t": "2026-10-08 10:38:06"}
+{"rec": "start", "analysis_id": "dev-010", "kind": "dev", "tag": "np1_g0_single_site_v8", "purpose": "DEV-A after RC-coupled latch (state on capacitors) and 25 ms reset hold", "analysis": "tran 1m 36 0 2m", "version": "DEV-A", "t": "2026-10-08 10:40:05"}
+{"rec": "end", "analysis_id": "dev-010", "error": "no raw output", "wall_s": 8999.84936761856, "points": null, "t": "2026-10-08 13:10:05"}
+{"rec": "start", "analysis_id": "dev-011", "kind": "dev", "tag": "single_nrc", "purpose": "B1_single_mother", "analysis": "tran 1m 5.0 0 0.01", "version": "v1.1", "t": "2026-10-08 18:53:58"}
+{"rec": "end", "analysis_id": "dev-011", "error": null, "wall_s": 142.3104386329651, "points": 2412, "t": "2026-10-08 18:56:20"}
+{"rec": "start", "analysis_id": "dev-012", "kind": "dev", "tag": "single_nrc", "purpose": "B1_single_mother", "analysis": "tran 1m 5.0 0 10m", "version": "v1.1", "t": "2026-10-08 19:00:22"}
+{"rec": "end", "analysis_id": "dev-012", "error": null, "wall_s": 41.34959888458252, "points": 35120, "t": "2026-10-08 19:01:03"}
+{"rec": "start", "analysis_id": "dev-013", "kind": "dev", "tag": "single_nrc", "purpose": "B1_single_mother", "analysis": "tran 1m 5.0 0 10m", "version": "v1.1", "t": "2026-10-08 19:03:54"}
+{"rec": "end", "analysis_id": "dev-013", "error": null, "wall_s": 2.278211832046509, "points": 1817, "t": "2026-10-08 19:03:56"}
+{"rec": "start", "analysis_id": "dev-014", "kind": "dev", "tag": "single_nrc", "purpose": "B1_single_mother", "analysis": "tran 1m 5.0 0 10m", "version": "v1.1", "t": "2026-10-08 19:07:52"}
+{"rec": "end", "analysis_id": "dev-014", "error": null, "wall_s": 2.130587100982666, "points": 859, "t": "2026-10-08 19:07:54"}
+{"rec": "start", "analysis_id": "dev-015", "kind": "dev", "tag": "single_nrc", "purpose": "B1_single_mother", "analysis": "tran 1m 5.0 0 10m", "version": "v1.1", "t": "2026-10-08 20:49:22"}
+{"rec": "end", "analysis_id": "dev-015", "error": null, "wall_s": 0.6851110458374023, "points": 871, "t": "2026-10-08 20:49:23"}
+{"rec": "start", "analysis_id": "dev-016", "kind": "dev", "tag": "single_nrc", "purpose": "B1_single_mother", "analysis": "tran 1m 5.0 0 10m", "version": "v1.1", "t": "2026-10-08 20:52:52"}
+{"rec": "end", "analysis_id": "dev-016", "error": null, "wall_s": 0.6738271713256836, "points": 870, "t": "2026-10-08 20:52:53"}
+{"rec": "start", "analysis_id": "dev-017", "kind": "dev", "tag": "strong_input", "purpose": "comparator_logic_test", "analysis": "tran 1m 5.0 0 10m", "version": "v1.1_comparator_corrected", "t": "2026-10-08 20:59:06"}
+{"rec": "end", "analysis_id": "dev-017", "error": null, "wall_s": 1.3476953506469727, "points": 3177, "t": "2026-10-08 20:59:07"}
+{"rec": "start", "analysis_id": "dev-018", "kind": "dev", "tag": "measure_currents", "purpose": "reference_currents", "analysis": "op", "version": "measurement", "t": "2026-10-09 00:19:01"}
+{"rec": "end", "analysis_id": "dev-018", "error": "no raw output", "wall_s": 1.7646231651306152, "points": null, "t": "2026-10-09 00:19:03"}
+{"rec": "start", "analysis_id": "dev-019", "kind": "dev", "tag": "measure_currents", "purpose": "reference_currents", "analysis": "tran 10m 1.0", "version": "measurement", "t": "2026-10-09 00:19:38"}
+{"rec": "end", "analysis_id": "dev-019", "error": "no raw output", "wall_s": 0.04226517677307129, "points": null, "t": "2026-10-09 00:19:38"}
+{"rec": "start", "analysis_id": "dev-020", "kind": "dev", "tag": "cmp_settle", "purpose": "comparator_diagnostic", "analysis": "tran 1m 0.05", "version": null, "t": "2026-10-09 00:26:41"}
+{"rec": "end", "analysis_id": "dev-020", "error": null, "wall_s": 0.22222900390625, "points": 291, "t": "2026-10-09 00:26:42"}
+{"rec": "start", "analysis_id": "dev-021", "kind": "dev", "tag": "cmp_sweep", "purpose": "comparator_diagnostic", "analysis": "dc Vvm 0 2.5 0.01", "version": null, "t": "2026-10-09 00:26:42"}
+{"rec": "end", "analysis_id": "dev-021", "error": null, "wall_s": 0.23445796966552734, "points": 251, "t": "2026-10-09 00:26:42"}
+{"rec": "start", "analysis_id": "dev-022", "kind": "dev", "tag": "strong_input", "purpose": "comparator_logic_test", "analysis": "tran 1m 5.0 0 10m", "version": "v1.1_comparator_corrected", "t": "2026-10-09 00:28:26"}
+{"rec": "end", "analysis_id": "dev-022", "error": null, "wall_s": 1.0791103839874268, "points": 1025, "t": "2026-10-09 00:28:27"}
+{"rec": "start", "analysis_id": "dev-023", "kind": "dev", "tag": "full_pulse", "purpose": "hysteresis_corrected_full", "analysis": "tran 1m 8.0 0 10m", "version": "v1.1_hysteresis_fixed", "t": "2026-10-09 00:29:58"}
+{"rec": "end", "analysis_id": "dev-023", "error": null, "wall_s": 1.3693222999572754, "points": 1325, "t": "2026-10-09 00:29:59"}
+{"rec": "start", "analysis_id": "dev-024", "kind": "dev", "tag": "diagnose_q", "purpose": "q_signal_detail", "analysis": "tran 1m 5.0 0 10m", "version": "v1.1", "t": "2026-10-09 00:35:10"}
+{"rec": "end", "analysis_id": "dev-024", "error": null, "wall_s": 0.479642391204834, "points": 1025, "t": "2026-10-09 00:35:10"}

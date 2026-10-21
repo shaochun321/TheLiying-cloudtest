@@ -1,0 +1,33 @@
+--- prepare_backend_offline.py
++++ prepare_backend_offline_identity_checked.py
+@@ -106,7 +106,12 @@
+     run('ngspice_version',[str(ng),'-v'],WORK,30)
+     ov_text=(logs/'openvaf_version.log').read_text(errors='replace')
+     ng_text=(logs/'ngspice_version.log').read_text(errors='replace')
+-    if not re.search(r'\b1\.0\.0\b',ov_text):raise RuntimeError('Actual OpenVAF version differs; do not forge registration')
++    # dwarning release 1.0.0 keeps CLI version 23.5.0 (openvaf-driver/Cargo.toml).
++    # Provenance and the original failed guard are retained in WORK; do not relabel the CLI.
++    if meta['openvaf_binary_sha256'] != '4c3da9c10c1373dc5455b53911bda62eb7582857dbea27dcf72df60d3c618fcd':
++        raise RuntimeError('Unexpected compiler asset: only the fixed dwarning release 1.0.0 binary is allowed')
++    if ov_text.strip() != 'openvaf 23.5.0':
++        raise RuntimeError('Actual OpenVAF CLI version differs from the verified fixed release; do not forge registration')
+     if not re.search(r'ngspice[\s-]+47\b',ng_text,re.I):raise RuntimeError('Actual ngspice version differs')
+     models=prefix/'models';models.mkdir(exist_ok=True)
+     osdi=models/'ekv26_linux.osdi'
+@@ -114,14 +119,14 @@
+     if not osdi.is_file() or osdi.stat().st_size==0:raise RuntimeError('OSDI output missing')
+     report={'status':'BUILT_REAL_BACKEND_FILES_NOT_CIRCUIT_QUALIFICATION','platform':platform.platform(),
+         'ngspice':{'path':str(ng),'sha256':sha(ng),'version_output':ng_text},
+-        'openvaf':{'path':str(ov),'sha256':sha(ov),'version_output':ov_text},
++        'openvaf':{'path':str(ov),'sha256':sha(ov),'version_output':ov_text, 'release_tag':'1.0.0', 'internal_cli_version':'23.5.0', 'source_version_evidence':'version_provenance/openvaf_driver_source_version.json'},
+         'osdi':{'path':str(osdi),'sha256':sha(osdi),'define':'__NGSPICE__'},
+         'model_sources':{p.name:sha(p) for p in (project/'backend/ekv_src').iterdir() if p.is_file()},
+         'project_root':str(project),'logs':str(logs),'circuit_analyses_started':0,
+         'launch_permission_written':False,'source_project_modified':False}
+     (WORK/'REAL_BACKEND_FILES.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
+     commands=[['python3','-B','tools/register_backend.py','--platform','linux-x64','--ngspice',str(ng),
+-        '--osdi',str(osdi),'--openvaf',str(ov),'--ngspice-version','ngspice-47','--openvaf-version','OpenVAF 1.0.0'],
++        '--osdi',str(osdi),'--openvaf',str(ov),'--ngspice-version','ngspice-47','--openvaf-version','openvaf 23.5.0 (dwarning release 1.0.0)'],
+         ['python3','-B','tools/static_check.py'],['python3','-B','tools/selfcheck_all.py'],
+         ['python3','-B','tools/write_freeze.py']]
+     followup='cd '+shlex.quote(str(project))+'\n'+'\n'.join(shlex.join(c) for c in commands)+'\n'

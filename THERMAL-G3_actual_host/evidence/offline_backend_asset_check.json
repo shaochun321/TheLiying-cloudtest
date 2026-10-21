@@ -1,0 +1,15 @@
+{
+  "outer_sha256": "4d0877c456c70bc85aed22cbfbab1b3373aefd91758456125bdf7ff7d9dcb03a",
+  "file_sha256": {
+    "ngspice-47.tar.gz": "894e649651f1838a14095e5a5439e7d3aa63e87ede14d283173fda4fcdef675f",
+    "openvaf-dwarning-1.0.0-linux.gz": "8d48d200f8d9006ea87f86448ca7711689b7d9d8acad7138cec1d9f256e6230d",
+    "thermal_g3_q1r_runpack_9d042b00.zip": "7d5192af0efdece691f589dca26d7ea0b704a056ab19a165e19b500d73009f46"
+  },
+  "native_elf_header_valid": true,
+  "circuit_analyses_started": 0,
+  "openvaf_binary_bytes": 250564272,
+  "openvaf_binary_sha256": "4c3da9c10c1373dc5455b53911bda62eb7582857dbea27dcf72df60d3c618fcd",
+  "source_tar_members": 4794,
+  "ngspice_gzip_crc_pass": true,
+  "preparation_script_syntax_pass": true
+}

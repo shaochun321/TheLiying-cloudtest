@@ -1,0 +1,215 @@
+{
+  "coord_refuses_without_permission": {
+    "result": "PASS",
+    "out": {
+      "refused": "no launch permission (prereg/LAUNCH_PERMISSION.json)"
+    }
+  },
+  "coord_formal_refused_before_qual": {
+    "result": "PASS",
+    "out": {
+      "refused": "formal refused: qualification Q1_MOTHER_PROTOCOL has no scientific PASS"
+    }
+  },
+  "coord_qual_protocol_judged_pass": {
+    "result": "PASS",
+    "out": {
+      "aid": "qual-001",
+      "status": "complete",
+      "scientific": "PASS"
+    }
+  },
+  "coord_verdict_bound_to_freeze_deck_raw_judge": {
+    "result": "PASS",
+    "keys": [
+      "analysis_id",
+      "backend",
+      "case_id",
+      "deck_sha256",
+      "freeze_sha256",
+      "judge_output",
+      "raw_path",
+      "raw_sha256",
+      "required",
+      "scientific",
+      "t"
+    ]
+  },
+  "coord_no_repeat_without_infra_failure": {
+    "result": "PASS",
+    "out": {
+      "refused": "case already run; only an infrastructure failure may be rerun"
+    }
+  },
+  "coord_formal_refused_until_halfstep_pass": {
+    "result": "PASS",
+    "out": {
+      "refused": "formal refused: qualification Q1_MOTHER_HALFSTEP has no scientific PASS"
+    }
+  },
+  "coord_halfstep_judged_against_protocol_raw": {
+    "result": "PASS",
+    "out": {
+      "aid": "qual-002",
+      "status": "complete",
+      "scientific": "PASS"
+    }
+  },
+  "coord_formal_unblocked_after_qual_pass": {
+    "result": "PASS",
+    "out": {
+      "aid": "formal-001",
+      "status": "complete",
+      "scientific": "PASS"
+    }
+  },
+  "coord_num_g0_halfstep_vs_g0_w_pass": {
+    "result": "PASS",
+    "out": {
+      "aid": "formal-002",
+      "status": "complete",
+      "scientific": "PASS"
+    }
+  },
+  "coord_infra_failure_rerunnable": {
+    "result": "PASS",
+    "out": {
+      "aid": "rerun-001",
+      "status": "complete",
+      "scientific": "PASS"
+    }
+  },
+  "coord_rerun_only_after_infra_failure": {
+    "result": "PASS",
+    "out": {
+      "refused": "rerun only after a preregistered infrastructure failure of this case"
+    }
+  },
+  "coord_required_fail_stops_round": {
+    "result": "PASS",
+    "out": [
+      {
+        "aid": "formal-004",
+        "status": "complete",
+        "scientific": "FAIL"
+      },
+      {
+        "refused": "round stopped: {\"case_id\": \"G0_C\", \"analysis_id\": \"formal-004\", \"reason\": \"scientific FAIL\"}"
+      }
+    ]
+  },
+  "coord_changed_asset_refused": {
+    "result": "PASS",
+    "out": {
+      "refused": "frozen file changed or missing: netlists/params.py"
+    }
+  },
+  "coord_changed_case_refused": {
+    "result": "PASS",
+    "out": {
+      "refused": "frozen file changed or missing: prereg/cases_q1r.json"
+    }
+  },
+  "coord_env_override_refused": {
+    "result": "PASS",
+    "out": "RES{\"refused\": \"environment override THERMAL_G3_OSDI differs from the frozen asset\"}"
+  },
+  "coord_unmeasured_blocks_dependants": {
+    "result": "PASS",
+    "out": [
+      {
+        "aid": "qual-001",
+        "status": "complete",
+        "scientific": "PASS"
+      },
+      {
+        "aid": "qual-002",
+        "status": "complete",
+        "scientific": "UNMEASURED"
+      },
+      {
+        "refused": "formal refused: qualification Q1_MOTHER_HALFSTEP has no scientific PASS"
+      }
+    ]
+  },
+  "coord_record_verdict_guards": {
+    "result": "PASS",
+    "out": {
+      "unknown": "verdict refused: unknown analysis qual-999",
+      "raw_changed": "verdict refused: raw missing or changed since the run",
+      "foreign": "verdict refused: analysis belongs to a different freeze",
+      "incomplete": "verdict refused: formal-901 status timeout_killed",
+      "public": false
+    }
+  },
+  "coord_cost_gate_forecast_from_measured": {
+    "result": "PASS",
+    "out": {
+      "measured": 184.40687669759274,
+      "over": "cost gate: forecast 171000 s of remaining formal cases exceeds phase 105310 s / total 147544 s"
+    }
+  },
+  "coord_cost_gate_refuses_over_budget": {
+    "result": "PASS",
+    "out": {
+      "measured": 184.40687669759274,
+      "over": "cost gate: forecast 171000 s of remaining formal cases exceeds phase 105310 s / total 147544 s"
+    }
+  },
+  "coord_backend_fixed_by_first_start": {
+    "result": "PASS",
+    "out": {
+      "refused": "backend differs from the backend of this round's first start (qual-001)"
+    },
+    "reg": "selfcheck_rabgsonh/pkg/prereg/backend_registration.json 77139674b7945cd5af5aec96d4afc429715b298b8c3ce6f95e27b41420c02dd9"
+  },
+  "coord_nan_rejected": {
+    "result": "PASS",
+    "out": "vector v(vdd) short or non-finite"
+  },
+  "coord_short_raw_rejected": {
+    "result": "PASS",
+    "out": "raw ends at 50.135, stop 100.27"
+  },
+  "coord_bad_axis_rejected": {
+    "result": "PASS",
+    "out": "time axis not finite / strictly increasing"
+  },
+  "coord_abort_rejected": {
+    "result": "PASS",
+    "out": "log contains 'simulation(s) aborted'"
+  },
+  "coord_aborted_raw_no_verdict_round_stopped": {
+    "result": "PASS",
+    "stopped": "{\"case_id\": \"Q1_MOTHER_PROTOCOL\", \"analysis_id\": \"qual-001\", \"reason\": \"execution failure: log contains 'simulation(s) aborted'\"}",
+    "out": "REFUSED round stopped: {\"case_id\": \"Q1_MOTHER_PROTOCOL\", \"analysis_id\": \"qual-001\", \"reason\": \"execution failure: log contains 'simulation(s) aborted'\"}"
+  },
+  "coord_solver_failure_not_rerunnable": {
+    "result": "PASS",
+    "out": "REFUSED rerun only after a preregistered infrastructure failure of this case"
+  },
+  "coord_empty_required_rejected": {
+    "result": "PASS",
+    "out": "no raw output"
+  },
+  "coord_empty_required_list_is_failure": {
+    "result": "PASS",
+    "out": "raw parse: ValueError('subsection not found')"
+  },
+  "coord_supervisor_kills_tree_after_coordinator_death": {
+    "result": "PASS",
+    "child": 454
+  },
+  "coord_start_cap_refused": {
+    "result": "PASS",
+    "out": "REFUSED qualification start cap 2 reached"
+  },
+  "coord_phase_wall_cap_refused": {
+    "result": "PASS",
+    "out": "REFUSED qualification wall cap"
+  },
+  "coord_clean_directory_works": {
+    "result": "PASS",
+    "out": "qual-001 complete FAIL"
+  }
+}

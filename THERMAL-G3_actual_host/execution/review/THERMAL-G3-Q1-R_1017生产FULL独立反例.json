@@ -1,0 +1,302 @@
+{
+  "date": "2026-10-17",
+  "freeze_sha256": "fb51f53f9f36067c66ca7a645bfb5a8364b8573292bf9e7e0190e5f21a75956f",
+  "method": "Selected current AST definitions; production judge dispatch, FULL saved probe plan and physical ledger",
+  "project_modules_imported": false,
+  "solver_starts": 0,
+  "source_sha256": {
+    "observers/support_q1r.py": "ab11ad29e8d95b64282326569e99ea37ca28d44a5aa2f128b15b7c7ada1b54d5",
+    "observers/judges.py": "bd91cf6a1c12ba8c38fc126719c43789c9f3ec0e0ec1bb96bdbd5906024d28f7",
+    "tests/synth_raw.py": "9854a43c08ce3c99b0125a36effd38761aba8937c41077077b83f58754741301",
+    "netlists/ledger_plan.py": "ffd58a41defce744197b573ec9bf60b5bd01d4fc9877b5107cfa0c341817b475"
+  },
+  "limits": "Verifier synthetic mutations, not physically complete transistor traces or predictions of formal case failure. FULL physical ledger covers the two load rails, not Cdir membrane.",
+  "tests": [
+    {
+      "probe": "shipped_supported_full_fixture",
+      "changes": [],
+      "result": "PASS",
+      "physical_ledger": {
+        "nodes": {
+          "load_pos": {
+            "kcl_p99": 3.6710787119938614e-17,
+            "kcl_peak": 4.8576348912233876e-17,
+            "kcl": true,
+            "energy_net_J": 8.422310557437307e-24,
+            "energy_abs_J": 1.4796574288496625e-05,
+            "energy": true,
+            "cap_mismatch_J": 1.7536228986124187e-22,
+            "cap": true,
+            "n_terms": 9,
+            "result": "PASS"
+          },
+          "load_neg": {
+            "kcl_p99": 2.7060028770924785e-17,
+            "kcl_peak": 3.6011529453564945e-17,
+            "kcl": true,
+            "energy_net_J": -9.970109403279783e-24,
+            "energy_abs_J": 1.5382602684528412e-05,
+            "energy": true,
+            "cap_mismatch_J": 1.0852609636695723e-21,
+            "cap": true,
+            "n_terms": 9,
+            "result": "PASS"
+          }
+        },
+        "scope": "KCL/charge/energy at ledger nodes only",
+        "supply_energy_J": -0.0,
+        "fails": [],
+        "result": "PASS"
+      },
+      "failed_gates": {},
+      "w12_cdir_support": {
+        "result": "PASS",
+        "n_events": 1,
+        "unsupported": {},
+        "events": {
+          "cdw12f_": [
+            {
+              "t_q": 12.750499999999999,
+              "ok": true
+            }
+          ],
+          "cdw12r_": []
+        }
+      },
+      "w12_conflict": {
+        "result": "PASS",
+        "why": []
+      }
+    },
+    {
+      "probe": "tiny_shunt_but_hc_1p2V",
+      "changes": [
+        "hc=1.2 V",
+        "outward shunt=1e-16 A; matching support and all other quantities unchanged"
+      ],
+      "result": "FAIL",
+      "physical_ledger": {
+        "nodes": {
+          "load_pos": {
+            "kcl_p99": 3.6710787119938614e-17,
+            "kcl_peak": 4.8576348912233876e-17,
+            "kcl": true,
+            "energy_net_J": 8.422310557437307e-24,
+            "energy_abs_J": 1.4796574288496625e-05,
+            "energy": true,
+            "cap_mismatch_J": 1.7536228986124187e-22,
+            "cap": true,
+            "n_terms": 9,
+            "result": "PASS"
+          },
+          "load_neg": {
+            "kcl_p99": 2.7060028770924785e-17,
+            "kcl_peak": 3.6011529453564945e-17,
+            "kcl": true,
+            "energy_net_J": -9.970109403279783e-24,
+            "energy_abs_J": 1.5382602684528412e-05,
+            "energy": true,
+            "cap_mismatch_J": 1.0852609636695723e-21,
+            "cap": true,
+            "n_terms": 9,
+            "result": "PASS"
+          }
+        },
+        "scope": "KCL/charge/energy at ledger nodes only",
+        "supply_energy_J": -0.0,
+        "fails": [],
+        "result": "PASS"
+      },
+      "failed_gates": {
+        "w12_cdir_support_all_events": {
+          "result": "FAIL",
+          "n_events": 1,
+          "unsupported": {
+            "cdw12f_": [
+              {
+                "t_q": 12.750499999999999,
+                "ok": false,
+                "cause": [
+                  12.703,
+                  14.202
+                ],
+                "dv_V": 0.2434638982667633,
+                "v_start_V": 0.989,
+                "q_inj_C": 3.794613101892226e-07,
+                "q_cause_C": 3.794613101892226e-07,
+                "q_need_C": 3.2867626266013046e-07,
+                "why": "conflict history active (hc=1.200V) with 3.795e-07 C injection but only 4.900e-18 C shunt"
+              }
+            ]
+          },
+          "events": {
+            "cdw12f_": [
+              {
+                "t_q": 12.750499999999999,
+                "ok": false
+              }
+            ],
+            "cdw12r_": []
+          }
+        }
+      },
+      "w12_cdir_support": {
+        "result": "FAIL",
+        "n_events": 1,
+        "unsupported": {
+          "cdw12f_": [
+            {
+              "t_q": 12.750499999999999,
+              "ok": false,
+              "cause": [
+                12.703,
+                14.202
+              ],
+              "dv_V": 0.2434638982667633,
+              "v_start_V": 0.989,
+              "q_inj_C": 3.794613101892226e-07,
+              "q_cause_C": 3.794613101892226e-07,
+              "q_need_C": 3.2867626266013046e-07,
+              "why": "conflict history active (hc=1.200V) with 3.795e-07 C injection but only 4.900e-18 C shunt"
+            }
+          ]
+        },
+        "events": {
+          "cdw12f_": [
+            {
+              "t_q": 12.750499999999999,
+              "ok": false
+            }
+          ],
+          "cdw12r_": []
+        }
+      },
+      "w12_conflict": {
+        "result": "PASS",
+        "why": []
+      }
+    },
+    {
+      "probe": "shunt_exceeds_injection_but_same_entry_claimed",
+      "changes": [
+        "hc=2.5 V",
+        "outward shunt=2*max(i_in,0)",
+        "vm entry/q unchanged; fabricated insufficient-support record"
+      ],
+      "result": "PASS",
+      "physical_ledger": {
+        "nodes": {
+          "load_pos": {
+            "kcl_p99": 3.6710787119938614e-17,
+            "kcl_peak": 4.8576348912233876e-17,
+            "kcl": true,
+            "energy_net_J": 8.422310557437307e-24,
+            "energy_abs_J": 1.4796574288496625e-05,
+            "energy": true,
+            "cap_mismatch_J": 1.7536228986124187e-22,
+            "cap": true,
+            "n_terms": 9,
+            "result": "PASS"
+          },
+          "load_neg": {
+            "kcl_p99": 2.7060028770924785e-17,
+            "kcl_peak": 3.6011529453564945e-17,
+            "kcl": true,
+            "energy_net_J": -9.970109403279783e-24,
+            "energy_abs_J": 1.5382602684528412e-05,
+            "energy": true,
+            "cap_mismatch_J": 1.0852609636695723e-21,
+            "cap": true,
+            "n_terms": 9,
+            "result": "PASS"
+          }
+        },
+        "scope": "KCL/charge/energy at ledger nodes only",
+        "supply_energy_J": -0.0,
+        "fails": [],
+        "result": "PASS"
+      },
+      "failed_gates": {},
+      "w12_cdir_support": {
+        "result": "PASS",
+        "n_events": 1,
+        "unsupported": {},
+        "events": {
+          "cdw12f_": [
+            {
+              "t_q": 12.750499999999999,
+              "ok": true
+            }
+          ],
+          "cdw12r_": []
+        }
+      },
+      "w12_conflict": {
+        "result": "PASS",
+        "why": []
+      }
+    },
+    {
+      "probe": "unsupported_preload_then_sufficient_small_supported_increment",
+      "changes": [
+        "passive RC: first .3 s input lies before cause, raises u to .2 V",
+        "no supported earlier interval",
+        "second input lies in cause and supplies remaining rise plus leak",
+        "q at unchanged entry time",
+        "a0=12.703; tq=12.750499999999999; first I=1.1033311132253988e-06; second I=1.5943907994074067e-06; Cm=1.5e-06; Rm=1000000.0"
+      ],
+      "result": "PASS",
+      "physical_ledger": {
+        "nodes": {
+          "load_pos": {
+            "kcl_p99": 3.6710787119938614e-17,
+            "kcl_peak": 4.8576348912233876e-17,
+            "kcl": true,
+            "energy_net_J": 8.422310557437307e-24,
+            "energy_abs_J": 1.4796574288496625e-05,
+            "energy": true,
+            "cap_mismatch_J": 1.7536228986124187e-22,
+            "cap": true,
+            "n_terms": 9,
+            "result": "PASS"
+          },
+          "load_neg": {
+            "kcl_p99": 2.7060028770924785e-17,
+            "kcl_peak": 3.6011529453564945e-17,
+            "kcl": true,
+            "energy_net_J": -9.970109403279783e-24,
+            "energy_abs_J": 1.5382602684528412e-05,
+            "energy": true,
+            "cap_mismatch_J": 1.0852609636695723e-21,
+            "cap": true,
+            "n_terms": 9,
+            "result": "PASS"
+          }
+        },
+        "scope": "KCL/charge/energy at ledger nodes only",
+        "supply_energy_J": -0.0,
+        "fails": [],
+        "result": "PASS"
+      },
+      "failed_gates": {},
+      "w12_cdir_support": {
+        "result": "PASS",
+        "n_events": 1,
+        "unsupported": {},
+        "events": {
+          "cdw12f_": [
+            {
+              "t_q": 12.750499999999999,
+              "ok": true
+            }
+          ],
+          "cdw12r_": []
+        }
+      },
+      "w12_conflict": {
+        "result": "PASS",
+        "why": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+ "schema": "thermal_g3_q1r.protocol.2",
+ "edge_s": 0.001,
+ "total_s": 100.27,
+ "por_settle_s": 10.540000000000001,
+ "roles": {
+  "G0": [
+   {
+    "label": "weak",
+    "t_start_s": 10.54,
+    "t_end_s": 11.09
+   },
+   {
+    "label": "recover_w",
+    "t_start_s": 11.09,
+    "t_end_s": 13.49
+   },
+   {
+    "label": "valid",
+    "t_start_s": 13.49,
+    "t_end_s": 13.65
+   },
+   {
+    "label": "recover_v",
+    "t_start_s": 13.65,
+    "t_end_s": 16.05
+   },
+   {
+    "label": "max",
+    "t_start_s": 16.05,
+    "t_end_s": 17.2
+   },
+   {
+    "label": "withdraw",
+    "t_start_s": 17.2,
+    "t_end_s": 19.6
+   },
+   {
+    "label": "reinput",
+    "t_start_s": 19.6,
+    "t_end_s": 19.76
+   },
+   {
+    "label": "recover_r",
+    "t_start_s": 19.76,
+    "t_end_s": 22.16
+   },
+   {
+    "label": "idle_others_active",
+    "spans": [
+     [
+      22.16,
+      33.93
+     ],
+     [
+      33.93,
+      100.17
+     ]
+    ]
+   },
+   {
+    "label": "idle_before",
+    "t_start_s": 2.29,
+    "t_end_s": 10.54
+   }
+  ],
+  "Sigma": [
+   {
+    "label": "weak",
+    "t_start_s": 22.16,
+    "t_end_s": 22.71
+   },
+   {
+    "label": "recover_w",
+    "t_start_s": 22.71,
+    "t_end_s": 25.12
+   },
+   {
+    "label": "valid",
+    "t_start_s": 25.12,
+    "t_end_s": 25.32
+   },
+   {
+    "label": "recover_v",
+    "t_start_s": 25.32,
+    "t_end_s": 27.73
+   },
+   {
+    "label": "max",
+    "t_start_s": 27.73,
+    "t_end_s": 28.91
+   },
+   {
+    "label": "withdraw",
+    "t_start_s": 28.91,
+    "t_end_s": 31.32
+   },
+   {
+    "label": "reinput",
+    "t_start_s": 31.32,
+    "t_end_s": 31.52
+   },
+   {
+    "label": "recover_r",
+    "t_start_s": 31.52,
+    "t_end_s": 33.93
+   },
+   {
+    "label": "idle_others_active",
+    "spans": [
+     [
+      10.54,
+      22.16
+     ],
+     [
+      33.93,
+      100.17
+     ]
+    ]
+   },
+   {
+    "label": "idle_before",
+    "t_start_s": 2.29,
+    "t_end_s": 22.16
+   }
+  ],
+  "Theta_Cdir": [
+   {
+    "label": "weak",
+    "t_start_s": 33.93,
+    "t_end_s": 42.18
+   },
+   {
+    "label": "recover_w",
+    "t_start_s": 42.18,
+    "t_end_s": 52.23
+   },
+   {
+    "label": "valid",
+    "t_start_s": 52.23,
+    "t_end_s": 60.58
+   },
+   {
+    "label": "recover_v",
+    "t_start_s": 60.58,
+    "t_end_s": 70.63
+   },
+   {
+    "label": "max",
+    "t_start_s": 70.63,
+    "t_end_s": 71.72
+   },
+   {
+    "label": "withdraw",
+    "t_start_s": 71.72,
+    "t_end_s": 81.77
+   },
+   {
+    "label": "reinput",
+    "t_start_s": 81.77,
+    "t_end_s": 90.12
+   },
+   {
+    "label": "recover_r",
+    "t_start_s": 90.12,
+    "t_end_s": 100.17
+   },
+   {
+    "label": "idle_others_active",
+    "spans": [
+     [
+      10.54,
+      22.16
+     ],
+     [
+      22.16,
+      33.93
+     ]
+    ]
+   },
+   {
+    "label": "idle_before",
+    "t_start_s": 2.29,
+    "t_end_s": 33.93
+   }
+  ]
+ },
+ "role_spans": [
+  {
+   "role": "G0",
+   "t_start_s": 10.54,
+   "t_end_s": 22.16
+  },
+  {
+   "role": "Sigma",
+   "t_start_s": 22.16,
+   "t_end_s": 33.93
+  },
+  {
+   "role": "Theta_Cdir",
+   "t_start_s": 33.93,
+   "t_end_s": 100.17
+  }
+ ],
+ "derivation": {
+  "t_por_release_est_s": 2.287385695847819,
+  "tau_m_slow_s": 1.6500000000000001,
+  "certificate_sha_source": "analysis/input_bounds.json",
+  "rule": "POR settle     : POR_R*POR_C*ln(...) release + 5 tau_m of the slowest membrane\n  weak           : >= 5 tau_m,max (steady membrane under the weak input is reached)\n  valid          : T_entry,valid,max + q_max + 50 ms margin, rounded up to 10 ms\n  max            : >= 3 estimated sustained periods + q_max\n  recover        : activity exit (trace below shaping trip) + recovery hold + 5 tau_m,max\n                   (state returns to baseline before the next segment)\n  re-input       : same as valid"
+ }
+}

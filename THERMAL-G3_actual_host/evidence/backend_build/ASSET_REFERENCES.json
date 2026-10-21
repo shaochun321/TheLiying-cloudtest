@@ -1,0 +1,22 @@
+{
+  "offline_kit": {
+    "name": "THERMAL-G3_Linux离线后端补包_2026-10-20.zip",
+    "bytes": 84637357,
+    "sha256": "4d0877c456c70bc85aed22cbfbab1b3373aefd91758456125bdf7ff7d9dcb03a"
+  },
+  "compiler_binary": {
+    "reuse_from_original_offline_kit": "openvaf-dwarning-1.0.0-linux.gz",
+    "gzip_sha256": "8d48d200f8d9006ea87f86448ca7711689b7d9d8acad7138cec1d9f256e6230d",
+    "binary_sha256": "4c3da9c10c1373dc5455b53911bda62eb7582857dbea27dcf72df60d3c618fcd",
+    "binary_bytes": 250564272,
+    "binary_in_this_delivery_zip": false,
+    "reason": "The exact compiler is already retained in the supplied offline kit. This result archive preserves the newly built native solver and OSDI plus all logs without duplicating that 250 MB executable."
+  },
+  "project_runpack": {
+    "name": "thermal_g3_q1r_runpack_9d042b00.zip",
+    "sha256": "7d5192af0efdece691f589dca26d7ea0b704a056ab19a165e19b500d73009f46"
+  },
+  "actual_host_work": "/workspace/scratch/8fecea1ba044/offline_backend_kit_20261020/host_work",
+  "portable_freeze": false,
+  "real_circuit_analyses_started": 0
+}

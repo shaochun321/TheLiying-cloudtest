@@ -1,0 +1,20 @@
+{
+  "schema": "thermal_g3_q1r.actual_host_storage.1",
+  "status": "PASS_WRITABLE_EXPORT_RETRIEVED",
+  "configured_raw_root": "/workspace/scratch/8fecea1ba044/offline_backend_kit_20261020/host_work/execution/thermal_g3_q1r_runpack_9d042b00/thermal_g3_q1_raw",
+  "probe_path": "/workspace/scratch/8fecea1ba044/offline_backend_kit_20261020/host_work/execution/thermal_g3_q1r_runpack_9d042b00/thermal_g3_q1_raw/INFRA_STORAGE_PROBE_75fe3c69437544398ac3d28dbe8be87d.bin",
+  "probe_bytes": 1048576,
+  "probe_sha256": "b127ba802b0f92532079ecea16ec8382a7cb7aaf995fb350ce67db69363734d2",
+  "write_fsync_readback_pass": true,
+  "proof_archive_path": "/workspace/scratch/8fecea1ba044/offline_backend_kit_20261020/host_work/host_validation_20261020/storage_probe_archive_v0.zip",
+  "proof_archive_sha256": "fba5f36d970d3f9fbc064ca86b1663c6f5ea21eab76f3eeeee0ffb0855ae3a7f",
+  "retrieved_archive_path": "/workspace/scratch/8fecea1ba044/offline_backend_kit_20261020/host_work/host_validation_20261020/storage_roundtrip/THERMAL-G3_实际主机冻结与检查_2026-10-20.zip",
+  "retrieved_archive_sha256": "fba5f36d970d3f9fbc064ca86b1663c6f5ea21eab76f3eeeee0ffb0855ae3a7f",
+  "retrieval_verified_utc": "2026-10-20T15:32:36.480347+00:00",
+  "disk_free_bytes_at_probe": 29070815232,
+  "disk_free_bytes_before_freeze": 29067542528,
+  "source_directory_lifetime": "current-session workspace; persistent retention is via saved result archives",
+  "retrieval_scope": "Exact archive and 1 MiB infrastructure payload roundtrip verified; no actual RAW generated",
+  "post_case_preservation": "After each authorized case, save the complete RAW/deck/log/supervisor output plus ledger and verdict before advancing",
+  "capacity_scope": "Estimate later adaptive RAW volume from the two authorized qualification outputs; no capacity smoke simulation added"
+}

@@ -1,0 +1,38 @@
+{
+  "scope": "positive synthetic baseline construction only; no production observer change",
+  "results": {
+    "Q1_MOTHER_PROTOCOL": {
+      "result": "PASS",
+      "failed": {
+        "G0": null,
+        "Sigma": null,
+        "Theta_Cdir": null
+      }
+    },
+    "Q1_MOTHER_HALFSTEP": {
+      "result": "PASS",
+      "failed": {}
+    },
+    "G0_W": {
+      "result": "PASS",
+      "failed": {}
+    },
+    "G0_C": {
+      "result": "PASS",
+      "failed": {}
+    },
+    "G0_CUT_K1": {
+      "result": "PASS",
+      "failed": {}
+    },
+    "G0_CUT_K10": {
+      "result": "PASS",
+      "failed": {}
+    },
+    "NUM_G0_HALFSTEP": {
+      "result": "PASS",
+      "failed": {}
+    }
+  },
+  "real_solver_starts": 0
+}

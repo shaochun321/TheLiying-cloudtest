@@ -1,0 +1,752 @@
+{
+ "schema": "thermal_g3_q1r.selfcheck.1",
+ "solver_starts": 0,
+ "n": 117,
+ "n_pass": 110,
+ "items": {
+  "bench_cm_values_unique": {
+   "result": "PASS",
+   "cm": {
+    "G0": [
+     1e-07
+    ],
+    "Sigma": [
+     1e-07
+    ],
+    "Theta_Cdir": [
+     1.5e-06
+    ]
+   }
+  },
+  "bench_rdis_values_unique": {
+   "result": "PASS",
+   "rdis": {
+    "G0": [
+     220000.0
+    ],
+    "Sigma": [
+     75000.0
+    ],
+    "Theta_Cdir": [
+     12000.0
+    ]
+   }
+  },
+  "bench_canonical_ports_and_loads": {
+   "result": "PASS",
+   "consumer_gate_loads": 9
+  },
+  "bench_explicit_unit_devices": {
+   "result": "PASS"
+  },
+  "bench_stimulus_plateaus_finite_edges": {
+   "result": "PASS",
+   "n_pwl": 7
+  },
+  "bench_roles_staggered": {
+   "result": "PASS",
+   "spans": {
+    "G0": [
+     10.54,
+     22.16
+    ],
+    "Sigma": [
+     22.16,
+     33.93
+    ],
+    "Theta_Cdir": [
+     33.93,
+     100.17
+    ]
+   }
+  },
+  "bench_theta_levels_from_certificate": {
+   "result": "PASS"
+  },
+  "halfstep_identity": {
+   "result": "PASS"
+  },
+  "certificate_runs": {
+   "result": "PASS",
+   "status": "NO_INCOMPATIBILITY_FOUND"
+  },
+  "certificate_unknown_not_pass": {
+   "result": "PASS"
+  },
+  "certificate_never_reports_pass": {
+   "result": "PASS"
+  },
+  "judge_normal_passes": {
+   "result": "PASS",
+   "roles": {
+    "G0": "PASS",
+    "Sigma": "PASS",
+    "Theta_Cdir": "PASS"
+   },
+   "gates": {
+    "G0": {},
+    "Sigma": {},
+    "Theta_Cdir": {}
+   }
+  },
+  "judge_sigma_negative_weak_passes": {
+   "result": "PASS",
+   "expected_du": -0.18397279101207956,
+   "signed_move": 0.18397279101207953
+  },
+  "judge_weak_wrong_sign_fails": {
+   "result": "PASS",
+   "sigma": {
+    "result": "FAIL",
+    "q": 0,
+    "p": 0,
+    "expected_du": -0.18397279101207956,
+    "signed_move": 0.0
+   }
+  },
+  "judge_all_roles_missing_not_pass": {
+   "result": "PASS",
+   "joint": "UNMEASURED"
+  },
+  "judge_missing_vector_not_pass": {
+   "result": "PASS",
+   "sigma": "UNMEASURED"
+  },
+  "judge_short_trace_not_pass": {
+   "result": "PASS",
+   "joint": "UNMEASURED"
+  },
+  "judge_lock_high_after_two_pulses_fails": {
+   "result": "PASS"
+  },
+  "judge_no_recovery_fails": {
+   "result": "PASS"
+  },
+  "judge_rec_not_charged_at_q_end_fails": {
+   "result": "PASS",
+   "rec": {
+    "result": "FAIL",
+    "min_V": 0.05,
+    "req_V": 2.0015178095252835,
+    "n": 4
+   }
+  },
+  "judge_trace_not_charged_at_q_end_fails": {
+   "result": "PASS",
+   "trace": {
+    "result": "FAIL",
+    "min_V": 0.053406,
+    "req_V": 1.503608130063116,
+    "n": 4
+   }
+  },
+  "judge_legal_reinput_not_killed": {
+   "result": "PASS"
+  },
+  "judge_idle_crosstalk_fails": {
+   "result": "PASS"
+  },
+  "readback_unmeasured_without_raw": {
+   "result": "PASS"
+  },
+  "readback_rec_activity_branches_measured": {
+   "result": "PASS",
+   "sample": {
+    "rec_at_q_end_min_V": 2.8982327851061527,
+    "activity_window_s": {
+     "valid": 1.5110000000000028,
+     "reinput": 1.509999999999998
+    },
+    "weak_signed_extreme_du_V": -0.18397279101207953
+   }
+  },
+  "readback_branches_unmeasured_without_plan": {
+   "result": "PASS"
+  },
+  "halfstep_identical_passes": {
+   "result": "PASS",
+   "fails": []
+  },
+  "halfstep_shifted_event_fails": {
+   "result": "PASS",
+   "fails": [
+    "events v(g0_q)",
+    "events v(g0_op_aq)",
+    "events v(g0_op_p)"
+   ]
+  },
+  "halfstep_missing_vector_unmeasured": {
+   "result": "PASS",
+   "why": "halfstep missing ['v(sg_rec)']"
+  },
+  "formal_legal_synthetic_all_pass": {
+   "result": "FAIL",
+   "n": 31,
+   "failed": {
+    "CHAIN_12_C_F": {
+     "sigma_spatial_support_all_events": "FAIL"
+    },
+    "CHAIN_12_C_R": {
+     "sigma_spatial_support_all_events": "FAIL"
+    },
+    "CHAIN_12_W_F": {
+     "sigma_spatial_support_all_events": "FAIL",
+     "cdir_support_all_events": "FAIL"
+    },
+    "CHAIN_12_W_R": {
+     "sigma_spatial_support_all_events": "FAIL"
+    },
+    "CHAIN_23_C_F": {
+     "sigma_spatial_support_all_events": "FAIL"
+    },
+    "CHAIN_23_C_R": {
+     "sigma_spatial_support_all_events": "FAIL"
+    },
+    "CHAIN_23_W_F": {
+     "sigma_spatial_support_all_events": "FAIL"
+    },
+    "CHAIN_23_W_R": {
+     "sigma_spatial_support_all_events": "FAIL"
+    },
+    "CHAIN_34_C_F": {
+     "sigma_spatial_support_all_events": "FAIL"
+    },
+    "CHAIN_34_C_R": {
+     "sigma_spatial_support_all_events": "FAIL"
+    },
+    "CHAIN_34_W_F": {
+     "sigma_spatial_support_all_events": "FAIL"
+    },
+    "CHAIN_34_W_R": {
+     "sigma_spatial_support_all_events": "FAIL"
+    },
+    "FULL_NOM": {
+     "w12_sigma_spatial_support_all_events": "FAIL",
+     "w23_sigma_spatial_support_all_events": "FAIL",
+     "w34_sigma_spatial_support_all_events": "FAIL",
+     "c12_sigma_spatial_support_all_events": "FAIL",
+     "c23_sigma_spatial_support_all_events": "FAIL",
+     "c34_sigma_spatial_support_all_events": "FAIL"
+    },
+    "INVALID_STALE": {
+     "sigma_spatial_support_all_events": "FAIL"
+    },
+    "INVALID_SYNC": {
+     "theta_support_all_events": "FAIL",
+     "sigma_spatial_support_all_events": "FAIL"
+    },
+    "FULL_REAL_MIRROR": {
+     "w12_sigma_spatial_support_all_events": "FAIL",
+     "w23_sigma_spatial_support_all_events": "FAIL",
+     "w34_sigma_spatial_support_all_events": "FAIL",
+     "c12_sigma_spatial_support_all_events": "FAIL",
+     "c23_sigma_spatial_support_all_events": "FAIL",
+     "c34_sigma_spatial_support_all_events": "FAIL"
+    },
+    "FULL_SPACE_CUT": {
+     "w12_sigma_spatial_support_all_events": "FAIL",
+     "w34_sigma_spatial_support_all_events": "FAIL",
+     "c12_sigma_spatial_support_all_events": "FAIL",
+     "c34_sigma_spatial_support_all_events": "FAIL"
+    },
+    "STRUCT_CDIR_HISTORY_BLEED": {
+     "sigma_spatial_support_all_events": "FAIL"
+    },
+    "STRUCT_REAL_SIGMA_SWAP": {
+     "sigma_spatial_support_all_events": "FAIL"
+    },
+    "STRUCT_SIGMA_PORT_CUT": {
+     "sigma_spatial_support_all_events": "FAIL"
+    },
+    "STRUCT_THETA_PORT_CUT": {
+     "sigma_spatial_support_all_events": "FAIL"
+    }
+   }
+  },
+  "g0_no_common_trace_window_fails": {
+   "result": "PASS",
+   "judge_result": "FAIL"
+  },
+  "g0_no_repeat_fails": {
+   "result": "PASS",
+   "judge_result": "FAIL"
+  },
+  "g0_port_twice_fails": {
+   "result": "PASS"
+  },
+  "g0_collector_before_and_fails": {
+   "result": "PASS",
+   "t_col_legal": 11.4305
+  },
+  "g0_cut_group_output_fails": {
+   "result": "PASS"
+  },
+  "g0_cut_without_baseline_unmeasured": {
+   "result": "PASS"
+  },
+  "chain_child_before_parents_fails": {
+   "result": "PASS",
+   "early": [
+    10.6995
+   ]
+  },
+  "chain_theta_outside_target_activity_fails": {
+   "result": "PASS"
+  },
+  "chain_load_not_consumed_fails": {
+   "result": "PASS"
+  },
+  "chain_opposite_cdir_fails": {
+   "result": "PASS"
+  },
+  "chain_missing_load_pos_unmeasured": {
+   "result": "PASS",
+   "why": "missing ['v(load_pos)']"
+  },
+  "chain_not_returned_fails": {
+   "result": "PASS"
+  },
+  "struct_port_cut_cdir_fires_fails": {
+   "result": "PASS"
+  },
+  "struct_without_baseline_unmeasured": {
+   "result": "PASS"
+  },
+  "struct_bleed_history_not_bled_fails": {
+   "result": "PASS"
+  },
+  "struct_swap_not_reversed_fails": {
+   "result": "PASS"
+  },
+  "invalid_sync_not_synchronous_fails": {
+   "result": "PASS"
+  },
+  "invalid_stale_history_valid_fails": {
+   "result": "PASS"
+  },
+  "full_silent_parents_fails": {
+   "result": "PASS"
+  },
+  "full_wrong_window_fails": {
+   "result": "PASS"
+  },
+  "full_mirror_unswapped_fails": {
+   "result": "PASS"
+  },
+  "full_space_cut_edge_fires_fails": {
+   "result": "PASS"
+  },
+  "full_cool_rail_not_consumed_fails": {
+   "result": "PASS"
+  },
+  "num_g0_mapping_passes": {
+   "result": "PASS",
+   "roles": [
+    {
+     "core": "gw1_col_",
+     "port": "gw1_op_",
+     "rdis": 220000.0
+    }
+   ]
+  },
+  "full_num_halfstep_vs_full_nom_shift_fails": {
+   "result": "PASS",
+   "n_roles": 36
+  },
+  "halfstep_formal_missing_vector_unmeasured": {
+   "result": "PASS",
+   "why": "halfstep missing ['v(thw12f_rec)']"
+  },
+  "halfstep_without_baseline_unmeasured": {
+   "result": "PASS"
+  },
+  "dc_references_at_10V_fail": {
+   "result": "PASS"
+  },
+  "dc_supply_kcl_mismatch_fails": {
+   "result": "PASS"
+  },
+  "dc_model_domain_outside_fails": {
+   "result": "PASS",
+   "outside": [
+    "ns1_mpor",
+    "ns2_mpor",
+    "ns3_mpor"
+   ]
+  },
+  "support_review_chain_no_history_no_spatial_fails": {
+   "result": "PASS",
+   "gates": {
+    "theta_support_all_events": "FAIL",
+    "sigma_spatial_support_all_events": "FAIL",
+    "cdir_support_all_events": "FAIL",
+    "parents_after_stimulus": "PASS"
+   }
+  },
+  "support_review_full_no_activity_fails": {
+   "result": "PASS",
+   "gates": {
+    "w12_theta_support_all_events": "FAIL",
+    "w12_ports_canonical": "FAIL",
+    "w12_load_consumed_in_cdir_activity": "FAIL",
+    "w12_f_chain_in_block": "PASS"
+   }
+  },
+  "support_sigma_equipotential_fails": {
+   "result": "PASS"
+  },
+  "support_theta_injection_outside_support_fails": {
+   "result": "FAIL",
+   "why": {
+    "thw12f_": [
+     {
+      "t_q": 12.6995,
+      "a_prime": 11.81,
+      "ok": false,
+      "cause": [
+       12.503,
+       14.002
+      ],
+      "dv_V": 0.24064881556683593,
+      "v_start_V": 0.9912166666666665,
+      "q_inj_C": 2.9947428616751273e-07,
+      "q_cause_C": 3.964911167512656e-09,
+      "q_need_C": 3.248759010152285e-07,
+      "q_sh_C": 0.0,
+      "q_leak_C": 1.1839987618443296e-07,
+      "q_residual_C": -1.7989881336717414e-07,
+      "balance_ok": false,
+      "why": "charge balance: Q_in=2.995e-07 Q_sh=0.000e+00 Q_leak=1.184e-07 Q_cap=3.610e-07 residual=-1.799e-07 C; insufficient cause fraction (Q_cause=3.965e-09 vs Q_in=2.995e-07)"
+     }
+    ]
+   }
+  },
+  "support_theta_vm_without_charge_fails": {
+   "result": "FAIL"
+  },
+  "support_hs_without_matching_sigma_fails": {
+   "result": "PASS"
+  },
+  "support_conflict_with_cdir_firing_fails": {
+   "result": "FAIL",
+   "why": {
+    "cdw12f_": [
+     {
+      "t_q": 13.750499999999999,
+      "a_prime": 12.700999999999999,
+      "ok": false,
+      "cause": [
+       12.703,
+       14.202
+      ],
+      "dv_V": 0.24346389826676773,
+      "v_start_V": 0.989,
+      "q_inj_C": 7.667125978616818e-07,
+      "q_cause_C": 7.667125978616818e-07,
+      "q_need_C": 3.2867626266013645e-07,
+      "q_sh_C": 0.0,
+      "q_leak_C": 1.2708815489525208e-07,
+      "q_residual_C": 2.744285955662782e-07,
+      "balance_ok": false,
+      "why": "charge balance: Q_in=7.667e-07 Q_sh=0.000e+00 Q_leak=1.271e-07 Q_cap=3.652e-07 residual=2.744e-07 C"
+     }
+    ]
+   }
+  },
+  "support_weak_conflict_residual_passes": {
+   "result": "FAIL"
+  },
+  "support_later_unsupported_event_fails": {
+   "result": "PASS",
+   "unsupported": [
+    13.750499999999999,
+    36.1995
+   ]
+  },
+  "support_retained_charge_from_prior_pulse_passes": {
+   "result": "FAIL",
+   "v_start_event2": 1.139,
+   "overall": "FAIL",
+   "cdir_gate": "FAIL"
+  },
+  "support_load_current_outside_cdir_activity_fails": {
+   "result": "PASS"
+  },
+  "support_rail_rise_without_cdir_activity_fails": {
+   "result": "PASS"
+  },
+  "support_cdir_activity_zero_load_claimed_fails": {
+   "result": "PASS"
+  },
+  "support_pulse_outside_activity_fails": {
+   "result": "PASS"
+  },
+  "support_two_pulses_in_one_activity_fails": {
+   "result": "PASS"
+  },
+  "support_legal_sigma_before_theta_integration_delay_passes": {
+   "result": "FAIL",
+   "sigma_q": 11.101,
+   "theta_q": 12.700000000000001,
+   "cdir_events": 2,
+   "gates": [
+    "theta_support_all_events",
+    "sigma_spatial_support_all_events",
+    "cdir_hs_from_matching_sigma",
+    "cdir_support_all_events",
+    "cdir_conflict_consistent",
+    "ports_canonical",
+    "load_consumed_in_cdir_activity"
+   ]
+  },
+  "support_injection_read_from_ledger_terms": {
+   "result": "PASS"
+  },
+  "support_full_injection_read_from_probes": {
+   "result": "PASS"
+  },
+  "ledger_current_plus5pct_fails_CHAIN_12_W_F": {
+   "result": "PASS",
+   "node": "thw12f_vm",
+   "term": "nthw12f_porm",
+   "kcl_peak": 0.024390243902439063
+  },
+  "ledger_current_plus5pct_fails_FULL_NOM": {
+   "result": "PASS",
+   "node": "load_pos",
+   "term": "rldpos",
+   "kcl_peak": 0.024390243902439074
+  },
+  "ledger_missing_current_not_pass": {
+   "result": "PASS"
+  },
+  "static_chain_closure_passes": {
+   "result": "PASS"
+  },
+  "static_chain_missing_load_pos_caught": {
+   "result": "PASS"
+  },
+  "static_halfstep_baseline_missing_vector_caught": {
+   "result": "PASS",
+   "missing": [
+    "v(gw1_col_rec)"
+   ]
+  },
+  "deck_identity_independent_of_backend_paths": {
+   "result": "PASS"
+  },
+  "coord_refuses_without_permission": {
+   "result": "PASS",
+   "out": {
+    "refused": "no launch permission (prereg/LAUNCH_PERMISSION.json)"
+   }
+  },
+  "coord_formal_refused_before_qual": {
+   "result": "PASS",
+   "out": {
+    "refused": "formal refused: qualification Q1_MOTHER_PROTOCOL has no scientific PASS"
+   }
+  },
+  "coord_qual_protocol_judged_pass": {
+   "result": "PASS",
+   "out": {
+    "aid": "qual-001",
+    "status": "complete",
+    "scientific": "PASS"
+   }
+  },
+  "coord_verdict_bound_to_freeze_deck_raw_judge": {
+   "result": "PASS",
+   "keys": [
+    "analysis_id",
+    "backend",
+    "case_id",
+    "deck_sha256",
+    "freeze_sha256",
+    "judge_output",
+    "raw_path",
+    "raw_sha256",
+    "required",
+    "scientific",
+    "t"
+   ]
+  },
+  "coord_no_repeat_without_infra_failure": {
+   "result": "PASS",
+   "out": {
+    "refused": "case already run; only an infrastructure failure may be rerun"
+   }
+  },
+  "coord_formal_refused_until_halfstep_pass": {
+   "result": "PASS",
+   "out": {
+    "refused": "formal refused: qualification Q1_MOTHER_HALFSTEP has no scientific PASS"
+   }
+  },
+  "coord_halfstep_judged_against_protocol_raw": {
+   "result": "PASS",
+   "out": {
+    "aid": "qual-002",
+    "status": "complete",
+    "scientific": "PASS"
+   }
+  },
+  "coord_formal_unblocked_after_qual_pass": {
+   "result": "PASS",
+   "out": {
+    "aid": "formal-001",
+    "status": "complete",
+    "scientific": "PASS"
+   }
+  },
+  "coord_num_g0_halfstep_vs_g0_w_pass": {
+   "result": "PASS",
+   "out": {
+    "aid": "formal-002",
+    "status": "complete",
+    "scientific": "PASS"
+   }
+  },
+  "coord_infra_failure_rerunnable": {
+   "result": "PASS",
+   "out": {
+    "aid": "rerun-001",
+    "status": "complete",
+    "scientific": "PASS"
+   }
+  },
+  "coord_rerun_only_after_infra_failure": {
+   "result": "PASS",
+   "out": {
+    "refused": "rerun only after a preregistered infrastructure failure of this case"
+   }
+  },
+  "coord_required_fail_stops_round": {
+   "result": "PASS",
+   "out": [
+    {
+     "aid": "formal-004",
+     "status": "complete",
+     "scientific": "FAIL"
+    },
+    {
+     "refused": "round stopped: {\"case_id\": \"G0_C\", \"analysis_id\": \"formal-004\", \"reason\": \"scientific FAIL\"}"
+    }
+   ]
+  },
+  "coord_changed_asset_refused": {
+   "result": "PASS",
+   "out": {
+    "refused": "frozen file changed or missing: netlists/params.py"
+   }
+  },
+  "coord_changed_case_refused": {
+   "result": "PASS",
+   "out": {
+    "refused": "frozen file changed or missing: prereg/cases_q1r.json"
+   }
+  },
+  "coord_env_override_refused": {
+   "result": "PASS",
+   "out": "RES{\"refused\": \"environment override THERMAL_G3_OSDI differs from the frozen asset\"}"
+  },
+  "coord_unmeasured_blocks_dependants": {
+   "result": "PASS",
+   "out": [
+    {
+     "aid": "qual-001",
+     "status": "complete",
+     "scientific": "PASS"
+    },
+    {
+     "aid": "qual-002",
+     "status": "complete",
+     "scientific": "UNMEASURED"
+    },
+    {
+     "refused": "formal refused: qualification Q1_MOTHER_HALFSTEP has no scientific PASS"
+    }
+   ]
+  },
+  "coord_record_verdict_guards": {
+   "result": "PASS",
+   "out": {
+    "unknown": "verdict refused: unknown analysis qual-999",
+    "raw_changed": "verdict refused: raw missing or changed since the run",
+    "foreign": "verdict refused: analysis belongs to a different freeze",
+    "incomplete": "verdict refused: formal-901 status timeout_killed",
+    "public": false
+   }
+  },
+  "coord_cost_gate_forecast_from_measured": {
+   "result": "PASS",
+   "out": {
+    "measured": 745.6326533999945,
+    "over": "cost gate: forecast 171000 s of remaining formal cases exceeds phase 105310 s / total 147542 s"
+   }
+  },
+  "coord_cost_gate_refuses_over_budget": {
+   "result": "PASS",
+   "out": {
+    "measured": 745.6326533999945,
+    "over": "cost gate: forecast 171000 s of remaining formal cases exceeds phase 105310 s / total 147542 s"
+   }
+  },
+  "coord_backend_fixed_by_first_start": {
+   "result": "PASS",
+   "out": {
+    "refused": "backend differs from the backend of this round's first start (qual-001)"
+   },
+   "reg": "selfcheck_c9p98wpc\\pkg\\prereg\\backend_registration.json 6a3afecaf321b5a72075a7dd86fb1bb90c92fae59c51ef40bd42e8ca8677aa3c"
+  },
+  "coord_nan_rejected": {
+   "result": "PASS",
+   "out": "vector v(vdd) short or non-finite"
+  },
+  "coord_short_raw_rejected": {
+   "result": "PASS",
+   "out": "raw ends at 50.135, stop 100.27"
+  },
+  "coord_bad_axis_rejected": {
+   "result": "PASS",
+   "out": "time axis not finite / strictly increasing"
+  },
+  "coord_abort_rejected": {
+   "result": "PASS",
+   "out": "log contains 'simulation(s) aborted'"
+  },
+  "coord_aborted_raw_no_verdict_round_stopped": {
+   "result": "PASS",
+   "stopped": "{\"case_id\": \"Q1_MOTHER_PROTOCOL\", \"analysis_id\": \"qual-001\", \"reason\": \"execution failure: log contains 'simulation(s) aborted'\"}",
+   "out": "REFUSED round stopped: {\"case_id\": \"Q1_MOTHER_PROTOCOL\", \"analysis_id\": \"qual-001\", \"reason\": \"execution failure: log contains 'simulation(s) aborted'\"}"
+  },
+  "coord_solver_failure_not_rerunnable": {
+   "result": "PASS",
+   "out": "REFUSED rerun only after a preregistered infrastructure failure of this case"
+  },
+  "coord_empty_required_rejected": {
+   "result": "PASS",
+   "out": "no raw output"
+  },
+  "coord_empty_required_list_is_failure": {
+   "result": "PASS",
+   "out": "raw parse: ValueError('subsection not found')"
+  },
+  "coord_supervisor_kills_tree_after_coordinator_death": {
+   "result": "PASS",
+   "child": 10580
+  },
+  "coord_start_cap_refused": {
+   "result": "PASS",
+   "out": "REFUSED qualification start cap 2 reached"
+  },
+  "coord_phase_wall_cap_refused": {
+   "result": "PASS",
+   "out": "REFUSED qualification wall cap"
+  },
+  "coord_clean_directory_works": {
+   "result": "PASS",
+   "out": "qual-001 complete FAIL"
+  }
+ }
+}

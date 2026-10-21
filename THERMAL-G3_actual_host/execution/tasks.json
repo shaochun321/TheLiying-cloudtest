@@ -1,0 +1,617 @@
+{
+ "schema": "thermal_g3_q1r.tasks.1",
+ "freeze_sha256": "9d042b00195dbac895f2db3677ef4754f115b68063914a3075fb0975a9b02673",
+ "freeze_status": "NOT_READY",
+ "backend_policy": "one backend per round, fixed by the first start; cloud -> from Q1_MOTHER_PROTOCOL onwards",
+ "backends": {
+  "windows-x64": {
+   "status": "HISTORICAL_ASSETS_ONLY_NOT_THIS_FREEZE_BACKEND",
+   "ngspice_exe_sha256": "22d5cae2bd32b2e39157a8d27bf457122f68285b72a9ebefdf41551b628233ab",
+   "ngspice_archive": "backend/windows-x64/ngspice-47_64.7z",
+   "ngspice_archive_sha256": "59225971bd68cdd1199443649aa4615a9e6d684933f205ab49006a3942518f5a",
+   "osdi": "backend/windows-x64/ekv26_r1.osdi",
+   "osdi_sha256": "39c1cdbc3dfa00093d708c5d0d34d8af05960b0f33b0568810bbfb930bc91d77",
+   "note": "on another Windows host the install paths differ: register + re-freeze as in RUN.md"
+  },
+  "linux-x64": {
+   "status": "NOT_READY",
+   "build": "OpenVAF 1.0.0 -D__NGSPICE__ from thermal_g3_q1/backend/ekv_src; ngspice-47"
+  }
+ },
+ "budget": {
+  "dev_closed": 24,
+  "qualification": 2,
+  "formal": 31,
+  "rerun": 4,
+  "total": 61,
+  "global_wall_cap_s": 172800,
+  "phase_wall_caps_s": {
+   "qualification": 1200,
+   "formal": 108000,
+   "rerun": 14400
+  },
+  "v1_wall_used_s": 22565.592149972916,
+  "q1_starts_so_far": 0,
+  "per_backend_budget": null,
+  "cross_platform_gate": null,
+  "rerun_policy": "registered infrastructure failures only (runtime/coordinator.py INFRA_FAILURES)"
+ },
+ "not_started": [
+  "Q1_MOTHER_PROTOCOL",
+  "Q1_MOTHER_HALFSTEP",
+  "G0_W",
+  "G0_C",
+  "G0_CUT_K1",
+  "G0_CUT_K10",
+  "CHAIN_12_W_F",
+  "CHAIN_12_W_R",
+  "CHAIN_12_C_F",
+  "CHAIN_12_C_R",
+  "CHAIN_23_W_F",
+  "CHAIN_23_W_R",
+  "CHAIN_23_C_F",
+  "CHAIN_23_C_R",
+  "CHAIN_34_W_F",
+  "CHAIN_34_W_R",
+  "CHAIN_34_C_F",
+  "CHAIN_34_C_R",
+  "STRUCT_THETA_PORT_CUT",
+  "STRUCT_SIGMA_PORT_CUT",
+  "STRUCT_CDIR_HISTORY_BLEED",
+  "STRUCT_REAL_SIGMA_SWAP",
+  "INVALID_SYNC",
+  "INVALID_STALE",
+  "FULL_NOM",
+  "FULL_REAL_MIRROR",
+  "FULL_SPACE_CUT",
+  "FULL_NUM_HALFSTEP",
+  "NUM_G0_HALFSTEP",
+  "NUM_CHAIN_HALFSTEP",
+  "DC_2P7",
+  "DC_3",
+  "DC_3P2"
+ ],
+ "order": [
+  "Q1_MOTHER_PROTOCOL",
+  "Q1_MOTHER_HALFSTEP",
+  "CHAIN_12_W_F",
+  "DC_2P7",
+  "DC_3",
+  "DC_3P2",
+  "G0_W",
+  "CHAIN_12_C_F",
+  "CHAIN_12_C_R",
+  "CHAIN_12_W_R",
+  "CHAIN_23_C_F",
+  "CHAIN_23_C_R",
+  "CHAIN_23_W_F",
+  "CHAIN_23_W_R",
+  "CHAIN_34_C_F",
+  "CHAIN_34_C_R",
+  "CHAIN_34_W_F",
+  "CHAIN_34_W_R",
+  "G0_C",
+  "G0_CUT_K1",
+  "G0_CUT_K10",
+  "INVALID_STALE",
+  "INVALID_SYNC",
+  "NUM_CHAIN_HALFSTEP",
+  "NUM_G0_HALFSTEP",
+  "STRUCT_CDIR_HISTORY_BLEED",
+  "STRUCT_REAL_SIGMA_SWAP",
+  "STRUCT_SIGMA_PORT_CUT",
+  "STRUCT_THETA_PORT_CUT",
+  "FULL_NOM",
+  "FULL_NUM_HALFSTEP",
+  "FULL_REAL_MIRROR",
+  "FULL_SPACE_CUT"
+ ],
+ "cases": [
+  {
+   "case_id": "Q1_MOTHER_PROTOCOL",
+   "phase": "qualification",
+   "group": "MOTHER",
+   "scale": "mother_bench",
+   "analysis": "tran 0.001 100.27 0 0.00025",
+   "timeout_s": 600,
+   "depends_on": [],
+   "baseline_case_id": null
+  },
+  {
+   "case_id": "Q1_MOTHER_HALFSTEP",
+   "phase": "qualification",
+   "group": "MOTHER",
+   "scale": "mother_bench",
+   "analysis": "tran 0.001 100.27 0 0.000125",
+   "timeout_s": 600,
+   "depends_on": [
+    "Q1_MOTHER_PROTOCOL"
+   ],
+   "baseline_case_id": "Q1_MOTHER_PROTOCOL"
+  },
+  {
+   "case_id": "G0_W",
+   "phase": "formal",
+   "group": "G0",
+   "scale": "single_site_single_polarity",
+   "analysis": "tran 0.001 64.8 0 0.0005",
+   "timeout_s": 2700,
+   "depends_on": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP"
+   ],
+   "baseline_case_id": null
+  },
+  {
+   "case_id": "G0_C",
+   "phase": "formal",
+   "group": "G0",
+   "scale": "single_site_single_polarity",
+   "analysis": "tran 0.001 64.8 0 0.0005",
+   "timeout_s": 2700,
+   "depends_on": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP",
+    "G0_W"
+   ],
+   "baseline_case_id": null
+  },
+  {
+   "case_id": "G0_CUT_K1",
+   "phase": "formal",
+   "group": "G0",
+   "scale": "single_site_single_polarity",
+   "analysis": "tran 0.001 64.8 0 0.0005",
+   "timeout_s": 2700,
+   "depends_on": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP",
+    "G0_W"
+   ],
+   "baseline_case_id": "G0_W"
+  },
+  {
+   "case_id": "G0_CUT_K10",
+   "phase": "formal",
+   "group": "G0",
+   "scale": "single_site_single_polarity",
+   "analysis": "tran 0.001 64.8 0 0.0005",
+   "timeout_s": 2700,
+   "depends_on": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP",
+    "G0_W"
+   ],
+   "baseline_case_id": "G0_W"
+  },
+  {
+   "case_id": "CHAIN_12_W_F",
+   "phase": "formal",
+   "group": "CHAIN",
+   "scale": "two_actual_G0_parent_chain",
+   "analysis": "tran 0.001 39.2 0 0.0005",
+   "timeout_s": 5400,
+   "depends_on": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP"
+   ],
+   "baseline_case_id": null
+  },
+  {
+   "case_id": "CHAIN_12_W_R",
+   "phase": "formal",
+   "group": "CHAIN",
+   "scale": "two_actual_G0_parent_chain",
+   "analysis": "tran 0.001 40.7 0 0.0005",
+   "timeout_s": 5400,
+   "depends_on": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP",
+    "CHAIN_12_W_F"
+   ],
+   "baseline_case_id": null
+  },
+  {
+   "case_id": "CHAIN_12_C_F",
+   "phase": "formal",
+   "group": "CHAIN",
+   "scale": "two_actual_G0_parent_chain",
+   "analysis": "tran 0.001 39.2 0 0.0005",
+   "timeout_s": 5400,
+   "depends_on": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP",
+    "CHAIN_12_W_F"
+   ],
+   "baseline_case_id": null
+  },
+  {
+   "case_id": "CHAIN_12_C_R",
+   "phase": "formal",
+   "group": "CHAIN",
+   "scale": "two_actual_G0_parent_chain",
+   "analysis": "tran 0.001 40.7 0 0.0005",
+   "timeout_s": 5400,
+   "depends_on": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP",
+    "CHAIN_12_W_F"
+   ],
+   "baseline_case_id": null
+  },
+  {
+   "case_id": "CHAIN_23_W_F",
+   "phase": "formal",
+   "group": "CHAIN",
+   "scale": "two_actual_G0_parent_chain",
+   "analysis": "tran 0.001 39.2 0 0.0005",
+   "timeout_s": 5400,
+   "depends_on": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP",
+    "CHAIN_12_W_F"
+   ],
+   "baseline_case_id": null
+  },
+  {
+   "case_id": "CHAIN_23_W_R",
+   "phase": "formal",
+   "group": "CHAIN",
+   "scale": "two_actual_G0_parent_chain",
+   "analysis": "tran 0.001 40.7 0 0.0005",
+   "timeout_s": 5400,
+   "depends_on": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP",
+    "CHAIN_12_W_F"
+   ],
+   "baseline_case_id": null
+  },
+  {
+   "case_id": "CHAIN_23_C_F",
+   "phase": "formal",
+   "group": "CHAIN",
+   "scale": "two_actual_G0_parent_chain",
+   "analysis": "tran 0.001 39.2 0 0.0005",
+   "timeout_s": 5400,
+   "depends_on": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP",
+    "CHAIN_12_W_F"
+   ],
+   "baseline_case_id": null
+  },
+  {
+   "case_id": "CHAIN_23_C_R",
+   "phase": "formal",
+   "group": "CHAIN",
+   "scale": "two_actual_G0_parent_chain",
+   "analysis": "tran 0.001 40.7 0 0.0005",
+   "timeout_s": 5400,
+   "depends_on": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP",
+    "CHAIN_12_W_F"
+   ],
+   "baseline_case_id": null
+  },
+  {
+   "case_id": "CHAIN_34_W_F",
+   "phase": "formal",
+   "group": "CHAIN",
+   "scale": "two_actual_G0_parent_chain",
+   "analysis": "tran 0.001 39.2 0 0.0005",
+   "timeout_s": 5400,
+   "depends_on": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP",
+    "CHAIN_12_W_F"
+   ],
+   "baseline_case_id": null
+  },
+  {
+   "case_id": "CHAIN_34_W_R",
+   "phase": "formal",
+   "group": "CHAIN",
+   "scale": "two_actual_G0_parent_chain",
+   "analysis": "tran 0.001 40.7 0 0.0005",
+   "timeout_s": 5400,
+   "depends_on": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP",
+    "CHAIN_12_W_F"
+   ],
+   "baseline_case_id": null
+  },
+  {
+   "case_id": "CHAIN_34_C_F",
+   "phase": "formal",
+   "group": "CHAIN",
+   "scale": "two_actual_G0_parent_chain",
+   "analysis": "tran 0.001 39.2 0 0.0005",
+   "timeout_s": 5400,
+   "depends_on": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP",
+    "CHAIN_12_W_F"
+   ],
+   "baseline_case_id": null
+  },
+  {
+   "case_id": "CHAIN_34_C_R",
+   "phase": "formal",
+   "group": "CHAIN",
+   "scale": "two_actual_G0_parent_chain",
+   "analysis": "tran 0.001 40.7 0 0.0005",
+   "timeout_s": 5400,
+   "depends_on": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP",
+    "CHAIN_12_W_F"
+   ],
+   "baseline_case_id": null
+  },
+  {
+   "case_id": "STRUCT_THETA_PORT_CUT",
+   "phase": "formal",
+   "group": "STRUCTURE",
+   "scale": "two_actual_G0_parent_chain",
+   "analysis": "tran 0.001 39.2 0 0.0005",
+   "timeout_s": 5400,
+   "depends_on": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP",
+    "CHAIN_12_W_F"
+   ],
+   "baseline_case_id": "CHAIN_12_W_F"
+  },
+  {
+   "case_id": "STRUCT_SIGMA_PORT_CUT",
+   "phase": "formal",
+   "group": "STRUCTURE",
+   "scale": "two_actual_G0_parent_chain",
+   "analysis": "tran 0.001 39.2 0 0.0005",
+   "timeout_s": 5400,
+   "depends_on": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP",
+    "CHAIN_12_W_F"
+   ],
+   "baseline_case_id": "CHAIN_12_W_F"
+  },
+  {
+   "case_id": "STRUCT_CDIR_HISTORY_BLEED",
+   "phase": "formal",
+   "group": "STRUCTURE",
+   "scale": "two_actual_G0_parent_chain",
+   "analysis": "tran 0.001 39.2 0 0.0005",
+   "timeout_s": 5400,
+   "depends_on": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP",
+    "CHAIN_12_W_F"
+   ],
+   "baseline_case_id": "CHAIN_12_W_F"
+  },
+  {
+   "case_id": "STRUCT_REAL_SIGMA_SWAP",
+   "phase": "formal",
+   "group": "STRUCTURE",
+   "scale": "two_actual_G0_parent_chain",
+   "analysis": "tran 0.001 39.2 0 0.0005",
+   "timeout_s": 5400,
+   "depends_on": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP",
+    "CHAIN_12_W_F"
+   ],
+   "baseline_case_id": "CHAIN_12_W_F"
+  },
+  {
+   "case_id": "INVALID_SYNC",
+   "phase": "formal",
+   "group": "STRUCTURE",
+   "scale": "two_actual_G0_parent_chain",
+   "analysis": "tran 0.001 37.7 0 0.0005",
+   "timeout_s": 5400,
+   "depends_on": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP",
+    "CHAIN_12_W_F"
+   ],
+   "baseline_case_id": null
+  },
+  {
+   "case_id": "INVALID_STALE",
+   "phase": "formal",
+   "group": "STRUCTURE",
+   "scale": "two_actual_G0_parent_chain",
+   "analysis": "tran 0.001 56.5 0 0.0005",
+   "timeout_s": 5400,
+   "depends_on": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP",
+    "CHAIN_12_W_F"
+   ],
+   "baseline_case_id": null
+  },
+  {
+   "case_id": "FULL_NOM",
+   "phase": "formal",
+   "group": "FULL",
+   "scale": "four_sites_both_polarities_124_cores",
+   "analysis": "tran 0.001 83.2 0 0.0005",
+   "timeout_s": 14400,
+   "depends_on": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP",
+    "CHAIN_12_W_F",
+    "STRUCT_THETA_PORT_CUT"
+   ],
+   "baseline_case_id": null
+  },
+  {
+   "case_id": "FULL_REAL_MIRROR",
+   "phase": "formal",
+   "group": "FULL",
+   "scale": "four_sites_both_polarities_124_cores",
+   "analysis": "tran 0.001 83.2 0 0.0005",
+   "timeout_s": 14400,
+   "depends_on": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP",
+    "FULL_NOM"
+   ],
+   "baseline_case_id": "FULL_NOM"
+  },
+  {
+   "case_id": "FULL_SPACE_CUT",
+   "phase": "formal",
+   "group": "FULL",
+   "scale": "four_sites_both_polarities_124_cores",
+   "analysis": "tran 0.001 83.2 0 0.0005",
+   "timeout_s": 14400,
+   "depends_on": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP",
+    "FULL_NOM"
+   ],
+   "baseline_case_id": "FULL_NOM"
+  },
+  {
+   "case_id": "FULL_NUM_HALFSTEP",
+   "phase": "formal",
+   "group": "FULL",
+   "scale": "four_sites_both_polarities_124_cores",
+   "analysis": "tran 0.001 83.2 0 0.00025",
+   "timeout_s": 14400,
+   "depends_on": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP",
+    "FULL_NOM"
+   ],
+   "baseline_case_id": "FULL_NOM"
+  },
+  {
+   "case_id": "NUM_G0_HALFSTEP",
+   "phase": "formal",
+   "group": "NUM",
+   "scale": "single_site_single_polarity",
+   "analysis": "tran 0.001 64.8 0 0.00025",
+   "timeout_s": 2700,
+   "depends_on": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP",
+    "G0_W"
+   ],
+   "baseline_case_id": "G0_W"
+  },
+  {
+   "case_id": "NUM_CHAIN_HALFSTEP",
+   "phase": "formal",
+   "group": "NUM",
+   "scale": "two_actual_G0_parent_chain",
+   "analysis": "tran 0.001 39.2 0 0.00025",
+   "timeout_s": 5400,
+   "depends_on": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP",
+    "CHAIN_12_W_F"
+   ],
+   "baseline_case_id": "CHAIN_12_W_F"
+  },
+  {
+   "case_id": "DC_2P7",
+   "phase": "formal",
+   "group": "DC",
+   "scale": "four_sites_both_polarities_124_cores",
+   "analysis": "op",
+   "timeout_s": 900,
+   "depends_on": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP"
+   ],
+   "baseline_case_id": null
+  },
+  {
+   "case_id": "DC_3",
+   "phase": "formal",
+   "group": "DC",
+   "scale": "four_sites_both_polarities_124_cores",
+   "analysis": "op",
+   "timeout_s": 900,
+   "depends_on": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP"
+   ],
+   "baseline_case_id": null
+  },
+  {
+   "case_id": "DC_3P2",
+   "phase": "formal",
+   "group": "DC",
+   "scale": "four_sites_both_polarities_124_cores",
+   "analysis": "op",
+   "timeout_s": 900,
+   "depends_on": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP"
+   ],
+   "baseline_case_id": null
+  }
+ ],
+ "baseline_groups": {
+  "Q1_MOTHER_PROTOCOL": [
+   "Q1_MOTHER_HALFSTEP"
+  ],
+  "G0_W": [
+   "G0_CUT_K1",
+   "G0_CUT_K10",
+   "NUM_G0_HALFSTEP"
+  ],
+  "CHAIN_12_W_F": [
+   "STRUCT_THETA_PORT_CUT",
+   "STRUCT_SIGMA_PORT_CUT",
+   "STRUCT_CDIR_HISTORY_BLEED",
+   "STRUCT_REAL_SIGMA_SWAP",
+   "NUM_CHAIN_HALFSTEP"
+  ],
+  "FULL_NOM": [
+   "FULL_REAL_MIRROR",
+   "FULL_SPACE_CUT",
+   "FULL_NUM_HALFSTEP"
+  ]
+ },
+ "outputs": {
+  "ledger": "thermal_g3_q1/results/q1_ledger.jsonl",
+  "verdicts": "thermal_g3_q1/results/verdicts.jsonl",
+  "per_gate": "thermal_g3_q1/results/verdicts/<aid>_<case>.json",
+  "stop_marker": "thermal_g3_q1/results/STOPPED",
+  "raw_root": "$THERMAL_G3_Q1_RAW_ROOT or ../thermal_g3_q1_raw (relative to thermal_g3_q1)",
+  "per_run": "<raw_root>/<aid>/<aid>_<case>.{cir,raw,log,sup.json}"
+ },
+ "environment": {
+  "NOT_READY": [
+   {
+    "item": "real_backend_or_execution_host",
+    "why": "ngspice-47 Linux installation and binary identity"
+   },
+   {
+    "item": "real_backend_or_execution_host",
+    "why": "OpenVAF 1.0.0 compiler identity"
+   },
+   {
+    "item": "real_backend_or_execution_host",
+    "why": "native Linux OSDI built with -D__NGSPICE__ from supplied sources"
+   },
+   {
+    "item": "real_backend_or_execution_host",
+    "why": "real host backend registration and matching new backend freeze"
+   },
+   {
+    "item": "real_backend_or_execution_host",
+    "why": "raw-output volume and retrieval verification on the actual execution host"
+   }
+  ]
+ }
+}

@@ -1,0 +1,309 @@
+{
+ "schema": "thermal_g3_q1r.certificate.2",
+ "kind": "CANDIDATE_ESTIMATE_NOT_QUALIFICATION",
+ "model": "analysis/ekv26_static.py (line-by-line VA port, ae41504)",
+ "assumptions_unsourced": [
+  "mirror/branch tolerance +-10% (no mismatch statistics in the card)",
+  "delta = 20 mV comparator offset + reference ripple",
+  "comparator delay and finite inverter edges ignored in q width",
+  "references static at their divider values (moving vrest not covered)",
+  "junction leakage, substrate and gate charge not ported",
+  "temperature 27.0 C"
+ ],
+ "nom": {
+  "refs": {
+   "vsrc": 3.0,
+   "vdd": 2.967216260126232,
+   "vrest": 0.989072086708744,
+   "vthe": 1.4055234916387414,
+   "vthr": 1.141237023125474,
+   "vmid": 1.483608130063116,
+   "Iref": 1.0165592969468364e-06,
+   "Istep": 4.309315439088748e-08,
+   "Ilim": 1.2009111751738194e-06,
+   "iref_n": 0.7307858068431924,
+   "irefp_n": 2.101492009964984,
+   "ilimp_n": 2.0746686929565232
+  },
+  "roles": {
+   "G0": {
+    "u_entry_V": 0.49453604335437207,
+    "u_exit_low_V": 0.3461752303480604,
+    "Rdis": 220000.0,
+    "Cm": 1e-07,
+    "checks": {
+     "max_exit": {
+      "u_inf_V": 0.24844266090810127,
+      "margin_V": 0.07773256943995913,
+      "pass": true
+     },
+     "q_forms_and_exits": {
+      "pass": true,
+      "q_min_s": 0.005120000000000012,
+      "q_max_s": 0.019259999999999552
+     },
+     "trace_charges_in_q": {
+      "pass": true,
+      "T_ch_s": 0.0023451690907451937,
+      "q_min_s": 0.005120000000000012
+     },
+     "recovery_charges_in_q": {
+      "pass": true,
+      "T_ch_s": 0.0038052359569632327,
+      "q_min_s": 0.005120000000000012,
+      "Vrec_req_V": 2.0015178095252835
+     },
+     "weak_no_entry": {
+      "u_inf_V": 0.368270286992537,
+      "margin_V": 0.10626575636183505,
+      "pass": true
+     },
+     "valid_entry": {
+      "u_inf_V": 0.6,
+      "margin_V": 0.0854639566456279,
+      "pass": true
+     }
+    },
+    "unknown": [],
+    "branches": {
+     "weak": "gated irefp copy W/L 1.2/4 um",
+     "valid": "gated irefp copy 4/4 um",
+     "max": "gated ilimp copy 4/4 um (actual collector input)"
+    },
+    "q_width_min_s": 0.005120000000000012,
+    "q_width_max_s": 0.019259999999999552,
+    "trace": {
+     "Ron_sw_max": 23161.175089081244,
+     "T_ch_s": 0.0023451690907451937,
+     "z_req_V": 1.503608130063116
+    },
+    "recovery": {
+     "Vrec_req_V": 2.0015178095252835,
+     "Ron_sw_max": 23161.175089081244,
+     "T_ch_s": 0.0038052359569632327,
+     "hold_s_after_full_charge": 0.32184972156111746
+    },
+    "period_est_s": 0.34378135137275234,
+    "activity_window_s": 1.5239240244357597,
+    "event_source_timing": {
+     "I_on_min_A": 1.070217737756946e-06,
+     "q_width_min_s": 0.010319999999999916,
+     "period_max_s": 0.3746422895654968
+    },
+    "T_entry_valid_max_s": 0.08614557168140766,
+    "weak_expected_du_V": 0.33495149495135046,
+    "weak_baseline_u_V": 0.0
+   },
+   "Sigma": {
+    "u_entry_V": 0.24346389826676795,
+    "u_exit_low_V": 0.0951030852604563,
+    "Rdis": 75000.0,
+    "Cm": 1e-07,
+    "checks": {
+     "max_exit": {
+      "u_inf_V": 0.06032446365406454,
+      "margin_V": 0.014778621606391755,
+      "pass": true
+     },
+     "q_forms_and_exits": {
+      "pass": true,
+      "q_min_s": 0.005080000000000012,
+      "q_max_s": 0.013559999999999784
+     },
+     "trace_charges_in_q": {
+      "pass": true,
+      "T_ch_s": 0.0023451690907451937,
+      "q_min_s": 0.005080000000000012
+     },
+     "recovery_charges_in_q": {
+      "pass": true,
+      "T_ch_s": 0.003696010064222203,
+      "q_min_s": 0.005080000000000012,
+      "Vrec_req_V": 1.9701214809235255
+     },
+     "weak_no_entry": {
+      "u_inf_V": 0.06283110666890135,
+      "margin_V": 0.16063279159786661,
+      "pass": true
+     },
+     "valid_entry": {
+      "u_inf_V": 0.3411897596877898,
+      "margin_V": 0.07772586142102185,
+      "pass": true
+     },
+     "entry_within_parent_window": {
+      "pass": true,
+      "T_entry_s": 0.13420272701604302,
+      "event_s": 7.0
+     }
+    },
+    "unknown": [],
+    "branches": {
+     "weak": "OTA at idle graph and at a reverse-direction single event",
+     "valid": "OTA at a forward single-site event",
+     "max": "OTA fully steered (+-0.3 V)",
+     "sync_info": "OTA at a synchronous two-site event (reported, judged by INVALID_SYNC)"
+    },
+    "inputs_graph": {
+     "idle": [
+      1.4836081300631165,
+      1.4836081300631165
+     ],
+     "single": [
+      1.81229558047634,
+      1.7718417404254818
+     ],
+     "reverse": [
+      1.6100263802220485,
+      1.635310030253835
+     ],
+     "sync": [
+      1.938713830635272,
+      1.9235436406162
+     ],
+     "vmid": 1.483608130063116
+    },
+    "inputs_graph_info": {
+     "inj_A": 5.309566506675144e-07,
+     "idle_drop_V": 0.0,
+     "single_drop_V": 0.04045384005085828,
+     "reverse_drop_V": -0.025283650031786564,
+     "sync_drop_V": 0.015170190019071939
+    },
+    "q_width_min_s": 0.005080000000000012,
+    "q_width_max_s": 0.013559999999999784,
+    "trace": {
+     "Ron_sw_max": 23161.175089081244,
+     "T_ch_s": 0.0023451690907451937,
+     "z_req_V": 1.503608130063116
+    },
+    "recovery": {
+     "Vrec_req_V": 1.9701214809235255,
+     "Ron_sw_max": 23161.175089081244,
+     "T_ch_s": 0.003696010064222203,
+     "hold_s_after_full_charge": 0.33481440635159765
+    },
+    "period_est_s": 0.3522456389096529,
+    "activity_window_s": 1.5239240244357597,
+    "event_source_timing": {
+     "I_on_min_A": 6.560320973990251e-07,
+     "q_width_min_s": 0.008160000000000004,
+     "period_max_s": 0.38720706546723466
+    },
+    "T_entry_valid_max_s": 0.13420272701604302,
+    "sync_info_u_inf_V": 0.2093674719716506,
+    "activity_continuous_during_event": true,
+    "weak_expected_du_V": -0.18397279101207956,
+    "weak_baseline_u_V": 0.0573760174477549
+   },
+   "Theta_Cdir": {
+    "u_entry_V": 0.24346389826676795,
+    "u_exit_low_V": 0.0951030852604563,
+    "Rdis": 12000.0,
+    "Cm": 1.5e-06,
+    "checks": {
+     "max_exit": {
+      "u_inf_V": 0.06032781569310673,
+      "margin_V": 0.014775269567349564,
+      "pass": true
+     },
+     "q_forms_and_exits": {
+      "pass": true,
+      "q_min_s": 0.016979999999999645,
+      "q_max_s": 0.0401799999999987
+     },
+     "trace_charges_in_q": {
+      "pass": true,
+      "T_ch_s": 0.0023451690907451937,
+      "q_min_s": 0.016979999999999645
+     },
+     "recovery_charges_in_q": {
+      "pass": true,
+      "T_ch_s": 0.004255423411689856,
+      "q_min_s": 0.016979999999999645,
+      "Vrec_req_V": 2.120500329026
+     },
+     "chain_entry_within_target_activity": {
+      "pass": true,
+      "1.5s": {
+       "t_entry_after_target_s": 3.4799999999999978,
+       "h_at_entry_V": 1.1884394856804668,
+       "overlap_window_s": 8.52392402443576
+      },
+      "3.0s": {
+       "t_entry_after_target_s": 2.0600000000000245,
+       "h_at_entry_V": 1.1976091736249141,
+       "overlap_window_s": 8.52392402443576
+      }
+     },
+     "single_source_pulse_no_entry": {
+      "h_V": 0.27942089863147257,
+      "u_inf_V": 1.8446615152280595e-06,
+      "pass": true
+     }
+    },
+    "unknown": [],
+    "branches": {
+     "max": "stack with h at continuous-conduction bound 2.404 V"
+    },
+    "inputs_h_bound_V": 2.404468348722981,
+    "q_width_min_s": 0.016979999999999645,
+    "q_width_max_s": 0.0401799999999987,
+    "trace": {
+     "Ron_sw_max": 23161.175089081244,
+     "T_ch_s": 0.0023451690907451937,
+     "z_req_V": 1.503608130063116
+    },
+    "recovery": {
+     "Vrec_req_V": 2.120500329026,
+     "Ron_sw_max": 23161.175089081244,
+     "T_ch_s": 0.004255423411689856,
+     "hold_s_after_full_charge": 0.2744977821316874
+    },
+    "period_est_s": 0.3229714498132602,
+    "activity_window_s": 1.5239240244357597,
+    "event_source_timing": {
+     "I_on_min_A": 3.446518534381942e-06,
+     "q_width_min_s": 0.025079999999999315,
+     "period_max_s": 0.3481451307675677
+    },
+    "chain_entry": {
+     "1.5s": {
+      "t_entry_after_target_s": 3.4799999999999978,
+      "h_at_entry_V": 1.1884394856804668,
+      "overlap_window_s": 8.52392402443576
+     },
+     "3.0s": {
+      "t_entry_after_target_s": 2.0600000000000245,
+      "h_at_entry_V": 1.1976091736249141,
+      "overlap_window_s": 8.52392402443576
+     }
+    },
+    "weak_expected_du_V": 1.6769649757859385e-06,
+    "weak_baseline_u_V": 0.0
+   }
+  },
+  "stimulus": {
+   "step_s": 7.0,
+   "intervals_s": [
+    1.5,
+    3.0
+   ],
+   "source": "dev-006/007 decks (+-3 K, 7 s steps)"
+  },
+  "dynamic_unmeasured": [
+   "Cdir third-level entry timing (\u03a3 history x \u0398 activity overlap)",
+   "moving references during activity",
+   "comparator delay"
+  ],
+  "history_expiry_s": 10.252999999999757,
+  "history_levels_V": {
+   "valid_entry_min": 1.1884394856804668,
+   "single_pulse": 0.27942089863147257
+  },
+  "failed": [],
+  "unknown": [],
+  "status": "NO_INCOMPATIBILITY_FOUND"
+ },
+ "status": "NO_INCOMPATIBILITY_FOUND"
+}

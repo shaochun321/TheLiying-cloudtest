@@ -1,0 +1,113 @@
+{
+ "schema": "thermal_g3_q1r.unpack_check.1",
+ "pack_root": "<unpacked run package>",
+ "solver_starts": 0,
+ "python": "3.14.3",
+ "platform": "win32",
+ "all_pass": true,
+ "items": {
+  "inputs_manifest": {
+   "pass": true,
+   "n": 79,
+   "bad": [],
+   "unlisted": []
+  },
+  "freeze_pins": {
+   "pass": true,
+   "n": 65,
+   "bad": []
+  },
+  "v1_ledger_snapshot": {
+   "pass": true,
+   "path": "thermal_g3_v1/results/analysis_ledger.jsonl"
+  },
+  "task_table_copy": {
+   "pass": true,
+   "path": "prereg/inputs/thermal_g3_v1.1_task_table_2026-10-08.json"
+  },
+  "no_absolute_paths": {
+   "pass": true,
+   "literals": [
+    {
+     "file": "config.py",
+     "line": 43,
+     "registered": "workstation default"
+    },
+    {
+     "file": "audit/reaudit_v1_dev.py",
+     "line": 24,
+     "registered": "workstation default"
+    },
+    {
+     "file": "prereg/make_cases.py",
+     "line": 29,
+     "registered": "workstation default"
+    },
+    {
+     "file": "tools/selfcheck_all.py",
+     "line": 718,
+     "registered": "test fixture"
+    },
+    {
+     "file": "tools/selfcheck_all.py",
+     "line": 890,
+     "registered": "test fixture"
+    },
+    {
+     "file": "tools/source_manifest.py",
+     "line": 19,
+     "registered": "workstation default"
+    }
+   ]
+  },
+  "deck_identity_33": {
+   "pass": true,
+   "n": 33,
+   "mismatch": []
+  },
+  "files_opened_static": {
+   "pass": true,
+   "outside": [],
+   "n": 204
+  },
+  "production_dispatch": {
+   "pass": true,
+   "runs": {
+    "Q1_MOTHER_PROTOCOL": {
+     "aid": "qual-001",
+     "status": "complete",
+     "scientific": "PASS"
+    },
+    "Q1_MOTHER_HALFSTEP": {
+     "aid": "qual-002",
+     "status": "complete",
+     "scientific": "PASS"
+    },
+    "G0_W": {
+     "aid": "formal-001",
+     "status": "complete",
+     "scientific": "PASS"
+    },
+    "G0_C": {
+     "aid": "formal-002",
+     "status": "complete",
+     "scientific": "FAIL"
+    },
+    "after_fail": "round stopped: {\"case_id\": \"G0_C\", \"analysis_id\": \"formal-002\", \"reason\": \"scientific FAIL\"}"
+   },
+   "n_verdicts": 4,
+   "verdicts_bound": true
+  },
+  "files_opened_dispatch": {
+   "pass": true,
+   "outside": [],
+   "n": 244
+  }
+ },
+ "zip": {
+  "name": "thermal_g3_q1r_runpack_fb51f53f.zip",
+  "sha256": "35baf5590b47e1567b3585706c2bd2c7444b30f27d5b8f72a82dc93c87752cbf",
+  "dir": "outside git (raw-root sibling)"
+ },
+ "unpacked_in": "fresh temporary directory outside the project"
+}

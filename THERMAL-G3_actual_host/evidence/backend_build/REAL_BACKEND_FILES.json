@@ -1,0 +1,33 @@
+{
+  "status": "BUILT_REAL_BACKEND_FILES_NOT_CIRCUIT_QUALIFICATION",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "ngspice": {
+    "path": "/workspace/scratch/8fecea1ba044/offline_backend_kit_20261020/host_work/native/bin/ngspice",
+    "sha256": "37d80c673bc4c03904ed4434bb3aa9aecd099ecfaeb66b86730a905e8c76ed89",
+    "version_output": "******\n** ngspice-47 : Circuit level simulation program\n** Compiled with KLU Direct Linear Solver\n** The U. C. Berkeley CAD Group\n** Copyright 1985-1994, Regents of the University of California.\n** Copyright 2001-2026, The ngspice team.\n** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html\n** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html\n** Creation Date: Tue Oct 20 15:10:11 UTC 2026\n******\n"
+  },
+  "openvaf": {
+    "path": "/workspace/scratch/8fecea1ba044/offline_backend_kit_20261020/host_work/native/bin/openvaf",
+    "sha256": "4c3da9c10c1373dc5455b53911bda62eb7582857dbea27dcf72df60d3c618fcd",
+    "version_output": "openvaf 23.5.0\n",
+    "release_tag": "1.0.0",
+    "internal_cli_version": "23.5.0",
+    "source_version_evidence": "version_provenance/openvaf_driver_source_version.json"
+  },
+  "osdi": {
+    "path": "/workspace/scratch/8fecea1ba044/offline_backend_kit_20261020/host_work/native/models/ekv26_linux.osdi",
+    "sha256": "7c07ae3728941189b77bf0ecfca5ebe56473d01eedc6ea59c46cc32bfdb9a43f",
+    "define": "__NGSPICE__"
+  },
+  "model_sources": {
+    "ekv26.va": "2785e0663d9bab9296f1bc33fdf11b52d16c0f183bf438f0bd5914ad0264bcb0",
+    "disciplines.vams": "c57d71f2da4fe1dcd8212259cdfed8d5ec9846db93b9cc83ab3f5ca64cfda330",
+    "generalMacrosAndDefines.va": "39afbfbe6a30facb1c7b10470fddfcdfce32daecf3e1b370dc49926b0df23fbc",
+    "constants.vams": "979045f57d491c997ff33a9bb60ae529732ddd904aa2f0f22089167a82cbf819"
+  },
+  "project_root": "/workspace/scratch/8fecea1ba044/offline_backend_kit_20261020/host_work/execution/thermal_g3_q1r_runpack_9d042b00/thermal_g3_q1",
+  "logs": "/workspace/scratch/8fecea1ba044/offline_backend_kit_20261020/host_work/logs",
+  "circuit_analyses_started": 0,
+  "launch_permission_written": false,
+  "source_project_modified": false
+}

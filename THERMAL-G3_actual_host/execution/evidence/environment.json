@@ -1,0 +1,26 @@
+{
+  "schema": "thermal_g3.no_solver_host.1",
+  "date": "2026-10-20",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "available": {
+    "python3": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "ngspice": null,
+    "openvaf": null,
+    "gcc": "/usr/bin/gcc"
+  },
+  "backend_registration_exists": false,
+  "linux_osdi_built": false,
+  "true_circuit_solver_starts": 0,
+  "scope": "software selfchecks and static construction only",
+  "remaining": [
+    "ngspice-47 Linux installation and binary identity",
+    "OpenVAF 1.0.0 compiler identity",
+    "native Linux OSDI built with -D__NGSPICE__ from supplied sources",
+    "real host backend registration and matching new backend freeze",
+    "raw-output volume and retrieval verification on the actual execution host",
+    "user authorization for the eventual real-backend freeze (not requested or produced here)"
+  ]
+}

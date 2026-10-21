@@ -1,0 +1,260 @@
+{
+  "schema": "thermal_g3.unfinished_checkpoint.1",
+  "date": "2026-10-17",
+  "status": "UNFINISHED_NOT_QUALIFIED_NOT_FOR_SIMULATION_LAUNCH",
+  "source_read_only": "C:\\Users\\shaoc\\AppData\\Roaming\\warp\\Warp\\data\\worktrees\\cell-cc\\cholla-palo-verde\\research\\thermal_g3_q1",
+  "baseline_archive": "thermal_g3_q1r_runpack_fb51f53f.zip",
+  "baseline_archive_sha256": "35baf5590b47e1567b3585706c2bd2c7444b30f27d5b8f72a82dc93c87752cbf",
+  "old_freeze_sha256": "fb51f53f9f36067c66ca7a645bfb5a8364b8573292bf9e7e0190e5f21a75956f",
+  "old_freeze_does_not_bind_current_working_changes": true,
+  "project_code_executed_by_exporter": false,
+  "solver_starts_by_exporter": 0,
+  "changed_or_added": {
+    "netlists/ledger_plan.py": {
+      "status": "modified",
+      "bytes": 7050,
+      "sha256": "81fac8428fb3a63ce54c5cbc7b22a8c911ec394277104b2b3d5b423b59b85729",
+      "baseline_sha256": "ffd58a41defce744197b573ec9bf60b5bd01d4fc9877b5107cfa0c341817b475"
+    },
+    "observers/support_q1r.py": {
+      "status": "modified",
+      "bytes": 24854,
+      "sha256": "97bffe8ce582556644fb51dc350bbcfc667228115be73038097828fe2897321b",
+      "baseline_sha256": "ab11ad29e8d95b64282326569e99ea37ca28d44a5aa2f128b15b7c7ada1b54d5"
+    },
+    "results/cloud_unpack_check.json": {
+      "status": "added",
+      "bytes": 2412,
+      "sha256": "3cadc59445723f3aceb6a15c8f13a7f3e69f2a2e6a5e0b0a336f1949e3f55401",
+      "baseline_sha256": null
+    },
+    "results/selfcheck.json": {
+      "status": "modified",
+      "bytes": 18279,
+      "sha256": "54be340e269cd053f7100b8257043766c2475c2a5aea436f57c6ddea67af5948",
+      "baseline_sha256": "caa839bb5004933a44a1438cd82dbcf3ec1ece488ce56ca50a78037992cf01f0"
+    },
+    "results/selfcheck.txt": {
+      "status": "added",
+      "bytes": 4644,
+      "sha256": "d084bfad273385d00244f4f068d1fe14fce7be85ade88728cf1d7b6e9fb11037",
+      "baseline_sha256": null
+    },
+    "tests/synth_raw.py": {
+      "status": "modified",
+      "bytes": 23335,
+      "sha256": "77a222bd6c805ce33e30d8b74e9135c19c629541bcec1cab0d0e504be3a295a4",
+      "baseline_sha256": "9854a43c08ce3c99b0125a36effd38761aba8937c41077077b83f58754741301"
+    },
+    "tools/_block.py": {
+      "status": "added",
+      "bytes": 6181,
+      "sha256": "0e9753d2f0a0bcf7ed16434fa3e63b5336366c20bb665825441b2dd05f99c773",
+      "baseline_sha256": null
+    },
+    "results/decks/CHAIN_12_C_F.cir": {
+      "status": "added",
+      "bytes": 112065,
+      "sha256": "bfbdca0b250fa68eace68d129c096badc5859d0964d48dfe693fddd08653c461",
+      "baseline_sha256": null
+    },
+    "results/decks/CHAIN_12_C_R.cir": {
+      "status": "added",
+      "bytes": 112065,
+      "sha256": "7ca60d5d48493e94a5c9ff52b59b9b9ccc7789eadab7bea0e1152c30ca6d09e4",
+      "baseline_sha256": null
+    },
+    "results/decks/CHAIN_12_W_F.cir": {
+      "status": "added",
+      "bytes": 112063,
+      "sha256": "3ef426372bd3dd3bedfbc86631753e020645200e778e907c3c3dea69714c9971",
+      "baseline_sha256": null
+    },
+    "results/decks/CHAIN_12_W_R.cir": {
+      "status": "added",
+      "bytes": 112063,
+      "sha256": "f79613076a6ae3c639417098441d0511e9e1c8a84423d73297363016faf34274",
+      "baseline_sha256": null
+    },
+    "results/decks/CHAIN_23_C_F.cir": {
+      "status": "added",
+      "bytes": 112065,
+      "sha256": "7e0bb92cbed3291aedd78bc773945d13ef774c2c7f116b545049a2805d596c17",
+      "baseline_sha256": null
+    },
+    "results/decks/CHAIN_23_C_R.cir": {
+      "status": "added",
+      "bytes": 112065,
+      "sha256": "de8050629fc3e2c7161532dc9c975fa2e0b6a76ede9bf60a251b1caf8cfff932",
+      "baseline_sha256": null
+    },
+    "results/decks/CHAIN_23_W_F.cir": {
+      "status": "added",
+      "bytes": 112063,
+      "sha256": "a6f6a0f9facf418ccaf625fe0ab167b92c625f64b411a085fdc809e48c06fcb2",
+      "baseline_sha256": null
+    },
+    "results/decks/CHAIN_23_W_R.cir": {
+      "status": "added",
+      "bytes": 112063,
+      "sha256": "cb616e8cb43ed037daa1207b1e66c307f20fd04dbb6a3dd3bebcc8b5941cb5dc",
+      "baseline_sha256": null
+    },
+    "results/decks/CHAIN_34_C_F.cir": {
+      "status": "added",
+      "bytes": 112065,
+      "sha256": "1c4508bba1d35457909782311877f8d784e905cbcbcc427e2e05c96ea98fc9a3",
+      "baseline_sha256": null
+    },
+    "results/decks/CHAIN_34_C_R.cir": {
+      "status": "added",
+      "bytes": 112065,
+      "sha256": "9959e1c1b519dc09c5a90ab3b4a905c8ecb2778a5e4372d89e871c8cb4e72b6d",
+      "baseline_sha256": null
+    },
+    "results/decks/CHAIN_34_W_F.cir": {
+      "status": "added",
+      "bytes": 112063,
+      "sha256": "8002582157622e87ee79ec6b5143072f9db5a1b880e49c342f11455b76938b53",
+      "baseline_sha256": null
+    },
+    "results/decks/CHAIN_34_W_R.cir": {
+      "status": "added",
+      "bytes": 112063,
+      "sha256": "977162bee7e34b500269b391afcc99385de07692a20b505c742c952a0994d1ed",
+      "baseline_sha256": null
+    },
+    "results/decks/DC_2P7.cir": {
+      "status": "added",
+      "bytes": 480556,
+      "sha256": "366ecfa4bc0224f1b4bfb68b93ac734f8ca707a42722833fa08ff85bc83b89b6",
+      "baseline_sha256": null
+    },
+    "results/decks/DC_3.cir": {
+      "status": "added",
+      "bytes": 480554,
+      "sha256": "4ed60f25d2afd4d73e6d0e4bc8b850877b023ce789e80e0a7a54406170af8068",
+      "baseline_sha256": null
+    },
+    "results/decks/DC_3P2.cir": {
+      "status": "added",
+      "bytes": 480556,
+      "sha256": "45e9b410d342257910653598dc2a644696b8ab948ac1e8cc9803de27981bec3f",
+      "baseline_sha256": null
+    },
+    "results/decks/FULL_NOM.cir": {
+      "status": "added",
+      "bytes": 453190,
+      "sha256": "e07a30cc2cf6912f8a682944f11a76cdaf8480762cc807ae7c13298629d81f7f",
+      "baseline_sha256": null
+    },
+    "results/decks/FULL_NUM_HALFSTEP.cir": {
+      "status": "added",
+      "bytes": 453200,
+      "sha256": "dabffc6afce0349b3371bb17a88764c1a986af4a8374a37bca8d709d76030cfb",
+      "baseline_sha256": null
+    },
+    "results/decks/FULL_REAL_MIRROR.cir": {
+      "status": "added",
+      "bytes": 453198,
+      "sha256": "32e22ee98775514334ae30209a7766b4375a273a06feb76c9c32083e5b854dab",
+      "baseline_sha256": null
+    },
+    "results/decks/FULL_SPACE_CUT.cir": {
+      "status": "added",
+      "bytes": 453140,
+      "sha256": "e6840bc7ed8a5cb5be6fe4fb1adec98f8732bc7207786e511c56911b07a757fa",
+      "baseline_sha256": null
+    },
+    "results/decks/G0_C.cir": {
+      "status": "added",
+      "bytes": 43909,
+      "sha256": "5fa141b41ae9c99610f5e06b3c583085649d5ac3b0a58f7402b00e37c2037446",
+      "baseline_sha256": null
+    },
+    "results/decks/G0_CUT_K1.cir": {
+      "status": "added",
+      "bytes": 44005,
+      "sha256": "5868b034a7a3e5d48905ea0ee6d8d5490396e1a8a697d484eb8a69145ccc458e",
+      "baseline_sha256": null
+    },
+    "results/decks/G0_CUT_K10.cir": {
+      "status": "added",
+      "bytes": 44008,
+      "sha256": "c25ca848759ac32e96e9a5a669d1ebb59d6cf2d6382bc9ab42a2194656abbf49",
+      "baseline_sha256": null
+    },
+    "results/decks/G0_W.cir": {
+      "status": "added",
+      "bytes": 43907,
+      "sha256": "9bacf6c75c93f9c5620e84a670854ec10de2741e53ffbfbad0f0315487397208",
+      "baseline_sha256": null
+    },
+    "results/decks/INVALID_STALE.cir": {
+      "status": "added",
+      "bytes": 112064,
+      "sha256": "69ff9c9856c7ff4376d790042fcb4f487533815df282277f94c88b961cc61762",
+      "baseline_sha256": null
+    },
+    "results/decks/INVALID_SYNC.cir": {
+      "status": "added",
+      "bytes": 112063,
+      "sha256": "e0ef578202fd677aa321739bee9752719defde1737b9cbb2e35946a7b96aa3bb",
+      "baseline_sha256": null
+    },
+    "results/decks/NUM_CHAIN_HALFSTEP.cir": {
+      "status": "added",
+      "bytes": 112070,
+      "sha256": "44e6eceee3c6bc8d53f35575dd791402893eca48cb678b2f66ab36a1b37ba90f",
+      "baseline_sha256": null
+    },
+    "results/decks/NUM_G0_HALFSTEP.cir": {
+      "status": "added",
+      "bytes": 43919,
+      "sha256": "a384f10260baf618ac5ec620f998991db99a165e79b9daa58ae3980df423327d",
+      "baseline_sha256": null
+    },
+    "results/decks/Q1_MOTHER_HALFSTEP.cir": {
+      "status": "added",
+      "bytes": 15641,
+      "sha256": "ec34641be4b40259954686967b7d6087f372f5e8b5e5f7b8ecab21e6669c1cde",
+      "baseline_sha256": null
+    },
+    "results/decks/Q1_MOTHER_PROTOCOL.cir": {
+      "status": "added",
+      "bytes": 15640,
+      "sha256": "d2edf1a4712bb2a39b8a1fb948c823922f9fbf5b58b933c34d44c4cea6e87aea",
+      "baseline_sha256": null
+    },
+    "results/decks/STRUCT_CDIR_HISTORY_BLEED.cir": {
+      "status": "added",
+      "bytes": 112213,
+      "sha256": "4824f1d2dc8cf853e7c282f0c6fe1890d8560fe0f1fe9ae54102da10e9f078aa",
+      "baseline_sha256": null
+    },
+    "results/decks/STRUCT_REAL_SIGMA_SWAP.cir": {
+      "status": "added",
+      "bytes": 112073,
+      "sha256": "a9fd6e22f55650823d2362af66f5bb1040bcc9e491170d7382dbd9ad0ba41c74",
+      "baseline_sha256": null
+    },
+    "results/decks/STRUCT_SIGMA_PORT_CUT.cir": {
+      "status": "added",
+      "bytes": 112175,
+      "sha256": "27475f6b82564717aee8a03a51fae87bc13a8ca7f231d9bc8d20f2825ffcb3f8",
+      "baseline_sha256": null
+    },
+    "results/decks/STRUCT_THETA_PORT_CUT.cir": {
+      "status": "added",
+      "bytes": 112158,
+      "sha256": "3983b5e68502518a3bf62de250146b41fcd5f7ae77bda2f8aab336eb0e6968a0",
+      "baseline_sha256": null
+    }
+  },
+  "deleted_relative_to_baseline": [],
+  "notes": [
+    "Old results and freeze are historical; no new selfcheck success claimed.",
+    "overlay contains exact current files including unfinished drafts; not reconstructed from pasted diffs.",
+    "Complete the two existing observer fixes and no-solver verification before creating a new freeze."
+  ]
+}

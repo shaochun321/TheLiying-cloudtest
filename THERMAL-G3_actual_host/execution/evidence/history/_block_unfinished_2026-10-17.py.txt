@@ -1,0 +1,106 @@
+    # ---- fixed acceptance pairs, review 2026-10-17 §4.3 (signed charge account on the vm ledger)
+    from netlists.ledger_plan import membrane_ledger
+    from observers.support_q1r import consts as _consts, score_events
+    from tests.synth_raw import _close_ledger
+    _cert = _proto_cert()[1]
+    ue_tc = _cert["nom"]["roles"]["Theta_Cdir"]["u_entry_V"]
+    vrest0 = float(np.median(L0["v(vrest)"]))
+    plan_ = A[cw]["plan"]
+    vmk = "v(cdw12f_vm)"
+    mo = next(x for x in plan_["terms"]["cdw12f_vm"] if x["element"] == "ncdw12f_rm_mo")
+    kk = next(x for x in plan_["terms"]["cdw12f_vm"] if x["element"] == "ncdw12f_kh")
+
+    def cdir_record(vm_traj, i_in, kh=None, q_times=(), hc=None, close=True):
+        """Synthetic Cdir record on the real CHAIN_12_W_F ledger plan: written vm trajectory,
+        injector current into vm, kh shunt OUT of vm (default zero but measured), optional hc."""
+        V = _cp(L0)
+        V[vmk] = np.asarray(vm_traj, dtype=float)
+        V[mo["vec"].lower()] = -np.asarray(i_in, dtype=float) / mo["sign"]
+        V[kk["vec"].lower()] = (np.zeros_like(t) if kh is None else np.asarray(kh, dtype=float)) / kk["sign"]
+        V["v(cdw12f_hs)"] = np.full_like(t, 1.3)
+        if hc is not None:
+            V["v(cdw12f_hc)"] = np.asarray(hc, dtype=float)
+        V["v(cdw12f_q)"] = np.zeros_like(t)
+        V["v(cdw12f_op_aq)"] = np.zeros_like(t)
+        V["v(cdw12f_op_p)"] = np.zeros_like(t)
+        for tq in q_times:
+            V["v(cdw12f_q)"] += np.where((t >= tq) & (t < tq + 0.02), 2.967, 0.0)
+        if close:
+            _close_ledger(V, plan_, t)      # real reset / discharge branch carries the remainder
+        return V, membrane_ledger(V, plan_, "cdw12f_")
+
+    def cdir_events(led, cause):
+        K = _consts(C[cw], _cert)
+        return score_events(V_cur[0], "cdw12f_", cause & (V_cur[0]["v(cdw12f_hs)"] >= K["H_GATE"]),
+                            led["in"], 1.5e-6, ue_tc, K, ledger=led)
+
+    def rc_traj():
+        """Two supported stretches (ramp to entry, hold through q, passive decay) with the
+        injector supplying the written node equation (Cm dv/dt + leak, 5 % margin)."""
+        Cmm, Rmm, tau = 1.5e-6, 1e6, 1.5
+        tq1, tq2, ramp = 1.4, 3.4, 0.6
+        vm = np.full_like(t, vrest0)
+        i_in = np.zeros_like(t)
+        for tq in (tq1, tq2):
+            a = tq - ramp
+            v0 = float(np.interp(a, t, vm))
+            r = (t >= a) & (t < tq)
+            vm[r] = v0 + (vrest0 + ue_tc - v0) * (t[r] - a) / ramp
+            vm[(t >= tq) & (t < tq + 0.02)] = vrest0 + ue_tc
+            dec = t >= tq + 0.02
+            vm[dec] = vrest0 + ue_tc * np.exp(-(t[dec] - (tq + 0.02)) / tau)
+            i_in = i_in + np.where(r, 1.05 * Cmm * np.gradient(vm, t) + (vm - vrest0) / Rmm, 0.0)
+        return vm, i_in, [(tq1 - ramp, tq1 + 0.1), (tq2 - ramp, tq2 + 0.1)], (tq1, tq2)
+
+    # (a) legal dual-RC accumulation with passive decay between stretches: accepted
+    vm_a, i_a, civ_a, qs_a = rc_traj()
+    V_cur = cdir_record(vm_a, i_a, q_times=qs_a)
+    ev_a = cdir_events(V_cur[1], np.zeros_like(t, dtype=bool) | (t <= civ_a[1][1]))
+    item("support_pair_dual_rc_accumulation_accepted", len(ev_a) == 2 and all(e["ok"] for e in ev_a),
+         events=[{"t_q": e["t_q"], "ok": e["ok"], "supported_V": round(e.get("supported_state_V", 0), 4),
+                  "u_V": round(e.get("u_entry_state_V", 0), 4), "why": e.get("why", "")} for e in ev_a])
+
+    # (b) same membrane record, the early stretch has neither cause nor injection: rejected
+    V_cur = cdir_record(vm_a, np.where(t >= civ_a[1][0] - 0.6, i_a, 0.0), q_times=qs_a)
+    ev_b = cdir_events(V_cur[1], (t >= civ_a[1][0]) & (t <= civ_a[1][1]))
+    item("support_pair_retained_charge_without_source_rejected",
+         len(ev_b) == 1 and not ev_b[0]["ok"] and "not supported" in ev_b[0].get("why", ""),
+         events=[{"t_q": e["t_q"], "ok": e["ok"], "supported_V": round(e.get("supported_state_V", 0), 4),
+                  "u_V": round(e.get("u_entry_state_V", 0), 4), "why": e.get("why", "")} for e in ev_b])
+
+    # (c) unsupported preload, the in-cause increment alone is large enough: rejected
+    vm_c = np.full_like(t, vrest0)
+    r_pre = (t >= 0.2) & (t < 0.5)
+    vm_c[r_pre] = vrest0 + 0.2 * (t[r_pre] - 0.2) / 0.3
+    vm_c[(t >= 0.5) & (t < 1.0)] = vrest0 + 0.2
+    r_c = (t >= 1.0) & (t < 1.6)
+    vm_c[r_c] = vrest0 + 0.2 + (ue_tc - 0.2) * (t[r_c] - 1.0) / 0.6
+    vm_c[t >= 1.6] = vrest0 + ue_tc
+    i_c = np.where(r_pre, 1.05 * 1.5e-6 * 0.2 / 0.3 + 0.1 / 1e6, 0.0) \
+        + np.where(r_c, 1.05 * 1.5e-6 * (ue_tc - 0.2) / 0.6 + 0.15 / 1e6, 0.0)
+    V_cur = cdir_record(vm_c, i_c, q_times=(1.6,))
+    ev_c = cdir_events(V_cur[1], (t >= 1.0) & (t <= 1.7))
+    item("support_pair_preload_outside_support_rejected",
+         len(ev_c) == 1 and not ev_c[0]["ok"] and "not supported" in ev_c[0].get("why", ""),
+         events=[{"t_q": e["t_q"], "ok": e["ok"], "supported_V": round(e.get("supported_state_V", 0), 4),
+                  "u_V": round(e.get("u_entry_state_V", 0), 4), "why": e.get("why", "")} for e in ev_c])
+
+    # (d)/(e) weak vs effective shunt on the FULL production entry (review §3 table)
+    fA, fL = A["FULL_NOM"], L["FULL_NOM"]
+    ft, fplan = fL["time"], fA["plan"]
+    fkh = next(x for x in fplan["terms"]["cdw12f_vm"] if x["element"] == "ncdw12f_kh")
+    fmo = next(x for x in fplan["terms"]["cdw12f_vm"] if x["element"] == "ncdw12f_rm_mo")
+    Vw = _cp(fL)
+    Vw["v(cdw12f_hc)"][:] = 1.2
+    Vw[fkh["vec"].lower()] = np.full_like(ft, 7.141553089580153e-17 / fkh["sign"])
+    rw = runs("FULL_NOM", Vw)
+    item("support_pair_weak_shunt_hc1p2_accepted",
+         _gate(rw, "w12_cdir_support_all_events") == "PASS",
+         gates={n: _gate(rw, n) for n in ("w12_cdir_support_all_events", "w12_cdir_conflict_consistent")})
+    Vs = _cp(fL)
+    Vs["v(cdw12f_hc)"][:] = 2.5
+    Vs[fkh["vec"].lower()] = 2 * np.abs(fL[fmo["vec"].lower()]) / fkh["sign"]
+    rs = runs("FULL_NOM", Vs)
+    item("support_pair_shunt_exceeding_injection_rejected",
+         _gate(rs, "w12_cdir_support_all_events") == "FAIL",
+         unsupported=str((rs["gates"].get("w12_cdir_support_all_events") or {}).get("unsupported"))[:300])

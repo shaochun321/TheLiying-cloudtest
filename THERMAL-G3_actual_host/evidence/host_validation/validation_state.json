@@ -1,0 +1,64 @@
+{
+  "status": "HOST_CHECKS_PASSED_AWAITING_STORAGE_AND_FREEZE",
+  "started_utc": "2026-10-20T15:30:17.685623+00:00",
+  "runs": [
+    {
+      "step": "backend_registration",
+      "command": [
+        "python3",
+        "-B",
+        "tools/register_backend.py",
+        "--platform",
+        "linux-x64",
+        "--ngspice",
+        "/workspace/scratch/8fecea1ba044/offline_backend_kit_20261020/host_work/native/bin/ngspice",
+        "--osdi",
+        "/workspace/scratch/8fecea1ba044/offline_backend_kit_20261020/host_work/native/models/ekv26_linux.osdi",
+        "--openvaf",
+        "/workspace/scratch/8fecea1ba044/offline_backend_kit_20261020/host_work/native/bin/openvaf",
+        "--ngspice-version",
+        "ngspice-47",
+        "--openvaf-version",
+        "openvaf 23.5.0 (dwarning release 1.0.0)"
+      ],
+      "returncode": 0,
+      "wall_seconds": 0.21479595900018467,
+      "log": "/workspace/scratch/8fecea1ba044/offline_backend_kit_20261020/host_work/host_validation_20261020/backend_registration.log",
+      "log_sha256": "62f61d05192d37d351ac3ea7c7181fa4b70d0d9b34c6ae3cd09ab8fdc06040f9"
+    },
+    {
+      "step": "static_check",
+      "command": [
+        "python3",
+        "-B",
+        "tools/static_check.py"
+      ],
+      "returncode": 0,
+      "wall_seconds": 7.339035771000454,
+      "log": "/workspace/scratch/8fecea1ba044/offline_backend_kit_20261020/host_work/host_validation_20261020/static_check.log",
+      "log_sha256": "26605960c544ea24e62dd11eb74e2dcb8d0ab51673ee8c129594b9e88ed7150b"
+    },
+    {
+      "step": "selfcheck_all",
+      "command": [
+        "python3",
+        "-B",
+        "tools/selfcheck_all.py"
+      ],
+      "returncode": 0,
+      "wall_seconds": 661.2739783389998,
+      "log": "/workspace/scratch/8fecea1ba044/offline_backend_kit_20261020/host_work/host_validation_20261020/selfcheck_all.log",
+      "log_sha256": "86898da4ee5665971a087381133f294286a57f05176b8bbc9f7b6e83de873786"
+    }
+  ],
+  "real_circuit_analyses_started": 0,
+  "production_permission_written": false,
+  "current_step": null,
+  "selfcheck_count": 124,
+  "selfcheck_pass": 124,
+  "static_all_pass": true,
+  "source_identities_unchanged": true,
+  "backend_registration_sha256": "1b99694fba68c5c9562042a5a5ce38766e7bd4910efb2a8150a6b8f8e0c10e87",
+  "selfcheck_json_sha256": "4c51f9babf60f3957fb41002e7b8d77ea99b955011498042bbedb46ef281fb00",
+  "static_check_json_sha256": "fd35a9a3f487e5b2cc160a9c0f9a8a4f3818f783118f05504e594433bf28dba7"
+}

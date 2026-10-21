@@ -1,0 +1,351 @@
+{
+  "result": "FAIL",
+  "gates": {
+    "parents_actually_synchronous": {
+      "result": "PASS",
+      "dt": 0.0
+    },
+    "no_cdir_either_direction": {
+      "result": "PASS"
+    },
+    "rails_flat": {
+      "result": "PASS"
+    },
+    "returned": {
+      "result": "PASS"
+    },
+    "theta_support_all_events": {
+      "result": "FAIL",
+      "n_events": 1,
+      "unsupported": {
+        "thw12f_": [
+          {
+            "t_q": 11.3505,
+            "scope": "complete vm ledger node",
+            "anchor_s": 0.0,
+            "anchor": "record start",
+            "ok": false,
+            "cause": [
+              11.128,
+              12.502
+            ],
+            "stretch_start_s": 0.0,
+            "u_entry_state_V": 0.24346389826676795,
+            "supported_state_V": 0.16915944403382321,
+            "checks": {
+              "membrane_rose": true,
+              "account_closes": true,
+              "net_charge_sufficient": true,
+              "retained_state_supported": false,
+              "source_history_valid": true
+            },
+            "account_from_anchor": {
+              "Q_in_C": 4.25389148006548e-07,
+              "Q_sh_C": 0.0,
+              "Q_leak_C": 4.2606182196684124e-08,
+              "Q_other_C": 1.7587106236514966e-08,
+              "Q_cap_C": 3.6519585957334684e-07,
+              "Q_net_C": 3.651958595733489e-07,
+              "residual_C": 2.064642808932357e-21,
+              "throughput_C": 4.868753137282674e-07,
+              "Q_in_supported_C": 2.8452219576542326e-07,
+              "Q_in_outside_support_C": 1.4086695224112473e-07
+            },
+            "account_stretch": {
+              "Q_in_C": 4.25389148006548e-07,
+              "Q_sh_C": 0.0,
+              "Q_leak_C": 4.2606182196684124e-08,
+              "Q_other_C": 1.7587106236514966e-08,
+              "Q_cap_C": 3.6519585957334684e-07,
+              "Q_net_C": 3.651958595733489e-07,
+              "residual_C": 2.064642808932357e-21,
+              "throughput_C": 4.868753137282674e-07,
+              "Q_in_supported_C": 2.8452219576542326e-07,
+              "Q_in_outside_support_C": 1.4086695224112473e-07
+            },
+            "source_ledger": [
+              {
+                "start_s": 0.0,
+                "end_s": 11.126,
+                "cause_with_tolerance": false,
+                "account": {
+                  "Q_in_C": 1.4146127000427876e-07,
+                  "Q_sh_C": 0.0,
+                  "Q_leak_C": 5.378593246766747e-09,
+                  "Q_other_C": 5.955416449769364e-09,
+                  "Q_cap_C": 1.3012726030774152e-07,
+                  "Q_net_C": 1.3012726030774266e-07,
+                  "residual_C": 1.138200522872966e-21,
+                  "throughput_C": 1.5384469309106706e-07,
+                  "Q_in_supported_C": 5.943177631537145e-10,
+                  "Q_in_outside_support_C": 1.4086695224112505e-07
+                },
+                "supported_state_start_V": 0.0,
+                "supported_state_end_V": 0.0003612314082284735
+              },
+              {
+                "start_s": 11.126,
+                "end_s": 11.351,
+                "cause_with_tolerance": true,
+                "account": {
+                  "Q_in_C": 2.8392787800226926e-07,
+                  "Q_sh_C": 0.0,
+                  "Q_leak_C": 3.7227588949917376e-08,
+                  "Q_other_C": 1.1631689786745604e-08,
+                  "Q_cap_C": 2.350685992656053e-07,
+                  "Q_net_C": 2.3506859926560627e-07,
+                  "residual_C": 9.529120656610879e-22,
+                  "throughput_C": 3.3303062063720027e-07,
+                  "Q_in_supported_C": 2.839278780022695e-07,
+                  "Q_in_outside_support_C": -2.6469779601696886e-22
+                },
+                "supported_state_start_V": 0.0003612314082284735,
+                "supported_state_end_V": 0.16915944403382321
+              }
+            ],
+            "account_sample_s": 11.351,
+            "why": "entry state not supported: supported 0.1692 V of 0.2435 V above vrest (charge outside support / without source)"
+          }
+        ]
+      },
+      "unmeasured": {},
+      "events": {
+        "thw12f_": [
+          {
+            "t_q": 11.3505,
+            "scope": "complete vm ledger node",
+            "anchor_s": 0.0,
+            "anchor": "record start",
+            "ok": false,
+            "cause": [
+              11.128,
+              12.502
+            ],
+            "stretch_start_s": 0.0,
+            "u_entry_state_V": 0.24346389826676795,
+            "supported_state_V": 0.16915944403382321,
+            "checks": {
+              "membrane_rose": true,
+              "account_closes": true,
+              "net_charge_sufficient": true,
+              "retained_state_supported": false,
+              "source_history_valid": true
+            },
+            "account_from_anchor": {
+              "Q_in_C": 4.25389148006548e-07,
+              "Q_sh_C": 0.0,
+              "Q_leak_C": 4.2606182196684124e-08,
+              "Q_other_C": 1.7587106236514966e-08,
+              "Q_cap_C": 3.6519585957334684e-07,
+              "Q_net_C": 3.651958595733489e-07,
+              "residual_C": 2.064642808932357e-21,
+              "throughput_C": 4.868753137282674e-07,
+              "Q_in_supported_C": 2.8452219576542326e-07,
+              "Q_in_outside_support_C": 1.4086695224112473e-07
+            },
+            "account_stretch": {
+              "Q_in_C": 4.25389148006548e-07,
+              "Q_sh_C": 0.0,
+              "Q_leak_C": 4.2606182196684124e-08,
+              "Q_other_C": 1.7587106236514966e-08,
+              "Q_cap_C": 3.6519585957334684e-07,
+              "Q_net_C": 3.651958595733489e-07,
+              "residual_C": 2.064642808932357e-21,
+              "throughput_C": 4.868753137282674e-07,
+              "Q_in_supported_C": 2.8452219576542326e-07,
+              "Q_in_outside_support_C": 1.4086695224112473e-07
+            },
+            "source_ledger": [
+              {
+                "start_s": 0.0,
+                "end_s": 11.126,
+                "cause_with_tolerance": false,
+                "account": {
+                  "Q_in_C": 1.4146127000427876e-07,
+                  "Q_sh_C": 0.0,
+                  "Q_leak_C": 5.378593246766747e-09,
+                  "Q_other_C": 5.955416449769364e-09,
+                  "Q_cap_C": 1.3012726030774152e-07,
+                  "Q_net_C": 1.3012726030774266e-07,
+                  "residual_C": 1.138200522872966e-21,
+                  "throughput_C": 1.5384469309106706e-07,
+                  "Q_in_supported_C": 5.943177631537145e-10,
+                  "Q_in_outside_support_C": 1.4086695224112505e-07
+                },
+                "supported_state_start_V": 0.0,
+                "supported_state_end_V": 0.0003612314082284735
+              },
+              {
+                "start_s": 11.126,
+                "end_s": 11.351,
+                "cause_with_tolerance": true,
+                "account": {
+                  "Q_in_C": 2.8392787800226926e-07,
+                  "Q_sh_C": 0.0,
+                  "Q_leak_C": 3.7227588949917376e-08,
+                  "Q_other_C": 1.1631689786745604e-08,
+                  "Q_cap_C": 2.350685992656053e-07,
+                  "Q_net_C": 2.3506859926560627e-07,
+                  "residual_C": 9.529120656610879e-22,
+                  "throughput_C": 3.3303062063720027e-07,
+                  "Q_in_supported_C": 2.839278780022695e-07,
+                  "Q_in_outside_support_C": -2.6469779601696886e-22
+                },
+                "supported_state_start_V": 0.0003612314082284735,
+                "supported_state_end_V": 0.16915944403382321
+              }
+            ],
+            "account_sample_s": 11.351,
+            "why": "entry state not supported: supported 0.1692 V of 0.2435 V above vrest (charge outside support / without source)"
+          }
+        ],
+        "thw12r_": []
+      }
+    },
+    "sigma_spatial_support_all_events": {
+      "result": "PASS",
+      "n_events": 1,
+      "unsupported": {},
+      "unmeasured": {},
+      "events": {
+        "sgw12f_": [
+          {
+            "t_q": 11.1005,
+            "scope": "complete vm ledger node",
+            "anchor_s": 0.0,
+            "anchor": "record start",
+            "ok": true,
+            "cause": [
+              11.006,
+              12.503
+            ],
+            "stretch_start_s": 0.0,
+            "u_entry_state_V": 0.24346389826676795,
+            "supported_state_V": 0.24346389826676793,
+            "checks": {
+              "membrane_rose": true,
+              "account_closes": true,
+              "net_charge_sufficient": true,
+              "retained_state_supported": true,
+              "source_history_valid": true
+            },
+            "account_from_anchor": {
+              "Q_in_C": 3.712824448568198e-08,
+              "Q_sh_C": 0.0,
+              "Q_leak_C": 1.1686267116804871e-08,
+              "Q_other_C": 1.0955753690052648e-09,
+              "Q_cap_C": 2.4346401999871705e-08,
+              "Q_net_C": 2.4346401999871847e-08,
+              "residual_C": 1.4227506535912076e-22,
+              "throughput_C": 5.01535508698044e-08,
+              "Q_in_supported_C": 3.712824448568198e-08,
+              "Q_in_outside_support_C": 0.0
+            },
+            "account_stretch": {
+              "Q_in_C": 3.712824448568198e-08,
+              "Q_sh_C": 0.0,
+              "Q_leak_C": 1.1686267116804871e-08,
+              "Q_other_C": 1.0955753690052648e-09,
+              "Q_cap_C": 2.4346401999871705e-08,
+              "Q_net_C": 2.4346401999871847e-08,
+              "residual_C": 1.4227506535912076e-22,
+              "throughput_C": 5.01535508698044e-08,
+              "Q_in_supported_C": 3.712824448568198e-08,
+              "Q_in_outside_support_C": 0.0
+            },
+            "source_ledger": [
+              {
+                "start_s": 0.0,
+                "end_s": 11.004,
+                "cause_with_tolerance": false,
+                "account": {
+                  "Q_in_C": 0.0,
+                  "Q_sh_C": 0.0,
+                  "Q_leak_C": 0.0,
+                  "Q_other_C": -2.8421723641287175e-24,
+                  "Q_cap_C": 0.0,
+                  "Q_net_C": 2.8421723641287175e-24,
+                  "residual_C": 2.8421723641287175e-24,
+                  "throughput_C": 4.4937587249195075e-20,
+                  "Q_in_supported_C": 0.0,
+                  "Q_in_outside_support_C": 0.0
+                },
+                "supported_state_start_V": 0.0,
+                "supported_state_end_V": 0.0
+              },
+              {
+                "start_s": 11.004,
+                "end_s": 11.101,
+                "cause_with_tolerance": true,
+                "account": {
+                  "Q_in_C": 3.712824448568198e-08,
+                  "Q_sh_C": 0.0,
+                  "Q_leak_C": 1.1686267116804871e-08,
+                  "Q_other_C": 1.0955753690052677e-09,
+                  "Q_cap_C": 2.4346401999871705e-08,
+                  "Q_net_C": 2.4346401999871844e-08,
+                  "residual_C": 1.3896634290890865e-22,
+                  "throughput_C": 5.015355086975946e-08,
+                  "Q_in_supported_C": 3.712824448568198e-08,
+                  "Q_in_outside_support_C": 0.0
+                },
+                "supported_state_start_V": 0.0,
+                "supported_state_end_V": 0.24346389826676793
+              }
+            ],
+            "account_sample_s": 11.101,
+            "why": ""
+          }
+        ],
+        "sgw12r_": []
+      }
+    },
+    "cdir_hs_from_matching_sigma": {
+      "result": "PASS",
+      "n_events": 1,
+      "unsupported": {},
+      "unmeasured": {},
+      "events": {
+        "cdw12f_": [
+          {
+            "t_q": 11.229332802037195,
+            "ok": true,
+            "why": "hs rose without a matching \u03a3 activity"
+          }
+        ],
+        "cdw12r_": []
+      }
+    },
+    "cdir_support_all_events": {
+      "result": "PASS",
+      "n_events": 0,
+      "unsupported": {},
+      "unmeasured": {},
+      "events": {
+        "cdw12f_": [],
+        "cdw12r_": []
+      }
+    },
+    "cdir_conflict_consistent": {
+      "result": "PASS",
+      "why": []
+    },
+    "ports_canonical": {
+      "result": "PASS",
+      "why": [],
+      "n": 0
+    },
+    "load_consumed_in_cdir_activity": {
+      "result": "PASS",
+      "why": []
+    },
+    "load_pos_quiet_outside_cdir_activity": {
+      "result": "PASS",
+      "max_rise_V": 0.0
+    },
+    "load_neg_quiet_outside_cdir_activity": {
+      "result": "PASS",
+      "max_rise_V": 0.0
+    }
+  }
+}

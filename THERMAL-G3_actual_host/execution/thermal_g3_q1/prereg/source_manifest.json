@@ -1,0 +1,197 @@
+{
+ "schema": "thermal_g3_q1.source_manifest.1",
+ "sources": {
+  "analysis/__init__.py": {
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "analysis/ekv26_static.py": {
+   "sha256": "e4fe9ac0703a9ea2944eddd7ef2744c976d61db2cddc29514387da7c09d5ab7e"
+  },
+  "analysis/input_bounds.py": {
+   "sha256": "ecea492d1c727be6161ef61a121f7538d8ddcbd86f511b22c8db48e54d4feac1"
+  },
+  "analysis/raw_bounds.py": {
+   "sha256": "871e078186b80c50501cb49622545612184040190bc7c41720064660d0dfc2f5"
+  },
+  "audit/make_errata_table.py": {
+   "sha256": "fa40cf7c21dd51ca76c3f54c71b27b140614d338d3a81b1b33a2e32c50ecca94"
+  },
+  "audit/reaudit_v1_dev.py": {
+   "sha256": "b38a2b0e1a1a534a2422d6d807bd78ad79242a3394f0af841888ec9f2a507b2c"
+  },
+  "config.py": {
+   "sha256": "88e05268899668035ad934d36983e8f93b3829a0c553940dcca57a33190e88b0",
+   "v1_sha256": "1aab813de294a7b0c7e24537658b6c47b4ae14c0dc83cf378718fa168e67fbb3",
+   "identical_to_v1": false
+  },
+  "models/c05_ekv26_typ.lib": {
+   "sha256": "f6acb2379baacfdb5f53cfc30015f3b7c5690bb1118a5e32a678b76c0b739634",
+   "v1_sha256": "f6acb2379baacfdb5f53cfc30015f3b7c5690bb1118a5e32a678b76c0b739634",
+   "identical_to_v1": true
+  },
+  "netlists/__init__.py": {
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "v1_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "identical_to_v1": true
+  },
+  "netlists/bench_mother.py": {
+   "sha256": "7592338d0c61885c6658e61a62ea60d9befcf5b3480b279bee3299ab88e4d563"
+  },
+  "netlists/build.py": {
+   "sha256": "399a4a315db623fa13070206f599e57793fde95bc327bb69ce92ff369ed1b2fc",
+   "v1_sha256": "695fc1990e9124c24dd4b44517bcf2526eb7dbf8311cc5ec14cab91b86b15b10",
+   "identical_to_v1": false
+  },
+  "netlists/build_thermal_g3.py": {
+   "sha256": "eb38c797cf1dbc9446172d4c7fb8b17b48f0a66f8c876a263c6c472b8b42ade5",
+   "v1_sha256": "4f11e364ecf41d9d9ca679d916fe6a3a00bd466f6b20282f1f22d4af233a8428",
+   "identical_to_v1": false
+  },
+  "netlists/bundle_physical.py": {
+   "sha256": "f61a47ce2add2b38e6daf9e44507853a1ed1fb8a708df8a5a09f4e11cf1916f4",
+   "v1_sha256": "f61a47ce2add2b38e6daf9e44507853a1ed1fb8a708df8a5a09f4e11cf1916f4",
+   "identical_to_v1": true
+  },
+  "netlists/ledger_plan.py": {
+   "sha256": "ffd58a41defce744197b573ec9bf60b5bd01d4fc9877b5107cfa0c341817b475"
+  },
+  "netlists/neuron_mother.py": {
+   "sha256": "58dff803a651914c58158c13a143b517c642c16e857b0674a88946ff44f81634",
+   "v1_sha256": "e21057ac50be11d8475a0d5d0197bea58b05e32f2321765b30fb0671da67156b",
+   "identical_to_v1": false
+  },
+  "netlists/neuron_nrc.py": {
+   "sha256": "dbedcaf0b2a9d8cace6eb29fef5795d341e6998281fbfd8e90d780795c2bea6c",
+   "v1_sha256": "516a9192231c360316d829f7b81dd6936bfcd64ee14f436ed23b5cc2b1b883b1",
+   "identical_to_v1": false
+  },
+  "netlists/occurrence_port.py": {
+   "sha256": "183cb02a7fda4b056712789b841f6d9f03ccf84d1c0b046b0f6ce57c235038f7",
+   "v1_sha256": "183cb02a7fda4b056712789b841f6d9f03ccf84d1c0b046b0f6ce57c235038f7",
+   "identical_to_v1": true
+  },
+  "netlists/params.py": {
+   "sha256": "09a1a34c8990e5371b7518f112749ce692bbbc57e465d4aa48e5aa0aaed821b0",
+   "v1_sha256": "454c0ad270fe83545ca239f4b11a6cd367f3d8d6b5b995272bbf3d488d9383d1",
+   "identical_to_v1": false
+  },
+  "netlists/spatial_graph.py": {
+   "sha256": "15452f5003e76a70e965fc24cbd75b9e8f24e2051ac5715c601d06f9245313ed",
+   "v1_sha256": "15452f5003e76a70e965fc24cbd75b9e8f24e2051ac5715c601d06f9245313ed",
+   "identical_to_v1": true
+  },
+  "observers/__init__.py": {
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "observers/criteria_q1r.py": {
+   "sha256": "176477e00475211dcc75ddfd24f6b5a71a37cd781b231dd21a49e0a64541f4f2"
+  },
+  "observers/halfstep_compare.py": {
+   "sha256": "2186a431b692eefcfdd56509562963305cd2869777702e5115cf2a3384ee25b6"
+  },
+  "observers/judges.py": {
+   "sha256": "bd91cf6a1c12ba8c38fc126719c43789c9f3ec0e0ec1bb96bdbd5906024d28f7"
+  },
+  "observers/ledger_q1r.py": {
+   "sha256": "3b0bf8cf8a3eeedfde6511ec846c53e5aeb2a752ea51d3cbe6bfd442de0d2d9c"
+  },
+  "observers/observers_q1r.py": {
+   "sha256": "4fc3d38ca66d62fcd2eda7761d81ea8da6963dad0c01bd78764eb53127af7a25"
+  },
+  "observers/support_q1r.py": {
+   "sha256": "eaee21d730b63d457a1a0b66e727a42c0930e90168771c659b9e04ec0befe32e"
+  },
+  "prereg/make_cases.py": {
+   "sha256": "ba4ffe5fa0d96fa942d4679c9530edd6a9b8858f591860a7df1bb859be35aa61"
+  },
+  "prereg/make_protocol.py": {
+   "sha256": "c0d21e821fb610b0d56e61c4f6743c91eae5e4cdeed142142f033305e7ab6a21"
+  },
+  "runtime/__init__.py": {
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runtime/coordinator.py": {
+   "sha256": "f9461c2a7e0c09b04cd13cb8322d3d21e3a3f03352f2b7b35d83954168b999d4"
+  },
+  "runtime/decks.py": {
+   "sha256": "5c17b528bd3b4feb3c5a7973d56c2436e5edac7cad5e4df0a81590bcfc6f171f"
+  },
+  "runtime/supervisor.py": {
+   "sha256": "c8a07650c88bf072b852fff0805ab847ef986a102e2ebb9280b9f94a1e8c1f69"
+  },
+  "solver_adapter/__init__.py": {
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "v1_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "identical_to_v1": true
+  },
+  "solver_adapter/read_raw.py": {
+   "sha256": "97c1f437d4cb8564a15747b641398ff95fe5005a4e7aab5fe7943210e8a0d38a"
+  },
+  "solver_adapter/read_raw_mmap.py": {
+   "sha256": "b1397bd07835a9115647b575baa89681bc8e39faaa4602ea8c93c581bbbc803e",
+   "v1_sha256": "b1397bd07835a9115647b575baa89681bc8e39faaa4602ea8c93c581bbbc803e",
+   "identical_to_v1": true
+  },
+  "tests/fake_ngspice.py": {
+   "sha256": "882fce28acad7d151513698c040583a292dc22c0fc7a9407e708cd6079f4f758"
+  },
+  "tests/synth_raw.py": {
+   "sha256": "9854a43c08ce3c99b0125a36effd38761aba8937c41077077b83f58754741301"
+  },
+  "tools/check_cloud_package.py": {
+   "sha256": "08fd1b20bc0b901d54fb4f329145e9010fa7c1f5e5940e580c58c2e770b0b424"
+  },
+  "tools/make_cloud_package.py": {
+   "sha256": "f43c2a410818864c39eb762e5eb1ee29c0d6bd40f683bcd89ed4cb512b027751"
+  },
+  "tools/register_backend.py": {
+   "sha256": "5969a058b9840ee3ed8d5425b77145dc690b07ca0fca79b4c3d85eece3910ec0"
+  },
+  "tools/render_report.py": {
+   "sha256": "565c15a4d37217f002dbe0b2417c22b8ad2d09fb76d91af1200fe2ffb51c8c7f"
+  },
+  "tools/selfcheck_all.py": {
+   "sha256": "10b76a30a4fde5efbd84b9518ed9673ea1afb042288e6122a534669713cbbfdf"
+  },
+  "tools/source_manifest.py": {
+   "sha256": "c020c40b2ddcc0d0fbb9ad1e5c6ff6b9f91e50541e7f1a4c4d1ed0389ef8e26e"
+  },
+  "tools/static_check.py": {
+   "sha256": "b203794843881b2c2a4b589d7017070c4db2df127f002533e4c25dd42027e705"
+  },
+  "tools/write_freeze.py": {
+   "sha256": "5148c79c4a157d2ed55cec6dcd83aa30d97697d2a8453c2d963c2f1fd3e6b771"
+  }
+ },
+ "toolchain": {
+  "ngspice": {
+   "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/mfs0_r1/tools/ngspice47/Spice64/bin/ngspice_con.exe",
+   "sha256": "22d5cae2bd32b2e39157a8d27bf457122f68285b72a9ebefdf41551b628233ab"
+  },
+  "osdi": {
+   "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/mfs0_r1/tools/ekv26_r1.osdi",
+   "sha256": "39c1cdbc3dfa00093d708c5d0d34d8af05960b0f33b0568810bbfb930bc91d77",
+   "identical_to": "ekv_src/ekv26_rebuilt_ngspice.osdi"
+  },
+  "verilog_a": {
+   "constants.vams": "979045f57d491c997ff33a9bb60ae529732ddd904aa2f0f22089167a82cbf819",
+   "disciplines.vams": "c57d71f2da4fe1dcd8212259cdfed8d5ec9846db93b9cc83ab3f5ca64cfda330",
+   "ekv26.va": "2785e0663d9bab9296f1bc33fdf11b52d16c0f183bf438f0bd5914ad0264bcb0",
+   "generalMacrosAndDefines.va": "39afbfbe6a30facb1c7b10470fddfcdfce32daecf3e1b370dc49926b0df23fbc"
+  },
+  "compiler": {
+   "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/mfs0_r1/tools/openvaf1/openvaf.exe",
+   "sha256": "05dd00d690ecf7152937fda01132e1af57058e4ed9ea40d7f461b33ee0a4253a",
+   "version": "OpenVAF 1.0.0 (dwarning release)",
+   "defines": [
+    "__NGSPICE__"
+   ],
+   "source_of_define": "work/mfs0_r1/research/r1/model_provenance.md:13"
+  },
+  "model_card": {
+   "path": "models/c05_ekv26_typ.lib",
+   "sha256": "f6acb2379baacfdb5f53cfc30015f3b7c5690bb1118a5e32a678b76c0b739634",
+   "validity_note": "source states |Vg|<3.3V, |Vd|<3.3V, |Vs|<2V; W 0.8-10um, L 0.5-10um"
+  }
+ }
+}

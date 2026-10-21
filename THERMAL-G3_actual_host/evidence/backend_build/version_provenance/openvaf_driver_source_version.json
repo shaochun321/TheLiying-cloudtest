@@ -1,0 +1,24 @@
+{
+  "tag": "1.0.0",
+  "source_html_url": "https://github.com/dwarning/OpenVAF/blob/1.0.0/openvaf/openvaf-driver/Cargo.toml",
+  "git_blob_sha": "2163620fceaeb60f2037301e47e4986a092021a3",
+  "package": {
+    "name": "openvaf-driver",
+    "version": "23.5.0",
+    "authors": [
+      "DSPOM"
+    ],
+    "edition": "2021",
+    "license": "GPL-3.0"
+  },
+  "bin": [
+    {
+      "name": "openvaf",
+      "path": "src/main.rs",
+      "doctest": false,
+      "test": false
+    }
+  ],
+  "version_matches_binary_output": true,
+  "tool_asset_downloaded": false
+}

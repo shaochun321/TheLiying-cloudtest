@@ -1,0 +1,7 @@
+{
+  "requested_url": "https://api.github.com/repos/dwarning/OpenVAF/contents/Cargo.toml?ref=1.0.0",
+  "exit_code": 0,
+  "source_html_url": "https://github.com/dwarning/OpenVAF/blob/1.0.0/Cargo.toml",
+  "git_blob_sha": "fff48e93f11e16762b4946c903969900f312a3c8",
+  "content": "\n[workspace]\nresolver = \"2\"\nmembers = [\"openvaf/*\",\"melange/*\", \"verilogae/*\", \"xtask/\", \"lib/*\", \"sourcegen\"]\nexclude = [\"melange/examples\", \"verilogae/tests\", \"openvaf/test_data\"]\n\n[profile.release]\nlto = \"off\"\nincremental = true\ndebug = true\n\n[profile.opt]\ninherits = \"release\"\npanic = \"abort\"\nlto = \"fat\"\ncodegen-units = 1\nopt-level = 3\ndebug = false\nincremental = false\n\n\n[profile.dev]\n# Disabling debug info speeds up builds a bunch,\n# and we don't rely on it for debugging that much.\ndebug = true\n# panic = \"abort\"\n\n[profile.dev.package]\n# These speed up local tests.\nrowan.opt-level = 3\nrustc-hash.opt-level = 3\nahash.opt-level = 3\nsmol_str.opt-level = 3\ntext-size.opt-level = 3\nindexmap.opt-level = 3\nhashbrown.opt-level = 3\nstdx.opt-level = 3\nbforest.opt-level = 3\nlist_pool.opt-level = 3\nmir.opt-level = 2\nmir_build.opt-level = 2\nmir_opt.opt-level = 2\n\n\n[patch.crates-io]\nsalsa = { git = 'https://github.com/DSPOM2/salsa'}\n"
+}

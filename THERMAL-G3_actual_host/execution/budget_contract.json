@@ -1,0 +1,18 @@
+{
+ "dev_closed": 24,
+ "qualification": 2,
+ "formal": 31,
+ "rerun": 4,
+ "total": 61,
+ "global_wall_cap_s": 172800,
+ "phase_wall_caps_s": {
+  "qualification": 1200,
+  "formal": 108000,
+  "rerun": 14400
+ },
+ "v1_wall_used_s": 22565.592149972916,
+ "q1_starts_so_far": 0,
+ "per_backend_budget": null,
+ "cross_platform_gate": null,
+ "rerun_policy": "registered infrastructure failures only (runtime/coordinator.py INFRA_FAILURES)"
+}

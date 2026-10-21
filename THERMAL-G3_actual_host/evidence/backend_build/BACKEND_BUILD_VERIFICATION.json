@@ -1,0 +1,40 @@
+{
+  "recorded_at_utc": "2026-10-20T15:19:06.736628+00:00",
+  "result": "BACKEND_FILES_BUILT_AWAITING_HOST_CHECKS",
+  "original_command_exit_code": 1,
+  "identity_checked_resume_exit_code": 0,
+  "ngspice_sha256": "37d80c673bc4c03904ed4434bb3aa9aecd099ecfaeb66b86730a905e8c76ed89",
+  "openvaf_sha256": "4c3da9c10c1373dc5455b53911bda62eb7582857dbea27dcf72df60d3c618fcd",
+  "osdi_sha256": "7c07ae3728941189b77bf0ecfca5ebe56473d01eedc6ea59c46cc32bfdb9a43f",
+  "original_project_files_matched": 107,
+  "source_freeze_pins_matched": 66,
+  "project_file_mismatches": [],
+  "unexpected_project_files": [],
+  "model_sources_unchanged": true,
+  "source_freeze_sha256": "9d042b00195dbac895f2db3677ef4754f115b68063914a3075fb0975a9b02673",
+  "sealed_v1_ledger_sha256": "2723fdb7a38ce500f909bacdc698dd5045515318a67209b275e2d1d077f95fa9",
+  "native_osdi_elf64_x86_64": true,
+  "osdi_export_symbols_verified": true,
+  "dynamic_dependencies_found": true,
+  "backend_registered": false,
+  "post_registration_selfcheck_run": false,
+  "new_host_freeze_written": false,
+  "production_permission_exists": false,
+  "real_circuit_analyses_started": 0,
+  "contract_inherited": {
+    "dev_sealed": 24,
+    "qualification": 2,
+    "formal": 31,
+    "rerun": 4,
+    "total": 61,
+    "already_spent_s": 22565.592149972916,
+    "cumulative_cap_s": 172800
+  },
+  "remaining": [
+    "Real backend registration using truthful OpenVAF version text",
+    "Concentrated native-host static and full no-solver selfcheck",
+    "RAW output location, persistence and retrieval confirmation",
+    "New actual-host freeze before user authorization"
+  ],
+  "original_scope_D_reopened": false
+}

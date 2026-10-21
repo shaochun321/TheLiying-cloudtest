@@ -1,0 +1,25 @@
+{
+  "protected_baseline_files_unchanged": {
+    "config.py": true,
+    "netlists/params.py": true,
+    "netlists/build.py": true,
+    "netlists/build_thermal_g3.py": true,
+    "netlists/neuron_nrc.py": true,
+    "netlists/bundle_physical.py": true,
+    "netlists/occurrence_port.py": true,
+    "netlists/spatial_graph.py": true,
+    "prereg/cases_q1r.json": true,
+    "prereg/protocol_q1r_joint.json": true,
+    "runtime/coordinator.py": true,
+    "runtime/supervisor.py": true,
+    "models/c05_ekv26_typ.lib": true
+  },
+  "overlay_unchanged": {
+    "netlists/ledger_plan.py": true,
+    "observers/support_q1r.py": false,
+    "tests/synth_raw.py": false
+  },
+  "production_launch_permission_exists": false,
+  "production_q1_ledger_exists": false,
+  "solver_starts_this_task": 0
+}

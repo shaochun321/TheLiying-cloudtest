@@ -1,0 +1,89 @@
+{
+ "schema": "thermal_g3_q1.freeze.1",
+ "date": "2026-10-09",
+ "status": "NOT_READY",
+ "contract": {
+  "dev_closed": 24,
+  "qualification": 2,
+  "formal": 31,
+  "rerun": 4,
+  "total": 61,
+  "phase_wall_caps_s": {
+   "qualification": 1200,
+   "formal": 108000,
+   "rerun": 14400
+  }
+ },
+ "solver_starts_this_step": 0,
+ "failed_offline_checks_NOM": [
+  "exit:receiver_Theta_Cdir_max(stack@h_max -> RM mirror)"
+ ],
+ "passed_offline_checks_NOM": [
+  "bench_valid_exit:G0",
+  "bench_valid_exit:receiver",
+  "exit:G0_collector_max(ilim gated copy)",
+  "exit:G0_ensemble_max(I_A full steer, k=1)",
+  "exit:receiver_Sigma_max(OTA tail)",
+  "valid_entry:G0",
+  "valid_entry:receiver",
+  "weak_no_entry:G0",
+  "weak_no_entry:receiver"
+ ],
+ "pinned_sha256": {
+  "analysis/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "analysis/ekv26_static.py": "e4fe9ac0703a9ea2944eddd7ef2744c976d61db2cddc29514387da7c09d5ab7e",
+  "analysis/input_bounds.json": "15c02cb858c71385c0ff71cc939ddcf25fa3aa47d6a2a4ae36a49ea290fe0beb",
+  "analysis/input_bounds.py": "19f125bdb0715c50a28da1e6283f5c55e6dd86b447ff21e667b0f1b40a8d4593",
+  "audit/make_errata_table.py": "fa40cf7c21dd51ca76c3f54c71b27b140614d338d3a81b1b33a2e32c50ecca94",
+  "audit/reaudit_v1_dev.py": "6e0b582e090cf5f68e439ce8384b18cdcb4a3dad8b2b5d22d8f57a5ce48a4ede",
+  "audit/v1_dev_raw_audit.json": "180d36f19ee6a6f571c2559f8c73293242599bb903fbfba85c09e1a38fa93a71",
+  "audit/v1_dev_raw_audit_table.md": "ad168965d9837f88214a206caf76ad645db37c641c816e3782491deee849f9af",
+  "config.py": "6591c0686a25d3732026439b412c055082d433b3a90fb9defea130506370ec6b",
+  "models/c05_ekv26_typ.lib": "f6acb2379baacfdb5f53cfc30015f3b7c5690bb1118a5e32a678b76c0b739634",
+  "netlists/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "netlists/build.py": "695fc1990e9124c24dd4b44517bcf2526eb7dbf8311cc5ec14cab91b86b15b10",
+  "netlists/build_thermal_g3.py": "4f11e364ecf41d9d9ca679d916fe6a3a00bd466f6b20282f1f22d4af233a8428",
+  "netlists/bundle_physical.py": "f61a47ce2add2b38e6daf9e44507853a1ed1fb8a708df8a5a09f4e11cf1916f4",
+  "netlists/neuron_mother.py": "e21057ac50be11d8475a0d5d0197bea58b05e32f2321765b30fb0671da67156b",
+  "netlists/neuron_nrc.py": "516a9192231c360316d829f7b81dd6936bfcd64ee14f436ed23b5cc2b1b883b1",
+  "netlists/occurrence_port.py": "183cb02a7fda4b056712789b841f6d9f03ccf84d1c0b046b0f6ce57c235038f7",
+  "netlists/params.py": "454c0ad270fe83545ca239f4b11a6cd367f3d8d6b5b995272bbf3d488d9383d1",
+  "netlists/spatial_graph.py": "15452f5003e76a70e965fc24cbd75b9e8f24e2051ac5715c601d06f9245313ed",
+  "observer/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "observer/observe_g3.py": "f48774788b92cfed527236cbbd0fc0d661e7ef8f5d3c7a831a9b4407160fa82f",
+  "prereg/source_manifest.json": "cfce206f56956d0743fe801a0118270ec6150498bea5c54a5f490c19c74711a5",
+  "runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "runtime/coordinator.py": "f72e4d4f9d024f538e8a5cb4955be31b3a59c58ab636fccf7cf806846c27e191",
+  "solver_adapter/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "solver_adapter/read_raw.py": "97c1f437d4cb8564a15747b641398ff95fe5005a4e7aab5fe7943210e8a0d38a",
+  "solver_adapter/read_raw_mmap.py": "b1397bd07835a9115647b575baa89681bc8e39faaa4602ea8c93c581bbbc803e",
+  "tests/fake_ngspice.py": "13d299ce74e273b26b1bf840b26ca1f37b985afb3b6a4d6380bf30ca217ae1bb",
+  "tests/test_runtime.py": "5888a2866f7800e3e380661042d38feca1542a9fc8da71f0e8e4f2e31e59511a",
+  "tools/source_manifest.py": "d3512d58be62055020f7b5404767b8352311217ab445fcd3193b538d7cf53b70",
+  "tools/write_freeze.py": "e0d6c8e33cd0c4a40006eaa5ac4a9404460ba29c8b147a07e39fe0c166255b45"
+ },
+ "unique_main_blocker": {
+  "id": "Q1-NR-001",
+  "summary": "Receiver role (Theta/Cdir): the strongest physical input (relation stack -> 1/16 PMOS mirror) cannot be bounded below the exit allowance of the frozen candidate (Rdis_RCV = 75 kohm); a q pulse entered under that input would not reset",
+  "evidence": "analysis/input_bounds.json supplies.3.0.checks['exit:receiver_Theta_Cdir_max(stack@h_max -> RM mirror)'] and theta_cdir_h_scan",
+  "I_max_A": 4.233342432958399e-06,
+  "u_inf_V": 0.3053186027198711,
+  "u_exit_V": 0.0951027630193313,
+  "margin_V": -0.23021583970053983,
+  "receiver_I_allow_for_exit_A": 1.051054807932542e-06,
+  "history_h_max_bound_V": 2.4044602015783982,
+  "last_history_level_with_exit_V": 1.3,
+  "first_history_level_without_exit_V": 1.4000000000000001,
+  "rule": "Q1 proposal §1/§3.4: a candidate topology/parameter change found before freezing keeps Q1 NOT_READY; no search computation, no edits while qualifying"
+ },
+ "open_assumptions_not_blocking": [
+  "netlist 'M=k' binds to the OSDI $mfactor (matters for G0 bias M=1..10 in formal cases)"
+ ],
+ "not_built_because_not_ready": [
+  "netlists/bench_mother.py",
+  "prereg stimuli + cases_q1.json (33 cases)",
+  "observer/observe_q1.py",
+  "judge/judge_q1.py",
+  "static checks of the 33 netlists"
+ ]
+}

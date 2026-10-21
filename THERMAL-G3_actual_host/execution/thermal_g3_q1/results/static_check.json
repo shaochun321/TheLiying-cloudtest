@@ -1,0 +1,1683 @@
+{
+ "schema": "thermal_g3_q1r.static_check.1",
+ "n_cases": 33,
+ "all_pass": true,
+ "failed": {},
+ "cases": {
+  "CHAIN_12_C_F": {
+   "sha256": "bfbdca0b250fa68eace68d129c096badc5859d0964d48dfe693fddd08653c461",
+   "n_elements": 2323,
+   "n_mos": 1051,
+   "n_save": 74,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 178
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": [
+      "c1",
+      "c2"
+     ]
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {
+      "c": 4
+     }
+    }
+   },
+   "pass": true
+  },
+  "CHAIN_12_C_R": {
+   "sha256": "7ca60d5d48493e94a5c9ff52b59b9b9ccc7789eadab7bea0e1152c30ca6d09e4",
+   "n_elements": 2323,
+   "n_mos": 1051,
+   "n_save": 74,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 178
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": [
+      "c1",
+      "c2"
+     ]
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {
+      "c": 4
+     }
+    }
+   },
+   "pass": true
+  },
+  "CHAIN_12_W_F": {
+   "sha256": "3ef426372bd3dd3bedfbc86631753e020645200e778e907c3c3dea69714c9971",
+   "n_elements": 2323,
+   "n_mos": 1051,
+   "n_save": 123,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 178
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": [
+      "w1",
+      "w2"
+     ]
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {
+      "w": 4
+     }
+    }
+   },
+   "pass": true
+  },
+  "CHAIN_12_W_R": {
+   "sha256": "f79613076a6ae3c639417098441d0511e9e1c8a84423d73297363016faf34274",
+   "n_elements": 2323,
+   "n_mos": 1051,
+   "n_save": 74,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 178
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": [
+      "w1",
+      "w2"
+     ]
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {
+      "w": 4
+     }
+    }
+   },
+   "pass": true
+  },
+  "CHAIN_23_C_F": {
+   "sha256": "7e0bb92cbed3291aedd78bc773945d13ef774c2c7f116b545049a2805d596c17",
+   "n_elements": 2323,
+   "n_mos": 1051,
+   "n_save": 74,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 178
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": [
+      "c2",
+      "c3"
+     ]
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {
+      "c": 4
+     }
+    }
+   },
+   "pass": true
+  },
+  "CHAIN_23_C_R": {
+   "sha256": "de8050629fc3e2c7161532dc9c975fa2e0b6a76ede9bf60a251b1caf8cfff932",
+   "n_elements": 2323,
+   "n_mos": 1051,
+   "n_save": 74,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 178
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": [
+      "c2",
+      "c3"
+     ]
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {
+      "c": 4
+     }
+    }
+   },
+   "pass": true
+  },
+  "CHAIN_23_W_F": {
+   "sha256": "a6f6a0f9facf418ccaf625fe0ab167b92c625f64b411a085fdc809e48c06fcb2",
+   "n_elements": 2323,
+   "n_mos": 1051,
+   "n_save": 74,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 178
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": [
+      "w2",
+      "w3"
+     ]
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {
+      "w": 4
+     }
+    }
+   },
+   "pass": true
+  },
+  "CHAIN_23_W_R": {
+   "sha256": "cb616e8cb43ed037daa1207b1e66c307f20fd04dbb6a3dd3bebcc8b5941cb5dc",
+   "n_elements": 2323,
+   "n_mos": 1051,
+   "n_save": 74,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 178
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": [
+      "w2",
+      "w3"
+     ]
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {
+      "w": 4
+     }
+    }
+   },
+   "pass": true
+  },
+  "CHAIN_34_C_F": {
+   "sha256": "1c4508bba1d35457909782311877f8d784e905cbcbcc427e2e05c96ea98fc9a3",
+   "n_elements": 2323,
+   "n_mos": 1051,
+   "n_save": 74,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 178
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": [
+      "c3",
+      "c4"
+     ]
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {
+      "c": 4
+     }
+    }
+   },
+   "pass": true
+  },
+  "CHAIN_34_C_R": {
+   "sha256": "9959e1c1b519dc09c5a90ab3b4a905c8ecb2778a5e4372d89e871c8cb4e72b6d",
+   "n_elements": 2323,
+   "n_mos": 1051,
+   "n_save": 74,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 178
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": [
+      "c3",
+      "c4"
+     ]
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {
+      "c": 4
+     }
+    }
+   },
+   "pass": true
+  },
+  "CHAIN_34_W_F": {
+   "sha256": "8002582157622e87ee79ec6b5143072f9db5a1b880e49c342f11455b76938b53",
+   "n_elements": 2323,
+   "n_mos": 1051,
+   "n_save": 74,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 178
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": [
+      "w3",
+      "w4"
+     ]
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {
+      "w": 4
+     }
+    }
+   },
+   "pass": true
+  },
+  "CHAIN_34_W_R": {
+   "sha256": "977162bee7e34b500269b391afcc99385de07692a20b505c742c952a0994d1ed",
+   "n_elements": 2323,
+   "n_mos": 1051,
+   "n_save": 74,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 178
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": [
+      "w3",
+      "w4"
+     ]
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {
+      "w": 4
+     }
+    }
+   },
+   "pass": true
+  },
+  "DC_2P7": {
+   "sha256": "366ecfa4bc0224f1b4bfb68b93ac734f8ca707a42722833fa08ff85bc83b89b6",
+   "n_elements": 9197,
+   "n_mos": 4439,
+   "n_save": 12,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 12
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "w1",
+      "w2",
+      "w3",
+      "w4"
+     ]
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {
+      "w": 4,
+      "c": 4
+     }
+    }
+   },
+   "pass": true
+  },
+  "DC_3": {
+   "sha256": "4ed60f25d2afd4d73e6d0e4bc8b850877b023ce789e80e0a7a54406170af8068",
+   "n_elements": 9197,
+   "n_mos": 4439,
+   "n_save": 12,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 12
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "w1",
+      "w2",
+      "w3",
+      "w4"
+     ]
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {
+      "w": 4,
+      "c": 4
+     }
+    }
+   },
+   "pass": true
+  },
+  "DC_3P2": {
+   "sha256": "45e9b410d342257910653598dc2a644696b8ab948ac1e8cc9803de27981bec3f",
+   "n_elements": 9197,
+   "n_mos": 4439,
+   "n_save": 12,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 12
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "w1",
+      "w2",
+      "w3",
+      "w4"
+     ]
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {
+      "w": 4,
+      "c": 4
+     }
+    }
+   },
+   "pass": true
+  },
+  "FULL_NOM": {
+   "sha256": "c4ac0210d8a4204052563103c3cb9d3349b52a5f8c765bc616f162e047027f87",
+   "n_elements": 9527,
+   "n_mos": 4439,
+   "n_save": 652,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 695
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "w1",
+      "w2",
+      "w3",
+      "w4"
+     ]
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {
+      "w": 4,
+      "c": 4
+     }
+    }
+   },
+   "pass": true
+  },
+  "G0_C": {
+   "sha256": "5fa141b41ae9c99610f5e06b3c583085649d5ac3b0a58f7402b00e37c2037446",
+   "n_elements": 951,
+   "n_mos": 441,
+   "n_save": 38,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 55
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": [
+      "c1"
+     ]
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {}
+    }
+   },
+   "pass": true
+  },
+  "G0_W": {
+   "sha256": "9bacf6c75c93f9c5620e84a670854ec10de2741e53ffbfbad0f0315487397208",
+   "n_elements": 951,
+   "n_mos": 441,
+   "n_save": 47,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 55
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": [
+      "w1"
+     ]
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {}
+    }
+   },
+   "pass": true
+  },
+  "INVALID_STALE": {
+   "sha256": "69ff9c9856c7ff4376d790042fcb4f487533815df282277f94c88b961cc61762",
+   "n_elements": 2323,
+   "n_mos": 1051,
+   "n_save": 74,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 178
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": [
+      "w1",
+      "w2"
+     ]
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {
+      "w": 4
+     }
+    }
+   },
+   "pass": true
+  },
+  "INVALID_SYNC": {
+   "sha256": "e0ef578202fd677aa321739bee9752719defde1737b9cbb2e35946a7b96aa3bb",
+   "n_elements": 2323,
+   "n_mos": 1051,
+   "n_save": 74,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 178
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": [
+      "w1",
+      "w2"
+     ]
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {
+      "w": 4
+     }
+    }
+   },
+   "pass": true
+  },
+  "Q1_MOTHER_PROTOCOL": {
+   "sha256": "d2edf1a4712bb2a39b8a1fb948c823922f9fbf5b58b933c34d44c4cea6e87aea",
+   "n_elements": 348,
+   "n_mos": 129,
+   "n_save": 25,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 74
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": []
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {}
+    }
+   },
+   "pass": true
+  },
+  "FULL_NUM_HALFSTEP": {
+   "sha256": "59b47cdd7b1f8777dda9cbf83f080ee01cc51e6631c17bd5b57062be99925b34",
+   "n_elements": 9527,
+   "n_mos": 4439,
+   "n_save": 652,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 695
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "w1",
+      "w2",
+      "w3",
+      "w4"
+     ]
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {
+      "w": 4,
+      "c": 4
+     }
+    },
+    "baseline_vectors_saved": {
+     "pass": true,
+     "missing": []
+    },
+    "halfstep_identity": {
+     "pass": true
+    }
+   },
+   "pass": true
+  },
+  "FULL_REAL_MIRROR": {
+   "sha256": "9a6dee01fe2d17ba50d93623d332e9ce828b82e32b27067c2158735da755f938",
+   "n_elements": 9527,
+   "n_mos": 4439,
+   "n_save": 363,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 695
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "w1",
+      "w2",
+      "w3",
+      "w4"
+     ]
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {
+      "w": 4,
+      "c": 4
+     }
+    },
+    "baseline_vectors_saved": {
+     "pass": true,
+     "missing": []
+    },
+    "variant_diff_declared_only": {
+     "pass": true,
+     "n_diff": 160,
+     "stray": []
+    }
+   },
+   "pass": true
+  },
+  "FULL_SPACE_CUT": {
+   "sha256": "5b329ad789b899eacdb08cc3279aa4222489fa80c039e731fca0f2301a5922c1",
+   "n_elements": 9525,
+   "n_mos": 4439,
+   "n_save": 363,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 695
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "w1",
+      "w2",
+      "w3",
+      "w4"
+     ]
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {
+      "w": 4,
+      "c": 4
+     }
+    },
+    "baseline_vectors_saved": {
+     "pass": true,
+     "missing": []
+    },
+    "variant_diff_declared_only": {
+     "pass": true,
+     "n_diff": 2,
+     "stray": []
+    }
+   },
+   "pass": true
+  },
+  "G0_CUT_K1": {
+   "sha256": "5868b034a7a3e5d48905ea0ee6d8d5490396e1a8a697d484eb8a69145ccc458e",
+   "n_elements": 953,
+   "n_mos": 443,
+   "n_save": 38,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 55
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": [
+      "w1"
+     ]
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {}
+    },
+    "baseline_vectors_saved": {
+     "pass": true,
+     "missing": []
+    },
+    "variant_diff_declared_only": {
+     "pass": true,
+     "n_diff": 4,
+     "stray": []
+    }
+   },
+   "pass": true
+  },
+  "G0_CUT_K10": {
+   "sha256": "c25ca848759ac32e96e9a5a669d1ebb59d6cf2d6382bc9ab42a2194656abbf49",
+   "n_elements": 953,
+   "n_mos": 443,
+   "n_save": 38,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 55
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": [
+      "w1"
+     ]
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {}
+    },
+    "baseline_vectors_saved": {
+     "pass": true,
+     "missing": []
+    },
+    "variant_diff_declared_only": {
+     "pass": true,
+     "n_diff": 4,
+     "stray": []
+    }
+   },
+   "pass": true
+  },
+  "NUM_CHAIN_HALFSTEP": {
+   "sha256": "44e6eceee3c6bc8d53f35575dd791402893eca48cb678b2f66ab36a1b37ba90f",
+   "n_elements": 2323,
+   "n_mos": 1051,
+   "n_save": 123,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 178
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": [
+      "w1",
+      "w2"
+     ]
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {
+      "w": 4
+     }
+    },
+    "baseline_vectors_saved": {
+     "pass": true,
+     "missing": []
+    },
+    "halfstep_identity": {
+     "pass": true
+    }
+   },
+   "pass": true
+  },
+  "NUM_G0_HALFSTEP": {
+   "sha256": "a384f10260baf618ac5ec620f998991db99a165e79b9daa58ae3980df423327d",
+   "n_elements": 951,
+   "n_mos": 441,
+   "n_save": 47,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 55
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": [
+      "w1"
+     ]
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {}
+    },
+    "baseline_vectors_saved": {
+     "pass": true,
+     "missing": []
+    },
+    "halfstep_identity": {
+     "pass": true
+    }
+   },
+   "pass": true
+  },
+  "Q1_MOTHER_HALFSTEP": {
+   "sha256": "ec34641be4b40259954686967b7d6087f372f5e8b5e5f7b8ecab21e6669c1cde",
+   "n_elements": 348,
+   "n_mos": 129,
+   "n_save": 25,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 74
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": []
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {}
+    },
+    "baseline_vectors_saved": {
+     "pass": true,
+     "missing": []
+    },
+    "halfstep_identity": {
+     "pass": true
+    }
+   },
+   "pass": true
+  },
+  "STRUCT_CDIR_HISTORY_BLEED": {
+   "sha256": "4824f1d2dc8cf853e7c282f0c6fe1890d8560fe0f1fe9ae54102da10e9f078aa",
+   "n_elements": 2326,
+   "n_mos": 1052,
+   "n_save": 74,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 178
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": [
+      "w1",
+      "w2"
+     ]
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {
+      "w": 4
+     }
+    },
+    "baseline_vectors_saved": {
+     "pass": true,
+     "missing": []
+    },
+    "variant_diff_declared_only": {
+     "pass": true,
+     "n_diff": 3,
+     "stray": []
+    }
+   },
+   "pass": true
+  },
+  "STRUCT_REAL_SIGMA_SWAP": {
+   "sha256": "a9fd6e22f55650823d2362af66f5bb1040bcc9e491170d7382dbd9ad0ba41c74",
+   "n_elements": 2323,
+   "n_mos": 1051,
+   "n_save": 74,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 178
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": [
+      "w1",
+      "w2"
+     ]
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {
+      "w": 4
+     }
+    },
+    "baseline_vectors_saved": {
+     "pass": true,
+     "missing": []
+    },
+    "variant_diff_declared_only": {
+     "pass": true,
+     "n_diff": 4,
+     "stray": []
+    }
+   },
+   "pass": true
+  },
+  "STRUCT_SIGMA_PORT_CUT": {
+   "sha256": "27475f6b82564717aee8a03a51fae87bc13a8ca7f231d9bc8d20f2825ffcb3f8",
+   "n_elements": 2325,
+   "n_mos": 1053,
+   "n_save": 74,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 178
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": [
+      "w1",
+      "w2"
+     ]
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {
+      "w": 4
+     }
+    },
+    "baseline_vectors_saved": {
+     "pass": true,
+     "missing": []
+    },
+    "variant_diff_declared_only": {
+     "pass": true,
+     "n_diff": 4,
+     "stray": []
+    }
+   },
+   "pass": true
+  },
+  "STRUCT_THETA_PORT_CUT": {
+   "sha256": "3983b5e68502518a3bf62de250146b41fcd5f7ae77bda2f8aab336eb0e6968a0",
+   "n_elements": 2325,
+   "n_mos": 1053,
+   "n_save": 74,
+   "checks": {
+    "no_duplicate_names": {
+     "pass": true,
+     "dup": []
+    },
+    "explicit_unit_devices": {
+     "pass": true,
+     "with_M": []
+    },
+    "no_floating_nodes": {
+     "pass": true,
+     "floating": []
+    },
+    "model_domain_geometry": {
+     "pass": true,
+     "outside": []
+    },
+    "save_vectors_exist": {
+     "pass": true,
+     "missing": []
+    },
+    "judge_vectors_saved": {
+     "pass": true,
+     "missing": [],
+     "n_required": 178
+    },
+    "g0_ten_plus_collector": {
+     "pass": true,
+     "g0": [
+      "w1",
+      "w2"
+     ]
+    },
+    "spatial_four_nodes": {
+     "pass": true,
+     "nodes": {
+      "w": 4
+     }
+    },
+    "baseline_vectors_saved": {
+     "pass": true,
+     "missing": []
+    },
+    "variant_diff_declared_only": {
+     "pass": true,
+     "n_diff": 4,
+     "stray": []
+    }
+   },
+   "pass": true
+  }
+ }
+}

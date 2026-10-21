@@ -1,0 +1,11 @@
+{
+  "schema": "thermal_g3.checkpoint_restore.1",
+  "input_archive_sha256": "ceab0272e2b4d2c5f77a0d748de60281f6439be2cd6a7819f33cd0a6c0e8d9af",
+  "baseline_archive_sha256": "35baf5590b47e1567b3585706c2bd2c7444b30f27d5b8f72a82dc93c87752cbf",
+  "baseline_verified": true,
+  "overlay_files_verified": 40,
+  "deleted": [],
+  "project_root": "/workspace/scratch/8fecea1ba044/work/thermal_g3_q1r_runpack_fb51f53f/thermal_g3_q1",
+  "solver_starts": 0,
+  "old_results_are_historical": true
+}

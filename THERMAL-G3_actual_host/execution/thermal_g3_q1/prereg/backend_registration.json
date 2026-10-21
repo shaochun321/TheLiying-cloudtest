@@ -1,0 +1,32 @@
+{
+ "schema": "thermal_g3_q1r.backend.1",
+ "platform": "linux-x64",
+ "assets": {
+  "THERMAL_G3_NGSPICE": {
+   "path": "/workspace/scratch/8fecea1ba044/offline_backend_kit_20261020/host_work/native/bin/ngspice",
+   "sha256": "37d80c673bc4c03904ed4434bb3aa9aecd099ecfaeb66b86730a905e8c76ed89",
+   "version": "ngspice-47"
+  },
+  "THERMAL_G3_OSDI": {
+   "path": "/workspace/scratch/8fecea1ba044/offline_backend_kit_20261020/host_work/native/models/ekv26_linux.osdi",
+   "sha256": "7c07ae3728941189b77bf0ecfca5ebe56473d01eedc6ea59c46cc32bfdb9a43f"
+  }
+ },
+ "osdi_build": {
+  "sources": "backend/ekv_src",
+  "source_sha256": {
+   "constants.vams": "979045f57d491c997ff33a9bb60ae529732ddd904aa2f0f22089167a82cbf819",
+   "disciplines.vams": "c57d71f2da4fe1dcd8212259cdfed8d5ec9846db93b9cc83ab3f5ca64cfda330",
+   "ekv26.va": "2785e0663d9bab9296f1bc33fdf11b52d16c0f183bf438f0bd5914ad0264bcb0",
+   "generalMacrosAndDefines.va": "39afbfbe6a30facb1c7b10470fddfcdfce32daecf3e1b370dc49926b0df23fbc"
+  },
+  "compiler_version": "openvaf 23.5.0 (dwarning release 1.0.0)",
+  "compiler_sha256": "4c3da9c10c1373dc5455b53911bda62eb7582857dbea27dcf72df60d3c618fcd",
+  "defines": [
+   "__NGSPICE__"
+  ],
+  "command": "openvaf -D__NGSPICE__ backend/ekv_src/ekv26.va -o <osdi>"
+ },
+ "registered": "2026-10-20 19:30:18",
+ "note": "registration only; the backend is usable after a new freeze and a user permission for it"
+}

@@ -1,0 +1,490 @@
+{
+  "schema": "THERMAL-G3-v1.1-review-plan",
+  "date": "2026-10-08",
+  "status": "PROPOSED_NOT_EXECUTED_NOT_FROZEN",
+  "supersedes_only": "v1母本候选、50次正式矩阵、资源门；主线/层级定义不变",
+  "source_report": "C:/Users/shaoc/AppData/Roaming/warp/Warp/data/worktrees/cell-cc/cholla-palo-verde/cell-cell/工作报告/THERMAL-G3-v1开发阻塞分析_2026-10-08.md",
+  "unchanged": {
+    "sites": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "polarities": [
+      "warm",
+      "cool"
+    ],
+    "pairs": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "ensemble_each": 10,
+    "independent_collector_each": 1,
+    "core_instances": 124,
+    "AND_tree": "retain",
+    "parents_for_depth2": [
+      "qualified_Theta_N1",
+      "qualified_Sigma_N1"
+    ],
+    "deferred": [
+      "DA",
+      "STDP",
+      "CPC",
+      "true_long_term_memory"
+    ]
+  },
+  "candidate_mother": {
+    "name": "N-RC",
+    "qualified": false,
+    "replace": [
+      "independent_NAND_latch",
+      "core_set_edge",
+      "independent_core_timer"
+    ],
+    "retain": [
+      "physical_membrane",
+      "finite_OTA",
+      "CMOS_buffer",
+      "physical_hysteresis",
+      "real_reset_branch",
+      "physical_recovery",
+      "physical_POR"
+    ],
+    "new": [
+      "functional_threshold_Ch",
+      "series_qb_gate_on_recovery_shunt"
+    ],
+    "core_spike_duration_s": null,
+    "canonical_port": "actual_activity_trace_then_physical_RC_edge",
+    "initial_math": {
+      "G0": {
+        "Cm": 1e-7,
+        "Rm": 1000000,
+        "Rdis": 220000,
+        "Imax": 0.0000012,
+        "uH": 0.5,
+        "uL": 0.35,
+        "Gtotal": 0.000005545454545454545,
+        "tau_s": 0.018032786885245903,
+        "uinf_max_V": 0.21639344262295082,
+        "T_const_Imax_s": 0.01357307265042719,
+        "T_input_zero_s": 0.006431843251354191,
+        "caveat": "Linear approximation: ignores MOS Ron, threshold dynamics, bias and moving vrest; not simulation evidence."
+      },
+      "receiver": {
+        "Cm": 1e-7,
+        "Rm": 1000000,
+        "Rdis": 75000,
+        "Imax": 0.0000012,
+        "uH": 0.25,
+        "uL": 0.1,
+        "Gtotal": 0.000014333333333333334,
+        "tau_s": 0.006976744186046511,
+        "uinf_max_V": 0.08372093023255814,
+        "T_const_Imax_s": 0.016212469539381262,
+        "T_input_zero_s": 0.0063927260363313134,
+        "caveat": "Linear approximation: ignores MOS Ron, threshold dynamics, bias and moving vrest; not simulation evidence."
+      }
+    },
+    "threshold_h_tau_target_s": 0.002,
+    "trace_C_F": 1e-7,
+    "trace_charge_R_ohm": 10000,
+    "trace_leak_R_ohm": 22000000,
+    "recovery_C_F": 1e-7,
+    "recovery_charge_R_ohm": 10000,
+    "recovery_leak_R_ohm": 8200000
+  },
+  "simulation_budget": {
+    "historical_dev_used": 10,
+    "historical_formal_used": 0,
+    "historical_solver_wall_s": 22369.6251308918,
+    "dev_total_cap": 24,
+    "dev_remaining_cap": 14,
+    "formal_cap": 31,
+    "fault_rerun_cap": 6,
+    "round_analysis_cap": 61,
+    "retired_old_quota": 19,
+    "round_solver_wall_cap_s": 172800,
+    "remaining_solver_wall_cap_s": 150430.3748691082,
+    "new_phase_wall_cap_s": {
+      "dev": 28800,
+      "formal": 108000,
+      "rerun": 13630.3748691082
+    },
+    "per_analysis_timeout_s": {
+      "mother_one_or_two": 600,
+      "single_site_single_polarity": 2700,
+      "two_actual_G0_parent_chain": 5400,
+      "four_sites_both_polarities_124_cores": 14400,
+      "full_static": 900
+    },
+    "parallel_default": 1,
+    "parallel_small_bench_cap": 2
+  },
+  "gates": [
+    "单/双母本无闲置同步异常，真实复位恢复成立",
+    "最短真实core q支持trace和恢复充电",
+    "G0十元和独立collector闭合；缺一路否决",
+    "实际父组织在线产生N1，不回放父波形",
+    "四节点空间图及有限负载假设保留",
+    "正式前实际成本预测加50%余量不超剩余总/阶段预算",
+    "最多一次集中纠正，正式冻结后不调参重考",
+    "全网输出/共享参考落入子网已检验范围",
+    "达门/预算即PASSED_FINITE_NOM_TEMPLATE或PARTIAL，不自动新增轮次"
+  ],
+  "evidence_scope": "NOM有限协议、方向/间隔组合；非NOM动态、所有无效全族、旋度/热梯度未资格化",
+  "formal_cases": [
+    {
+      "case_id": "G0_W",
+      "group": "G0",
+      "scale": "single_site_single_polarity",
+      "protocol": "点1暖极；完整刺激、撤回、恢复后重复；保留共享前端与另一极性压力夹具",
+      "expected": "十元募集和完整群体门、collector、N0闭合；所有返回评分",
+      "baseline_case_id": null,
+      "freeze_status": "PROPOSED",
+      "stimulus_file": null,
+      "netlist_hash": null
+    },
+    {
+      "case_id": "G0_C",
+      "group": "G0",
+      "scale": "single_site_single_polarity",
+      "protocol": "点1冷极；G0_W真实极性配置镜像",
+      "expected": "同合同，不依据温度符号软件选路",
+      "baseline_case_id": null,
+      "freeze_status": "PROPOSED",
+      "stimulus_file": null,
+      "netlist_hash": null
+    },
+    {
+      "case_id": "G0_CUT_K1",
+      "group": "G0",
+      "scale": "single_site_single_polarity",
+      "protocol": "G0_W物理隔离最低档ensemble到其trace/AND入口，保留有限虚负载",
+      "expected": "缺一路不形成完整群体确认",
+      "baseline_case_id": "G0_W",
+      "freeze_status": "PROPOSED",
+      "stimulus_file": null,
+      "netlist_hash": null
+    },
+    {
+      "case_id": "G0_CUT_K10",
+      "group": "G0",
+      "scale": "single_site_single_polarity",
+      "protocol": "G0_W物理隔离最高档ensemble到其trace/AND入口，保留有限虚负载",
+      "expected": "缺一路不形成完整群体确认",
+      "baseline_case_id": "G0_W",
+      "freeze_status": "PROPOSED",
+      "stimulus_file": null,
+      "netlist_hash": null
+    },
+    {
+      "case_id": "CHAIN_12_W_F",
+      "group": "CHAIN",
+      "scale": "two_actual_G0_parent_chain",
+      "protocol": "实际相邻对1-2、warm、forward；四节点空间图及检测中间节点保留；目标实际G0发生间隔1.5s；完整返回/退出",
+      "expected": "N0实际父输出→Θ/Σ各自N1→Cdir自身状态N2→真实负载；同类同参；所有父/子分别评分",
+      "baseline_case_id": null,
+      "freeze_status": "PROPOSED",
+      "stimulus_file": null,
+      "netlist_hash": null
+    },
+    {
+      "case_id": "CHAIN_12_W_R",
+      "group": "CHAIN",
+      "scale": "two_actual_G0_parent_chain",
+      "protocol": "实际相邻对1-2、warm、reverse；四节点空间图及检测中间节点保留；目标实际G0发生间隔3s；完整返回/退出",
+      "expected": "N0实际父输出→Θ/Σ各自N1→Cdir自身状态N2→真实负载；同类同参；所有父/子分别评分",
+      "baseline_case_id": null,
+      "freeze_status": "PROPOSED",
+      "stimulus_file": null,
+      "netlist_hash": null
+    },
+    {
+      "case_id": "CHAIN_12_C_F",
+      "group": "CHAIN",
+      "scale": "two_actual_G0_parent_chain",
+      "protocol": "实际相邻对1-2、cool、forward；四节点空间图及检测中间节点保留；目标实际G0发生间隔1.5s；完整返回/退出",
+      "expected": "N0实际父输出→Θ/Σ各自N1→Cdir自身状态N2→真实负载；同类同参；所有父/子分别评分",
+      "baseline_case_id": null,
+      "freeze_status": "PROPOSED",
+      "stimulus_file": null,
+      "netlist_hash": null
+    },
+    {
+      "case_id": "CHAIN_12_C_R",
+      "group": "CHAIN",
+      "scale": "two_actual_G0_parent_chain",
+      "protocol": "实际相邻对1-2、cool、reverse；四节点空间图及检测中间节点保留；目标实际G0发生间隔3s；完整返回/退出",
+      "expected": "N0实际父输出→Θ/Σ各自N1→Cdir自身状态N2→真实负载；同类同参；所有父/子分别评分",
+      "baseline_case_id": null,
+      "freeze_status": "PROPOSED",
+      "stimulus_file": null,
+      "netlist_hash": null
+    },
+    {
+      "case_id": "CHAIN_23_W_F",
+      "group": "CHAIN",
+      "scale": "two_actual_G0_parent_chain",
+      "protocol": "实际相邻对2-3、warm、forward；四节点空间图及检测中间节点保留；目标实际G0发生间隔1.5s；完整返回/退出",
+      "expected": "N0实际父输出→Θ/Σ各自N1→Cdir自身状态N2→真实负载；同类同参；所有父/子分别评分",
+      "baseline_case_id": null,
+      "freeze_status": "PROPOSED",
+      "stimulus_file": null,
+      "netlist_hash": null
+    },
+    {
+      "case_id": "CHAIN_23_W_R",
+      "group": "CHAIN",
+      "scale": "two_actual_G0_parent_chain",
+      "protocol": "实际相邻对2-3、warm、reverse；四节点空间图及检测中间节点保留；目标实际G0发生间隔3s；完整返回/退出",
+      "expected": "N0实际父输出→Θ/Σ各自N1→Cdir自身状态N2→真实负载；同类同参；所有父/子分别评分",
+      "baseline_case_id": null,
+      "freeze_status": "PROPOSED",
+      "stimulus_file": null,
+      "netlist_hash": null
+    },
+    {
+      "case_id": "CHAIN_23_C_F",
+      "group": "CHAIN",
+      "scale": "two_actual_G0_parent_chain",
+      "protocol": "实际相邻对2-3、cool、forward；四节点空间图及检测中间节点保留；目标实际G0发生间隔1.5s；完整返回/退出",
+      "expected": "N0实际父输出→Θ/Σ各自N1→Cdir自身状态N2→真实负载；同类同参；所有父/子分别评分",
+      "baseline_case_id": null,
+      "freeze_status": "PROPOSED",
+      "stimulus_file": null,
+      "netlist_hash": null
+    },
+    {
+      "case_id": "CHAIN_23_C_R",
+      "group": "CHAIN",
+      "scale": "two_actual_G0_parent_chain",
+      "protocol": "实际相邻对2-3、cool、reverse；四节点空间图及检测中间节点保留；目标实际G0发生间隔3s；完整返回/退出",
+      "expected": "N0实际父输出→Θ/Σ各自N1→Cdir自身状态N2→真实负载；同类同参；所有父/子分别评分",
+      "baseline_case_id": null,
+      "freeze_status": "PROPOSED",
+      "stimulus_file": null,
+      "netlist_hash": null
+    },
+    {
+      "case_id": "CHAIN_34_W_F",
+      "group": "CHAIN",
+      "scale": "two_actual_G0_parent_chain",
+      "protocol": "实际相邻对3-4、warm、forward；四节点空间图及检测中间节点保留；目标实际G0发生间隔1.5s；完整返回/退出",
+      "expected": "N0实际父输出→Θ/Σ各自N1→Cdir自身状态N2→真实负载；同类同参；所有父/子分别评分",
+      "baseline_case_id": null,
+      "freeze_status": "PROPOSED",
+      "stimulus_file": null,
+      "netlist_hash": null
+    },
+    {
+      "case_id": "CHAIN_34_W_R",
+      "group": "CHAIN",
+      "scale": "two_actual_G0_parent_chain",
+      "protocol": "实际相邻对3-4、warm、reverse；四节点空间图及检测中间节点保留；目标实际G0发生间隔3s；完整返回/退出",
+      "expected": "N0实际父输出→Θ/Σ各自N1→Cdir自身状态N2→真实负载；同类同参；所有父/子分别评分",
+      "baseline_case_id": null,
+      "freeze_status": "PROPOSED",
+      "stimulus_file": null,
+      "netlist_hash": null
+    },
+    {
+      "case_id": "CHAIN_34_C_F",
+      "group": "CHAIN",
+      "scale": "two_actual_G0_parent_chain",
+      "protocol": "实际相邻对3-4、cool、forward；四节点空间图及检测中间节点保留；目标实际G0发生间隔1.5s；完整返回/退出",
+      "expected": "N0实际父输出→Θ/Σ各自N1→Cdir自身状态N2→真实负载；同类同参；所有父/子分别评分",
+      "baseline_case_id": null,
+      "freeze_status": "PROPOSED",
+      "stimulus_file": null,
+      "netlist_hash": null
+    },
+    {
+      "case_id": "CHAIN_34_C_R",
+      "group": "CHAIN",
+      "scale": "two_actual_G0_parent_chain",
+      "protocol": "实际相邻对3-4、cool、reverse；四节点空间图及检测中间节点保留；目标实际G0发生间隔3s；完整返回/退出",
+      "expected": "N0实际父输出→Θ/Σ各自N1→Cdir自身状态N2→真实负载；同类同参；所有父/子分别评分",
+      "baseline_case_id": null,
+      "freeze_status": "PROPOSED",
+      "stimulus_file": null,
+      "netlist_hash": null
+    },
+    {
+      "case_id": "STRUCT_THETA_PORT_CUT",
+      "group": "STRUCTURE",
+      "scale": "two_actual_G0_parent_chain",
+      "protocol": "基准的Θ→Cdir传输物理CUT；父端登记虚负载",
+      "expected": "父N1满足基准合同，目标Cdir失去资格；显著父改变则隔离主张未取得",
+      "baseline_case_id": "CHAIN_12_W_F",
+      "freeze_status": "PROPOSED",
+      "stimulus_file": null,
+      "netlist_hash": null
+    },
+    {
+      "case_id": "STRUCT_SIGMA_PORT_CUT",
+      "group": "STRUCTURE",
+      "scale": "two_actual_G0_parent_chain",
+      "protocol": "基准的Σ→Cdir传输物理CUT；保留Σ真实输出负载",
+      "expected": "同上",
+      "baseline_case_id": "CHAIN_12_W_F",
+      "freeze_status": "PROPOSED",
+      "stimulus_file": null,
+      "netlist_hash": null
+    },
+    {
+      "case_id": "STRUCT_CDIR_HISTORY_BLEED",
+      "group": "STRUCTURE",
+      "scale": "two_actual_G0_parent_chain",
+      "protocol": "固定夹具MOS泄放Cdir局部Σ历史；时点事前冻结，禁止赋值",
+      "expected": "父N1保持，三级后续作用改变，证明其局部状态因果",
+      "baseline_case_id": "CHAIN_12_W_F",
+      "freeze_status": "PROPOSED",
+      "stimulus_file": null,
+      "netlist_hash": null
+    },
+    {
+      "case_id": "STRUCT_REAL_SIGMA_SWAP",
+      "group": "STRUCTURE",
+      "scale": "two_actual_G0_parent_chain",
+      "protocol": "实际交换Σ检测OTA输入/双轨接线；保持正Θ",
+      "expected": "冲突支路不形成匹配Cdir",
+      "baseline_case_id": "CHAIN_12_W_F",
+      "freeze_status": "PROPOSED",
+      "stimulus_file": null,
+      "netlist_hash": null
+    },
+    {
+      "case_id": "INVALID_SYNC",
+      "group": "STRUCTURE",
+      "scale": "two_actual_G0_parent_chain",
+      "protocol": "代表12暖极；协议经开发反推，使实际G0同时发生；无软件时点修正",
+      "expected": "不形成同类合格先后Θ/Cdir；Σ单独活动不冒充方向",
+      "baseline_case_id": null,
+      "freeze_status": "PROPOSED",
+      "stimulus_file": null,
+      "netlist_hash": null
+    },
+    {
+      "case_id": "INVALID_STALE",
+      "group": "STRUCTURE",
+      "scale": "two_actual_G0_parent_chain",
+      "protocol": "代表12暖极；第二发生在事前冻结的历史过期域；等待和状态均记录",
+      "expected": "旧历史不形成新合格先后Θ/Cdir",
+      "baseline_case_id": null,
+      "freeze_status": "PROPOSED",
+      "stimulus_file": null,
+      "netlist_hash": null
+    },
+    {
+      "case_id": "FULL_NOM",
+      "group": "FULL",
+      "scale": "four_sites_both_polarities_124_cores",
+      "protocol": "3.0V；四点暖事件正向以及冷事件反向；分段等待由开发反推并冻结；完整启动/返回/退出及非目标边评分",
+      "expected": "全部真实父链在线、暖冷共享供电/参考/负载组合成立；发生/无发生窗口和接口假设逐项满足",
+      "baseline_case_id": null,
+      "freeze_status": "PROPOSED",
+      "stimulus_file": null,
+      "netlist_hash": null
+    },
+    {
+      "case_id": "FULL_REAL_MIRROR",
+      "group": "FULL",
+      "scale": "four_sites_both_polarities_124_cores",
+      "protocol": "FULL_NOM实际1↔4、2↔3接线/注入镜像，不只改审计名",
+      "expected": "真实方向端口相应镜像；恢复和非目标边合同保留",
+      "baseline_case_id": "FULL_NOM",
+      "freeze_status": "PROPOSED",
+      "stimulus_file": null,
+      "netlist_hash": null
+    },
+    {
+      "case_id": "FULL_SPACE_CUT",
+      "group": "FULL",
+      "scale": "four_sites_both_polarities_124_cores",
+      "protocol": "FULL_NOM打开目标2-3空间800k传输R，保留200k检测R、读出和寄生；暖冷同夹具协议",
+      "expected": "依赖该边的Σ/Cdir失去资格，其他链路按实际因果评分；不要求全网归零",
+      "baseline_case_id": "FULL_NOM",
+      "freeze_status": "PROPOSED",
+      "stimulus_file": null,
+      "netlist_hash": null
+    },
+    {
+      "case_id": "FULL_NUM_HALFSTEP",
+      "group": "FULL",
+      "scale": "four_sites_both_polarities_124_cores",
+      "protocol": "FULL_NOM相同冻结参数/协议，最大步长减半",
+      "expected": "各层事件数和符号相同；累计电荷、状态峰值差≤1%，无新同步异常",
+      "baseline_case_id": "FULL_NOM",
+      "freeze_status": "PROPOSED",
+      "stimulus_file": null,
+      "netlist_hash": null
+    },
+    {
+      "case_id": "NUM_G0_HALFSTEP",
+      "group": "NUM",
+      "scale": "single_site_single_polarity",
+      "protocol": "G0_W最大步长减半",
+      "expected": "同NUM门",
+      "baseline_case_id": "G0_W",
+      "freeze_status": "PROPOSED",
+      "stimulus_file": null,
+      "netlist_hash": null
+    },
+    {
+      "case_id": "NUM_CHAIN_HALFSTEP",
+      "group": "NUM",
+      "scale": "two_actual_G0_parent_chain",
+      "protocol": "CHAIN_12_W_F最大步长减半",
+      "expected": "同NUM门",
+      "baseline_case_id": "CHAIN_12_W_F",
+      "freeze_status": "PROPOSED",
+      "stimulus_file": null,
+      "netlist_hash": null
+    },
+    {
+      "case_id": "DC_2P7",
+      "group": "DC",
+      "scale": "four_sites_both_polarities_124_cores",
+      "protocol": "2.7V真实稳态边界；DC电源与环境常数明确设置，不以PWL零时点0V伪装目标供电静态",
+      "expected": "模型工作域/静态供电与参考账；不授非NOM整网动态功能资格",
+      "baseline_case_id": null,
+      "freeze_status": "PROPOSED",
+      "stimulus_file": null,
+      "netlist_hash": null
+    },
+    {
+      "case_id": "DC_3",
+      "group": "DC",
+      "scale": "four_sites_both_polarities_124_cores",
+      "protocol": "3V真实稳态边界；DC电源与环境常数明确设置，不以PWL零时点0V伪装目标供电静态",
+      "expected": "模型工作域/静态供电与参考账；不授非NOM整网动态功能资格",
+      "baseline_case_id": null,
+      "freeze_status": "PROPOSED",
+      "stimulus_file": null,
+      "netlist_hash": null
+    },
+    {
+      "case_id": "DC_3P2",
+      "group": "DC",
+      "scale": "four_sites_both_polarities_124_cores",
+      "protocol": "3.2V真实稳态边界；DC电源与环境常数明确设置，不以PWL零时点0V伪装目标供电静态",
+      "expected": "模型工作域/静态供电与参考账；不授非NOM整网动态功能资格",
+      "baseline_case_id": null,
+      "freeze_status": "PROPOSED",
+      "stimulus_file": null,
+      "netlist_hash": null
+    }
+  ]
+}

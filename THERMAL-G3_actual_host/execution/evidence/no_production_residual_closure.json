@@ -1,0 +1,6 @@
+{
+  "result": "PASS",
+  "production_closure_calls": [],
+  "scope": "No production observer, runtime, netlist, analysis or adapter calls the synthetic residual closure helper",
+  "real_solver_starts": 0
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Cargo.toml",
+    "path": "openvaf/openvaf/Cargo.toml",
+    "sha": "b12cf0fe7da1c144ce3c3f176c4d91e06925ee5e",
+    "size": 1014,
+    "url": "https://api.github.com/repos/dwarning/OpenVAF/contents/openvaf/openvaf/Cargo.toml?ref=1.0.0",
+    "html_url": "https://github.com/dwarning/OpenVAF/blob/1.0.0/openvaf/openvaf/Cargo.toml",
+    "git_url": "https://api.github.com/repos/dwarning/OpenVAF/git/blobs/b12cf0fe7da1c144ce3c3f176c4d91e06925ee5e",
+    "download_url": "https://raw.githubusercontent.com/dwarning/OpenVAF/1.0.0/openvaf/openvaf/Cargo.toml",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dwarning/OpenVAF/contents/openvaf/openvaf/Cargo.toml?ref=1.0.0",
+      "git": "https://api.github.com/repos/dwarning/OpenVAF/git/blobs/b12cf0fe7da1c144ce3c3f176c4d91e06925ee5e",
+      "html": "https://github.com/dwarning/OpenVAF/blob/1.0.0/openvaf/openvaf/Cargo.toml"
+    }
+  },
+  {
+    "name": "src",
+    "path": "openvaf/openvaf/src",
+    "sha": "46e0fafb6c1c03ddf9b38d18e4f12cf7e14d361f",
+    "size": 0,
+    "url": "https://api.github.com/repos/dwarning/OpenVAF/contents/openvaf/openvaf/src?ref=1.0.0",
+    "html_url": "https://github.com/dwarning/OpenVAF/tree/1.0.0/openvaf/openvaf/src",
+    "git_url": "https://api.github.com/repos/dwarning/OpenVAF/git/trees/46e0fafb6c1c03ddf9b38d18e4f12cf7e14d361f",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/dwarning/OpenVAF/contents/openvaf/openvaf/src?ref=1.0.0",
+      "git": "https://api.github.com/repos/dwarning/OpenVAF/git/trees/46e0fafb6c1c03ddf9b38d18e4f12cf7e14d361f",
+      "html": "https://github.com/dwarning/OpenVAF/tree/1.0.0/openvaf/openvaf/src"
+    }
+  },
+  {
+    "name": "tests",
+    "path": "openvaf/openvaf/tests",
+    "sha": "50bbb54557623d412e94cd24410cfda182d7adf2",
+    "size": 0,
+    "url": "https://api.github.com/repos/dwarning/OpenVAF/contents/openvaf/openvaf/tests?ref=1.0.0",
+    "html_url": "https://github.com/dwarning/OpenVAF/tree/1.0.0/openvaf/openvaf/tests",
+    "git_url": "https://api.github.com/repos/dwarning/OpenVAF/git/trees/50bbb54557623d412e94cd24410cfda182d7adf2",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/dwarning/OpenVAF/contents/openvaf/openvaf/tests?ref=1.0.0",
+      "git": "https://api.github.com/repos/dwarning/OpenVAF/git/trees/50bbb54557623d412e94cd24410cfda182d7adf2",
+      "html": "https://github.com/dwarning/OpenVAF/tree/1.0.0/openvaf/openvaf/tests"
+    }
+  }
+]

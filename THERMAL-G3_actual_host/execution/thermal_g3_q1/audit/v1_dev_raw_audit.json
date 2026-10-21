@@ -1,0 +1,2887 @@
+{
+ "schema": "thermal_g3_q1.v1_dev_raw_audit.1",
+ "mode": "read_only_no_solver",
+ "ledger": {
+  "path": "C:\\Users\\shaoc\\AppData\\Roaming\\warp\\Warp\\data\\worktrees\\cell-cc\\cholla-palo-verde\\research\\thermal_g3_v1\\results\\analysis_ledger.jsonl",
+  "sha256": "2723fdb7a38ce500f909bacdc698dd5045515318a67209b275e2d1d077f95fa9",
+  "starts": 24,
+  "ends": 24,
+  "solver_wall_s_sum": 22565.592149972916
+ },
+ "q_threshold_V": 1.5,
+ "runs": {
+  "dev-001": {
+   "tag": "np1_g0_single_site",
+   "purpose": "DEV-A N-P1 + one-site warm/cool G0 bench: power-up, recruitment, collector, port",
+   "analysis": "tran 1m 36 0 2m",
+   "start_t": "2026-10-08 06:37:08",
+   "end_t": "2026-10-08 06:37:17",
+   "wall_s": 8.729532241821289,
+   "ledger_error": "ngspice reported 'simulation(s) aborted'",
+   "files": {
+    "cir": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-001_np1_g0_single_site.cir",
+     "size": 84918,
+     "sha256": "1d1293f9fc8bdf3a58828793c64ffcc4bc77d5c73e7510f79e250a2a0ca23e9a"
+    },
+    "log": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-001_np1_g0_single_site.log",
+     "size": 33226,
+     "sha256": "5d290f9bdcd469ee32bfbfde22728d84970ffcc0eb15584944fc3384dad02bc7"
+    },
+    "raw": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-001_np1_g0_single_site.raw",
+     "size": 48599,
+     "sha256": "a8c0218f1c46ec0176376de8b2d30168a0796028854965dfcf3b6ef4f80d0c40"
+    }
+   },
+   "deck": {
+    "hrf_nodes": [
+     "gc1_col_thr gc1_col_ko2",
+     "gc1_e10_thr gc1_e10_ko2",
+     "gc1_e1_thr gc1_e1_ko2",
+     "gc1_e2_thr gc1_e2_ko2",
+     "gc1_e3_thr gc1_e3_ko2",
+     "gc1_e4_thr gc1_e4_ko2",
+     "gc1_e5_thr gc1_e5_ko2",
+     "gc1_e6_thr gc1_e6_ko2",
+     "gc1_e7_thr gc1_e7_ko2",
+     "gc1_e8_thr gc1_e8_ko2",
+     "gc1_e9_thr gc1_e9_ko2",
+     "gw1_col_thr gw1_col_ko2",
+     "gw1_e10_thr gw1_e10_ko2",
+     "gw1_e1_thr gw1_e1_ko2",
+     "gw1_e2_thr gw1_e2_ko2",
+     "gw1_e3_thr gw1_e3_ko2",
+     "gw1_e4_thr gw1_e4_ko2",
+     "gw1_e5_thr gw1_e5_ko2",
+     "gw1_e6_thr gw1_e6_ko2",
+     "gw1_e7_thr gw1_e7_ko2",
+     "gw1_e8_thr gw1_e8_ko2",
+     "gw1_e9_thr gw1_e9_ko2"
+    ],
+    "analysis_lines": [
+     "tran 1m 36 0 2m"
+    ]
+   },
+   "raw": {
+    "x_var": "time",
+    "points": 123,
+    "x_end": 0.03194367385868905,
+    "vars": [
+     "time",
+     "v(gc1_and_g8)",
+     "v(gc1_b10_q)",
+     "v(gc1_b1_q)",
+     "v(gc1_b5_q)",
+     "v(gc1_col_p)",
+     "v(gc1_col_vm)",
+     "v(gc1_e10_p)",
+     "v(gc1_e10_rec)",
+     "v(gc1_e10_vm)",
+     "v(gc1_e1_p)",
+     "v(gc1_e1_rec)",
+     "v(gc1_e1_thr)",
+     "v(gc1_e1_vm)",
+     "v(gc1_e5_p)",
+     "v(gc1_e5_rec)",
+     "v(gc1_e5_vm)",
+     "v(gc1_op_aq)",
+     "v(gc1_op_p)",
+     "v(gw1_and_g8)",
+     "v(gw1_b10_q)",
+     "v(gw1_b1_q)",
+     "v(gw1_b5_q)",
+     "v(gw1_col_p)",
+     "v(gw1_col_vm)",
+     "v(gw1_e10_p)",
+     "v(gw1_e10_rec)",
+     "v(gw1_e10_vm)",
+     "v(gw1_e1_p)",
+     "v(gw1_e1_rec)",
+     "v(gw1_e1_thr)",
+     "v(gw1_e1_vm)",
+     "v(gw1_e5_p)",
+     "v(gw1_e5_rec)",
+     "v(gw1_e5_vm)",
+     "v(gw1_op_aq)",
+     "v(gw1_op_p)",
+     "v(iref_n)",
+     "v(por_hold)",
+     "v(por_ok)",
+     "v(s1_da)",
+     "v(s1_db)",
+     "v(s1_m)",
+     "v(s1_s)",
+     "v(s1_tn)",
+     "v(vdd)",
+     "v(vrest)",
+     "v(vthe)"
+    ]
+   },
+   "q_events": {
+    "v(gc1_b10_q)": [],
+    "v(gc1_b1_q)": [],
+    "v(gc1_b5_q)": [],
+    "v(gw1_b10_q)": [],
+    "v(gw1_b1_q)": [],
+    "v(gw1_b5_q)": []
+   }
+  },
+  "dev-002": {
+   "tag": "np1_g0_single_site_cnode",
+   "purpose": "DEV-A rerun of the same bench with registered C_NODE on every node (dev-001 aborted: timestep too small at 32 ms)",
+   "analysis": "tran 1m 36 0 2m",
+   "start_t": "2026-10-08 06:38:23",
+   "end_t": "2026-10-08 06:38:44",
+   "wall_s": 21.07434105873108,
+   "ledger_error": "ngspice reported 'simulation(s) aborted'",
+   "files": {
+    "cir": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-002_np1_g0_single_site_cnode.cir",
+     "size": 103254,
+     "sha256": "0ff35dff147c8a03e47c4dd5ad35f17dc9c537c53148bac32f5b24f5c8348175"
+    },
+    "log": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-002_np1_g0_single_site_cnode.log",
+     "size": 34101,
+     "sha256": "f857b14b7698fe80db9b2ceac48565333191dc5145ca8b7b9e2d8c51e085cb4c"
+    },
+    "raw": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-002_np1_g0_single_site_cnode.raw",
+     "size": 389982,
+     "sha256": "493bbef0c444aaadf5583d1707af3e9fc41ff1912d700fabd2caf8a27d97c571"
+    }
+   },
+   "deck": {
+    "hrf_nodes": [
+     "gc1_col_thr gc1_col_ko2",
+     "gc1_e10_thr gc1_e10_ko2",
+     "gc1_e1_thr gc1_e1_ko2",
+     "gc1_e2_thr gc1_e2_ko2",
+     "gc1_e3_thr gc1_e3_ko2",
+     "gc1_e4_thr gc1_e4_ko2",
+     "gc1_e5_thr gc1_e5_ko2",
+     "gc1_e6_thr gc1_e6_ko2",
+     "gc1_e7_thr gc1_e7_ko2",
+     "gc1_e8_thr gc1_e8_ko2",
+     "gc1_e9_thr gc1_e9_ko2",
+     "gw1_col_thr gw1_col_ko2",
+     "gw1_e10_thr gw1_e10_ko2",
+     "gw1_e1_thr gw1_e1_ko2",
+     "gw1_e2_thr gw1_e2_ko2",
+     "gw1_e3_thr gw1_e3_ko2",
+     "gw1_e4_thr gw1_e4_ko2",
+     "gw1_e5_thr gw1_e5_ko2",
+     "gw1_e6_thr gw1_e6_ko2",
+     "gw1_e7_thr gw1_e7_ko2",
+     "gw1_e8_thr gw1_e8_ko2",
+     "gw1_e9_thr gw1_e9_ko2"
+    ],
+    "analysis_lines": [
+     "tran 1m 36 0 2m"
+    ]
+   },
+   "raw": {
+    "x_var": "time",
+    "points": 1012,
+    "x_end": 1.4368723223220392,
+    "vars": [
+     "time",
+     "v(gc1_and_g8)",
+     "v(gc1_b10_q)",
+     "v(gc1_b1_q)",
+     "v(gc1_b5_q)",
+     "v(gc1_col_p)",
+     "v(gc1_col_vm)",
+     "v(gc1_e10_p)",
+     "v(gc1_e10_rec)",
+     "v(gc1_e10_vm)",
+     "v(gc1_e1_p)",
+     "v(gc1_e1_rec)",
+     "v(gc1_e1_thr)",
+     "v(gc1_e1_vm)",
+     "v(gc1_e5_p)",
+     "v(gc1_e5_rec)",
+     "v(gc1_e5_vm)",
+     "v(gc1_op_aq)",
+     "v(gc1_op_p)",
+     "v(gw1_and_g8)",
+     "v(gw1_b10_q)",
+     "v(gw1_b1_q)",
+     "v(gw1_b5_q)",
+     "v(gw1_col_p)",
+     "v(gw1_col_vm)",
+     "v(gw1_e10_p)",
+     "v(gw1_e10_rec)",
+     "v(gw1_e10_vm)",
+     "v(gw1_e1_p)",
+     "v(gw1_e1_rec)",
+     "v(gw1_e1_thr)",
+     "v(gw1_e1_vm)",
+     "v(gw1_e5_p)",
+     "v(gw1_e5_rec)",
+     "v(gw1_e5_vm)",
+     "v(gw1_op_aq)",
+     "v(gw1_op_p)",
+     "v(iref_n)",
+     "v(por_hold)",
+     "v(por_ok)",
+     "v(s1_da)",
+     "v(s1_db)",
+     "v(s1_m)",
+     "v(s1_s)",
+     "v(s1_tn)",
+     "v(vdd)",
+     "v(vrest)",
+     "v(vthe)"
+    ]
+   },
+   "q_events": {
+    "v(gc1_b10_q)": [],
+    "v(gc1_b1_q)": [],
+    "v(gc1_b5_q)": [],
+    "v(gw1_b10_q)": [],
+    "v(gw1_b1_q)": [],
+    "v(gw1_b5_q)": []
+   }
+  },
+  "dev-003": {
+   "tag": "np1_g0_single_site_por",
+   "purpose": "DEV-A bench after POR fix (regenerative release + PMOS mean switch)",
+   "analysis": "tran 1m 36 0 2m",
+   "start_t": "2026-10-08 06:40:31",
+   "end_t": "2026-10-08 06:42:01",
+   "wall_s": 90.2582859992981,
+   "ledger_error": null,
+   "files": {
+    "cir": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-003_np1_g0_single_site_por.cir",
+     "size": 103672,
+     "sha256": "59be255318b2569f997aa1ba0f10d2bc934afa7a1b40ccac04c51120fad36804"
+    },
+    "log": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-003_np1_g0_single_site_por.log",
+     "size": 43780,
+     "sha256": "5ab6aacf421afd8e07c129c0e9601032e5d87014ea424134e3a7764a08f4a1a6"
+    },
+    "raw": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-003_np1_g0_single_site_por.raw",
+     "size": 11387075,
+     "sha256": "934d929a61d2782f5666846a78b64ac8ccee33f2291fd829cfa17f57ff36da91"
+    }
+   },
+   "deck": {
+    "hrf_nodes": [
+     "gc1_col_thr gc1_col_ko2",
+     "gc1_e10_thr gc1_e10_ko2",
+     "gc1_e1_thr gc1_e1_ko2",
+     "gc1_e2_thr gc1_e2_ko2",
+     "gc1_e3_thr gc1_e3_ko2",
+     "gc1_e4_thr gc1_e4_ko2",
+     "gc1_e5_thr gc1_e5_ko2",
+     "gc1_e6_thr gc1_e6_ko2",
+     "gc1_e7_thr gc1_e7_ko2",
+     "gc1_e8_thr gc1_e8_ko2",
+     "gc1_e9_thr gc1_e9_ko2",
+     "gw1_col_thr gw1_col_ko2",
+     "gw1_e10_thr gw1_e10_ko2",
+     "gw1_e1_thr gw1_e1_ko2",
+     "gw1_e2_thr gw1_e2_ko2",
+     "gw1_e3_thr gw1_e3_ko2",
+     "gw1_e4_thr gw1_e4_ko2",
+     "gw1_e5_thr gw1_e5_ko2",
+     "gw1_e6_thr gw1_e6_ko2",
+     "gw1_e7_thr gw1_e7_ko2",
+     "gw1_e8_thr gw1_e8_ko2",
+     "gw1_e9_thr gw1_e9_ko2"
+    ],
+    "analysis_lines": [
+     "tran 1m 36 0 2m"
+    ]
+   },
+   "raw": {
+    "x_var": "time",
+    "points": 19495,
+    "x_end": 36.0,
+    "vars": [
+     "time",
+     "v(gc1_and_g8)",
+     "v(gc1_b10_q)",
+     "v(gc1_b1_q)",
+     "v(gc1_b5_q)",
+     "v(gc1_col_p)",
+     "v(gc1_col_vm)",
+     "v(gc1_e10_c)",
+     "v(gc1_e10_p)",
+     "v(gc1_e10_rec)",
+     "v(gc1_e10_sb)",
+     "v(gc1_e10_td)",
+     "v(gc1_e10_thr)",
+     "v(gc1_e10_vm)",
+     "v(gc1_e1_c)",
+     "v(gc1_e1_p)",
+     "v(gc1_e1_rec)",
+     "v(gc1_e1_sb)",
+     "v(gc1_e1_td)",
+     "v(gc1_e1_thr)",
+     "v(gc1_e1_vm)",
+     "v(gc1_e5_c)",
+     "v(gc1_e5_p)",
+     "v(gc1_e5_rec)",
+     "v(gc1_e5_sb)",
+     "v(gc1_e5_td)",
+     "v(gc1_e5_thr)",
+     "v(gc1_e5_vm)",
+     "v(gc1_op_aq)",
+     "v(gc1_op_p)",
+     "v(gw1_and_g8)",
+     "v(gw1_b10_q)",
+     "v(gw1_b1_q)",
+     "v(gw1_b5_q)",
+     "v(gw1_col_p)",
+     "v(gw1_col_vm)",
+     "v(gw1_e10_c)",
+     "v(gw1_e10_p)",
+     "v(gw1_e10_rec)",
+     "v(gw1_e10_sb)",
+     "v(gw1_e10_td)",
+     "v(gw1_e10_thr)",
+     "v(gw1_e10_vm)",
+     "v(gw1_e1_c)",
+     "v(gw1_e1_p)",
+     "v(gw1_e1_rec)",
+     "v(gw1_e1_sb)",
+     "v(gw1_e1_td)",
+     "v(gw1_e1_thr)",
+     "v(gw1_e1_vm)",
+     "v(gw1_e5_c)",
+     "v(gw1_e5_p)",
+     "v(gw1_e5_rec)",
+     "v(gw1_e5_sb)",
+     "v(gw1_e5_td)",
+     "v(gw1_e5_thr)",
+     "v(gw1_e5_vm)",
+     "v(gw1_op_aq)",
+     "v(gw1_op_p)",
+     "v(iref_n)",
+     "v(irefp_n)",
+     "v(istep_n)",
+     "v(por_hold)",
+     "v(por_ok)",
+     "v(porc)",
+     "v(s1_da)",
+     "v(s1_db)",
+     "v(s1_m)",
+     "v(s1_s)",
+     "v(s1_tn)",
+     "v(vdd)",
+     "v(vrest)",
+     "v(vthe)"
+    ]
+   },
+   "q_events": {
+    "v(gc1_b10_q)": [],
+    "v(gc1_b1_q)": [],
+    "v(gc1_b5_q)": [],
+    "v(gw1_b10_q)": [],
+    "v(gw1_b1_q)": [
+     {
+      "up_s": 2.8528405848452616,
+      "down_s": 4.243318098731237,
+      "width_s": 1.3904775138859753
+     }
+    ],
+    "v(gw1_b5_q)": []
+   }
+  },
+  "dev-004": {
+   "tag": "np1_g0_single_site_v2",
+   "purpose": "DEV-A bench after node-name aliasing fix (da/dA)",
+   "analysis": "tran 1m 36 0 2m",
+   "start_t": "2026-10-08 06:43:19",
+   "end_t": "2026-10-08 06:43:54",
+   "wall_s": 35.03879451751709,
+   "ledger_error": "ngspice reported 'simulation(s) aborted'",
+   "files": {
+    "cir": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-004_np1_g0_single_site_v2.cir",
+     "size": 103377,
+     "sha256": "53edc8126213863baa8c65c38c197c6393aac6cad0fbcb0714bad571c767be6b"
+    },
+    "log": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-004_np1_g0_single_site_v2.log",
+     "size": 36735,
+     "sha256": "4756242d64adaf69601416090d6cc941c56d7d7823b04a64c1c1e9c4849b7c30"
+    },
+    "raw": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-004_np1_g0_single_site_v2.raw",
+     "size": 1929805,
+     "sha256": "9b596ee39b2bedb0fc208000be855e2307ce2f0a78a635167d23b4599214461c"
+    }
+   },
+   "deck": {
+    "hrf_nodes": [
+     "gc1_col_thr gc1_col_ko2",
+     "gc1_e10_thr gc1_e10_ko2",
+     "gc1_e1_thr gc1_e1_ko2",
+     "gc1_e2_thr gc1_e2_ko2",
+     "gc1_e3_thr gc1_e3_ko2",
+     "gc1_e4_thr gc1_e4_ko2",
+     "gc1_e5_thr gc1_e5_ko2",
+     "gc1_e6_thr gc1_e6_ko2",
+     "gc1_e7_thr gc1_e7_ko2",
+     "gc1_e8_thr gc1_e8_ko2",
+     "gc1_e9_thr gc1_e9_ko2",
+     "gw1_col_thr gw1_col_ko2",
+     "gw1_e10_thr gw1_e10_ko2",
+     "gw1_e1_thr gw1_e1_ko2",
+     "gw1_e2_thr gw1_e2_ko2",
+     "gw1_e3_thr gw1_e3_ko2",
+     "gw1_e4_thr gw1_e4_ko2",
+     "gw1_e5_thr gw1_e5_ko2",
+     "gw1_e6_thr gw1_e6_ko2",
+     "gw1_e7_thr gw1_e7_ko2",
+     "gw1_e8_thr gw1_e8_ko2",
+     "gw1_e9_thr gw1_e9_ko2"
+    ],
+    "analysis_lines": [
+     "tran 1m 36 0 2m"
+    ]
+   },
+   "raw": {
+    "x_var": "time",
+    "points": 4821,
+    "x_end": 6.903619489920252,
+    "vars": [
+     "time",
+     "v(gc1_and_g8)",
+     "v(gc1_b10_q)",
+     "v(gc1_b10_tr)",
+     "v(gc1_b1_q)",
+     "v(gc1_b1_tr)",
+     "v(gc1_b5_q)",
+     "v(gc1_b5_tr)",
+     "v(gc1_col_p)",
+     "v(gc1_col_vm)",
+     "v(gc1_e10_p)",
+     "v(gc1_e10_vm)",
+     "v(gc1_e1_p)",
+     "v(gc1_e1_vm)",
+     "v(gc1_e5_p)",
+     "v(gc1_e5_vm)",
+     "v(gc1_op_aq)",
+     "v(gc1_op_at)",
+     "v(gc1_op_p)",
+     "v(gw1_and_g8)",
+     "v(gw1_b10_q)",
+     "v(gw1_b10_tr)",
+     "v(gw1_b1_q)",
+     "v(gw1_b1_tr)",
+     "v(gw1_b5_q)",
+     "v(gw1_b5_tr)",
+     "v(gw1_col_p)",
+     "v(gw1_col_vm)",
+     "v(gw1_e10_p)",
+     "v(gw1_e10_vm)",
+     "v(gw1_e1_p)",
+     "v(gw1_e1_vm)",
+     "v(gw1_e5_p)",
+     "v(gw1_e5_vm)",
+     "v(gw1_op_aq)",
+     "v(gw1_op_at)",
+     "v(gw1_op_p)",
+     "v(ilimp_n)",
+     "v(irefp_n)",
+     "v(por_ok)",
+     "v(s1_da)",
+     "v(s1_db)",
+     "v(s1_m)",
+     "v(s1_s)",
+     "v(s1_tn)",
+     "v(s1_ya)",
+     "v(s1_yb)",
+     "v(vdd)",
+     "v(vrest)",
+     "v(vthe)"
+    ]
+   },
+   "q_events": {
+    "v(gc1_b10_q)": [],
+    "v(gc1_b1_q)": [],
+    "v(gc1_b5_q)": [],
+    "v(gw1_b10_q)": [],
+    "v(gw1_b1_q)": [
+     {
+      "up_s": 6.871619489920255,
+      "down_s": null,
+      "width_s": null
+     }
+    ],
+    "v(gw1_b5_q)": []
+   }
+  },
+  "dev-005": {
+   "tag": "np1_g0_single_site_v3",
+   "purpose": "DEV-A same bench with R1/R3 solver options (dev-004 aborted 6.90 s, reltol 1e-4)",
+   "analysis": "tran 1m 36 0 2m",
+   "start_t": "2026-10-08 06:44:31",
+   "end_t": "2026-10-08 06:46:00",
+   "wall_s": 88.20051193237305,
+   "ledger_error": "ngspice reported 'simulation(s) aborted'",
+   "files": {
+    "cir": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-005_np1_g0_single_site_v3.cir",
+     "size": 103339,
+     "sha256": "af2a82aed782c11723324be981aee4c88b557f980500b32ed96140d5f6598dea"
+    },
+    "log": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-005_np1_g0_single_site_v3.log",
+     "size": 42976,
+     "sha256": "40833c88410d262e35fb27990a7b7e55774ba5fb7a86c4da4b750496eeeee575"
+    },
+    "raw": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-005_np1_g0_single_site_v3.raw",
+     "size": 3820435,
+     "sha256": "9b503c031b585ffc701f3bdf5f9e0b68825e33bba8d83f44a63056a58f35fc9e"
+    }
+   },
+   "deck": {
+    "hrf_nodes": [
+     "gc1_col_thr gc1_col_ko2",
+     "gc1_e10_thr gc1_e10_ko2",
+     "gc1_e1_thr gc1_e1_ko2",
+     "gc1_e2_thr gc1_e2_ko2",
+     "gc1_e3_thr gc1_e3_ko2",
+     "gc1_e4_thr gc1_e4_ko2",
+     "gc1_e5_thr gc1_e5_ko2",
+     "gc1_e6_thr gc1_e6_ko2",
+     "gc1_e7_thr gc1_e7_ko2",
+     "gc1_e8_thr gc1_e8_ko2",
+     "gc1_e9_thr gc1_e9_ko2",
+     "gw1_col_thr gw1_col_ko2",
+     "gw1_e10_thr gw1_e10_ko2",
+     "gw1_e1_thr gw1_e1_ko2",
+     "gw1_e2_thr gw1_e2_ko2",
+     "gw1_e3_thr gw1_e3_ko2",
+     "gw1_e4_thr gw1_e4_ko2",
+     "gw1_e5_thr gw1_e5_ko2",
+     "gw1_e6_thr gw1_e6_ko2",
+     "gw1_e7_thr gw1_e7_ko2",
+     "gw1_e8_thr gw1_e8_ko2",
+     "gw1_e9_thr gw1_e9_ko2"
+    ],
+    "analysis_lines": [
+     "tran 1m 36 0 2m"
+    ]
+   },
+   "raw": {
+    "x_var": "time",
+    "points": 10378,
+    "x_end": 7.992432261667603,
+    "vars": [
+     "time",
+     "v(gc1_and_g8)",
+     "v(gc1_b10_q)",
+     "v(gc1_b1_q)",
+     "v(gc1_b5_q)",
+     "v(gc1_col_p)",
+     "v(gc1_col_vm)",
+     "v(gc1_e10_p)",
+     "v(gc1_e10_vm)",
+     "v(gc1_e1_p)",
+     "v(gc1_e1_vm)",
+     "v(gc1_e5_p)",
+     "v(gc1_e5_vm)",
+     "v(gc1_op_aq)",
+     "v(gc1_op_at)",
+     "v(gc1_op_p)",
+     "v(gw1_and_g8)",
+     "v(gw1_b10_q)",
+     "v(gw1_b1_q)",
+     "v(gw1_b5_q)",
+     "v(gw1_col_p)",
+     "v(gw1_col_vm)",
+     "v(gw1_e10_p)",
+     "v(gw1_e10_vm)",
+     "v(gw1_e1_c)",
+     "v(gw1_e1_ce)",
+     "v(gw1_e1_ned)",
+     "v(gw1_e1_p)",
+     "v(gw1_e1_pb)",
+     "v(gw1_e1_rb)",
+     "v(gw1_e1_rec)",
+     "v(gw1_e1_sb)",
+     "v(gw1_e1_td)",
+     "v(gw1_e1_thr)",
+     "v(gw1_e1_vm)",
+     "v(gw1_e5_p)",
+     "v(gw1_e5_vm)",
+     "v(gw1_op_aq)",
+     "v(gw1_op_at)",
+     "v(gw1_op_p)",
+     "v(por_ok)",
+     "v(s1_m)",
+     "v(s1_s)",
+     "v(s1_ya)",
+     "v(s1_yb)",
+     "v(vdd)"
+    ]
+   },
+   "q_events": {
+    "v(gc1_b10_q)": [],
+    "v(gc1_b1_q)": [],
+    "v(gc1_b5_q)": [],
+    "v(gw1_b10_q)": [],
+    "v(gw1_b1_q)": [
+     {
+      "up_s": 6.870973744012418,
+      "down_s": null,
+      "width_s": null
+     }
+    ],
+    "v(gw1_b5_q)": [
+     {
+      "up_s": 7.639961864209584,
+      "down_s": null,
+      "width_s": null
+     }
+    ]
+   }
+  },
+  "dev-006": {
+   "tag": "np1_g0_single_site_v4",
+   "purpose": "DEV-A bench after regenerative timer reset (dev-005 latch parked at pb 0.74 V)",
+   "analysis": "tran 1m 36 0 2m",
+   "start_t": "2026-10-08 06:47:10",
+   "end_t": "2026-10-08 07:34:59",
+   "wall_s": 2869.1017184257507,
+   "ledger_error": null,
+   "files": {
+    "cir": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-006_np1_g0_single_site_v4.cir",
+     "size": 109175,
+     "sha256": "817e9955395479abe858e3280ff0eaf291a44804248a00e486ed764eec195abe"
+    },
+    "log": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-006_np1_g0_single_site_v4.log",
+     "size": 345219,
+     "sha256": "3b2fb09d40e5f313f11fa1a19eb5dfa59a7d703d91a3b031cd1aef1ef980f1ca"
+    },
+    "raw": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-006_np1_g0_single_site_v4.raw",
+     "size": 106118098,
+     "sha256": "87b58428c5a6e422664d4e2b1ab04b5cdb63951b6ecbcdedb72a39f14e11c9da"
+    }
+   },
+   "deck": {
+    "hrf_nodes": [
+     "gc1_col_thr gc1_col_ko2",
+     "gc1_e10_thr gc1_e10_ko2",
+     "gc1_e1_thr gc1_e1_ko2",
+     "gc1_e2_thr gc1_e2_ko2",
+     "gc1_e3_thr gc1_e3_ko2",
+     "gc1_e4_thr gc1_e4_ko2",
+     "gc1_e5_thr gc1_e5_ko2",
+     "gc1_e6_thr gc1_e6_ko2",
+     "gc1_e7_thr gc1_e7_ko2",
+     "gc1_e8_thr gc1_e8_ko2",
+     "gc1_e9_thr gc1_e9_ko2",
+     "gw1_col_thr gw1_col_ko2",
+     "gw1_e10_thr gw1_e10_ko2",
+     "gw1_e1_thr gw1_e1_ko2",
+     "gw1_e2_thr gw1_e2_ko2",
+     "gw1_e3_thr gw1_e3_ko2",
+     "gw1_e4_thr gw1_e4_ko2",
+     "gw1_e5_thr gw1_e5_ko2",
+     "gw1_e6_thr gw1_e6_ko2",
+     "gw1_e7_thr gw1_e7_ko2",
+     "gw1_e8_thr gw1_e8_ko2",
+     "gw1_e9_thr gw1_e9_ko2"
+    ],
+    "analysis_lines": [
+     "tran 1m 36 0 2m"
+    ]
+   },
+   "raw": {
+    "x_var": "time",
+    "points": 250275,
+    "x_end": 36.0,
+    "vars": [
+     "time",
+     "v(gc1_and_g8)",
+     "v(gc1_b10_q)",
+     "v(gc1_b1_q)",
+     "v(gc1_b3_q)",
+     "v(gc1_b5_q)",
+     "v(gc1_b7_q)",
+     "v(gc1_col_p)",
+     "v(gc1_col_vm)",
+     "v(gc1_e10_p)",
+     "v(gc1_e10_vm)",
+     "v(gc1_e1_p)",
+     "v(gc1_e1_vm)",
+     "v(gc1_e3_p)",
+     "v(gc1_e3_vm)",
+     "v(gc1_e5_p)",
+     "v(gc1_e5_vm)",
+     "v(gc1_e7_p)",
+     "v(gc1_e7_vm)",
+     "v(gc1_op_aq)",
+     "v(gc1_op_at)",
+     "v(gc1_op_p)",
+     "v(gw1_and_g8)",
+     "v(gw1_b10_q)",
+     "v(gw1_b1_q)",
+     "v(gw1_b3_q)",
+     "v(gw1_b5_q)",
+     "v(gw1_b7_q)",
+     "v(gw1_col_p)",
+     "v(gw1_col_vm)",
+     "v(gw1_e10_p)",
+     "v(gw1_e10_vm)",
+     "v(gw1_e1_p)",
+     "v(gw1_e1_pb)",
+     "v(gw1_e1_rb)",
+     "v(gw1_e1_rec)",
+     "v(gw1_e1_td)",
+     "v(gw1_e1_vm)",
+     "v(gw1_e3_p)",
+     "v(gw1_e3_vm)",
+     "v(gw1_e5_p)",
+     "v(gw1_e5_vm)",
+     "v(gw1_e7_p)",
+     "v(gw1_e7_vm)",
+     "v(gw1_op_aq)",
+     "v(gw1_op_at)",
+     "v(gw1_op_p)",
+     "v(por_ok)",
+     "v(s1_m)",
+     "v(s1_s)",
+     "v(s1_ya)",
+     "v(s1_yb)",
+     "v(vdd)"
+    ]
+   },
+   "q_events": {
+    "v(gc1_b10_q)": [
+     {
+      "up_s": 16.885318079806016,
+      "down_s": 18.402688987841863,
+      "width_s": 1.517370908035847
+     },
+     {
+      "up_s": 22.525340125158653,
+      "down_s": 29.5395088624606,
+      "width_s": 7.014168737301947
+     }
+    ],
+    "v(gc1_b1_q)": [
+     {
+      "up_s": 15.906403564827418,
+      "down_s": 21.351315463548914,
+      "width_s": 5.444911898721497
+     },
+     {
+      "up_s": 22.40630633826707,
+      "down_s": 30.635279911632885,
+      "width_s": 8.228973573365817
+     }
+    ],
+    "v(gc1_b3_q)": [
+     {
+      "up_s": 12.596089661308287,
+      "down_s": 14.1138549286792,
+      "width_s": 1.5177652673709119
+     },
+     {
+      "up_s": 16.649871535256406,
+      "down_s": 21.528897219929235,
+      "width_s": 4.879025684672829
+     },
+     {
+      "up_s": 22.49324698631811,
+      "down_s": 30.850338845215088,
+      "width_s": 8.357091858896979
+     }
+    ],
+    "v(gc1_b5_q)": [
+     {
+      "up_s": 12.596089661308287,
+      "down_s": 14.1138549286792,
+      "width_s": 1.5177652673709119
+     },
+     {
+      "up_s": 16.86920886181481,
+      "down_s": 19.597723667907168,
+      "width_s": 2.7285148060923596
+     },
+     {
+      "up_s": 22.518809116330974,
+      "down_s": 30.257297259246833,
+      "width_s": 7.738488142915859
+     }
+    ],
+    "v(gc1_b7_q)": [
+     {
+      "up_s": 12.596089661308287,
+      "down_s": 14.1138549286792,
+      "width_s": 1.5177652673709119
+     },
+     {
+      "up_s": 16.86920886181481,
+      "down_s": 20.118203742513327,
+      "width_s": 3.2489948806985183
+     },
+     {
+      "up_s": 22.51440886083728,
+      "down_s": 30.55622494185241,
+      "width_s": 8.041816081015131
+     }
+    ],
+    "v(gw1_b10_q)": [
+     {
+      "up_s": 7.196866651816097,
+      "down_s": 12.492523438573768,
+      "width_s": 5.295656786757671
+     }
+    ],
+    "v(gw1_b1_q)": [
+     {
+      "up_s": 6.871154114258653,
+      "down_s": 14.822080462577192,
+      "width_s": 7.950926348318539
+     },
+     {
+      "up_s": 16.862309306063164,
+      "down_s": 18.444474279869723,
+      "width_s": 1.5821649738065595
+     },
+     {
+      "up_s": 31.482870492385015,
+      "down_s": null,
+      "width_s": null
+     }
+    ],
+    "v(gw1_b3_q)": [
+     {
+      "up_s": 7.0890706900506695,
+      "down_s": 14.175572791544372,
+      "width_s": 7.086502101493703
+     },
+     {
+      "up_s": 31.79335421526118,
+      "down_s": null,
+      "width_s": null
+     }
+    ],
+    "v(gw1_b5_q)": [
+     {
+      "up_s": 7.196866651816097,
+      "down_s": 14.278762051964806,
+      "width_s": 7.081895400148709
+     },
+     {
+      "up_s": 32.280324983762036,
+      "down_s": 35.77503392675117,
+      "width_s": 3.494708942989135
+     }
+    ],
+    "v(gw1_b7_q)": [
+     {
+      "up_s": 7.196866651816097,
+      "down_s": 13.773079850030417,
+      "width_s": 6.57621319821432
+     }
+    ]
+   }
+  },
+  "dev-007": {
+   "tag": "np1_g0_single_site_v5",
+   "purpose": "DEV-A same bench after latch reset-race fix (R_dis), KLU solver",
+   "analysis": "tran 1m 36 0 2m",
+   "start_t": "2026-10-08 07:40:39",
+   "end_t": "2026-10-08 08:34:21",
+   "wall_s": 3221.3666820526123,
+   "ledger_error": null,
+   "files": {
+    "cir": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-007_np1_g0_single_site_v5.cir",
+     "size": 110588,
+     "sha256": "45eb45a6bbd17ac7b74ecf29aecfc6cfeeb80c15495b32a5162708343c82db2d"
+    },
+    "log": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-007_np1_g0_single_site_v5.log",
+     "size": 379100,
+     "sha256": "bcd3e6e82f3cf04fe2874f104c51baa1b6120533eae96f16d7c27d72a4be92f5"
+    },
+    "raw": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-007_np1_g0_single_site_v5.raw",
+     "size": 90248965,
+     "sha256": "adf585e30d1866226b26517386fb014b2410c589e66f42057fc8aeb7cc72a505"
+    }
+   },
+   "deck": {
+    "hrf_nodes": [
+     "gc1_col_thr gc1_col_ko2",
+     "gc1_e10_thr gc1_e10_ko2",
+     "gc1_e1_thr gc1_e1_ko2",
+     "gc1_e2_thr gc1_e2_ko2",
+     "gc1_e3_thr gc1_e3_ko2",
+     "gc1_e4_thr gc1_e4_ko2",
+     "gc1_e5_thr gc1_e5_ko2",
+     "gc1_e6_thr gc1_e6_ko2",
+     "gc1_e7_thr gc1_e7_ko2",
+     "gc1_e8_thr gc1_e8_ko2",
+     "gc1_e9_thr gc1_e9_ko2",
+     "gw1_col_thr gw1_col_ko2",
+     "gw1_e10_thr gw1_e10_ko2",
+     "gw1_e1_thr gw1_e1_ko2",
+     "gw1_e2_thr gw1_e2_ko2",
+     "gw1_e3_thr gw1_e3_ko2",
+     "gw1_e4_thr gw1_e4_ko2",
+     "gw1_e5_thr gw1_e5_ko2",
+     "gw1_e6_thr gw1_e6_ko2",
+     "gw1_e7_thr gw1_e7_ko2",
+     "gw1_e8_thr gw1_e8_ko2",
+     "gw1_e9_thr gw1_e9_ko2"
+    ],
+    "analysis_lines": [
+     "tran 1m 36 0 2m"
+    ]
+   },
+   "raw": {
+    "x_var": "time",
+    "points": 262348,
+    "x_end": 36.0,
+    "vars": [
+     "time",
+     "v(gc1_and_g8)",
+     "v(gc1_col_p)",
+     "v(gc1_col_vm)",
+     "v(gc1_e10_p)",
+     "v(gc1_e10_vm)",
+     "v(gc1_e1_p)",
+     "v(gc1_e1_vm)",
+     "v(gc1_e2_p)",
+     "v(gc1_e3_p)",
+     "v(gc1_e4_p)",
+     "v(gc1_e5_p)",
+     "v(gc1_e5_vm)",
+     "v(gc1_e6_p)",
+     "v(gc1_e7_p)",
+     "v(gc1_e8_p)",
+     "v(gc1_e9_p)",
+     "v(gc1_op_aq)",
+     "v(gc1_op_at)",
+     "v(gc1_op_p)",
+     "v(gw1_and_g8)",
+     "v(gw1_col_p)",
+     "v(gw1_col_vm)",
+     "v(gw1_e10_p)",
+     "v(gw1_e10_vm)",
+     "v(gw1_e1_p)",
+     "v(gw1_e1_vm)",
+     "v(gw1_e2_p)",
+     "v(gw1_e3_p)",
+     "v(gw1_e4_p)",
+     "v(gw1_e5_p)",
+     "v(gw1_e5_vm)",
+     "v(gw1_e6_p)",
+     "v(gw1_e7_p)",
+     "v(gw1_e8_p)",
+     "v(gw1_e9_p)",
+     "v(gw1_op_aq)",
+     "v(gw1_op_at)",
+     "v(gw1_op_p)",
+     "v(por_ok)",
+     "v(s1_m)",
+     "v(s1_s)",
+     "v(vdd)"
+    ]
+   },
+   "q_events": {}
+  },
+  "dev-008": {
+   "tag": "np1_g0_single_site_v6",
+   "purpose": "DEV-A same netlist as dev-007, solver chgtol 1e-17: is the 17-latch simultaneous flip numerical?",
+   "analysis": "tran 1m 36 0 2m",
+   "start_t": "2026-10-08 08:37:44",
+   "end_t": "2026-10-08 09:46:43",
+   "wall_s": 4138.280673503876,
+   "ledger_error": null,
+   "files": {
+    "cir": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-008_np1_g0_single_site_v6.cir",
+     "size": 110800,
+     "sha256": "d922f48c7530797065b05f18b5da88f040e74ac7ea9a26ff7bfc5999fc898214"
+    },
+    "log": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-008_np1_g0_single_site_v6.log",
+     "size": 548188,
+     "sha256": "47997a12011335d95f8324ef8522b9644baeda2c5b1fcf8351daa6fa2139e637"
+    },
+    "raw": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-008_np1_g0_single_site_v6.raw",
+     "size": 272825196,
+     "sha256": "bd3250d3897b5e73820a8bf4e3d083400808042144282c6a1611fcdff1f9f537"
+    }
+   },
+   "deck": {
+    "hrf_nodes": [
+     "gc1_col_thr gc1_col_ko2",
+     "gc1_e10_thr gc1_e10_ko2",
+     "gc1_e1_thr gc1_e1_ko2",
+     "gc1_e2_thr gc1_e2_ko2",
+     "gc1_e3_thr gc1_e3_ko2",
+     "gc1_e4_thr gc1_e4_ko2",
+     "gc1_e5_thr gc1_e5_ko2",
+     "gc1_e6_thr gc1_e6_ko2",
+     "gc1_e7_thr gc1_e7_ko2",
+     "gc1_e8_thr gc1_e8_ko2",
+     "gc1_e9_thr gc1_e9_ko2",
+     "gw1_col_thr gw1_col_ko2",
+     "gw1_e10_thr gw1_e10_ko2",
+     "gw1_e1_thr gw1_e1_ko2",
+     "gw1_e2_thr gw1_e2_ko2",
+     "gw1_e3_thr gw1_e3_ko2",
+     "gw1_e4_thr gw1_e4_ko2",
+     "gw1_e5_thr gw1_e5_ko2",
+     "gw1_e6_thr gw1_e6_ko2",
+     "gw1_e7_thr gw1_e7_ko2",
+     "gw1_e8_thr gw1_e8_ko2",
+     "gw1_e9_thr gw1_e9_ko2"
+    ],
+    "analysis_lines": [
+     "tran 1m 36 0 2m"
+    ]
+   },
+   "raw": {
+    "x_var": "time",
+    "points": 578016,
+    "x_end": 36.0,
+    "vars": [
+     "time",
+     "v(gc1_and_g8)",
+     "v(gc1_col_p)",
+     "v(gc1_col_vm)",
+     "v(gc1_e10_p)",
+     "v(gc1_e10_vm)",
+     "v(gc1_e1_p)",
+     "v(gc1_e1_vm)",
+     "v(gc1_e2_p)",
+     "v(gc1_e2_vm)",
+     "v(gc1_e3_p)",
+     "v(gc1_e3_vm)",
+     "v(gc1_e4_p)",
+     "v(gc1_e4_vm)",
+     "v(gc1_e5_p)",
+     "v(gc1_e5_vm)",
+     "v(gc1_e6_p)",
+     "v(gc1_e6_vm)",
+     "v(gc1_e7_p)",
+     "v(gc1_e7_vm)",
+     "v(gc1_e8_p)",
+     "v(gc1_e8_vm)",
+     "v(gc1_e9_p)",
+     "v(gc1_e9_vm)",
+     "v(gc1_op_aq)",
+     "v(gc1_op_at)",
+     "v(gc1_op_p)",
+     "v(gw1_and_g8)",
+     "v(gw1_col_p)",
+     "v(gw1_col_vm)",
+     "v(gw1_e10_p)",
+     "v(gw1_e10_vm)",
+     "v(gw1_e1_p)",
+     "v(gw1_e1_vm)",
+     "v(gw1_e2_p)",
+     "v(gw1_e2_vm)",
+     "v(gw1_e3_p)",
+     "v(gw1_e3_vm)",
+     "v(gw1_e4_p)",
+     "v(gw1_e4_vm)",
+     "v(gw1_e5_p)",
+     "v(gw1_e5_vm)",
+     "v(gw1_e6_p)",
+     "v(gw1_e6_vm)",
+     "v(gw1_e7_p)",
+     "v(gw1_e7_vm)",
+     "v(gw1_e8_p)",
+     "v(gw1_e8_vm)",
+     "v(gw1_e9_p)",
+     "v(gw1_e9_vm)",
+     "v(gw1_op_aq)",
+     "v(gw1_op_at)",
+     "v(gw1_op_p)",
+     "v(por_ok)",
+     "v(s1_m)",
+     "v(s1_s)",
+     "v(vdd)",
+     "v(vrest)",
+     "v(vthe)"
+    ]
+   },
+   "q_events": {}
+  },
+  "dev-009": {
+   "tag": "np1_g0_single_site_v7",
+   "purpose": "DEV-A same netlist as dev-007/008, Newton itl4 default (10): spurious basin-jump test",
+   "analysis": "tran 1m 36 0 2m",
+   "start_t": "2026-10-08 09:49:48",
+   "end_t": "2026-10-08 10:38:06",
+   "wall_s": 2897.7251222133636,
+   "ledger_error": null,
+   "files": {
+    "cir": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-009_np1_g0_single_site_v7.cir",
+     "size": 110789,
+     "sha256": "81b127cb71488cc06cc732c45d068304df802836e05f89c8e5dd0c09f26a61e1"
+    },
+    "log": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-009_np1_g0_single_site_v7.log",
+     "size": 372156,
+     "sha256": "e67439427063c7298f77c23a72f24a0b7a6f309cb99f26a4680f5b17d0394797"
+    },
+    "raw": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-009_np1_g0_single_site_v7.raw",
+     "size": 131021507,
+     "sha256": "0a32a37301d7e6f011eaed4730d1ee4c62065e6ed119c991ac2fd82d661190c8"
+    }
+   },
+   "deck": {
+    "hrf_nodes": [
+     "gc1_col_thr gc1_col_ko2",
+     "gc1_e10_thr gc1_e10_ko2",
+     "gc1_e1_thr gc1_e1_ko2",
+     "gc1_e2_thr gc1_e2_ko2",
+     "gc1_e3_thr gc1_e3_ko2",
+     "gc1_e4_thr gc1_e4_ko2",
+     "gc1_e5_thr gc1_e5_ko2",
+     "gc1_e6_thr gc1_e6_ko2",
+     "gc1_e7_thr gc1_e7_ko2",
+     "gc1_e8_thr gc1_e8_ko2",
+     "gc1_e9_thr gc1_e9_ko2",
+     "gw1_col_thr gw1_col_ko2",
+     "gw1_e10_thr gw1_e10_ko2",
+     "gw1_e1_thr gw1_e1_ko2",
+     "gw1_e2_thr gw1_e2_ko2",
+     "gw1_e3_thr gw1_e3_ko2",
+     "gw1_e4_thr gw1_e4_ko2",
+     "gw1_e5_thr gw1_e5_ko2",
+     "gw1_e6_thr gw1_e6_ko2",
+     "gw1_e7_thr gw1_e7_ko2",
+     "gw1_e8_thr gw1_e8_ko2",
+     "gw1_e9_thr gw1_e9_ko2"
+    ],
+    "analysis_lines": [
+     "tran 1m 36 0 2m"
+    ]
+   },
+   "raw": {
+    "x_var": "time",
+    "points": 272958,
+    "x_end": 36.0,
+    "vars": [
+     "time",
+     "v(gc1_and_g8)",
+     "v(gc1_col_p)",
+     "v(gc1_col_vm)",
+     "v(gc1_e10_p)",
+     "v(gc1_e10_vm)",
+     "v(gc1_e1_p)",
+     "v(gc1_e1_vm)",
+     "v(gc1_e2_p)",
+     "v(gc1_e2_vm)",
+     "v(gc1_e3_p)",
+     "v(gc1_e3_vm)",
+     "v(gc1_e4_p)",
+     "v(gc1_e4_vm)",
+     "v(gc1_e5_p)",
+     "v(gc1_e5_vm)",
+     "v(gc1_e6_p)",
+     "v(gc1_e6_vm)",
+     "v(gc1_e7_p)",
+     "v(gc1_e7_vm)",
+     "v(gc1_e8_p)",
+     "v(gc1_e8_vm)",
+     "v(gc1_e9_p)",
+     "v(gc1_e9_vm)",
+     "v(gc1_op_aq)",
+     "v(gc1_op_at)",
+     "v(gc1_op_p)",
+     "v(gw1_and_g8)",
+     "v(gw1_col_p)",
+     "v(gw1_col_vm)",
+     "v(gw1_e10_p)",
+     "v(gw1_e10_vm)",
+     "v(gw1_e1_p)",
+     "v(gw1_e1_vm)",
+     "v(gw1_e2_p)",
+     "v(gw1_e2_vm)",
+     "v(gw1_e3_p)",
+     "v(gw1_e3_vm)",
+     "v(gw1_e4_p)",
+     "v(gw1_e4_vm)",
+     "v(gw1_e5_p)",
+     "v(gw1_e5_vm)",
+     "v(gw1_e6_p)",
+     "v(gw1_e6_vm)",
+     "v(gw1_e7_p)",
+     "v(gw1_e7_vm)",
+     "v(gw1_e8_p)",
+     "v(gw1_e8_vm)",
+     "v(gw1_e9_p)",
+     "v(gw1_e9_vm)",
+     "v(gw1_op_aq)",
+     "v(gw1_op_at)",
+     "v(gw1_op_p)",
+     "v(istep_n)",
+     "v(por_ok)",
+     "v(s1_m)",
+     "v(s1_s)",
+     "v(vdd)",
+     "v(vrest)",
+     "v(vthe)"
+    ]
+   },
+   "q_events": {}
+  },
+  "dev-010": {
+   "tag": "np1_g0_single_site_v8",
+   "purpose": "DEV-A after RC-coupled latch (state on capacitors) and 25 ms reset hold",
+   "analysis": "tran 1m 36 0 2m",
+   "start_t": "2026-10-08 10:40:05",
+   "end_t": "2026-10-08 13:10:05",
+   "wall_s": 8999.84936761856,
+   "ledger_error": "no raw output",
+   "files": {
+    "cir": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-010_np1_g0_single_site_v8.cir",
+     "size": 115301,
+     "sha256": "8f564c01f533466826827cc97a17c5014355d3606a2f108b418c13545cf9a40e"
+    },
+    "log": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-010_np1_g0_single_site_v8.log",
+     "size": 1096307,
+     "sha256": "e9fe7b506c55cbdf9853b6c0447621c265a8463560465197edf8e1236904b1f2"
+    },
+    "raw": null
+   },
+   "deck": {
+    "hrf_nodes": [
+     "gc1_col_thr gc1_col_ko2",
+     "gc1_e10_thr gc1_e10_ko2",
+     "gc1_e1_thr gc1_e1_ko2",
+     "gc1_e2_thr gc1_e2_ko2",
+     "gc1_e3_thr gc1_e3_ko2",
+     "gc1_e4_thr gc1_e4_ko2",
+     "gc1_e5_thr gc1_e5_ko2",
+     "gc1_e6_thr gc1_e6_ko2",
+     "gc1_e7_thr gc1_e7_ko2",
+     "gc1_e8_thr gc1_e8_ko2",
+     "gc1_e9_thr gc1_e9_ko2",
+     "gw1_col_thr gw1_col_ko2",
+     "gw1_e10_thr gw1_e10_ko2",
+     "gw1_e1_thr gw1_e1_ko2",
+     "gw1_e2_thr gw1_e2_ko2",
+     "gw1_e3_thr gw1_e3_ko2",
+     "gw1_e4_thr gw1_e4_ko2",
+     "gw1_e5_thr gw1_e5_ko2",
+     "gw1_e6_thr gw1_e6_ko2",
+     "gw1_e7_thr gw1_e7_ko2",
+     "gw1_e8_thr gw1_e8_ko2",
+     "gw1_e9_thr gw1_e9_ko2"
+    ],
+    "analysis_lines": [
+     "tran 1m 36 0 2m"
+    ]
+   }
+  },
+  "dev-011": {
+   "tag": "single_nrc",
+   "purpose": "B1_single_mother",
+   "analysis": "tran 1m 5.0 0 0.01",
+   "start_t": "2026-10-08 18:53:58",
+   "end_t": "2026-10-08 18:56:20",
+   "wall_s": 142.3104386329651,
+   "ledger_error": null,
+   "files": {
+    "cir": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-011_single_nrc.cir",
+     "size": 431037,
+     "sha256": "8eb8d8e66b02ec761432cca4aa14956691e356b67c83a09fb7f1ef9f9e251e57"
+    },
+    "log": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-011_single_nrc.log",
+     "size": 156244,
+     "sha256": "c56cfde2b8e3a11fe82ec784621ee52dd3a80fa7675edc94176c7a155c9b608a"
+    },
+    "raw": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-011_single_nrc.raw",
+     "size": 58160,
+     "sha256": "bd54f36768a3cc0dbad8ca58c66c188e1f3e1ce4984eb512296bb87beea826d6"
+    }
+   },
+   "deck": {
+    "hrf_nodes": [
+     "cdc12f_h cdc12f_ko2",
+     "cdc12r_h cdc12r_ko2",
+     "cdc23f_h cdc23f_ko2",
+     "cdc23r_h cdc23r_ko2",
+     "cdc34f_h cdc34f_ko2",
+     "cdc34r_h cdc34r_ko2",
+     "cdw12f_h cdw12f_ko2",
+     "cdw12r_h cdw12r_ko2",
+     "cdw23f_h cdw23f_ko2",
+     "cdw23r_h cdw23r_ko2",
+     "cdw34f_h cdw34f_ko2",
+     "cdw34r_h cdw34r_ko2",
+     "gc1_col_h gc1_col_ko2",
+     "gc1_e10_h gc1_e10_ko2",
+     "gc1_e1_h gc1_e1_ko2",
+     "gc1_e2_h gc1_e2_ko2",
+     "gc1_e3_h gc1_e3_ko2",
+     "gc1_e4_h gc1_e4_ko2",
+     "gc1_e5_h gc1_e5_ko2",
+     "gc1_e6_h gc1_e6_ko2",
+     "gc1_e7_h gc1_e7_ko2",
+     "gc1_e8_h gc1_e8_ko2",
+     "gc1_e9_h gc1_e9_ko2",
+     "gc2_col_h gc2_col_ko2",
+     "gc2_e10_h gc2_e10_ko2",
+     "gc2_e1_h gc2_e1_ko2",
+     "gc2_e2_h gc2_e2_ko2",
+     "gc2_e3_h gc2_e3_ko2",
+     "gc2_e4_h gc2_e4_ko2",
+     "gc2_e5_h gc2_e5_ko2",
+     "gc2_e6_h gc2_e6_ko2",
+     "gc2_e7_h gc2_e7_ko2",
+     "gc2_e8_h gc2_e8_ko2",
+     "gc2_e9_h gc2_e9_ko2",
+     "gc3_col_h gc3_col_ko2",
+     "gc3_e10_h gc3_e10_ko2",
+     "gc3_e1_h gc3_e1_ko2",
+     "gc3_e2_h gc3_e2_ko2",
+     "gc3_e3_h gc3_e3_ko2",
+     "gc3_e4_h gc3_e4_ko2",
+     "gc3_e5_h gc3_e5_ko2",
+     "gc3_e6_h gc3_e6_ko2",
+     "gc3_e7_h gc3_e7_ko2",
+     "gc3_e8_h gc3_e8_ko2",
+     "gc3_e9_h gc3_e9_ko2",
+     "gc4_col_h gc4_col_ko2",
+     "gc4_e10_h gc4_e10_ko2",
+     "gc4_e1_h gc4_e1_ko2",
+     "gc4_e2_h gc4_e2_ko2",
+     "gc4_e3_h gc4_e3_ko2",
+     "gc4_e4_h gc4_e4_ko2",
+     "gc4_e5_h gc4_e5_ko2",
+     "gc4_e6_h gc4_e6_ko2",
+     "gc4_e7_h gc4_e7_ko2",
+     "gc4_e8_h gc4_e8_ko2",
+     "gc4_e9_h gc4_e9_ko2",
+     "gw1_col_h gw1_col_ko2",
+     "gw1_e10_h gw1_e10_ko2",
+     "gw1_e1_h gw1_e1_ko2",
+     "gw1_e2_h gw1_e2_ko2",
+     "gw1_e3_h gw1_e3_ko2",
+     "gw1_e4_h gw1_e4_ko2",
+     "gw1_e5_h gw1_e5_ko2",
+     "gw1_e6_h gw1_e6_ko2",
+     "gw1_e7_h gw1_e7_ko2",
+     "gw1_e8_h gw1_e8_ko2",
+     "gw1_e9_h gw1_e9_ko2",
+     "gw2_col_h gw2_col_ko2",
+     "gw2_e10_h gw2_e10_ko2",
+     "gw2_e1_h gw2_e1_ko2",
+     "gw2_e2_h gw2_e2_ko2",
+     "gw2_e3_h gw2_e3_ko2",
+     "gw2_e4_h gw2_e4_ko2",
+     "gw2_e5_h gw2_e5_ko2",
+     "gw2_e6_h gw2_e6_ko2",
+     "gw2_e7_h gw2_e7_ko2",
+     "gw2_e8_h gw2_e8_ko2",
+     "gw2_e9_h gw2_e9_ko2",
+     "gw3_col_h gw3_col_ko2",
+     "gw3_e10_h gw3_e10_ko2",
+     "gw3_e1_h gw3_e1_ko2",
+     "gw3_e2_h gw3_e2_ko2",
+     "gw3_e3_h gw3_e3_ko2",
+     "gw3_e4_h gw3_e4_ko2",
+     "gw3_e5_h gw3_e5_ko2",
+     "gw3_e6_h gw3_e6_ko2",
+     "gw3_e7_h gw3_e7_ko2",
+     "gw3_e8_h gw3_e8_ko2",
+     "gw3_e9_h gw3_e9_ko2",
+     "gw4_col_h gw4_col_ko2",
+     "gw4_e10_h gw4_e10_ko2",
+     "gw4_e1_h gw4_e1_ko2",
+     "gw4_e2_h gw4_e2_ko2",
+     "gw4_e3_h gw4_e3_ko2",
+     "gw4_e4_h gw4_e4_ko2",
+     "gw4_e5_h gw4_e5_ko2",
+     "gw4_e6_h gw4_e6_ko2",
+     "gw4_e7_h gw4_e7_ko2",
+     "gw4_e8_h gw4_e8_ko2",
+     "gw4_e9_h gw4_e9_ko2",
+     "sgc12f_h sgc12f_ko2",
+     "sgc12r_h sgc12r_ko2",
+     "sgc23f_h sgc23f_ko2",
+     "sgc23r_h sgc23r_ko2",
+     "sgc34f_h sgc34f_ko2",
+     "sgc34r_h sgc34r_ko2",
+     "sgw12f_h sgw12f_ko2",
+     "sgw12r_h sgw12r_ko2",
+     "sgw23f_h sgw23f_ko2",
+     "sgw23r_h sgw23r_ko2",
+     "sgw34f_h sgw34f_ko2",
+     "sgw34r_h sgw34r_ko2",
+     "thc12f_h thc12f_ko2",
+     "thc12r_h thc12r_ko2",
+     "thc23f_h thc23f_ko2",
+     "thc23r_h thc23r_ko2",
+     "thc34f_h thc34f_ko2",
+     "thc34r_h thc34r_ko2",
+     "thw12f_h thw12f_ko2",
+     "thw12r_h thw12r_ko2",
+     "thw23f_h thw23f_ko2",
+     "thw23r_h thw23r_ko2",
+     "thw34f_h thw34f_ko2",
+     "thw34r_h thw34r_ko2"
+    ],
+    "analysis_lines": [
+     "tran 1m 5.0 0 0.01"
+    ]
+   },
+   "raw": {
+    "x_var": "time",
+    "points": 2412,
+    "x_end": 5.0,
+    "vars": [
+     "time",
+     "v(ilimp_n)",
+     "v(vthe)"
+    ]
+   },
+   "q_events": {}
+  },
+  "dev-012": {
+   "tag": "single_nrc",
+   "purpose": "B1_single_mother",
+   "analysis": "tran 1m 5.0 0 10m",
+   "start_t": "2026-10-08 19:00:22",
+   "end_t": "2026-10-08 19:01:03",
+   "wall_s": 41.34959888458252,
+   "ledger_error": null,
+   "files": {
+    "cir": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-012_single_nrc.cir",
+     "size": 5343,
+     "sha256": "875834c31ffd41d9266a3755883e2e661980ec6545e422fb11c4c4972027deaf"
+    },
+    "log": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-012_single_nrc.log",
+     "size": 8918,
+     "sha256": "af8c5127f0fca262761f2134b7ab2e69572922eda66cf76feb41868e6475edaa"
+    },
+    "raw": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-012_single_nrc.raw",
+     "size": 5057859,
+     "sha256": "75711f1073a1c2a4c79429cd738f991bd0536cd6e6501eabb5798fdcd4393fd2"
+    }
+   },
+   "deck": {
+    "hrf_nodes": [
+     "n0_h n0_ko2",
+     "n1_h n1_ko2",
+     "n2_h n2_ko2"
+    ],
+    "analysis_lines": [
+     "tran 1m 5.0 0 10m"
+    ]
+   },
+   "raw": {
+    "x_var": "time",
+    "points": 35120,
+    "x_end": 5.0,
+    "vars": [
+     "time",
+     "v(ilimp_n)",
+     "v(n0_h)",
+     "v(n0_q)",
+     "v(n0_qb)",
+     "v(n0_rec)",
+     "v(n0_vm)",
+     "v(n1_h)",
+     "v(n1_q)",
+     "v(n1_qb)",
+     "v(n1_rec)",
+     "v(n1_vm)",
+     "v(n2_h)",
+     "v(n2_q)",
+     "v(n2_qb)",
+     "v(n2_rec)",
+     "v(n2_vm)",
+     "v(vthe)"
+    ]
+   },
+   "q_events": {
+    "v(n0_q)": [
+     {
+      "up_s": 0.3569718155720709,
+      "down_s": 0.35701199566665637,
+      "width_s": 4.0180094585451354e-05
+     },
+     {
+      "up_s": 0.35751880084026755,
+      "down_s": 0.35756360878454074,
+      "width_s": 4.480794427319523e-05
+     },
+     {
+      "up_s": 0.3579610120106261,
+      "down_s": 0.35800808329480316,
+      "width_s": 4.70712841770804e-05
+     },
+     {
+      "up_s": 0.3583440589307657,
+      "down_s": 0.35839440475689643,
+      "width_s": 5.034582613072658e-05
+     },
+     {
+      "up_s": 0.3587162551906009,
+      "down_s": 0.35876774532599515,
+      "width_s": 5.1490135394238745e-05
+     },
+     {
+      "up_s": 0.3590564226219573,
+      "down_s": 0.3591097962334017,
+      "width_s": 5.337361144441832e-05
+     },
+     {
+      "up_s": 0.3593837267415802,
+      "down_s": 0.35943869733020756,
+      "width_s": 5.49705886273566e-05
+     },
+     {
+      "up_s": 0.3596948110395509,
+      "down_s": 0.35974936779790817,
+      "width_s": 5.455675835724927e-05
+     },
+     {
+      "up_s": 0.3599798684782549,
+      "down_s": 0.36003550487508057,
+      "width_s": 5.563639682565347e-05
+     },
+     {
+      "up_s": 0.36025584115833315,
+      "down_s": 0.3603131746803076,
+      "width_s": 5.73335219744564e-05
+     },
+     {
+      "up_s": 0.3605299342973951,
+      "down_s": 0.3605896179421925,
+      "width_s": 5.9683644797414726e-05
+     },
+     {
+      "up_s": 0.3608007585484875,
+      "down_s": 0.36086140774416237,
+      "width_s": 6.064919567488891e-05
+     },
+     {
+      "up_s": 0.3610615548782331,
+      "down_s": 0.36112248570899946,
+      "width_s": 6.093083076635919e-05
+     },
+     {
+      "up_s": 0.36131351930352285,
+      "down_s": 0.3613760468302777,
+      "width_s": 6.252752675484086e-05
+     },
+     {
+      "up_s": 0.36156254977188423,
+      "down_s": 0.36162647858924046,
+      "width_s": 6.392881735622913e-05
+     },
+     {
+      "up_s": 0.36180851132155284,
+      "down_s": 0.3618738586967434,
+      "width_s": 6.534737519053868e-05
+     },
+     {
+      "up_s": 0.36205167637375696,
+      "down_s": 0.36211846139864673,
+      "width_s": 6.678502488977056e-05
+     },
+     {
+      "up_s": 0.36229162597816184,
+      "down_s": 0.36235946136847,
+      "width_s": 6.783539030819075e-05
+     },
+     {
+      "up_s": 0.3625269415014979,
+      "down_s": 0.3625952341971203,
+      "width_s": 6.829269562241835e-05
+     },
+     {
+      "up_s": 0.3627563327290854,
+      "down_s": 0.36282464821633026,
+      "width_s": 6.831548724484104e-05
+     },
+     {
+      "up_s": 0.36297942886846124,
+      "down_s": 0.3630478835401556,
+      "width_s": 6.845467169436237e-05
+     },
+     {
+      "up_s": 0.3631973447721063,
+      "down_s": 0.36326667172393484,
+      "width_s": 6.93269518285411e-05
+     },
+     {
+      "up_s": 0.36341295770672616,
+      "down_s": 0.36348364487997936,
+      "width_s": 7.068717325320328e-05
+     },
+     {
+      "up_s": 0.3636280507933311,
+      "down_s": 0.3637002460336391,
+      "width_s": 7.219524030799285e-05
+     },
+     {
+      "up_s": 0.3638430320513611,
+      "down_s": 0.3639167707329814,
+      "width_s": 7.373868162030561e-05
+     },
+     {
+      "up_s": 0.3640576723678245,
+      "down_s": 0.36413272803233665,
+      "width_s": 7.505566451215806e-05
+     },
+     {
+      "up_s": 0.36427123015643464,
+      "down_s": 0.3643474077696398,
+      "width_s": 7.617761320516392e-05
+     },
+     {
+      "up_s": 0.3644832422369069,
+      "down_s": 0.36456045089785144,
+      "width_s": 7.720866094451662e-05
+     },
+     {
+      "up_s": 0.36469362104159103,
+      "down_s": 0.36477180360101147,
+      "width_s": 7.818255942043661e-05
+     },
+     {
+      "up_s": 0.3649022849158696,
+      "down_s": 0.3649813379098722,
+      "width_s": 7.905299400257082e-05
+     },
+     {
+      "up_s": 0.3651092940402426,
+      "down_s": 0.3651890604888413,
+      "width_s": 7.976644859869486e-05
+     },
+     {
+      "up_s": 0.36531438222483187,
+      "down_s": 0.3653950164397171,
+      "width_s": 8.063421488524458e-05
+     },
+     {
+      "up_s": 0.365518082234628,
+      "down_s": 0.3655997320362302,
+      "width_s": 8.164980160219049e-05
+     },
+     {
+      "up_s": 0.3657209135377286,
+      "down_s": 0.3658036331721582,
+      "width_s": 8.271963442957331e-05
+     },
+     {
+      "up_s": 0.36592373216181373,
+      "down_s": 0.3660075920298283,
+      "width_s": 8.385986801456857e-05
+     },
+     {
+      "up_s": 0.36612879598892345,
+      "down_s": 0.3662136911354741,
+      "width_s": 8.489514655063424e-05
+     },
+     {
+      "up_s": 0.36634326889412205,
+      "down_s": 0.36642866101623495,
+      "width_s": 8.539212211289282e-05
+     },
+     {
+      "up_s": 0.3665930705365969,
+      "down_s": 0.36667745757251796,
+      "width_s": 8.4387035921063e-05
+     },
+     {
+      "up_s": 0.3670692722635971,
+      "down_s": 0.3671518742483997,
+      "width_s": 8.260198480258829e-05
+     },
+     {
+      "up_s": 0.37149627807279034,
+      "down_s": 0.3716018527221552,
+      "width_s": 0.00010557464936483685
+     },
+     {
+      "up_s": 0.37870141479093783,
+      "down_s": 0.3789977349771531,
+      "width_s": 0.000296320186215282
+     },
+     {
+      "up_s": 0.402584822711165,
+      "down_s": null,
+      "width_s": null
+     }
+    ],
+    "v(n1_q)": [
+     {
+      "up_s": 0.35761072761478807,
+      "down_s": 0.3576528443883361,
+      "width_s": 4.211677354803989e-05
+     },
+     {
+      "up_s": 0.3581683426752296,
+      "down_s": 0.35821270710597863,
+      "width_s": 4.4364430749010975e-05
+     },
+     {
+      "up_s": 0.35861636807357494,
+      "down_s": 0.3586624511449887,
+      "width_s": 4.608307141373835e-05
+     },
+     {
+      "up_s": 0.3590141123729789,
+      "down_s": 0.35906228707398175,
+      "width_s": 4.8174701002823284e-05
+     },
+     {
+      "up_s": 0.3593882434991616,
+      "down_s": 0.3594398719002185,
+      "width_s": 5.162840105688016e-05
+     },
+     {
+      "up_s": 0.35974608336180786,
+      "down_s": 0.3598000834887285,
+      "width_s": 5.400012692063916e-05
+     },
+     {
+      "up_s": 0.36007975749440824,
+      "down_s": 0.36013345384180434,
+      "width_s": 5.369634739610385e-05
+     },
+     {
+      "up_s": 0.3603884803368987,
+      "down_s": 0.36044284073548866,
+      "width_s": 5.436039858996988e-05
+     },
+     {
+      "up_s": 0.36068199000448453,
+      "down_s": 0.3607373745743074,
+      "width_s": 5.538456982284723e-05
+     },
+     {
+      "up_s": 0.36096460923644896,
+      "down_s": 0.361021241869122,
+      "width_s": 5.6632632673025984e-05
+     },
+     {
+      "up_s": 0.36123916915336646,
+      "down_s": 0.36129717071599876,
+      "width_s": 5.800156263230383e-05
+     },
+     {
+      "up_s": 0.36150778066148537,
+      "down_s": 0.3615671596134683,
+      "width_s": 5.9378951982935746e-05
+     },
+     {
+      "up_s": 0.3617710146541965,
+      "down_s": 0.361831773889771,
+      "width_s": 6.075923557452567e-05
+     },
+     {
+      "up_s": 0.362028791304975,
+      "down_s": 0.3620909098019713,
+      "width_s": 6.211849699627736e-05
+     },
+     {
+      "up_s": 0.3622815924889485,
+      "down_s": 0.3623449348553284,
+      "width_s": 6.334236637994817e-05
+     },
+     {
+      "up_s": 0.3625296293544845,
+      "down_s": 0.3625941585832353,
+      "width_s": 6.452922875077594e-05
+     },
+     {
+      "up_s": 0.3627732731430967,
+      "down_s": 0.3628389856590967,
+      "width_s": 6.571251600001604e-05
+     },
+     {
+      "up_s": 0.3630128590693801,
+      "down_s": 0.3630793462070581,
+      "width_s": 6.64871376780396e-05
+     },
+     {
+      "up_s": 0.3632475941620589,
+      "down_s": 0.36331482796257825,
+      "width_s": 6.723380051937289e-05
+     },
+     {
+      "up_s": 0.36347797872180054,
+      "down_s": 0.36354590233359185,
+      "width_s": 6.792361179130957e-05
+     },
+     {
+      "up_s": 0.3637044604686135,
+      "down_s": 0.3637732644403591,
+      "width_s": 6.880397174563457e-05
+     },
+     {
+      "up_s": 0.363927898063895,
+      "down_s": 0.3639977144371732,
+      "width_s": 6.981637327824197e-05
+     },
+     {
+      "up_s": 0.36414895223481425,
+      "down_s": 0.36421977986835696,
+      "width_s": 7.082763354271382e-05
+     },
+     {
+      "up_s": 0.36436781886269665,
+      "down_s": 0.36443964840918125,
+      "width_s": 7.182954648460305e-05
+     },
+     {
+      "up_s": 0.3645846221900075,
+      "down_s": 0.36465748970539974,
+      "width_s": 7.286751539226088e-05
+     },
+     {
+      "up_s": 0.36479962715548153,
+      "down_s": 0.364873525665966,
+      "width_s": 7.389851048444918e-05
+     },
+     {
+      "up_s": 0.3650129712898347,
+      "down_s": 0.36508794211065926,
+      "width_s": 7.497082082458251e-05
+     },
+     {
+      "up_s": 0.36522489768709177,
+      "down_s": 0.36530092860072333,
+      "width_s": 7.6030913631564e-05
+     },
+     {
+      "up_s": 0.3654354879572491,
+      "down_s": 0.36551259200044856,
+      "width_s": 7.710404319943853e-05
+     },
+     {
+      "up_s": 0.365644839611596,
+      "down_s": 0.36572298175750145,
+      "width_s": 7.814214590545765e-05
+     },
+     {
+      "up_s": 0.3658528826930914,
+      "down_s": 0.36593200981610535,
+      "width_s": 7.912712301394453e-05
+     },
+     {
+      "up_s": 0.3660596312910083,
+      "down_s": 0.3661397599736476,
+      "width_s": 8.012868263929107e-05
+     },
+     {
+      "up_s": 0.36626529488105636,
+      "down_s": 0.36634646368082807,
+      "width_s": 8.116879977171365e-05
+     },
+     {
+      "up_s": 0.3664703248929153,
+      "down_s": 0.3665525926794091,
+      "width_s": 8.226778649378375e-05
+     },
+     {
+      "up_s": 0.366676224039864,
+      "down_s": 0.36676009234397056,
+      "width_s": 8.386830410656021e-05
+     },
+     {
+      "up_s": 0.3668851471465821,
+      "down_s": 0.36696832455865297,
+      "width_s": 8.317741207086726e-05
+     },
+     {
+      "up_s": 0.367099238663619,
+      "down_s": 0.3671847998172418,
+      "width_s": 8.556115362279293e-05
+     },
+     {
+      "up_s": 0.36734030088045455,
+      "down_s": 0.36742326668932823,
+      "width_s": 8.296580887368066e-05
+     },
+     {
+      "up_s": 0.367721792412919,
+      "down_s": 0.3678025029918764,
+      "width_s": 8.071057895736589e-05
+     },
+     {
+      "up_s": 0.37076272665654586,
+      "down_s": 0.3708562641487203,
+      "width_s": 9.353749217444474e-05
+     },
+     {
+      "up_s": 0.3769975905677981,
+      "down_s": 0.37717126377768556,
+      "width_s": 0.00017367320988748158
+     },
+     {
+      "up_s": 0.3889956155143561,
+      "down_s": null,
+      "width_s": null
+     }
+    ],
+    "v(n2_q)": [
+     {
+      "up_s": 0.3582514873742509,
+      "down_s": 0.35829266511820684,
+      "width_s": 4.117774395595575e-05
+     },
+     {
+      "up_s": 0.35882091968629365,
+      "down_s": 0.3588654369905366,
+      "width_s": 4.451730424293032e-05
+     },
+     {
+      "up_s": 0.3593013127874446,
+      "down_s": 0.35934660580678357,
+      "width_s": 4.529301933897667e-05
+     },
+     {
+      "up_s": 0.3597193128463589,
+      "down_s": 0.35976787327383025,
+      "width_s": 4.856042747136691e-05
+     },
+     {
+      "up_s": 0.3600992465308669,
+      "down_s": 0.3601501587307233,
+      "width_s": 5.091219985642326e-05
+     },
+     {
+      "up_s": 0.3604565616340699,
+      "down_s": 0.3605086917157893,
+      "width_s": 5.2130081719392596e-05
+     },
+     {
+      "up_s": 0.36079155079670616,
+      "down_s": 0.3608446463585458,
+      "width_s": 5.3095561839633376e-05
+     },
+     {
+      "up_s": 0.3611076995753154,
+      "down_s": 0.3611627261404487,
+      "width_s": 5.5026565133287075e-05
+     },
+     {
+      "up_s": 0.3614107116618118,
+      "down_s": 0.36146642735725143,
+      "width_s": 5.571569543960653e-05
+     },
+     {
+      "up_s": 0.36170049458487846,
+      "down_s": 0.361756699125809,
+      "width_s": 5.6204540930526736e-05
+     },
+     {
+      "up_s": 0.3619785831493031,
+      "down_s": 0.36203550288698805,
+      "width_s": 5.691973768495728e-05
+     },
+     {
+      "up_s": 0.36224708920532983,
+      "down_s": 0.36230495755819525,
+      "width_s": 5.7868352865420025e-05
+     },
+     {
+      "up_s": 0.36250810646373666,
+      "down_s": 0.36256738977918673,
+      "width_s": 5.9283315450076035e-05
+     },
+     {
+      "up_s": 0.3627645437043337,
+      "down_s": 0.362825734970967,
+      "width_s": 6.1191266633287e-05
+     },
+     {
+      "up_s": 0.3630184132911803,
+      "down_s": 0.36308143817195565,
+      "width_s": 6.302488077536417e-05
+     },
+     {
+      "up_s": 0.36326917642846107,
+      "down_s": 0.36333356326783517,
+      "width_s": 6.438683937409762e-05
+     },
+     {
+      "up_s": 0.36351564100902867,
+      "down_s": 0.36358073529273577,
+      "width_s": 6.509428370710113e-05
+     },
+     {
+      "up_s": 0.36375691316033804,
+      "down_s": 0.36382270956917334,
+      "width_s": 6.57964088353058e-05
+     },
+     {
+      "up_s": 0.3639935100711109,
+      "down_s": 0.36406006722733103,
+      "width_s": 6.655715622011504e-05
+     },
+     {
+      "up_s": 0.3642260687844421,
+      "down_s": 0.36429338407617795,
+      "width_s": 6.731529173586992e-05
+     },
+     {
+      "up_s": 0.364454749733793,
+      "down_s": 0.36452295280548697,
+      "width_s": 6.8203071693973e-05
+     },
+     {
+      "up_s": 0.36468033070315486,
+      "down_s": 0.36474960712980803,
+      "width_s": 6.927642665316425e-05
+     },
+     {
+      "up_s": 0.36490363950208043,
+      "down_s": 0.3649741158603297,
+      "width_s": 7.047635824924958e-05
+     },
+     {
+      "up_s": 0.3651252148537404,
+      "down_s": 0.36519676628374254,
+      "width_s": 7.155143000214803e-05
+     },
+     {
+      "up_s": 0.36534473513257787,
+      "down_s": 0.36541723579828117,
+      "width_s": 7.250066570330116e-05
+     },
+     {
+      "up_s": 0.36556203635522055,
+      "down_s": 0.3656354614581769,
+      "width_s": 7.342510295632598e-05
+     },
+     {
+      "up_s": 0.3657772414059712,
+      "down_s": 0.3658515797754175,
+      "width_s": 7.4338369446314e-05
+     },
+     {
+      "up_s": 0.3659904773888346,
+      "down_s": 0.3660657272629139,
+      "width_s": 7.524987407930839e-05
+     },
+     {
+      "up_s": 0.3662019650753523,
+      "down_s": 0.36627809404488987,
+      "width_s": 7.612896953756998e-05
+     },
+     {
+      "up_s": 0.36641200331813256,
+      "down_s": 0.36648907830048827,
+      "width_s": 7.707498235570709e-05
+     },
+     {
+      "up_s": 0.36662131219235206,
+      "down_s": 0.36669923066818194,
+      "width_s": 7.791847582988565e-05
+     },
+     {
+      "up_s": 0.36682858400926904,
+      "down_s": 0.36690602249945214,
+      "width_s": 7.743849018310156e-05
+     },
+     {
+      "up_s": 0.36703497238084254,
+      "down_s": 0.3671137254675489,
+      "width_s": 7.875308670635128e-05
+     },
+     {
+      "up_s": 0.3672375302336328,
+      "down_s": 0.3673173762924622,
+      "width_s": 7.984605882938034e-05
+     },
+     {
+      "up_s": 0.36744463584701464,
+      "down_s": 0.36752485585604094,
+      "width_s": 8.022000902629944e-05
+     },
+     {
+      "up_s": 0.36765440997643883,
+      "down_s": 0.36773421844217685,
+      "width_s": 7.980846573801825e-05
+     },
+     {
+      "up_s": 0.367863737766611,
+      "down_s": 0.3679448048097579,
+      "width_s": 8.106704314686519e-05
+     },
+     {
+      "up_s": 0.36809328332171826,
+      "down_s": 0.36817350426792916,
+      "width_s": 8.022094621090714e-05
+     },
+     {
+      "up_s": 0.36838434611216553,
+      "down_s": 0.36846351323752435,
+      "width_s": 7.916712535882553e-05
+     },
+     {
+      "up_s": 0.36927955524400485,
+      "down_s": 0.36935830009237103,
+      "width_s": 7.874484836617457e-05
+     },
+     {
+      "up_s": 0.373922717186653,
+      "down_s": 0.37403598163944657,
+      "width_s": 0.00011326445279358222
+     },
+     {
+      "up_s": 0.38136499782222494,
+      "down_s": 0.38190640226805633,
+      "width_s": 0.0005414044458313949
+     },
+     {
+      "up_s": 0.4276056769760969,
+      "down_s": null,
+      "width_s": null
+     }
+    ]
+   }
+  },
+  "dev-013": {
+   "tag": "single_nrc",
+   "purpose": "B1_single_mother",
+   "analysis": "tran 1m 5.0 0 10m",
+   "start_t": "2026-10-08 19:03:54",
+   "end_t": "2026-10-08 19:03:56",
+   "wall_s": 2.278211832046509,
+   "ledger_error": null,
+   "files": {
+    "cir": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-013_single_nrc.cir",
+     "size": 5022,
+     "sha256": "dce5d5eb9aaadb6856f237b4fb1c652c83ba5eb475ec357091870c39eedfa62c"
+    },
+    "log": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-013_single_nrc.log",
+     "size": 3813,
+     "sha256": "10e173d6c80b264b5200901087f0a11687286db7293430bd0c4f95c4db13ee88"
+    },
+    "raw": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-013_single_nrc.raw",
+     "size": 262226,
+     "sha256": "0ec5d7be10eeb7dba907ca7ddfbeba6ff62777607d60148640e08626e93dba05"
+    }
+   },
+   "deck": {
+    "hrf_nodes": [
+     "n0_h n0_q",
+     "n1_h n1_q",
+     "n2_h n2_q"
+    ],
+    "analysis_lines": [
+     "tran 1m 5.0 0 10m"
+    ]
+   },
+   "raw": {
+    "x_var": "time",
+    "points": 1817,
+    "x_end": 5.0,
+    "vars": [
+     "time",
+     "v(ilimp_n)",
+     "v(n0_h)",
+     "v(n0_q)",
+     "v(n0_qb)",
+     "v(n0_rec)",
+     "v(n0_vm)",
+     "v(n1_h)",
+     "v(n1_q)",
+     "v(n1_qb)",
+     "v(n1_rec)",
+     "v(n1_vm)",
+     "v(n2_h)",
+     "v(n2_q)",
+     "v(n2_qb)",
+     "v(n2_rec)",
+     "v(n2_vm)",
+     "v(vthe)"
+    ]
+   },
+   "q_events": {
+    "v(n0_q)": [
+     {
+      "up_s": 0.010313458006726943,
+      "down_s": 0.38557066054342565,
+      "width_s": 0.3752572025366987
+     }
+    ],
+    "v(n1_q)": [
+     {
+      "up_s": 0.010313458006726943,
+      "down_s": 0.38621292156975245,
+      "width_s": 0.3758994635630255
+     }
+    ],
+    "v(n2_q)": [
+     {
+      "up_s": 0.010313458006726943,
+      "down_s": 0.3867338090725427,
+      "width_s": 0.37642035106581573
+     }
+    ]
+   }
+  },
+  "dev-014": {
+   "tag": "single_nrc",
+   "purpose": "B1_single_mother",
+   "analysis": "tran 1m 5.0 0 10m",
+   "start_t": "2026-10-08 19:07:52",
+   "end_t": "2026-10-08 19:07:54",
+   "wall_s": 2.130587100982666,
+   "ledger_error": null,
+   "files": {
+    "cir": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-014_single_nrc.cir",
+     "size": 5034,
+     "sha256": "f618e0f8d5fece744ffa75b6a8dd53527c53ef911b3eb7ade9d2f35d9d9f8be0"
+    },
+    "log": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-014_single_nrc.log",
+     "size": 3155,
+     "sha256": "fd3003bbf681ffd9afb975fcae708f943abad68a41782384d1bf64ce74f6f339"
+    },
+    "raw": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-014_single_nrc.raw",
+     "size": 117378,
+     "sha256": "28ec7e2335c612957cf99c08a5cd6c754caf1fff746dff2459300ec529d0f0df"
+    }
+   },
+   "deck": {
+    "hrf_nodes": [
+     "n0_h n0_q",
+     "n1_h n1_q",
+     "n2_h n2_q"
+    ],
+    "analysis_lines": [
+     "tran 1m 5.0 0 10m"
+    ]
+   },
+   "raw": {
+    "x_var": "time",
+    "points": 859,
+    "x_end": 5.0,
+    "vars": [
+     "time",
+     "v(n0_h)",
+     "v(n0_q)",
+     "v(n0_qb)",
+     "v(n0_rec)",
+     "v(n0_vm)",
+     "v(n1_h)",
+     "v(n1_q)",
+     "v(n1_qb)",
+     "v(n1_rec)",
+     "v(n1_vm)",
+     "v(n2_h)",
+     "v(n2_q)",
+     "v(n2_qb)",
+     "v(n2_rec)",
+     "v(n2_vm)",
+     "v(vthe)"
+    ]
+   },
+   "q_events": {
+    "v(n0_q)": [
+     {
+      "up_s": 0.010268190889495096,
+      "down_s": null,
+      "width_s": null
+     }
+    ],
+    "v(n1_q)": [
+     {
+      "up_s": 0.010268190889495096,
+      "down_s": null,
+      "width_s": null
+     }
+    ],
+    "v(n2_q)": [
+     {
+      "up_s": 0.010268190889495096,
+      "down_s": null,
+      "width_s": null
+     }
+    ]
+   }
+  },
+  "dev-015": {
+   "tag": "single_nrc",
+   "purpose": "B1_single_mother",
+   "analysis": "tran 1m 5.0 0 10m",
+   "start_t": "2026-10-08 20:49:22",
+   "end_t": "2026-10-08 20:49:23",
+   "wall_s": 0.6851110458374023,
+   "ledger_error": null,
+   "files": {
+    "cir": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-015_single_nrc.cir",
+     "size": 5037,
+     "sha256": "5ad872451b4e590f7f914d7274486a46858d1cb3840b149a8b192c572fae379a"
+    },
+    "log": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-015_single_nrc.log",
+     "size": 2995,
+     "sha256": "4ce2198bdd627634fd21de4e3c36f0facc37052d4e9349a418642407eb4b9e81"
+    },
+    "raw": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-015_single_nrc.raw",
+     "size": 119010,
+     "sha256": "8736b32fc1695a8906583bc23ab38e2106d931f4d443c2b3759caa8c206732ee"
+    }
+   },
+   "deck": {
+    "hrf_nodes": [
+     "n0_h n0_qb",
+     "n1_h n1_qb",
+     "n2_h n2_qb"
+    ],
+    "analysis_lines": [
+     "tran 1m 5.0 0 10m"
+    ]
+   },
+   "raw": {
+    "x_var": "time",
+    "points": 871,
+    "x_end": 5.0,
+    "vars": [
+     "time",
+     "v(n0_h)",
+     "v(n0_q)",
+     "v(n0_qb)",
+     "v(n0_rec)",
+     "v(n0_vm)",
+     "v(n1_h)",
+     "v(n1_q)",
+     "v(n1_qb)",
+     "v(n1_rec)",
+     "v(n1_vm)",
+     "v(n2_h)",
+     "v(n2_q)",
+     "v(n2_qb)",
+     "v(n2_rec)",
+     "v(n2_vm)",
+     "v(vthe)"
+    ]
+   },
+   "q_events": {
+    "v(n0_q)": [],
+    "v(n1_q)": [],
+    "v(n2_q)": []
+   }
+  },
+  "dev-016": {
+   "tag": "single_nrc",
+   "purpose": "B1_single_mother",
+   "analysis": "tran 1m 5.0 0 10m",
+   "start_t": "2026-10-08 20:52:52",
+   "end_t": "2026-10-08 20:52:53",
+   "wall_s": 0.6738271713256836,
+   "ledger_error": null,
+   "files": {
+    "cir": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-016_single_nrc.cir",
+     "size": 5034,
+     "sha256": "f5f7e8e2871b9dcaee4b8db823d3e2a7c8cd417fe796150b87ee66c5b1857ee8"
+    },
+    "log": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-016_single_nrc.log",
+     "size": 2995,
+     "sha256": "ba4d8335971607d90b11c93b9a49c8c244abfd7aad8b0171708b56fca786d4de"
+    },
+    "raw": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-016_single_nrc.raw",
+     "size": 118874,
+     "sha256": "214b9bea96f049dbd0d0a3356ca04932efab7b01421fe067d372d94f7cee3856"
+    }
+   },
+   "deck": {
+    "hrf_nodes": [
+     "n0_h n0_q",
+     "n1_h n1_q",
+     "n2_h n2_q"
+    ],
+    "analysis_lines": [
+     "tran 1m 5.0 0 10m"
+    ]
+   },
+   "raw": {
+    "x_var": "time",
+    "points": 870,
+    "x_end": 5.0,
+    "vars": [
+     "time",
+     "v(n0_h)",
+     "v(n0_q)",
+     "v(n0_qb)",
+     "v(n0_rec)",
+     "v(n0_vm)",
+     "v(n1_h)",
+     "v(n1_q)",
+     "v(n1_qb)",
+     "v(n1_rec)",
+     "v(n1_vm)",
+     "v(n2_h)",
+     "v(n2_q)",
+     "v(n2_qb)",
+     "v(n2_rec)",
+     "v(n2_vm)",
+     "v(vthe)"
+    ]
+   },
+   "q_events": {
+    "v(n0_q)": [],
+    "v(n1_q)": [],
+    "v(n2_q)": []
+   }
+  },
+  "dev-017": {
+   "tag": "strong_input",
+   "purpose": "comparator_logic_test",
+   "analysis": "tran 1m 5.0 0 10m",
+   "start_t": "2026-10-08 20:59:06",
+   "end_t": "2026-10-08 20:59:07",
+   "wall_s": 1.3476953506469727,
+   "ledger_error": null,
+   "files": {
+    "cir": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-017_strong_input.cir",
+     "size": 2536,
+     "sha256": "99ceb28c2081340ff9bc6fcc63e100d84f17f3d58c5f92bee4f4e7b6dfdd622a"
+    },
+    "log": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-017_strong_input.log",
+     "size": 1944,
+     "sha256": "ecde19dee13c4720a57cf09bf8d48332eee101813dfb3ac74ce35c145df97f79"
+    },
+    "raw": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-017_strong_input.raw",
+     "size": 203696,
+     "sha256": "f17f417adf430b584cce7ad76e8fa35ef3c9601af64029a9f92b4a83ba3a32de"
+    }
+   },
+   "deck": {
+    "hrf_nodes": [
+     "n_h n_qb"
+    ],
+    "analysis_lines": [
+     "tran 1m 5.0 0 10m"
+    ]
+   },
+   "raw": {
+    "x_var": "time",
+    "points": 3177,
+    "x_end": 5.0,
+    "vars": [
+     "time",
+     "v(irefp_n)",
+     "v(n_h)",
+     "v(n_q)",
+     "v(n_qb)",
+     "v(n_rec)",
+     "v(n_vm)",
+     "v(vthe)"
+    ]
+   },
+   "q_events": {
+    "v(n_q)": [
+     {
+      "up_s": 2.7591365429721733,
+      "down_s": 2.7714385038755567,
+      "width_s": 0.012301960903383424
+     },
+     {
+      "up_s": 3.1774816949596922,
+      "down_s": 3.189783627387014,
+      "width_s": 0.012301932427321915
+     },
+     {
+      "up_s": 3.5966778600279645,
+      "down_s": 3.608979678994908,
+      "width_s": 0.01230181896694349
+     },
+     {
+      "up_s": 4.015880320468665,
+      "down_s": 4.028182380465953,
+      "width_s": 0.012302059997288062
+     },
+     {
+      "up_s": 4.43508415178528,
+      "down_s": 4.4473859625261944,
+      "width_s": 0.012301810740914298
+     },
+     {
+      "up_s": 4.854280391507502,
+      "down_s": 4.8665823680828595,
+      "width_s": 0.012301976575357365
+     }
+    ]
+   }
+  },
+  "dev-018": {
+   "tag": "measure_currents",
+   "purpose": "reference_currents",
+   "analysis": "op",
+   "start_t": "2026-10-09 00:19:01",
+   "end_t": "2026-10-09 00:19:03",
+   "wall_s": 1.7646231651306152,
+   "ledger_error": "no raw output",
+   "files": {
+    "cir": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-018_measure_currents.cir",
+     "size": 1629,
+     "sha256": "5013e74ebc51f5655444416fb4038746379b8aee8e91343456254e45c22bd01e"
+    },
+    "log": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-018_measure_currents.log",
+     "size": 370,
+     "sha256": "574898151048033fd56940b16b1bfe327dc3f95858535f8f7187eb8aeb3d68e1"
+    },
+    "raw": null
+   },
+   "deck": {
+    "hrf_nodes": [],
+    "analysis_lines": [
+     "op"
+    ]
+   }
+  },
+  "dev-019": {
+   "tag": "measure_currents",
+   "purpose": "reference_currents",
+   "analysis": "tran 10m 1.0",
+   "start_t": "2026-10-09 00:19:38",
+   "end_t": "2026-10-09 00:19:38",
+   "wall_s": 0.04226517677307129,
+   "ledger_error": "no raw output",
+   "files": {
+    "cir": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-019_measure_currents.cir",
+     "size": 1644,
+     "sha256": "0961d80621eeb4766675cb11c0ec854c84ee11f1bb8da03d98b14fea9f0c542e"
+    },
+    "log": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-019_measure_currents.log",
+     "size": 387,
+     "sha256": "36a93d39d3472650dc7c78b770ff7dcc1d922ea9208ddd247c05520c406a1f7b"
+    },
+    "raw": null
+   },
+   "deck": {
+    "hrf_nodes": [],
+    "analysis_lines": [
+     "tran 10m 1.0"
+    ]
+   }
+  },
+  "dev-020": {
+   "tag": "cmp_settle",
+   "purpose": "comparator_diagnostic",
+   "analysis": "tran 1m 0.05",
+   "start_t": "2026-10-09 00:26:41",
+   "end_t": "2026-10-09 00:26:42",
+   "wall_s": 0.22222900390625,
+   "ledger_error": null,
+   "files": {
+    "cir": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-020_cmp_settle.cir",
+     "size": 2160,
+     "sha256": "de6df446f4ca5bf47f90b5164adf5c078ca9a9b0d8bb912a9e06aa03895edb01"
+    },
+    "log": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-020_cmp_settle.log",
+     "size": 1635,
+     "sha256": "623c6d8c752c3a5c7ce5fcab0c5449bb0d21d1788edbeb95daaf5637d082444f"
+    },
+    "raw": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-020_cmp_settle.raw",
+     "size": 18996,
+     "sha256": "15613c0efdf2185a8f9b4d6c6290a1f64b5336ef6107bdf9b7d8809377db45d1"
+    }
+   },
+   "deck": {
+    "hrf_nodes": [
+     "cmp_h cmp_qb"
+    ],
+    "analysis_lines": [
+     "tran 1m 0.05"
+    ]
+   },
+   "raw": {
+    "x_var": "time",
+    "points": 291,
+    "x_end": 0.05,
+    "vars": [
+     "time",
+     "v(cmp_h)",
+     "v(cmp_ko1)",
+     "v(cmp_q)",
+     "v(cmp_qb)",
+     "v(vdd)",
+     "v(vm_test)",
+     "v(vthe)"
+    ]
+   },
+   "q_events": {
+    "v(cmp_q)": []
+   }
+  },
+  "dev-021": {
+   "tag": "cmp_sweep",
+   "purpose": "comparator_diagnostic",
+   "analysis": "dc Vvm 0 2.5 0.01",
+   "start_t": "2026-10-09 00:26:42",
+   "end_t": "2026-10-09 00:26:42",
+   "wall_s": 0.23445796966552734,
+   "ledger_error": null,
+   "files": {
+    "cir": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-021_cmp_sweep.cir",
+     "size": 1372,
+     "sha256": "23489a3c71bd4fe8147d586216b45bd3dcd1f30180462afae32fd8d5fbc74212"
+    },
+    "log": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-021_cmp_sweep.log",
+     "size": 591,
+     "sha256": "ea3adf83725836e527106c9ab5c06d4eb0d3c90680b2aa9918a6a29105f4d911"
+    },
+    "raw": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-021_cmp_sweep.raw",
+     "size": 16452,
+     "sha256": "f8b8b7a1d31037259c8fee91479095598c9c6965e2dd0132a5ce0fdfbd363d95"
+    }
+   },
+   "deck": {
+    "hrf_nodes": [
+     "cmp_h cmp_qb"
+    ],
+    "analysis_lines": [
+     "dc vvm 0 2.5 0.01"
+    ]
+   },
+   "raw": {
+    "x_var": "v(v-sweep)",
+    "points": 251,
+    "x_end": 2.4999999999999907,
+    "vars": [
+     "v(cmp_h)",
+     "v(cmp_ko1)",
+     "v(cmp_q)",
+     "v(cmp_qb)",
+     "v(v-sweep)",
+     "v(vdd)",
+     "v(vm_test)",
+     "v(vthe)"
+    ]
+   }
+  },
+  "dev-022": {
+   "tag": "strong_input",
+   "purpose": "comparator_logic_test",
+   "analysis": "tran 1m 5.0 0 10m",
+   "start_t": "2026-10-09 00:28:26",
+   "end_t": "2026-10-09 00:28:27",
+   "wall_s": 1.0791103839874268,
+   "ledger_error": null,
+   "files": {
+    "cir": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-022_strong_input.cir",
+     "size": 2535,
+     "sha256": "c83e3ef5de6c94d42fbe88b446fbab659734d4b173fcb996be73bd07756b4d41"
+    },
+    "log": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-022_strong_input.log",
+     "size": 1912,
+     "sha256": "e07fc418e22c5c2d4fbcd4a5779d3aebdc49caf7ca42d46f3f2c4cd5a6482553"
+    },
+    "raw": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-022_strong_input.raw",
+     "size": 65968,
+     "sha256": "37640316842b9f02c91a3997ece06df23a8dafd2744d498ee337a9bc8e42a505"
+    }
+   },
+   "deck": {
+    "hrf_nodes": [
+     "n_h n_q"
+    ],
+    "analysis_lines": [
+     "tran 1m 5.0 0 10m"
+    ]
+   },
+   "raw": {
+    "x_var": "time",
+    "points": 1025,
+    "x_end": 5.0,
+    "vars": [
+     "time",
+     "v(irefp_n)",
+     "v(n_h)",
+     "v(n_q)",
+     "v(n_qb)",
+     "v(n_rec)",
+     "v(n_vm)",
+     "v(vthe)"
+    ]
+   },
+   "q_events": {
+    "v(n_q)": [
+     {
+      "up_s": 2.7494750015652683,
+      "down_s": null,
+      "width_s": null
+     }
+    ]
+   }
+  },
+  "dev-023": {
+   "tag": "full_pulse",
+   "purpose": "hysteresis_corrected_full",
+   "analysis": "tran 1m 8.0 0 10m",
+   "start_t": "2026-10-09 00:29:58",
+   "end_t": "2026-10-09 00:29:59",
+   "wall_s": 1.3693222999572754,
+   "ledger_error": null,
+   "files": {
+    "cir": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-023_full_pulse.cir",
+     "size": 2531,
+     "sha256": "e56bf0174e05e02ed4e8680cbbc79d182864e64cbae0ecfe807280f9c2967a1a"
+    },
+    "log": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-023_full_pulse.log",
+     "size": 1908,
+     "sha256": "d63e577988100dfa68f615ac648687b89036547e46d884a9d2b7ee923087b6a8"
+    },
+    "raw": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-023_full_pulse.raw",
+     "size": 85166,
+     "sha256": "9af81801a52cefe1097f3052c7e4047e4cc8f166e653638f32acbc1101b7cf30"
+    }
+   },
+   "deck": {
+    "hrf_nodes": [
+     "n_h n_q"
+    ],
+    "analysis_lines": [
+     "tran 1m 8.0 0 10m"
+    ]
+   },
+   "raw": {
+    "x_var": "time",
+    "points": 1325,
+    "x_end": 8.0,
+    "vars": [
+     "time",
+     "v(irefp_n)",
+     "v(n_h)",
+     "v(n_q)",
+     "v(n_qb)",
+     "v(n_rec)",
+     "v(n_vm)",
+     "v(vthe)"
+    ]
+   },
+   "q_events": {
+    "v(n_q)": [
+     {
+      "up_s": 2.7494750015652683,
+      "down_s": null,
+      "width_s": null
+     }
+    ]
+   }
+  },
+  "dev-024": {
+   "tag": "diagnose_q",
+   "purpose": "q_signal_detail",
+   "analysis": "tran 1m 5.0 0 10m",
+   "start_t": "2026-10-09 00:35:10",
+   "end_t": "2026-10-09 00:35:10",
+   "wall_s": 0.479642391204834,
+   "ledger_error": null,
+   "files": {
+    "cir": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-024_diagnose_q.cir",
+     "size": 2549,
+     "sha256": "3d8fbb067b23980cf7d6bb045700330246409349ded4dc550c02291512a0f3cf"
+    },
+    "log": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-024_diagnose_q.log",
+     "size": 1812,
+     "sha256": "423873de7d4a18a2c65d8c0825250663bb4ee567ea9543490d04625c34dba00c"
+    },
+    "raw": {
+     "path": "C:/Users/shaoc/Documents/Codex/2026-09-24/files-mentioned-by-the-user-2026/work/thermal_g3_v1_raw/dev/dev-024_diagnose_q.raw",
+     "size": 82407,
+     "sha256": "989bebadcfa12ed44b35fe166458925671215c72916f9d20d303e928972d49e3"
+    }
+   },
+   "deck": {
+    "hrf_nodes": [
+     "n_h n_q"
+    ],
+    "analysis_lines": [
+     "tran 1m 5.0 0 10m"
+    ]
+   },
+   "raw": {
+    "x_var": "time",
+    "points": 1025,
+    "x_end": 5.0,
+    "vars": [
+     "time",
+     "v(irefp_n)",
+     "v(n_h)",
+     "v(n_ko1)",
+     "v(n_q)",
+     "v(n_qb)",
+     "v(n_rec)",
+     "v(n_vm)",
+     "v(vrest)",
+     "v(vthe)"
+    ]
+   },
+   "q_events": {
+    "v(n_q)": [
+     {
+      "up_s": 2.7494750015652683,
+      "down_s": null,
+      "width_s": null
+     }
+    ]
+   }
+  }
+ }
+}

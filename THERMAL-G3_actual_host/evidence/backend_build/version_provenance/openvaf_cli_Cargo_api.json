@@ -1,0 +1,18 @@
+{
+  "name": "Cargo.toml",
+  "path": "openvaf/openvaf/Cargo.toml",
+  "sha": "b12cf0fe7da1c144ce3c3f176c4d91e06925ee5e",
+  "size": 1014,
+  "url": "https://api.github.com/repos/dwarning/OpenVAF/contents/openvaf/openvaf/Cargo.toml?ref=1.0.0",
+  "html_url": "https://github.com/dwarning/OpenVAF/blob/1.0.0/openvaf/openvaf/Cargo.toml",
+  "git_url": "https://api.github.com/repos/dwarning/OpenVAF/git/blobs/b12cf0fe7da1c144ce3c3f176c4d91e06925ee5e",
+  "download_url": "https://raw.githubusercontent.com/dwarning/OpenVAF/1.0.0/openvaf/openvaf/Cargo.toml",
+  "type": "file",
+  "content": "W3BhY2thZ2VdCm5hbWUgPSAib3BlbnZhZiIKdmVyc2lvbiA9ICIwLjEuMiIK\nYXV0aG9ycyA9IFsiRFNQT00iXQplZGl0aW9uID0gIjIwMjEiCmxpY2Vuc2Ug\nPSAiR1BMLTMuMCIKCltsaWJdCmRvY3Rlc3QgPSBmYWxzZQoKW2RlcGVuZGVu\nY2llc10KCmJhc2VkYiA9IHsgdmVyc2lvbiA9ICIwLjAuMCIsIHBhdGggPSAi\nLi4vYmFzZWRiIiB9CnNpbV9iYWNrID0geyB2ZXJzaW9uID0gIjAuMC4wIiwg\ncGF0aCA9ICIuLi9zaW1fYmFjayIgfQpvc2RpID0geyB2ZXJzaW9uID0gIjAu\nMC4wIiwgcGF0aCA9ICIuLi9vc2RpIiB9CgpsbHZtID0geyB2ZXJzaW9uID0g\nIjAuMC4wIiwgcGF0aCA9ICIuLi9sbHZtIiB9Cm1pcl9sbHZtID0geyB2ZXJz\naW9uID0gIjAuMC4wIiwgcGF0aCA9ICIuLi9taXJfbGx2bSIgfQpoaXIgPSB7\nIHZlcnNpb24gPSAiMC4wLjAiLCBwYXRoID0gIi4uL2hpciIgfQp0YXJnZXQg\nPSB7IHZlcnNpb24gPSAiMC4wLjAiLCBwYXRoID0gIi4uL3RhcmdldCIgfQps\naW5rZXIgPSB7IHZlcnNpb24gPSAiMC4wLjAiLCBwYXRoID0gIi4uL2xpbmtl\nciIgfQoKYmFzZV9uID0geyB2ZXJzaW9uID0gIjEiLCBwYXRoID0gIi4uLy4u\nL2xpYi9iYXNlX24iIH0KcGF0aHMgPSB7IHZlcnNpb24gPSAiMC4wIiwgcGF0\naCA9ICIuLi8uLi9saWIvcGF0aHMiIH0KCm1kNSA9ICIwLjciCgphbnlob3cg\nPSAiMSIKdGVybWNvbG9yID0gIjEuMiIKY2FtaW5vID0gIjEuMS40IgoKW2Rl\ndi1kZXBlbmRlbmNpZXNdCmxpYmxvYWRpbmcgPSAiMC44IgpsaWJjID0gIjAu\nMiIKZmxvYXQtY21wID0gICIwLjkiCm1pbmlfaGFybmVzcyA9IHsgdmVyc2lv\nbiA9ICIwLjAuMSIsIHBhdGggPSAiLi4vLi4vbGliL21pbmlfaGFybmVzcyIg\nfQpzdGR4ID0geyB2ZXJzaW9uID0gIjAuMC4wIiwgcGF0aCA9ICIuLi8uLi9s\naWIvc3RkeCIgfQpleHBlY3QtdGVzdCA9ICIxLjQiCmJpdGZsYWdzID0gIjIu\nNC4xIgppbmRleG1hcCA9ICIyLjAiCgpbW3Rlc3RdXQpuYW1lID0gImludGVn\ncmF0aW9uIgpoYXJuZXNzID0gZmFsc2UK\n",
+  "encoding": "base64",
+  "_links": {
+    "self": "https://api.github.com/repos/dwarning/OpenVAF/contents/openvaf/openvaf/Cargo.toml?ref=1.0.0",
+    "git": "https://api.github.com/repos/dwarning/OpenVAF/git/blobs/b12cf0fe7da1c144ce3c3f176c4d91e06925ee5e",
+    "html": "https://github.com/dwarning/OpenVAF/blob/1.0.0/openvaf/openvaf/Cargo.toml"
+  }
+}

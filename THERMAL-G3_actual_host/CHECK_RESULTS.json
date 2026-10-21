@@ -1,0 +1,99 @@
+{
+  "status": "FROZEN_AWAITING_LAUNCH",
+  "freeze_path": "/workspace/scratch/8fecea1ba044/offline_backend_kit_20261020/host_work/execution/thermal_g3_q1r_runpack_9d042b00/thermal_g3_q1/FREEZE_Q1R.json",
+  "freeze_sha256": "6d0bec4bd1b68ebf60ad5f2240d16227738c13263348880aa0eeab0551b21d48",
+  "pinned_inputs_verified": 69,
+  "static_pass": 33,
+  "static_n": 33,
+  "selfcheck_pass": 124,
+  "selfcheck_n": 124,
+  "storage_status": "PASS_WRITABLE_EXPORT_RETRIEVED",
+  "raw_root": "/workspace/scratch/8fecea1ba044/offline_backend_kit_20261020/host_work/execution/thermal_g3_q1r_runpack_9d042b00/thermal_g3_q1_raw",
+  "source_project_identities_unchanged": true,
+  "backend_recompiled_this_step": false,
+  "real_solver_starts": 0,
+  "production_permission_exists": false,
+  "active_Q1_ledger_exists": false,
+  "not_ready_reasons": [],
+  "runs": [
+    {
+      "step": "backend_registration",
+      "command": [
+        "python3",
+        "-B",
+        "tools/register_backend.py",
+        "--platform",
+        "linux-x64",
+        "--ngspice",
+        "/workspace/scratch/8fecea1ba044/offline_backend_kit_20261020/host_work/native/bin/ngspice",
+        "--osdi",
+        "/workspace/scratch/8fecea1ba044/offline_backend_kit_20261020/host_work/native/models/ekv26_linux.osdi",
+        "--openvaf",
+        "/workspace/scratch/8fecea1ba044/offline_backend_kit_20261020/host_work/native/bin/openvaf",
+        "--ngspice-version",
+        "ngspice-47",
+        "--openvaf-version",
+        "openvaf 23.5.0 (dwarning release 1.0.0)"
+      ],
+      "returncode": 0,
+      "wall_seconds": 0.21479595900018467,
+      "log": "/workspace/scratch/8fecea1ba044/offline_backend_kit_20261020/host_work/host_validation_20261020/backend_registration.log",
+      "log_sha256": "62f61d05192d37d351ac3ea7c7181fa4b70d0d9b34c6ae3cd09ab8fdc06040f9"
+    },
+    {
+      "step": "static_check",
+      "command": [
+        "python3",
+        "-B",
+        "tools/static_check.py"
+      ],
+      "returncode": 0,
+      "wall_seconds": 7.339035771000454,
+      "log": "/workspace/scratch/8fecea1ba044/offline_backend_kit_20261020/host_work/host_validation_20261020/static_check.log",
+      "log_sha256": "26605960c544ea24e62dd11eb74e2dcb8d0ab51673ee8c129594b9e88ed7150b"
+    },
+    {
+      "step": "selfcheck_all",
+      "command": [
+        "python3",
+        "-B",
+        "tools/selfcheck_all.py"
+      ],
+      "returncode": 0,
+      "wall_seconds": 661.2739783389998,
+      "log": "/workspace/scratch/8fecea1ba044/offline_backend_kit_20261020/host_work/host_validation_20261020/selfcheck_all.log",
+      "log_sha256": "86898da4ee5665971a087381133f294286a57f05176b8bbc9f7b6e83de873786"
+    }
+  ],
+  "backend": {
+    "ngspice": {
+      "path": "/workspace/scratch/8fecea1ba044/offline_backend_kit_20261020/host_work/native/bin/ngspice",
+      "sha256": "37d80c673bc4c03904ed4434bb3aa9aecd099ecfaeb66b86730a905e8c76ed89",
+      "version_output": "******\n** ngspice-47 : Circuit level simulation program\n** Compiled with KLU Direct Linear Solver\n** The U. C. Berkeley CAD Group\n** Copyright 1985-1994, Regents of the University of California.\n** Copyright 2001-2026, The ngspice team.\n** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html\n** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html\n** Creation Date: Tue Oct 20 15:10:11 UTC 2026\n******\n"
+    },
+    "openvaf": {
+      "path": "/workspace/scratch/8fecea1ba044/offline_backend_kit_20261020/host_work/native/bin/openvaf",
+      "sha256": "4c3da9c10c1373dc5455b53911bda62eb7582857dbea27dcf72df60d3c618fcd",
+      "version_output": "openvaf 23.5.0\n",
+      "release_tag": "1.0.0",
+      "internal_cli_version": "23.5.0",
+      "source_version_evidence": "version_provenance/openvaf_driver_source_version.json"
+    },
+    "osdi": {
+      "path": "/workspace/scratch/8fecea1ba044/offline_backend_kit_20261020/host_work/native/models/ekv26_linux.osdi",
+      "sha256": "7c07ae3728941189b77bf0ecfca5ebe56473d01eedc6ea59c46cc32bfdb9a43f",
+      "define": "__NGSPICE__"
+    }
+  },
+  "contract": {
+    "dev_sealed": 24,
+    "qualification": 2,
+    "formal": 31,
+    "rerun": 4,
+    "global_starts": 61,
+    "already_spent_s": 22565.592149972916,
+    "global_wall_cap_s": 172800,
+    "actual_backends": 1,
+    "active_ledgers_max": 1
+  }
+}
