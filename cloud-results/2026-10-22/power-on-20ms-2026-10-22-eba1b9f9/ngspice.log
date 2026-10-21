@@ -1,0 +1,216 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: * thermal-g3-q1-r q1_mother_protocol
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vsrc                                         0
+vdd                               -2.03037e-24
+vrest                             -3.52985e-22
+vthe                              -8.60442e-25
+vthr                              -9.82262e-25
+vmid                              -1.01519e-24
+porc                              -5.43252e-24
+porx                              -6.97894e-24
+por_ok                            -1.31647e-23
+por_hold                           5.65403e-16
+iref_n                            -6.23936e-24
+istep_n                           -1.09167e-22
+irefp_n                           -2.34376e-14
+ilim_n                            -5.56975e-24
+ilimp_n                           -2.33727e-14
+g0_vm                             -5.28548e-19
+cg0_cm_p                          -5.28548e-19
+rg0_rm_p                          -5.28548e-19
+g0_knb                            -3.94355e-24
+g0_ktail                          -1.17869e-13
+ng0_km1_g                         -5.28548e-19
+g0_kd1                            -3.69883e-16
+g0_ko1                            -3.90084e-16
+g0_h                               1.64865e-22
+g0_qb                              2.19747e-21
+g0_q                               6.33124e-16
+ng0_dis_d                         -5.28548e-19
+g0_vmd                            -3.30246e-22
+ng0_dis_s                         -3.30246e-22
+rg0_rdis_p                        -3.30246e-22
+g0_rt                              4.05515e-22
+g0_rec                             4.05021e-22
+ng0_sh1_d                         -5.28548e-19
+g0_vms                            -1.36956e-14
+ng0_sh1_s                         -1.36956e-14
+ng0_sh2_d                         -1.36956e-14
+ng0_porm_d                        -5.28548e-19
+g0_gweak                                     3
+g0_iweak_x                          2.4248e-12
+g0_oweak                          -5.28548e-19
+g0_gvalid                                    3
+g0_ivalid_x                        1.10672e-12
+g0_ovalid                         -5.28548e-19
+g0_gmax                                      3
+g0_imax_x                          1.10685e-12
+g0_omax                           -5.28548e-19
+g0_op_tt                           1.08714e-21
+g0_op_at                           1.08664e-21
+g0_op_an                           6.66196e-16
+g0_op_aq                          -2.50581e-17
+g0_op_aqb                          4.40575e-17
+g0_op_ad                          -2.50581e-17
+g0_op_adn                          4.40575e-17
+g0_op_pb                          -4.70562e-17
+g0_op_gx                           2.62188e-17
+g0_op_p                           -1.38911e-17
+sg_vm                             -1.13047e-21
+csg_cm_p                          -1.13047e-21
+rsg_rm_p                          -1.13047e-21
+sg_knb                            -3.94355e-24
+sg_ktail                          -1.17788e-13
+nsg_km1_g                         -1.13047e-21
+sg_kd1                            -3.34621e-16
+sg_ko1                            -3.07721e-16
+sg_h                               6.03062e-23
+sg_qb                              1.08546e-22
+sg_q                               5.67536e-16
+nsg_dis_d                         -1.13047e-21
+sg_vmd                            -3.55244e-22
+nsg_dis_s                         -3.55244e-22
+rsg_rdis_p                        -3.55244e-22
+sg_rt                               4.0551e-22
+sg_rec                             4.05016e-22
+nsg_sh1_d                         -1.13047e-21
+sg_vms                            -1.36643e-14
+nsg_sh1_s                         -1.36643e-14
+nsg_sh2_d                         -1.36643e-14
+nsg_porm_d                        -1.13047e-21
+sg_sp                                  1.48361
+sg_sn                                  1.48361
+sg_ota_nb                         -8.34386e-24
+sg_ota_tail                        8.25474e-17
+sg_ota_d1                          8.92722e-17
+sg_oo                             -1.13047e-21
+sg_op_tt                            1.0871e-21
+sg_op_at                           1.08661e-21
+sg_op_an                           6.66196e-16
+sg_op_aq                          -2.50581e-17
+sg_op_aqb                          4.40575e-17
+sg_op_ad                          -2.50581e-17
+sg_op_adn                          4.40575e-17
+sg_op_pb                          -4.70562e-17
+sg_op_gx                           2.62188e-17
+sg_op_p                           -1.38911e-17
+tc_vm                             -2.47912e-22
+ctc_cm_p                          -2.47912e-22
+rtc_rm_p                          -2.47912e-22
+tc_knb                            -3.94355e-24
+tc_ktail                          -1.17813e-13
+ntc_km1_g                         -2.47912e-22
+tc_kd1                            -3.42166e-16
+tc_ko1                            -2.82119e-16
+tc_h                              -2.80369e-22
+tc_qb                             -4.47269e-21
+tc_q                               5.67536e-16
+ntc_dis_d                         -2.47912e-22
+tc_vmd                            -3.53729e-22
+ntc_dis_s                         -3.53729e-22
+rtc_rdis_p                        -3.53729e-22
+tc_rt                               4.0551e-22
+tc_rec                             4.05016e-22
+ntc_sh1_d                         -2.47912e-22
+tc_vms                            -1.36665e-14
+ntc_sh1_s                         -1.36665e-14
+ntc_sh2_d                         -1.36665e-14
+ntc_porm_d                        -2.47912e-22
+tc_hs                                        0
+tc_pg                                        0
+tc_mi                             -5.44424e-16
+tc_st_x                            2.35603e-16
+tc_oo                             -2.47912e-22
+tc_op_tt                            1.0871e-21
+tc_op_at                           1.08661e-21
+tc_op_an                           6.66196e-16
+tc_op_aq                          -2.50581e-17
+tc_op_aqb                          4.40575e-17
+tc_op_ad                          -2.50581e-17
+tc_op_adn                          4.40575e-17
+tc_op_pb                          -4.70562e-17
+tc_op_gx                           2.62188e-17
+tc_op_p                           -1.38911e-17
+cpar_g0_vm_p                      -5.28548e-19
+cpar_g0_vmd_p                     -3.30246e-22
+cpar_g0_vms_p                     -1.36956e-14
+cpar_sg_vm_p                      -1.13047e-21
+cpar_sg_vmd_p                     -3.55244e-22
+cpar_sg_vms_p                     -1.36643e-14
+cpar_tc_vm_p                      -2.47912e-22
+cpar_tc_vmd_p                     -3.53729e-22
+cpar_tc_vms_p                     -1.36665e-14
+va_cpar_tc_vms_p#branch                     -0
+va_cpar_tc_vmd_p#branch                     -0
+va_cpar_tc_vm_p#branch                      -0
+va_cpar_sg_vms_p#branch                     -0
+va_cpar_sg_vmd_p#branch                     -0
+va_cpar_sg_vm_p#branch                      -0
+va_cpar_g0_vms_p#branch                     -0
+va_cpar_g0_vmd_p#branch                     -0
+va_cpar_g0_vm_p#branch                      -0
+vtc_arel#branch                    3.19396e-31
+vtc_pg#branch                                0
+vtc_hs#branch                                0
+va_ntc_porm_d#branch               3.03458e-29
+va_ntc_sh2_d#branch                4.33009e-29
+va_ntc_sh1_s#branch               -4.33009e-29
+va_ntc_sh1_d#branch               -7.31086e-29
+va_rtc_rdis_p#branch              -6.19221e-29
+va_ntc_dis_s#branch                6.19221e-29
+va_ntc_dis_d#branch               -6.19915e-29
+va_ntc_km1_g#branch                         -0
+va_rtc_rm_p#branch                 1.05074e-28
+va_ctc_cm_p#branch                          -0
+vsg_aota#branch                   -9.13683e-28
+vsg_sn#branch                                0
+vsg_sp#branch                                0
+va_nsg_porm_d#branch               4.60962e-29
+va_nsg_sh2_d#branch               -3.57168e-29
+va_nsg_sh1_s#branch                3.57168e-29
+va_nsg_sh1_d#branch                -1.5217e-28
+va_rsg_rdis_p#branch              -3.01171e-29
+va_nsg_dis_s#branch                3.01171e-29
+va_nsg_dis_d#branch               -3.01232e-29
+va_nsg_km1_g#branch               -6.96618e-43
+va_rsg_rm_p#branch                -7.77487e-28
+va_csg_cm_p#branch                          -0
+vg0_amax#branch                   -1.55021e-25
+vg0_gmax#branch                              0
+vg0_avalid#branch                 -1.54988e-25
+vg0_gvalid#branch                            0
+vg0_aweak#branch                   -2.1824e-25
+vg0_gweak#branch                             0
+va_ng0_porm_d#branch              -8.36794e-30
+va_ng0_sh2_d#branch               -3.22797e-29
+va_ng0_sh1_s#branch                3.22797e-29
+va_ng0_sh1_d#branch               -1.49262e-28
+va_rg0_rdis_p#branch               1.03362e-28
+va_ng0_dis_s#branch               -1.03362e-28
+va_ng0_dis_d#branch                1.03289e-28
+va_ng0_km1_g#branch                3.33381e-41
+va_rg0_rm_p#branch                -5.28195e-25
+va_cg0_cm_p#branch                          -0
+vsrc#branch                        3.09067e-25
+
+ Reference value :  2.33163e-03 Reference value :  2.84084e-03 Reference value :  2.87920e-03 Reference value :  3.07588e-03 Reference value :  3.59541e-03 Reference value :  3.85977e-03 Reference value :  4.46334e-03 Reference value :  4.80019e-03 Reference value :  5.16534e-03 Reference value :  5.46006e-03 Reference value :  5.46896e-03 Reference value :  5.56404e-03 Reference value :  5.62516e-03 Reference value :  5.66049e-03 Reference value :  5.70175e-03 Reference value :  5.72801e-03 Reference value :  5.73239e-03doAnalyses: TRAN:  Timestep too small; time = 0.00573239, timestep = 3.125e-16: trouble with node "g0_vms"
+
+
+tran simulation(s) aborted
+
+No. of Data Rows : 247
+binary raw file "/workspace/thermal-g3-diagnostics/power-on-20ms-2026-10-22-eba1b9f9/mother_0_20ms.raw"
+ngspice-47 done

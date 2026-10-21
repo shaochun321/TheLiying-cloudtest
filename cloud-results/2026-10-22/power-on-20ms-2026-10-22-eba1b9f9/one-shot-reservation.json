@@ -1,0 +1,6 @@
+{
+  "reserved_at": "2026-10-22T03:10:48.831345+08:00",
+  "authorized_max_solver_launches": 1,
+  "baseline_conservative_starts": 27,
+  "cap": 61
+}

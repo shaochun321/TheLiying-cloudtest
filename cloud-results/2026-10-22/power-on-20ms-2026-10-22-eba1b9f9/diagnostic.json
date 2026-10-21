@@ -1,0 +1,70 @@
+{
+  "run_id": "power-on-20ms-2026-10-22-eba1b9f9",
+  "scope": "One separately authorized Linux power-on fault diagnostic, not qualification.",
+  "status": "ABORTED_TIMESTEP_TOO_SMALL",
+  "diagnostic_completed": true,
+  "transient_reached_requested_stop": false,
+  "full_qualification_passed": false,
+  "returncode": 0,
+  "returncode_zero_is_success": false,
+  "actual_solver_launches": 1,
+  "explicit_transient_invocations": 1,
+  "conservative_starts_before": 27,
+  "conservative_starts_after": 28,
+  "start_cap": 61,
+  "elapsed_wall_s": 2.5213829389999773,
+  "wall_charge_s": 2.5213829389999773,
+  "wall_cap_s": 60,
+  "timed_out": false,
+  "automatic_retries": 0,
+  "requested_end_s": 0.02,
+  "raw_actual_end_s": 0.005732389312857695,
+  "raw_actual_end_ms": 5.732389312857695,
+  "raw_points": 247,
+  "raw_variables": 96,
+  "raw_is_partial_transient": true,
+  "raw_binary_structure_complete": true,
+  "raw_all_values_finite": true,
+  "errors": [
+    "doAnalyses: TRAN:  Timestep too small; time = 0.00573239, timestep = 3.125e-16: trouble with node \"g0_vms\"",
+    "tran simulation(s) aborted"
+  ],
+  "failure_node_reported_by_ngspice": "g0_vms",
+  "error_reported_time_s": 0.00573239,
+  "error_reported_timestep_s": 3.125e-16,
+  "diagnostic_conclusion": "The unchanged Gear mother circuit and original EKV on Linux aborted during power-on before 20ms. The log names g0_vms; this evidence alone does not identify a root cause.",
+  "original_circuit_devices_inputs_tolerances_save_list_unchanged": true,
+  "permitted_changes_only": "Transient stop 100.27s -> 0.02s, and MODEL_LIB/OSDI/RAW paths.",
+  "old_freezes_permissions_ledgers_and_stop_files_unchanged": true,
+  "old_STOPPED_workflow_resumed": false,
+  "qualification_or_formal_experiments_launched": false,
+  "process_reaped": true,
+  "started_at_Asia_Shanghai": "2026-10-22T03:10:48.833112+08:00",
+  "ended_at_Asia_Shanghai": "2026-10-22T03:10:51.355430+08:00",
+  "system": {
+    "architecture": "x86_64",
+    "glibc": [
+      "glibc",
+      "2.41"
+    ],
+    "python": "3.12.14"
+  },
+  "source_files": [
+    "original_Q1_MOTHER_PROTOCOL.cir",
+    "mother_0_20ms.cir",
+    "c05_ekv26_typ.lib"
+  ],
+  "evidence_files": [
+    "ngspice.log",
+    "mother_0_20ms.raw",
+    "waveform.csv",
+    "raw_summary.json",
+    "provenance.json",
+    "execution.json",
+    "budget_delta.json",
+    "deck.diff",
+    "run_once.py",
+    "one-shot-reservation.json"
+  ],
+  "budget_limitation": "Prior 3 extra starts are counted using the user-provided baseline. Their elapsed times are unavailable here, so exact cumulative remaining time is not invented; this diagnostic charges its measured delta."
+}

@@ -1,0 +1,139 @@
+{
+  "run_id": "power-on-20ms-2026-10-22-eba1b9f9",
+  "command": [
+    "/workspace/thermal-g3-env/host/native/bin/ngspice",
+    "-n",
+    "-b",
+    "/workspace/thermal-g3-diagnostics/power-on-20ms-2026-10-22-eba1b9f9/mother_0_20ms.cir"
+  ],
+  "cwd": "/workspace/thermal-g3-diagnostics/power-on-20ms-2026-10-22-eba1b9f9",
+  "wall_clock_cap_s": 60.0,
+  "kill_dispatch_s": 59.9,
+  "kill_margin_reason": "Reserve 0.1 seconds within the 60-second cap for termination and reaping.",
+  "explicit_analysis_commands": [
+    "tran 0.001 0.02 0 0.00025"
+  ],
+  "note": "Transient's internal initial operating point is part of the one transient analysis; no separate op/dc command is issued.",
+  "actual_solver_launches": 1,
+  "actual_explicit_transient_invocations": 1,
+  "conservative_starts_before": 27,
+  "conservative_starts_after": 28,
+  "start_cap": 61,
+  "automatic_retries": 0,
+  "parameter_adjustments_after_launch": 0,
+  "qualification_launched": false,
+  "formal_experiments_launched": false,
+  "started_at_Asia_Shanghai": "2026-10-22T03:10:48.833112+08:00",
+  "ended_at_Asia_Shanghai": "2026-10-22T03:10:51.355430+08:00",
+  "elapsed_solver_wall_s": 2.5213829389999773,
+  "timed_out": false,
+  "returncode": 0,
+  "spawn_error": null,
+  "signal_sent": null,
+  "pid": 2918,
+  "solver_process_reaped": true,
+  "wall_within_cap": true,
+  "protected_files_after": [
+    {
+      "path": "/workspace/TheLiying-cloudtest/THERMAL-G3_actual_host/FREEZE_Q1R.json",
+      "exists": true,
+      "sha256": "6d0bec4bd1b68ebf60ad5f2240d16227738c13263348880aa0eeab0551b21d48"
+    },
+    {
+      "path": "/workspace/TheLiying-cloudtest/THERMAL-G3_actual_host/execution/thermal_g3_q1/FREEZE_Q1R.json",
+      "exists": true,
+      "sha256": "6d0bec4bd1b68ebf60ad5f2240d16227738c13263348880aa0eeab0551b21d48"
+    },
+    {
+      "path": "/workspace/TheLiying-cloudtest/THERMAL-G3_actual_host/execution/thermal_g3_q1/prereg/backend_registration.json",
+      "exists": true,
+      "sha256": "1b99694fba68c5c9562042a5a5ce38766e7bd4910efb2a8150a6b8f8e0c10e87"
+    },
+    {
+      "path": "/workspace/TheLiying-cloudtest/THERMAL-G3_actual_host/execution/thermal_g3_q1/prereg/LAUNCH_PERMISSION.json",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "/workspace/TheLiying-cloudtest/THERMAL-G3_actual_host/execution/thermal_g3_q1/results/STOPPED",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "/workspace/TheLiying-cloudtest/THERMAL-G3_actual_host/execution/thermal_g3_q1/results/q1_ledger.jsonl",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "/workspace/TheLiying-cloudtest/THERMAL-G3_actual_host/execution/thermal_g3_v1/results/analysis_ledger.jsonl",
+      "exists": true,
+      "sha256": "ad447f9e2c121d258c5b581316d169814189ed010a72d81f80e07c2cee70bf1a"
+    },
+    {
+      "path": "/workspace/TheLiying-cloudtest/THERMAL-G3_actual_host/execution/CONTINUATION_CHECKPOINT.json",
+      "exists": true,
+      "sha256": "7069bd7fb566159aaa84cf3924c45aeec132e14feda992fee94d09589c117b81"
+    },
+    {
+      "path": "/workspace/TheLiying-cloudtest/THERMAL-G3_actual_host/execution/budget_contract.json",
+      "exists": true,
+      "sha256": "9abfa8a55c76193d41dd7dad62c66662864b3d134279ad9557d8da4a6bf83e41"
+    },
+    {
+      "path": "/workspace/thermal-g3-env/host/FREEZE_Q1R.json",
+      "exists": true,
+      "sha256": "6d0bec4bd1b68ebf60ad5f2240d16227738c13263348880aa0eeab0551b21d48"
+    },
+    {
+      "path": "/workspace/thermal-g3-env/host/execution/thermal_g3_q1/FREEZE_Q1R.json",
+      "exists": true,
+      "sha256": "6d0bec4bd1b68ebf60ad5f2240d16227738c13263348880aa0eeab0551b21d48"
+    },
+    {
+      "path": "/workspace/thermal-g3-env/host/execution/thermal_g3_q1/prereg/backend_registration.json",
+      "exists": true,
+      "sha256": "1b99694fba68c5c9562042a5a5ce38766e7bd4910efb2a8150a6b8f8e0c10e87"
+    },
+    {
+      "path": "/workspace/thermal-g3-env/host/execution/thermal_g3_q1/prereg/LAUNCH_PERMISSION.json",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "/workspace/thermal-g3-env/host/execution/thermal_g3_q1/results/STOPPED",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "/workspace/thermal-g3-env/host/execution/thermal_g3_q1/results/q1_ledger.jsonl",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "/workspace/thermal-g3-env/host/execution/thermal_g3_v1/results/analysis_ledger.jsonl",
+      "exists": true,
+      "sha256": "2723fdb7a38ce500f909bacdc698dd5045515318a67209b275e2d1d077f95fa9"
+    },
+    {
+      "path": "/workspace/thermal-g3-env/host/execution/CONTINUATION_CHECKPOINT.json",
+      "exists": true,
+      "sha256": "7069bd7fb566159aaa84cf3924c45aeec132e14feda992fee94d09589c117b81"
+    },
+    {
+      "path": "/workspace/thermal-g3-env/host/execution/budget_contract.json",
+      "exists": true,
+      "sha256": "9abfa8a55c76193d41dd7dad62c66662864b3d134279ad9557d8da4a6bf83e41"
+    },
+    {
+      "path": "/workspace/thermal-g3-env/results/STOPPED",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "/workspace/thermal-g3-env/results/q1_ledger.jsonl",
+      "exists": false,
+      "sha256": null
+    }
+  ],
+  "old_freezes_permissions_ledgers_and_stop_files_unchanged": true
+}
