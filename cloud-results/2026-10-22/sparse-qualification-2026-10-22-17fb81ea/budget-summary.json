@@ -1,0 +1,16 @@
+{
+  "baseline_global_starts": 29,
+  "qualification_starts_this_round": 1,
+  "global_starts_after": 30,
+  "global_start_cap": 65,
+  "total_starts_remaining": 35,
+  "formal_31_reserved": 31,
+  "unused_diagnostic_allocation": 3,
+  "qualification_allocation_unspent": 1,
+  "solver_wall_charge_this_round_s": 522.8353252679999,
+  "global_wall_cap_s_unchanged": 172800,
+  "exact_prior_cumulative_wall_s": null,
+  "note": "Earlier three extra launch durations remain incomplete; charge the exact new delta without inventing a total.",
+  "formal_runs_started": 0,
+  "diagnostic_runs_started": 0
+}

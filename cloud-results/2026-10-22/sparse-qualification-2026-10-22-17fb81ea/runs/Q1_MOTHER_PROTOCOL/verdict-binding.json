@@ -1,0 +1,24 @@
+{
+  "case_id": "Q1_MOTHER_PROTOCOL",
+  "scientific": "FAIL",
+  "candidate_manifest_sha256": "1768e3c20edd8e5f22ab6dd2131cffbd674e7adb7f4de77b3813b03f9a84afcb",
+  "deck_sha256": "90a5152086faef1fcb2cdfcbf3c1a4df28d3c39b6edf8dcb36a0b37f009d6b7a",
+  "raw_path": "/workspace/thermal-g3-qualification/sparse-qualification-2026-10-22-17fb81ea/runs/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw",
+  "raw_sha256": "69c950786ca768d5918f5dd79c716c0e7f8b75369f490c071c21acc5b2db7f23",
+  "judge_output_path": "/workspace/thermal-g3-qualification/sparse-qualification-2026-10-22-17fb81ea/runs/Q1_MOTHER_PROTOCOL/judge-output.json",
+  "judge_output_sha256": "f05ae141d5ce4dcf5f0c3a8bd72384de7c97f06269a9df0e2c78edd31bc65dad",
+  "judge_wall_s": 50.2334580250008,
+  "complete_transient": true,
+  "actual_end_s": 100.27,
+  "global_start_count": 30,
+  "backend": {
+    "ngspice": {
+      "path": "/workspace/thermal-g3-env/host/native/bin/ngspice",
+      "sha256": "37d80c673bc4c03904ed4434bb3aa9aecd099ecfaeb66b86730a905e8c76ed89"
+    },
+    "osdi": {
+      "path": "/workspace/thermal-g3-env/host/native/models/ekv26_linux.osdi",
+      "sha256": "7c07ae3728941189b77bf0ecfca5ebe56473d01eedc6ea59c46cc32bfdb9a43f"
+    }
+  }
+}

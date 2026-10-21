@@ -1,0 +1,1339 @@
+{
+  "case": {
+    "case_id": "Q1_MOTHER_HALFSTEP",
+    "phase": "qualification",
+    "group": "MOTHER",
+    "scale": "mother_bench",
+    "builder": "bench_mother",
+    "build_args": {},
+    "env": null,
+    "analysis": "tran 0.001 100.27 0 0.000125",
+    "x_stop": 100.27,
+    "max_step_s": 0.000125,
+    "timeout_s": 600,
+    "baseline_case_id": "Q1_MOTHER_PROTOCOL",
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL"
+    ],
+    "judge": "halfstep_compare.compare"
+  },
+  "deck": "/workspace/thermal-g3-qualification/sparse-qualification-2026-10-22-17fb81ea/runs/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.cir",
+  "deck_sha256": "aa73668a196a74bf3d5f8f1d268990bb412d5bd1bef3283c8f7af45dafa7d184",
+  "identity_sha256": "2593354a03e22096e6183d479764cecc3450e363ab239d8a22bfcfd0c8eae596",
+  "original_identity_sha256": "ec34641be4b40259954686967b7d6087f372f5e8b5e5f7b8ecab21e6669c1cde",
+  "required_vectors": [
+    "v(vdd)",
+    "v(vrest)",
+    "v(vthe)",
+    "v(vthr)",
+    "v(vmid)",
+    "v(por_ok)",
+    "v(g0_gweak)",
+    "v(g0_gvalid)",
+    "v(g0_gmax)",
+    "v(sg_sp)",
+    "v(sg_sn)",
+    "v(tc_hs)",
+    "v(tc_pg)",
+    "v(g0_vm)",
+    "v(g0_h)",
+    "v(g0_q)",
+    "v(g0_qb)",
+    "v(g0_rec)",
+    "v(g0_vmd)",
+    "v(g0_op_at)",
+    "v(g0_op_aq)",
+    "v(g0_op_aqb)",
+    "v(g0_op_p)",
+    "v(g0_op_pb)",
+    "i(vg0_aweak)",
+    "i(vg0_avalid)",
+    "i(vg0_amax)",
+    "v(sg_vm)",
+    "v(sg_h)",
+    "v(sg_q)",
+    "v(sg_qb)",
+    "v(sg_rec)",
+    "v(sg_vmd)",
+    "v(sg_op_at)",
+    "v(sg_op_aq)",
+    "v(sg_op_aqb)",
+    "v(sg_op_p)",
+    "v(sg_op_pb)",
+    "i(vsg_aota)",
+    "v(tc_vm)",
+    "v(tc_h)",
+    "v(tc_q)",
+    "v(tc_qb)",
+    "v(tc_rec)",
+    "v(tc_vmd)",
+    "v(tc_op_at)",
+    "v(tc_op_aq)",
+    "v(tc_op_aqb)",
+    "v(tc_op_p)",
+    "v(tc_op_pb)",
+    "i(vtc_arel)",
+    "v(g0_vms)",
+    "v(sg_vms)",
+    "v(tc_vms)",
+    "i(va_cg0_cm_p)",
+    "i(va_rg0_rm_p)",
+    "i(va_ng0_km1_g)",
+    "i(va_ng0_dis_d)",
+    "i(va_ng0_sh1_d)",
+    "i(va_ng0_porm_d)",
+    "i(va_cpar_g0_vm_p)",
+    "i(va_ng0_dis_s)",
+    "i(va_rg0_rdis_p)",
+    "i(va_cpar_g0_vmd_p)",
+    "i(va_ng0_sh1_s)",
+    "i(va_ng0_sh2_d)",
+    "i(va_cpar_g0_vms_p)",
+    "i(va_csg_cm_p)",
+    "i(va_rsg_rm_p)",
+    "i(va_nsg_km1_g)",
+    "i(va_nsg_dis_d)",
+    "i(va_nsg_sh1_d)",
+    "i(va_nsg_porm_d)",
+    "i(va_cpar_sg_vm_p)",
+    "i(va_nsg_dis_s)",
+    "i(va_rsg_rdis_p)",
+    "i(va_cpar_sg_vmd_p)",
+    "i(va_nsg_sh1_s)",
+    "i(va_nsg_sh2_d)",
+    "i(va_cpar_sg_vms_p)",
+    "i(va_ctc_cm_p)",
+    "i(va_rtc_rm_p)",
+    "i(va_ntc_km1_g)",
+    "i(va_ntc_dis_d)",
+    "i(va_ntc_sh1_d)",
+    "i(va_ntc_porm_d)",
+    "i(va_cpar_tc_vm_p)",
+    "i(va_ntc_dis_s)",
+    "i(va_rtc_rdis_p)",
+    "i(va_cpar_tc_vmd_p)",
+    "i(va_ntc_sh1_s)",
+    "i(va_ntc_sh2_d)",
+    "i(va_cpar_tc_vms_p)",
+    "v(vsrc)",
+    "i(vsrc)"
+  ],
+  "physical_ledger_plan": {
+    "nodes": [
+      "g0_vm",
+      "g0_vmd",
+      "g0_vms",
+      "sg_vm",
+      "sg_vmd",
+      "sg_vms",
+      "tc_vm",
+      "tc_vmd",
+      "tc_vms"
+    ],
+    "terms": {
+      "g0_vm": [
+        {
+          "element": "cg0_cm",
+          "kind": "C",
+          "vec": "i(va_cg0_cm_p)",
+          "sign": 1.0,
+          "C": 1e-07,
+          "R": null,
+          "far": "0"
+        },
+        {
+          "element": "rg0_rm",
+          "kind": "R",
+          "vec": "i(va_rg0_rm_p)",
+          "sign": 1.0,
+          "C": null,
+          "R": 1000000.0,
+          "far": "vrest"
+        },
+        {
+          "element": "ng0_km1",
+          "kind": "M",
+          "vec": "i(va_ng0_km1_g)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "ng0_dis",
+          "kind": "M",
+          "vec": "i(va_ng0_dis_d)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "ng0_sh1",
+          "kind": "M",
+          "vec": "i(va_ng0_sh1_d)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "ng0_porm",
+          "kind": "M",
+          "vec": "i(va_ng0_porm_d)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "vg0_aweak",
+          "kind": "V",
+          "vec": "i(vg0_aweak)",
+          "sign": -1.0,
+          "C": null,
+          "R": null,
+          "far": "g0_oweak"
+        },
+        {
+          "element": "vg0_avalid",
+          "kind": "V",
+          "vec": "i(vg0_avalid)",
+          "sign": -1.0,
+          "C": null,
+          "R": null,
+          "far": "g0_ovalid"
+        },
+        {
+          "element": "vg0_amax",
+          "kind": "V",
+          "vec": "i(vg0_amax)",
+          "sign": -1.0,
+          "C": null,
+          "R": null,
+          "far": "g0_omax"
+        },
+        {
+          "element": "cpar_g0_vm",
+          "kind": "C",
+          "vec": "i(va_cpar_g0_vm_p)",
+          "sign": 1.0,
+          "C": 5e-14,
+          "R": null,
+          "far": "0"
+        }
+      ],
+      "g0_vmd": [
+        {
+          "element": "ng0_dis",
+          "kind": "M",
+          "vec": "i(va_ng0_dis_s)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "rg0_rdis",
+          "kind": "R",
+          "vec": "i(va_rg0_rdis_p)",
+          "sign": 1.0,
+          "C": null,
+          "R": 220000.0,
+          "far": "vrest"
+        },
+        {
+          "element": "cpar_g0_vmd",
+          "kind": "C",
+          "vec": "i(va_cpar_g0_vmd_p)",
+          "sign": 1.0,
+          "C": 5e-14,
+          "R": null,
+          "far": "0"
+        }
+      ],
+      "g0_vms": [
+        {
+          "element": "ng0_sh1",
+          "kind": "M",
+          "vec": "i(va_ng0_sh1_s)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "ng0_sh2",
+          "kind": "M",
+          "vec": "i(va_ng0_sh2_d)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "cpar_g0_vms",
+          "kind": "C",
+          "vec": "i(va_cpar_g0_vms_p)",
+          "sign": 1.0,
+          "C": 5e-14,
+          "R": null,
+          "far": "0"
+        }
+      ],
+      "sg_vm": [
+        {
+          "element": "csg_cm",
+          "kind": "C",
+          "vec": "i(va_csg_cm_p)",
+          "sign": 1.0,
+          "C": 1e-07,
+          "R": null,
+          "far": "0"
+        },
+        {
+          "element": "rsg_rm",
+          "kind": "R",
+          "vec": "i(va_rsg_rm_p)",
+          "sign": 1.0,
+          "C": null,
+          "R": 1000000.0,
+          "far": "vrest"
+        },
+        {
+          "element": "nsg_km1",
+          "kind": "M",
+          "vec": "i(va_nsg_km1_g)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "nsg_dis",
+          "kind": "M",
+          "vec": "i(va_nsg_dis_d)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "nsg_sh1",
+          "kind": "M",
+          "vec": "i(va_nsg_sh1_d)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "nsg_porm",
+          "kind": "M",
+          "vec": "i(va_nsg_porm_d)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "vsg_aota",
+          "kind": "V",
+          "vec": "i(vsg_aota)",
+          "sign": -1.0,
+          "C": null,
+          "R": null,
+          "far": "sg_oo"
+        },
+        {
+          "element": "cpar_sg_vm",
+          "kind": "C",
+          "vec": "i(va_cpar_sg_vm_p)",
+          "sign": 1.0,
+          "C": 5e-14,
+          "R": null,
+          "far": "0"
+        }
+      ],
+      "sg_vmd": [
+        {
+          "element": "nsg_dis",
+          "kind": "M",
+          "vec": "i(va_nsg_dis_s)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "rsg_rdis",
+          "kind": "R",
+          "vec": "i(va_rsg_rdis_p)",
+          "sign": 1.0,
+          "C": null,
+          "R": 75000.0,
+          "far": "vrest"
+        },
+        {
+          "element": "cpar_sg_vmd",
+          "kind": "C",
+          "vec": "i(va_cpar_sg_vmd_p)",
+          "sign": 1.0,
+          "C": 5e-14,
+          "R": null,
+          "far": "0"
+        }
+      ],
+      "sg_vms": [
+        {
+          "element": "nsg_sh1",
+          "kind": "M",
+          "vec": "i(va_nsg_sh1_s)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "nsg_sh2",
+          "kind": "M",
+          "vec": "i(va_nsg_sh2_d)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "cpar_sg_vms",
+          "kind": "C",
+          "vec": "i(va_cpar_sg_vms_p)",
+          "sign": 1.0,
+          "C": 5e-14,
+          "R": null,
+          "far": "0"
+        }
+      ],
+      "tc_vm": [
+        {
+          "element": "ctc_cm",
+          "kind": "C",
+          "vec": "i(va_ctc_cm_p)",
+          "sign": 1.0,
+          "C": 1.5e-06,
+          "R": null,
+          "far": "0"
+        },
+        {
+          "element": "rtc_rm",
+          "kind": "R",
+          "vec": "i(va_rtc_rm_p)",
+          "sign": 1.0,
+          "C": null,
+          "R": 1000000.0,
+          "far": "vrest"
+        },
+        {
+          "element": "ntc_km1",
+          "kind": "M",
+          "vec": "i(va_ntc_km1_g)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "ntc_dis",
+          "kind": "M",
+          "vec": "i(va_ntc_dis_d)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "ntc_sh1",
+          "kind": "M",
+          "vec": "i(va_ntc_sh1_d)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "ntc_porm",
+          "kind": "M",
+          "vec": "i(va_ntc_porm_d)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "vtc_arel",
+          "kind": "V",
+          "vec": "i(vtc_arel)",
+          "sign": -1.0,
+          "C": null,
+          "R": null,
+          "far": "tc_oo"
+        },
+        {
+          "element": "cpar_tc_vm",
+          "kind": "C",
+          "vec": "i(va_cpar_tc_vm_p)",
+          "sign": 1.0,
+          "C": 5e-14,
+          "R": null,
+          "far": "0"
+        }
+      ],
+      "tc_vmd": [
+        {
+          "element": "ntc_dis",
+          "kind": "M",
+          "vec": "i(va_ntc_dis_s)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "rtc_rdis",
+          "kind": "R",
+          "vec": "i(va_rtc_rdis_p)",
+          "sign": 1.0,
+          "C": null,
+          "R": 12000.0,
+          "far": "vrest"
+        },
+        {
+          "element": "cpar_tc_vmd",
+          "kind": "C",
+          "vec": "i(va_cpar_tc_vmd_p)",
+          "sign": 1.0,
+          "C": 5e-14,
+          "R": null,
+          "far": "0"
+        }
+      ],
+      "tc_vms": [
+        {
+          "element": "ntc_sh1",
+          "kind": "M",
+          "vec": "i(va_ntc_sh1_s)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "ntc_sh2",
+          "kind": "M",
+          "vec": "i(va_ntc_sh2_d)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "cpar_tc_vms",
+          "kind": "C",
+          "vec": "i(va_cpar_tc_vms_p)",
+          "sign": 1.0,
+          "C": 5e-14,
+          "R": null,
+          "far": "0"
+        }
+      ]
+    },
+    "probes": {}
+  },
+  "mos_nodes": {
+    "npori1p": [
+      "por_hold",
+      "porx",
+      "vdd",
+      "vsrc"
+    ],
+    "npori1n": [
+      "por_hold",
+      "porx",
+      "0",
+      "0"
+    ],
+    "npori2p": [
+      "por_ok",
+      "por_hold",
+      "vdd",
+      "vsrc"
+    ],
+    "npori2n": [
+      "por_ok",
+      "por_hold",
+      "0",
+      "0"
+    ],
+    "nirefd": [
+      "iref_n",
+      "iref_n",
+      "0",
+      "0"
+    ],
+    "nistepd": [
+      "istep_n",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "nirefm": [
+      "irefp_n",
+      "iref_n",
+      "0",
+      "0"
+    ],
+    "nirefpd": [
+      "irefp_n",
+      "irefp_n",
+      "vdd",
+      "vsrc"
+    ],
+    "nilimd": [
+      "ilim_n",
+      "ilim_n",
+      "0",
+      "0"
+    ],
+    "nilimm": [
+      "ilimp_n",
+      "ilim_n",
+      "0",
+      "0"
+    ],
+    "nilimpd": [
+      "ilimp_n",
+      "ilimp_n",
+      "vdd",
+      "vsrc"
+    ],
+    "ng0_kmb": [
+      "g0_knb",
+      "g0_knb",
+      "0",
+      "0"
+    ],
+    "ng0_kmt": [
+      "g0_ktail",
+      "g0_knb",
+      "0",
+      "0"
+    ],
+    "ng0_km1": [
+      "g0_kd1",
+      "g0_vm",
+      "g0_ktail",
+      "0"
+    ],
+    "ng0_km2": [
+      "g0_ko1",
+      "g0_h",
+      "g0_ktail",
+      "0"
+    ],
+    "ng0_km3": [
+      "g0_kd1",
+      "g0_kd1",
+      "vdd",
+      "vsrc"
+    ],
+    "ng0_km4": [
+      "g0_ko1",
+      "g0_kd1",
+      "vdd",
+      "vsrc"
+    ],
+    "ng0_ki1p": [
+      "g0_qb",
+      "g0_ko1",
+      "vdd",
+      "vsrc"
+    ],
+    "ng0_ki1n": [
+      "g0_qb",
+      "g0_ko1",
+      "0",
+      "0"
+    ],
+    "ng0_ki2p": [
+      "g0_q",
+      "g0_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ng0_ki2n": [
+      "g0_q",
+      "g0_qb",
+      "0",
+      "0"
+    ],
+    "ng0_dis": [
+      "g0_vm",
+      "g0_q",
+      "g0_vmd",
+      "0"
+    ],
+    "ng0_rp": [
+      "g0_rt",
+      "g0_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ng0_sh1": [
+      "g0_vm",
+      "g0_rec",
+      "g0_vms",
+      "0"
+    ],
+    "ng0_sh2": [
+      "g0_vms",
+      "g0_qb",
+      "vrest",
+      "0"
+    ],
+    "ng0_porh": [
+      "g0_h",
+      "por_hold",
+      "vthe",
+      "0"
+    ],
+    "ng0_porm": [
+      "g0_vm",
+      "por_hold",
+      "vrest",
+      "0"
+    ],
+    "ng0_iweak_sw": [
+      "g0_iweak_x",
+      "g0_gweak",
+      "vdd",
+      "vsrc"
+    ],
+    "ng0_iweak_cp": [
+      "g0_oweak",
+      "irefp_n",
+      "g0_iweak_x",
+      "vsrc"
+    ],
+    "ng0_ivalid_sw": [
+      "g0_ivalid_x",
+      "g0_gvalid",
+      "vdd",
+      "vsrc"
+    ],
+    "ng0_ivalid_cp": [
+      "g0_ovalid",
+      "irefp_n",
+      "g0_ivalid_x",
+      "vsrc"
+    ],
+    "ng0_imax_sw": [
+      "g0_imax_x",
+      "g0_gmax",
+      "vdd",
+      "vsrc"
+    ],
+    "ng0_imax_cp": [
+      "g0_omax",
+      "ilimp_n",
+      "g0_imax_x",
+      "vsrc"
+    ],
+    "ng0_op_tsw": [
+      "g0_op_tt",
+      "g0_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ng0_op_sh1p": [
+      "g0_op_an",
+      "g0_op_at",
+      "vdd",
+      "vsrc"
+    ],
+    "ng0_op_sh1n": [
+      "g0_op_an",
+      "g0_op_at",
+      "0",
+      "0"
+    ],
+    "ng0_op_sh2p": [
+      "g0_op_aq",
+      "g0_op_an",
+      "vdd",
+      "vsrc"
+    ],
+    "ng0_op_sh2n": [
+      "g0_op_aq",
+      "g0_op_an",
+      "0",
+      "0"
+    ],
+    "ng0_op_abp": [
+      "g0_op_aqb",
+      "g0_op_aq",
+      "vdd",
+      "vsrc"
+    ],
+    "ng0_op_abn": [
+      "g0_op_aqb",
+      "g0_op_aq",
+      "0",
+      "0"
+    ],
+    "ng0_op_d2p": [
+      "g0_op_adn",
+      "g0_op_ad",
+      "vdd",
+      "vsrc"
+    ],
+    "ng0_op_d2n": [
+      "g0_op_adn",
+      "g0_op_ad",
+      "0",
+      "0"
+    ],
+    "ng0_op_gpa": [
+      "g0_op_pb",
+      "g0_op_aq",
+      "vdd",
+      "vsrc"
+    ],
+    "ng0_op_gpb": [
+      "g0_op_pb",
+      "g0_op_adn",
+      "vdd",
+      "vsrc"
+    ],
+    "ng0_op_gna": [
+      "g0_op_pb",
+      "g0_op_aq",
+      "g0_op_gx",
+      "0"
+    ],
+    "ng0_op_gnb": [
+      "g0_op_gx",
+      "g0_op_adn",
+      "0",
+      "0"
+    ],
+    "ng0_op_op": [
+      "g0_op_p",
+      "g0_op_pb",
+      "vdd",
+      "vsrc"
+    ],
+    "ng0_op_on": [
+      "g0_op_p",
+      "g0_op_pb",
+      "0",
+      "0"
+    ],
+    "ng0_ld_hsw": [
+      "vdd",
+      "g0_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ng0_ld_mp0": [
+      "0",
+      "g0_op_aq",
+      "0",
+      "0"
+    ],
+    "ng0_ld_mp1": [
+      "0",
+      "g0_op_aq",
+      "0",
+      "0"
+    ],
+    "ng0_ld_inj": [
+      "vdd",
+      "g0_op_aqb",
+      "vdd",
+      "vsrc"
+    ],
+    "nsg_kmb": [
+      "sg_knb",
+      "sg_knb",
+      "0",
+      "0"
+    ],
+    "nsg_kmt": [
+      "sg_ktail",
+      "sg_knb",
+      "0",
+      "0"
+    ],
+    "nsg_km1": [
+      "sg_kd1",
+      "sg_vm",
+      "sg_ktail",
+      "0"
+    ],
+    "nsg_km2": [
+      "sg_ko1",
+      "sg_h",
+      "sg_ktail",
+      "0"
+    ],
+    "nsg_km3": [
+      "sg_kd1",
+      "sg_kd1",
+      "vdd",
+      "vsrc"
+    ],
+    "nsg_km4": [
+      "sg_ko1",
+      "sg_kd1",
+      "vdd",
+      "vsrc"
+    ],
+    "nsg_ki1p": [
+      "sg_qb",
+      "sg_ko1",
+      "vdd",
+      "vsrc"
+    ],
+    "nsg_ki1n": [
+      "sg_qb",
+      "sg_ko1",
+      "0",
+      "0"
+    ],
+    "nsg_ki2p": [
+      "sg_q",
+      "sg_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "nsg_ki2n": [
+      "sg_q",
+      "sg_qb",
+      "0",
+      "0"
+    ],
+    "nsg_dis": [
+      "sg_vm",
+      "sg_q",
+      "sg_vmd",
+      "0"
+    ],
+    "nsg_rp": [
+      "sg_rt",
+      "sg_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "nsg_sh1": [
+      "sg_vm",
+      "sg_rec",
+      "sg_vms",
+      "0"
+    ],
+    "nsg_sh2": [
+      "sg_vms",
+      "sg_qb",
+      "vrest",
+      "0"
+    ],
+    "nsg_porh": [
+      "sg_h",
+      "por_hold",
+      "vthr",
+      "0"
+    ],
+    "nsg_porm": [
+      "sg_vm",
+      "por_hold",
+      "vrest",
+      "0"
+    ],
+    "nsg_ota_mb": [
+      "sg_ota_nb",
+      "sg_ota_nb",
+      "0",
+      "0"
+    ],
+    "nsg_ota_mt": [
+      "sg_ota_tail",
+      "sg_ota_nb",
+      "0",
+      "0"
+    ],
+    "nsg_ota_m1": [
+      "sg_ota_d1",
+      "sg_sp",
+      "sg_ota_tail",
+      "0"
+    ],
+    "nsg_ota_m2": [
+      "sg_oo",
+      "sg_sn",
+      "sg_ota_tail",
+      "0"
+    ],
+    "nsg_ota_m3": [
+      "sg_ota_d1",
+      "sg_ota_d1",
+      "vdd",
+      "vsrc"
+    ],
+    "nsg_ota_m4": [
+      "sg_oo",
+      "sg_ota_d1",
+      "vdd",
+      "vsrc"
+    ],
+    "nsg_op_tsw": [
+      "sg_op_tt",
+      "sg_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "nsg_op_sh1p": [
+      "sg_op_an",
+      "sg_op_at",
+      "vdd",
+      "vsrc"
+    ],
+    "nsg_op_sh1n": [
+      "sg_op_an",
+      "sg_op_at",
+      "0",
+      "0"
+    ],
+    "nsg_op_sh2p": [
+      "sg_op_aq",
+      "sg_op_an",
+      "vdd",
+      "vsrc"
+    ],
+    "nsg_op_sh2n": [
+      "sg_op_aq",
+      "sg_op_an",
+      "0",
+      "0"
+    ],
+    "nsg_op_abp": [
+      "sg_op_aqb",
+      "sg_op_aq",
+      "vdd",
+      "vsrc"
+    ],
+    "nsg_op_abn": [
+      "sg_op_aqb",
+      "sg_op_aq",
+      "0",
+      "0"
+    ],
+    "nsg_op_d2p": [
+      "sg_op_adn",
+      "sg_op_ad",
+      "vdd",
+      "vsrc"
+    ],
+    "nsg_op_d2n": [
+      "sg_op_adn",
+      "sg_op_ad",
+      "0",
+      "0"
+    ],
+    "nsg_op_gpa": [
+      "sg_op_pb",
+      "sg_op_aq",
+      "vdd",
+      "vsrc"
+    ],
+    "nsg_op_gpb": [
+      "sg_op_pb",
+      "sg_op_adn",
+      "vdd",
+      "vsrc"
+    ],
+    "nsg_op_gna": [
+      "sg_op_pb",
+      "sg_op_aq",
+      "sg_op_gx",
+      "0"
+    ],
+    "nsg_op_gnb": [
+      "sg_op_gx",
+      "sg_op_adn",
+      "0",
+      "0"
+    ],
+    "nsg_op_op": [
+      "sg_op_p",
+      "sg_op_pb",
+      "vdd",
+      "vsrc"
+    ],
+    "nsg_op_on": [
+      "sg_op_p",
+      "sg_op_pb",
+      "0",
+      "0"
+    ],
+    "nsg_ld_hsw0": [
+      "vdd",
+      "sg_op_aqb",
+      "vdd",
+      "vsrc"
+    ],
+    "nsg_ld_hsw1": [
+      "vdd",
+      "sg_op_aqb",
+      "vdd",
+      "vsrc"
+    ],
+    "ntc_kmb": [
+      "tc_knb",
+      "tc_knb",
+      "0",
+      "0"
+    ],
+    "ntc_kmt": [
+      "tc_ktail",
+      "tc_knb",
+      "0",
+      "0"
+    ],
+    "ntc_km1": [
+      "tc_kd1",
+      "tc_vm",
+      "tc_ktail",
+      "0"
+    ],
+    "ntc_km2": [
+      "tc_ko1",
+      "tc_h",
+      "tc_ktail",
+      "0"
+    ],
+    "ntc_km3": [
+      "tc_kd1",
+      "tc_kd1",
+      "vdd",
+      "vsrc"
+    ],
+    "ntc_km4": [
+      "tc_ko1",
+      "tc_kd1",
+      "vdd",
+      "vsrc"
+    ],
+    "ntc_ki1p": [
+      "tc_qb",
+      "tc_ko1",
+      "vdd",
+      "vsrc"
+    ],
+    "ntc_ki1n": [
+      "tc_qb",
+      "tc_ko1",
+      "0",
+      "0"
+    ],
+    "ntc_ki2p": [
+      "tc_q",
+      "tc_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ntc_ki2n": [
+      "tc_q",
+      "tc_qb",
+      "0",
+      "0"
+    ],
+    "ntc_dis": [
+      "tc_vm",
+      "tc_q",
+      "tc_vmd",
+      "0"
+    ],
+    "ntc_rp": [
+      "tc_rt",
+      "tc_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ntc_sh1": [
+      "tc_vm",
+      "tc_rec",
+      "tc_vms",
+      "0"
+    ],
+    "ntc_sh2": [
+      "tc_vms",
+      "tc_qb",
+      "vrest",
+      "0"
+    ],
+    "ntc_porh": [
+      "tc_h",
+      "por_hold",
+      "vthr",
+      "0"
+    ],
+    "ntc_porm": [
+      "tc_vm",
+      "por_hold",
+      "vrest",
+      "0"
+    ],
+    "ntc_st_mh": [
+      "tc_mi",
+      "tc_hs",
+      "tc_st_x",
+      "0"
+    ],
+    "ntc_st_mp": [
+      "tc_st_x",
+      "tc_pg",
+      "0",
+      "0"
+    ],
+    "ntc_rm_md": [
+      "tc_mi",
+      "tc_mi",
+      "vdd",
+      "vsrc"
+    ],
+    "ntc_rm_mo": [
+      "tc_oo",
+      "tc_mi",
+      "vdd",
+      "vsrc"
+    ],
+    "ntc_op_tsw": [
+      "tc_op_tt",
+      "tc_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ntc_op_sh1p": [
+      "tc_op_an",
+      "tc_op_at",
+      "vdd",
+      "vsrc"
+    ],
+    "ntc_op_sh1n": [
+      "tc_op_an",
+      "tc_op_at",
+      "0",
+      "0"
+    ],
+    "ntc_op_sh2p": [
+      "tc_op_aq",
+      "tc_op_an",
+      "vdd",
+      "vsrc"
+    ],
+    "ntc_op_sh2n": [
+      "tc_op_aq",
+      "tc_op_an",
+      "0",
+      "0"
+    ],
+    "ntc_op_abp": [
+      "tc_op_aqb",
+      "tc_op_aq",
+      "vdd",
+      "vsrc"
+    ],
+    "ntc_op_abn": [
+      "tc_op_aqb",
+      "tc_op_aq",
+      "0",
+      "0"
+    ],
+    "ntc_op_d2p": [
+      "tc_op_adn",
+      "tc_op_ad",
+      "vdd",
+      "vsrc"
+    ],
+    "ntc_op_d2n": [
+      "tc_op_adn",
+      "tc_op_ad",
+      "0",
+      "0"
+    ],
+    "ntc_op_gpa": [
+      "tc_op_pb",
+      "tc_op_aq",
+      "vdd",
+      "vsrc"
+    ],
+    "ntc_op_gpb": [
+      "tc_op_pb",
+      "tc_op_adn",
+      "vdd",
+      "vsrc"
+    ],
+    "ntc_op_gna": [
+      "tc_op_pb",
+      "tc_op_aq",
+      "tc_op_gx",
+      "0"
+    ],
+    "ntc_op_gnb": [
+      "tc_op_gx",
+      "tc_op_adn",
+      "0",
+      "0"
+    ],
+    "ntc_op_op": [
+      "tc_op_p",
+      "tc_op_pb",
+      "vdd",
+      "vsrc"
+    ],
+    "ntc_op_on": [
+      "tc_op_p",
+      "tc_op_pb",
+      "0",
+      "0"
+    ],
+    "ntc_ld_mp0": [
+      "0",
+      "tc_op_aq",
+      "0",
+      "0"
+    ],
+    "ntc_ld_mp1": [
+      "0",
+      "tc_op_aq",
+      "0",
+      "0"
+    ],
+    "ntc_ld_out": [
+      "vdd",
+      "tc_op_aqb",
+      "vdd",
+      "vsrc"
+    ]
+  },
+  "ammeters": [
+    "i(vg0_aweak)",
+    "i(vg0_avalid)",
+    "i(vg0_amax)",
+    "i(vsg_aota)",
+    "i(vtc_arel)"
+  ],
+  "maximum_launches": 1,
+  "wall_clock_cap_s": 600,
+  "expected_solver_log": "Using SPARSE 1.3 as Direct Linear Solver",
+  "completion_relative_endpoint_tolerance": 1e-09,
+  "prerequisite": "Q1_MOTHER_PROTOCOL completion and original scientific verdict PASS"
+}

@@ -1,0 +1,22 @@
+{
+  "user_request": "审核后执行",
+  "attached_task": "Sparse对照复核与完整资格下一步.md",
+  "attached_task_sha256": "d0b7facf669ec0d473ca8f7df1d08d2a4418adb8e9643bf53edfa627bb5bc42c",
+  "candidate_id": "SPARSE_GEAR_original_physics_2026-10-22",
+  "manifest_sha256": "1768e3c20edd8e5f22ab6dd2131cffbd674e7adb7f4de77b3813b03f9a84afcb",
+  "authorized_cases": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP"
+  ],
+  "max_starts_per_case": 1,
+  "max_total_starts": 2,
+  "wall_cap_per_case_s": 600,
+  "condition_for_second": "First reaches100.27s with no solve error and original complete scientific verdictPASS.",
+  "stop_on_any_failure": true,
+  "automatic_retries": 0,
+  "parameter_tuning_authorized": false,
+  "diagnostic_runs_authorized": false,
+  "formal_31_authorized": false,
+  "old_STOPPED_workflow_resume_authorized": false,
+  "approved_at_Asia_Shanghai": "2026-10-22T04:29:57.580200+08:00"
+}

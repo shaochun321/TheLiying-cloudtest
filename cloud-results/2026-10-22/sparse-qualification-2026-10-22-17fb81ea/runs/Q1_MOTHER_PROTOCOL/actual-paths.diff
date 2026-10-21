@@ -1,0 +1,22 @@
+--- candidate_identity
++++ actual_executed_paths
+@@ -1,5 +1,5 @@
+ * THERMAL-G3-Q1-R Q1_MOTHER_PROTOCOL
+-.include <MODEL_LIB>
++.include /workspace/thermal-g3-qualification/sparse-qualification-2026-10-22-17fb81ea/inputs/c05_ekv26_typ.lib
+ vsrc vsrc 0 PWL(0 0 0.02 3.0)
+ rint vsrc vdd 10
+ cdec vdd 0 1e-05
+@@ -351,10 +351,10 @@
+ .options sparse method=gear reltol=1e-5 abstol=1e-16
+ .save v(vdd) v(vrest) v(vthe) v(vthr) v(vmid) v(por_ok) v(g0_gweak) v(g0_gvalid) v(g0_gmax) v(sg_sp) v(sg_sn) v(tc_hs) v(tc_pg) v(g0_vm) v(g0_h) v(g0_q) v(g0_qb) v(g0_rec) v(g0_vmd) v(g0_op_at) v(g0_op_aq) v(g0_op_aqb) v(g0_op_p) v(g0_op_pb) i(vg0_aweak) i(vg0_avalid) i(vg0_amax) v(sg_vm) v(sg_h) v(sg_q) v(sg_qb) v(sg_rec) v(sg_vmd) v(sg_op_at) v(sg_op_aq) v(sg_op_aqb) v(sg_op_p) v(sg_op_pb) i(vsg_aota) v(tc_vm) v(tc_h) v(tc_q) v(tc_qb) v(tc_rec) v(tc_vmd) v(tc_op_at) v(tc_op_aq) v(tc_op_aqb) v(tc_op_p) v(tc_op_pb) i(vtc_arel) v(g0_vms) v(sg_vms) v(tc_vms) i(va_cg0_cm_p) i(va_rg0_rm_p) i(va_ng0_km1_g) i(va_ng0_dis_d) i(va_ng0_sh1_d) i(va_ng0_porm_d) i(va_cpar_g0_vm_p) i(va_ng0_dis_s) i(va_rg0_rdis_p) i(va_cpar_g0_vmd_p) i(va_ng0_sh1_s) i(va_ng0_sh2_d) i(va_cpar_g0_vms_p) i(va_csg_cm_p) i(va_rsg_rm_p) i(va_nsg_km1_g) i(va_nsg_dis_d) i(va_nsg_sh1_d) i(va_nsg_porm_d) i(va_cpar_sg_vm_p) i(va_nsg_dis_s) i(va_rsg_rdis_p) i(va_cpar_sg_vmd_p) i(va_nsg_sh1_s) i(va_nsg_sh2_d) i(va_cpar_sg_vms_p) i(va_ctc_cm_p) i(va_rtc_rm_p) i(va_ntc_km1_g) i(va_ntc_dis_d) i(va_ntc_sh1_d) i(va_ntc_porm_d) i(va_cpar_tc_vm_p) i(va_ntc_dis_s) i(va_rtc_rdis_p) i(va_cpar_tc_vmd_p) i(va_ntc_sh1_s) i(va_ntc_sh2_d) i(va_cpar_tc_vms_p) v(vsrc) i(vsrc)
+ .control
+-pre_osdi <OSDI>
++pre_osdi /workspace/thermal-g3-env/host/native/models/ekv26_linux.osdi
+ set filetype=binary
+ tran 0.001 100.27 0 0.00025
+-write <RAW>
++write /workspace/thermal-g3-qualification/sparse-qualification-2026-10-22-17fb81ea/runs/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw
+ quit
+ .endc
+ .end

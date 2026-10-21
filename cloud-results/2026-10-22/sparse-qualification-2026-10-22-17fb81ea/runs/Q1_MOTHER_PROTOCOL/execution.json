@@ -1,0 +1,32 @@
+{
+  "case_id": "Q1_MOTHER_PROTOCOL",
+  "candidate_id": "SPARSE_GEAR_original_physics_2026-10-22",
+  "candidate_manifest_sha256": "1768e3c20edd8e5f22ab6dd2131cffbd674e7adb7f4de77b3813b03f9a84afcb",
+  "command": [
+    "/workspace/thermal-g3-env/host/native/bin/ngspice",
+    "-n",
+    "-b",
+    "/workspace/thermal-g3-qualification/sparse-qualification-2026-10-22-17fb81ea/runs/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.cir"
+  ],
+  "cwd": "/workspace/thermal-g3-qualification/sparse-qualification-2026-10-22-17fb81ea/runs/Q1_MOTHER_PROTOCOL",
+  "actual_solver_launches": 1,
+  "automatic_retries": 0,
+  "conservative_starts_before": 29,
+  "conservative_starts_after": 30,
+  "global_start_cap": 65,
+  "wall_clock_cap_s": 600,
+  "kill_dispatch_s": 599.9,
+  "kill_margin_reason": "Reserve 0.1 seconds inside the 600s limit for termination/reaping.",
+  "explicit_analysis": "tran 0.001 100.27 0 0.00025",
+  "timed_out": false,
+  "returncode": 0,
+  "spawn_error": null,
+  "signal_sent": null,
+  "elapsed_solver_wall_s": 522.8353252679999,
+  "started_at_Asia_Shanghai": "2026-10-22T04:31:40.217063+08:00",
+  "pid": 6810,
+  "ended_at_Asia_Shanghai": "2026-10-22T04:40:23.053115+08:00",
+  "solver_process_reaped": true,
+  "wall_within_cap": true,
+  "original_frozen_permission_ledger_stop_records_unchanged": true
+}

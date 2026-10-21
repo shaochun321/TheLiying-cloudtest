@@ -1,0 +1,33 @@
+[
+  {
+    "original_path": "runs/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw",
+    "original_bytes": 321814571,
+    "original_sha256": "69c950786ca768d5918f5dd79c716c0e7f8b75369f490c071c21acc5b2db7f23",
+    "encoding": "gzip, split into ordered binary chunks",
+    "compressed_bytes": 186917235,
+    "compressed_sha256": "24d995e4e069889e836d84981ed6798eb267e038afde058963d978512120861e",
+    "lossless_decompression_verified": true,
+    "parts": [
+      {
+        "path": "runs/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw.gz.part001",
+        "bytes": 50331648,
+        "sha256": "ee2b25a03b895816ee9ad5a38a063571c9e7f7d8ac4655c16deec4c3b6204f1c"
+      },
+      {
+        "path": "runs/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw.gz.part002",
+        "bytes": 50331648,
+        "sha256": "5454295bc0d7c63ebcf24bc215f718d807450fe45a5cb9b75e4f11c580ffd39e"
+      },
+      {
+        "path": "runs/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw.gz.part003",
+        "bytes": 50331648,
+        "sha256": "7bc6093395f884655c59714218c19690d2533510bf07ba6c19e1970b1b487511"
+      },
+      {
+        "path": "runs/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw.gz.part004",
+        "bytes": 35922291,
+        "sha256": "275aa02f8510cffb965b89b8b0106aa5046770dd586ae71db04a51dc6646e051"
+      }
+    ]
+  }
+]

@@ -1,0 +1,165 @@
+{
+  "candidate_id": "SPARSE_GEAR_original_physics_2026-10-22",
+  "run_id": "sparse-qualification-2026-10-22-17fb81ea",
+  "created_at_Asia_Shanghai": "2026-10-22T04:29:57.579827+08:00",
+  "source_D1_commit": "4dbcdaa774a8d26bf24fe9680da667bd8fb1bdd7",
+  "parent_actual_host_freeze_sha256": "6d0bec4bd1b68ebf60ad5f2240d16227738c13263348880aa0eeab0551b21d48",
+  "source_software": "/workspace/thermal-g3-qualification/sparse-qualification-2026-10-22-17fb81ea/software/thermal_g3_q1",
+  "software_files_unchanged_from_verified_host": {
+    "analysis/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "analysis/ekv26_static.py": "e4fe9ac0703a9ea2944eddd7ef2744c976d61db2cddc29514387da7c09d5ab7e",
+    "analysis/input_bounds.json": "50661373a3055e4a65c9ba72b5d0d6dfa9f1f05435cde74c6787e6220721cff8",
+    "analysis/input_bounds.py": "ecea492d1c727be6161ef61a121f7538d8ddcbd86f511b22c8db48e54d4feac1",
+    "analysis/raw_bounds.py": "871e078186b80c50501cb49622545612184040190bc7c41720064660d0dfc2f5",
+    "audit/make_errata_table.py": "fa40cf7c21dd51ca76c3f54c71b27b140614d338d3a81b1b33a2e32c50ecca94",
+    "audit/reaudit_v1_dev.py": "b38a2b0e1a1a534a2422d6d807bd78ad79242a3394f0af841888ec9f2a507b2c",
+    "config.py": "88e05268899668035ad934d36983e8f93b3829a0c553940dcca57a33190e88b0",
+    "models/c05_ekv26_typ.lib": "f6acb2379baacfdb5f53cfc30015f3b7c5690bb1118a5e32a678b76c0b739634",
+    "netlists/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "netlists/bench_mother.py": "7592338d0c61885c6658e61a62ea60d9befcf5b3480b279bee3299ab88e4d563",
+    "netlists/build.py": "399a4a315db623fa13070206f599e57793fde95bc327bb69ce92ff369ed1b2fc",
+    "netlists/build_thermal_g3.py": "eb38c797cf1dbc9446172d4c7fb8b17b48f0a66f8c876a263c6c472b8b42ade5",
+    "netlists/bundle_physical.py": "f61a47ce2add2b38e6daf9e44507853a1ed1fb8a708df8a5a09f4e11cf1916f4",
+    "netlists/ledger_plan.py": "81fac8428fb3a63ce54c5cbc7b22a8c911ec394277104b2b3d5b423b59b85729",
+    "netlists/neuron_mother.py": "58dff803a651914c58158c13a143b517c642c16e857b0674a88946ff44f81634",
+    "netlists/neuron_nrc.py": "dbedcaf0b2a9d8cace6eb29fef5795d341e6998281fbfd8e90d780795c2bea6c",
+    "netlists/occurrence_port.py": "183cb02a7fda4b056712789b841f6d9f03ccf84d1c0b046b0f6ce57c235038f7",
+    "netlists/params.py": "09a1a34c8990e5371b7518f112749ce692bbbc57e465d4aa48e5aa0aaed821b0",
+    "netlists/spatial_graph.py": "15452f5003e76a70e965fc24cbd75b9e8f24e2051ac5715c601d06f9245313ed",
+    "observers/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "observers/criteria_q1r.py": "176477e00475211dcc75ddfd24f6b5a71a37cd781b231dd21a49e0a64541f4f2",
+    "observers/halfstep_compare.py": "2186a431b692eefcfdd56509562963305cd2869777702e5115cf2a3384ee25b6",
+    "observers/judges.py": "bd91cf6a1c12ba8c38fc126719c43789c9f3ec0e0ec1bb96bdbd5906024d28f7",
+    "observers/ledger_q1r.py": "3b0bf8cf8a3eeedfde6511ec846c53e5aeb2a752ea51d3cbe6bfd442de0d2d9c",
+    "observers/observers_q1r.py": "4fc3d38ca66d62fcd2eda7761d81ea8da6963dad0c01bd78764eb53127af7a25",
+    "observers/support_q1r.py": "f80934294d38fd4cebef6e95bc56d17cb08ddfc94924519f8d7a794ae4aead5d",
+    "prereg/backend_registration.json": "1b99694fba68c5c9562042a5a5ce38766e7bd4910efb2a8150a6b8f8e0c10e87",
+    "prereg/cases_q1r.json": "148a652db1c61c265222982712f123b9d6c5fcba4b9a2b870cf73c852d24f3a7",
+    "prereg/host_environment_check_2026-10-20.json": "1b9eb392600dab3cd4657970ab995eb212d41dcd0683da242d53b56ad968b4b0",
+    "prereg/host_storage_check_2026-10-20.json": "d0468aace5864e55c6364b556674d556822368fa3dbe5cd23eba63cb2b3bea33",
+    "prereg/inputs/thermal_g3_v1.1_task_table_2026-10-08.json": "8c064b365d4039e29d93cd47daffa7b7dc1117ce2f8c7bce6998b7697d9baf70",
+    "prereg/make_cases.py": "ba4ffe5fa0d96fa942d4679c9530edd6a9b8858f591860a7df1bb859be35aa61",
+    "prereg/make_protocol.py": "c0d21e821fb610b0d56e61c4f6743c91eae5e4cdeed142142f033305e7ab6a21",
+    "prereg/protocol_q1r_joint.json": "d0fc13f378949b7d6885bd7ca997abe7d31c6e0f2e691ac739b22d25132d5fb9",
+    "prereg/source_manifest.json": "6466083a4cef1d9a719986a1ebe2bb05d45ce6f29891f8e460f4da1a0bae7c06",
+    "prereg/source_revision_2026-10-20.json": "967bf2e03b8b2dddc076fee6d1c5799e47785c42456c862c0f7fc5fd36857cea",
+    "runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtime/coordinator.py": "f9461c2a7e0c09b04cd13cb8322d3d21e3a3f03352f2b7b35d83954168b999d4",
+    "runtime/decks.py": "5c17b528bd3b4feb3c5a7973d56c2436e5edac7cad5e4df0a81590bcfc6f171f",
+    "runtime/supervisor.py": "c8a07650c88bf072b852fff0805ab847ef986a102e2ebb9280b9f94a1e8c1f69",
+    "solver_adapter/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "solver_adapter/read_raw.py": "97c1f437d4cb8564a15747b641398ff95fe5005a4e7aab5fe7943210e8a0d38a",
+    "solver_adapter/read_raw_mmap.py": "b1397bd07835a9115647b575baa89681bc8e39faaa4602ea8c93c581bbbc803e",
+    "tests/fake_ngspice.py": "882fce28acad7d151513698c040583a292dc22c0fc7a9407e708cd6079f4f758",
+    "tests/synth_raw.py": "73bce511d586cc59c37d6f19bba21e3b6a022627367edd809c5b2cb9fc2fabde",
+    "tools/check_cloud_package.py": "08fd1b20bc0b901d54fb4f329145e9010fa7c1f5e5940e580c58c2e770b0b424",
+    "tools/make_cloud_package.py": "f43c2a410818864c39eb762e5eb1ee29c0d6bd40f683bcd89ed4cb512b027751",
+    "tools/register_backend.py": "5969a058b9840ee3ed8d5425b77145dc690b07ca0fca79b4c3d85eece3910ec0",
+    "tools/render_report.py": "565c15a4d37217f002dbe0b2417c22b8ad2d09fb76d91af1200fe2ffb51c8c7f",
+    "tools/selfcheck_all.py": "adc2b180207a0429fb9b7c42420f47a379b9fc77222e905e4a243d3a777f4937",
+    "tools/source_manifest.py": "c020c40b2ddcc0d0fbb9ad1e5c6ff6b9f91e50541e7f1a4c4d1ed0389ef8e26e",
+    "tools/static_check.py": "b203794843881b2c2a4b589d7017070c4db2df127f002533e4c25dd42027e705",
+    "tools/write_freeze.py": "5148c79c4a157d2ed55cec6dcd83aa30d97697d2a8453c2d963c2f1fd3e6b771"
+  },
+  "only_solver_configuration_delta": "KLU -> SPARSE 1.3 in executed candidate decks; all copied software, scientific judges and original registry remain unchanged.",
+  "copied_historical_freezes": "Provenance only; this separate candidate manifest and current authorization bind these two runs. Old coordinator/old STOPPED workflow is not resumed.",
+  "backend": {
+    "ngspice": {
+      "path": "/workspace/thermal-g3-env/host/native/bin/ngspice",
+      "sha256": "37d80c673bc4c03904ed4434bb3aa9aecd099ecfaeb66b86730a905e8c76ed89"
+    },
+    "osdi": {
+      "path": "/workspace/thermal-g3-env/host/native/models/ekv26_linux.osdi",
+      "sha256": "7c07ae3728941189b77bf0ecfca5ebe56473d01eedc6ea59c46cc32bfdb9a43f"
+    }
+  },
+  "model_card": {
+    "path": "/workspace/thermal-g3-qualification/sparse-qualification-2026-10-22-17fb81ea/inputs/c05_ekv26_typ.lib",
+    "sha256": "f6acb2379baacfdb5f53cfc30015f3b7c5690bb1118a5e32a678b76c0b739634"
+  },
+  "spice_scripts": "/workspace/thermal-g3-env/spice-scripts",
+  "cases": {
+    "Q1_MOTHER_PROTOCOL": {
+      "directory": "/workspace/thermal-g3-qualification/sparse-qualification-2026-10-22-17fb81ea/runs/Q1_MOTHER_PROTOCOL",
+      "plan_sha256": "30d967e673cf06d83750c4e92e68db2308ec7d6ebe72115cccf8a849f88dc9fd",
+      "analysis": "tran 0.001 100.27 0 0.00025",
+      "deadline_s": 600
+    },
+    "Q1_MOTHER_HALFSTEP": {
+      "directory": "/workspace/thermal-g3-qualification/sparse-qualification-2026-10-22-17fb81ea/runs/Q1_MOTHER_HALFSTEP",
+      "plan_sha256": "d5cd7e046a6a85171a63a62e613ecaffdecadf98f2b47a99158bc62eb03d44a2",
+      "analysis": "tran 0.001 100.27 0 0.000125",
+      "deadline_s": 600
+    }
+  },
+  "baseline_global_starts": 29,
+  "global_start_cap": 65,
+  "reserved_formal_starts": 31,
+  "unused_diagnostic_allocation": 3,
+  "max_qualification_starts": 2,
+  "global_wall_cap_s": 172800,
+  "historical_total_wall_s": null,
+  "wall_accounting_note": "Earlier three extra launch durations remain unknown; record exact new charges without inventing a cumulative balance.",
+  "protected_original_records": [
+    {
+      "path": "/workspace/TheLiying-cloudtest/THERMAL-G3_actual_host/FREEZE_Q1R.json",
+      "exists": true,
+      "sha256": "6d0bec4bd1b68ebf60ad5f2240d16227738c13263348880aa0eeab0551b21d48"
+    },
+    {
+      "path": "/workspace/thermal-g3-env/host/FREEZE_Q1R.json",
+      "exists": true,
+      "sha256": "6d0bec4bd1b68ebf60ad5f2240d16227738c13263348880aa0eeab0551b21d48"
+    },
+    {
+      "path": "/workspace/TheLiying-cloudtest/THERMAL-G3_actual_host/execution/thermal_g3_q1/FREEZE_Q1R.json",
+      "exists": true,
+      "sha256": "6d0bec4bd1b68ebf60ad5f2240d16227738c13263348880aa0eeab0551b21d48"
+    },
+    {
+      "path": "/workspace/thermal-g3-env/host/execution/thermal_g3_q1/FREEZE_Q1R.json",
+      "exists": true,
+      "sha256": "6d0bec4bd1b68ebf60ad5f2240d16227738c13263348880aa0eeab0551b21d48"
+    },
+    {
+      "path": "/workspace/TheLiying-cloudtest/THERMAL-G3_actual_host/execution/thermal_g3_q1/prereg/LAUNCH_PERMISSION.json",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "/workspace/thermal-g3-env/host/execution/thermal_g3_q1/prereg/LAUNCH_PERMISSION.json",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "/workspace/TheLiying-cloudtest/THERMAL-G3_actual_host/execution/thermal_g3_q1/results/STOPPED",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "/workspace/thermal-g3-env/host/execution/thermal_g3_q1/results/STOPPED",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "/workspace/TheLiying-cloudtest/THERMAL-G3_actual_host/execution/thermal_g3_q1/results/q1_ledger.jsonl",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "/workspace/thermal-g3-env/host/execution/thermal_g3_q1/results/q1_ledger.jsonl",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "/workspace/TheLiying-cloudtest/THERMAL-G3_actual_host/execution/thermal_g3_v1/results/analysis_ledger.jsonl",
+      "exists": true,
+      "sha256": "ad447f9e2c121d258c5b581316d169814189ed010a72d81f80e07c2cee70bf1a"
+    },
+    {
+      "path": "/workspace/thermal-g3-env/host/execution/thermal_g3_v1/results/analysis_ledger.jsonl",
+      "exists": true,
+      "sha256": "2723fdb7a38ce500f909bacdc698dd5045515318a67209b275e2d1d077f95fa9"
+    }
+  ]
+}

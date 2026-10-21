@@ -1,0 +1,9 @@
+{
+  "test": "Execute delivered restore_raw.py on all four delivered gzip chunks",
+  "status": "PASS",
+  "restored_bytes": 321814571,
+  "restored_sha256": "69c950786ca768d5918f5dd79c716c0e7f8b75369f490c071c21acc5b2db7f23",
+  "expected_original_sha256": "69c950786ca768d5918f5dd79c716c0e7f8b75369f490c071c21acc5b2db7f23",
+  "part_checksums_gzip_crc_and_original_checksum_verified": true,
+  "new_solver_starts": 0
+}

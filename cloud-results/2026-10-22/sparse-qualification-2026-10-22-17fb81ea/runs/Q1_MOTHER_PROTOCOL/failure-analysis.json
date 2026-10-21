@@ -1,0 +1,78 @@
+{
+  "scope": "Offline explanation of the unchanged original scientific failure; no rerun and no rescoring with changed rules.",
+  "joint_functional_result": "PASS",
+  "role_gates": {
+    "G0": {
+      "overall": "PASS",
+      "total_gates": 9,
+      "passed": 9
+    },
+    "Sigma": {
+      "overall": "PASS",
+      "total_gates": 9,
+      "passed": 9
+    },
+    "Theta_Cdir": {
+      "overall": "PASS",
+      "total_gates": 9,
+      "passed": 9
+    }
+  },
+  "physical_ledger_result": "FAIL",
+  "failed_physical_nodes": [
+    "g0_vm"
+  ],
+  "g0_vm": {
+    "kcl_p99": 7.816535108438843e-10,
+    "kcl_peak": 1.6194373895438571e-09,
+    "kcl": true,
+    "energy_net_J": 2.4232130050428374e-18,
+    "energy_abs_J": 4.9082429182059145e-06,
+    "energy": true,
+    "cap_mismatch_J": 7.854068677546823e-10,
+    "cap": false,
+    "n_terms": 10,
+    "result": "FAIL"
+  },
+  "capacitors_at_failed_node": [
+    {
+      "item": {
+        "element": "cg0_cm",
+        "kind": "C",
+        "vec": "i(va_cg0_cm_p)",
+        "sign": 1.0,
+        "C": 1e-07,
+        "R": null,
+        "far": "0"
+      },
+      "integrated_terminal_power_J": 4.9698115307922595e-08,
+      "stored_energy_change_J": 4.891270844016791e-08,
+      "abs_mismatch_J": 7.854068677546823e-10,
+      "allowed_abs_mismatch_J": 4.96981153079226e-10,
+      "mismatch_over_allowed": 1.5803554378036486,
+      "pass": false
+    },
+    {
+      "item": {
+        "element": "cpar_g0_vm",
+        "kind": "C",
+        "vec": "i(va_cpar_g0_vm_p)",
+        "sign": 1.0,
+        "C": 5e-14,
+        "R": null,
+        "far": "0"
+      },
+      "integrated_terminal_power_J": 2.48465310658054e-14,
+      "stored_energy_change_J": 2.445635422008396e-14,
+      "abs_mismatch_J": 3.9017684572143947e-16,
+      "allowed_abs_mismatch_J": 1e-12,
+      "mismatch_over_allowed": 0.0003901768457214395,
+      "pass": true
+    }
+  ],
+  "E_REL_original": 0.01,
+  "E_FLOOR_original_J": 1e-12,
+  "overall_qualification": "FAIL",
+  "inference_limit": "The original capacitor-energy closure gate is not satisfied. This offline record does not distinguish physical error, time discretization, or quadrature/sampling effects. No criteria or tolerance has been changed.",
+  "additional_solver_starts": 0
+}

@@ -1,0 +1,13 @@
+{
+  "case_id": "Q1_MOTHER_PROTOCOL",
+  "expected_end_s": 100.27,
+  "solver_log_CONFIRMS_SPARSE": true,
+  "raw_exists": true,
+  "actual_end_s": 100.27,
+  "raw_points": 419026,
+  "process_returncode": 0,
+  "completion_failure": null,
+  "raw_variables": 96,
+  "raw_bytes": 321814571,
+  "raw_sha256": "69c950786ca768d5918f5dd79c716c0e7f8b75369f490c071c21acc5b2db7f23"
+}

@@ -1,0 +1,9 @@
+{
+  "case_id": "Q1_MOTHER_PROTOCOL",
+  "why": "scientific FAIL",
+  "scientific": "FAIL",
+  "actual_end_s": 100.27,
+  "global_start_count": 30,
+  "next_case_or_retry_authorized": false,
+  "old_STOPPED_state": "Preserved; this is a separate candidate-round STOPPED record."
+}

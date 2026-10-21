@@ -1,0 +1,8 @@
+{
+  "case_id": "Q1_MOTHER_HALFSTEP",
+  "status": "NOT_RUN",
+  "actual_solver_launches": 0,
+  "reason": "Q1_MOTHER_PROTOCOL completed but overall original scientific verdict FAIL (g0_vm capacitor-energy gate).",
+  "source_verdict_sha256": "f05ae141d5ce4dcf5f0c3a8bd72384de7c97f06269a9df0e2c78edd31bc65dad",
+  "must_not_advance": true
+}
