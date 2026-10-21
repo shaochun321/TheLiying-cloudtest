@@ -1,0 +1,15 @@
+{
+  "user_approval": "批准上限 65，最多 4 次诊断，保留 33 次额度",
+  "approved_at_Asia_Shanghai": "2026-10-22T03:48:26.803230+08:00",
+  "baseline_conservative_starts": 28,
+  "previous_global_start_cap": 61,
+  "global_start_cap": 65,
+  "max_new_diagnostic_starts": 4,
+  "qualification_and_formal_starts_reserved": 33,
+  "per_diagnostic_wall_clock_cap_s": 60,
+  "stop_exploration_on_effective_difference": true,
+  "qualification_authorized": false,
+  "formal_authorized": false,
+  "do_not_modify_original_frozen_contract": true,
+  "do_not_resume_old_STOPPED_workflow": true
+}

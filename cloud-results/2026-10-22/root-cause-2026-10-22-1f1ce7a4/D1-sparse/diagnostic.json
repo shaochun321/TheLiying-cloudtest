@@ -1,0 +1,268 @@
+{
+  "test": "D1",
+  "status": "SMOKE_PASS",
+  "solver": "SPARSE 1.3",
+  "method": "Gear",
+  "relative_tolerance": 1e-05,
+  "absolute_current_tolerance_A": 1e-16,
+  "checks": {
+    "actual_sparse_selector_confirmed": true,
+    "no_KLU_selection_logged": true,
+    "process_exit_zero": true,
+    "not_timed_out": true,
+    "no_solver_failure_log": true,
+    "raw_structure_valid": true,
+    "values_finite": true,
+    "time_strictly_increasing": true,
+    "reached_20ms_with_predeclared_rel_tol_1e_9": true,
+    "required_vectors_present": true,
+    "unchanged_project_completion_method_accepts": true,
+    "protected_original_records_unchanged": true
+  },
+  "original_completion_method_rejection": null,
+  "errors": [],
+  "raw_points": 1170,
+  "raw_variables": 96,
+  "requested_end_s": 0.02,
+  "actual_end_s": 0.02,
+  "actual_end_ms": 20.0,
+  "raw_bytes": 901161,
+  "raw_sha256": "2c6af724a8c6f2abe51446b725ea2ad6bf9a86682255f857fe82f4470a5d1db2",
+  "required_vectors_count": 95,
+  "missing_vectors": [],
+  "actual_solver_launches": 1,
+  "elapsed_wall_s": 2.8219074370008457,
+  "conservative_starts_after": 29,
+  "global_start_cap": 65,
+  "baseline_KLU_end_s": 0.005732389312857695,
+  "candidate_type": "Numerical matrix-solver setting only.",
+  "supported_inference": "For this one observed run, the complete mother circuit power-on completion is sensitive to the matrix solver selection.",
+  "not_established": [
+    "KLU defect",
+    "Physical correctness",
+    "Full startup/POR release",
+    "Full qualification pass",
+    "Repeatability across runs"
+  ],
+  "no_extra_run_for_repeatability": true,
+  "qualification_or_formal_started": false,
+  "last_values_V": {
+    "v(vsrc)": 3.0,
+    "v(vdd)": 2.942736338128187,
+    "v(vrest)": 0.6381966649293732,
+    "v(vthe)": 0.8107946930113695,
+    "v(vthr)": 0.6669587364900333,
+    "v(vmid)": 0.8323052606884122,
+    "v(por_ok)": 5.822585643693169e-06,
+    "v(g0_vm)": 0.6245022758548483,
+    "v(g0_vms)": 0.6381966582329345,
+    "v(g0_q)": 1.2705444989715637e-09,
+    "v(g0_qb)": 2.9422978600534333,
+    "v(sg_vm)": 0.6322461080241829,
+    "v(sg_vms)": 0.6360432243126707,
+    "v(tc_vm)": 0.42488513684170653,
+    "v(tc_vms)": 0.6381966577356528
+  },
+  "saved_voltage_ranges_V": {
+    "v(g0_gmax)": {
+      "min": 3.0,
+      "max": 3.0
+    },
+    "v(g0_gvalid)": {
+      "min": 3.0,
+      "max": 3.0
+    },
+    "v(g0_gweak)": {
+      "min": 3.0,
+      "max": 3.0
+    },
+    "v(g0_h)": {
+      "min": 1.6485927639792435e-22,
+      "max": 0.810734373251278
+    },
+    "v(g0_op_aq)": {
+      "min": -2.8524173977217153e-17,
+      "max": 2.7529125854837928e-06
+    },
+    "v(g0_op_aqb)": {
+      "min": 5.10537406759971e-17,
+      "max": 2.9427363074943225
+    },
+    "v(g0_op_at)": {
+      "min": 1.0866411504175327e-21,
+      "max": 0.41870384068150024
+    },
+    "v(g0_op_p)": {
+      "min": -6.092193488931332e-18,
+      "max": 0.03689102950150146
+    },
+    "v(g0_op_pb)": {
+      "min": 4.88666505082523e-18,
+      "max": 2.9427363057365112
+    },
+    "v(g0_q)": {
+      "min": 5.951481679398837e-16,
+      "max": 1.5152581126014286
+    },
+    "v(g0_qb)": {
+      "min": 2.197465347165566e-21,
+      "max": 2.9422978600534333
+    },
+    "v(g0_rec)": {
+      "min": 4.0502067624305286e-22,
+      "max": 0.41820340140152934
+    },
+    "v(g0_vm)": {
+      "min": -5.28545556441498e-19,
+      "max": 0.6245022758548483
+    },
+    "v(g0_vmd)": {
+      "min": -3.29710546072136e-22,
+      "max": 0.6381961273112374
+    },
+    "v(g0_vms)": {
+      "min": -1.3695336181877025e-14,
+      "max": 0.6381966582329345
+    },
+    "v(por_ok)": {
+      "min": -1.317616232477563e-23,
+      "max": 0.00023698877860383246
+    },
+    "v(sg_h)": {
+      "min": 6.030171478107793e-23,
+      "max": 0.6670030354495552
+    },
+    "v(sg_op_aq)": {
+      "min": -2.8524173977217153e-17,
+      "max": 2.931502916495177
+    },
+    "v(sg_op_aqb)": {
+      "min": 5.10537406759971e-17,
+      "max": 1.77626428581201
+    },
+    "v(sg_op_at)": {
+      "min": 1.0866108784538813e-21,
+      "max": 2.2137852796762534
+    },
+    "v(sg_op_p)": {
+      "min": -1.8246962903800343e-05,
+      "max": 2.942736307462757
+    },
+    "v(sg_op_pb)": {
+      "min": 4.88666505082523e-18,
+      "max": 1.7762524592308802
+    },
+    "v(sg_q)": {
+      "min": 5.674483939039418e-16,
+      "max": 2.5942007215258855
+    },
+    "v(sg_qb)": {
+      "min": 1.0854158724326031e-22,
+      "max": 2.9422651061324387
+    },
+    "v(sg_rec)": {
+      "min": 4.050164673075961e-22,
+      "max": 2.210731713405039
+    },
+    "v(sg_sn)": {
+      "min": 1.48361,
+      "max": 1.48361
+    },
+    "v(sg_sp)": {
+      "min": 1.48361,
+      "max": 1.48361
+    },
+    "v(sg_vm)": {
+      "min": -3.2372464552787853e-22,
+      "max": 0.6322461080241829
+    },
+    "v(sg_vmd)": {
+      "min": -3.5469533711503124e-22,
+      "max": 0.6381964816504501
+    },
+    "v(sg_vms)": {
+      "min": -1.3646785278339017e-14,
+      "max": 0.6360432243126707
+    },
+    "v(tc_h)": {
+      "min": -1.628883539841751e-22,
+      "max": 0.6670030348292393
+    },
+    "v(tc_hs)": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "v(tc_op_aq)": {
+      "min": -2.8524173977217153e-17,
+      "max": 2.752912586012061e-06
+    },
+    "v(tc_op_aqb)": {
+      "min": 5.10537406759971e-17,
+      "max": 2.9427363074943234
+    },
+    "v(tc_op_at)": {
+      "min": 1.0866108784538053e-21,
+      "max": 0.7041606344017466
+    },
+    "v(tc_op_p)": {
+      "min": -6.092193488931332e-18,
+      "max": 0.036891029501501735
+    },
+    "v(tc_op_pb)": {
+      "min": 4.88666505082523e-18,
+      "max": 2.9427363057365112
+    },
+    "v(tc_pg)": {
+      "min": 0.0,
+      "max": 0.0
+    },
+    "v(tc_q)": {
+      "min": 5.674483963406951e-16,
+      "max": 1.6947840934218543
+    },
+    "v(tc_qb)": {
+      "min": -4.355265997786749e-21,
+      "max": 2.94227050423306
+    },
+    "v(tc_rec)": {
+      "min": 4.050164673075957e-22,
+      "max": 0.7031478432730635
+    },
+    "v(tc_vm)": {
+      "min": -2.471809506209144e-22,
+      "max": 0.42488513684170653
+    },
+    "v(tc_vmd)": {
+      "min": -3.531933004147589e-22,
+      "max": 0.6381966356047446
+    },
+    "v(tc_vms)": {
+      "min": -1.3666216364540047e-14,
+      "max": 0.6381966577356528
+    },
+    "v(vdd)": {
+      "min": -2.0418712688409424e-24,
+      "max": 2.942736338128187
+    },
+    "v(vmid)": {
+      "min": -1.0209356344204712e-24,
+      "max": 0.8323052606884122
+    },
+    "v(vrest)": {
+      "min": -3.5245023548306236e-22,
+      "max": 0.6381966649293732
+    },
+    "v(vsrc)": {
+      "min": 0.0,
+      "max": 3.0
+    },
+    "v(vthe)": {
+      "min": -8.65888677885902e-25,
+      "max": 0.8107946930113695
+    },
+    "v(vthr)": {
+      "min": -9.867255411361439e-25,
+      "max": 0.6669587364900333
+    }
+  }
+}

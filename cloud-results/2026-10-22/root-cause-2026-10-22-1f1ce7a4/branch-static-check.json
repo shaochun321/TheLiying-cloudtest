@@ -1,0 +1,139 @@
+{
+  "real_solver_starts": 0,
+  "candidate_branch_checks": [
+    {
+      "role": "g0",
+      "terminals_after_collapsing_only_zero_V_probes": {
+        "sh1": [
+          "g0_vm",
+          "g0_rec",
+          "g0_vms",
+          "0"
+        ],
+        "sh2": [
+          "g0_vms",
+          "g0_qb",
+          "vrest",
+          "0"
+        ],
+        "cap": [
+          "g0_vms",
+          "0"
+        ]
+      },
+      "model_types": [
+        "nch",
+        "nch"
+      ],
+      "widths_m": [
+        2e-06,
+        2e-06
+      ],
+      "lengths_m": [
+        1e-06,
+        1e-06
+      ],
+      "within_model_card_stated_W_L_ranges": true,
+      "midpoint_cap_F": 5e-14,
+      "midpoint_direct_linear_resistor_to_reference": false,
+      "midpoint_DC_constraint": "Through two nonlinear MOS devices; capacitor gives no DC conductance. Off-state conditioning cannot be inferred from graph alone.",
+      "probe_count": 4,
+      "zero_V_probe_only_cycle_found": false
+    },
+    {
+      "role": "sg",
+      "terminals_after_collapsing_only_zero_V_probes": {
+        "sh1": [
+          "sg_vm",
+          "sg_rec",
+          "sg_vms",
+          "0"
+        ],
+        "sh2": [
+          "sg_vms",
+          "sg_qb",
+          "vrest",
+          "0"
+        ],
+        "cap": [
+          "sg_vms",
+          "0"
+        ]
+      },
+      "model_types": [
+        "nch",
+        "nch"
+      ],
+      "widths_m": [
+        2e-06,
+        2e-06
+      ],
+      "lengths_m": [
+        1e-06,
+        1e-06
+      ],
+      "within_model_card_stated_W_L_ranges": true,
+      "midpoint_cap_F": 5e-14,
+      "midpoint_direct_linear_resistor_to_reference": false,
+      "midpoint_DC_constraint": "Through two nonlinear MOS devices; capacitor gives no DC conductance. Off-state conditioning cannot be inferred from graph alone.",
+      "probe_count": 4,
+      "zero_V_probe_only_cycle_found": false
+    },
+    {
+      "role": "tc",
+      "terminals_after_collapsing_only_zero_V_probes": {
+        "sh1": [
+          "tc_vm",
+          "tc_rec",
+          "tc_vms",
+          "0"
+        ],
+        "sh2": [
+          "tc_vms",
+          "tc_qb",
+          "vrest",
+          "0"
+        ],
+        "cap": [
+          "tc_vms",
+          "0"
+        ]
+      },
+      "model_types": [
+        "nch",
+        "nch"
+      ],
+      "widths_m": [
+        2e-06,
+        2e-06
+      ],
+      "lengths_m": [
+        1e-06,
+        1e-06
+      ],
+      "within_model_card_stated_W_L_ranges": true,
+      "midpoint_cap_F": 5e-14,
+      "midpoint_direct_linear_resistor_to_reference": false,
+      "midpoint_DC_constraint": "Through two nonlinear MOS devices; capacitor gives no DC conductance. Off-state conditioning cannot be inferred from graph alone.",
+      "probe_count": 4,
+      "zero_V_probe_only_cycle_found": false
+    }
+  ],
+  "independent_ideal_voltage_source_count": 52,
+  "ideal_voltage_source_only_cycles": [],
+  "no_obvious_port_or_unit_mismatch_in_candidate_branches": true,
+  "scope_limit": "Targeted shunt-branch check only; not a whole-project audit and not a rank/conditioning proof.",
+  "facts": [
+    "Each midpoint is connected to two nonlinear MOS ports and a 50 fF capacitor.",
+    "The 0 V probes have dedicated intermediate nodes; no independent-voltage-source-only loop was found.",
+    "No obvious W/L-unit or bulk-terminal mismatch was found in the three candidate branches."
+  ],
+  "hypotheses_not_proven": [
+    "Weak off-state DC constraint/conditioning",
+    "Probe-related matrix sensitivity",
+    "Static Sigma common-mode startup interaction",
+    "EKV charge/Jacobian behavior",
+    "Global feedback interaction"
+  ],
+  "D2_guard": "Do not infer the probe hypothesis is proven from these graph checks. Proceed only if D1 fails and further evidence still justifies the contrast."
+}

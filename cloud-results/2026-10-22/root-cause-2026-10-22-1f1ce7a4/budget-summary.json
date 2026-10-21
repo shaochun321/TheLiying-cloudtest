@@ -1,0 +1,16 @@
+{
+  "baseline_starts": 28,
+  "diagnostic_starts_this_suite": 1,
+  "conservative_total_starts": 29,
+  "global_start_cap": 65,
+  "remaining_total_starts": 36,
+  "qualification_and_formal_starts_reserved": 33,
+  "diagnostic_starts_remaining": 3,
+  "wall_charge_this_suite_s": 2.8219074370008457,
+  "global_wall_cap_s_unchanged": 172800,
+  "remaining_wall_update": "remaining_after = remaining_before - wall_charge_this_suite_s",
+  "exact_historical_cumulative_wall_s": null,
+  "historical_wall_limitation": "Elapsed times for three earlier launches remain unavailable. This suite records its exact incremental charge without inventing a total.",
+  "qualification_started": false,
+  "formal_started": false
+}

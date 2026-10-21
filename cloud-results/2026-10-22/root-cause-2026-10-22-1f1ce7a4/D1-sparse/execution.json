@@ -1,0 +1,34 @@
+{
+  "test": "D1",
+  "hypothesis": "Power-on abort is sensitive to matrix solver selection.",
+  "command": [
+    "/workspace/thermal-g3-env/host/native/bin/ngspice",
+    "-n",
+    "-b",
+    "/workspace/thermal-g3-diagnostics/root-cause-2026-10-22-1f1ce7a4/D1-sparse/mother_0_20ms.cir"
+  ],
+  "cwd": "/workspace/thermal-g3-diagnostics/root-cause-2026-10-22-1f1ce7a4/D1-sparse",
+  "actual_solver_launches": 1,
+  "automatic_retries": 0,
+  "conservative_starts_before": 28,
+  "conservative_starts_after": 29,
+  "global_start_cap": 65,
+  "qualification_and_formal_reserved": 33,
+  "wall_clock_cap_s": 60.0,
+  "kill_dispatch_s": 59.9,
+  "kill_margin_reason": "Reserve 0.1 seconds for termination/reaping inside the 60s cap.",
+  "explicit_analysis_commands": [
+    "tran 0.001 0.02 0 0.00025"
+  ],
+  "elapsed_solver_wall_s": 2.8219074370008457,
+  "timed_out": false,
+  "returncode": 0,
+  "spawn_error": null,
+  "signal_sent": null,
+  "started_at_Asia_Shanghai": "2026-10-22T03:48:27.326155+08:00",
+  "ended_at_Asia_Shanghai": "2026-10-22T03:48:30.148864+08:00",
+  "pid": 4633,
+  "solver_process_reaped": true,
+  "wall_within_cap": true,
+  "original_freeze_permission_ledger_stop_states_unchanged": true
+}

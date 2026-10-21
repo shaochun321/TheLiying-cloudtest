@@ -1,0 +1,43 @@
+{
+  "review": "Checklist accepted with budget reservation, diagnostic stop rules and separate qualification authorization.",
+  "R0": {
+    "status": "PASS",
+    "tests": 2,
+    "solver_launches": 0
+  },
+  "D1": {
+    "status": "SMOKE_PASS",
+    "solver": "SPARSE 1.3",
+    "actual_end_s": 0.02,
+    "raw_points": 1170,
+    "raw_variables": 96,
+    "elapsed_wall_s": 2.8219074370008457,
+    "actual_solver_launches": 1
+  },
+  "D2": "NOT_RUN_STOP_RULE_AFTER_EFFECTIVE_D1_DIFFERENCE",
+  "D3": "NOT_RUN_STOP_RULE_AFTER_EFFECTIVE_D1_DIFFERENCE",
+  "D4": "NOT_RUN_STOP_RULE_AFTER_EFFECTIVE_D1_DIFFERENCE",
+  "R1": "NOT_AUTHORIZED_NOT_RUN",
+  "R2": "NOT_AUTHORIZED_NOT_RUN",
+  "formal_31": "NOT_AUTHORIZED_NOT_RUN",
+  "budget": {
+    "baseline_starts": 28,
+    "diagnostic_starts_this_suite": 1,
+    "conservative_total_starts": 29,
+    "global_start_cap": 65,
+    "remaining_total_starts": 36,
+    "qualification_and_formal_starts_reserved": 33,
+    "diagnostic_starts_remaining": 3,
+    "wall_charge_this_suite_s": 2.8219074370008457,
+    "global_wall_cap_s_unchanged": 172800,
+    "remaining_wall_update": "remaining_after = remaining_before - wall_charge_this_suite_s",
+    "exact_historical_cumulative_wall_s": null,
+    "historical_wall_limitation": "Elapsed times for three earlier launches remain unavailable. This suite records its exact incremental charge without inventing a total.",
+    "qualification_started": false,
+    "formal_started": false
+  },
+  "candidate": "SPARSE1.3 setting only; no physical/input/model change.",
+  "root_cause": "NOT_IDENTIFIED; observed sensitivity to matrix solver selection.",
+  "old_STOPPED_workflow": "not resumed",
+  "main_and_original_delivery_files": "unchanged"
+}

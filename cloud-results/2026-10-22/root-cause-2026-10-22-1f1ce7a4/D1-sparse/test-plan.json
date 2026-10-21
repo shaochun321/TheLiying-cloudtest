@@ -1,0 +1,48 @@
+{
+  "test": "D1",
+  "hypothesis": "Power-on abort is sensitive to matrix solver selection.",
+  "single_factor": "KLU -> SPARSE 1.3; Gear, tolerances, original circuit/devices/input waveforms/save list/model unchanged.",
+  "baseline_commit": "c0e0e95baf0baea08b4f5c028448b377ed3a893b",
+  "status": "READY_AUTHORIZED",
+  "actual_solver_launches": 0,
+  "wall_clock_cap_s": 60,
+  "budget_before": 28,
+  "existing_global_start_cap": 61,
+  "proposed_global_start_cap": 65,
+  "budget_cap_change_approved": true,
+  "qualification_and_formal_starts_reserved": 33,
+  "max_additional_diagnostic_starts_proposed": 4,
+  "expected_starts_after_D1_if_approved": 29,
+  "smoke_stop_s": 0.02,
+  "endpoint_relative_tolerance": 1e-09,
+  "solver_log_required": "Using SPARSE 1.3 as Direct Linear Solver",
+  "automatic_retries": 0,
+  "full_qualification_authorized": false,
+  "formal_experiments_authorized": false,
+  "on_effective_difference": "Stop exploration and analyze; no automatic D2/R1/R2.",
+  "no_solver_process_executed_during_preparation": true,
+  "deck_sha256": "60338089d87fbdefc6177f0f20953ea7b35e1f045b0a3d4e59aea92db75c39cb",
+  "model_sha256": "f6acb2379baacfdb5f53cfc30015f3b7c5690bb1118a5e32a678b76c0b739634",
+  "backend_and_osdi_identities": {
+    "native/bin/ngspice": {
+      "path": "/workspace/thermal-g3-env/host/native/bin/ngspice",
+      "bytes": 8042384,
+      "sha256": "37d80c673bc4c03904ed4434bb3aa9aecd099ecfaeb66b86730a905e8c76ed89"
+    },
+    "native/models/ekv26_linux.osdi": {
+      "path": "/workspace/thermal-g3-env/host/native/models/ekv26_linux.osdi",
+      "bytes": 81976,
+      "sha256": "7c07ae3728941189b77bf0ecfca5ebe56473d01eedc6ea59c46cc32bfdb9a43f"
+    }
+  },
+  "spice_scripts": "/workspace/thermal-g3-env/spice-scripts",
+  "prepared_at": "2026-10-22T03:43:26.170393+08:00",
+  "planned_command": [
+    "/workspace/thermal-g3-env/host/native/bin/ngspice",
+    "-n",
+    "-b",
+    "/workspace/thermal-g3-diagnostics/root-cause-2026-10-22-1f1ce7a4/D1-sparse/mother_0_20ms.cir"
+  ],
+  "approved_global_start_cap": 65,
+  "authorization_file": "../authorization.json"
+}

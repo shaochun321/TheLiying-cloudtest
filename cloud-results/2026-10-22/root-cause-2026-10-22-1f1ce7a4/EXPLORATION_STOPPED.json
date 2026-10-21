@@ -1,0 +1,13 @@
+{
+  "reason": "D1 reached 20ms with SPARSE confirmed and all smoke criteria met; effective difference from KLU baseline. Stop D2-D4 exploration.",
+  "diagnostics_started": 1,
+  "D2_D3_D4": "NOT_RUN_BY_STOP_RULE",
+  "R1_R2": "NOT_AUTHORIZED_NOT_RUN",
+  "formal_experiments": "NOT_AUTHORIZED_NOT_RUN",
+  "conservative_count": 29,
+  "global_start_cap": 65,
+  "remaining_starts": 36,
+  "diagnostic_allocation_unused": 3,
+  "qualification_and_formal_reserved": 33,
+  "candidate": "SPARSE 1.3 instead of KLU, otherwise original settings and circuitry."
+}

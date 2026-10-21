@@ -1,0 +1,3 @@
+{"rec": "reserved", "test": "D1", "start_index": 29, "t": "2026-10-22T03:48:27.324432+08:00", "hypothesis": "Power-on abort is sensitive to matrix solver selection.", "deck_sha256": "60338089d87fbdefc6177f0f20953ea7b35e1f045b0a3d4e59aea92db75c39cb"}
+{"rec": "start", "test": "D1", "start_index": 29, "pid": 4633, "t": "2026-10-22T03:48:27.326155+08:00", "command": ["/workspace/thermal-g3-env/host/native/bin/ngspice", "-n", "-b", "/workspace/thermal-g3-diagnostics/root-cause-2026-10-22-1f1ce7a4/D1-sparse/mother_0_20ms.cir"]}
+{"rec": "end", "test": "D1", "t": "2026-10-22T03:48:30.150026+08:00", "actual_solver_launches": 1, "wall_s": 2.8219074370008457, "returncode": 0, "timed_out": false, "conservative_count": 29}

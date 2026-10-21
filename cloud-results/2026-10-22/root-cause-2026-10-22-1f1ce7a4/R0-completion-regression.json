@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "real_solver_starts": 0,
+  "method": "unchanged Coordinator.completion, invoked without constructing or running a coordinator",
+  "code_path": "/workspace/thermal-g3-env/host/execution/thermal_g3_q1/runtime/coordinator.py",
+  "code_sha256": "f9461c2a7e0c09b04cd13cb8322d3d21e3a3f03352f2b7b35d83954168b999d4",
+  "input_raw_sha256": "bf1d99f267288f6bc887a4b6faa15ab2eb45aef81fc6add499b1fd38f6793413",
+  "input_log_sha256": "8b74c4e905d1ed5d26be388768403923ca6fe66ff219032d124799f530014f23",
+  "tests": [
+    {
+      "name": "exit_zero_plus_actual_abort_log_rejected",
+      "returncode": 0,
+      "actual_log_used": true,
+      "rejection": "log contains 'simulation(s) aborted'",
+      "pass": true
+    },
+    {
+      "name": "truncated_RAW_rejected_even_without_abort_marker",
+      "returncode": 0,
+      "actual_log_used": false,
+      "controlled_log_argument": "empty string to exercise time-end rejection",
+      "rejection": "raw ends at 0.00573238931, stop 0.02",
+      "pass": true
+    }
+  ],
+  "tests_passed": 2,
+  "tests_total": 2,
+  "required_saved_vectors": 95,
+  "no_production_files_modified": true,
+  "new_permission_or_activity_ledger_created": false
+}

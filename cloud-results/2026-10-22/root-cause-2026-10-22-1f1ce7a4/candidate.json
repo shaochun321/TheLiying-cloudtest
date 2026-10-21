@@ -1,0 +1,70 @@
+{
+  "candidate_id": "SPARSE_GEAR_original_physics_2026-10-22",
+  "type": "numerical matrix-solver setting only",
+  "evidence_test": "D1",
+  "evidence_status": "20ms SMOKE_PASS, one run only",
+  "baseline_commit": "c0e0e95baf0baea08b4f5c028448b377ed3a893b",
+  "only_scientific_configuration_delta": {
+    "before": ".options klu method=gear reltol=1e-5 abstol=1e-16",
+    "after": ".options sparse method=gear reltol=1e-5 abstol=1e-16"
+  },
+  "unchanged": [
+    "Gear integration",
+    "circuit devices and topology",
+    "original EKV OSDI and model card",
+    "all original input waveforms",
+    "original tolerances",
+    "original save/charge-accounting observations"
+  ],
+  "confirmed_original_qualification_cases": [
+    {
+      "case_id": "Q1_MOTHER_PROTOCOL",
+      "phase": "qualification",
+      "group": "MOTHER",
+      "scale": "mother_bench",
+      "builder": "bench_mother",
+      "build_args": {},
+      "env": null,
+      "analysis": "tran 0.001 100.27 0 0.00025",
+      "x_stop": 100.27,
+      "max_step_s": 0.00025,
+      "timeout_s": 600,
+      "baseline_case_id": null,
+      "depends_on": [],
+      "judge": "criteria_q1r.judge_joint"
+    },
+    {
+      "case_id": "Q1_MOTHER_HALFSTEP",
+      "phase": "qualification",
+      "group": "MOTHER",
+      "scale": "mother_bench",
+      "builder": "bench_mother",
+      "build_args": {},
+      "env": null,
+      "analysis": "tran 0.001 100.27 0 0.000125",
+      "x_stop": 100.27,
+      "max_step_s": 0.000125,
+      "timeout_s": 600,
+      "baseline_case_id": "Q1_MOTHER_PROTOCOL",
+      "depends_on": [
+        "Q1_MOTHER_PROTOCOL"
+      ],
+      "judge": "halfstep_compare.compare"
+    }
+  ],
+  "halfstep_definition": "Same 100.27s protocol and 1ms output increment; maximum integration step changes 250us -> 125us, as frozen registry specifies.",
+  "candidate_qualification_authorized": false,
+  "candidate_qualification_executed": false,
+  "future_qualification_requirements": [
+    "Separate explicit user authorization for this candidate version.",
+    "Independent candidate version, registration and accounting consistent with approved global limit65; do not overwrite historical frozen61 contract or bypass oldSTOPPED.",
+    "Run original Q1_MOTHER_PROTOCOL first, require original scientific verdict PASS before Q1_MOTHER_HALFSTEP.",
+    "Each case retains original600s wall limit and failure-stop behavior; no extra long smoke runs.",
+    "No automatic 31 formal experiments."
+  ],
+  "evidence_limits": [
+    "One 20ms run does not establish full qualification, numerical convergence across step sizes, physical correctness, POR release, or exact root cause.",
+    "KLU baseline and SPARSE runs have different adaptive accepted time grids.",
+    "por_hold/porc/porx transient signals are not in the saved observation set."
+  ]
+}

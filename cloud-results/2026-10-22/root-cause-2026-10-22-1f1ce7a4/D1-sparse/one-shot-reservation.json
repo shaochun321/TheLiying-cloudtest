@@ -1,0 +1,7 @@
+{
+  "reserved_at": "2026-10-22T03:48:27.323339+08:00",
+  "test": "D1",
+  "conservative_start_index_reserved": 29,
+  "global_start_cap": 65,
+  "max_solver_launches_this_test": 1
+}
