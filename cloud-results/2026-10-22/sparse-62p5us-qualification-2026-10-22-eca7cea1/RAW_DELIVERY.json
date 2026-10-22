@@ -1,0 +1,83 @@
+[
+  {
+    "original_path": "runs/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw",
+    "original_bytes": 1243871532,
+    "original_sha256": "29fd40781fd1623b67a382c96a464ad1f641571dba531d0e8208fa3b6ee39f5f",
+    "encoding": "gzip, split into ordered binary chunks",
+    "compressed_bytes": 686620579,
+    "compressed_sha256": "e924d8fb3712533ac5c84563cc703add1a1748c380a7bf6610b7e8d855d1b0b2",
+    "lossless_decompression_verified": true,
+    "parts": [
+      {
+        "path": "runs/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw.gz.part001",
+        "bytes": 50331648,
+        "sha256": "6f748a4185619958f20650b045f6c887ae62574e773e9842b223e2c61356ed51"
+      },
+      {
+        "path": "runs/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw.gz.part002",
+        "bytes": 50331648,
+        "sha256": "e69bc2e723e38738a9b24a812ed8ffcb077a265971d153b2cb2d2d70ef0d9435"
+      },
+      {
+        "path": "runs/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw.gz.part003",
+        "bytes": 50331648,
+        "sha256": "7f43bdd849aaf9ada3d91638a9068c605f8ca4c4e877d01fd5a98edd8a355b17"
+      },
+      {
+        "path": "runs/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw.gz.part004",
+        "bytes": 50331648,
+        "sha256": "ef8e8e65b01b65a2f3d51ab9ca2dffb44376059124487f3f65a0abbc202c868e"
+      },
+      {
+        "path": "runs/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw.gz.part005",
+        "bytes": 50331648,
+        "sha256": "cc6231b708ba7e5bc646053d85296f900fe5fc6257463ca6d2cd731690b99eee"
+      },
+      {
+        "path": "runs/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw.gz.part006",
+        "bytes": 50331648,
+        "sha256": "e69cec537b94922b75b0d64eb4e447edfec3921b078190e237b1fc98b2332b6b"
+      },
+      {
+        "path": "runs/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw.gz.part007",
+        "bytes": 50331648,
+        "sha256": "08d7c9f6c82ee6b564f4870e67e05c03b646e02f85979fc56f9456de5d5cc6b2"
+      },
+      {
+        "path": "runs/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw.gz.part008",
+        "bytes": 50331648,
+        "sha256": "bc78527559beba4df99f40bf1d8f490cd90d964fee8438fc2a75d9a06b176637"
+      },
+      {
+        "path": "runs/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw.gz.part009",
+        "bytes": 50331648,
+        "sha256": "9d35d7765fe983332b29b1bb3fe41382bf9a8d0575994a573319aba8ef7c4224"
+      },
+      {
+        "path": "runs/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw.gz.part010",
+        "bytes": 50331648,
+        "sha256": "d08244b22483fefdea8a80ba06d67774ffe2055f25693950c66224ae45223d44"
+      },
+      {
+        "path": "runs/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw.gz.part011",
+        "bytes": 50331648,
+        "sha256": "ea41fbc7dd4c44848bc14f882a2f2074723d7a3a88c5b785f57691dceca67926"
+      },
+      {
+        "path": "runs/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw.gz.part012",
+        "bytes": 50331648,
+        "sha256": "1d89c4c8edb356196def0c3a2e6237825dd71349a8bd13233278bbb0cce47dae"
+      },
+      {
+        "path": "runs/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw.gz.part013",
+        "bytes": 50331648,
+        "sha256": "384c80b9f59b119ac4895ad2ba61296d716cfea62321ded0b473e134174562f9"
+      },
+      {
+        "path": "runs/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw.gz.part014",
+        "bytes": 32309155,
+        "sha256": "2535b89042226f0ae682740e8025d01c858c4dc62986b903a6860d6cb28208fb"
+      }
+    ]
+  }
+]

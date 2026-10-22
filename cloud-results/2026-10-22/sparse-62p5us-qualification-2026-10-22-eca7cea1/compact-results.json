@@ -1,0 +1,69 @@
+{
+  "qualification_result": "PASS",
+  "completion": {
+    "case_id": "Q1_MOTHER_HALFSTEP",
+    "expected_end_s": 100.27,
+    "actual_end_s": 100.27,
+    "raw_exists": true,
+    "process_returncode": 0,
+    "solver_log_CONFIRMS_SPARSE": true,
+    "completion_failure": null,
+    "raw_sha256": "29fd40781fd1623b67a382c96a464ad1f641571dba531d0e8208fa3b6ee39f5f",
+    "raw_bytes": 1243871532,
+    "raw_points": 1619621,
+    "raw_variables": 96,
+    "original_completion_bytecode_used": true,
+    "completion_reader_adapter": "Same mmap values, contiguous bit-identical time only."
+  },
+  "budget": {
+    "baseline_global_starts": 33,
+    "qualification_starts_this_round": 1,
+    "global_starts_after": 34,
+    "global_start_cap": 65,
+    "total_starts_remaining": 31,
+    "formal_31_reserved": 31,
+    "unused_diagnostic_allocation": 0,
+    "qualification_allocation_unspent": 0,
+    "solver_wall_charge_this_round_s": 2679.750343740001,
+    "phase_wall_cap_s": 7200,
+    "phase_prior_charged_wall_s": 2732.476353029999,
+    "phase_total_charged_wall_s": 5412.22669677,
+    "phase_remaining_wall_s": 1787.7733032300002,
+    "global_wall_cap_s_unchanged": 172800,
+    "exact_prior_cumulative_wall_s": null,
+    "formal_runs_started": 0,
+    "automatic_retries": 0,
+    "note": "Historical global exact wall remains incomplete; charge this exact new solver delta only."
+  },
+  "functional": {
+    "G0": {
+      "overall": "PASS",
+      "passes": 9,
+      "total": 9
+    },
+    "Sigma": {
+      "overall": "PASS",
+      "passes": 9,
+      "total": 9
+    },
+    "Theta_Cdir": {
+      "overall": "PASS",
+      "passes": 9,
+      "total": 9
+    }
+  },
+  "physical_nodes": 9,
+  "physical_fails": [],
+  "comparison": {
+    "result": "PASS",
+    "fails": [],
+    "event_vectors": 9,
+    "max_event_dt_s": 5.7551668092514774e-05,
+    "charge_checks": 8,
+    "peak_checks": 12,
+    "max_charge_relative_with_original_floor": 1.4517554279867696e-05,
+    "max_peak_relative_with_original_floor": 6.377350592286921e-06
+  },
+  "g0_vm_cap_mismatch_J": 1.0528615556042488e-10,
+  "judging_wall_s": 448.6759249970055
+}

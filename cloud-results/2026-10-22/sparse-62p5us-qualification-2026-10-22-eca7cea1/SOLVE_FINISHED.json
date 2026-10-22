@@ -1,0 +1,7 @@
+{
+  "case_id": "Q1_MOTHER_HALFSTEP",
+  "actual_solver_launches": 1,
+  "no_retry": true,
+  "global_starts_after": 34,
+  "offline_judging_only_remains": true
+}

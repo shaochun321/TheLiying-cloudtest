@@ -1,0 +1,6 @@
+{
+  "started_at": "2026-10-22T22:05:06.551013+08:00",
+  "maximum_batches": 1,
+  "new_solver_launches": 0,
+  "time_layout": "Use contiguous time from first attempt, uint64 bitwise verified."
+}

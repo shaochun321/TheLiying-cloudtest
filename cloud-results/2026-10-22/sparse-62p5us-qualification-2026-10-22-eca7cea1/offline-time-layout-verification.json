@@ -1,0 +1,27 @@
+{
+  "vectors": [
+    {
+      "label": "new_62p5us",
+      "points": 1619621,
+      "old_time_stride_bytes": 768,
+      "new_time_stride_bytes": 8,
+      "time_bit_patterns_identical": true,
+      "interpolation": false,
+      "resampling": false
+    },
+    {
+      "label": "bound_PASS_125us",
+      "points": 818885,
+      "old_time_stride_bytes": 768,
+      "new_time_stride_bytes": 8,
+      "time_bit_patterns_identical": true,
+      "interpolation": false,
+      "resampling": false
+    }
+  ],
+  "new_RAW_sha256": "29fd40781fd1623b67a382c96a464ad1f641571dba531d0e8208fa3b6ee39f5f",
+  "baseline_RAW_sha256": "f62e385ac452b5e33a0a324787ddd949214489de5c1d9d0e85f845d2d38ea203",
+  "baseline_RAW_checksum_count_this_task": 1,
+  "original_scientific_code_unchanged": true,
+  "new_solver_launches": 0
+}

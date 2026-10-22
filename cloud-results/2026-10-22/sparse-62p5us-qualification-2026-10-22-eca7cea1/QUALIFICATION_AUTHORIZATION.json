@@ -1,0 +1,20 @@
+{
+  "user_instruction": "评审后执行",
+  "scope_document": "母本通过裁定与最后一项资格对照建议.md",
+  "manifest_sha256": "c75715a75d59a4fe53564dc6018a7c05bb1d307cc3b8d6133886e6aca8b4de71",
+  "authorized_cases": [
+    "Q1_MOTHER_HALFSTEP"
+  ],
+  "max_solver_starts": 1,
+  "case_wall_cap_s": 3600,
+  "qualification_phase_wall_cap_s": 7200,
+  "qualification_phase_prior_charged_wall_s": 2732.476353029999,
+  "baseline_global_starts": 33,
+  "global_start_cap": 65,
+  "last_diagnostic_start_reallocated_to_qualification": 1,
+  "formal_31_authorized": false,
+  "parameter_tuning_authorized": false,
+  "automatic_retries": 0,
+  "stop_on_any_failure": true,
+  "old_STOPPED_round_resume": false
+}

@@ -1,0 +1,15 @@
+{
+  "candidate_id": "SPARSE_GEAR_125us_original_physics_2026-10-22",
+  "numerical_pair_s": [
+    0.000125,
+    6.25e-05
+  ],
+  "baseline_commit": "664866bdafada095112d76c93109c07c9556af8a",
+  "baseline_RAW_sha256": "f62e385ac452b5e33a0a324787ddd949214489de5c1d9d0e85f845d2d38ea203",
+  "halfstep_RAW_sha256": "29fd40781fd1623b67a382c96a464ad1f641571dba531d0e8208fa3b6ee39f5f",
+  "qualification_result": "PASS",
+  "global_starts": 34,
+  "formal_31_authorized": false,
+  "summary_sha256": "29c4a545f5559ee1ff385369794bcbf42f931980df7ac2d90512e2e09745fce2",
+  "completed_at": "2026-10-22T22:12:35.228555+08:00"
+}

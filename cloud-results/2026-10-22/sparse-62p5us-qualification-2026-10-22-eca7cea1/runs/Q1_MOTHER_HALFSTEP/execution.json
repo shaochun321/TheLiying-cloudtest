@@ -1,0 +1,29 @@
+{
+  "case_id": "Q1_MOTHER_HALFSTEP",
+  "command": [
+    "/workspace/thermal-g3-env/host/native/bin/ngspice",
+    "-n",
+    "-b",
+    "/workspace/thermal-g3-qualification/sparse-62p5us-qualification-2026-10-22-eca7cea1/runs/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.cir"
+  ],
+  "cwd": "/workspace/thermal-g3-qualification/sparse-62p5us-qualification-2026-10-22-eca7cea1/runs/Q1_MOTHER_HALFSTEP",
+  "explicit_analysis": "tran 0.001 100.27 0 0.0000625",
+  "actual_solver_launches": 1,
+  "automatic_retries": 0,
+  "conservative_starts_before": 33,
+  "conservative_starts_after": 34,
+  "global_start_cap": 65,
+  "wall_clock_cap_s": 3600,
+  "kill_dispatch_s": 3599.9,
+  "returncode": 0,
+  "timed_out": false,
+  "spawn_error": null,
+  "elapsed_solver_wall_s": 2679.750343740001,
+  "signal_sent": null,
+  "started_at_Asia_Shanghai": "2026-10-22T21:20:19.508666+08:00",
+  "pid": 25787,
+  "ended_at_Asia_Shanghai": "2026-10-22T22:04:59.263338+08:00",
+  "solver_process_reaped": true,
+  "wall_within_cap": true,
+  "original_frozen_permission_ledger_stop_records_unchanged": true
+}

@@ -1,0 +1,16 @@
+{
+  "commit": "664866bdafada095112d76c93109c07c9556af8a",
+  "raw_path": "/workspace/thermal-g3-qualification/sparse-125us-1800s-2026-10-22-abf2dedc/runs/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw",
+  "raw_sha256": "f62e385ac452b5e33a0a324787ddd949214489de5c1d9d0e85f845d2d38ea203",
+  "raw_checksum_count_this_task": 1,
+  "raw_size": 628906283,
+  "raw_mtime_ns": 1792656438679755163,
+  "verdict_binding_path": "/workspace/thermal-g3-qualification/sparse-125us-1800s-2026-10-22-abf2dedc/runs/Q1_MOTHER_PROTOCOL/verdict-binding.json",
+  "verdict_binding_sha256": "cf424ed0ba6c71d71c61495a0b6fe7c180930d724854fea720beb60be802221c",
+  "judge_output_path": "/workspace/thermal-g3-qualification/sparse-125us-1800s-2026-10-22-abf2dedc/runs/Q1_MOTHER_PROTOCOL/judge-output.json",
+  "judge_output_sha256": "47d9d2aa9c67c394ce41be2be6e49140722bd4067c79320147d1117f2b3ed097",
+  "scientific": "PASS",
+  "complete_transient": true,
+  "actual_end_s": 100.27,
+  "max_step_s": 0.000125
+}

@@ -1,0 +1,20 @@
+{
+  "baseline_global_starts": 33,
+  "qualification_starts_this_round": 1,
+  "global_starts_after": 34,
+  "global_start_cap": 65,
+  "total_starts_remaining": 31,
+  "formal_31_reserved": 31,
+  "unused_diagnostic_allocation": 0,
+  "qualification_allocation_unspent": 0,
+  "solver_wall_charge_this_round_s": 2679.750343740001,
+  "phase_wall_cap_s": 7200,
+  "phase_prior_charged_wall_s": 2732.476353029999,
+  "phase_total_charged_wall_s": 5412.22669677,
+  "phase_remaining_wall_s": 1787.7733032300002,
+  "global_wall_cap_s_unchanged": 172800,
+  "exact_prior_cumulative_wall_s": null,
+  "formal_runs_started": 0,
+  "automatic_retries": 0,
+  "note": "Historical global exact wall remains incomplete; charge this exact new solver delta only."
+}

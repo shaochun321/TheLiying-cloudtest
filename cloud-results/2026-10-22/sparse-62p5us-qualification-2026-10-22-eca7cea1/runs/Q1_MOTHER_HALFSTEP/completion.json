@@ -1,0 +1,15 @@
+{
+  "case_id": "Q1_MOTHER_HALFSTEP",
+  "expected_end_s": 100.27,
+  "actual_end_s": 100.27,
+  "raw_exists": true,
+  "process_returncode": 0,
+  "solver_log_CONFIRMS_SPARSE": true,
+  "completion_failure": null,
+  "raw_sha256": "29fd40781fd1623b67a382c96a464ad1f641571dba531d0e8208fa3b6ee39f5f",
+  "raw_bytes": 1243871532,
+  "raw_points": 1619621,
+  "raw_variables": 96,
+  "original_completion_bytecode_used": true,
+  "completion_reader_adapter": "Same mmap values, contiguous bit-identical time only."
+}
