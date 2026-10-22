@@ -1,0 +1,8 @@
+{
+  "reserved_at": "2026-10-22T12:36:06.516787+08:00",
+  "maximum_starts": 1,
+  "start_index": 31,
+  "wall_cap_s": 600,
+  "purpose": "One separately authorized short common-endpoint time-step diagnostic.",
+  "test_plan_sha256": "dd7552f3d0c27de5e704291a3f89ae805fe062c08560b59e1233531d74a517ad"
+}

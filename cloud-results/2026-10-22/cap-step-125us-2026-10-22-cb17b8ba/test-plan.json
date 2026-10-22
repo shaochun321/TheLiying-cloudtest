@@ -1,0 +1,238 @@
+{
+  "run_id": "cap-step-125us-2026-10-22-cb17b8ba",
+  "purpose": "One separately authorized short common-endpoint time-step diagnostic.",
+  "user_instruction": "评审后执行",
+  "task_document": "能量误差定位结果与单次短程收敛对照.md",
+  "task_document_sha256": "9d27841b4793329bd0697e6dc0d08e5c36c5a1bd9dacf6e37a6f6f46b451d90c",
+  "baseline_commit": "f2d843e77fdf444268db91cef89a38bff60bbf30",
+  "analysis_results_commit": "ceec06245873ac1f2a4507861a8e251ca1c6e582",
+  "original_RAW_path": "/workspace/thermal-g3-qualification/sparse-qualification-2026-10-22-17fb81ea/runs/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw",
+  "original_RAW_sha256": "69c950786ca768d5918f5dd79c716c0e7f8b75369f490c071c21acc5b2db7f23",
+  "original_RAW_checksums_this_task": 1,
+  "common_end_s": 20.499988707436106,
+  "baseline_points_in_common_interval": 87375,
+  "baseline_max_step_s": 0.00025,
+  "new_max_step_s": 0.000125,
+  "analysis_command": "tran 0.001 20.499988707436106 0 0.000125",
+  "output_increment_s": 0.001,
+  "deck_path": "/workspace/thermal-g3-diagnostics/cap-step-125us-2026-10-22-cb17b8ba/cap_step_125us.cir",
+  "deck_sha256": "e16ac0ce568baf93662ef88a9ccb039ca4e481636d09b4829c34bef6a5db6dc6",
+  "raw_path": "/workspace/thermal-g3-diagnostics/cap-step-125us-2026-10-22-cb17b8ba/cap_step_125us.raw",
+  "model_path": "/workspace/thermal-g3-diagnostics/cap-step-125us-2026-10-22-cb17b8ba/c05_ekv26_typ.lib",
+  "model_sha256": "f6acb2379baacfdb5f53cfc30015f3b7c5690bb1118a5e32a678b76c0b739634",
+  "backend": {
+    "ngspice": {
+      "path": "/workspace/thermal-g3-env/host/native/bin/ngspice",
+      "sha256": "37d80c673bc4c03904ed4434bb3aa9aecd099ecfaeb66b86730a905e8c76ed89"
+    },
+    "osdi": {
+      "path": "/workspace/thermal-g3-env/host/native/models/ekv26_linux.osdi",
+      "sha256": "7c07ae3728941189b77bf0ecfca5ebe56473d01eedc6ea59c46cc32bfdb9a43f"
+    }
+  },
+  "spice_scripts": "/workspace/thermal-g3-env/spice-scripts",
+  "required_vectors": [
+    "v(vdd)",
+    "v(vrest)",
+    "v(vthe)",
+    "v(vthr)",
+    "v(vmid)",
+    "v(por_ok)",
+    "v(g0_gweak)",
+    "v(g0_gvalid)",
+    "v(g0_gmax)",
+    "v(sg_sp)",
+    "v(sg_sn)",
+    "v(tc_hs)",
+    "v(tc_pg)",
+    "v(g0_vm)",
+    "v(g0_h)",
+    "v(g0_q)",
+    "v(g0_qb)",
+    "v(g0_rec)",
+    "v(g0_vmd)",
+    "v(g0_op_at)",
+    "v(g0_op_aq)",
+    "v(g0_op_aqb)",
+    "v(g0_op_p)",
+    "v(g0_op_pb)",
+    "i(vg0_aweak)",
+    "i(vg0_avalid)",
+    "i(vg0_amax)",
+    "v(sg_vm)",
+    "v(sg_h)",
+    "v(sg_q)",
+    "v(sg_qb)",
+    "v(sg_rec)",
+    "v(sg_vmd)",
+    "v(sg_op_at)",
+    "v(sg_op_aq)",
+    "v(sg_op_aqb)",
+    "v(sg_op_p)",
+    "v(sg_op_pb)",
+    "i(vsg_aota)",
+    "v(tc_vm)",
+    "v(tc_h)",
+    "v(tc_q)",
+    "v(tc_qb)",
+    "v(tc_rec)",
+    "v(tc_vmd)",
+    "v(tc_op_at)",
+    "v(tc_op_aq)",
+    "v(tc_op_aqb)",
+    "v(tc_op_p)",
+    "v(tc_op_pb)",
+    "i(vtc_arel)",
+    "v(g0_vms)",
+    "v(sg_vms)",
+    "v(tc_vms)",
+    "i(va_cg0_cm_p)",
+    "i(va_rg0_rm_p)",
+    "i(va_ng0_km1_g)",
+    "i(va_ng0_dis_d)",
+    "i(va_ng0_sh1_d)",
+    "i(va_ng0_porm_d)",
+    "i(va_cpar_g0_vm_p)",
+    "i(va_ng0_dis_s)",
+    "i(va_rg0_rdis_p)",
+    "i(va_cpar_g0_vmd_p)",
+    "i(va_ng0_sh1_s)",
+    "i(va_ng0_sh2_d)",
+    "i(va_cpar_g0_vms_p)",
+    "i(va_csg_cm_p)",
+    "i(va_rsg_rm_p)",
+    "i(va_nsg_km1_g)",
+    "i(va_nsg_dis_d)",
+    "i(va_nsg_sh1_d)",
+    "i(va_nsg_porm_d)",
+    "i(va_cpar_sg_vm_p)",
+    "i(va_nsg_dis_s)",
+    "i(va_rsg_rdis_p)",
+    "i(va_cpar_sg_vmd_p)",
+    "i(va_nsg_sh1_s)",
+    "i(va_nsg_sh2_d)",
+    "i(va_cpar_sg_vms_p)",
+    "i(va_ctc_cm_p)",
+    "i(va_rtc_rm_p)",
+    "i(va_ntc_km1_g)",
+    "i(va_ntc_dis_d)",
+    "i(va_ntc_sh1_d)",
+    "i(va_ntc_porm_d)",
+    "i(va_cpar_tc_vm_p)",
+    "i(va_ntc_dis_s)",
+    "i(va_rtc_rdis_p)",
+    "i(va_cpar_tc_vmd_p)",
+    "i(va_ntc_sh1_s)",
+    "i(va_ntc_sh2_d)",
+    "i(va_cpar_tc_vms_p)",
+    "v(vsrc)",
+    "i(vsrc)"
+  ],
+  "cap_analysis_script": "/workspace/attachments/29d26056-a79b-4adc-8880-631f6c93d77f/cap_energy_forensics.py",
+  "cap_analysis_script_sha256": "7dcb537b650da0156ff0359a053b6b4192211fba6f122e8344fd1ea70968fa81",
+  "start_count_before": 30,
+  "start_count_after_if_launched": 31,
+  "global_start_cap": 65,
+  "max_solver_starts": 1,
+  "wall_cap_s": 600,
+  "automatic_retries": 0,
+  "diagnostic_allocation_before": 3,
+  "diagnostic_allocation_after_if_launched": 2,
+  "qualification_or_formal_authorized": false,
+  "old_STOPPED_round_resume_authorized": false,
+  "event_comparison": {
+    "nodes": [
+      "v(g0_q)",
+      "v(g0_op_aq)",
+      "v(g0_op_p)"
+    ],
+    "threshold_V": 1.5,
+    "edge_interpolation": "linear between original neighboring samples",
+    "time_tolerance_reference_s": 0.0005,
+    "reference": "existing half-step timing tolerance, not a qualification verdict"
+  },
+  "membrane_comparison": {
+    "peak_relative_tolerance_reference": 0.01,
+    "voltage_floor_V": 0.01,
+    "independent_grid_s": 0.001,
+    "metrics": [
+      "max_abs_difference",
+      "RMSE",
+      "normalized_RMSE"
+    ],
+    "note": "Interpolate only for comparison metrics; never interpolate/smooth values used in energy analysis."
+  },
+  "protected_original_records": [
+    {
+      "path": "/workspace/TheLiying-cloudtest/THERMAL-G3_actual_host/FREEZE_Q1R.json",
+      "exists": true,
+      "sha256": "6d0bec4bd1b68ebf60ad5f2240d16227738c13263348880aa0eeab0551b21d48"
+    },
+    {
+      "path": "/workspace/thermal-g3-env/host/FREEZE_Q1R.json",
+      "exists": true,
+      "sha256": "6d0bec4bd1b68ebf60ad5f2240d16227738c13263348880aa0eeab0551b21d48"
+    },
+    {
+      "path": "/workspace/TheLiying-cloudtest/THERMAL-G3_actual_host/execution/thermal_g3_q1/FREEZE_Q1R.json",
+      "exists": true,
+      "sha256": "6d0bec4bd1b68ebf60ad5f2240d16227738c13263348880aa0eeab0551b21d48"
+    },
+    {
+      "path": "/workspace/thermal-g3-env/host/execution/thermal_g3_q1/FREEZE_Q1R.json",
+      "exists": true,
+      "sha256": "6d0bec4bd1b68ebf60ad5f2240d16227738c13263348880aa0eeab0551b21d48"
+    },
+    {
+      "path": "/workspace/TheLiying-cloudtest/THERMAL-G3_actual_host/execution/thermal_g3_q1/prereg/LAUNCH_PERMISSION.json",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "/workspace/thermal-g3-env/host/execution/thermal_g3_q1/prereg/LAUNCH_PERMISSION.json",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "/workspace/TheLiying-cloudtest/THERMAL-G3_actual_host/execution/thermal_g3_q1/results/STOPPED",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "/workspace/thermal-g3-env/host/execution/thermal_g3_q1/results/STOPPED",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "/workspace/TheLiying-cloudtest/THERMAL-G3_actual_host/execution/thermal_g3_q1/results/q1_ledger.jsonl",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "/workspace/thermal-g3-env/host/execution/thermal_g3_q1/results/q1_ledger.jsonl",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "/workspace/TheLiying-cloudtest/THERMAL-G3_actual_host/execution/thermal_g3_v1/results/analysis_ledger.jsonl",
+      "exists": true,
+      "sha256": "ad447f9e2c121d258c5b581316d169814189ed010a72d81f80e07c2cee70bf1a"
+    },
+    {
+      "path": "/workspace/thermal-g3-env/host/execution/thermal_g3_v1/results/analysis_ledger.jsonl",
+      "exists": true,
+      "sha256": "2723fdb7a38ce500f909bacdc698dd5045515318a67209b275e2d1d077f95fa9"
+    },
+    {
+      "path": "/workspace/thermal-g3-qualification/sparse-qualification-2026-10-22-17fb81ea/STOPPED.json",
+      "exists": true,
+      "sha256": "de5276ff28ef9b36b1c5ef936cb5d83b27f63df837cae1cb5561eedc05516753"
+    },
+    {
+      "path": "/workspace/thermal-g3-qualification/sparse-qualification-2026-10-22-17fb81ea/qualification-ledger.jsonl",
+      "exists": true,
+      "sha256": "4776ef45e7595dfed052c2691a1192bf4576c04794fea3b882b1738b54cbc98b"
+    }
+  ],
+  "created_at_Asia_Shanghai": "2026-10-22T12:34:29.523884+08:00"
+}

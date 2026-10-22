@@ -1,0 +1,3 @@
+{"rec": "reserved", "t": "2026-10-22T12:36:06.519375+08:00", "start_index": 31, "analysis": "tran 0.001 20.499988707436106 0 0.000125", "deck_sha256": "e16ac0ce568baf93662ef88a9ccb039ca4e481636d09b4829c34bef6a5db6dc6"}
+{"rec": "start", "t": "2026-10-22T12:36:06.520705+08:00", "pid": 2117, "start_index": 31, "command": ["/workspace/thermal-g3-env/host/native/bin/ngspice", "-n", "-b", "/workspace/thermal-g3-diagnostics/cap-step-125us-2026-10-22-cb17b8ba/cap_step_125us.cir"]}
+{"rec": "end", "t": "2026-10-22T12:41:25.731485+08:00", "actual_solver_launches": 1, "global_starts": 31, "solver_wall_s": 319.19325546599975, "returncode": 0, "timed_out": false}

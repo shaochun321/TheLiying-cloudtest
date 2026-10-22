@@ -1,0 +1,23 @@
+[
+  {
+    "original_path": "cap_step_125us.raw",
+    "original_bytes": 129804587,
+    "original_sha256": "a70f317cc4ed813e73600293782cee3a6eb5a3898f3ed7185838b156a9add44d",
+    "encoding": "gzip-split",
+    "baseline_RAW_sha256_not_this_payload": "69c950786ca768d5918f5dd79c716c0e7f8b75369f490c071c21acc5b2db7f23",
+    "parts": [
+      {
+        "path": "cap_step_125us.raw.gz.part000",
+        "bytes": 50331648,
+        "sha256": "1f7076f7767542b0b873b7dddfc8dd664606131d22250a00e1135abba8a16c8f"
+      },
+      {
+        "path": "cap_step_125us.raw.gz.part001",
+        "bytes": 28211182,
+        "sha256": "4dcd01034a26e8029b87dc4feb6c4d3eae6433c6c073dc176d26f5103e7504c8"
+      }
+    ],
+    "compressed_sha256": "e9bd54fa8695e2a64614ee48daf219cf314c377db61cea3cb992d3452e371403",
+    "compressed_bytes": 78542830
+  }
+]

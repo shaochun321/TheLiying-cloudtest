@@ -1,0 +1,17 @@
+{
+  "global_start_cap": 65,
+  "global_count_before": 30,
+  "new_diagnostic_starts": 1,
+  "global_count_after": 31,
+  "total_starts_remaining": 34,
+  "diagnostic_allocation_before": 3,
+  "diagnostic_allocation_remaining": 2,
+  "formal_starts_reserved": 31,
+  "unused_qualification_allocation": 1,
+  "solver_wall_charge_this_run_s": 319.19325546599975,
+  "global_wall_cap_s_unchanged": 172800,
+  "historical_exact_cumulative_wall_s": null,
+  "wall_delta_update": "remaining_after = remaining_before - solver_wall_charge_this_run_s",
+  "qualification_or_formal_runs_started": 0,
+  "note": "Old three extra launch durations remain incomplete; no invented cumulative wall balance."
+}
