@@ -1,0 +1,20 @@
+--- old_executed_sparse_250us
++++ Q1_MOTHER_HALFSTEP
+@@ -1,5 +1,5 @@
+ * THERMAL-G3-Q1-R Q1_MOTHER_PROTOCOL
+-.include /workspace/thermal-g3-qualification/sparse-qualification-2026-10-22-17fb81ea/inputs/c05_ekv26_typ.lib
++.include /workspace/thermal-g3-qualification/sparse-125us-qualification-2026-10-22-5f9a10d8/inputs/c05_ekv26_typ.lib
+ vsrc vsrc 0 PWL(0 0 0.02 3.0)
+ rint vsrc vdd 10
+ cdec vdd 0 1e-05
+@@ -353,8 +353,8 @@
+ .control
+ pre_osdi /workspace/thermal-g3-env/host/native/models/ekv26_linux.osdi
+ set filetype=binary
+-tran 0.001 100.27 0 0.00025
+-write /workspace/thermal-g3-qualification/sparse-qualification-2026-10-22-17fb81ea/runs/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw
++tran 0.001 100.27 0 0.0000625
++write /workspace/thermal-g3-qualification/sparse-125us-qualification-2026-10-22-5f9a10d8/runs/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw
+ quit
+ .endc
+ .end

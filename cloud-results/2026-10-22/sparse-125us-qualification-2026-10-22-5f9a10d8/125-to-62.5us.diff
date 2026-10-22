@@ -1,0 +1,5 @@
+--- new_candidate_125us
++++ conditional_NOT_STARTED_62.5us
+@@ -1 +1 @@
+-tran 0.001 100.27 0 0.000125
++tran 0.001 100.27 0 0.0000625

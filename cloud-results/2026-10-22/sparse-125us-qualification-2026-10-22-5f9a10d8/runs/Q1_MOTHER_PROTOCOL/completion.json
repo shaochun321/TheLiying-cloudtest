@@ -1,0 +1,10 @@
+{
+  "case_id": "Q1_MOTHER_PROTOCOL",
+  "expected_end_s": 100.27,
+  "solver_log_CONFIRMS_SPARSE": true,
+  "raw_exists": false,
+  "actual_end_s": null,
+  "raw_points": null,
+  "process_returncode": -9,
+  "completion_failure": "timeout_killed"
+}

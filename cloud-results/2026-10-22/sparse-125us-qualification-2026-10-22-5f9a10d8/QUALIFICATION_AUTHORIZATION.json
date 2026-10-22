@@ -1,0 +1,23 @@
+{
+  "user_instruction": "请执行。",
+  "scope_document": "短程收敛诊断收口与完整资格建议.md",
+  "manifest_sha256": "b9853f3e8d633e373dd081caa5f2c3c09e8e62afc4ca1d5abe531a593c99aae0",
+  "authorized_cases": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP"
+  ],
+  "formal_31_authorized": false,
+  "parameter_tuning_authorized": false,
+  "max_solver_starts": 2,
+  "case_wall_caps_s": [
+    1200,
+    2400
+  ],
+  "qualification_phase_wall_cap_s": 3600,
+  "global_start_cap": 65,
+  "baseline_global_starts": 31,
+  "unused_diagnostic_reallocated_to_qualification": 1,
+  "stop_on_any_failure": true,
+  "old_STOPPED_round_resume": false,
+  "automatic_retries": 0
+}

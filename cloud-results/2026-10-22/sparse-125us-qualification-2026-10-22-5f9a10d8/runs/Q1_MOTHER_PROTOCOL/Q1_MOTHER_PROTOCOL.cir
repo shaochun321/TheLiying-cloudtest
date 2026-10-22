@@ -1,0 +1,360 @@
+* THERMAL-G3-Q1-R Q1_MOTHER_PROTOCOL
+.include /workspace/thermal-g3-qualification/sparse-125us-qualification-2026-10-22-5f9a10d8/inputs/c05_ekv26_typ.lib
+vsrc vsrc 0 PWL(0 0 0.02 3.0)
+rint vsrc vdd 10
+cdec vdd 0 1e-05
+rvrestt vdd vrest 2000
+rvrestb vrest 0 1000
+cvrestc vrest 0 1e-05
+rvthet vdd vthe 2000
+rvtheb vthe 0 1800
+cvthec vthe 0 1e-05
+rvthrt vdd vthr 2400
+rvthrb vthr 0 1500
+cvthrc vthr 0 1e-05
+rvmidt vdd vmid 2000
+rvmidb vmid 0 2000
+cvmidc vmid 0 1e-05
+rporr vdd porc 2.2e+06
+cporc porc 0 1e-06
+rporra porc porx 1e+06
+rporrf por_ok porx 4e+06
+npori1p por_hold porx vdd vsrc pch W=2.4e-06 L=5e-07
+npori1n por_hold porx 0 0 nch W=1.2e-06 L=5e-07
+npori2p por_ok por_hold vdd vsrc pch W=2.4e-06 L=5e-07
+npori2n por_ok por_hold 0 0 nch W=1.2e-06 L=5e-07
+riref vdd iref_n 2.2e+06
+nirefd iref_n iref_n 0 0 nch W=4e-06 L=4e-06
+ristep vdd istep_n 5.6e+07
+nistepd istep_n istep_n 0 0 nch W=4e-06 L=4e-06
+nirefm irefp_n iref_n 0 0 nch W=4e-06 L=4e-06
+nirefpd irefp_n irefp_n vdd vsrc pch W=4e-06 L=4e-06
+rilim vdd ilim_n 1.85e+06
+nilimd ilim_n ilim_n 0 0 nch W=4e-06 L=4e-06
+nilimm ilimp_n ilim_n 0 0 nch W=4e-06 L=4e-06
+nilimpd ilimp_n ilimp_n vdd vsrc pch W=4e-06 L=4e-06
+va_cg0_cm_p g0_vm cg0_cm_p 0
+cg0_cm cg0_cm_p 0 1e-07
+va_rg0_rm_p g0_vm rg0_rm_p 0
+rg0_rm rg0_rm_p vrest 1e+06
+rg0_kb vdd g0_knb 1e+06
+ng0_kmb g0_knb g0_knb 0 0 nch W=4e-06 L=4e-06
+ng0_kmt g0_ktail g0_knb 0 0 nch W=4e-06 L=4e-06
+va_ng0_km1_g g0_vm ng0_km1_g 0
+ng0_km1 g0_kd1 ng0_km1_g g0_ktail 0 nch W=4e-06 L=4e-06
+ng0_km2 g0_ko1 g0_h g0_ktail 0 nch W=4e-06 L=4e-06
+ng0_km3 g0_kd1 g0_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ng0_km4 g0_ko1 g0_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ng0_ki1p g0_qb g0_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+ng0_ki1n g0_qb g0_ko1 0 0 nch W=1.2e-06 L=5e-07
+ng0_ki2p g0_q g0_qb vdd vsrc pch W=2.4e-06 L=5e-07
+ng0_ki2n g0_q g0_qb 0 0 nch W=1.2e-06 L=5e-07
+rg0_hra g0_h vthe 1e+06
+rg0_hrf g0_h g0_qb 1.9e+07
+cg0_hc g0_h 0 2.1e-09
+va_ng0_dis_d g0_vm ng0_dis_d 0
+va_ng0_dis_s g0_vmd ng0_dis_s 0
+ng0_dis ng0_dis_d g0_q ng0_dis_s 0 nch W=4e-06 L=1e-06
+va_rg0_rdis_p g0_vmd rg0_rdis_p 0
+rg0_rdis rg0_rdis_p vrest 220000
+ng0_rp g0_rt g0_qb vdd vsrc pch W=2e-06 L=1e-06
+rg0_rrc g0_rt g0_rec 10000
+cg0_rc g0_rec 0 1e-07
+rg0_rr g0_rec 0 8.2e+06
+va_ng0_sh1_d g0_vm ng0_sh1_d 0
+va_ng0_sh1_s g0_vms ng0_sh1_s 0
+ng0_sh1 ng0_sh1_d g0_rec ng0_sh1_s 0 nch W=2e-06 L=1e-06
+va_ng0_sh2_d g0_vms ng0_sh2_d 0
+ng0_sh2 ng0_sh2_d g0_qb vrest 0 nch W=2e-06 L=1e-06
+ng0_porh g0_h por_hold vthe 0 nch W=2e-06 L=1e-06
+va_ng0_porm_d g0_vm ng0_porm_d 0
+ng0_porm ng0_porm_d por_hold vrest 0 nch W=2e-06 L=1e-06
+vg0_gweak g0_gweak 0 PWL(0 3 10.54 3 10.541 0 11.09 0 11.091 3)
+ng0_iweak_sw g0_iweak_x g0_gweak vdd vsrc pch W=4e-06 L=1e-06
+ng0_iweak_cp g0_oweak irefp_n g0_iweak_x vsrc pch W=1.2e-06 L=4e-06
+vg0_aweak g0_oweak g0_vm DC 0
+vg0_gvalid g0_gvalid 0 PWL(0 3 13.49 3 13.491 0 13.65 0 13.651 3 19.6 3 19.601 0 19.76 0 19.761 3)
+ng0_ivalid_sw g0_ivalid_x g0_gvalid vdd vsrc pch W=4e-06 L=1e-06
+ng0_ivalid_cp g0_ovalid irefp_n g0_ivalid_x vsrc pch W=4e-06 L=4e-06
+vg0_avalid g0_ovalid g0_vm DC 0
+vg0_gmax g0_gmax 0 PWL(0 3 16.05 3 16.051 0 17.2 0 17.201 3)
+ng0_imax_sw g0_imax_x g0_gmax vdd vsrc pch W=4e-06 L=1e-06
+ng0_imax_cp g0_omax ilimp_n g0_imax_x vsrc pch W=4e-06 L=4e-06
+vg0_amax g0_omax g0_vm DC 0
+ng0_op_tsw g0_op_tt g0_qb vdd vsrc pch W=2e-06 L=1e-06
+rg0_op_trc g0_op_tt g0_op_at 10000
+cg0_op_tc g0_op_at 0 1e-07
+rg0_op_trl g0_op_at 0 2.2e+07
+ng0_op_sh1p g0_op_an g0_op_at vdd vsrc pch W=2.4e-06 L=5e-07
+ng0_op_sh1n g0_op_an g0_op_at 0 0 nch W=1.2e-06 L=5e-07
+ng0_op_sh2p g0_op_aq g0_op_an vdd vsrc pch W=2.4e-06 L=5e-07
+ng0_op_sh2n g0_op_aq g0_op_an 0 0 nch W=1.2e-06 L=5e-07
+ng0_op_abp g0_op_aqb g0_op_aq vdd vsrc pch W=2.4e-06 L=5e-07
+ng0_op_abn g0_op_aqb g0_op_aq 0 0 nch W=1.2e-06 L=5e-07
+rg0_op_dr g0_op_aq g0_op_ad 1e+06
+cg0_op_dc g0_op_ad 0 3.3e-07
+ng0_op_d2p g0_op_adn g0_op_ad vdd vsrc pch W=2.4e-06 L=5e-07
+ng0_op_d2n g0_op_adn g0_op_ad 0 0 nch W=1.2e-06 L=5e-07
+ng0_op_gpa g0_op_pb g0_op_aq vdd vsrc pch W=2.4e-06 L=5e-07
+ng0_op_gpb g0_op_pb g0_op_adn vdd vsrc pch W=2.4e-06 L=5e-07
+ng0_op_gna g0_op_pb g0_op_aq g0_op_gx 0 nch W=2.4e-06 L=5e-07
+ng0_op_gnb g0_op_gx g0_op_adn 0 0 nch W=2.4e-06 L=5e-07
+ng0_op_op g0_op_p g0_op_pb vdd vsrc pch W=2.4e-06 L=5e-07
+ng0_op_on g0_op_p g0_op_pb 0 0 nch W=1.2e-06 L=5e-07
+ng0_ld_hsw vdd g0_qb vdd vsrc pch W=4e-06 L=5e-07
+ng0_ld_mp0 0 g0_op_aq 0 0 nch W=4e-06 L=1e-06
+ng0_ld_mp1 0 g0_op_aq 0 0 nch W=4e-06 L=1e-06
+ng0_ld_inj vdd g0_op_aqb vdd vsrc pch W=4e-06 L=1e-06
+va_csg_cm_p sg_vm csg_cm_p 0
+csg_cm csg_cm_p 0 1e-07
+va_rsg_rm_p sg_vm rsg_rm_p 0
+rsg_rm rsg_rm_p vrest 1e+06
+rsg_kb vdd sg_knb 1e+06
+nsg_kmb sg_knb sg_knb 0 0 nch W=4e-06 L=4e-06
+nsg_kmt sg_ktail sg_knb 0 0 nch W=4e-06 L=4e-06
+va_nsg_km1_g sg_vm nsg_km1_g 0
+nsg_km1 sg_kd1 nsg_km1_g sg_ktail 0 nch W=4e-06 L=4e-06
+nsg_km2 sg_ko1 sg_h sg_ktail 0 nch W=4e-06 L=4e-06
+nsg_km3 sg_kd1 sg_kd1 vdd vsrc pch W=4e-06 L=4e-06
+nsg_km4 sg_ko1 sg_kd1 vdd vsrc pch W=4e-06 L=4e-06
+nsg_ki1p sg_qb sg_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+nsg_ki1n sg_qb sg_ko1 0 0 nch W=1.2e-06 L=5e-07
+nsg_ki2p sg_q sg_qb vdd vsrc pch W=2.4e-06 L=5e-07
+nsg_ki2n sg_q sg_qb 0 0 nch W=1.2e-06 L=5e-07
+rsg_hra sg_h vthr 1e+06
+rsg_hrf sg_h sg_qb 1.9e+07
+csg_hc sg_h 0 2.1e-09
+va_nsg_dis_d sg_vm nsg_dis_d 0
+va_nsg_dis_s sg_vmd nsg_dis_s 0
+nsg_dis nsg_dis_d sg_q nsg_dis_s 0 nch W=4e-06 L=1e-06
+va_rsg_rdis_p sg_vmd rsg_rdis_p 0
+rsg_rdis rsg_rdis_p vrest 75000
+nsg_rp sg_rt sg_qb vdd vsrc pch W=2e-06 L=1e-06
+rsg_rrc sg_rt sg_rec 10000
+csg_rc sg_rec 0 1e-07
+rsg_rr sg_rec 0 8.2e+06
+va_nsg_sh1_d sg_vm nsg_sh1_d 0
+va_nsg_sh1_s sg_vms nsg_sh1_s 0
+nsg_sh1 nsg_sh1_d sg_rec nsg_sh1_s 0 nch W=2e-06 L=1e-06
+va_nsg_sh2_d sg_vms nsg_sh2_d 0
+nsg_sh2 nsg_sh2_d sg_qb vrest 0 nch W=2e-06 L=1e-06
+nsg_porh sg_h por_hold vthr 0 nch W=2e-06 L=1e-06
+va_nsg_porm_d sg_vm nsg_porm_d 0
+nsg_porm nsg_porm_d por_hold vrest 0 nch W=2e-06 L=1e-06
+vsg_sp sg_sp 0 PWL(0 1.48361 22.16 1.48361 22.161 1.61003 22.71 1.61003 22.711 1.48361 25.12 1.48361 25.121 1.8123 25.32 1.8123 25.321 1.48361 27.73 1.48361 27.731 1.78361 28.91 1.78361 28.911 1.48361 31.32 1.48361 31.321 1.8123 31.52 1.8123 31.521 1.48361)
+vsg_sn sg_sn 0 PWL(0 1.48361 22.16 1.48361 22.161 1.63531 22.71 1.63531 22.711 1.48361 25.12 1.48361 25.121 1.77184 25.32 1.77184 25.321 1.48361 27.73 1.48361 27.731 1.18361 28.91 1.18361 28.911 1.48361 31.32 1.48361 31.321 1.77184 31.52 1.77184 31.521 1.48361)
+rsg_ota_b vdd sg_ota_nb 3.3e+06
+nsg_ota_mb sg_ota_nb sg_ota_nb 0 0 nch W=4e-06 L=4e-06
+nsg_ota_mt sg_ota_tail sg_ota_nb 0 0 nch W=4e-06 L=4e-06
+nsg_ota_m1 sg_ota_d1 sg_sp sg_ota_tail 0 nch W=1e-05 L=2e-06
+nsg_ota_m2 sg_oo sg_sn sg_ota_tail 0 nch W=1e-05 L=2e-06
+nsg_ota_m3 sg_ota_d1 sg_ota_d1 vdd vsrc pch W=1e-05 L=2e-06
+nsg_ota_m4 sg_oo sg_ota_d1 vdd vsrc pch W=1e-05 L=2e-06
+vsg_aota sg_oo sg_vm DC 0
+nsg_op_tsw sg_op_tt sg_qb vdd vsrc pch W=2e-06 L=1e-06
+rsg_op_trc sg_op_tt sg_op_at 10000
+csg_op_tc sg_op_at 0 1e-07
+rsg_op_trl sg_op_at 0 2.2e+07
+nsg_op_sh1p sg_op_an sg_op_at vdd vsrc pch W=2.4e-06 L=5e-07
+nsg_op_sh1n sg_op_an sg_op_at 0 0 nch W=1.2e-06 L=5e-07
+nsg_op_sh2p sg_op_aq sg_op_an vdd vsrc pch W=2.4e-06 L=5e-07
+nsg_op_sh2n sg_op_aq sg_op_an 0 0 nch W=1.2e-06 L=5e-07
+nsg_op_abp sg_op_aqb sg_op_aq vdd vsrc pch W=2.4e-06 L=5e-07
+nsg_op_abn sg_op_aqb sg_op_aq 0 0 nch W=1.2e-06 L=5e-07
+rsg_op_dr sg_op_aq sg_op_ad 1e+06
+csg_op_dc sg_op_ad 0 3.3e-07
+nsg_op_d2p sg_op_adn sg_op_ad vdd vsrc pch W=2.4e-06 L=5e-07
+nsg_op_d2n sg_op_adn sg_op_ad 0 0 nch W=1.2e-06 L=5e-07
+nsg_op_gpa sg_op_pb sg_op_aq vdd vsrc pch W=2.4e-06 L=5e-07
+nsg_op_gpb sg_op_pb sg_op_adn vdd vsrc pch W=2.4e-06 L=5e-07
+nsg_op_gna sg_op_pb sg_op_aq sg_op_gx 0 nch W=2.4e-06 L=5e-07
+nsg_op_gnb sg_op_gx sg_op_adn 0 0 nch W=2.4e-06 L=5e-07
+nsg_op_op sg_op_p sg_op_pb vdd vsrc pch W=2.4e-06 L=5e-07
+nsg_op_on sg_op_p sg_op_pb 0 0 nch W=1.2e-06 L=5e-07
+nsg_ld_hsw0 vdd sg_op_aqb vdd vsrc pch W=4e-06 L=5e-07
+nsg_ld_hsw1 vdd sg_op_aqb vdd vsrc pch W=4e-06 L=5e-07
+va_ctc_cm_p tc_vm ctc_cm_p 0
+ctc_cm ctc_cm_p 0 1.5e-06
+va_rtc_rm_p tc_vm rtc_rm_p 0
+rtc_rm rtc_rm_p vrest 1e+06
+rtc_kb vdd tc_knb 1e+06
+ntc_kmb tc_knb tc_knb 0 0 nch W=4e-06 L=4e-06
+ntc_kmt tc_ktail tc_knb 0 0 nch W=4e-06 L=4e-06
+va_ntc_km1_g tc_vm ntc_km1_g 0
+ntc_km1 tc_kd1 ntc_km1_g tc_ktail 0 nch W=4e-06 L=4e-06
+ntc_km2 tc_ko1 tc_h tc_ktail 0 nch W=4e-06 L=4e-06
+ntc_km3 tc_kd1 tc_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ntc_km4 tc_ko1 tc_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ntc_ki1p tc_qb tc_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+ntc_ki1n tc_qb tc_ko1 0 0 nch W=1.2e-06 L=5e-07
+ntc_ki2p tc_q tc_qb vdd vsrc pch W=2.4e-06 L=5e-07
+ntc_ki2n tc_q tc_qb 0 0 nch W=1.2e-06 L=5e-07
+rtc_hra tc_h vthr 1e+06
+rtc_hrf tc_h tc_qb 1.9e+07
+ctc_hc tc_h 0 2.1e-09
+va_ntc_dis_d tc_vm ntc_dis_d 0
+va_ntc_dis_s tc_vmd ntc_dis_s 0
+ntc_dis ntc_dis_d tc_q ntc_dis_s 0 nch W=4e-06 L=1e-06
+va_rtc_rdis_p tc_vmd rtc_rdis_p 0
+rtc_rdis rtc_rdis_p vrest 12000
+ntc_rp tc_rt tc_qb vdd vsrc pch W=2e-06 L=1e-06
+rtc_rrc tc_rt tc_rec 10000
+ctc_rc tc_rec 0 1e-07
+rtc_rr tc_rec 0 8.2e+06
+va_ntc_sh1_d tc_vm ntc_sh1_d 0
+va_ntc_sh1_s tc_vms ntc_sh1_s 0
+ntc_sh1 ntc_sh1_d tc_rec ntc_sh1_s 0 nch W=2e-06 L=1e-06
+va_ntc_sh2_d tc_vms ntc_sh2_d 0
+ntc_sh2 ntc_sh2_d tc_qb vrest 0 nch W=2e-06 L=1e-06
+ntc_porh tc_h por_hold vthr 0 nch W=2e-06 L=1e-06
+va_ntc_porm_d tc_vm ntc_porm_d 0
+ntc_porm ntc_porm_d por_hold vrest 0 nch W=2e-06 L=1e-06
+vtc_hs tc_hs 0 PWL(0 0 33.93 0 33.931 0.279421 42.18 0.279421 42.181 0 52.23 0 52.231 1.18844 60.58 1.18844 60.581 0 70.63 0 70.631 2.40447 71.72 2.40447 71.721 0 81.77 0 81.771 1.18844 90.12 1.18844 90.121 0)
+vtc_pg tc_pg 0 PWL(0 0 33.93 0 33.931 3 42.18 3 42.181 0 52.23 0 52.231 3 60.58 3 60.581 0 70.63 0 70.631 3 71.72 3 71.721 0 81.77 0 81.771 3 90.12 3 90.121 0)
+ntc_st_mh tc_mi tc_hs tc_st_x 0 nch W=2e-06 L=4e-06
+ntc_st_mp tc_st_x tc_pg 0 0 nch W=4e-06 L=1e-06
+ntc_rm_md tc_mi tc_mi vdd vsrc pch W=4e-06 L=2e-06
+ntc_rm_mo tc_oo tc_mi vdd vsrc pch W=1e-06 L=8e-06
+vtc_arel tc_oo tc_vm DC 0
+ntc_op_tsw tc_op_tt tc_qb vdd vsrc pch W=2e-06 L=1e-06
+rtc_op_trc tc_op_tt tc_op_at 10000
+ctc_op_tc tc_op_at 0 1e-07
+rtc_op_trl tc_op_at 0 2.2e+07
+ntc_op_sh1p tc_op_an tc_op_at vdd vsrc pch W=2.4e-06 L=5e-07
+ntc_op_sh1n tc_op_an tc_op_at 0 0 nch W=1.2e-06 L=5e-07
+ntc_op_sh2p tc_op_aq tc_op_an vdd vsrc pch W=2.4e-06 L=5e-07
+ntc_op_sh2n tc_op_aq tc_op_an 0 0 nch W=1.2e-06 L=5e-07
+ntc_op_abp tc_op_aqb tc_op_aq vdd vsrc pch W=2.4e-06 L=5e-07
+ntc_op_abn tc_op_aqb tc_op_aq 0 0 nch W=1.2e-06 L=5e-07
+rtc_op_dr tc_op_aq tc_op_ad 1e+06
+ctc_op_dc tc_op_ad 0 3.3e-07
+ntc_op_d2p tc_op_adn tc_op_ad vdd vsrc pch W=2.4e-06 L=5e-07
+ntc_op_d2n tc_op_adn tc_op_ad 0 0 nch W=1.2e-06 L=5e-07
+ntc_op_gpa tc_op_pb tc_op_aq vdd vsrc pch W=2.4e-06 L=5e-07
+ntc_op_gpb tc_op_pb tc_op_adn vdd vsrc pch W=2.4e-06 L=5e-07
+ntc_op_gna tc_op_pb tc_op_aq tc_op_gx 0 nch W=2.4e-06 L=5e-07
+ntc_op_gnb tc_op_gx tc_op_adn 0 0 nch W=2.4e-06 L=5e-07
+ntc_op_op tc_op_p tc_op_pb vdd vsrc pch W=2.4e-06 L=5e-07
+ntc_op_on tc_op_p tc_op_pb 0 0 nch W=1.2e-06 L=5e-07
+ntc_ld_mp0 0 tc_op_aq 0 0 nch W=4e-06 L=1e-06
+ntc_ld_mp1 0 tc_op_aq 0 0 nch W=4e-06 L=1e-06
+ntc_ld_out vdd tc_op_aqb vdd vsrc pch W=4e-06 L=1e-06
+cpar_g0_gmax g0_gmax 0 5e-14
+cpar_g0_gvalid g0_gvalid 0 5e-14
+cpar_g0_gweak g0_gweak 0 5e-14
+cpar_g0_h g0_h 0 5e-14
+cpar_g0_imax_x g0_imax_x 0 5e-14
+cpar_g0_ivalid_x g0_ivalid_x 0 5e-14
+cpar_g0_iweak_x g0_iweak_x 0 5e-14
+cpar_g0_kd1 g0_kd1 0 5e-14
+cpar_g0_knb g0_knb 0 5e-14
+cpar_g0_ko1 g0_ko1 0 5e-14
+cpar_g0_ktail g0_ktail 0 5e-14
+cpar_g0_omax g0_omax 0 5e-14
+cpar_g0_op_ad g0_op_ad 0 5e-14
+cpar_g0_op_adn g0_op_adn 0 5e-14
+cpar_g0_op_an g0_op_an 0 5e-14
+cpar_g0_op_aq g0_op_aq 0 5e-14
+cpar_g0_op_aqb g0_op_aqb 0 5e-14
+cpar_g0_op_at g0_op_at 0 5e-14
+cpar_g0_op_gx g0_op_gx 0 5e-14
+cpar_g0_op_p g0_op_p 0 5e-14
+cpar_g0_op_pb g0_op_pb 0 5e-14
+cpar_g0_op_tt g0_op_tt 0 5e-14
+cpar_g0_ovalid g0_ovalid 0 5e-14
+cpar_g0_oweak g0_oweak 0 5e-14
+cpar_g0_q g0_q 0 5e-14
+cpar_g0_qb g0_qb 0 5e-14
+cpar_g0_rec g0_rec 0 5e-14
+cpar_g0_rt g0_rt 0 5e-14
+va_cpar_g0_vm_p g0_vm cpar_g0_vm_p 0
+cpar_g0_vm cpar_g0_vm_p 0 5e-14
+va_cpar_g0_vmd_p g0_vmd cpar_g0_vmd_p 0
+cpar_g0_vmd cpar_g0_vmd_p 0 5e-14
+va_cpar_g0_vms_p g0_vms cpar_g0_vms_p 0
+cpar_g0_vms cpar_g0_vms_p 0 5e-14
+cpar_ilim_n ilim_n 0 5e-14
+cpar_ilimp_n ilimp_n 0 5e-14
+cpar_iref_n iref_n 0 5e-14
+cpar_irefp_n irefp_n 0 5e-14
+cpar_istep_n istep_n 0 5e-14
+cpar_por_hold por_hold 0 5e-14
+cpar_por_ok por_ok 0 5e-14
+cpar_porc porc 0 5e-14
+cpar_porx porx 0 5e-14
+cpar_sg_h sg_h 0 5e-14
+cpar_sg_kd1 sg_kd1 0 5e-14
+cpar_sg_knb sg_knb 0 5e-14
+cpar_sg_ko1 sg_ko1 0 5e-14
+cpar_sg_ktail sg_ktail 0 5e-14
+cpar_sg_oo sg_oo 0 5e-14
+cpar_sg_op_ad sg_op_ad 0 5e-14
+cpar_sg_op_adn sg_op_adn 0 5e-14
+cpar_sg_op_an sg_op_an 0 5e-14
+cpar_sg_op_aq sg_op_aq 0 5e-14
+cpar_sg_op_aqb sg_op_aqb 0 5e-14
+cpar_sg_op_at sg_op_at 0 5e-14
+cpar_sg_op_gx sg_op_gx 0 5e-14
+cpar_sg_op_p sg_op_p 0 5e-14
+cpar_sg_op_pb sg_op_pb 0 5e-14
+cpar_sg_op_tt sg_op_tt 0 5e-14
+cpar_sg_ota_d1 sg_ota_d1 0 5e-14
+cpar_sg_ota_nb sg_ota_nb 0 5e-14
+cpar_sg_ota_tail sg_ota_tail 0 5e-14
+cpar_sg_q sg_q 0 5e-14
+cpar_sg_qb sg_qb 0 5e-14
+cpar_sg_rec sg_rec 0 5e-14
+cpar_sg_rt sg_rt 0 5e-14
+cpar_sg_sn sg_sn 0 5e-14
+cpar_sg_sp sg_sp 0 5e-14
+va_cpar_sg_vm_p sg_vm cpar_sg_vm_p 0
+cpar_sg_vm cpar_sg_vm_p 0 5e-14
+va_cpar_sg_vmd_p sg_vmd cpar_sg_vmd_p 0
+cpar_sg_vmd cpar_sg_vmd_p 0 5e-14
+va_cpar_sg_vms_p sg_vms cpar_sg_vms_p 0
+cpar_sg_vms cpar_sg_vms_p 0 5e-14
+cpar_tc_h tc_h 0 5e-14
+cpar_tc_hs tc_hs 0 5e-14
+cpar_tc_kd1 tc_kd1 0 5e-14
+cpar_tc_knb tc_knb 0 5e-14
+cpar_tc_ko1 tc_ko1 0 5e-14
+cpar_tc_ktail tc_ktail 0 5e-14
+cpar_tc_mi tc_mi 0 5e-14
+cpar_tc_oo tc_oo 0 5e-14
+cpar_tc_op_ad tc_op_ad 0 5e-14
+cpar_tc_op_adn tc_op_adn 0 5e-14
+cpar_tc_op_an tc_op_an 0 5e-14
+cpar_tc_op_aq tc_op_aq 0 5e-14
+cpar_tc_op_aqb tc_op_aqb 0 5e-14
+cpar_tc_op_at tc_op_at 0 5e-14
+cpar_tc_op_gx tc_op_gx 0 5e-14
+cpar_tc_op_p tc_op_p 0 5e-14
+cpar_tc_op_pb tc_op_pb 0 5e-14
+cpar_tc_op_tt tc_op_tt 0 5e-14
+cpar_tc_pg tc_pg 0 5e-14
+cpar_tc_q tc_q 0 5e-14
+cpar_tc_qb tc_qb 0 5e-14
+cpar_tc_rec tc_rec 0 5e-14
+cpar_tc_rt tc_rt 0 5e-14
+cpar_tc_st_x tc_st_x 0 5e-14
+va_cpar_tc_vm_p tc_vm cpar_tc_vm_p 0
+cpar_tc_vm cpar_tc_vm_p 0 5e-14
+va_cpar_tc_vmd_p tc_vmd cpar_tc_vmd_p 0
+cpar_tc_vmd cpar_tc_vmd_p 0 5e-14
+va_cpar_tc_vms_p tc_vms cpar_tc_vms_p 0
+cpar_tc_vms cpar_tc_vms_p 0 5e-14
+cpar_vdd vdd 0 5e-14
+cpar_vmid vmid 0 5e-14
+cpar_vrest vrest 0 5e-14
+cpar_vthe vthe 0 5e-14
+cpar_vthr vthr 0 5e-14
+.options sparse method=gear reltol=1e-5 abstol=1e-16
+.save v(vdd) v(vrest) v(vthe) v(vthr) v(vmid) v(por_ok) v(g0_gweak) v(g0_gvalid) v(g0_gmax) v(sg_sp) v(sg_sn) v(tc_hs) v(tc_pg) v(g0_vm) v(g0_h) v(g0_q) v(g0_qb) v(g0_rec) v(g0_vmd) v(g0_op_at) v(g0_op_aq) v(g0_op_aqb) v(g0_op_p) v(g0_op_pb) i(vg0_aweak) i(vg0_avalid) i(vg0_amax) v(sg_vm) v(sg_h) v(sg_q) v(sg_qb) v(sg_rec) v(sg_vmd) v(sg_op_at) v(sg_op_aq) v(sg_op_aqb) v(sg_op_p) v(sg_op_pb) i(vsg_aota) v(tc_vm) v(tc_h) v(tc_q) v(tc_qb) v(tc_rec) v(tc_vmd) v(tc_op_at) v(tc_op_aq) v(tc_op_aqb) v(tc_op_p) v(tc_op_pb) i(vtc_arel) v(g0_vms) v(sg_vms) v(tc_vms) i(va_cg0_cm_p) i(va_rg0_rm_p) i(va_ng0_km1_g) i(va_ng0_dis_d) i(va_ng0_sh1_d) i(va_ng0_porm_d) i(va_cpar_g0_vm_p) i(va_ng0_dis_s) i(va_rg0_rdis_p) i(va_cpar_g0_vmd_p) i(va_ng0_sh1_s) i(va_ng0_sh2_d) i(va_cpar_g0_vms_p) i(va_csg_cm_p) i(va_rsg_rm_p) i(va_nsg_km1_g) i(va_nsg_dis_d) i(va_nsg_sh1_d) i(va_nsg_porm_d) i(va_cpar_sg_vm_p) i(va_nsg_dis_s) i(va_rsg_rdis_p) i(va_cpar_sg_vmd_p) i(va_nsg_sh1_s) i(va_nsg_sh2_d) i(va_cpar_sg_vms_p) i(va_ctc_cm_p) i(va_rtc_rm_p) i(va_ntc_km1_g) i(va_ntc_dis_d) i(va_ntc_sh1_d) i(va_ntc_porm_d) i(va_cpar_tc_vm_p) i(va_ntc_dis_s) i(va_rtc_rdis_p) i(va_cpar_tc_vmd_p) i(va_ntc_sh1_s) i(va_ntc_sh2_d) i(va_cpar_tc_vms_p) v(vsrc) i(vsrc)
+.control
+pre_osdi /workspace/thermal-g3-env/host/native/models/ekv26_linux.osdi
+set filetype=binary
+tran 0.001 100.27 0 0.000125
+write /workspace/thermal-g3-qualification/sparse-125us-qualification-2026-10-22-5f9a10d8/runs/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw
+quit
+.endc
+.end

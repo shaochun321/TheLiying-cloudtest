@@ -1,0 +1,126 @@
+{
+  "candidate_id": "SPARSE_GEAR_125us_original_physics_2026-10-22",
+  "numerical_pair_s": [
+    0.000125,
+    6.25e-05
+  ],
+  "status": "STOPPED",
+  "cases": {
+    "Q1_MOTHER_PROTOCOL": {
+      "state": "FINISHED",
+      "execution": {
+        "case_id": "Q1_MOTHER_PROTOCOL",
+        "candidate_id": "SPARSE_GEAR_125us_original_physics_2026-10-22",
+        "candidate_manifest_sha256": "b9853f3e8d633e373dd081caa5f2c3c09e8e62afc4ca1d5abe531a593c99aae0",
+        "command": [
+          "/workspace/thermal-g3-env/host/native/bin/ngspice",
+          "-n",
+          "-b",
+          "/workspace/thermal-g3-qualification/sparse-125us-qualification-2026-10-22-5f9a10d8/runs/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.cir"
+        ],
+        "cwd": "/workspace/thermal-g3-qualification/sparse-125us-qualification-2026-10-22-5f9a10d8/runs/Q1_MOTHER_PROTOCOL",
+        "actual_solver_launches": 1,
+        "automatic_retries": 0,
+        "conservative_starts_before": 31,
+        "conservative_starts_after": 32,
+        "global_start_cap": 65,
+        "wall_clock_cap_s": 1200,
+        "kill_dispatch_s": 1199.9,
+        "kill_margin_reason": "Reserve 0.1 seconds inside the authorized per-case limit for termination/reaping.",
+        "explicit_analysis": "tran 0.001 100.27 0 0.000125",
+        "timed_out": true,
+        "returncode": -9,
+        "spawn_error": null,
+        "signal_sent": "SIGKILL to isolated process group",
+        "elapsed_solver_wall_s": 1199.9288186209997,
+        "started_at_Asia_Shanghai": "2026-10-22T14:28:18.554329+08:00",
+        "pid": 6435,
+        "ended_at_Asia_Shanghai": "2026-10-22T14:48:18.485237+08:00",
+        "solver_process_reaped": true,
+        "wall_within_cap": true,
+        "original_frozen_permission_ledger_stop_records_unchanged": true
+      },
+      "completion": {
+        "case_id": "Q1_MOTHER_PROTOCOL",
+        "expected_end_s": 100.27,
+        "solver_log_CONFIRMS_SPARSE": true,
+        "raw_exists": false,
+        "actual_end_s": null,
+        "raw_points": null,
+        "process_returncode": -9,
+        "completion_failure": "timeout_killed"
+      },
+      "verdict_binding": {
+        "case_id": "Q1_MOTHER_PROTOCOL",
+        "scientific": "UNMEASURED",
+        "candidate_manifest_sha256": "b9853f3e8d633e373dd081caa5f2c3c09e8e62afc4ca1d5abe531a593c99aae0",
+        "deck_sha256": "5aeadeb495fe9eabc9c8a3d6c7788bf2c1b123577ec3e2cb86e055ae2e1e6872",
+        "raw_path": null,
+        "raw_sha256": null,
+        "judge_output_path": "/workspace/thermal-g3-qualification/sparse-125us-qualification-2026-10-22-5f9a10d8/runs/Q1_MOTHER_PROTOCOL/judge-output.json",
+        "judge_output_sha256": "b1ec463a9700f5af393bdd392bf7d81347f1d7f7e14ab837b6070c204ac30028",
+        "functional_confirmation_result": null,
+        "numerical_pair_s": [
+          0.000125,
+          6.25e-05
+        ],
+        "judge_wall_s": 0.0010763030004454777,
+        "complete_transient": false,
+        "actual_end_s": null,
+        "global_start_count": 32,
+        "backend": {
+          "ngspice": {
+            "path": "/workspace/thermal-g3-env/host/native/bin/ngspice",
+            "sha256": "37d80c673bc4c03904ed4434bb3aa9aecd099ecfaeb66b86730a905e8c76ed89"
+          },
+          "osdi": {
+            "path": "/workspace/thermal-g3-env/host/native/models/ekv26_linux.osdi",
+            "sha256": "7c07ae3728941189b77bf0ecfca5ebe56473d01eedc6ea59c46cc32bfdb9a43f"
+          }
+        }
+      },
+      "gate_outcomes": [
+        {
+          "gate": "result",
+          "outcome": "UNMEASURED"
+        }
+      ]
+    },
+    "Q1_MOTHER_HALFSTEP": {
+      "state": "NOT_STARTED"
+    }
+  },
+  "budget": {
+    "baseline_global_starts": 31,
+    "qualification_starts_this_round": 1,
+    "global_starts_after": 32,
+    "global_start_cap": 65,
+    "total_starts_remaining": 33,
+    "formal_31_reserved": 31,
+    "unused_diagnostic_allocation": 1,
+    "qualification_allocation_unspent": 1,
+    "solver_wall_charge_this_round_s": 1199.9288186209997,
+    "phase_wall_cap_s": 3600,
+    "phase_remaining_wall_s": 2400.0711813790003,
+    "global_wall_cap_s_unchanged": 172800,
+    "exact_prior_cumulative_wall_s": null,
+    "note": "Earlier three extra launch durations remain incomplete; charge the exact new delta without inventing a total.",
+    "formal_runs_started": 0,
+    "diagnostic_runs_started": 0
+  },
+  "old_qualification": "FAIL_UNCHANGED",
+  "formal_31_started": 0,
+  "automatic_retries": 0,
+  "old_STOPPED_round_resumed": false,
+  "stop_record": {
+    "case_id": "Q1_MOTHER_PROTOCOL",
+    "why": "timeout_killed",
+    "scientific": "UNMEASURED",
+    "actual_end_s": null,
+    "global_start_count": 32,
+    "next_case_or_retry_authorized": false,
+    "old_STOPPED_state": "Preserved; this is a separate candidate-round STOPPED record."
+  },
+  "finished_at_Asia_Shanghai": "2026-10-22T14:48:49.464140+08:00",
+  "manifest_sha256": "b9853f3e8d633e373dd081caa5f2c3c09e8e62afc4ca1d5abe531a593c99aae0"
+}

@@ -1,0 +1,18 @@
+{
+  "failure_class": "WALL_TIMEOUT_NOT_SCIENTIFIC_FAIL",
+  "actual_solver_starts": 1,
+  "global_starts_after": 32,
+  "deadline_s": 1200,
+  "solver_wall_s": 1199.9288186209997,
+  "last_log_reference_value_s_approx": 83.3188,
+  "last_log_reference_is_NOT_a_verified_RAW_endpoint": true,
+  "RAW_exists": false,
+  "verified_RAW_endpoint_s": null,
+  "scientific_result": "UNMEASURED",
+  "halfstep_started": false,
+  "automatic_retry": false,
+  "additional_parameter_scan": false,
+  "original_qualification_result": "FAIL_UNCHANGED",
+  "log_error_lines": [],
+  "reason": "The authorized 1200-second wall deadline was reached before completion. External SIGKILL prevented reaching the existing post-tran write command; no waveform file was produced."
+}

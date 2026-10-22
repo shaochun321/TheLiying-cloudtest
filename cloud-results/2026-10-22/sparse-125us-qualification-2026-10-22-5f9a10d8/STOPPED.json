@@ -1,0 +1,9 @@
+{
+  "case_id": "Q1_MOTHER_PROTOCOL",
+  "why": "timeout_killed",
+  "scientific": "UNMEASURED",
+  "actual_end_s": null,
+  "global_start_count": 32,
+  "next_case_or_retry_authorized": false,
+  "old_STOPPED_state": "Preserved; this is a separate candidate-round STOPPED record."
+}
