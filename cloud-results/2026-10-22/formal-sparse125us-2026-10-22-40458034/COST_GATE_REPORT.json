@@ -1,0 +1,297 @@
+{
+  "gate": "Original Coordinator.cost_gate formula; max per-element measured rate, x1.5, cap each case.",
+  "source_sha256": "f9461c2a7e0c09b04cd13cb8322d3d21e3a3f03352f2b7b35d83954168b999d4",
+  "measured_qualification_rates": [
+    {
+      "case_id": "Q1_MOTHER_PROTOCOL",
+      "scale": "mother_bench",
+      "wall_s": 1532.5475344089991,
+      "raw_sha256": "f62e385ac452b5e33a0a324787ddd949214489de5c1d9d0e85f845d2d38ea203",
+      "binding_path": "/workspace/thermal-g3-qualification/sparse-125us-1800s-2026-10-22-abf2dedc/runs/Q1_MOTHER_PROTOCOL/verdict-binding.json",
+      "binding_sha256": "cf424ed0ba6c71d71c61495a0b6fe7c180930d724854fea720beb60be802221c",
+      "elements": 309,
+      "wall_per_element_s": 4.959700758605175
+    },
+    {
+      "case_id": "Q1_MOTHER_HALFSTEP",
+      "scale": "mother_bench",
+      "wall_s": 2679.750343740001,
+      "raw_sha256": "29fd40781fd1623b67a382c96a464ad1f641571dba531d0e8208fa3b6ee39f5f",
+      "binding_path": "/workspace/thermal-g3-qualification/sparse-62p5us-qualification-2026-10-22-eca7cea1/runs/Q1_MOTHER_HALFSTEP/verdict-binding.json",
+      "binding_sha256": "8e6cfcfc75aa80e933d5558a7c73f1ff52310a153ac6c28b61c1f891f70f91ea",
+      "elements": 309,
+      "wall_per_element_s": 8.672331209514565
+    }
+  ],
+  "forecast_rows": [
+    {
+      "case_id": "G0_W",
+      "elements": 937,
+      "scale": "single_site_single_polarity",
+      "hard_cap_s": 2700,
+      "forecast_s": 2700,
+      "rate_source": "maximum completed qualification wall/element; unmeasured formal scale fallback"
+    },
+    {
+      "case_id": "G0_C",
+      "elements": 937,
+      "scale": "single_site_single_polarity",
+      "hard_cap_s": 2700,
+      "forecast_s": 2700,
+      "rate_source": "maximum completed qualification wall/element; unmeasured formal scale fallback"
+    },
+    {
+      "case_id": "G0_CUT_K1",
+      "elements": 939,
+      "scale": "single_site_single_polarity",
+      "hard_cap_s": 2700,
+      "forecast_s": 2700,
+      "rate_source": "maximum completed qualification wall/element; unmeasured formal scale fallback"
+    },
+    {
+      "case_id": "G0_CUT_K10",
+      "elements": 939,
+      "scale": "single_site_single_polarity",
+      "hard_cap_s": 2700,
+      "forecast_s": 2700,
+      "rate_source": "maximum completed qualification wall/element; unmeasured formal scale fallback"
+    },
+    {
+      "case_id": "CHAIN_12_W_F",
+      "elements": 2227,
+      "scale": "two_actual_G0_parent_chain",
+      "hard_cap_s": 5400,
+      "forecast_s": 5400,
+      "rate_source": "maximum completed qualification wall/element; unmeasured formal scale fallback"
+    },
+    {
+      "case_id": "CHAIN_12_W_R",
+      "elements": 2227,
+      "scale": "two_actual_G0_parent_chain",
+      "hard_cap_s": 5400,
+      "forecast_s": 5400,
+      "rate_source": "maximum completed qualification wall/element; unmeasured formal scale fallback"
+    },
+    {
+      "case_id": "CHAIN_12_C_F",
+      "elements": 2227,
+      "scale": "two_actual_G0_parent_chain",
+      "hard_cap_s": 5400,
+      "forecast_s": 5400,
+      "rate_source": "maximum completed qualification wall/element; unmeasured formal scale fallback"
+    },
+    {
+      "case_id": "CHAIN_12_C_R",
+      "elements": 2227,
+      "scale": "two_actual_G0_parent_chain",
+      "hard_cap_s": 5400,
+      "forecast_s": 5400,
+      "rate_source": "maximum completed qualification wall/element; unmeasured formal scale fallback"
+    },
+    {
+      "case_id": "CHAIN_23_W_F",
+      "elements": 2227,
+      "scale": "two_actual_G0_parent_chain",
+      "hard_cap_s": 5400,
+      "forecast_s": 5400,
+      "rate_source": "maximum completed qualification wall/element; unmeasured formal scale fallback"
+    },
+    {
+      "case_id": "CHAIN_23_W_R",
+      "elements": 2227,
+      "scale": "two_actual_G0_parent_chain",
+      "hard_cap_s": 5400,
+      "forecast_s": 5400,
+      "rate_source": "maximum completed qualification wall/element; unmeasured formal scale fallback"
+    },
+    {
+      "case_id": "CHAIN_23_C_F",
+      "elements": 2227,
+      "scale": "two_actual_G0_parent_chain",
+      "hard_cap_s": 5400,
+      "forecast_s": 5400,
+      "rate_source": "maximum completed qualification wall/element; unmeasured formal scale fallback"
+    },
+    {
+      "case_id": "CHAIN_23_C_R",
+      "elements": 2227,
+      "scale": "two_actual_G0_parent_chain",
+      "hard_cap_s": 5400,
+      "forecast_s": 5400,
+      "rate_source": "maximum completed qualification wall/element; unmeasured formal scale fallback"
+    },
+    {
+      "case_id": "CHAIN_34_W_F",
+      "elements": 2227,
+      "scale": "two_actual_G0_parent_chain",
+      "hard_cap_s": 5400,
+      "forecast_s": 5400,
+      "rate_source": "maximum completed qualification wall/element; unmeasured formal scale fallback"
+    },
+    {
+      "case_id": "CHAIN_34_W_R",
+      "elements": 2227,
+      "scale": "two_actual_G0_parent_chain",
+      "hard_cap_s": 5400,
+      "forecast_s": 5400,
+      "rate_source": "maximum completed qualification wall/element; unmeasured formal scale fallback"
+    },
+    {
+      "case_id": "CHAIN_34_C_F",
+      "elements": 2227,
+      "scale": "two_actual_G0_parent_chain",
+      "hard_cap_s": 5400,
+      "forecast_s": 5400,
+      "rate_source": "maximum completed qualification wall/element; unmeasured formal scale fallback"
+    },
+    {
+      "case_id": "CHAIN_34_C_R",
+      "elements": 2227,
+      "scale": "two_actual_G0_parent_chain",
+      "hard_cap_s": 5400,
+      "forecast_s": 5400,
+      "rate_source": "maximum completed qualification wall/element; unmeasured formal scale fallback"
+    },
+    {
+      "case_id": "STRUCT_THETA_PORT_CUT",
+      "elements": 2229,
+      "scale": "two_actual_G0_parent_chain",
+      "hard_cap_s": 5400,
+      "forecast_s": 5400,
+      "rate_source": "maximum completed qualification wall/element; unmeasured formal scale fallback"
+    },
+    {
+      "case_id": "STRUCT_SIGMA_PORT_CUT",
+      "elements": 2229,
+      "scale": "two_actual_G0_parent_chain",
+      "hard_cap_s": 5400,
+      "forecast_s": 5400,
+      "rate_source": "maximum completed qualification wall/element; unmeasured formal scale fallback"
+    },
+    {
+      "case_id": "STRUCT_CDIR_HISTORY_BLEED",
+      "elements": 2230,
+      "scale": "two_actual_G0_parent_chain",
+      "hard_cap_s": 5400,
+      "forecast_s": 5400,
+      "rate_source": "maximum completed qualification wall/element; unmeasured formal scale fallback"
+    },
+    {
+      "case_id": "STRUCT_REAL_SIGMA_SWAP",
+      "elements": 2227,
+      "scale": "two_actual_G0_parent_chain",
+      "hard_cap_s": 5400,
+      "forecast_s": 5400,
+      "rate_source": "maximum completed qualification wall/element; unmeasured formal scale fallback"
+    },
+    {
+      "case_id": "INVALID_SYNC",
+      "elements": 2227,
+      "scale": "two_actual_G0_parent_chain",
+      "hard_cap_s": 5400,
+      "forecast_s": 5400,
+      "rate_source": "maximum completed qualification wall/element; unmeasured formal scale fallback"
+    },
+    {
+      "case_id": "INVALID_STALE",
+      "elements": 2227,
+      "scale": "two_actual_G0_parent_chain",
+      "hard_cap_s": 5400,
+      "forecast_s": 5400,
+      "rate_source": "maximum completed qualification wall/element; unmeasured formal scale fallback"
+    },
+    {
+      "case_id": "FULL_NOM",
+      "elements": 9197,
+      "scale": "four_sites_both_polarities_124_cores",
+      "hard_cap_s": 14400,
+      "forecast_s": 14400,
+      "rate_source": "maximum completed qualification wall/element; unmeasured formal scale fallback"
+    },
+    {
+      "case_id": "FULL_REAL_MIRROR",
+      "elements": 9197,
+      "scale": "four_sites_both_polarities_124_cores",
+      "hard_cap_s": 14400,
+      "forecast_s": 14400,
+      "rate_source": "maximum completed qualification wall/element; unmeasured formal scale fallback"
+    },
+    {
+      "case_id": "FULL_SPACE_CUT",
+      "elements": 9195,
+      "scale": "four_sites_both_polarities_124_cores",
+      "hard_cap_s": 14400,
+      "forecast_s": 14400,
+      "rate_source": "maximum completed qualification wall/element; unmeasured formal scale fallback"
+    },
+    {
+      "case_id": "FULL_NUM_HALFSTEP",
+      "elements": 9197,
+      "scale": "four_sites_both_polarities_124_cores",
+      "hard_cap_s": 14400,
+      "forecast_s": 14400,
+      "rate_source": "maximum completed qualification wall/element; unmeasured formal scale fallback"
+    },
+    {
+      "case_id": "NUM_G0_HALFSTEP",
+      "elements": 937,
+      "scale": "single_site_single_polarity",
+      "hard_cap_s": 2700,
+      "forecast_s": 2700,
+      "rate_source": "maximum completed qualification wall/element; unmeasured formal scale fallback"
+    },
+    {
+      "case_id": "NUM_CHAIN_HALFSTEP",
+      "elements": 2227,
+      "scale": "two_actual_G0_parent_chain",
+      "hard_cap_s": 5400,
+      "forecast_s": 5400,
+      "rate_source": "maximum completed qualification wall/element; unmeasured formal scale fallback"
+    },
+    {
+      "case_id": "DC_2P7",
+      "elements": 9197,
+      "scale": "four_sites_both_polarities_124_cores",
+      "hard_cap_s": 900,
+      "forecast_s": 900,
+      "rate_source": "maximum completed qualification wall/element; unmeasured formal scale fallback"
+    },
+    {
+      "case_id": "DC_3",
+      "elements": 9197,
+      "scale": "four_sites_both_polarities_124_cores",
+      "hard_cap_s": 900,
+      "forecast_s": 900,
+      "rate_source": "maximum completed qualification wall/element; unmeasured formal scale fallback"
+    },
+    {
+      "case_id": "DC_3P2",
+      "elements": 9197,
+      "scale": "four_sites_both_polarities_124_cores",
+      "hard_cap_s": 900,
+      "forecast_s": 900,
+      "rate_source": "maximum completed qualification wall/element; unmeasured formal scale fallback"
+    }
+  ],
+  "formal_forecast_s": 176400,
+  "formal_phase_cap_s": 108000,
+  "formal_phase_spent_s": 0,
+  "formal_phase_remaining_s": 108000,
+  "global_wall_cap_s": 172800,
+  "global_exact_historical_wall_s": null,
+  "known_prior_wall_lower_bound_s": 5412.22669677,
+  "global_remaining_optimistic_upper_bound_s": 167387.77330323,
+  "global_remaining_is_exact": false,
+  "formal_phase_gate_pass": false,
+  "global_gate_can_pass_even_under_optimistic_bound": false,
+  "global_starts_before": 34,
+  "new_solver_starts": 0,
+  "total_registered_formal_hard_caps_s": 176400,
+  "dispatch_allowed": false,
+  "unmodified_original_gate_result": {
+    "allowed": false,
+    "exception_type": "Refused",
+    "message": "cost gate: forecast 176400 s of remaining formal cases exceeds phase 108000 s / total 167388 s",
+    "global_status_input_is_documented_lower_bound_not_an_exact_balance": true
+  }
+}

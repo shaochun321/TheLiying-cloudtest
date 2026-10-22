@@ -1,0 +1,8 @@
+{
+  "status": "BLOCKED_BY_ORIGINAL_COST_GATE",
+  "actual_solver_launches": 0,
+  "global_starts_after": 34,
+  "cases_prepared": 31,
+  "no_original_records_modified": true,
+  "blocked_before_reservation": true
+}

@@ -1,0 +1,192 @@
+{
+  "qualification_roots": [
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP"
+  ],
+  "formal_edges": {
+    "G0_W": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP"
+    ],
+    "G0_C": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "G0_W"
+    ],
+    "G0_CUT_K1": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "G0_W"
+    ],
+    "G0_CUT_K10": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "G0_W"
+    ],
+    "CHAIN_12_W_F": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP"
+    ],
+    "CHAIN_12_W_R": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ],
+    "CHAIN_12_C_F": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ],
+    "CHAIN_12_C_R": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ],
+    "CHAIN_23_W_F": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ],
+    "CHAIN_23_W_R": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ],
+    "CHAIN_23_C_F": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ],
+    "CHAIN_23_C_R": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ],
+    "CHAIN_34_W_F": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ],
+    "CHAIN_34_W_R": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ],
+    "CHAIN_34_C_F": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ],
+    "CHAIN_34_C_R": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ],
+    "STRUCT_THETA_PORT_CUT": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ],
+    "STRUCT_SIGMA_PORT_CUT": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ],
+    "STRUCT_CDIR_HISTORY_BLEED": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ],
+    "STRUCT_REAL_SIGMA_SWAP": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ],
+    "INVALID_SYNC": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ],
+    "INVALID_STALE": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ],
+    "FULL_NOM": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F",
+      "STRUCT_THETA_PORT_CUT"
+    ],
+    "FULL_REAL_MIRROR": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "FULL_NOM"
+    ],
+    "FULL_SPACE_CUT": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "FULL_NOM"
+    ],
+    "FULL_NUM_HALFSTEP": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "FULL_NOM"
+    ],
+    "NUM_G0_HALFSTEP": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "G0_W"
+    ],
+    "NUM_CHAIN_HALFSTEP": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ],
+    "DC_2P7": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP"
+    ],
+    "DC_3": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP"
+    ],
+    "DC_3P2": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP"
+    ]
+  },
+  "order": [
+    "G0_W",
+    "G0_C",
+    "G0_CUT_K1",
+    "G0_CUT_K10",
+    "CHAIN_12_W_F",
+    "CHAIN_12_W_R",
+    "CHAIN_12_C_F",
+    "CHAIN_12_C_R",
+    "CHAIN_23_W_F",
+    "CHAIN_23_W_R",
+    "CHAIN_23_C_F",
+    "CHAIN_23_C_R",
+    "CHAIN_34_W_F",
+    "CHAIN_34_W_R",
+    "CHAIN_34_C_F",
+    "CHAIN_34_C_R",
+    "STRUCT_THETA_PORT_CUT",
+    "STRUCT_SIGMA_PORT_CUT",
+    "STRUCT_CDIR_HISTORY_BLEED",
+    "STRUCT_REAL_SIGMA_SWAP",
+    "INVALID_SYNC",
+    "INVALID_STALE",
+    "FULL_NOM",
+    "FULL_REAL_MIRROR",
+    "FULL_SPACE_CUT",
+    "FULL_NUM_HALFSTEP",
+    "NUM_G0_HALFSTEP",
+    "NUM_CHAIN_HALFSTEP",
+    "DC_2P7",
+    "DC_3",
+    "DC_3P2"
+  ]
+}

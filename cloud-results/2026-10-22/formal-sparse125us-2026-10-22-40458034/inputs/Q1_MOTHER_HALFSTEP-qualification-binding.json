@@ -1,0 +1,28 @@
+{
+  "case_id": "Q1_MOTHER_HALFSTEP",
+  "scientific": "PASS",
+  "candidate_manifest_sha256": "c75715a75d59a4fe53564dc6018a7c05bb1d307cc3b8d6133886e6aca8b4de71",
+  "deck_sha256": "32c48d907e123a0a2aa1e0cf0e1ba96f7496a17102b80a6523236db9661cc8e8",
+  "raw_path": "/workspace/thermal-g3-qualification/sparse-62p5us-qualification-2026-10-22-eca7cea1/runs/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw",
+  "raw_sha256": "29fd40781fd1623b67a382c96a464ad1f641571dba531d0e8208fa3b6ee39f5f",
+  "baseline_commit": "664866bdafada095112d76c93109c07c9556af8a",
+  "baseline_raw_sha256": "f62e385ac452b5e33a0a324787ddd949214489de5c1d9d0e85f845d2d38ea203",
+  "baseline_raw_reused": true,
+  "judge_output_path": "/workspace/thermal-g3-qualification/sparse-62p5us-qualification-2026-10-22-eca7cea1/runs/Q1_MOTHER_HALFSTEP/judge-output.json",
+  "judge_output_sha256": "4632bc7203068edd0894b42154c896baf23fbbc2a2ad125495b2cc1102756695",
+  "functional_confirmation_path": "/workspace/thermal-g3-qualification/sparse-62p5us-qualification-2026-10-22-eca7cea1/runs/Q1_MOTHER_HALFSTEP/functional-confirmation.json",
+  "functional_confirmation_sha256": "17c39ffc34f0370fb3c28b08f746717e55929d110d55dff58d8b3c8a649fe745",
+  "functional_confirmation_result": "PASS",
+  "numerical_and_physical_result": "PASS",
+  "numerical_pair_s": [
+    0.000125,
+    6.25e-05
+  ],
+  "comparison_timing_tolerance_s": 0.00025,
+  "complete_transient": true,
+  "actual_end_s": 100.27,
+  "full_two_run_qualification_completed": true,
+  "global_start_count": 34,
+  "judge_wall_s": 448.6759249970055,
+  "new_solver_launches_during_analysis": 0
+}

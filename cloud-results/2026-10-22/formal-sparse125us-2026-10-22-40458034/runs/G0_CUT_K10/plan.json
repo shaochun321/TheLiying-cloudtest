@@ -1,0 +1,3033 @@
+{
+  "case": {
+    "case_id": "G0_CUT_K10",
+    "phase": "formal",
+    "group": "G0",
+    "scale": "single_site_single_polarity",
+    "protocol_text": "G0_W物理隔离最高档ensemble到其trace/AND入口，保留有限虚负载",
+    "expected_text": "缺一路不形成完整群体确认",
+    "baseline_case_id": "G0_W",
+    "builder": "build_thermal_g3.build",
+    "timeout_s": 2700,
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "G0_W"
+    ],
+    "build_args": {
+      "sites": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "g0_sites": [
+        1
+      ],
+      "pols": [
+        "w"
+      ],
+      "layers": [
+        "g0"
+      ],
+      "g0_cut": [
+        "w",
+        1,
+        10
+      ]
+    },
+    "env": {
+      "1": [
+        [
+          10.600000000000001,
+          17.6,
+          3.0
+        ],
+        [
+          37.7,
+          44.7,
+          3.0
+        ]
+      ]
+    },
+    "judge": {
+      "kind": "g0",
+      "pol": "w",
+      "site": 1,
+      "cut_k": 10
+    },
+    "analysis": "tran 0.001 64.8 0 0.000125",
+    "x_stop": 64.8,
+    "max_step_s": 0.000125
+  },
+  "original_registered_case": {
+    "case_id": "G0_CUT_K10",
+    "phase": "formal",
+    "group": "G0",
+    "scale": "single_site_single_polarity",
+    "protocol_text": "G0_W物理隔离最高档ensemble到其trace/AND入口，保留有限虚负载",
+    "expected_text": "缺一路不形成完整群体确认",
+    "baseline_case_id": "G0_W",
+    "builder": "build_thermal_g3.build",
+    "timeout_s": 2700,
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "G0_W"
+    ],
+    "build_args": {
+      "sites": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "g0_sites": [
+        1
+      ],
+      "pols": [
+        "w"
+      ],
+      "layers": [
+        "g0"
+      ],
+      "g0_cut": [
+        "w",
+        1,
+        10
+      ]
+    },
+    "env": {
+      "1": [
+        [
+          10.600000000000001,
+          17.6,
+          3.0
+        ],
+        [
+          37.7,
+          44.7,
+          3.0
+        ]
+      ]
+    },
+    "judge": {
+      "kind": "g0",
+      "pol": "w",
+      "site": 1,
+      "cut_k": 10
+    },
+    "analysis": "tran 0.001 64.8 0 0.0005",
+    "x_stop": 64.8,
+    "max_step_s": 0.0005
+  },
+  "deck": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/G0_CUT_K10/G0_CUT_K10.cir",
+  "deck_sha256": "19ce07a69d1e851bccf366b6c5e1c32884a0da1f24fca6780801d018c1261f67",
+  "original_runtime_deck_sha256": "243d403095270453314a1a87ca46f757fa16549148ddd349f852715dc28d6db0",
+  "physical_netlist_and_stimulus_unchanged_after_declared_numerical_normalization": true,
+  "required_vectors": [
+    "v(vdd)",
+    "v(vrest)",
+    "v(vthe)",
+    "v(vthr)",
+    "v(por_ok)",
+    "v(s1_s)",
+    "v(s1_m)",
+    "v(gw1_e1_q)",
+    "v(gw1_e2_q)",
+    "v(gw1_e3_q)",
+    "v(gw1_e4_q)",
+    "v(gw1_e5_q)",
+    "v(gw1_e6_q)",
+    "v(gw1_e7_q)",
+    "v(gw1_e8_q)",
+    "v(gw1_e9_q)",
+    "v(gw1_e10_q)",
+    "v(gw1_b1_q)",
+    "v(gw1_b2_q)",
+    "v(gw1_b3_q)",
+    "v(gw1_b4_q)",
+    "v(gw1_b5_q)",
+    "v(gw1_b6_q)",
+    "v(gw1_b7_q)",
+    "v(gw1_b8_q)",
+    "v(gw1_b9_q)",
+    "v(gw1_b10_q)",
+    "v(gw1_and_g8)",
+    "v(gw1_gb)",
+    "v(gw1_col_q)",
+    "v(gw1_col_qb)",
+    "v(gw1_col_vm)",
+    "v(gw1_col_h)",
+    "v(gw1_col_rec)",
+    "v(gw1_col_vmd)",
+    "v(gw1_op_at)",
+    "v(gw1_op_aq)",
+    "v(gw1_op_p)",
+    "v(gw1_col_vms)",
+    "i(va_cgw1_col_cm_p)",
+    "i(va_rgw1_col_rm_p)",
+    "i(va_ngw1_col_km1_g)",
+    "i(va_ngw1_col_dis_d)",
+    "i(va_ngw1_col_sh1_d)",
+    "i(va_ngw1_col_porm_d)",
+    "i(va_ngw1_cin_cp_d)",
+    "i(va_cpar_gw1_col_vm_p)",
+    "i(va_ngw1_col_dis_s)",
+    "i(va_rgw1_col_rdis_p)",
+    "i(va_cpar_gw1_col_vmd_p)",
+    "i(va_ngw1_col_sh1_s)",
+    "i(va_ngw1_col_sh2_d)",
+    "i(va_cpar_gw1_col_vms_p)",
+    "v(vsrc)",
+    "i(vsrc)"
+  ],
+  "judge_required_vectors": [
+    "v(vdd)",
+    "v(vrest)",
+    "v(vthe)",
+    "v(vthr)",
+    "v(por_ok)",
+    "v(s1_s)",
+    "v(s1_m)",
+    "v(gw1_e1_q)",
+    "v(gw1_e2_q)",
+    "v(gw1_e3_q)",
+    "v(gw1_e4_q)",
+    "v(gw1_e5_q)",
+    "v(gw1_e6_q)",
+    "v(gw1_e7_q)",
+    "v(gw1_e8_q)",
+    "v(gw1_e9_q)",
+    "v(gw1_e10_q)",
+    "v(gw1_b1_q)",
+    "v(gw1_b2_q)",
+    "v(gw1_b3_q)",
+    "v(gw1_b4_q)",
+    "v(gw1_b5_q)",
+    "v(gw1_b6_q)",
+    "v(gw1_b7_q)",
+    "v(gw1_b8_q)",
+    "v(gw1_b9_q)",
+    "v(gw1_b10_q)",
+    "v(gw1_and_g8)",
+    "v(gw1_gb)",
+    "v(gw1_col_q)",
+    "v(gw1_col_qb)",
+    "v(gw1_col_vm)",
+    "v(gw1_col_h)",
+    "v(gw1_col_rec)",
+    "v(gw1_col_vmd)",
+    "v(gw1_op_at)",
+    "v(gw1_op_aq)",
+    "v(gw1_op_p)"
+  ],
+  "physical_ledger_plan": {
+    "nodes": [
+      "gw1_col_vm",
+      "gw1_col_vmd",
+      "gw1_col_vms"
+    ],
+    "terms": {
+      "gw1_col_vm": [
+        {
+          "element": "cgw1_col_cm",
+          "kind": "C",
+          "vec": "i(va_cgw1_col_cm_p)",
+          "sign": 1.0,
+          "C": 1e-07,
+          "R": null,
+          "far": "0"
+        },
+        {
+          "element": "rgw1_col_rm",
+          "kind": "R",
+          "vec": "i(va_rgw1_col_rm_p)",
+          "sign": 1.0,
+          "C": null,
+          "R": 1000000.0,
+          "far": "vrest"
+        },
+        {
+          "element": "ngw1_col_km1",
+          "kind": "M",
+          "vec": "i(va_ngw1_col_km1_g)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "ngw1_col_dis",
+          "kind": "M",
+          "vec": "i(va_ngw1_col_dis_d)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "ngw1_col_sh1",
+          "kind": "M",
+          "vec": "i(va_ngw1_col_sh1_d)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "ngw1_col_porm",
+          "kind": "M",
+          "vec": "i(va_ngw1_col_porm_d)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "ngw1_cin_cp",
+          "kind": "M",
+          "vec": "i(va_ngw1_cin_cp_d)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "cpar_gw1_col_vm",
+          "kind": "C",
+          "vec": "i(va_cpar_gw1_col_vm_p)",
+          "sign": 1.0,
+          "C": 5e-14,
+          "R": null,
+          "far": "0"
+        }
+      ],
+      "gw1_col_vmd": [
+        {
+          "element": "ngw1_col_dis",
+          "kind": "M",
+          "vec": "i(va_ngw1_col_dis_s)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "rgw1_col_rdis",
+          "kind": "R",
+          "vec": "i(va_rgw1_col_rdis_p)",
+          "sign": 1.0,
+          "C": null,
+          "R": 220000.0,
+          "far": "vrest"
+        },
+        {
+          "element": "cpar_gw1_col_vmd",
+          "kind": "C",
+          "vec": "i(va_cpar_gw1_col_vmd_p)",
+          "sign": 1.0,
+          "C": 5e-14,
+          "R": null,
+          "far": "0"
+        }
+      ],
+      "gw1_col_vms": [
+        {
+          "element": "ngw1_col_sh1",
+          "kind": "M",
+          "vec": "i(va_ngw1_col_sh1_s)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "ngw1_col_sh2",
+          "kind": "M",
+          "vec": "i(va_ngw1_col_sh2_d)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "cpar_gw1_col_vms",
+          "kind": "C",
+          "vec": "i(va_cpar_gw1_col_vms_p)",
+          "sign": 1.0,
+          "C": 5e-14,
+          "R": null,
+          "far": "0"
+        }
+      ]
+    },
+    "probes": {}
+  },
+  "mos_nodes": {
+    "npori1p": [
+      "por_hold",
+      "porx",
+      "vdd",
+      "vsrc"
+    ],
+    "npori1n": [
+      "por_hold",
+      "porx",
+      "0",
+      "0"
+    ],
+    "npori2p": [
+      "por_ok",
+      "por_hold",
+      "vdd",
+      "vsrc"
+    ],
+    "npori2n": [
+      "por_ok",
+      "por_hold",
+      "0",
+      "0"
+    ],
+    "nirefd": [
+      "iref_n",
+      "iref_n",
+      "0",
+      "0"
+    ],
+    "nistepd": [
+      "istep_n",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "nirefm": [
+      "irefp_n",
+      "iref_n",
+      "0",
+      "0"
+    ],
+    "nirefpd": [
+      "irefp_n",
+      "irefp_n",
+      "vdd",
+      "vsrc"
+    ],
+    "nilimd": [
+      "ilim_n",
+      "ilim_n",
+      "0",
+      "0"
+    ],
+    "nilimm": [
+      "ilimp_n",
+      "ilim_n",
+      "0",
+      "0"
+    ],
+    "nilimpd": [
+      "ilimp_n",
+      "ilimp_n",
+      "vdd",
+      "vsrc"
+    ],
+    "ns1_mpor": [
+      "s1_m",
+      "por_ok",
+      "s1_s",
+      "vsrc"
+    ],
+    "ns1_amb": [
+      "s1_anb",
+      "s1_anb",
+      "0",
+      "0"
+    ],
+    "ns1_amt": [
+      "s1_atl",
+      "s1_anb",
+      "0",
+      "0"
+    ],
+    "ns1_am1": [
+      "s1_da",
+      "s1_s",
+      "s1_atl",
+      "0"
+    ],
+    "ns1_am2": [
+      "s1_db",
+      "s1_m",
+      "s1_atl",
+      "0"
+    ],
+    "ns1_tt": [
+      "s1_tl",
+      "ilim_n",
+      "0",
+      "0"
+    ],
+    "ns1_ta": [
+      "s1_ya",
+      "s1_db",
+      "s1_tl",
+      "0"
+    ],
+    "ns1_tb": [
+      "s1_yb",
+      "s1_da",
+      "s1_tl",
+      "0"
+    ],
+    "ns1_la": [
+      "s1_ya",
+      "s1_ya",
+      "vdd",
+      "vsrc"
+    ],
+    "ns1_lb": [
+      "s1_yb",
+      "s1_yb",
+      "vdd",
+      "vsrc"
+    ],
+    "ns1_ca": [
+      "s1_za",
+      "s1_ya",
+      "vdd",
+      "vsrc"
+    ],
+    "ns1_na": [
+      "s1_za",
+      "s1_za",
+      "0",
+      "0"
+    ],
+    "ns1_cb": [
+      "s1_zb",
+      "s1_yb",
+      "vdd",
+      "vsrc"
+    ],
+    "ns1_nb": [
+      "s1_zb",
+      "s1_zb",
+      "0",
+      "0"
+    ],
+    "ns2_mpor": [
+      "s2_m",
+      "por_ok",
+      "s2_s",
+      "vsrc"
+    ],
+    "ns2_amb": [
+      "s2_anb",
+      "s2_anb",
+      "0",
+      "0"
+    ],
+    "ns2_amt": [
+      "s2_atl",
+      "s2_anb",
+      "0",
+      "0"
+    ],
+    "ns2_am1": [
+      "s2_da",
+      "s2_s",
+      "s2_atl",
+      "0"
+    ],
+    "ns2_am2": [
+      "s2_db",
+      "s2_m",
+      "s2_atl",
+      "0"
+    ],
+    "ns2_tt": [
+      "s2_tl",
+      "ilim_n",
+      "0",
+      "0"
+    ],
+    "ns2_ta": [
+      "s2_ya",
+      "s2_db",
+      "s2_tl",
+      "0"
+    ],
+    "ns2_tb": [
+      "s2_yb",
+      "s2_da",
+      "s2_tl",
+      "0"
+    ],
+    "ns2_la": [
+      "s2_ya",
+      "s2_ya",
+      "vdd",
+      "vsrc"
+    ],
+    "ns2_lb": [
+      "s2_yb",
+      "s2_yb",
+      "vdd",
+      "vsrc"
+    ],
+    "ns2_ca": [
+      "s2_za",
+      "s2_ya",
+      "vdd",
+      "vsrc"
+    ],
+    "ns2_na": [
+      "s2_za",
+      "s2_za",
+      "0",
+      "0"
+    ],
+    "ns2_cb": [
+      "s2_zb",
+      "s2_yb",
+      "vdd",
+      "vsrc"
+    ],
+    "ns2_nb": [
+      "s2_zb",
+      "s2_zb",
+      "0",
+      "0"
+    ],
+    "ns3_mpor": [
+      "s3_m",
+      "por_ok",
+      "s3_s",
+      "vsrc"
+    ],
+    "ns3_amb": [
+      "s3_anb",
+      "s3_anb",
+      "0",
+      "0"
+    ],
+    "ns3_amt": [
+      "s3_atl",
+      "s3_anb",
+      "0",
+      "0"
+    ],
+    "ns3_am1": [
+      "s3_da",
+      "s3_s",
+      "s3_atl",
+      "0"
+    ],
+    "ns3_am2": [
+      "s3_db",
+      "s3_m",
+      "s3_atl",
+      "0"
+    ],
+    "ns3_tt": [
+      "s3_tl",
+      "ilim_n",
+      "0",
+      "0"
+    ],
+    "ns3_ta": [
+      "s3_ya",
+      "s3_db",
+      "s3_tl",
+      "0"
+    ],
+    "ns3_tb": [
+      "s3_yb",
+      "s3_da",
+      "s3_tl",
+      "0"
+    ],
+    "ns3_la": [
+      "s3_ya",
+      "s3_ya",
+      "vdd",
+      "vsrc"
+    ],
+    "ns3_lb": [
+      "s3_yb",
+      "s3_yb",
+      "vdd",
+      "vsrc"
+    ],
+    "ns3_ca": [
+      "s3_za",
+      "s3_ya",
+      "vdd",
+      "vsrc"
+    ],
+    "ns3_na": [
+      "s3_za",
+      "s3_za",
+      "0",
+      "0"
+    ],
+    "ns3_cb": [
+      "s3_zb",
+      "s3_yb",
+      "vdd",
+      "vsrc"
+    ],
+    "ns3_nb": [
+      "s3_zb",
+      "s3_zb",
+      "0",
+      "0"
+    ],
+    "ns4_mpor": [
+      "s4_m",
+      "por_ok",
+      "s4_s",
+      "vsrc"
+    ],
+    "ns4_amb": [
+      "s4_anb",
+      "s4_anb",
+      "0",
+      "0"
+    ],
+    "ns4_amt": [
+      "s4_atl",
+      "s4_anb",
+      "0",
+      "0"
+    ],
+    "ns4_am1": [
+      "s4_da",
+      "s4_s",
+      "s4_atl",
+      "0"
+    ],
+    "ns4_am2": [
+      "s4_db",
+      "s4_m",
+      "s4_atl",
+      "0"
+    ],
+    "ns4_tt": [
+      "s4_tl",
+      "ilim_n",
+      "0",
+      "0"
+    ],
+    "ns4_ta": [
+      "s4_ya",
+      "s4_db",
+      "s4_tl",
+      "0"
+    ],
+    "ns4_tb": [
+      "s4_yb",
+      "s4_da",
+      "s4_tl",
+      "0"
+    ],
+    "ns4_la": [
+      "s4_ya",
+      "s4_ya",
+      "vdd",
+      "vsrc"
+    ],
+    "ns4_lb": [
+      "s4_yb",
+      "s4_yb",
+      "vdd",
+      "vsrc"
+    ],
+    "ns4_ca": [
+      "s4_za",
+      "s4_ya",
+      "vdd",
+      "vsrc"
+    ],
+    "ns4_na": [
+      "s4_za",
+      "s4_za",
+      "0",
+      "0"
+    ],
+    "ns4_cb": [
+      "s4_zb",
+      "s4_yb",
+      "vdd",
+      "vsrc"
+    ],
+    "ns4_nb": [
+      "s4_zb",
+      "s4_zb",
+      "0",
+      "0"
+    ],
+    "ngw1_e1_bias0": [
+      "gw1_e1_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e1_kmb": [
+      "gw1_e1_knb",
+      "gw1_e1_knb",
+      "0",
+      "0"
+    ],
+    "ngw1_e1_kmt": [
+      "gw1_e1_ktail",
+      "gw1_e1_knb",
+      "0",
+      "0"
+    ],
+    "ngw1_e1_km1": [
+      "gw1_e1_kd1",
+      "gw1_e1_vm",
+      "gw1_e1_ktail",
+      "0"
+    ],
+    "ngw1_e1_km2": [
+      "gw1_e1_ko1",
+      "gw1_e1_h",
+      "gw1_e1_ktail",
+      "0"
+    ],
+    "ngw1_e1_km3": [
+      "gw1_e1_kd1",
+      "gw1_e1_kd1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e1_km4": [
+      "gw1_e1_ko1",
+      "gw1_e1_kd1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e1_ki1p": [
+      "gw1_e1_qb",
+      "gw1_e1_ko1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e1_ki1n": [
+      "gw1_e1_qb",
+      "gw1_e1_ko1",
+      "0",
+      "0"
+    ],
+    "ngw1_e1_ki2p": [
+      "gw1_e1_q",
+      "gw1_e1_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e1_ki2n": [
+      "gw1_e1_q",
+      "gw1_e1_qb",
+      "0",
+      "0"
+    ],
+    "ngw1_e1_dis": [
+      "gw1_e1_vm",
+      "gw1_e1_q",
+      "gw1_e1_vmd",
+      "0"
+    ],
+    "ngw1_e1_rp": [
+      "gw1_e1_rt",
+      "gw1_e1_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e1_sh1": [
+      "gw1_e1_vm",
+      "gw1_e1_rec",
+      "gw1_e1_vms",
+      "0"
+    ],
+    "ngw1_e1_sh2": [
+      "gw1_e1_vms",
+      "gw1_e1_qb",
+      "vrest",
+      "0"
+    ],
+    "ngw1_e1_porh": [
+      "gw1_e1_h",
+      "por_hold",
+      "vthe",
+      "0"
+    ],
+    "ngw1_e1_porm": [
+      "gw1_e1_vm",
+      "por_hold",
+      "vrest",
+      "0"
+    ],
+    "ngw1_e1_ip": [
+      "gw1_e1_vm",
+      "s1_ya",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e1_in": [
+      "gw1_e1_vm",
+      "s1_zb",
+      "0",
+      "0"
+    ],
+    "ngw1_b1_sw": [
+      "gw1_b1_t",
+      "gw1_e1_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_b1_sh1p": [
+      "gw1_b1_n",
+      "gw1_b1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_b1_sh1n": [
+      "gw1_b1_n",
+      "gw1_b1",
+      "0",
+      "0"
+    ],
+    "ngw1_b1_sh2p": [
+      "gw1_b1_q",
+      "gw1_b1_n",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_b1_sh2n": [
+      "gw1_b1_q",
+      "gw1_b1_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e2_bias0": [
+      "gw1_e2_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e2_bias1": [
+      "gw1_e2_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e2_kmb": [
+      "gw1_e2_knb",
+      "gw1_e2_knb",
+      "0",
+      "0"
+    ],
+    "ngw1_e2_kmt": [
+      "gw1_e2_ktail",
+      "gw1_e2_knb",
+      "0",
+      "0"
+    ],
+    "ngw1_e2_km1": [
+      "gw1_e2_kd1",
+      "gw1_e2_vm",
+      "gw1_e2_ktail",
+      "0"
+    ],
+    "ngw1_e2_km2": [
+      "gw1_e2_ko1",
+      "gw1_e2_h",
+      "gw1_e2_ktail",
+      "0"
+    ],
+    "ngw1_e2_km3": [
+      "gw1_e2_kd1",
+      "gw1_e2_kd1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e2_km4": [
+      "gw1_e2_ko1",
+      "gw1_e2_kd1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e2_ki1p": [
+      "gw1_e2_qb",
+      "gw1_e2_ko1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e2_ki1n": [
+      "gw1_e2_qb",
+      "gw1_e2_ko1",
+      "0",
+      "0"
+    ],
+    "ngw1_e2_ki2p": [
+      "gw1_e2_q",
+      "gw1_e2_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e2_ki2n": [
+      "gw1_e2_q",
+      "gw1_e2_qb",
+      "0",
+      "0"
+    ],
+    "ngw1_e2_dis": [
+      "gw1_e2_vm",
+      "gw1_e2_q",
+      "gw1_e2_vmd",
+      "0"
+    ],
+    "ngw1_e2_rp": [
+      "gw1_e2_rt",
+      "gw1_e2_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e2_sh1": [
+      "gw1_e2_vm",
+      "gw1_e2_rec",
+      "gw1_e2_vms",
+      "0"
+    ],
+    "ngw1_e2_sh2": [
+      "gw1_e2_vms",
+      "gw1_e2_qb",
+      "vrest",
+      "0"
+    ],
+    "ngw1_e2_porh": [
+      "gw1_e2_h",
+      "por_hold",
+      "vthe",
+      "0"
+    ],
+    "ngw1_e2_porm": [
+      "gw1_e2_vm",
+      "por_hold",
+      "vrest",
+      "0"
+    ],
+    "ngw1_e2_ip": [
+      "gw1_e2_vm",
+      "s1_ya",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e2_in": [
+      "gw1_e2_vm",
+      "s1_zb",
+      "0",
+      "0"
+    ],
+    "ngw1_b2_sw": [
+      "gw1_b2_t",
+      "gw1_e2_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_b2_sh1p": [
+      "gw1_b2_n",
+      "gw1_b2",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_b2_sh1n": [
+      "gw1_b2_n",
+      "gw1_b2",
+      "0",
+      "0"
+    ],
+    "ngw1_b2_sh2p": [
+      "gw1_b2_q",
+      "gw1_b2_n",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_b2_sh2n": [
+      "gw1_b2_q",
+      "gw1_b2_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e3_bias0": [
+      "gw1_e3_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e3_bias1": [
+      "gw1_e3_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e3_bias2": [
+      "gw1_e3_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e3_kmb": [
+      "gw1_e3_knb",
+      "gw1_e3_knb",
+      "0",
+      "0"
+    ],
+    "ngw1_e3_kmt": [
+      "gw1_e3_ktail",
+      "gw1_e3_knb",
+      "0",
+      "0"
+    ],
+    "ngw1_e3_km1": [
+      "gw1_e3_kd1",
+      "gw1_e3_vm",
+      "gw1_e3_ktail",
+      "0"
+    ],
+    "ngw1_e3_km2": [
+      "gw1_e3_ko1",
+      "gw1_e3_h",
+      "gw1_e3_ktail",
+      "0"
+    ],
+    "ngw1_e3_km3": [
+      "gw1_e3_kd1",
+      "gw1_e3_kd1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e3_km4": [
+      "gw1_e3_ko1",
+      "gw1_e3_kd1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e3_ki1p": [
+      "gw1_e3_qb",
+      "gw1_e3_ko1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e3_ki1n": [
+      "gw1_e3_qb",
+      "gw1_e3_ko1",
+      "0",
+      "0"
+    ],
+    "ngw1_e3_ki2p": [
+      "gw1_e3_q",
+      "gw1_e3_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e3_ki2n": [
+      "gw1_e3_q",
+      "gw1_e3_qb",
+      "0",
+      "0"
+    ],
+    "ngw1_e3_dis": [
+      "gw1_e3_vm",
+      "gw1_e3_q",
+      "gw1_e3_vmd",
+      "0"
+    ],
+    "ngw1_e3_rp": [
+      "gw1_e3_rt",
+      "gw1_e3_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e3_sh1": [
+      "gw1_e3_vm",
+      "gw1_e3_rec",
+      "gw1_e3_vms",
+      "0"
+    ],
+    "ngw1_e3_sh2": [
+      "gw1_e3_vms",
+      "gw1_e3_qb",
+      "vrest",
+      "0"
+    ],
+    "ngw1_e3_porh": [
+      "gw1_e3_h",
+      "por_hold",
+      "vthe",
+      "0"
+    ],
+    "ngw1_e3_porm": [
+      "gw1_e3_vm",
+      "por_hold",
+      "vrest",
+      "0"
+    ],
+    "ngw1_e3_ip": [
+      "gw1_e3_vm",
+      "s1_ya",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e3_in": [
+      "gw1_e3_vm",
+      "s1_zb",
+      "0",
+      "0"
+    ],
+    "ngw1_b3_sw": [
+      "gw1_b3_t",
+      "gw1_e3_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_b3_sh1p": [
+      "gw1_b3_n",
+      "gw1_b3",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_b3_sh1n": [
+      "gw1_b3_n",
+      "gw1_b3",
+      "0",
+      "0"
+    ],
+    "ngw1_b3_sh2p": [
+      "gw1_b3_q",
+      "gw1_b3_n",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_b3_sh2n": [
+      "gw1_b3_q",
+      "gw1_b3_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e4_bias0": [
+      "gw1_e4_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e4_bias1": [
+      "gw1_e4_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e4_bias2": [
+      "gw1_e4_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e4_bias3": [
+      "gw1_e4_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e4_kmb": [
+      "gw1_e4_knb",
+      "gw1_e4_knb",
+      "0",
+      "0"
+    ],
+    "ngw1_e4_kmt": [
+      "gw1_e4_ktail",
+      "gw1_e4_knb",
+      "0",
+      "0"
+    ],
+    "ngw1_e4_km1": [
+      "gw1_e4_kd1",
+      "gw1_e4_vm",
+      "gw1_e4_ktail",
+      "0"
+    ],
+    "ngw1_e4_km2": [
+      "gw1_e4_ko1",
+      "gw1_e4_h",
+      "gw1_e4_ktail",
+      "0"
+    ],
+    "ngw1_e4_km3": [
+      "gw1_e4_kd1",
+      "gw1_e4_kd1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e4_km4": [
+      "gw1_e4_ko1",
+      "gw1_e4_kd1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e4_ki1p": [
+      "gw1_e4_qb",
+      "gw1_e4_ko1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e4_ki1n": [
+      "gw1_e4_qb",
+      "gw1_e4_ko1",
+      "0",
+      "0"
+    ],
+    "ngw1_e4_ki2p": [
+      "gw1_e4_q",
+      "gw1_e4_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e4_ki2n": [
+      "gw1_e4_q",
+      "gw1_e4_qb",
+      "0",
+      "0"
+    ],
+    "ngw1_e4_dis": [
+      "gw1_e4_vm",
+      "gw1_e4_q",
+      "gw1_e4_vmd",
+      "0"
+    ],
+    "ngw1_e4_rp": [
+      "gw1_e4_rt",
+      "gw1_e4_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e4_sh1": [
+      "gw1_e4_vm",
+      "gw1_e4_rec",
+      "gw1_e4_vms",
+      "0"
+    ],
+    "ngw1_e4_sh2": [
+      "gw1_e4_vms",
+      "gw1_e4_qb",
+      "vrest",
+      "0"
+    ],
+    "ngw1_e4_porh": [
+      "gw1_e4_h",
+      "por_hold",
+      "vthe",
+      "0"
+    ],
+    "ngw1_e4_porm": [
+      "gw1_e4_vm",
+      "por_hold",
+      "vrest",
+      "0"
+    ],
+    "ngw1_e4_ip": [
+      "gw1_e4_vm",
+      "s1_ya",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e4_in": [
+      "gw1_e4_vm",
+      "s1_zb",
+      "0",
+      "0"
+    ],
+    "ngw1_b4_sw": [
+      "gw1_b4_t",
+      "gw1_e4_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_b4_sh1p": [
+      "gw1_b4_n",
+      "gw1_b4",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_b4_sh1n": [
+      "gw1_b4_n",
+      "gw1_b4",
+      "0",
+      "0"
+    ],
+    "ngw1_b4_sh2p": [
+      "gw1_b4_q",
+      "gw1_b4_n",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_b4_sh2n": [
+      "gw1_b4_q",
+      "gw1_b4_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e5_bias0": [
+      "gw1_e5_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e5_bias1": [
+      "gw1_e5_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e5_bias2": [
+      "gw1_e5_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e5_bias3": [
+      "gw1_e5_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e5_bias4": [
+      "gw1_e5_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e5_kmb": [
+      "gw1_e5_knb",
+      "gw1_e5_knb",
+      "0",
+      "0"
+    ],
+    "ngw1_e5_kmt": [
+      "gw1_e5_ktail",
+      "gw1_e5_knb",
+      "0",
+      "0"
+    ],
+    "ngw1_e5_km1": [
+      "gw1_e5_kd1",
+      "gw1_e5_vm",
+      "gw1_e5_ktail",
+      "0"
+    ],
+    "ngw1_e5_km2": [
+      "gw1_e5_ko1",
+      "gw1_e5_h",
+      "gw1_e5_ktail",
+      "0"
+    ],
+    "ngw1_e5_km3": [
+      "gw1_e5_kd1",
+      "gw1_e5_kd1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e5_km4": [
+      "gw1_e5_ko1",
+      "gw1_e5_kd1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e5_ki1p": [
+      "gw1_e5_qb",
+      "gw1_e5_ko1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e5_ki1n": [
+      "gw1_e5_qb",
+      "gw1_e5_ko1",
+      "0",
+      "0"
+    ],
+    "ngw1_e5_ki2p": [
+      "gw1_e5_q",
+      "gw1_e5_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e5_ki2n": [
+      "gw1_e5_q",
+      "gw1_e5_qb",
+      "0",
+      "0"
+    ],
+    "ngw1_e5_dis": [
+      "gw1_e5_vm",
+      "gw1_e5_q",
+      "gw1_e5_vmd",
+      "0"
+    ],
+    "ngw1_e5_rp": [
+      "gw1_e5_rt",
+      "gw1_e5_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e5_sh1": [
+      "gw1_e5_vm",
+      "gw1_e5_rec",
+      "gw1_e5_vms",
+      "0"
+    ],
+    "ngw1_e5_sh2": [
+      "gw1_e5_vms",
+      "gw1_e5_qb",
+      "vrest",
+      "0"
+    ],
+    "ngw1_e5_porh": [
+      "gw1_e5_h",
+      "por_hold",
+      "vthe",
+      "0"
+    ],
+    "ngw1_e5_porm": [
+      "gw1_e5_vm",
+      "por_hold",
+      "vrest",
+      "0"
+    ],
+    "ngw1_e5_ip": [
+      "gw1_e5_vm",
+      "s1_ya",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e5_in": [
+      "gw1_e5_vm",
+      "s1_zb",
+      "0",
+      "0"
+    ],
+    "ngw1_b5_sw": [
+      "gw1_b5_t",
+      "gw1_e5_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_b5_sh1p": [
+      "gw1_b5_n",
+      "gw1_b5",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_b5_sh1n": [
+      "gw1_b5_n",
+      "gw1_b5",
+      "0",
+      "0"
+    ],
+    "ngw1_b5_sh2p": [
+      "gw1_b5_q",
+      "gw1_b5_n",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_b5_sh2n": [
+      "gw1_b5_q",
+      "gw1_b5_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e6_bias0": [
+      "gw1_e6_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e6_bias1": [
+      "gw1_e6_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e6_bias2": [
+      "gw1_e6_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e6_bias3": [
+      "gw1_e6_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e6_bias4": [
+      "gw1_e6_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e6_bias5": [
+      "gw1_e6_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e6_kmb": [
+      "gw1_e6_knb",
+      "gw1_e6_knb",
+      "0",
+      "0"
+    ],
+    "ngw1_e6_kmt": [
+      "gw1_e6_ktail",
+      "gw1_e6_knb",
+      "0",
+      "0"
+    ],
+    "ngw1_e6_km1": [
+      "gw1_e6_kd1",
+      "gw1_e6_vm",
+      "gw1_e6_ktail",
+      "0"
+    ],
+    "ngw1_e6_km2": [
+      "gw1_e6_ko1",
+      "gw1_e6_h",
+      "gw1_e6_ktail",
+      "0"
+    ],
+    "ngw1_e6_km3": [
+      "gw1_e6_kd1",
+      "gw1_e6_kd1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e6_km4": [
+      "gw1_e6_ko1",
+      "gw1_e6_kd1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e6_ki1p": [
+      "gw1_e6_qb",
+      "gw1_e6_ko1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e6_ki1n": [
+      "gw1_e6_qb",
+      "gw1_e6_ko1",
+      "0",
+      "0"
+    ],
+    "ngw1_e6_ki2p": [
+      "gw1_e6_q",
+      "gw1_e6_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e6_ki2n": [
+      "gw1_e6_q",
+      "gw1_e6_qb",
+      "0",
+      "0"
+    ],
+    "ngw1_e6_dis": [
+      "gw1_e6_vm",
+      "gw1_e6_q",
+      "gw1_e6_vmd",
+      "0"
+    ],
+    "ngw1_e6_rp": [
+      "gw1_e6_rt",
+      "gw1_e6_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e6_sh1": [
+      "gw1_e6_vm",
+      "gw1_e6_rec",
+      "gw1_e6_vms",
+      "0"
+    ],
+    "ngw1_e6_sh2": [
+      "gw1_e6_vms",
+      "gw1_e6_qb",
+      "vrest",
+      "0"
+    ],
+    "ngw1_e6_porh": [
+      "gw1_e6_h",
+      "por_hold",
+      "vthe",
+      "0"
+    ],
+    "ngw1_e6_porm": [
+      "gw1_e6_vm",
+      "por_hold",
+      "vrest",
+      "0"
+    ],
+    "ngw1_e6_ip": [
+      "gw1_e6_vm",
+      "s1_ya",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e6_in": [
+      "gw1_e6_vm",
+      "s1_zb",
+      "0",
+      "0"
+    ],
+    "ngw1_b6_sw": [
+      "gw1_b6_t",
+      "gw1_e6_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_b6_sh1p": [
+      "gw1_b6_n",
+      "gw1_b6",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_b6_sh1n": [
+      "gw1_b6_n",
+      "gw1_b6",
+      "0",
+      "0"
+    ],
+    "ngw1_b6_sh2p": [
+      "gw1_b6_q",
+      "gw1_b6_n",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_b6_sh2n": [
+      "gw1_b6_q",
+      "gw1_b6_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e7_bias0": [
+      "gw1_e7_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e7_bias1": [
+      "gw1_e7_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e7_bias2": [
+      "gw1_e7_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e7_bias3": [
+      "gw1_e7_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e7_bias4": [
+      "gw1_e7_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e7_bias5": [
+      "gw1_e7_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e7_bias6": [
+      "gw1_e7_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e7_kmb": [
+      "gw1_e7_knb",
+      "gw1_e7_knb",
+      "0",
+      "0"
+    ],
+    "ngw1_e7_kmt": [
+      "gw1_e7_ktail",
+      "gw1_e7_knb",
+      "0",
+      "0"
+    ],
+    "ngw1_e7_km1": [
+      "gw1_e7_kd1",
+      "gw1_e7_vm",
+      "gw1_e7_ktail",
+      "0"
+    ],
+    "ngw1_e7_km2": [
+      "gw1_e7_ko1",
+      "gw1_e7_h",
+      "gw1_e7_ktail",
+      "0"
+    ],
+    "ngw1_e7_km3": [
+      "gw1_e7_kd1",
+      "gw1_e7_kd1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e7_km4": [
+      "gw1_e7_ko1",
+      "gw1_e7_kd1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e7_ki1p": [
+      "gw1_e7_qb",
+      "gw1_e7_ko1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e7_ki1n": [
+      "gw1_e7_qb",
+      "gw1_e7_ko1",
+      "0",
+      "0"
+    ],
+    "ngw1_e7_ki2p": [
+      "gw1_e7_q",
+      "gw1_e7_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e7_ki2n": [
+      "gw1_e7_q",
+      "gw1_e7_qb",
+      "0",
+      "0"
+    ],
+    "ngw1_e7_dis": [
+      "gw1_e7_vm",
+      "gw1_e7_q",
+      "gw1_e7_vmd",
+      "0"
+    ],
+    "ngw1_e7_rp": [
+      "gw1_e7_rt",
+      "gw1_e7_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e7_sh1": [
+      "gw1_e7_vm",
+      "gw1_e7_rec",
+      "gw1_e7_vms",
+      "0"
+    ],
+    "ngw1_e7_sh2": [
+      "gw1_e7_vms",
+      "gw1_e7_qb",
+      "vrest",
+      "0"
+    ],
+    "ngw1_e7_porh": [
+      "gw1_e7_h",
+      "por_hold",
+      "vthe",
+      "0"
+    ],
+    "ngw1_e7_porm": [
+      "gw1_e7_vm",
+      "por_hold",
+      "vrest",
+      "0"
+    ],
+    "ngw1_e7_ip": [
+      "gw1_e7_vm",
+      "s1_ya",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e7_in": [
+      "gw1_e7_vm",
+      "s1_zb",
+      "0",
+      "0"
+    ],
+    "ngw1_b7_sw": [
+      "gw1_b7_t",
+      "gw1_e7_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_b7_sh1p": [
+      "gw1_b7_n",
+      "gw1_b7",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_b7_sh1n": [
+      "gw1_b7_n",
+      "gw1_b7",
+      "0",
+      "0"
+    ],
+    "ngw1_b7_sh2p": [
+      "gw1_b7_q",
+      "gw1_b7_n",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_b7_sh2n": [
+      "gw1_b7_q",
+      "gw1_b7_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e8_bias0": [
+      "gw1_e8_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e8_bias1": [
+      "gw1_e8_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e8_bias2": [
+      "gw1_e8_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e8_bias3": [
+      "gw1_e8_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e8_bias4": [
+      "gw1_e8_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e8_bias5": [
+      "gw1_e8_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e8_bias6": [
+      "gw1_e8_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e8_bias7": [
+      "gw1_e8_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e8_kmb": [
+      "gw1_e8_knb",
+      "gw1_e8_knb",
+      "0",
+      "0"
+    ],
+    "ngw1_e8_kmt": [
+      "gw1_e8_ktail",
+      "gw1_e8_knb",
+      "0",
+      "0"
+    ],
+    "ngw1_e8_km1": [
+      "gw1_e8_kd1",
+      "gw1_e8_vm",
+      "gw1_e8_ktail",
+      "0"
+    ],
+    "ngw1_e8_km2": [
+      "gw1_e8_ko1",
+      "gw1_e8_h",
+      "gw1_e8_ktail",
+      "0"
+    ],
+    "ngw1_e8_km3": [
+      "gw1_e8_kd1",
+      "gw1_e8_kd1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e8_km4": [
+      "gw1_e8_ko1",
+      "gw1_e8_kd1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e8_ki1p": [
+      "gw1_e8_qb",
+      "gw1_e8_ko1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e8_ki1n": [
+      "gw1_e8_qb",
+      "gw1_e8_ko1",
+      "0",
+      "0"
+    ],
+    "ngw1_e8_ki2p": [
+      "gw1_e8_q",
+      "gw1_e8_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e8_ki2n": [
+      "gw1_e8_q",
+      "gw1_e8_qb",
+      "0",
+      "0"
+    ],
+    "ngw1_e8_dis": [
+      "gw1_e8_vm",
+      "gw1_e8_q",
+      "gw1_e8_vmd",
+      "0"
+    ],
+    "ngw1_e8_rp": [
+      "gw1_e8_rt",
+      "gw1_e8_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e8_sh1": [
+      "gw1_e8_vm",
+      "gw1_e8_rec",
+      "gw1_e8_vms",
+      "0"
+    ],
+    "ngw1_e8_sh2": [
+      "gw1_e8_vms",
+      "gw1_e8_qb",
+      "vrest",
+      "0"
+    ],
+    "ngw1_e8_porh": [
+      "gw1_e8_h",
+      "por_hold",
+      "vthe",
+      "0"
+    ],
+    "ngw1_e8_porm": [
+      "gw1_e8_vm",
+      "por_hold",
+      "vrest",
+      "0"
+    ],
+    "ngw1_e8_ip": [
+      "gw1_e8_vm",
+      "s1_ya",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e8_in": [
+      "gw1_e8_vm",
+      "s1_zb",
+      "0",
+      "0"
+    ],
+    "ngw1_b8_sw": [
+      "gw1_b8_t",
+      "gw1_e8_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_b8_sh1p": [
+      "gw1_b8_n",
+      "gw1_b8",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_b8_sh1n": [
+      "gw1_b8_n",
+      "gw1_b8",
+      "0",
+      "0"
+    ],
+    "ngw1_b8_sh2p": [
+      "gw1_b8_q",
+      "gw1_b8_n",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_b8_sh2n": [
+      "gw1_b8_q",
+      "gw1_b8_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e9_bias0": [
+      "gw1_e9_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e9_bias1": [
+      "gw1_e9_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e9_bias2": [
+      "gw1_e9_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e9_bias3": [
+      "gw1_e9_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e9_bias4": [
+      "gw1_e9_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e9_bias5": [
+      "gw1_e9_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e9_bias6": [
+      "gw1_e9_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e9_bias7": [
+      "gw1_e9_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e9_bias8": [
+      "gw1_e9_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e9_kmb": [
+      "gw1_e9_knb",
+      "gw1_e9_knb",
+      "0",
+      "0"
+    ],
+    "ngw1_e9_kmt": [
+      "gw1_e9_ktail",
+      "gw1_e9_knb",
+      "0",
+      "0"
+    ],
+    "ngw1_e9_km1": [
+      "gw1_e9_kd1",
+      "gw1_e9_vm",
+      "gw1_e9_ktail",
+      "0"
+    ],
+    "ngw1_e9_km2": [
+      "gw1_e9_ko1",
+      "gw1_e9_h",
+      "gw1_e9_ktail",
+      "0"
+    ],
+    "ngw1_e9_km3": [
+      "gw1_e9_kd1",
+      "gw1_e9_kd1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e9_km4": [
+      "gw1_e9_ko1",
+      "gw1_e9_kd1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e9_ki1p": [
+      "gw1_e9_qb",
+      "gw1_e9_ko1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e9_ki1n": [
+      "gw1_e9_qb",
+      "gw1_e9_ko1",
+      "0",
+      "0"
+    ],
+    "ngw1_e9_ki2p": [
+      "gw1_e9_q",
+      "gw1_e9_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e9_ki2n": [
+      "gw1_e9_q",
+      "gw1_e9_qb",
+      "0",
+      "0"
+    ],
+    "ngw1_e9_dis": [
+      "gw1_e9_vm",
+      "gw1_e9_q",
+      "gw1_e9_vmd",
+      "0"
+    ],
+    "ngw1_e9_rp": [
+      "gw1_e9_rt",
+      "gw1_e9_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e9_sh1": [
+      "gw1_e9_vm",
+      "gw1_e9_rec",
+      "gw1_e9_vms",
+      "0"
+    ],
+    "ngw1_e9_sh2": [
+      "gw1_e9_vms",
+      "gw1_e9_qb",
+      "vrest",
+      "0"
+    ],
+    "ngw1_e9_porh": [
+      "gw1_e9_h",
+      "por_hold",
+      "vthe",
+      "0"
+    ],
+    "ngw1_e9_porm": [
+      "gw1_e9_vm",
+      "por_hold",
+      "vrest",
+      "0"
+    ],
+    "ngw1_e9_ip": [
+      "gw1_e9_vm",
+      "s1_ya",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e9_in": [
+      "gw1_e9_vm",
+      "s1_zb",
+      "0",
+      "0"
+    ],
+    "ngw1_b9_sw": [
+      "gw1_b9_t",
+      "gw1_e9_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_b9_sh1p": [
+      "gw1_b9_n",
+      "gw1_b9",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_b9_sh1n": [
+      "gw1_b9_n",
+      "gw1_b9",
+      "0",
+      "0"
+    ],
+    "ngw1_b9_sh2p": [
+      "gw1_b9_q",
+      "gw1_b9_n",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_b9_sh2n": [
+      "gw1_b9_q",
+      "gw1_b9_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e10_bias0": [
+      "gw1_e10_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e10_bias1": [
+      "gw1_e10_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e10_bias2": [
+      "gw1_e10_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e10_bias3": [
+      "gw1_e10_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e10_bias4": [
+      "gw1_e10_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e10_bias5": [
+      "gw1_e10_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e10_bias6": [
+      "gw1_e10_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e10_bias7": [
+      "gw1_e10_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e10_bias8": [
+      "gw1_e10_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e10_bias9": [
+      "gw1_e10_vm",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "ngw1_e10_kmb": [
+      "gw1_e10_knb",
+      "gw1_e10_knb",
+      "0",
+      "0"
+    ],
+    "ngw1_e10_kmt": [
+      "gw1_e10_ktail",
+      "gw1_e10_knb",
+      "0",
+      "0"
+    ],
+    "ngw1_e10_km1": [
+      "gw1_e10_kd1",
+      "gw1_e10_vm",
+      "gw1_e10_ktail",
+      "0"
+    ],
+    "ngw1_e10_km2": [
+      "gw1_e10_ko1",
+      "gw1_e10_h",
+      "gw1_e10_ktail",
+      "0"
+    ],
+    "ngw1_e10_km3": [
+      "gw1_e10_kd1",
+      "gw1_e10_kd1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e10_km4": [
+      "gw1_e10_ko1",
+      "gw1_e10_kd1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e10_ki1p": [
+      "gw1_e10_qb",
+      "gw1_e10_ko1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e10_ki1n": [
+      "gw1_e10_qb",
+      "gw1_e10_ko1",
+      "0",
+      "0"
+    ],
+    "ngw1_e10_ki2p": [
+      "gw1_e10_q",
+      "gw1_e10_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e10_ki2n": [
+      "gw1_e10_q",
+      "gw1_e10_qb",
+      "0",
+      "0"
+    ],
+    "ngw1_e10_dis": [
+      "gw1_e10_vm",
+      "gw1_e10_q",
+      "gw1_e10_vmd",
+      "0"
+    ],
+    "ngw1_e10_rp": [
+      "gw1_e10_rt",
+      "gw1_e10_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e10_sh1": [
+      "gw1_e10_vm",
+      "gw1_e10_rec",
+      "gw1_e10_vms",
+      "0"
+    ],
+    "ngw1_e10_sh2": [
+      "gw1_e10_vms",
+      "gw1_e10_qb",
+      "vrest",
+      "0"
+    ],
+    "ngw1_e10_porh": [
+      "gw1_e10_h",
+      "por_hold",
+      "vthe",
+      "0"
+    ],
+    "ngw1_e10_porm": [
+      "gw1_e10_vm",
+      "por_hold",
+      "vrest",
+      "0"
+    ],
+    "ngw1_e10_ip": [
+      "gw1_e10_vm",
+      "s1_ya",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_e10_in": [
+      "gw1_e10_vm",
+      "s1_zb",
+      "0",
+      "0"
+    ],
+    "ngw1_b10_sw": [
+      "gw1_b10_t",
+      "gw1_e10_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_b10_sh1p": [
+      "gw1_b10_n",
+      "gw1_b10",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_b10_sh1n": [
+      "gw1_b10_n",
+      "gw1_b10",
+      "0",
+      "0"
+    ],
+    "ngw1_b10_sh2p": [
+      "gw1_b10_q",
+      "gw1_b10_n",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_b10_sh2n": [
+      "gw1_b10_q",
+      "gw1_b10_n",
+      "0",
+      "0"
+    ],
+    "ngw1_b10_cutp": [
+      "vdd",
+      "gw1_b10_q",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_b10_cutn": [
+      "0",
+      "gw1_b10_q",
+      "0",
+      "0"
+    ],
+    "ngw1_and_a0_npa": [
+      "gw1_and_a0_nb",
+      "gw1_b1_q",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_and_a0_npb": [
+      "gw1_and_a0_nb",
+      "gw1_b2_q",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_and_a0_nna": [
+      "gw1_and_a0_nb",
+      "gw1_b1_q",
+      "gw1_and_a0_nx",
+      "0"
+    ],
+    "ngw1_and_a0_nnb": [
+      "gw1_and_a0_nx",
+      "gw1_b2_q",
+      "0",
+      "0"
+    ],
+    "ngw1_and_a0_ip": [
+      "gw1_and_g0",
+      "gw1_and_a0_nb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_and_a0_in": [
+      "gw1_and_g0",
+      "gw1_and_a0_nb",
+      "0",
+      "0"
+    ],
+    "ngw1_and_a1_npa": [
+      "gw1_and_a1_nb",
+      "gw1_b3_q",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_and_a1_npb": [
+      "gw1_and_a1_nb",
+      "gw1_b4_q",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_and_a1_nna": [
+      "gw1_and_a1_nb",
+      "gw1_b3_q",
+      "gw1_and_a1_nx",
+      "0"
+    ],
+    "ngw1_and_a1_nnb": [
+      "gw1_and_a1_nx",
+      "gw1_b4_q",
+      "0",
+      "0"
+    ],
+    "ngw1_and_a1_ip": [
+      "gw1_and_g1",
+      "gw1_and_a1_nb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_and_a1_in": [
+      "gw1_and_g1",
+      "gw1_and_a1_nb",
+      "0",
+      "0"
+    ],
+    "ngw1_and_a2_npa": [
+      "gw1_and_a2_nb",
+      "gw1_b5_q",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_and_a2_npb": [
+      "gw1_and_a2_nb",
+      "gw1_b6_q",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_and_a2_nna": [
+      "gw1_and_a2_nb",
+      "gw1_b5_q",
+      "gw1_and_a2_nx",
+      "0"
+    ],
+    "ngw1_and_a2_nnb": [
+      "gw1_and_a2_nx",
+      "gw1_b6_q",
+      "0",
+      "0"
+    ],
+    "ngw1_and_a2_ip": [
+      "gw1_and_g2",
+      "gw1_and_a2_nb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_and_a2_in": [
+      "gw1_and_g2",
+      "gw1_and_a2_nb",
+      "0",
+      "0"
+    ],
+    "ngw1_and_a3_npa": [
+      "gw1_and_a3_nb",
+      "gw1_b7_q",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_and_a3_npb": [
+      "gw1_and_a3_nb",
+      "gw1_b8_q",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_and_a3_nna": [
+      "gw1_and_a3_nb",
+      "gw1_b7_q",
+      "gw1_and_a3_nx",
+      "0"
+    ],
+    "ngw1_and_a3_nnb": [
+      "gw1_and_a3_nx",
+      "gw1_b8_q",
+      "0",
+      "0"
+    ],
+    "ngw1_and_a3_ip": [
+      "gw1_and_g3",
+      "gw1_and_a3_nb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_and_a3_in": [
+      "gw1_and_g3",
+      "gw1_and_a3_nb",
+      "0",
+      "0"
+    ],
+    "ngw1_and_a4_npa": [
+      "gw1_and_a4_nb",
+      "gw1_b9_q",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_and_a4_npb": [
+      "gw1_and_a4_nb",
+      "0",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_and_a4_nna": [
+      "gw1_and_a4_nb",
+      "gw1_b9_q",
+      "gw1_and_a4_nx",
+      "0"
+    ],
+    "ngw1_and_a4_nnb": [
+      "gw1_and_a4_nx",
+      "0",
+      "0",
+      "0"
+    ],
+    "ngw1_and_a4_ip": [
+      "gw1_and_g4",
+      "gw1_and_a4_nb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_and_a4_in": [
+      "gw1_and_g4",
+      "gw1_and_a4_nb",
+      "0",
+      "0"
+    ],
+    "ngw1_and_a5_npa": [
+      "gw1_and_a5_nb",
+      "gw1_and_g0",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_and_a5_npb": [
+      "gw1_and_a5_nb",
+      "gw1_and_g1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_and_a5_nna": [
+      "gw1_and_a5_nb",
+      "gw1_and_g0",
+      "gw1_and_a5_nx",
+      "0"
+    ],
+    "ngw1_and_a5_nnb": [
+      "gw1_and_a5_nx",
+      "gw1_and_g1",
+      "0",
+      "0"
+    ],
+    "ngw1_and_a5_ip": [
+      "gw1_and_g5",
+      "gw1_and_a5_nb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_and_a5_in": [
+      "gw1_and_g5",
+      "gw1_and_a5_nb",
+      "0",
+      "0"
+    ],
+    "ngw1_and_a6_npa": [
+      "gw1_and_a6_nb",
+      "gw1_and_g2",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_and_a6_npb": [
+      "gw1_and_a6_nb",
+      "gw1_and_g3",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_and_a6_nna": [
+      "gw1_and_a6_nb",
+      "gw1_and_g2",
+      "gw1_and_a6_nx",
+      "0"
+    ],
+    "ngw1_and_a6_nnb": [
+      "gw1_and_a6_nx",
+      "gw1_and_g3",
+      "0",
+      "0"
+    ],
+    "ngw1_and_a6_ip": [
+      "gw1_and_g6",
+      "gw1_and_a6_nb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_and_a6_in": [
+      "gw1_and_g6",
+      "gw1_and_a6_nb",
+      "0",
+      "0"
+    ],
+    "ngw1_and_a7_npa": [
+      "gw1_and_a7_nb",
+      "gw1_and_g5",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_and_a7_npb": [
+      "gw1_and_a7_nb",
+      "gw1_and_g6",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_and_a7_nna": [
+      "gw1_and_a7_nb",
+      "gw1_and_g5",
+      "gw1_and_a7_nx",
+      "0"
+    ],
+    "ngw1_and_a7_nnb": [
+      "gw1_and_a7_nx",
+      "gw1_and_g6",
+      "0",
+      "0"
+    ],
+    "ngw1_and_a7_ip": [
+      "gw1_and_g7",
+      "gw1_and_a7_nb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_and_a7_in": [
+      "gw1_and_g7",
+      "gw1_and_a7_nb",
+      "0",
+      "0"
+    ],
+    "ngw1_and_a8_npa": [
+      "gw1_and_a8_nb",
+      "gw1_and_g7",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_and_a8_npb": [
+      "gw1_and_a8_nb",
+      "gw1_and_g4",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_and_a8_nna": [
+      "gw1_and_a8_nb",
+      "gw1_and_g7",
+      "gw1_and_a8_nx",
+      "0"
+    ],
+    "ngw1_and_a8_nnb": [
+      "gw1_and_a8_nx",
+      "gw1_and_g4",
+      "0",
+      "0"
+    ],
+    "ngw1_and_a8_ip": [
+      "gw1_and_g8",
+      "gw1_and_a8_nb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_and_a8_in": [
+      "gw1_and_g8",
+      "gw1_and_a8_nb",
+      "0",
+      "0"
+    ],
+    "ngw1_gip": [
+      "gw1_gb",
+      "gw1_and_g8",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_gin": [
+      "gw1_gb",
+      "gw1_and_g8",
+      "0",
+      "0"
+    ],
+    "ngw1_col_kmb": [
+      "gw1_col_knb",
+      "gw1_col_knb",
+      "0",
+      "0"
+    ],
+    "ngw1_col_kmt": [
+      "gw1_col_ktail",
+      "gw1_col_knb",
+      "0",
+      "0"
+    ],
+    "ngw1_col_km1": [
+      "gw1_col_kd1",
+      "gw1_col_vm",
+      "gw1_col_ktail",
+      "0"
+    ],
+    "ngw1_col_km2": [
+      "gw1_col_ko1",
+      "gw1_col_h",
+      "gw1_col_ktail",
+      "0"
+    ],
+    "ngw1_col_km3": [
+      "gw1_col_kd1",
+      "gw1_col_kd1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_col_km4": [
+      "gw1_col_ko1",
+      "gw1_col_kd1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_col_ki1p": [
+      "gw1_col_qb",
+      "gw1_col_ko1",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_col_ki1n": [
+      "gw1_col_qb",
+      "gw1_col_ko1",
+      "0",
+      "0"
+    ],
+    "ngw1_col_ki2p": [
+      "gw1_col_q",
+      "gw1_col_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_col_ki2n": [
+      "gw1_col_q",
+      "gw1_col_qb",
+      "0",
+      "0"
+    ],
+    "ngw1_col_dis": [
+      "gw1_col_vm",
+      "gw1_col_q",
+      "gw1_col_vmd",
+      "0"
+    ],
+    "ngw1_col_rp": [
+      "gw1_col_rt",
+      "gw1_col_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_col_sh1": [
+      "gw1_col_vm",
+      "gw1_col_rec",
+      "gw1_col_vms",
+      "0"
+    ],
+    "ngw1_col_sh2": [
+      "gw1_col_vms",
+      "gw1_col_qb",
+      "vrest",
+      "0"
+    ],
+    "ngw1_col_porh": [
+      "gw1_col_h",
+      "por_hold",
+      "vthe",
+      "0"
+    ],
+    "ngw1_col_porm": [
+      "gw1_col_vm",
+      "por_hold",
+      "vrest",
+      "0"
+    ],
+    "ngw1_cin_sw": [
+      "gw1_cin_x",
+      "gw1_gb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_cin_cp": [
+      "gw1_col_vm",
+      "ilimp_n",
+      "gw1_cin_x",
+      "vsrc"
+    ],
+    "ngw1_op_tsw": [
+      "gw1_op_tt",
+      "gw1_col_qb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_op_sh1p": [
+      "gw1_op_an",
+      "gw1_op_at",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_op_sh1n": [
+      "gw1_op_an",
+      "gw1_op_at",
+      "0",
+      "0"
+    ],
+    "ngw1_op_sh2p": [
+      "gw1_op_aq",
+      "gw1_op_an",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_op_sh2n": [
+      "gw1_op_aq",
+      "gw1_op_an",
+      "0",
+      "0"
+    ],
+    "ngw1_op_abp": [
+      "gw1_op_aqb",
+      "gw1_op_aq",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_op_abn": [
+      "gw1_op_aqb",
+      "gw1_op_aq",
+      "0",
+      "0"
+    ],
+    "ngw1_op_d2p": [
+      "gw1_op_adn",
+      "gw1_op_ad",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_op_d2n": [
+      "gw1_op_adn",
+      "gw1_op_ad",
+      "0",
+      "0"
+    ],
+    "ngw1_op_gpa": [
+      "gw1_op_pb",
+      "gw1_op_aq",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_op_gpb": [
+      "gw1_op_pb",
+      "gw1_op_adn",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_op_gna": [
+      "gw1_op_pb",
+      "gw1_op_aq",
+      "gw1_op_gx",
+      "0"
+    ],
+    "ngw1_op_gnb": [
+      "gw1_op_gx",
+      "gw1_op_adn",
+      "0",
+      "0"
+    ],
+    "ngw1_op_op": [
+      "gw1_op_p",
+      "gw1_op_pb",
+      "vdd",
+      "vsrc"
+    ],
+    "ngw1_op_on": [
+      "gw1_op_p",
+      "gw1_op_pb",
+      "0",
+      "0"
+    ]
+  },
+  "ammeters": [],
+  "element_count": 939,
+  "saved_vector_count": 55,
+  "wall_clock_cap_s": 2700,
+  "maximum_launches": 1,
+  "expected_solver_log": "Using SPARSE 1.3 as Direct Linear Solver"
+}

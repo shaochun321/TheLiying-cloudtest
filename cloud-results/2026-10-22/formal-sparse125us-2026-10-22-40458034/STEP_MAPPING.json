@@ -1,0 +1,432 @@
+[
+  {
+    "case_id": "G0_W",
+    "old_max_step_s": 0.0005,
+    "new_max_step_s": 0.000125,
+    "old_analysis": "tran 0.001 64.8 0 0.0005",
+    "new_analysis": "tran 0.001 64.8 0 0.000125",
+    "timeout_s": 2700,
+    "baseline_case_id": null,
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP"
+    ]
+  },
+  {
+    "case_id": "G0_C",
+    "old_max_step_s": 0.0005,
+    "new_max_step_s": 0.000125,
+    "old_analysis": "tran 0.001 64.8 0 0.0005",
+    "new_analysis": "tran 0.001 64.8 0 0.000125",
+    "timeout_s": 2700,
+    "baseline_case_id": null,
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "G0_W"
+    ]
+  },
+  {
+    "case_id": "G0_CUT_K1",
+    "old_max_step_s": 0.0005,
+    "new_max_step_s": 0.000125,
+    "old_analysis": "tran 0.001 64.8 0 0.0005",
+    "new_analysis": "tran 0.001 64.8 0 0.000125",
+    "timeout_s": 2700,
+    "baseline_case_id": "G0_W",
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "G0_W"
+    ]
+  },
+  {
+    "case_id": "G0_CUT_K10",
+    "old_max_step_s": 0.0005,
+    "new_max_step_s": 0.000125,
+    "old_analysis": "tran 0.001 64.8 0 0.0005",
+    "new_analysis": "tran 0.001 64.8 0 0.000125",
+    "timeout_s": 2700,
+    "baseline_case_id": "G0_W",
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "G0_W"
+    ]
+  },
+  {
+    "case_id": "CHAIN_12_W_F",
+    "old_max_step_s": 0.0005,
+    "new_max_step_s": 0.000125,
+    "old_analysis": "tran 0.001 39.2 0 0.0005",
+    "new_analysis": "tran 0.001 39.2 0 0.000125",
+    "timeout_s": 5400,
+    "baseline_case_id": null,
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP"
+    ]
+  },
+  {
+    "case_id": "CHAIN_12_W_R",
+    "old_max_step_s": 0.0005,
+    "new_max_step_s": 0.000125,
+    "old_analysis": "tran 0.001 40.7 0 0.0005",
+    "new_analysis": "tran 0.001 40.7 0 0.000125",
+    "timeout_s": 5400,
+    "baseline_case_id": null,
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ]
+  },
+  {
+    "case_id": "CHAIN_12_C_F",
+    "old_max_step_s": 0.0005,
+    "new_max_step_s": 0.000125,
+    "old_analysis": "tran 0.001 39.2 0 0.0005",
+    "new_analysis": "tran 0.001 39.2 0 0.000125",
+    "timeout_s": 5400,
+    "baseline_case_id": null,
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ]
+  },
+  {
+    "case_id": "CHAIN_12_C_R",
+    "old_max_step_s": 0.0005,
+    "new_max_step_s": 0.000125,
+    "old_analysis": "tran 0.001 40.7 0 0.0005",
+    "new_analysis": "tran 0.001 40.7 0 0.000125",
+    "timeout_s": 5400,
+    "baseline_case_id": null,
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ]
+  },
+  {
+    "case_id": "CHAIN_23_W_F",
+    "old_max_step_s": 0.0005,
+    "new_max_step_s": 0.000125,
+    "old_analysis": "tran 0.001 39.2 0 0.0005",
+    "new_analysis": "tran 0.001 39.2 0 0.000125",
+    "timeout_s": 5400,
+    "baseline_case_id": null,
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ]
+  },
+  {
+    "case_id": "CHAIN_23_W_R",
+    "old_max_step_s": 0.0005,
+    "new_max_step_s": 0.000125,
+    "old_analysis": "tran 0.001 40.7 0 0.0005",
+    "new_analysis": "tran 0.001 40.7 0 0.000125",
+    "timeout_s": 5400,
+    "baseline_case_id": null,
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ]
+  },
+  {
+    "case_id": "CHAIN_23_C_F",
+    "old_max_step_s": 0.0005,
+    "new_max_step_s": 0.000125,
+    "old_analysis": "tran 0.001 39.2 0 0.0005",
+    "new_analysis": "tran 0.001 39.2 0 0.000125",
+    "timeout_s": 5400,
+    "baseline_case_id": null,
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ]
+  },
+  {
+    "case_id": "CHAIN_23_C_R",
+    "old_max_step_s": 0.0005,
+    "new_max_step_s": 0.000125,
+    "old_analysis": "tran 0.001 40.7 0 0.0005",
+    "new_analysis": "tran 0.001 40.7 0 0.000125",
+    "timeout_s": 5400,
+    "baseline_case_id": null,
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ]
+  },
+  {
+    "case_id": "CHAIN_34_W_F",
+    "old_max_step_s": 0.0005,
+    "new_max_step_s": 0.000125,
+    "old_analysis": "tran 0.001 39.2 0 0.0005",
+    "new_analysis": "tran 0.001 39.2 0 0.000125",
+    "timeout_s": 5400,
+    "baseline_case_id": null,
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ]
+  },
+  {
+    "case_id": "CHAIN_34_W_R",
+    "old_max_step_s": 0.0005,
+    "new_max_step_s": 0.000125,
+    "old_analysis": "tran 0.001 40.7 0 0.0005",
+    "new_analysis": "tran 0.001 40.7 0 0.000125",
+    "timeout_s": 5400,
+    "baseline_case_id": null,
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ]
+  },
+  {
+    "case_id": "CHAIN_34_C_F",
+    "old_max_step_s": 0.0005,
+    "new_max_step_s": 0.000125,
+    "old_analysis": "tran 0.001 39.2 0 0.0005",
+    "new_analysis": "tran 0.001 39.2 0 0.000125",
+    "timeout_s": 5400,
+    "baseline_case_id": null,
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ]
+  },
+  {
+    "case_id": "CHAIN_34_C_R",
+    "old_max_step_s": 0.0005,
+    "new_max_step_s": 0.000125,
+    "old_analysis": "tran 0.001 40.7 0 0.0005",
+    "new_analysis": "tran 0.001 40.7 0 0.000125",
+    "timeout_s": 5400,
+    "baseline_case_id": null,
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ]
+  },
+  {
+    "case_id": "STRUCT_THETA_PORT_CUT",
+    "old_max_step_s": 0.0005,
+    "new_max_step_s": 0.000125,
+    "old_analysis": "tran 0.001 39.2 0 0.0005",
+    "new_analysis": "tran 0.001 39.2 0 0.000125",
+    "timeout_s": 5400,
+    "baseline_case_id": "CHAIN_12_W_F",
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ]
+  },
+  {
+    "case_id": "STRUCT_SIGMA_PORT_CUT",
+    "old_max_step_s": 0.0005,
+    "new_max_step_s": 0.000125,
+    "old_analysis": "tran 0.001 39.2 0 0.0005",
+    "new_analysis": "tran 0.001 39.2 0 0.000125",
+    "timeout_s": 5400,
+    "baseline_case_id": "CHAIN_12_W_F",
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ]
+  },
+  {
+    "case_id": "STRUCT_CDIR_HISTORY_BLEED",
+    "old_max_step_s": 0.0005,
+    "new_max_step_s": 0.000125,
+    "old_analysis": "tran 0.001 39.2 0 0.0005",
+    "new_analysis": "tran 0.001 39.2 0 0.000125",
+    "timeout_s": 5400,
+    "baseline_case_id": "CHAIN_12_W_F",
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ]
+  },
+  {
+    "case_id": "STRUCT_REAL_SIGMA_SWAP",
+    "old_max_step_s": 0.0005,
+    "new_max_step_s": 0.000125,
+    "old_analysis": "tran 0.001 39.2 0 0.0005",
+    "new_analysis": "tran 0.001 39.2 0 0.000125",
+    "timeout_s": 5400,
+    "baseline_case_id": "CHAIN_12_W_F",
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ]
+  },
+  {
+    "case_id": "INVALID_SYNC",
+    "old_max_step_s": 0.0005,
+    "new_max_step_s": 0.000125,
+    "old_analysis": "tran 0.001 37.7 0 0.0005",
+    "new_analysis": "tran 0.001 37.7 0 0.000125",
+    "timeout_s": 5400,
+    "baseline_case_id": null,
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ]
+  },
+  {
+    "case_id": "INVALID_STALE",
+    "old_max_step_s": 0.0005,
+    "new_max_step_s": 0.000125,
+    "old_analysis": "tran 0.001 56.5 0 0.0005",
+    "new_analysis": "tran 0.001 56.5 0 0.000125",
+    "timeout_s": 5400,
+    "baseline_case_id": null,
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ]
+  },
+  {
+    "case_id": "FULL_NOM",
+    "old_max_step_s": 0.0005,
+    "new_max_step_s": 0.000125,
+    "old_analysis": "tran 0.001 83.2 0 0.0005",
+    "new_analysis": "tran 0.001 83.2 0 0.000125",
+    "timeout_s": 14400,
+    "baseline_case_id": null,
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F",
+      "STRUCT_THETA_PORT_CUT"
+    ]
+  },
+  {
+    "case_id": "FULL_REAL_MIRROR",
+    "old_max_step_s": 0.0005,
+    "new_max_step_s": 0.000125,
+    "old_analysis": "tran 0.001 83.2 0 0.0005",
+    "new_analysis": "tran 0.001 83.2 0 0.000125",
+    "timeout_s": 14400,
+    "baseline_case_id": "FULL_NOM",
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "FULL_NOM"
+    ]
+  },
+  {
+    "case_id": "FULL_SPACE_CUT",
+    "old_max_step_s": 0.0005,
+    "new_max_step_s": 0.000125,
+    "old_analysis": "tran 0.001 83.2 0 0.0005",
+    "new_analysis": "tran 0.001 83.2 0 0.000125",
+    "timeout_s": 14400,
+    "baseline_case_id": "FULL_NOM",
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "FULL_NOM"
+    ]
+  },
+  {
+    "case_id": "FULL_NUM_HALFSTEP",
+    "old_max_step_s": 0.00025,
+    "new_max_step_s": 6.25e-05,
+    "old_analysis": "tran 0.001 83.2 0 0.00025",
+    "new_analysis": "tran 0.001 83.2 0 0.0000625",
+    "timeout_s": 14400,
+    "baseline_case_id": "FULL_NOM",
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "FULL_NOM"
+    ]
+  },
+  {
+    "case_id": "NUM_G0_HALFSTEP",
+    "old_max_step_s": 0.00025,
+    "new_max_step_s": 6.25e-05,
+    "old_analysis": "tran 0.001 64.8 0 0.00025",
+    "new_analysis": "tran 0.001 64.8 0 0.0000625",
+    "timeout_s": 2700,
+    "baseline_case_id": "G0_W",
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "G0_W"
+    ]
+  },
+  {
+    "case_id": "NUM_CHAIN_HALFSTEP",
+    "old_max_step_s": 0.00025,
+    "new_max_step_s": 6.25e-05,
+    "old_analysis": "tran 0.001 39.2 0 0.00025",
+    "new_analysis": "tran 0.001 39.2 0 0.0000625",
+    "timeout_s": 5400,
+    "baseline_case_id": "CHAIN_12_W_F",
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP",
+      "CHAIN_12_W_F"
+    ]
+  },
+  {
+    "case_id": "DC_2P7",
+    "old_max_step_s": null,
+    "new_max_step_s": null,
+    "old_analysis": "op",
+    "new_analysis": "op",
+    "timeout_s": 900,
+    "baseline_case_id": null,
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP"
+    ]
+  },
+  {
+    "case_id": "DC_3",
+    "old_max_step_s": null,
+    "new_max_step_s": null,
+    "old_analysis": "op",
+    "new_analysis": "op",
+    "timeout_s": 900,
+    "baseline_case_id": null,
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP"
+    ]
+  },
+  {
+    "case_id": "DC_3P2",
+    "old_max_step_s": null,
+    "new_max_step_s": null,
+    "old_analysis": "op",
+    "new_analysis": "op",
+    "timeout_s": 900,
+    "baseline_case_id": null,
+    "depends_on": [
+      "Q1_MOTHER_PROTOCOL",
+      "Q1_MOTHER_HALFSTEP"
+    ]
+  }
+]

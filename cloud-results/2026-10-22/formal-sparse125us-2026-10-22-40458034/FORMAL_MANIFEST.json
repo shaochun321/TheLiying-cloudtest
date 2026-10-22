@@ -1,0 +1,622 @@
+{
+  "candidate_id": "SPARSE_GEAR_125us_original_physics_2026-10-22",
+  "run_id": "formal-sparse125us-2026-10-22-40458034",
+  "prepared_at": "2026-10-22T23:22:39.281389+08:00",
+  "source_software": "/workspace/thermal-g3-qualification/sparse-qualification-2026-10-22-17fb81ea/software/thermal_g3_q1",
+  "source_qualification_commit": "b76e734d52fa65665fc136a55f89a8a8c495fa64",
+  "passed_qualification": {
+    "candidate_id": "SPARSE_GEAR_125us_original_physics_2026-10-22",
+    "numerical_pair_s": [
+      0.000125,
+      6.25e-05
+    ],
+    "baseline_commit": "664866bdafada095112d76c93109c07c9556af8a",
+    "baseline_RAW_sha256": "f62e385ac452b5e33a0a324787ddd949214489de5c1d9d0e85f845d2d38ea203",
+    "halfstep_RAW_sha256": "29fd40781fd1623b67a382c96a464ad1f641571dba531d0e8208fa3b6ee39f5f",
+    "qualification_result": "PASS",
+    "global_starts": 34,
+    "formal_31_authorized": false,
+    "summary_sha256": "29c4a545f5559ee1ff385369794bcbf42f931980df7ac2d90512e2e09745fce2",
+    "completed_at": "2026-10-22T22:12:35.228555+08:00"
+  },
+  "qualified_evidence": [
+    {
+      "case_id": "Q1_MOTHER_PROTOCOL",
+      "scale": "mother_bench",
+      "wall_s": 1532.5475344089991,
+      "raw_sha256": "f62e385ac452b5e33a0a324787ddd949214489de5c1d9d0e85f845d2d38ea203",
+      "binding_path": "/workspace/thermal-g3-qualification/sparse-125us-1800s-2026-10-22-abf2dedc/runs/Q1_MOTHER_PROTOCOL/verdict-binding.json",
+      "binding_sha256": "cf424ed0ba6c71d71c61495a0b6fe7c180930d724854fea720beb60be802221c",
+      "elements": 309,
+      "wall_per_element_s": 4.959700758605175
+    },
+    {
+      "case_id": "Q1_MOTHER_HALFSTEP",
+      "scale": "mother_bench",
+      "wall_s": 2679.750343740001,
+      "raw_sha256": "29fd40781fd1623b67a382c96a464ad1f641571dba531d0e8208fa3b6ee39f5f",
+      "binding_path": "/workspace/thermal-g3-qualification/sparse-62p5us-qualification-2026-10-22-eca7cea1/runs/Q1_MOTHER_HALFSTEP/verdict-binding.json",
+      "binding_sha256": "8e6cfcfc75aa80e933d5558a7c73f1ff52310a153ac6c28b61c1f891f70f91ea",
+      "elements": 309,
+      "wall_per_element_s": 8.672331209514565
+    }
+  ],
+  "source_software_sha256": {
+    "analysis/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "analysis/ekv26_static.py": "e4fe9ac0703a9ea2944eddd7ef2744c976d61db2cddc29514387da7c09d5ab7e",
+    "analysis/input_bounds.json": "50661373a3055e4a65c9ba72b5d0d6dfa9f1f05435cde74c6787e6220721cff8",
+    "analysis/input_bounds.py": "ecea492d1c727be6161ef61a121f7538d8ddcbd86f511b22c8db48e54d4feac1",
+    "analysis/raw_bounds.py": "871e078186b80c50501cb49622545612184040190bc7c41720064660d0dfc2f5",
+    "audit/make_errata_table.py": "fa40cf7c21dd51ca76c3f54c71b27b140614d338d3a81b1b33a2e32c50ecca94",
+    "audit/reaudit_v1_dev.py": "b38a2b0e1a1a534a2422d6d807bd78ad79242a3394f0af841888ec9f2a507b2c",
+    "config.py": "88e05268899668035ad934d36983e8f93b3829a0c553940dcca57a33190e88b0",
+    "models/c05_ekv26_typ.lib": "f6acb2379baacfdb5f53cfc30015f3b7c5690bb1118a5e32a678b76c0b739634",
+    "netlists/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "netlists/bench_mother.py": "7592338d0c61885c6658e61a62ea60d9befcf5b3480b279bee3299ab88e4d563",
+    "netlists/build.py": "399a4a315db623fa13070206f599e57793fde95bc327bb69ce92ff369ed1b2fc",
+    "netlists/build_thermal_g3.py": "eb38c797cf1dbc9446172d4c7fb8b17b48f0a66f8c876a263c6c472b8b42ade5",
+    "netlists/bundle_physical.py": "f61a47ce2add2b38e6daf9e44507853a1ed1fb8a708df8a5a09f4e11cf1916f4",
+    "netlists/ledger_plan.py": "81fac8428fb3a63ce54c5cbc7b22a8c911ec394277104b2b3d5b423b59b85729",
+    "netlists/neuron_mother.py": "58dff803a651914c58158c13a143b517c642c16e857b0674a88946ff44f81634",
+    "netlists/neuron_nrc.py": "dbedcaf0b2a9d8cace6eb29fef5795d341e6998281fbfd8e90d780795c2bea6c",
+    "netlists/occurrence_port.py": "183cb02a7fda4b056712789b841f6d9f03ccf84d1c0b046b0f6ce57c235038f7",
+    "netlists/params.py": "09a1a34c8990e5371b7518f112749ce692bbbc57e465d4aa48e5aa0aaed821b0",
+    "netlists/spatial_graph.py": "15452f5003e76a70e965fc24cbd75b9e8f24e2051ac5715c601d06f9245313ed",
+    "observers/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "observers/criteria_q1r.py": "176477e00475211dcc75ddfd24f6b5a71a37cd781b231dd21a49e0a64541f4f2",
+    "observers/halfstep_compare.py": "2186a431b692eefcfdd56509562963305cd2869777702e5115cf2a3384ee25b6",
+    "observers/judges.py": "bd91cf6a1c12ba8c38fc126719c43789c9f3ec0e0ec1bb96bdbd5906024d28f7",
+    "observers/ledger_q1r.py": "3b0bf8cf8a3eeedfde6511ec846c53e5aeb2a752ea51d3cbe6bfd442de0d2d9c",
+    "observers/observers_q1r.py": "4fc3d38ca66d62fcd2eda7761d81ea8da6963dad0c01bd78764eb53127af7a25",
+    "observers/support_q1r.py": "f80934294d38fd4cebef6e95bc56d17cb08ddfc94924519f8d7a794ae4aead5d",
+    "prereg/backend_registration.json": "1b99694fba68c5c9562042a5a5ce38766e7bd4910efb2a8150a6b8f8e0c10e87",
+    "prereg/cases_q1r.json": "148a652db1c61c265222982712f123b9d6c5fcba4b9a2b870cf73c852d24f3a7",
+    "prereg/host_environment_check_2026-10-20.json": "1b9eb392600dab3cd4657970ab995eb212d41dcd0683da242d53b56ad968b4b0",
+    "prereg/host_storage_check_2026-10-20.json": "d0468aace5864e55c6364b556674d556822368fa3dbe5cd23eba63cb2b3bea33",
+    "prereg/inputs/thermal_g3_v1.1_task_table_2026-10-08.json": "8c064b365d4039e29d93cd47daffa7b7dc1117ce2f8c7bce6998b7697d9baf70",
+    "prereg/make_cases.py": "ba4ffe5fa0d96fa942d4679c9530edd6a9b8858f591860a7df1bb859be35aa61",
+    "prereg/make_protocol.py": "c0d21e821fb610b0d56e61c4f6743c91eae5e4cdeed142142f033305e7ab6a21",
+    "prereg/protocol_q1r_joint.json": "d0fc13f378949b7d6885bd7ca997abe7d31c6e0f2e691ac739b22d25132d5fb9",
+    "prereg/source_manifest.json": "6466083a4cef1d9a719986a1ebe2bb05d45ce6f29891f8e460f4da1a0bae7c06",
+    "prereg/source_revision_2026-10-20.json": "967bf2e03b8b2dddc076fee6d1c5799e47785c42456c862c0f7fc5fd36857cea",
+    "runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtime/coordinator.py": "f9461c2a7e0c09b04cd13cb8322d3d21e3a3f03352f2b7b35d83954168b999d4",
+    "runtime/decks.py": "5c17b528bd3b4feb3c5a7973d56c2436e5edac7cad5e4df0a81590bcfc6f171f",
+    "runtime/supervisor.py": "c8a07650c88bf072b852fff0805ab847ef986a102e2ebb9280b9f94a1e8c1f69",
+    "solver_adapter/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "solver_adapter/read_raw.py": "97c1f437d4cb8564a15747b641398ff95fe5005a4e7aab5fe7943210e8a0d38a",
+    "solver_adapter/read_raw_mmap.py": "b1397bd07835a9115647b575baa89681bc8e39faaa4602ea8c93c581bbbc803e",
+    "tests/fake_ngspice.py": "882fce28acad7d151513698c040583a292dc22c0fc7a9407e708cd6079f4f758",
+    "tests/synth_raw.py": "73bce511d586cc59c37d6f19bba21e3b6a022627367edd809c5b2cb9fc2fabde",
+    "tools/check_cloud_package.py": "08fd1b20bc0b901d54fb4f329145e9010fa7c1f5e5940e580c58c2e770b0b424",
+    "tools/make_cloud_package.py": "f43c2a410818864c39eb762e5eb1ee29c0d6bd40f683bcd89ed4cb512b027751",
+    "tools/register_backend.py": "5969a058b9840ee3ed8d5425b77145dc690b07ca0fca79b4c3d85eece3910ec0",
+    "tools/render_report.py": "565c15a4d37217f002dbe0b2417c22b8ad2d09fb76d91af1200fe2ffb51c8c7f",
+    "tools/selfcheck_all.py": "adc2b180207a0429fb9b7c42420f47a379b9fc77222e905e4a243d3a777f4937",
+    "tools/source_manifest.py": "c020c40b2ddcc0d0fbb9ad1e5c6ff6b9f91e50541e7f1a4c4d1ed0389ef8e26e",
+    "tools/static_check.py": "b203794843881b2c2a4b589d7017070c4db2df127f002533e4c25dd42027e705",
+    "tools/write_freeze.py": "5148c79c4a157d2ed55cec6dcd83aa30d97697d2a8453c2d963c2f1fd3e6b771"
+  },
+  "backend": {
+    "ngspice": {
+      "path": "/workspace/thermal-g3-env/host/native/bin/ngspice",
+      "sha256": "37d80c673bc4c03904ed4434bb3aa9aecd099ecfaeb66b86730a905e8c76ed89"
+    },
+    "osdi": {
+      "path": "/workspace/thermal-g3-env/host/native/models/ekv26_linux.osdi",
+      "sha256": "7c07ae3728941189b77bf0ecfca5ebe56473d01eedc6ea59c46cc32bfdb9a43f"
+    }
+  },
+  "model_card": {
+    "path": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/inputs/c05_ekv26_typ.lib",
+    "sha256": "f6acb2379baacfdb5f53cfc30015f3b7c5690bb1118a5e32a678b76c0b739634"
+  },
+  "spice_scripts": "/workspace/thermal-g3-env/spice-scripts",
+  "cases": {
+    "G0_W": {
+      "directory": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/G0_W",
+      "plan_sha256": "08149f684d25999c9b428d894a0590c932a9b9fc1cf2e8ad82bafe3c2daff78e",
+      "deck_sha256": "6be115c2ab095b375eb8cc1cbb0edc1c12845301503e532dfe07259a3abd93d6",
+      "elements": 937,
+      "save_vectors": 55,
+      "depends_on": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP"
+      ],
+      "baseline_case_id": null,
+      "analysis": "tran 0.001 64.8 0 0.000125",
+      "timeout_s": 2700
+    },
+    "G0_C": {
+      "directory": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/G0_C",
+      "plan_sha256": "6f316f5e0edf3647d0bbba29a01ecd907fce07f4d467dbfbab258ddde1063a24",
+      "deck_sha256": "975b51eaf2047d5b5f0c080291a67673f5e2984793f0b65a0160e6d45bfd2e53",
+      "elements": 937,
+      "save_vectors": 55,
+      "depends_on": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "G0_W"
+      ],
+      "baseline_case_id": null,
+      "analysis": "tran 0.001 64.8 0 0.000125",
+      "timeout_s": 2700
+    },
+    "G0_CUT_K1": {
+      "directory": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/G0_CUT_K1",
+      "plan_sha256": "dd12d652ce87b9c8f68b0381487fca1c700b2e99bc2c6ad06c98ab0fb227039d",
+      "deck_sha256": "f7b75e156e157060d61b53fee36e93cf6b0dfd821f54567022dcf0ad0519d182",
+      "elements": 939,
+      "save_vectors": 55,
+      "depends_on": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "G0_W"
+      ],
+      "baseline_case_id": "G0_W",
+      "analysis": "tran 0.001 64.8 0 0.000125",
+      "timeout_s": 2700
+    },
+    "G0_CUT_K10": {
+      "directory": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/G0_CUT_K10",
+      "plan_sha256": "8edf1c128868b6faed71336c464eb7652cee63c89f733b27407e0efbc85d2690",
+      "deck_sha256": "19ce07a69d1e851bccf366b6c5e1c32884a0da1f24fca6780801d018c1261f67",
+      "elements": 939,
+      "save_vectors": 55,
+      "depends_on": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "G0_W"
+      ],
+      "baseline_case_id": "G0_W",
+      "analysis": "tran 0.001 64.8 0 0.000125",
+      "timeout_s": 2700
+    },
+    "CHAIN_12_W_F": {
+      "directory": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/CHAIN_12_W_F",
+      "plan_sha256": "b5b3ea164c9dd0b3b9f195bcab756d86ce52c0492d8a95a32883c6ecdcfc7ce5",
+      "deck_sha256": "b244a7a7c2b01708ca31cabc545c6c73a53c6b00c5b53fe73569169caca42602",
+      "elements": 2227,
+      "save_vectors": 178,
+      "depends_on": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP"
+      ],
+      "baseline_case_id": null,
+      "analysis": "tran 0.001 39.2 0 0.000125",
+      "timeout_s": 5400
+    },
+    "CHAIN_12_W_R": {
+      "directory": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/CHAIN_12_W_R",
+      "plan_sha256": "626606e6abca399f1384738f47005476490865f71cbd570436b3166b7bc70ea1",
+      "deck_sha256": "c50c2a8ba5f9aa6572ee7f8cb04d1d79fc23f21b6ade301ccdd4889780b46dcf",
+      "elements": 2227,
+      "save_vectors": 178,
+      "depends_on": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": null,
+      "analysis": "tran 0.001 40.7 0 0.000125",
+      "timeout_s": 5400
+    },
+    "CHAIN_12_C_F": {
+      "directory": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/CHAIN_12_C_F",
+      "plan_sha256": "0dc7cf56cb5ed789c6c2eb8fb313e0d049c311c822eae6204754b5d70cadd6ae",
+      "deck_sha256": "715ed5358b20f55d23de98a8384790bfc85779c5036f53b6118a33e91a66ffe5",
+      "elements": 2227,
+      "save_vectors": 178,
+      "depends_on": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": null,
+      "analysis": "tran 0.001 39.2 0 0.000125",
+      "timeout_s": 5400
+    },
+    "CHAIN_12_C_R": {
+      "directory": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/CHAIN_12_C_R",
+      "plan_sha256": "f02358e5a11a1551dde42b761859701972adf58e38787451b0303505c900f892",
+      "deck_sha256": "aabd9581422b73dbcfbf020ec00be9fd989e1867d988f1d1e3009e92091011d8",
+      "elements": 2227,
+      "save_vectors": 178,
+      "depends_on": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": null,
+      "analysis": "tran 0.001 40.7 0 0.000125",
+      "timeout_s": 5400
+    },
+    "CHAIN_23_W_F": {
+      "directory": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/CHAIN_23_W_F",
+      "plan_sha256": "bc4b884dd9f583c86d3a5e2527aa7e306af568e57dc5001c5a4a9faeb420a402",
+      "deck_sha256": "ce8455dc68b899077c3b35b9211ddf567782eed9dd0e6d2b5eff857dd1405ef7",
+      "elements": 2227,
+      "save_vectors": 178,
+      "depends_on": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": null,
+      "analysis": "tran 0.001 39.2 0 0.000125",
+      "timeout_s": 5400
+    },
+    "CHAIN_23_W_R": {
+      "directory": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/CHAIN_23_W_R",
+      "plan_sha256": "6eefbc3fb984a26ccf8021b9229ebd58e22cb78462aa310fc1a53b05c358dc18",
+      "deck_sha256": "5555a4ca4429a0ea29d154753d454ac292688b3ef110c58e469850a66b12e671",
+      "elements": 2227,
+      "save_vectors": 178,
+      "depends_on": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": null,
+      "analysis": "tran 0.001 40.7 0 0.000125",
+      "timeout_s": 5400
+    },
+    "CHAIN_23_C_F": {
+      "directory": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/CHAIN_23_C_F",
+      "plan_sha256": "72220073d6a518249e550fb151b8d81f901ca646145ef4a40751ea15122ab9f0",
+      "deck_sha256": "2e2d58af2252dd5b45db4d8b0d35e8ad1f14e31e84fb93bf9e8b180ba4a661ec",
+      "elements": 2227,
+      "save_vectors": 178,
+      "depends_on": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": null,
+      "analysis": "tran 0.001 39.2 0 0.000125",
+      "timeout_s": 5400
+    },
+    "CHAIN_23_C_R": {
+      "directory": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/CHAIN_23_C_R",
+      "plan_sha256": "21be7199e9081be10268858d9772bc1d060a2c3895708e242d5bda1782655c14",
+      "deck_sha256": "93777d513bdd51d147d5b5514d9879f1a536e1e1c813755f2224c7515703ec58",
+      "elements": 2227,
+      "save_vectors": 178,
+      "depends_on": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": null,
+      "analysis": "tran 0.001 40.7 0 0.000125",
+      "timeout_s": 5400
+    },
+    "CHAIN_34_W_F": {
+      "directory": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/CHAIN_34_W_F",
+      "plan_sha256": "979925e02d99a32bcdf0643c7f042690bcd536c35d354c56569296b4402c570f",
+      "deck_sha256": "d6865d36e0ec4e9434835664a91dd90ff06fdce6d28874b97b1af60108087c40",
+      "elements": 2227,
+      "save_vectors": 178,
+      "depends_on": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": null,
+      "analysis": "tran 0.001 39.2 0 0.000125",
+      "timeout_s": 5400
+    },
+    "CHAIN_34_W_R": {
+      "directory": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/CHAIN_34_W_R",
+      "plan_sha256": "5bc538358356c204f9ab849b8078965faaf822bfb6d26e3cca083f055a9b188c",
+      "deck_sha256": "5f0932cada2d22f4adb75ff8110534600cc91ac533eaf0101306cfc59bbc4b41",
+      "elements": 2227,
+      "save_vectors": 178,
+      "depends_on": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": null,
+      "analysis": "tran 0.001 40.7 0 0.000125",
+      "timeout_s": 5400
+    },
+    "CHAIN_34_C_F": {
+      "directory": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/CHAIN_34_C_F",
+      "plan_sha256": "022bddaa73d58115f91d42099619a5aaa4d30cbf7840cd9aaf0b4433495735ea",
+      "deck_sha256": "82099e64cd5a9e2ec4a13f733f6572a6f322e49824f703cb64dbd9efb737b1fd",
+      "elements": 2227,
+      "save_vectors": 178,
+      "depends_on": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": null,
+      "analysis": "tran 0.001 39.2 0 0.000125",
+      "timeout_s": 5400
+    },
+    "CHAIN_34_C_R": {
+      "directory": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/CHAIN_34_C_R",
+      "plan_sha256": "e745920c1e60a649f33db5567a3eb0a7b1f456bde3fea176da43078d4cef5f4b",
+      "deck_sha256": "0f46b9544439f76114edf6597d25f945a849a407ee78b4e940c2d1cac877c9c9",
+      "elements": 2227,
+      "save_vectors": 178,
+      "depends_on": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": null,
+      "analysis": "tran 0.001 40.7 0 0.000125",
+      "timeout_s": 5400
+    },
+    "STRUCT_THETA_PORT_CUT": {
+      "directory": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/STRUCT_THETA_PORT_CUT",
+      "plan_sha256": "0fa57f8e180cc269fb6aba76d139ae3a4204a3806d6759e438650465b63696dc",
+      "deck_sha256": "a5a1c94130460af5c9877f050852a26d9f4d2a37983da05b67d08c6604f52b45",
+      "elements": 2229,
+      "save_vectors": 178,
+      "depends_on": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": "CHAIN_12_W_F",
+      "analysis": "tran 0.001 39.2 0 0.000125",
+      "timeout_s": 5400
+    },
+    "STRUCT_SIGMA_PORT_CUT": {
+      "directory": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/STRUCT_SIGMA_PORT_CUT",
+      "plan_sha256": "3b8ad40c3944743e82893d498ff66d5ed20d900716f428d518b77c9a0b439d27",
+      "deck_sha256": "9e58bf6e3b212c3c186955c7d94bd5f876fdce0b5e2e66b1417dc8fab53ae925",
+      "elements": 2229,
+      "save_vectors": 178,
+      "depends_on": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": "CHAIN_12_W_F",
+      "analysis": "tran 0.001 39.2 0 0.000125",
+      "timeout_s": 5400
+    },
+    "STRUCT_CDIR_HISTORY_BLEED": {
+      "directory": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/STRUCT_CDIR_HISTORY_BLEED",
+      "plan_sha256": "2433d61c71b859e87725e407ba8383f70f6d65ed776124a71a4542c5dd7f635c",
+      "deck_sha256": "290528510c2030074544f88656be82cd288f3b7745cd3a12b7d5bd57e7c1a730",
+      "elements": 2230,
+      "save_vectors": 178,
+      "depends_on": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": "CHAIN_12_W_F",
+      "analysis": "tran 0.001 39.2 0 0.000125",
+      "timeout_s": 5400
+    },
+    "STRUCT_REAL_SIGMA_SWAP": {
+      "directory": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/STRUCT_REAL_SIGMA_SWAP",
+      "plan_sha256": "bb6c5839405e2668ce083c67dcb3a757f99abe72cdeb4ce2cd92a7e417fe55da",
+      "deck_sha256": "b11145cdf4f37ed4d7348a44488bd63cbc3fff148c65ad5617a8dec179ead563",
+      "elements": 2227,
+      "save_vectors": 178,
+      "depends_on": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": "CHAIN_12_W_F",
+      "analysis": "tran 0.001 39.2 0 0.000125",
+      "timeout_s": 5400
+    },
+    "INVALID_SYNC": {
+      "directory": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/INVALID_SYNC",
+      "plan_sha256": "12694a2fbab3c646e5075a1f728ece2104b3cb8769d6aeba7aa1cd5b0ba1bc75",
+      "deck_sha256": "3ba7ebd1fa6df60ff2d05556e9fcace037f4d26eff3a1bf9a0bea08e81e7fcff",
+      "elements": 2227,
+      "save_vectors": 178,
+      "depends_on": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": null,
+      "analysis": "tran 0.001 37.7 0 0.000125",
+      "timeout_s": 5400
+    },
+    "INVALID_STALE": {
+      "directory": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/INVALID_STALE",
+      "plan_sha256": "85edc7da7c1173e050ef9dda8a1e27c473315351bb1fafa2c0a73cc14bc7a67e",
+      "deck_sha256": "d56a6c55d484b2880e8c62a2d50fa729937489e93a8017e3b698da6c83108cf5",
+      "elements": 2227,
+      "save_vectors": 178,
+      "depends_on": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": null,
+      "analysis": "tran 0.001 56.5 0 0.000125",
+      "timeout_s": 5400
+    },
+    "FULL_NOM": {
+      "directory": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/FULL_NOM",
+      "plan_sha256": "004969139ce978fa22f28c28b1e422aa7b0a81f2607f554eb80846ca182dadaa",
+      "deck_sha256": "d477f0aaad79723acc95173e02ea42c255ae8ccccd528defc92c0f20f98760ba",
+      "elements": 9197,
+      "save_vectors": 695,
+      "depends_on": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F",
+        "STRUCT_THETA_PORT_CUT"
+      ],
+      "baseline_case_id": null,
+      "analysis": "tran 0.001 83.2 0 0.000125",
+      "timeout_s": 14400
+    },
+    "FULL_REAL_MIRROR": {
+      "directory": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/FULL_REAL_MIRROR",
+      "plan_sha256": "bf4aa8627db0880ee6a051c9a0c5e3ef799ddc83ee6e44c87841ae2defa58a50",
+      "deck_sha256": "4866c98c9643c39cce753224e90b88530eee8e3d873762efee442b8a8b51792e",
+      "elements": 9197,
+      "save_vectors": 695,
+      "depends_on": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "FULL_NOM"
+      ],
+      "baseline_case_id": "FULL_NOM",
+      "analysis": "tran 0.001 83.2 0 0.000125",
+      "timeout_s": 14400
+    },
+    "FULL_SPACE_CUT": {
+      "directory": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/FULL_SPACE_CUT",
+      "plan_sha256": "4843d355017635994e70d382596bf6e8c262870216b76db331b81415756b3374",
+      "deck_sha256": "4bd0d34c45950a275344347585b28762dba2606e92a6ab9a982f66454bc7ddae",
+      "elements": 9195,
+      "save_vectors": 695,
+      "depends_on": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "FULL_NOM"
+      ],
+      "baseline_case_id": "FULL_NOM",
+      "analysis": "tran 0.001 83.2 0 0.000125",
+      "timeout_s": 14400
+    },
+    "FULL_NUM_HALFSTEP": {
+      "directory": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/FULL_NUM_HALFSTEP",
+      "plan_sha256": "587cdeb73cd032cf1689243bb4eff364f568ac6bd3de746d0a36c2283f7613d3",
+      "deck_sha256": "87b43b01cd8f969db6ce7f21552c3391abf0a26ad855a0b78ac34e2700c3de06",
+      "elements": 9197,
+      "save_vectors": 695,
+      "depends_on": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "FULL_NOM"
+      ],
+      "baseline_case_id": "FULL_NOM",
+      "analysis": "tran 0.001 83.2 0 0.0000625",
+      "timeout_s": 14400
+    },
+    "NUM_G0_HALFSTEP": {
+      "directory": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/NUM_G0_HALFSTEP",
+      "plan_sha256": "24962fa38231137989ab92cc47e799d43c4d46bbbe1e368e66214cb31daa0610",
+      "deck_sha256": "c60a8e400a2241902cb267b142e81cf278253ef4ec31afd133e6dc4fb49a6ce5",
+      "elements": 937,
+      "save_vectors": 55,
+      "depends_on": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "G0_W"
+      ],
+      "baseline_case_id": "G0_W",
+      "analysis": "tran 0.001 64.8 0 0.0000625",
+      "timeout_s": 2700
+    },
+    "NUM_CHAIN_HALFSTEP": {
+      "directory": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/NUM_CHAIN_HALFSTEP",
+      "plan_sha256": "be800296322ddbc7b242711d6105b0d3662599a00905bb47df8c54d41d2d4dfd",
+      "deck_sha256": "65a7a2a70013fca6a6540c86251b600f1aa0cb886bc8f72d3972d5ba91d19f71",
+      "elements": 2227,
+      "save_vectors": 178,
+      "depends_on": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": "CHAIN_12_W_F",
+      "analysis": "tran 0.001 39.2 0 0.0000625",
+      "timeout_s": 5400
+    },
+    "DC_2P7": {
+      "directory": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/DC_2P7",
+      "plan_sha256": "88e5894091aa4c303db44e84fee60fd08eafcebfb1819afbcfece73d510d6608",
+      "deck_sha256": "b47b5468f3f672d7b1543786e6f7f77b7016eac0ce1478072d3128df28da61d4",
+      "elements": 9197,
+      "save_vectors": 2768,
+      "depends_on": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP"
+      ],
+      "baseline_case_id": null,
+      "analysis": "op",
+      "timeout_s": 900
+    },
+    "DC_3": {
+      "directory": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/DC_3",
+      "plan_sha256": "681a9c7a7afeb5dffae0c8ecc570ae1088aa1971041350907d034a338d75a1b5",
+      "deck_sha256": "a5f94f2e896d58ec90b6bf04781eeee155cc4fab1622152b5bf4ee3337e95d6b",
+      "elements": 9197,
+      "save_vectors": 2768,
+      "depends_on": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP"
+      ],
+      "baseline_case_id": null,
+      "analysis": "op",
+      "timeout_s": 900
+    },
+    "DC_3P2": {
+      "directory": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/DC_3P2",
+      "plan_sha256": "b7428b0a5025c8bb80a01a514754c59243f33c89117427c12f8e934b34f7552a",
+      "deck_sha256": "2184235a50cb04149f486e44b3130763fca67e29c2860bfec34e9628d740ad00",
+      "elements": 9197,
+      "save_vectors": 2768,
+      "depends_on": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP"
+      ],
+      "baseline_case_id": null,
+      "analysis": "op",
+      "timeout_s": 900
+    }
+  },
+  "case_sizes": {
+    "Q1_MOTHER_PROTOCOL": 309,
+    "Q1_MOTHER_HALFSTEP": 309,
+    "G0_W": 937,
+    "G0_C": 937,
+    "G0_CUT_K1": 939,
+    "G0_CUT_K10": 939,
+    "CHAIN_12_W_F": 2227,
+    "CHAIN_12_W_R": 2227,
+    "CHAIN_12_C_F": 2227,
+    "CHAIN_12_C_R": 2227,
+    "CHAIN_23_W_F": 2227,
+    "CHAIN_23_W_R": 2227,
+    "CHAIN_23_C_F": 2227,
+    "CHAIN_23_C_R": 2227,
+    "CHAIN_34_W_F": 2227,
+    "CHAIN_34_W_R": 2227,
+    "CHAIN_34_C_F": 2227,
+    "CHAIN_34_C_R": 2227,
+    "STRUCT_THETA_PORT_CUT": 2229,
+    "STRUCT_SIGMA_PORT_CUT": 2229,
+    "STRUCT_CDIR_HISTORY_BLEED": 2230,
+    "STRUCT_REAL_SIGMA_SWAP": 2227,
+    "INVALID_SYNC": 2227,
+    "INVALID_STALE": 2227,
+    "FULL_NOM": 9197,
+    "FULL_REAL_MIRROR": 9197,
+    "FULL_SPACE_CUT": 9195,
+    "FULL_NUM_HALFSTEP": 9197,
+    "NUM_G0_HALFSTEP": 937,
+    "NUM_CHAIN_HALFSTEP": 2227,
+    "DC_2P7": 9197,
+    "DC_3": 9197,
+    "DC_3P2": 9197
+  },
+  "global_starts_before": 34,
+  "global_start_cap": 65,
+  "max_formal_starts": 31,
+  "formal_phase_wall_cap_s": 108000,
+  "global_wall_cap_s": 172800,
+  "automatic_retries": 0,
+  "old_freezes_permissions_STOPPED_ledgers": "No changes; this is a separate candidate formal contract.",
+  "cost_gate_preserved": true,
+  "cost_gate_report_sha256": "025e33d0809a3299ee932fbc8a1304e94017ec601d79157741e0d29fb2a5f473"
+}

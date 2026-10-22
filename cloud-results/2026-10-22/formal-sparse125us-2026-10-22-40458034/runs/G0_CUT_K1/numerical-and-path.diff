@@ -1,0 +1,17 @@
+--- original_registered_KLU
++++ candidate_SPARSE
+@@ -953,12 +953,12 @@
+ cpar_vrest vrest 0 5e-14
+ cpar_vthe vthe 0 5e-14
+ cpar_vthr vthr 0 5e-14
+-.options klu method=gear reltol=1e-5 abstol=1e-16
++.options sparse method=gear reltol=1e-5 abstol=1e-16
+ .save v(vdd) v(vrest) v(vthe) v(vthr) v(por_ok) v(s1_s) v(s1_m) v(gw1_e1_q) v(gw1_e2_q) v(gw1_e3_q) v(gw1_e4_q) v(gw1_e5_q) v(gw1_e6_q) v(gw1_e7_q) v(gw1_e8_q) v(gw1_e9_q) v(gw1_e10_q) v(gw1_b1_q) v(gw1_b2_q) v(gw1_b3_q) v(gw1_b4_q) v(gw1_b5_q) v(gw1_b6_q) v(gw1_b7_q) v(gw1_b8_q) v(gw1_b9_q) v(gw1_b10_q) v(gw1_and_g8) v(gw1_gb) v(gw1_col_q) v(gw1_col_qb) v(gw1_col_vm) v(gw1_col_h) v(gw1_col_rec) v(gw1_col_vmd) v(gw1_op_at) v(gw1_op_aq) v(gw1_op_p) v(gw1_col_vms) i(va_cgw1_col_cm_p) i(va_rgw1_col_rm_p) i(va_ngw1_col_km1_g) i(va_ngw1_col_dis_d) i(va_ngw1_col_sh1_d) i(va_ngw1_col_porm_d) i(va_ngw1_cin_cp_d) i(va_cpar_gw1_col_vm_p) i(va_ngw1_col_dis_s) i(va_rgw1_col_rdis_p) i(va_cpar_gw1_col_vmd_p) i(va_ngw1_col_sh1_s) i(va_ngw1_col_sh2_d) i(va_cpar_gw1_col_vms_p) v(vsrc) i(vsrc)
+ .control
+ pre_osdi /workspace/thermal-g3-env/host/native/models/ekv26_linux.osdi
+ set filetype=binary
+-tran 0.001 64.8 0 0.0005
++tran 0.001 64.8 0 0.000125
+ write /workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/G0_CUT_K1/G0_CUT_K1.raw
+ quit
+ .endc

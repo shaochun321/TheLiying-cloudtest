@@ -1,0 +1,2335 @@
+* THERMAL-G3-Q1-R CHAIN_12_W_F
+.include /workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/inputs/c05_ekv26_typ.lib
+vsrc vsrc 0 PWL(0 0 0.02 3.0)
+rint vsrc vdd 10
+cdec vdd 0 1e-05
+rvrestt vdd vrest 2000
+rvrestb vrest 0 1000
+cvrestc vrest 0 1e-05
+rvthet vdd vthe 2000
+rvtheb vthe 0 1800
+cvthec vthe 0 1e-05
+rvthrt vdd vthr 2400
+rvthrb vthr 0 1500
+cvthrc vthr 0 1e-05
+rvmidt vdd vmid 2000
+rvmidb vmid 0 2000
+cvmidc vmid 0 1e-05
+rporr vdd porc 2.2e+06
+cporc porc 0 1e-06
+rporra porc porx 1e+06
+rporrf por_ok porx 4e+06
+npori1p por_hold porx vdd vsrc pch W=2.4e-06 L=5e-07
+npori1n por_hold porx 0 0 nch W=1.2e-06 L=5e-07
+npori2p por_ok por_hold vdd vsrc pch W=2.4e-06 L=5e-07
+npori2n por_ok por_hold 0 0 nch W=1.2e-06 L=5e-07
+riref vdd iref_n 2.2e+06
+nirefd iref_n iref_n 0 0 nch W=4e-06 L=4e-06
+ristep vdd istep_n 5.6e+07
+nistepd istep_n istep_n 0 0 nch W=4e-06 L=4e-06
+nirefm irefp_n iref_n 0 0 nch W=4e-06 L=4e-06
+nirefpd irefp_n irefp_n vdd vsrc pch W=4e-06 L=4e-06
+rilim vdd ilim_n 1.85e+06
+nilimd ilim_n ilim_n 0 0 nch W=4e-06 L=4e-06
+nilimm ilimp_n ilim_n 0 0 nch W=4e-06 L=4e-06
+nilimpd ilimp_n ilimp_n vdd vsrc pch W=4e-06 L=4e-06
+bs1_te s1_te 0 V=(18.5+3*(1/(1+exp(-(time-10.6)/0.05))-1/(1+exp(-(time-17.6)/0.05))))
+vqes1 s1_te s1_tea DC 0
+rs1_ge s1_tea s1_tp 500
+cs1_cp s1_tp 0 0.01
+rs1_gm s1_tp s1_tn 1000
+cs1_cn s1_tn 0 0.0001
+bs1_ntc vdd s1_s I=V(vdd,s1_s)/(100000*exp(4250*(1/(298.15+V(s1_tn))-1/298.15)))
+bs1_heat 0 s1_th I=V(vdd,s1_s)*V(vdd,s1_s)/(100000*exp(4250*(1/(298.15+V(s1_tn))-1/298.15)))
+vqhs1 s1_th s1_tn DC 0
+rs1_rs s1_s 0 100000
+rs1_ravg s1_s s1_m 2e+06
+cs1_cavg s1_m 0 1e-06
+ns1_mpor s1_m por_ok s1_s vsrc pch W=4e-06 L=1e-06
+rs1_ab vdd s1_anb 750000
+ns1_amb s1_anb s1_anb 0 0 nch W=4e-06 L=4e-06
+ns1_amt s1_atl s1_anb 0 0 nch W=4e-06 L=4e-06
+ns1_am1 s1_da s1_s s1_atl 0 nch W=1e-06 L=4e-06
+ns1_am2 s1_db s1_m s1_atl 0 nch W=1e-06 L=4e-06
+rs1_ara vdd s1_da 680000
+rs1_arb vdd s1_db 680000
+ns1_tt s1_tl ilim_n 0 0 nch W=4e-06 L=4e-06
+ns1_ta s1_ya s1_db s1_tl 0 nch W=1e-05 L=2e-06
+ns1_tb s1_yb s1_da s1_tl 0 nch W=1e-05 L=2e-06
+ns1_la s1_ya s1_ya vdd vsrc pch W=4e-06 L=4e-06
+ns1_lb s1_yb s1_yb vdd vsrc pch W=4e-06 L=4e-06
+ns1_ca s1_za s1_ya vdd vsrc pch W=4e-06 L=4e-06
+ns1_na s1_za s1_za 0 0 nch W=4e-06 L=4e-06
+ns1_cb s1_zb s1_yb vdd vsrc pch W=4e-06 L=4e-06
+ns1_nb s1_zb s1_zb 0 0 nch W=4e-06 L=4e-06
+bs2_te s2_te 0 V=(18.5+3*(1/(1+exp(-(time-12.1)/0.05))-1/(1+exp(-(time-19.1)/0.05))))
+vqes2 s2_te s2_tea DC 0
+rs2_ge s2_tea s2_tp 500
+cs2_cp s2_tp 0 0.01
+rs2_gm s2_tp s2_tn 1000
+cs2_cn s2_tn 0 0.0001
+bs2_ntc vdd s2_s I=V(vdd,s2_s)/(100000*exp(4250*(1/(298.15+V(s2_tn))-1/298.15)))
+bs2_heat 0 s2_th I=V(vdd,s2_s)*V(vdd,s2_s)/(100000*exp(4250*(1/(298.15+V(s2_tn))-1/298.15)))
+vqhs2 s2_th s2_tn DC 0
+rs2_rs s2_s 0 100000
+rs2_ravg s2_s s2_m 2e+06
+cs2_cavg s2_m 0 1e-06
+ns2_mpor s2_m por_ok s2_s vsrc pch W=4e-06 L=1e-06
+rs2_ab vdd s2_anb 750000
+ns2_amb s2_anb s2_anb 0 0 nch W=4e-06 L=4e-06
+ns2_amt s2_atl s2_anb 0 0 nch W=4e-06 L=4e-06
+ns2_am1 s2_da s2_s s2_atl 0 nch W=1e-06 L=4e-06
+ns2_am2 s2_db s2_m s2_atl 0 nch W=1e-06 L=4e-06
+rs2_ara vdd s2_da 680000
+rs2_arb vdd s2_db 680000
+ns2_tt s2_tl ilim_n 0 0 nch W=4e-06 L=4e-06
+ns2_ta s2_ya s2_db s2_tl 0 nch W=1e-05 L=2e-06
+ns2_tb s2_yb s2_da s2_tl 0 nch W=1e-05 L=2e-06
+ns2_la s2_ya s2_ya vdd vsrc pch W=4e-06 L=4e-06
+ns2_lb s2_yb s2_yb vdd vsrc pch W=4e-06 L=4e-06
+ns2_ca s2_za s2_ya vdd vsrc pch W=4e-06 L=4e-06
+ns2_na s2_za s2_za 0 0 nch W=4e-06 L=4e-06
+ns2_cb s2_zb s2_yb vdd vsrc pch W=4e-06 L=4e-06
+ns2_nb s2_zb s2_zb 0 0 nch W=4e-06 L=4e-06
+bs3_te s3_te 0 V=18.5
+vqes3 s3_te s3_tea DC 0
+rs3_ge s3_tea s3_tp 500
+cs3_cp s3_tp 0 0.01
+rs3_gm s3_tp s3_tn 1000
+cs3_cn s3_tn 0 0.0001
+bs3_ntc vdd s3_s I=V(vdd,s3_s)/(100000*exp(4250*(1/(298.15+V(s3_tn))-1/298.15)))
+bs3_heat 0 s3_th I=V(vdd,s3_s)*V(vdd,s3_s)/(100000*exp(4250*(1/(298.15+V(s3_tn))-1/298.15)))
+vqhs3 s3_th s3_tn DC 0
+rs3_rs s3_s 0 100000
+rs3_ravg s3_s s3_m 2e+06
+cs3_cavg s3_m 0 1e-06
+ns3_mpor s3_m por_ok s3_s vsrc pch W=4e-06 L=1e-06
+rs3_ab vdd s3_anb 750000
+ns3_amb s3_anb s3_anb 0 0 nch W=4e-06 L=4e-06
+ns3_amt s3_atl s3_anb 0 0 nch W=4e-06 L=4e-06
+ns3_am1 s3_da s3_s s3_atl 0 nch W=1e-06 L=4e-06
+ns3_am2 s3_db s3_m s3_atl 0 nch W=1e-06 L=4e-06
+rs3_ara vdd s3_da 680000
+rs3_arb vdd s3_db 680000
+ns3_tt s3_tl ilim_n 0 0 nch W=4e-06 L=4e-06
+ns3_ta s3_ya s3_db s3_tl 0 nch W=1e-05 L=2e-06
+ns3_tb s3_yb s3_da s3_tl 0 nch W=1e-05 L=2e-06
+ns3_la s3_ya s3_ya vdd vsrc pch W=4e-06 L=4e-06
+ns3_lb s3_yb s3_yb vdd vsrc pch W=4e-06 L=4e-06
+ns3_ca s3_za s3_ya vdd vsrc pch W=4e-06 L=4e-06
+ns3_na s3_za s3_za 0 0 nch W=4e-06 L=4e-06
+ns3_cb s3_zb s3_yb vdd vsrc pch W=4e-06 L=4e-06
+ns3_nb s3_zb s3_zb 0 0 nch W=4e-06 L=4e-06
+bs4_te s4_te 0 V=18.5
+vqes4 s4_te s4_tea DC 0
+rs4_ge s4_tea s4_tp 500
+cs4_cp s4_tp 0 0.01
+rs4_gm s4_tp s4_tn 1000
+cs4_cn s4_tn 0 0.0001
+bs4_ntc vdd s4_s I=V(vdd,s4_s)/(100000*exp(4250*(1/(298.15+V(s4_tn))-1/298.15)))
+bs4_heat 0 s4_th I=V(vdd,s4_s)*V(vdd,s4_s)/(100000*exp(4250*(1/(298.15+V(s4_tn))-1/298.15)))
+vqhs4 s4_th s4_tn DC 0
+rs4_rs s4_s 0 100000
+rs4_ravg s4_s s4_m 2e+06
+cs4_cavg s4_m 0 1e-06
+ns4_mpor s4_m por_ok s4_s vsrc pch W=4e-06 L=1e-06
+rs4_ab vdd s4_anb 750000
+ns4_amb s4_anb s4_anb 0 0 nch W=4e-06 L=4e-06
+ns4_amt s4_atl s4_anb 0 0 nch W=4e-06 L=4e-06
+ns4_am1 s4_da s4_s s4_atl 0 nch W=1e-06 L=4e-06
+ns4_am2 s4_db s4_m s4_atl 0 nch W=1e-06 L=4e-06
+rs4_ara vdd s4_da 680000
+rs4_arb vdd s4_db 680000
+ns4_tt s4_tl ilim_n 0 0 nch W=4e-06 L=4e-06
+ns4_ta s4_ya s4_db s4_tl 0 nch W=1e-05 L=2e-06
+ns4_tb s4_yb s4_da s4_tl 0 nch W=1e-05 L=2e-06
+ns4_la s4_ya s4_ya vdd vsrc pch W=4e-06 L=4e-06
+ns4_lb s4_yb s4_yb vdd vsrc pch W=4e-06 L=4e-06
+ns4_ca s4_za s4_ya vdd vsrc pch W=4e-06 L=4e-06
+ns4_na s4_za s4_za 0 0 nch W=4e-06 L=4e-06
+ns4_cb s4_zb s4_yb vdd vsrc pch W=4e-06 L=4e-06
+ns4_nb s4_zb s4_zb 0 0 nch W=4e-06 L=4e-06
+cgw1_e1_cm gw1_e1_vm 0 1e-07
+rgw1_e1_rm gw1_e1_vm vrest 1e+06
+ngw1_e1_bias0 gw1_e1_vm istep_n 0 0 nch W=4e-06 L=4e-06
+rgw1_e1_kb vdd gw1_e1_knb 1e+06
+ngw1_e1_kmb gw1_e1_knb gw1_e1_knb 0 0 nch W=4e-06 L=4e-06
+ngw1_e1_kmt gw1_e1_ktail gw1_e1_knb 0 0 nch W=4e-06 L=4e-06
+ngw1_e1_km1 gw1_e1_kd1 gw1_e1_vm gw1_e1_ktail 0 nch W=4e-06 L=4e-06
+ngw1_e1_km2 gw1_e1_ko1 gw1_e1_h gw1_e1_ktail 0 nch W=4e-06 L=4e-06
+ngw1_e1_km3 gw1_e1_kd1 gw1_e1_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw1_e1_km4 gw1_e1_ko1 gw1_e1_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw1_e1_ki1p gw1_e1_qb gw1_e1_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_e1_ki1n gw1_e1_qb gw1_e1_ko1 0 0 nch W=1.2e-06 L=5e-07
+ngw1_e1_ki2p gw1_e1_q gw1_e1_qb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_e1_ki2n gw1_e1_q gw1_e1_qb 0 0 nch W=1.2e-06 L=5e-07
+rgw1_e1_hra gw1_e1_h vthe 1e+06
+rgw1_e1_hrf gw1_e1_h gw1_e1_qb 1.9e+07
+cgw1_e1_hc gw1_e1_h 0 2.1e-09
+ngw1_e1_dis gw1_e1_vm gw1_e1_q gw1_e1_vmd 0 nch W=4e-06 L=1e-06
+rgw1_e1_rdis gw1_e1_vmd vrest 220000
+ngw1_e1_rp gw1_e1_rt gw1_e1_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw1_e1_rrc gw1_e1_rt gw1_e1_rec 10000
+cgw1_e1_rc gw1_e1_rec 0 1e-07
+rgw1_e1_rr gw1_e1_rec 0 8.2e+06
+ngw1_e1_sh1 gw1_e1_vm gw1_e1_rec gw1_e1_vms 0 nch W=2e-06 L=1e-06
+ngw1_e1_sh2 gw1_e1_vms gw1_e1_qb vrest 0 nch W=2e-06 L=1e-06
+ngw1_e1_porh gw1_e1_h por_hold vthe 0 nch W=2e-06 L=1e-06
+ngw1_e1_porm gw1_e1_vm por_hold vrest 0 nch W=2e-06 L=1e-06
+ngw1_e1_ip gw1_e1_vm s1_ya vdd vsrc pch W=4e-06 L=4e-06
+ngw1_e1_in gw1_e1_vm s1_zb 0 0 nch W=4e-06 L=4e-06
+ngw1_b1_sw gw1_b1_t gw1_e1_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw1_b1_rc gw1_b1_t gw1_b1 10000
+cgw1_b1_c gw1_b1 0 1e-07
+rgw1_b1_rl gw1_b1 0 2.2e+07
+ngw1_b1_sh1p gw1_b1_n gw1_b1 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_b1_sh1n gw1_b1_n gw1_b1 0 0 nch W=1.2e-06 L=5e-07
+ngw1_b1_sh2p gw1_b1_q gw1_b1_n vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_b1_sh2n gw1_b1_q gw1_b1_n 0 0 nch W=1.2e-06 L=5e-07
+cgw1_e2_cm gw1_e2_vm 0 1e-07
+rgw1_e2_rm gw1_e2_vm vrest 1e+06
+ngw1_e2_bias0 gw1_e2_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e2_bias1 gw1_e2_vm istep_n 0 0 nch W=4e-06 L=4e-06
+rgw1_e2_kb vdd gw1_e2_knb 1e+06
+ngw1_e2_kmb gw1_e2_knb gw1_e2_knb 0 0 nch W=4e-06 L=4e-06
+ngw1_e2_kmt gw1_e2_ktail gw1_e2_knb 0 0 nch W=4e-06 L=4e-06
+ngw1_e2_km1 gw1_e2_kd1 gw1_e2_vm gw1_e2_ktail 0 nch W=4e-06 L=4e-06
+ngw1_e2_km2 gw1_e2_ko1 gw1_e2_h gw1_e2_ktail 0 nch W=4e-06 L=4e-06
+ngw1_e2_km3 gw1_e2_kd1 gw1_e2_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw1_e2_km4 gw1_e2_ko1 gw1_e2_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw1_e2_ki1p gw1_e2_qb gw1_e2_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_e2_ki1n gw1_e2_qb gw1_e2_ko1 0 0 nch W=1.2e-06 L=5e-07
+ngw1_e2_ki2p gw1_e2_q gw1_e2_qb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_e2_ki2n gw1_e2_q gw1_e2_qb 0 0 nch W=1.2e-06 L=5e-07
+rgw1_e2_hra gw1_e2_h vthe 1e+06
+rgw1_e2_hrf gw1_e2_h gw1_e2_qb 1.9e+07
+cgw1_e2_hc gw1_e2_h 0 2.1e-09
+ngw1_e2_dis gw1_e2_vm gw1_e2_q gw1_e2_vmd 0 nch W=4e-06 L=1e-06
+rgw1_e2_rdis gw1_e2_vmd vrest 220000
+ngw1_e2_rp gw1_e2_rt gw1_e2_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw1_e2_rrc gw1_e2_rt gw1_e2_rec 10000
+cgw1_e2_rc gw1_e2_rec 0 1e-07
+rgw1_e2_rr gw1_e2_rec 0 8.2e+06
+ngw1_e2_sh1 gw1_e2_vm gw1_e2_rec gw1_e2_vms 0 nch W=2e-06 L=1e-06
+ngw1_e2_sh2 gw1_e2_vms gw1_e2_qb vrest 0 nch W=2e-06 L=1e-06
+ngw1_e2_porh gw1_e2_h por_hold vthe 0 nch W=2e-06 L=1e-06
+ngw1_e2_porm gw1_e2_vm por_hold vrest 0 nch W=2e-06 L=1e-06
+ngw1_e2_ip gw1_e2_vm s1_ya vdd vsrc pch W=4e-06 L=4e-06
+ngw1_e2_in gw1_e2_vm s1_zb 0 0 nch W=4e-06 L=4e-06
+ngw1_b2_sw gw1_b2_t gw1_e2_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw1_b2_rc gw1_b2_t gw1_b2 10000
+cgw1_b2_c gw1_b2 0 1e-07
+rgw1_b2_rl gw1_b2 0 2.2e+07
+ngw1_b2_sh1p gw1_b2_n gw1_b2 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_b2_sh1n gw1_b2_n gw1_b2 0 0 nch W=1.2e-06 L=5e-07
+ngw1_b2_sh2p gw1_b2_q gw1_b2_n vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_b2_sh2n gw1_b2_q gw1_b2_n 0 0 nch W=1.2e-06 L=5e-07
+cgw1_e3_cm gw1_e3_vm 0 1e-07
+rgw1_e3_rm gw1_e3_vm vrest 1e+06
+ngw1_e3_bias0 gw1_e3_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e3_bias1 gw1_e3_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e3_bias2 gw1_e3_vm istep_n 0 0 nch W=4e-06 L=4e-06
+rgw1_e3_kb vdd gw1_e3_knb 1e+06
+ngw1_e3_kmb gw1_e3_knb gw1_e3_knb 0 0 nch W=4e-06 L=4e-06
+ngw1_e3_kmt gw1_e3_ktail gw1_e3_knb 0 0 nch W=4e-06 L=4e-06
+ngw1_e3_km1 gw1_e3_kd1 gw1_e3_vm gw1_e3_ktail 0 nch W=4e-06 L=4e-06
+ngw1_e3_km2 gw1_e3_ko1 gw1_e3_h gw1_e3_ktail 0 nch W=4e-06 L=4e-06
+ngw1_e3_km3 gw1_e3_kd1 gw1_e3_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw1_e3_km4 gw1_e3_ko1 gw1_e3_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw1_e3_ki1p gw1_e3_qb gw1_e3_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_e3_ki1n gw1_e3_qb gw1_e3_ko1 0 0 nch W=1.2e-06 L=5e-07
+ngw1_e3_ki2p gw1_e3_q gw1_e3_qb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_e3_ki2n gw1_e3_q gw1_e3_qb 0 0 nch W=1.2e-06 L=5e-07
+rgw1_e3_hra gw1_e3_h vthe 1e+06
+rgw1_e3_hrf gw1_e3_h gw1_e3_qb 1.9e+07
+cgw1_e3_hc gw1_e3_h 0 2.1e-09
+ngw1_e3_dis gw1_e3_vm gw1_e3_q gw1_e3_vmd 0 nch W=4e-06 L=1e-06
+rgw1_e3_rdis gw1_e3_vmd vrest 220000
+ngw1_e3_rp gw1_e3_rt gw1_e3_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw1_e3_rrc gw1_e3_rt gw1_e3_rec 10000
+cgw1_e3_rc gw1_e3_rec 0 1e-07
+rgw1_e3_rr gw1_e3_rec 0 8.2e+06
+ngw1_e3_sh1 gw1_e3_vm gw1_e3_rec gw1_e3_vms 0 nch W=2e-06 L=1e-06
+ngw1_e3_sh2 gw1_e3_vms gw1_e3_qb vrest 0 nch W=2e-06 L=1e-06
+ngw1_e3_porh gw1_e3_h por_hold vthe 0 nch W=2e-06 L=1e-06
+ngw1_e3_porm gw1_e3_vm por_hold vrest 0 nch W=2e-06 L=1e-06
+ngw1_e3_ip gw1_e3_vm s1_ya vdd vsrc pch W=4e-06 L=4e-06
+ngw1_e3_in gw1_e3_vm s1_zb 0 0 nch W=4e-06 L=4e-06
+ngw1_b3_sw gw1_b3_t gw1_e3_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw1_b3_rc gw1_b3_t gw1_b3 10000
+cgw1_b3_c gw1_b3 0 1e-07
+rgw1_b3_rl gw1_b3 0 2.2e+07
+ngw1_b3_sh1p gw1_b3_n gw1_b3 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_b3_sh1n gw1_b3_n gw1_b3 0 0 nch W=1.2e-06 L=5e-07
+ngw1_b3_sh2p gw1_b3_q gw1_b3_n vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_b3_sh2n gw1_b3_q gw1_b3_n 0 0 nch W=1.2e-06 L=5e-07
+cgw1_e4_cm gw1_e4_vm 0 1e-07
+rgw1_e4_rm gw1_e4_vm vrest 1e+06
+ngw1_e4_bias0 gw1_e4_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e4_bias1 gw1_e4_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e4_bias2 gw1_e4_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e4_bias3 gw1_e4_vm istep_n 0 0 nch W=4e-06 L=4e-06
+rgw1_e4_kb vdd gw1_e4_knb 1e+06
+ngw1_e4_kmb gw1_e4_knb gw1_e4_knb 0 0 nch W=4e-06 L=4e-06
+ngw1_e4_kmt gw1_e4_ktail gw1_e4_knb 0 0 nch W=4e-06 L=4e-06
+ngw1_e4_km1 gw1_e4_kd1 gw1_e4_vm gw1_e4_ktail 0 nch W=4e-06 L=4e-06
+ngw1_e4_km2 gw1_e4_ko1 gw1_e4_h gw1_e4_ktail 0 nch W=4e-06 L=4e-06
+ngw1_e4_km3 gw1_e4_kd1 gw1_e4_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw1_e4_km4 gw1_e4_ko1 gw1_e4_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw1_e4_ki1p gw1_e4_qb gw1_e4_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_e4_ki1n gw1_e4_qb gw1_e4_ko1 0 0 nch W=1.2e-06 L=5e-07
+ngw1_e4_ki2p gw1_e4_q gw1_e4_qb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_e4_ki2n gw1_e4_q gw1_e4_qb 0 0 nch W=1.2e-06 L=5e-07
+rgw1_e4_hra gw1_e4_h vthe 1e+06
+rgw1_e4_hrf gw1_e4_h gw1_e4_qb 1.9e+07
+cgw1_e4_hc gw1_e4_h 0 2.1e-09
+ngw1_e4_dis gw1_e4_vm gw1_e4_q gw1_e4_vmd 0 nch W=4e-06 L=1e-06
+rgw1_e4_rdis gw1_e4_vmd vrest 220000
+ngw1_e4_rp gw1_e4_rt gw1_e4_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw1_e4_rrc gw1_e4_rt gw1_e4_rec 10000
+cgw1_e4_rc gw1_e4_rec 0 1e-07
+rgw1_e4_rr gw1_e4_rec 0 8.2e+06
+ngw1_e4_sh1 gw1_e4_vm gw1_e4_rec gw1_e4_vms 0 nch W=2e-06 L=1e-06
+ngw1_e4_sh2 gw1_e4_vms gw1_e4_qb vrest 0 nch W=2e-06 L=1e-06
+ngw1_e4_porh gw1_e4_h por_hold vthe 0 nch W=2e-06 L=1e-06
+ngw1_e4_porm gw1_e4_vm por_hold vrest 0 nch W=2e-06 L=1e-06
+ngw1_e4_ip gw1_e4_vm s1_ya vdd vsrc pch W=4e-06 L=4e-06
+ngw1_e4_in gw1_e4_vm s1_zb 0 0 nch W=4e-06 L=4e-06
+ngw1_b4_sw gw1_b4_t gw1_e4_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw1_b4_rc gw1_b4_t gw1_b4 10000
+cgw1_b4_c gw1_b4 0 1e-07
+rgw1_b4_rl gw1_b4 0 2.2e+07
+ngw1_b4_sh1p gw1_b4_n gw1_b4 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_b4_sh1n gw1_b4_n gw1_b4 0 0 nch W=1.2e-06 L=5e-07
+ngw1_b4_sh2p gw1_b4_q gw1_b4_n vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_b4_sh2n gw1_b4_q gw1_b4_n 0 0 nch W=1.2e-06 L=5e-07
+cgw1_e5_cm gw1_e5_vm 0 1e-07
+rgw1_e5_rm gw1_e5_vm vrest 1e+06
+ngw1_e5_bias0 gw1_e5_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e5_bias1 gw1_e5_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e5_bias2 gw1_e5_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e5_bias3 gw1_e5_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e5_bias4 gw1_e5_vm istep_n 0 0 nch W=4e-06 L=4e-06
+rgw1_e5_kb vdd gw1_e5_knb 1e+06
+ngw1_e5_kmb gw1_e5_knb gw1_e5_knb 0 0 nch W=4e-06 L=4e-06
+ngw1_e5_kmt gw1_e5_ktail gw1_e5_knb 0 0 nch W=4e-06 L=4e-06
+ngw1_e5_km1 gw1_e5_kd1 gw1_e5_vm gw1_e5_ktail 0 nch W=4e-06 L=4e-06
+ngw1_e5_km2 gw1_e5_ko1 gw1_e5_h gw1_e5_ktail 0 nch W=4e-06 L=4e-06
+ngw1_e5_km3 gw1_e5_kd1 gw1_e5_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw1_e5_km4 gw1_e5_ko1 gw1_e5_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw1_e5_ki1p gw1_e5_qb gw1_e5_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_e5_ki1n gw1_e5_qb gw1_e5_ko1 0 0 nch W=1.2e-06 L=5e-07
+ngw1_e5_ki2p gw1_e5_q gw1_e5_qb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_e5_ki2n gw1_e5_q gw1_e5_qb 0 0 nch W=1.2e-06 L=5e-07
+rgw1_e5_hra gw1_e5_h vthe 1e+06
+rgw1_e5_hrf gw1_e5_h gw1_e5_qb 1.9e+07
+cgw1_e5_hc gw1_e5_h 0 2.1e-09
+ngw1_e5_dis gw1_e5_vm gw1_e5_q gw1_e5_vmd 0 nch W=4e-06 L=1e-06
+rgw1_e5_rdis gw1_e5_vmd vrest 220000
+ngw1_e5_rp gw1_e5_rt gw1_e5_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw1_e5_rrc gw1_e5_rt gw1_e5_rec 10000
+cgw1_e5_rc gw1_e5_rec 0 1e-07
+rgw1_e5_rr gw1_e5_rec 0 8.2e+06
+ngw1_e5_sh1 gw1_e5_vm gw1_e5_rec gw1_e5_vms 0 nch W=2e-06 L=1e-06
+ngw1_e5_sh2 gw1_e5_vms gw1_e5_qb vrest 0 nch W=2e-06 L=1e-06
+ngw1_e5_porh gw1_e5_h por_hold vthe 0 nch W=2e-06 L=1e-06
+ngw1_e5_porm gw1_e5_vm por_hold vrest 0 nch W=2e-06 L=1e-06
+ngw1_e5_ip gw1_e5_vm s1_ya vdd vsrc pch W=4e-06 L=4e-06
+ngw1_e5_in gw1_e5_vm s1_zb 0 0 nch W=4e-06 L=4e-06
+ngw1_b5_sw gw1_b5_t gw1_e5_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw1_b5_rc gw1_b5_t gw1_b5 10000
+cgw1_b5_c gw1_b5 0 1e-07
+rgw1_b5_rl gw1_b5 0 2.2e+07
+ngw1_b5_sh1p gw1_b5_n gw1_b5 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_b5_sh1n gw1_b5_n gw1_b5 0 0 nch W=1.2e-06 L=5e-07
+ngw1_b5_sh2p gw1_b5_q gw1_b5_n vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_b5_sh2n gw1_b5_q gw1_b5_n 0 0 nch W=1.2e-06 L=5e-07
+cgw1_e6_cm gw1_e6_vm 0 1e-07
+rgw1_e6_rm gw1_e6_vm vrest 1e+06
+ngw1_e6_bias0 gw1_e6_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e6_bias1 gw1_e6_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e6_bias2 gw1_e6_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e6_bias3 gw1_e6_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e6_bias4 gw1_e6_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e6_bias5 gw1_e6_vm istep_n 0 0 nch W=4e-06 L=4e-06
+rgw1_e6_kb vdd gw1_e6_knb 1e+06
+ngw1_e6_kmb gw1_e6_knb gw1_e6_knb 0 0 nch W=4e-06 L=4e-06
+ngw1_e6_kmt gw1_e6_ktail gw1_e6_knb 0 0 nch W=4e-06 L=4e-06
+ngw1_e6_km1 gw1_e6_kd1 gw1_e6_vm gw1_e6_ktail 0 nch W=4e-06 L=4e-06
+ngw1_e6_km2 gw1_e6_ko1 gw1_e6_h gw1_e6_ktail 0 nch W=4e-06 L=4e-06
+ngw1_e6_km3 gw1_e6_kd1 gw1_e6_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw1_e6_km4 gw1_e6_ko1 gw1_e6_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw1_e6_ki1p gw1_e6_qb gw1_e6_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_e6_ki1n gw1_e6_qb gw1_e6_ko1 0 0 nch W=1.2e-06 L=5e-07
+ngw1_e6_ki2p gw1_e6_q gw1_e6_qb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_e6_ki2n gw1_e6_q gw1_e6_qb 0 0 nch W=1.2e-06 L=5e-07
+rgw1_e6_hra gw1_e6_h vthe 1e+06
+rgw1_e6_hrf gw1_e6_h gw1_e6_qb 1.9e+07
+cgw1_e6_hc gw1_e6_h 0 2.1e-09
+ngw1_e6_dis gw1_e6_vm gw1_e6_q gw1_e6_vmd 0 nch W=4e-06 L=1e-06
+rgw1_e6_rdis gw1_e6_vmd vrest 220000
+ngw1_e6_rp gw1_e6_rt gw1_e6_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw1_e6_rrc gw1_e6_rt gw1_e6_rec 10000
+cgw1_e6_rc gw1_e6_rec 0 1e-07
+rgw1_e6_rr gw1_e6_rec 0 8.2e+06
+ngw1_e6_sh1 gw1_e6_vm gw1_e6_rec gw1_e6_vms 0 nch W=2e-06 L=1e-06
+ngw1_e6_sh2 gw1_e6_vms gw1_e6_qb vrest 0 nch W=2e-06 L=1e-06
+ngw1_e6_porh gw1_e6_h por_hold vthe 0 nch W=2e-06 L=1e-06
+ngw1_e6_porm gw1_e6_vm por_hold vrest 0 nch W=2e-06 L=1e-06
+ngw1_e6_ip gw1_e6_vm s1_ya vdd vsrc pch W=4e-06 L=4e-06
+ngw1_e6_in gw1_e6_vm s1_zb 0 0 nch W=4e-06 L=4e-06
+ngw1_b6_sw gw1_b6_t gw1_e6_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw1_b6_rc gw1_b6_t gw1_b6 10000
+cgw1_b6_c gw1_b6 0 1e-07
+rgw1_b6_rl gw1_b6 0 2.2e+07
+ngw1_b6_sh1p gw1_b6_n gw1_b6 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_b6_sh1n gw1_b6_n gw1_b6 0 0 nch W=1.2e-06 L=5e-07
+ngw1_b6_sh2p gw1_b6_q gw1_b6_n vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_b6_sh2n gw1_b6_q gw1_b6_n 0 0 nch W=1.2e-06 L=5e-07
+cgw1_e7_cm gw1_e7_vm 0 1e-07
+rgw1_e7_rm gw1_e7_vm vrest 1e+06
+ngw1_e7_bias0 gw1_e7_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e7_bias1 gw1_e7_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e7_bias2 gw1_e7_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e7_bias3 gw1_e7_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e7_bias4 gw1_e7_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e7_bias5 gw1_e7_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e7_bias6 gw1_e7_vm istep_n 0 0 nch W=4e-06 L=4e-06
+rgw1_e7_kb vdd gw1_e7_knb 1e+06
+ngw1_e7_kmb gw1_e7_knb gw1_e7_knb 0 0 nch W=4e-06 L=4e-06
+ngw1_e7_kmt gw1_e7_ktail gw1_e7_knb 0 0 nch W=4e-06 L=4e-06
+ngw1_e7_km1 gw1_e7_kd1 gw1_e7_vm gw1_e7_ktail 0 nch W=4e-06 L=4e-06
+ngw1_e7_km2 gw1_e7_ko1 gw1_e7_h gw1_e7_ktail 0 nch W=4e-06 L=4e-06
+ngw1_e7_km3 gw1_e7_kd1 gw1_e7_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw1_e7_km4 gw1_e7_ko1 gw1_e7_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw1_e7_ki1p gw1_e7_qb gw1_e7_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_e7_ki1n gw1_e7_qb gw1_e7_ko1 0 0 nch W=1.2e-06 L=5e-07
+ngw1_e7_ki2p gw1_e7_q gw1_e7_qb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_e7_ki2n gw1_e7_q gw1_e7_qb 0 0 nch W=1.2e-06 L=5e-07
+rgw1_e7_hra gw1_e7_h vthe 1e+06
+rgw1_e7_hrf gw1_e7_h gw1_e7_qb 1.9e+07
+cgw1_e7_hc gw1_e7_h 0 2.1e-09
+ngw1_e7_dis gw1_e7_vm gw1_e7_q gw1_e7_vmd 0 nch W=4e-06 L=1e-06
+rgw1_e7_rdis gw1_e7_vmd vrest 220000
+ngw1_e7_rp gw1_e7_rt gw1_e7_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw1_e7_rrc gw1_e7_rt gw1_e7_rec 10000
+cgw1_e7_rc gw1_e7_rec 0 1e-07
+rgw1_e7_rr gw1_e7_rec 0 8.2e+06
+ngw1_e7_sh1 gw1_e7_vm gw1_e7_rec gw1_e7_vms 0 nch W=2e-06 L=1e-06
+ngw1_e7_sh2 gw1_e7_vms gw1_e7_qb vrest 0 nch W=2e-06 L=1e-06
+ngw1_e7_porh gw1_e7_h por_hold vthe 0 nch W=2e-06 L=1e-06
+ngw1_e7_porm gw1_e7_vm por_hold vrest 0 nch W=2e-06 L=1e-06
+ngw1_e7_ip gw1_e7_vm s1_ya vdd vsrc pch W=4e-06 L=4e-06
+ngw1_e7_in gw1_e7_vm s1_zb 0 0 nch W=4e-06 L=4e-06
+ngw1_b7_sw gw1_b7_t gw1_e7_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw1_b7_rc gw1_b7_t gw1_b7 10000
+cgw1_b7_c gw1_b7 0 1e-07
+rgw1_b7_rl gw1_b7 0 2.2e+07
+ngw1_b7_sh1p gw1_b7_n gw1_b7 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_b7_sh1n gw1_b7_n gw1_b7 0 0 nch W=1.2e-06 L=5e-07
+ngw1_b7_sh2p gw1_b7_q gw1_b7_n vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_b7_sh2n gw1_b7_q gw1_b7_n 0 0 nch W=1.2e-06 L=5e-07
+cgw1_e8_cm gw1_e8_vm 0 1e-07
+rgw1_e8_rm gw1_e8_vm vrest 1e+06
+ngw1_e8_bias0 gw1_e8_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e8_bias1 gw1_e8_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e8_bias2 gw1_e8_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e8_bias3 gw1_e8_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e8_bias4 gw1_e8_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e8_bias5 gw1_e8_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e8_bias6 gw1_e8_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e8_bias7 gw1_e8_vm istep_n 0 0 nch W=4e-06 L=4e-06
+rgw1_e8_kb vdd gw1_e8_knb 1e+06
+ngw1_e8_kmb gw1_e8_knb gw1_e8_knb 0 0 nch W=4e-06 L=4e-06
+ngw1_e8_kmt gw1_e8_ktail gw1_e8_knb 0 0 nch W=4e-06 L=4e-06
+ngw1_e8_km1 gw1_e8_kd1 gw1_e8_vm gw1_e8_ktail 0 nch W=4e-06 L=4e-06
+ngw1_e8_km2 gw1_e8_ko1 gw1_e8_h gw1_e8_ktail 0 nch W=4e-06 L=4e-06
+ngw1_e8_km3 gw1_e8_kd1 gw1_e8_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw1_e8_km4 gw1_e8_ko1 gw1_e8_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw1_e8_ki1p gw1_e8_qb gw1_e8_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_e8_ki1n gw1_e8_qb gw1_e8_ko1 0 0 nch W=1.2e-06 L=5e-07
+ngw1_e8_ki2p gw1_e8_q gw1_e8_qb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_e8_ki2n gw1_e8_q gw1_e8_qb 0 0 nch W=1.2e-06 L=5e-07
+rgw1_e8_hra gw1_e8_h vthe 1e+06
+rgw1_e8_hrf gw1_e8_h gw1_e8_qb 1.9e+07
+cgw1_e8_hc gw1_e8_h 0 2.1e-09
+ngw1_e8_dis gw1_e8_vm gw1_e8_q gw1_e8_vmd 0 nch W=4e-06 L=1e-06
+rgw1_e8_rdis gw1_e8_vmd vrest 220000
+ngw1_e8_rp gw1_e8_rt gw1_e8_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw1_e8_rrc gw1_e8_rt gw1_e8_rec 10000
+cgw1_e8_rc gw1_e8_rec 0 1e-07
+rgw1_e8_rr gw1_e8_rec 0 8.2e+06
+ngw1_e8_sh1 gw1_e8_vm gw1_e8_rec gw1_e8_vms 0 nch W=2e-06 L=1e-06
+ngw1_e8_sh2 gw1_e8_vms gw1_e8_qb vrest 0 nch W=2e-06 L=1e-06
+ngw1_e8_porh gw1_e8_h por_hold vthe 0 nch W=2e-06 L=1e-06
+ngw1_e8_porm gw1_e8_vm por_hold vrest 0 nch W=2e-06 L=1e-06
+ngw1_e8_ip gw1_e8_vm s1_ya vdd vsrc pch W=4e-06 L=4e-06
+ngw1_e8_in gw1_e8_vm s1_zb 0 0 nch W=4e-06 L=4e-06
+ngw1_b8_sw gw1_b8_t gw1_e8_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw1_b8_rc gw1_b8_t gw1_b8 10000
+cgw1_b8_c gw1_b8 0 1e-07
+rgw1_b8_rl gw1_b8 0 2.2e+07
+ngw1_b8_sh1p gw1_b8_n gw1_b8 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_b8_sh1n gw1_b8_n gw1_b8 0 0 nch W=1.2e-06 L=5e-07
+ngw1_b8_sh2p gw1_b8_q gw1_b8_n vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_b8_sh2n gw1_b8_q gw1_b8_n 0 0 nch W=1.2e-06 L=5e-07
+cgw1_e9_cm gw1_e9_vm 0 1e-07
+rgw1_e9_rm gw1_e9_vm vrest 1e+06
+ngw1_e9_bias0 gw1_e9_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e9_bias1 gw1_e9_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e9_bias2 gw1_e9_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e9_bias3 gw1_e9_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e9_bias4 gw1_e9_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e9_bias5 gw1_e9_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e9_bias6 gw1_e9_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e9_bias7 gw1_e9_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e9_bias8 gw1_e9_vm istep_n 0 0 nch W=4e-06 L=4e-06
+rgw1_e9_kb vdd gw1_e9_knb 1e+06
+ngw1_e9_kmb gw1_e9_knb gw1_e9_knb 0 0 nch W=4e-06 L=4e-06
+ngw1_e9_kmt gw1_e9_ktail gw1_e9_knb 0 0 nch W=4e-06 L=4e-06
+ngw1_e9_km1 gw1_e9_kd1 gw1_e9_vm gw1_e9_ktail 0 nch W=4e-06 L=4e-06
+ngw1_e9_km2 gw1_e9_ko1 gw1_e9_h gw1_e9_ktail 0 nch W=4e-06 L=4e-06
+ngw1_e9_km3 gw1_e9_kd1 gw1_e9_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw1_e9_km4 gw1_e9_ko1 gw1_e9_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw1_e9_ki1p gw1_e9_qb gw1_e9_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_e9_ki1n gw1_e9_qb gw1_e9_ko1 0 0 nch W=1.2e-06 L=5e-07
+ngw1_e9_ki2p gw1_e9_q gw1_e9_qb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_e9_ki2n gw1_e9_q gw1_e9_qb 0 0 nch W=1.2e-06 L=5e-07
+rgw1_e9_hra gw1_e9_h vthe 1e+06
+rgw1_e9_hrf gw1_e9_h gw1_e9_qb 1.9e+07
+cgw1_e9_hc gw1_e9_h 0 2.1e-09
+ngw1_e9_dis gw1_e9_vm gw1_e9_q gw1_e9_vmd 0 nch W=4e-06 L=1e-06
+rgw1_e9_rdis gw1_e9_vmd vrest 220000
+ngw1_e9_rp gw1_e9_rt gw1_e9_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw1_e9_rrc gw1_e9_rt gw1_e9_rec 10000
+cgw1_e9_rc gw1_e9_rec 0 1e-07
+rgw1_e9_rr gw1_e9_rec 0 8.2e+06
+ngw1_e9_sh1 gw1_e9_vm gw1_e9_rec gw1_e9_vms 0 nch W=2e-06 L=1e-06
+ngw1_e9_sh2 gw1_e9_vms gw1_e9_qb vrest 0 nch W=2e-06 L=1e-06
+ngw1_e9_porh gw1_e9_h por_hold vthe 0 nch W=2e-06 L=1e-06
+ngw1_e9_porm gw1_e9_vm por_hold vrest 0 nch W=2e-06 L=1e-06
+ngw1_e9_ip gw1_e9_vm s1_ya vdd vsrc pch W=4e-06 L=4e-06
+ngw1_e9_in gw1_e9_vm s1_zb 0 0 nch W=4e-06 L=4e-06
+ngw1_b9_sw gw1_b9_t gw1_e9_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw1_b9_rc gw1_b9_t gw1_b9 10000
+cgw1_b9_c gw1_b9 0 1e-07
+rgw1_b9_rl gw1_b9 0 2.2e+07
+ngw1_b9_sh1p gw1_b9_n gw1_b9 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_b9_sh1n gw1_b9_n gw1_b9 0 0 nch W=1.2e-06 L=5e-07
+ngw1_b9_sh2p gw1_b9_q gw1_b9_n vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_b9_sh2n gw1_b9_q gw1_b9_n 0 0 nch W=1.2e-06 L=5e-07
+cgw1_e10_cm gw1_e10_vm 0 1e-07
+rgw1_e10_rm gw1_e10_vm vrest 1e+06
+ngw1_e10_bias0 gw1_e10_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e10_bias1 gw1_e10_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e10_bias2 gw1_e10_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e10_bias3 gw1_e10_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e10_bias4 gw1_e10_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e10_bias5 gw1_e10_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e10_bias6 gw1_e10_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e10_bias7 gw1_e10_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e10_bias8 gw1_e10_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw1_e10_bias9 gw1_e10_vm istep_n 0 0 nch W=4e-06 L=4e-06
+rgw1_e10_kb vdd gw1_e10_knb 1e+06
+ngw1_e10_kmb gw1_e10_knb gw1_e10_knb 0 0 nch W=4e-06 L=4e-06
+ngw1_e10_kmt gw1_e10_ktail gw1_e10_knb 0 0 nch W=4e-06 L=4e-06
+ngw1_e10_km1 gw1_e10_kd1 gw1_e10_vm gw1_e10_ktail 0 nch W=4e-06 L=4e-06
+ngw1_e10_km2 gw1_e10_ko1 gw1_e10_h gw1_e10_ktail 0 nch W=4e-06 L=4e-06
+ngw1_e10_km3 gw1_e10_kd1 gw1_e10_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw1_e10_km4 gw1_e10_ko1 gw1_e10_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw1_e10_ki1p gw1_e10_qb gw1_e10_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_e10_ki1n gw1_e10_qb gw1_e10_ko1 0 0 nch W=1.2e-06 L=5e-07
+ngw1_e10_ki2p gw1_e10_q gw1_e10_qb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_e10_ki2n gw1_e10_q gw1_e10_qb 0 0 nch W=1.2e-06 L=5e-07
+rgw1_e10_hra gw1_e10_h vthe 1e+06
+rgw1_e10_hrf gw1_e10_h gw1_e10_qb 1.9e+07
+cgw1_e10_hc gw1_e10_h 0 2.1e-09
+ngw1_e10_dis gw1_e10_vm gw1_e10_q gw1_e10_vmd 0 nch W=4e-06 L=1e-06
+rgw1_e10_rdis gw1_e10_vmd vrest 220000
+ngw1_e10_rp gw1_e10_rt gw1_e10_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw1_e10_rrc gw1_e10_rt gw1_e10_rec 10000
+cgw1_e10_rc gw1_e10_rec 0 1e-07
+rgw1_e10_rr gw1_e10_rec 0 8.2e+06
+ngw1_e10_sh1 gw1_e10_vm gw1_e10_rec gw1_e10_vms 0 nch W=2e-06 L=1e-06
+ngw1_e10_sh2 gw1_e10_vms gw1_e10_qb vrest 0 nch W=2e-06 L=1e-06
+ngw1_e10_porh gw1_e10_h por_hold vthe 0 nch W=2e-06 L=1e-06
+ngw1_e10_porm gw1_e10_vm por_hold vrest 0 nch W=2e-06 L=1e-06
+ngw1_e10_ip gw1_e10_vm s1_ya vdd vsrc pch W=4e-06 L=4e-06
+ngw1_e10_in gw1_e10_vm s1_zb 0 0 nch W=4e-06 L=4e-06
+ngw1_b10_sw gw1_b10_t gw1_e10_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw1_b10_rc gw1_b10_t gw1_b10 10000
+cgw1_b10_c gw1_b10 0 1e-07
+rgw1_b10_rl gw1_b10 0 2.2e+07
+ngw1_b10_sh1p gw1_b10_n gw1_b10 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_b10_sh1n gw1_b10_n gw1_b10 0 0 nch W=1.2e-06 L=5e-07
+ngw1_b10_sh2p gw1_b10_q gw1_b10_n vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_b10_sh2n gw1_b10_q gw1_b10_n 0 0 nch W=1.2e-06 L=5e-07
+ngw1_and_a0_npa gw1_and_a0_nb gw1_b1_q vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_and_a0_npb gw1_and_a0_nb gw1_b2_q vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_and_a0_nna gw1_and_a0_nb gw1_b1_q gw1_and_a0_nx 0 nch W=2.4e-06 L=5e-07
+ngw1_and_a0_nnb gw1_and_a0_nx gw1_b2_q 0 0 nch W=2.4e-06 L=5e-07
+ngw1_and_a0_ip gw1_and_g0 gw1_and_a0_nb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_and_a0_in gw1_and_g0 gw1_and_a0_nb 0 0 nch W=1.2e-06 L=5e-07
+ngw1_and_a1_npa gw1_and_a1_nb gw1_b3_q vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_and_a1_npb gw1_and_a1_nb gw1_b4_q vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_and_a1_nna gw1_and_a1_nb gw1_b3_q gw1_and_a1_nx 0 nch W=2.4e-06 L=5e-07
+ngw1_and_a1_nnb gw1_and_a1_nx gw1_b4_q 0 0 nch W=2.4e-06 L=5e-07
+ngw1_and_a1_ip gw1_and_g1 gw1_and_a1_nb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_and_a1_in gw1_and_g1 gw1_and_a1_nb 0 0 nch W=1.2e-06 L=5e-07
+ngw1_and_a2_npa gw1_and_a2_nb gw1_b5_q vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_and_a2_npb gw1_and_a2_nb gw1_b6_q vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_and_a2_nna gw1_and_a2_nb gw1_b5_q gw1_and_a2_nx 0 nch W=2.4e-06 L=5e-07
+ngw1_and_a2_nnb gw1_and_a2_nx gw1_b6_q 0 0 nch W=2.4e-06 L=5e-07
+ngw1_and_a2_ip gw1_and_g2 gw1_and_a2_nb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_and_a2_in gw1_and_g2 gw1_and_a2_nb 0 0 nch W=1.2e-06 L=5e-07
+ngw1_and_a3_npa gw1_and_a3_nb gw1_b7_q vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_and_a3_npb gw1_and_a3_nb gw1_b8_q vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_and_a3_nna gw1_and_a3_nb gw1_b7_q gw1_and_a3_nx 0 nch W=2.4e-06 L=5e-07
+ngw1_and_a3_nnb gw1_and_a3_nx gw1_b8_q 0 0 nch W=2.4e-06 L=5e-07
+ngw1_and_a3_ip gw1_and_g3 gw1_and_a3_nb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_and_a3_in gw1_and_g3 gw1_and_a3_nb 0 0 nch W=1.2e-06 L=5e-07
+ngw1_and_a4_npa gw1_and_a4_nb gw1_b9_q vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_and_a4_npb gw1_and_a4_nb gw1_b10_q vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_and_a4_nna gw1_and_a4_nb gw1_b9_q gw1_and_a4_nx 0 nch W=2.4e-06 L=5e-07
+ngw1_and_a4_nnb gw1_and_a4_nx gw1_b10_q 0 0 nch W=2.4e-06 L=5e-07
+ngw1_and_a4_ip gw1_and_g4 gw1_and_a4_nb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_and_a4_in gw1_and_g4 gw1_and_a4_nb 0 0 nch W=1.2e-06 L=5e-07
+ngw1_and_a5_npa gw1_and_a5_nb gw1_and_g0 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_and_a5_npb gw1_and_a5_nb gw1_and_g1 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_and_a5_nna gw1_and_a5_nb gw1_and_g0 gw1_and_a5_nx 0 nch W=2.4e-06 L=5e-07
+ngw1_and_a5_nnb gw1_and_a5_nx gw1_and_g1 0 0 nch W=2.4e-06 L=5e-07
+ngw1_and_a5_ip gw1_and_g5 gw1_and_a5_nb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_and_a5_in gw1_and_g5 gw1_and_a5_nb 0 0 nch W=1.2e-06 L=5e-07
+ngw1_and_a6_npa gw1_and_a6_nb gw1_and_g2 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_and_a6_npb gw1_and_a6_nb gw1_and_g3 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_and_a6_nna gw1_and_a6_nb gw1_and_g2 gw1_and_a6_nx 0 nch W=2.4e-06 L=5e-07
+ngw1_and_a6_nnb gw1_and_a6_nx gw1_and_g3 0 0 nch W=2.4e-06 L=5e-07
+ngw1_and_a6_ip gw1_and_g6 gw1_and_a6_nb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_and_a6_in gw1_and_g6 gw1_and_a6_nb 0 0 nch W=1.2e-06 L=5e-07
+ngw1_and_a7_npa gw1_and_a7_nb gw1_and_g5 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_and_a7_npb gw1_and_a7_nb gw1_and_g6 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_and_a7_nna gw1_and_a7_nb gw1_and_g5 gw1_and_a7_nx 0 nch W=2.4e-06 L=5e-07
+ngw1_and_a7_nnb gw1_and_a7_nx gw1_and_g6 0 0 nch W=2.4e-06 L=5e-07
+ngw1_and_a7_ip gw1_and_g7 gw1_and_a7_nb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_and_a7_in gw1_and_g7 gw1_and_a7_nb 0 0 nch W=1.2e-06 L=5e-07
+ngw1_and_a8_npa gw1_and_a8_nb gw1_and_g7 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_and_a8_npb gw1_and_a8_nb gw1_and_g4 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_and_a8_nna gw1_and_a8_nb gw1_and_g7 gw1_and_a8_nx 0 nch W=2.4e-06 L=5e-07
+ngw1_and_a8_nnb gw1_and_a8_nx gw1_and_g4 0 0 nch W=2.4e-06 L=5e-07
+ngw1_and_a8_ip gw1_and_g8 gw1_and_a8_nb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_and_a8_in gw1_and_g8 gw1_and_a8_nb 0 0 nch W=1.2e-06 L=5e-07
+ngw1_gip gw1_gb gw1_and_g8 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_gin gw1_gb gw1_and_g8 0 0 nch W=1.2e-06 L=5e-07
+cgw1_col_cm gw1_col_vm 0 1e-07
+rgw1_col_rm gw1_col_vm vrest 1e+06
+rgw1_col_kb vdd gw1_col_knb 1e+06
+ngw1_col_kmb gw1_col_knb gw1_col_knb 0 0 nch W=4e-06 L=4e-06
+ngw1_col_kmt gw1_col_ktail gw1_col_knb 0 0 nch W=4e-06 L=4e-06
+ngw1_col_km1 gw1_col_kd1 gw1_col_vm gw1_col_ktail 0 nch W=4e-06 L=4e-06
+ngw1_col_km2 gw1_col_ko1 gw1_col_h gw1_col_ktail 0 nch W=4e-06 L=4e-06
+ngw1_col_km3 gw1_col_kd1 gw1_col_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw1_col_km4 gw1_col_ko1 gw1_col_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw1_col_ki1p gw1_col_qb gw1_col_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_col_ki1n gw1_col_qb gw1_col_ko1 0 0 nch W=1.2e-06 L=5e-07
+ngw1_col_ki2p gw1_col_q gw1_col_qb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_col_ki2n gw1_col_q gw1_col_qb 0 0 nch W=1.2e-06 L=5e-07
+rgw1_col_hra gw1_col_h vthe 1e+06
+rgw1_col_hrf gw1_col_h gw1_col_qb 1.9e+07
+cgw1_col_hc gw1_col_h 0 2.1e-09
+ngw1_col_dis gw1_col_vm gw1_col_q gw1_col_vmd 0 nch W=4e-06 L=1e-06
+rgw1_col_rdis gw1_col_vmd vrest 220000
+ngw1_col_rp gw1_col_rt gw1_col_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw1_col_rrc gw1_col_rt gw1_col_rec 10000
+cgw1_col_rc gw1_col_rec 0 1e-07
+rgw1_col_rr gw1_col_rec 0 8.2e+06
+ngw1_col_sh1 gw1_col_vm gw1_col_rec gw1_col_vms 0 nch W=2e-06 L=1e-06
+ngw1_col_sh2 gw1_col_vms gw1_col_qb vrest 0 nch W=2e-06 L=1e-06
+ngw1_col_porh gw1_col_h por_hold vthe 0 nch W=2e-06 L=1e-06
+ngw1_col_porm gw1_col_vm por_hold vrest 0 nch W=2e-06 L=1e-06
+ngw1_cin_sw gw1_cin_x gw1_gb vdd vsrc pch W=4e-06 L=1e-06
+ngw1_cin_cp gw1_col_vm ilimp_n gw1_cin_x vsrc pch W=4e-06 L=4e-06
+ngw1_op_tsw gw1_op_tt gw1_col_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw1_op_trc gw1_op_tt gw1_op_at 10000
+cgw1_op_tc gw1_op_at 0 1e-07
+rgw1_op_trl gw1_op_at 0 2.2e+07
+ngw1_op_sh1p gw1_op_an gw1_op_at vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_op_sh1n gw1_op_an gw1_op_at 0 0 nch W=1.2e-06 L=5e-07
+ngw1_op_sh2p gw1_op_aq gw1_op_an vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_op_sh2n gw1_op_aq gw1_op_an 0 0 nch W=1.2e-06 L=5e-07
+ngw1_op_abp gw1_op_aqb gw1_op_aq vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_op_abn gw1_op_aqb gw1_op_aq 0 0 nch W=1.2e-06 L=5e-07
+rgw1_op_dr gw1_op_aq gw1_op_ad 1e+06
+cgw1_op_dc gw1_op_ad 0 3.3e-07
+ngw1_op_d2p gw1_op_adn gw1_op_ad vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_op_d2n gw1_op_adn gw1_op_ad 0 0 nch W=1.2e-06 L=5e-07
+ngw1_op_gpa gw1_op_pb gw1_op_aq vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_op_gpb gw1_op_pb gw1_op_adn vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_op_gna gw1_op_pb gw1_op_aq gw1_op_gx 0 nch W=2.4e-06 L=5e-07
+ngw1_op_gnb gw1_op_gx gw1_op_adn 0 0 nch W=2.4e-06 L=5e-07
+ngw1_op_op gw1_op_p gw1_op_pb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw1_op_on gw1_op_p gw1_op_pb 0 0 nch W=1.2e-06 L=5e-07
+cgw2_e1_cm gw2_e1_vm 0 1e-07
+rgw2_e1_rm gw2_e1_vm vrest 1e+06
+ngw2_e1_bias0 gw2_e1_vm istep_n 0 0 nch W=4e-06 L=4e-06
+rgw2_e1_kb vdd gw2_e1_knb 1e+06
+ngw2_e1_kmb gw2_e1_knb gw2_e1_knb 0 0 nch W=4e-06 L=4e-06
+ngw2_e1_kmt gw2_e1_ktail gw2_e1_knb 0 0 nch W=4e-06 L=4e-06
+ngw2_e1_km1 gw2_e1_kd1 gw2_e1_vm gw2_e1_ktail 0 nch W=4e-06 L=4e-06
+ngw2_e1_km2 gw2_e1_ko1 gw2_e1_h gw2_e1_ktail 0 nch W=4e-06 L=4e-06
+ngw2_e1_km3 gw2_e1_kd1 gw2_e1_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw2_e1_km4 gw2_e1_ko1 gw2_e1_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw2_e1_ki1p gw2_e1_qb gw2_e1_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_e1_ki1n gw2_e1_qb gw2_e1_ko1 0 0 nch W=1.2e-06 L=5e-07
+ngw2_e1_ki2p gw2_e1_q gw2_e1_qb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_e1_ki2n gw2_e1_q gw2_e1_qb 0 0 nch W=1.2e-06 L=5e-07
+rgw2_e1_hra gw2_e1_h vthe 1e+06
+rgw2_e1_hrf gw2_e1_h gw2_e1_qb 1.9e+07
+cgw2_e1_hc gw2_e1_h 0 2.1e-09
+ngw2_e1_dis gw2_e1_vm gw2_e1_q gw2_e1_vmd 0 nch W=4e-06 L=1e-06
+rgw2_e1_rdis gw2_e1_vmd vrest 220000
+ngw2_e1_rp gw2_e1_rt gw2_e1_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw2_e1_rrc gw2_e1_rt gw2_e1_rec 10000
+cgw2_e1_rc gw2_e1_rec 0 1e-07
+rgw2_e1_rr gw2_e1_rec 0 8.2e+06
+ngw2_e1_sh1 gw2_e1_vm gw2_e1_rec gw2_e1_vms 0 nch W=2e-06 L=1e-06
+ngw2_e1_sh2 gw2_e1_vms gw2_e1_qb vrest 0 nch W=2e-06 L=1e-06
+ngw2_e1_porh gw2_e1_h por_hold vthe 0 nch W=2e-06 L=1e-06
+ngw2_e1_porm gw2_e1_vm por_hold vrest 0 nch W=2e-06 L=1e-06
+ngw2_e1_ip gw2_e1_vm s2_ya vdd vsrc pch W=4e-06 L=4e-06
+ngw2_e1_in gw2_e1_vm s2_zb 0 0 nch W=4e-06 L=4e-06
+ngw2_b1_sw gw2_b1_t gw2_e1_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw2_b1_rc gw2_b1_t gw2_b1 10000
+cgw2_b1_c gw2_b1 0 1e-07
+rgw2_b1_rl gw2_b1 0 2.2e+07
+ngw2_b1_sh1p gw2_b1_n gw2_b1 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_b1_sh1n gw2_b1_n gw2_b1 0 0 nch W=1.2e-06 L=5e-07
+ngw2_b1_sh2p gw2_b1_q gw2_b1_n vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_b1_sh2n gw2_b1_q gw2_b1_n 0 0 nch W=1.2e-06 L=5e-07
+cgw2_e2_cm gw2_e2_vm 0 1e-07
+rgw2_e2_rm gw2_e2_vm vrest 1e+06
+ngw2_e2_bias0 gw2_e2_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e2_bias1 gw2_e2_vm istep_n 0 0 nch W=4e-06 L=4e-06
+rgw2_e2_kb vdd gw2_e2_knb 1e+06
+ngw2_e2_kmb gw2_e2_knb gw2_e2_knb 0 0 nch W=4e-06 L=4e-06
+ngw2_e2_kmt gw2_e2_ktail gw2_e2_knb 0 0 nch W=4e-06 L=4e-06
+ngw2_e2_km1 gw2_e2_kd1 gw2_e2_vm gw2_e2_ktail 0 nch W=4e-06 L=4e-06
+ngw2_e2_km2 gw2_e2_ko1 gw2_e2_h gw2_e2_ktail 0 nch W=4e-06 L=4e-06
+ngw2_e2_km3 gw2_e2_kd1 gw2_e2_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw2_e2_km4 gw2_e2_ko1 gw2_e2_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw2_e2_ki1p gw2_e2_qb gw2_e2_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_e2_ki1n gw2_e2_qb gw2_e2_ko1 0 0 nch W=1.2e-06 L=5e-07
+ngw2_e2_ki2p gw2_e2_q gw2_e2_qb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_e2_ki2n gw2_e2_q gw2_e2_qb 0 0 nch W=1.2e-06 L=5e-07
+rgw2_e2_hra gw2_e2_h vthe 1e+06
+rgw2_e2_hrf gw2_e2_h gw2_e2_qb 1.9e+07
+cgw2_e2_hc gw2_e2_h 0 2.1e-09
+ngw2_e2_dis gw2_e2_vm gw2_e2_q gw2_e2_vmd 0 nch W=4e-06 L=1e-06
+rgw2_e2_rdis gw2_e2_vmd vrest 220000
+ngw2_e2_rp gw2_e2_rt gw2_e2_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw2_e2_rrc gw2_e2_rt gw2_e2_rec 10000
+cgw2_e2_rc gw2_e2_rec 0 1e-07
+rgw2_e2_rr gw2_e2_rec 0 8.2e+06
+ngw2_e2_sh1 gw2_e2_vm gw2_e2_rec gw2_e2_vms 0 nch W=2e-06 L=1e-06
+ngw2_e2_sh2 gw2_e2_vms gw2_e2_qb vrest 0 nch W=2e-06 L=1e-06
+ngw2_e2_porh gw2_e2_h por_hold vthe 0 nch W=2e-06 L=1e-06
+ngw2_e2_porm gw2_e2_vm por_hold vrest 0 nch W=2e-06 L=1e-06
+ngw2_e2_ip gw2_e2_vm s2_ya vdd vsrc pch W=4e-06 L=4e-06
+ngw2_e2_in gw2_e2_vm s2_zb 0 0 nch W=4e-06 L=4e-06
+ngw2_b2_sw gw2_b2_t gw2_e2_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw2_b2_rc gw2_b2_t gw2_b2 10000
+cgw2_b2_c gw2_b2 0 1e-07
+rgw2_b2_rl gw2_b2 0 2.2e+07
+ngw2_b2_sh1p gw2_b2_n gw2_b2 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_b2_sh1n gw2_b2_n gw2_b2 0 0 nch W=1.2e-06 L=5e-07
+ngw2_b2_sh2p gw2_b2_q gw2_b2_n vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_b2_sh2n gw2_b2_q gw2_b2_n 0 0 nch W=1.2e-06 L=5e-07
+cgw2_e3_cm gw2_e3_vm 0 1e-07
+rgw2_e3_rm gw2_e3_vm vrest 1e+06
+ngw2_e3_bias0 gw2_e3_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e3_bias1 gw2_e3_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e3_bias2 gw2_e3_vm istep_n 0 0 nch W=4e-06 L=4e-06
+rgw2_e3_kb vdd gw2_e3_knb 1e+06
+ngw2_e3_kmb gw2_e3_knb gw2_e3_knb 0 0 nch W=4e-06 L=4e-06
+ngw2_e3_kmt gw2_e3_ktail gw2_e3_knb 0 0 nch W=4e-06 L=4e-06
+ngw2_e3_km1 gw2_e3_kd1 gw2_e3_vm gw2_e3_ktail 0 nch W=4e-06 L=4e-06
+ngw2_e3_km2 gw2_e3_ko1 gw2_e3_h gw2_e3_ktail 0 nch W=4e-06 L=4e-06
+ngw2_e3_km3 gw2_e3_kd1 gw2_e3_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw2_e3_km4 gw2_e3_ko1 gw2_e3_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw2_e3_ki1p gw2_e3_qb gw2_e3_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_e3_ki1n gw2_e3_qb gw2_e3_ko1 0 0 nch W=1.2e-06 L=5e-07
+ngw2_e3_ki2p gw2_e3_q gw2_e3_qb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_e3_ki2n gw2_e3_q gw2_e3_qb 0 0 nch W=1.2e-06 L=5e-07
+rgw2_e3_hra gw2_e3_h vthe 1e+06
+rgw2_e3_hrf gw2_e3_h gw2_e3_qb 1.9e+07
+cgw2_e3_hc gw2_e3_h 0 2.1e-09
+ngw2_e3_dis gw2_e3_vm gw2_e3_q gw2_e3_vmd 0 nch W=4e-06 L=1e-06
+rgw2_e3_rdis gw2_e3_vmd vrest 220000
+ngw2_e3_rp gw2_e3_rt gw2_e3_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw2_e3_rrc gw2_e3_rt gw2_e3_rec 10000
+cgw2_e3_rc gw2_e3_rec 0 1e-07
+rgw2_e3_rr gw2_e3_rec 0 8.2e+06
+ngw2_e3_sh1 gw2_e3_vm gw2_e3_rec gw2_e3_vms 0 nch W=2e-06 L=1e-06
+ngw2_e3_sh2 gw2_e3_vms gw2_e3_qb vrest 0 nch W=2e-06 L=1e-06
+ngw2_e3_porh gw2_e3_h por_hold vthe 0 nch W=2e-06 L=1e-06
+ngw2_e3_porm gw2_e3_vm por_hold vrest 0 nch W=2e-06 L=1e-06
+ngw2_e3_ip gw2_e3_vm s2_ya vdd vsrc pch W=4e-06 L=4e-06
+ngw2_e3_in gw2_e3_vm s2_zb 0 0 nch W=4e-06 L=4e-06
+ngw2_b3_sw gw2_b3_t gw2_e3_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw2_b3_rc gw2_b3_t gw2_b3 10000
+cgw2_b3_c gw2_b3 0 1e-07
+rgw2_b3_rl gw2_b3 0 2.2e+07
+ngw2_b3_sh1p gw2_b3_n gw2_b3 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_b3_sh1n gw2_b3_n gw2_b3 0 0 nch W=1.2e-06 L=5e-07
+ngw2_b3_sh2p gw2_b3_q gw2_b3_n vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_b3_sh2n gw2_b3_q gw2_b3_n 0 0 nch W=1.2e-06 L=5e-07
+cgw2_e4_cm gw2_e4_vm 0 1e-07
+rgw2_e4_rm gw2_e4_vm vrest 1e+06
+ngw2_e4_bias0 gw2_e4_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e4_bias1 gw2_e4_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e4_bias2 gw2_e4_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e4_bias3 gw2_e4_vm istep_n 0 0 nch W=4e-06 L=4e-06
+rgw2_e4_kb vdd gw2_e4_knb 1e+06
+ngw2_e4_kmb gw2_e4_knb gw2_e4_knb 0 0 nch W=4e-06 L=4e-06
+ngw2_e4_kmt gw2_e4_ktail gw2_e4_knb 0 0 nch W=4e-06 L=4e-06
+ngw2_e4_km1 gw2_e4_kd1 gw2_e4_vm gw2_e4_ktail 0 nch W=4e-06 L=4e-06
+ngw2_e4_km2 gw2_e4_ko1 gw2_e4_h gw2_e4_ktail 0 nch W=4e-06 L=4e-06
+ngw2_e4_km3 gw2_e4_kd1 gw2_e4_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw2_e4_km4 gw2_e4_ko1 gw2_e4_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw2_e4_ki1p gw2_e4_qb gw2_e4_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_e4_ki1n gw2_e4_qb gw2_e4_ko1 0 0 nch W=1.2e-06 L=5e-07
+ngw2_e4_ki2p gw2_e4_q gw2_e4_qb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_e4_ki2n gw2_e4_q gw2_e4_qb 0 0 nch W=1.2e-06 L=5e-07
+rgw2_e4_hra gw2_e4_h vthe 1e+06
+rgw2_e4_hrf gw2_e4_h gw2_e4_qb 1.9e+07
+cgw2_e4_hc gw2_e4_h 0 2.1e-09
+ngw2_e4_dis gw2_e4_vm gw2_e4_q gw2_e4_vmd 0 nch W=4e-06 L=1e-06
+rgw2_e4_rdis gw2_e4_vmd vrest 220000
+ngw2_e4_rp gw2_e4_rt gw2_e4_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw2_e4_rrc gw2_e4_rt gw2_e4_rec 10000
+cgw2_e4_rc gw2_e4_rec 0 1e-07
+rgw2_e4_rr gw2_e4_rec 0 8.2e+06
+ngw2_e4_sh1 gw2_e4_vm gw2_e4_rec gw2_e4_vms 0 nch W=2e-06 L=1e-06
+ngw2_e4_sh2 gw2_e4_vms gw2_e4_qb vrest 0 nch W=2e-06 L=1e-06
+ngw2_e4_porh gw2_e4_h por_hold vthe 0 nch W=2e-06 L=1e-06
+ngw2_e4_porm gw2_e4_vm por_hold vrest 0 nch W=2e-06 L=1e-06
+ngw2_e4_ip gw2_e4_vm s2_ya vdd vsrc pch W=4e-06 L=4e-06
+ngw2_e4_in gw2_e4_vm s2_zb 0 0 nch W=4e-06 L=4e-06
+ngw2_b4_sw gw2_b4_t gw2_e4_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw2_b4_rc gw2_b4_t gw2_b4 10000
+cgw2_b4_c gw2_b4 0 1e-07
+rgw2_b4_rl gw2_b4 0 2.2e+07
+ngw2_b4_sh1p gw2_b4_n gw2_b4 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_b4_sh1n gw2_b4_n gw2_b4 0 0 nch W=1.2e-06 L=5e-07
+ngw2_b4_sh2p gw2_b4_q gw2_b4_n vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_b4_sh2n gw2_b4_q gw2_b4_n 0 0 nch W=1.2e-06 L=5e-07
+cgw2_e5_cm gw2_e5_vm 0 1e-07
+rgw2_e5_rm gw2_e5_vm vrest 1e+06
+ngw2_e5_bias0 gw2_e5_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e5_bias1 gw2_e5_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e5_bias2 gw2_e5_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e5_bias3 gw2_e5_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e5_bias4 gw2_e5_vm istep_n 0 0 nch W=4e-06 L=4e-06
+rgw2_e5_kb vdd gw2_e5_knb 1e+06
+ngw2_e5_kmb gw2_e5_knb gw2_e5_knb 0 0 nch W=4e-06 L=4e-06
+ngw2_e5_kmt gw2_e5_ktail gw2_e5_knb 0 0 nch W=4e-06 L=4e-06
+ngw2_e5_km1 gw2_e5_kd1 gw2_e5_vm gw2_e5_ktail 0 nch W=4e-06 L=4e-06
+ngw2_e5_km2 gw2_e5_ko1 gw2_e5_h gw2_e5_ktail 0 nch W=4e-06 L=4e-06
+ngw2_e5_km3 gw2_e5_kd1 gw2_e5_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw2_e5_km4 gw2_e5_ko1 gw2_e5_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw2_e5_ki1p gw2_e5_qb gw2_e5_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_e5_ki1n gw2_e5_qb gw2_e5_ko1 0 0 nch W=1.2e-06 L=5e-07
+ngw2_e5_ki2p gw2_e5_q gw2_e5_qb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_e5_ki2n gw2_e5_q gw2_e5_qb 0 0 nch W=1.2e-06 L=5e-07
+rgw2_e5_hra gw2_e5_h vthe 1e+06
+rgw2_e5_hrf gw2_e5_h gw2_e5_qb 1.9e+07
+cgw2_e5_hc gw2_e5_h 0 2.1e-09
+ngw2_e5_dis gw2_e5_vm gw2_e5_q gw2_e5_vmd 0 nch W=4e-06 L=1e-06
+rgw2_e5_rdis gw2_e5_vmd vrest 220000
+ngw2_e5_rp gw2_e5_rt gw2_e5_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw2_e5_rrc gw2_e5_rt gw2_e5_rec 10000
+cgw2_e5_rc gw2_e5_rec 0 1e-07
+rgw2_e5_rr gw2_e5_rec 0 8.2e+06
+ngw2_e5_sh1 gw2_e5_vm gw2_e5_rec gw2_e5_vms 0 nch W=2e-06 L=1e-06
+ngw2_e5_sh2 gw2_e5_vms gw2_e5_qb vrest 0 nch W=2e-06 L=1e-06
+ngw2_e5_porh gw2_e5_h por_hold vthe 0 nch W=2e-06 L=1e-06
+ngw2_e5_porm gw2_e5_vm por_hold vrest 0 nch W=2e-06 L=1e-06
+ngw2_e5_ip gw2_e5_vm s2_ya vdd vsrc pch W=4e-06 L=4e-06
+ngw2_e5_in gw2_e5_vm s2_zb 0 0 nch W=4e-06 L=4e-06
+ngw2_b5_sw gw2_b5_t gw2_e5_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw2_b5_rc gw2_b5_t gw2_b5 10000
+cgw2_b5_c gw2_b5 0 1e-07
+rgw2_b5_rl gw2_b5 0 2.2e+07
+ngw2_b5_sh1p gw2_b5_n gw2_b5 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_b5_sh1n gw2_b5_n gw2_b5 0 0 nch W=1.2e-06 L=5e-07
+ngw2_b5_sh2p gw2_b5_q gw2_b5_n vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_b5_sh2n gw2_b5_q gw2_b5_n 0 0 nch W=1.2e-06 L=5e-07
+cgw2_e6_cm gw2_e6_vm 0 1e-07
+rgw2_e6_rm gw2_e6_vm vrest 1e+06
+ngw2_e6_bias0 gw2_e6_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e6_bias1 gw2_e6_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e6_bias2 gw2_e6_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e6_bias3 gw2_e6_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e6_bias4 gw2_e6_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e6_bias5 gw2_e6_vm istep_n 0 0 nch W=4e-06 L=4e-06
+rgw2_e6_kb vdd gw2_e6_knb 1e+06
+ngw2_e6_kmb gw2_e6_knb gw2_e6_knb 0 0 nch W=4e-06 L=4e-06
+ngw2_e6_kmt gw2_e6_ktail gw2_e6_knb 0 0 nch W=4e-06 L=4e-06
+ngw2_e6_km1 gw2_e6_kd1 gw2_e6_vm gw2_e6_ktail 0 nch W=4e-06 L=4e-06
+ngw2_e6_km2 gw2_e6_ko1 gw2_e6_h gw2_e6_ktail 0 nch W=4e-06 L=4e-06
+ngw2_e6_km3 gw2_e6_kd1 gw2_e6_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw2_e6_km4 gw2_e6_ko1 gw2_e6_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw2_e6_ki1p gw2_e6_qb gw2_e6_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_e6_ki1n gw2_e6_qb gw2_e6_ko1 0 0 nch W=1.2e-06 L=5e-07
+ngw2_e6_ki2p gw2_e6_q gw2_e6_qb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_e6_ki2n gw2_e6_q gw2_e6_qb 0 0 nch W=1.2e-06 L=5e-07
+rgw2_e6_hra gw2_e6_h vthe 1e+06
+rgw2_e6_hrf gw2_e6_h gw2_e6_qb 1.9e+07
+cgw2_e6_hc gw2_e6_h 0 2.1e-09
+ngw2_e6_dis gw2_e6_vm gw2_e6_q gw2_e6_vmd 0 nch W=4e-06 L=1e-06
+rgw2_e6_rdis gw2_e6_vmd vrest 220000
+ngw2_e6_rp gw2_e6_rt gw2_e6_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw2_e6_rrc gw2_e6_rt gw2_e6_rec 10000
+cgw2_e6_rc gw2_e6_rec 0 1e-07
+rgw2_e6_rr gw2_e6_rec 0 8.2e+06
+ngw2_e6_sh1 gw2_e6_vm gw2_e6_rec gw2_e6_vms 0 nch W=2e-06 L=1e-06
+ngw2_e6_sh2 gw2_e6_vms gw2_e6_qb vrest 0 nch W=2e-06 L=1e-06
+ngw2_e6_porh gw2_e6_h por_hold vthe 0 nch W=2e-06 L=1e-06
+ngw2_e6_porm gw2_e6_vm por_hold vrest 0 nch W=2e-06 L=1e-06
+ngw2_e6_ip gw2_e6_vm s2_ya vdd vsrc pch W=4e-06 L=4e-06
+ngw2_e6_in gw2_e6_vm s2_zb 0 0 nch W=4e-06 L=4e-06
+ngw2_b6_sw gw2_b6_t gw2_e6_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw2_b6_rc gw2_b6_t gw2_b6 10000
+cgw2_b6_c gw2_b6 0 1e-07
+rgw2_b6_rl gw2_b6 0 2.2e+07
+ngw2_b6_sh1p gw2_b6_n gw2_b6 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_b6_sh1n gw2_b6_n gw2_b6 0 0 nch W=1.2e-06 L=5e-07
+ngw2_b6_sh2p gw2_b6_q gw2_b6_n vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_b6_sh2n gw2_b6_q gw2_b6_n 0 0 nch W=1.2e-06 L=5e-07
+cgw2_e7_cm gw2_e7_vm 0 1e-07
+rgw2_e7_rm gw2_e7_vm vrest 1e+06
+ngw2_e7_bias0 gw2_e7_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e7_bias1 gw2_e7_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e7_bias2 gw2_e7_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e7_bias3 gw2_e7_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e7_bias4 gw2_e7_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e7_bias5 gw2_e7_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e7_bias6 gw2_e7_vm istep_n 0 0 nch W=4e-06 L=4e-06
+rgw2_e7_kb vdd gw2_e7_knb 1e+06
+ngw2_e7_kmb gw2_e7_knb gw2_e7_knb 0 0 nch W=4e-06 L=4e-06
+ngw2_e7_kmt gw2_e7_ktail gw2_e7_knb 0 0 nch W=4e-06 L=4e-06
+ngw2_e7_km1 gw2_e7_kd1 gw2_e7_vm gw2_e7_ktail 0 nch W=4e-06 L=4e-06
+ngw2_e7_km2 gw2_e7_ko1 gw2_e7_h gw2_e7_ktail 0 nch W=4e-06 L=4e-06
+ngw2_e7_km3 gw2_e7_kd1 gw2_e7_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw2_e7_km4 gw2_e7_ko1 gw2_e7_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw2_e7_ki1p gw2_e7_qb gw2_e7_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_e7_ki1n gw2_e7_qb gw2_e7_ko1 0 0 nch W=1.2e-06 L=5e-07
+ngw2_e7_ki2p gw2_e7_q gw2_e7_qb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_e7_ki2n gw2_e7_q gw2_e7_qb 0 0 nch W=1.2e-06 L=5e-07
+rgw2_e7_hra gw2_e7_h vthe 1e+06
+rgw2_e7_hrf gw2_e7_h gw2_e7_qb 1.9e+07
+cgw2_e7_hc gw2_e7_h 0 2.1e-09
+ngw2_e7_dis gw2_e7_vm gw2_e7_q gw2_e7_vmd 0 nch W=4e-06 L=1e-06
+rgw2_e7_rdis gw2_e7_vmd vrest 220000
+ngw2_e7_rp gw2_e7_rt gw2_e7_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw2_e7_rrc gw2_e7_rt gw2_e7_rec 10000
+cgw2_e7_rc gw2_e7_rec 0 1e-07
+rgw2_e7_rr gw2_e7_rec 0 8.2e+06
+ngw2_e7_sh1 gw2_e7_vm gw2_e7_rec gw2_e7_vms 0 nch W=2e-06 L=1e-06
+ngw2_e7_sh2 gw2_e7_vms gw2_e7_qb vrest 0 nch W=2e-06 L=1e-06
+ngw2_e7_porh gw2_e7_h por_hold vthe 0 nch W=2e-06 L=1e-06
+ngw2_e7_porm gw2_e7_vm por_hold vrest 0 nch W=2e-06 L=1e-06
+ngw2_e7_ip gw2_e7_vm s2_ya vdd vsrc pch W=4e-06 L=4e-06
+ngw2_e7_in gw2_e7_vm s2_zb 0 0 nch W=4e-06 L=4e-06
+ngw2_b7_sw gw2_b7_t gw2_e7_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw2_b7_rc gw2_b7_t gw2_b7 10000
+cgw2_b7_c gw2_b7 0 1e-07
+rgw2_b7_rl gw2_b7 0 2.2e+07
+ngw2_b7_sh1p gw2_b7_n gw2_b7 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_b7_sh1n gw2_b7_n gw2_b7 0 0 nch W=1.2e-06 L=5e-07
+ngw2_b7_sh2p gw2_b7_q gw2_b7_n vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_b7_sh2n gw2_b7_q gw2_b7_n 0 0 nch W=1.2e-06 L=5e-07
+cgw2_e8_cm gw2_e8_vm 0 1e-07
+rgw2_e8_rm gw2_e8_vm vrest 1e+06
+ngw2_e8_bias0 gw2_e8_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e8_bias1 gw2_e8_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e8_bias2 gw2_e8_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e8_bias3 gw2_e8_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e8_bias4 gw2_e8_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e8_bias5 gw2_e8_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e8_bias6 gw2_e8_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e8_bias7 gw2_e8_vm istep_n 0 0 nch W=4e-06 L=4e-06
+rgw2_e8_kb vdd gw2_e8_knb 1e+06
+ngw2_e8_kmb gw2_e8_knb gw2_e8_knb 0 0 nch W=4e-06 L=4e-06
+ngw2_e8_kmt gw2_e8_ktail gw2_e8_knb 0 0 nch W=4e-06 L=4e-06
+ngw2_e8_km1 gw2_e8_kd1 gw2_e8_vm gw2_e8_ktail 0 nch W=4e-06 L=4e-06
+ngw2_e8_km2 gw2_e8_ko1 gw2_e8_h gw2_e8_ktail 0 nch W=4e-06 L=4e-06
+ngw2_e8_km3 gw2_e8_kd1 gw2_e8_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw2_e8_km4 gw2_e8_ko1 gw2_e8_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw2_e8_ki1p gw2_e8_qb gw2_e8_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_e8_ki1n gw2_e8_qb gw2_e8_ko1 0 0 nch W=1.2e-06 L=5e-07
+ngw2_e8_ki2p gw2_e8_q gw2_e8_qb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_e8_ki2n gw2_e8_q gw2_e8_qb 0 0 nch W=1.2e-06 L=5e-07
+rgw2_e8_hra gw2_e8_h vthe 1e+06
+rgw2_e8_hrf gw2_e8_h gw2_e8_qb 1.9e+07
+cgw2_e8_hc gw2_e8_h 0 2.1e-09
+ngw2_e8_dis gw2_e8_vm gw2_e8_q gw2_e8_vmd 0 nch W=4e-06 L=1e-06
+rgw2_e8_rdis gw2_e8_vmd vrest 220000
+ngw2_e8_rp gw2_e8_rt gw2_e8_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw2_e8_rrc gw2_e8_rt gw2_e8_rec 10000
+cgw2_e8_rc gw2_e8_rec 0 1e-07
+rgw2_e8_rr gw2_e8_rec 0 8.2e+06
+ngw2_e8_sh1 gw2_e8_vm gw2_e8_rec gw2_e8_vms 0 nch W=2e-06 L=1e-06
+ngw2_e8_sh2 gw2_e8_vms gw2_e8_qb vrest 0 nch W=2e-06 L=1e-06
+ngw2_e8_porh gw2_e8_h por_hold vthe 0 nch W=2e-06 L=1e-06
+ngw2_e8_porm gw2_e8_vm por_hold vrest 0 nch W=2e-06 L=1e-06
+ngw2_e8_ip gw2_e8_vm s2_ya vdd vsrc pch W=4e-06 L=4e-06
+ngw2_e8_in gw2_e8_vm s2_zb 0 0 nch W=4e-06 L=4e-06
+ngw2_b8_sw gw2_b8_t gw2_e8_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw2_b8_rc gw2_b8_t gw2_b8 10000
+cgw2_b8_c gw2_b8 0 1e-07
+rgw2_b8_rl gw2_b8 0 2.2e+07
+ngw2_b8_sh1p gw2_b8_n gw2_b8 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_b8_sh1n gw2_b8_n gw2_b8 0 0 nch W=1.2e-06 L=5e-07
+ngw2_b8_sh2p gw2_b8_q gw2_b8_n vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_b8_sh2n gw2_b8_q gw2_b8_n 0 0 nch W=1.2e-06 L=5e-07
+cgw2_e9_cm gw2_e9_vm 0 1e-07
+rgw2_e9_rm gw2_e9_vm vrest 1e+06
+ngw2_e9_bias0 gw2_e9_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e9_bias1 gw2_e9_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e9_bias2 gw2_e9_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e9_bias3 gw2_e9_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e9_bias4 gw2_e9_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e9_bias5 gw2_e9_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e9_bias6 gw2_e9_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e9_bias7 gw2_e9_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e9_bias8 gw2_e9_vm istep_n 0 0 nch W=4e-06 L=4e-06
+rgw2_e9_kb vdd gw2_e9_knb 1e+06
+ngw2_e9_kmb gw2_e9_knb gw2_e9_knb 0 0 nch W=4e-06 L=4e-06
+ngw2_e9_kmt gw2_e9_ktail gw2_e9_knb 0 0 nch W=4e-06 L=4e-06
+ngw2_e9_km1 gw2_e9_kd1 gw2_e9_vm gw2_e9_ktail 0 nch W=4e-06 L=4e-06
+ngw2_e9_km2 gw2_e9_ko1 gw2_e9_h gw2_e9_ktail 0 nch W=4e-06 L=4e-06
+ngw2_e9_km3 gw2_e9_kd1 gw2_e9_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw2_e9_km4 gw2_e9_ko1 gw2_e9_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw2_e9_ki1p gw2_e9_qb gw2_e9_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_e9_ki1n gw2_e9_qb gw2_e9_ko1 0 0 nch W=1.2e-06 L=5e-07
+ngw2_e9_ki2p gw2_e9_q gw2_e9_qb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_e9_ki2n gw2_e9_q gw2_e9_qb 0 0 nch W=1.2e-06 L=5e-07
+rgw2_e9_hra gw2_e9_h vthe 1e+06
+rgw2_e9_hrf gw2_e9_h gw2_e9_qb 1.9e+07
+cgw2_e9_hc gw2_e9_h 0 2.1e-09
+ngw2_e9_dis gw2_e9_vm gw2_e9_q gw2_e9_vmd 0 nch W=4e-06 L=1e-06
+rgw2_e9_rdis gw2_e9_vmd vrest 220000
+ngw2_e9_rp gw2_e9_rt gw2_e9_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw2_e9_rrc gw2_e9_rt gw2_e9_rec 10000
+cgw2_e9_rc gw2_e9_rec 0 1e-07
+rgw2_e9_rr gw2_e9_rec 0 8.2e+06
+ngw2_e9_sh1 gw2_e9_vm gw2_e9_rec gw2_e9_vms 0 nch W=2e-06 L=1e-06
+ngw2_e9_sh2 gw2_e9_vms gw2_e9_qb vrest 0 nch W=2e-06 L=1e-06
+ngw2_e9_porh gw2_e9_h por_hold vthe 0 nch W=2e-06 L=1e-06
+ngw2_e9_porm gw2_e9_vm por_hold vrest 0 nch W=2e-06 L=1e-06
+ngw2_e9_ip gw2_e9_vm s2_ya vdd vsrc pch W=4e-06 L=4e-06
+ngw2_e9_in gw2_e9_vm s2_zb 0 0 nch W=4e-06 L=4e-06
+ngw2_b9_sw gw2_b9_t gw2_e9_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw2_b9_rc gw2_b9_t gw2_b9 10000
+cgw2_b9_c gw2_b9 0 1e-07
+rgw2_b9_rl gw2_b9 0 2.2e+07
+ngw2_b9_sh1p gw2_b9_n gw2_b9 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_b9_sh1n gw2_b9_n gw2_b9 0 0 nch W=1.2e-06 L=5e-07
+ngw2_b9_sh2p gw2_b9_q gw2_b9_n vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_b9_sh2n gw2_b9_q gw2_b9_n 0 0 nch W=1.2e-06 L=5e-07
+cgw2_e10_cm gw2_e10_vm 0 1e-07
+rgw2_e10_rm gw2_e10_vm vrest 1e+06
+ngw2_e10_bias0 gw2_e10_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e10_bias1 gw2_e10_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e10_bias2 gw2_e10_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e10_bias3 gw2_e10_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e10_bias4 gw2_e10_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e10_bias5 gw2_e10_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e10_bias6 gw2_e10_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e10_bias7 gw2_e10_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e10_bias8 gw2_e10_vm istep_n 0 0 nch W=4e-06 L=4e-06
+ngw2_e10_bias9 gw2_e10_vm istep_n 0 0 nch W=4e-06 L=4e-06
+rgw2_e10_kb vdd gw2_e10_knb 1e+06
+ngw2_e10_kmb gw2_e10_knb gw2_e10_knb 0 0 nch W=4e-06 L=4e-06
+ngw2_e10_kmt gw2_e10_ktail gw2_e10_knb 0 0 nch W=4e-06 L=4e-06
+ngw2_e10_km1 gw2_e10_kd1 gw2_e10_vm gw2_e10_ktail 0 nch W=4e-06 L=4e-06
+ngw2_e10_km2 gw2_e10_ko1 gw2_e10_h gw2_e10_ktail 0 nch W=4e-06 L=4e-06
+ngw2_e10_km3 gw2_e10_kd1 gw2_e10_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw2_e10_km4 gw2_e10_ko1 gw2_e10_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw2_e10_ki1p gw2_e10_qb gw2_e10_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_e10_ki1n gw2_e10_qb gw2_e10_ko1 0 0 nch W=1.2e-06 L=5e-07
+ngw2_e10_ki2p gw2_e10_q gw2_e10_qb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_e10_ki2n gw2_e10_q gw2_e10_qb 0 0 nch W=1.2e-06 L=5e-07
+rgw2_e10_hra gw2_e10_h vthe 1e+06
+rgw2_e10_hrf gw2_e10_h gw2_e10_qb 1.9e+07
+cgw2_e10_hc gw2_e10_h 0 2.1e-09
+ngw2_e10_dis gw2_e10_vm gw2_e10_q gw2_e10_vmd 0 nch W=4e-06 L=1e-06
+rgw2_e10_rdis gw2_e10_vmd vrest 220000
+ngw2_e10_rp gw2_e10_rt gw2_e10_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw2_e10_rrc gw2_e10_rt gw2_e10_rec 10000
+cgw2_e10_rc gw2_e10_rec 0 1e-07
+rgw2_e10_rr gw2_e10_rec 0 8.2e+06
+ngw2_e10_sh1 gw2_e10_vm gw2_e10_rec gw2_e10_vms 0 nch W=2e-06 L=1e-06
+ngw2_e10_sh2 gw2_e10_vms gw2_e10_qb vrest 0 nch W=2e-06 L=1e-06
+ngw2_e10_porh gw2_e10_h por_hold vthe 0 nch W=2e-06 L=1e-06
+ngw2_e10_porm gw2_e10_vm por_hold vrest 0 nch W=2e-06 L=1e-06
+ngw2_e10_ip gw2_e10_vm s2_ya vdd vsrc pch W=4e-06 L=4e-06
+ngw2_e10_in gw2_e10_vm s2_zb 0 0 nch W=4e-06 L=4e-06
+ngw2_b10_sw gw2_b10_t gw2_e10_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw2_b10_rc gw2_b10_t gw2_b10 10000
+cgw2_b10_c gw2_b10 0 1e-07
+rgw2_b10_rl gw2_b10 0 2.2e+07
+ngw2_b10_sh1p gw2_b10_n gw2_b10 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_b10_sh1n gw2_b10_n gw2_b10 0 0 nch W=1.2e-06 L=5e-07
+ngw2_b10_sh2p gw2_b10_q gw2_b10_n vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_b10_sh2n gw2_b10_q gw2_b10_n 0 0 nch W=1.2e-06 L=5e-07
+ngw2_and_a0_npa gw2_and_a0_nb gw2_b1_q vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_and_a0_npb gw2_and_a0_nb gw2_b2_q vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_and_a0_nna gw2_and_a0_nb gw2_b1_q gw2_and_a0_nx 0 nch W=2.4e-06 L=5e-07
+ngw2_and_a0_nnb gw2_and_a0_nx gw2_b2_q 0 0 nch W=2.4e-06 L=5e-07
+ngw2_and_a0_ip gw2_and_g0 gw2_and_a0_nb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_and_a0_in gw2_and_g0 gw2_and_a0_nb 0 0 nch W=1.2e-06 L=5e-07
+ngw2_and_a1_npa gw2_and_a1_nb gw2_b3_q vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_and_a1_npb gw2_and_a1_nb gw2_b4_q vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_and_a1_nna gw2_and_a1_nb gw2_b3_q gw2_and_a1_nx 0 nch W=2.4e-06 L=5e-07
+ngw2_and_a1_nnb gw2_and_a1_nx gw2_b4_q 0 0 nch W=2.4e-06 L=5e-07
+ngw2_and_a1_ip gw2_and_g1 gw2_and_a1_nb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_and_a1_in gw2_and_g1 gw2_and_a1_nb 0 0 nch W=1.2e-06 L=5e-07
+ngw2_and_a2_npa gw2_and_a2_nb gw2_b5_q vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_and_a2_npb gw2_and_a2_nb gw2_b6_q vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_and_a2_nna gw2_and_a2_nb gw2_b5_q gw2_and_a2_nx 0 nch W=2.4e-06 L=5e-07
+ngw2_and_a2_nnb gw2_and_a2_nx gw2_b6_q 0 0 nch W=2.4e-06 L=5e-07
+ngw2_and_a2_ip gw2_and_g2 gw2_and_a2_nb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_and_a2_in gw2_and_g2 gw2_and_a2_nb 0 0 nch W=1.2e-06 L=5e-07
+ngw2_and_a3_npa gw2_and_a3_nb gw2_b7_q vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_and_a3_npb gw2_and_a3_nb gw2_b8_q vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_and_a3_nna gw2_and_a3_nb gw2_b7_q gw2_and_a3_nx 0 nch W=2.4e-06 L=5e-07
+ngw2_and_a3_nnb gw2_and_a3_nx gw2_b8_q 0 0 nch W=2.4e-06 L=5e-07
+ngw2_and_a3_ip gw2_and_g3 gw2_and_a3_nb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_and_a3_in gw2_and_g3 gw2_and_a3_nb 0 0 nch W=1.2e-06 L=5e-07
+ngw2_and_a4_npa gw2_and_a4_nb gw2_b9_q vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_and_a4_npb gw2_and_a4_nb gw2_b10_q vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_and_a4_nna gw2_and_a4_nb gw2_b9_q gw2_and_a4_nx 0 nch W=2.4e-06 L=5e-07
+ngw2_and_a4_nnb gw2_and_a4_nx gw2_b10_q 0 0 nch W=2.4e-06 L=5e-07
+ngw2_and_a4_ip gw2_and_g4 gw2_and_a4_nb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_and_a4_in gw2_and_g4 gw2_and_a4_nb 0 0 nch W=1.2e-06 L=5e-07
+ngw2_and_a5_npa gw2_and_a5_nb gw2_and_g0 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_and_a5_npb gw2_and_a5_nb gw2_and_g1 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_and_a5_nna gw2_and_a5_nb gw2_and_g0 gw2_and_a5_nx 0 nch W=2.4e-06 L=5e-07
+ngw2_and_a5_nnb gw2_and_a5_nx gw2_and_g1 0 0 nch W=2.4e-06 L=5e-07
+ngw2_and_a5_ip gw2_and_g5 gw2_and_a5_nb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_and_a5_in gw2_and_g5 gw2_and_a5_nb 0 0 nch W=1.2e-06 L=5e-07
+ngw2_and_a6_npa gw2_and_a6_nb gw2_and_g2 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_and_a6_npb gw2_and_a6_nb gw2_and_g3 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_and_a6_nna gw2_and_a6_nb gw2_and_g2 gw2_and_a6_nx 0 nch W=2.4e-06 L=5e-07
+ngw2_and_a6_nnb gw2_and_a6_nx gw2_and_g3 0 0 nch W=2.4e-06 L=5e-07
+ngw2_and_a6_ip gw2_and_g6 gw2_and_a6_nb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_and_a6_in gw2_and_g6 gw2_and_a6_nb 0 0 nch W=1.2e-06 L=5e-07
+ngw2_and_a7_npa gw2_and_a7_nb gw2_and_g5 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_and_a7_npb gw2_and_a7_nb gw2_and_g6 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_and_a7_nna gw2_and_a7_nb gw2_and_g5 gw2_and_a7_nx 0 nch W=2.4e-06 L=5e-07
+ngw2_and_a7_nnb gw2_and_a7_nx gw2_and_g6 0 0 nch W=2.4e-06 L=5e-07
+ngw2_and_a7_ip gw2_and_g7 gw2_and_a7_nb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_and_a7_in gw2_and_g7 gw2_and_a7_nb 0 0 nch W=1.2e-06 L=5e-07
+ngw2_and_a8_npa gw2_and_a8_nb gw2_and_g7 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_and_a8_npb gw2_and_a8_nb gw2_and_g4 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_and_a8_nna gw2_and_a8_nb gw2_and_g7 gw2_and_a8_nx 0 nch W=2.4e-06 L=5e-07
+ngw2_and_a8_nnb gw2_and_a8_nx gw2_and_g4 0 0 nch W=2.4e-06 L=5e-07
+ngw2_and_a8_ip gw2_and_g8 gw2_and_a8_nb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_and_a8_in gw2_and_g8 gw2_and_a8_nb 0 0 nch W=1.2e-06 L=5e-07
+ngw2_gip gw2_gb gw2_and_g8 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_gin gw2_gb gw2_and_g8 0 0 nch W=1.2e-06 L=5e-07
+cgw2_col_cm gw2_col_vm 0 1e-07
+rgw2_col_rm gw2_col_vm vrest 1e+06
+rgw2_col_kb vdd gw2_col_knb 1e+06
+ngw2_col_kmb gw2_col_knb gw2_col_knb 0 0 nch W=4e-06 L=4e-06
+ngw2_col_kmt gw2_col_ktail gw2_col_knb 0 0 nch W=4e-06 L=4e-06
+ngw2_col_km1 gw2_col_kd1 gw2_col_vm gw2_col_ktail 0 nch W=4e-06 L=4e-06
+ngw2_col_km2 gw2_col_ko1 gw2_col_h gw2_col_ktail 0 nch W=4e-06 L=4e-06
+ngw2_col_km3 gw2_col_kd1 gw2_col_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw2_col_km4 gw2_col_ko1 gw2_col_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ngw2_col_ki1p gw2_col_qb gw2_col_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_col_ki1n gw2_col_qb gw2_col_ko1 0 0 nch W=1.2e-06 L=5e-07
+ngw2_col_ki2p gw2_col_q gw2_col_qb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_col_ki2n gw2_col_q gw2_col_qb 0 0 nch W=1.2e-06 L=5e-07
+rgw2_col_hra gw2_col_h vthe 1e+06
+rgw2_col_hrf gw2_col_h gw2_col_qb 1.9e+07
+cgw2_col_hc gw2_col_h 0 2.1e-09
+ngw2_col_dis gw2_col_vm gw2_col_q gw2_col_vmd 0 nch W=4e-06 L=1e-06
+rgw2_col_rdis gw2_col_vmd vrest 220000
+ngw2_col_rp gw2_col_rt gw2_col_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw2_col_rrc gw2_col_rt gw2_col_rec 10000
+cgw2_col_rc gw2_col_rec 0 1e-07
+rgw2_col_rr gw2_col_rec 0 8.2e+06
+ngw2_col_sh1 gw2_col_vm gw2_col_rec gw2_col_vms 0 nch W=2e-06 L=1e-06
+ngw2_col_sh2 gw2_col_vms gw2_col_qb vrest 0 nch W=2e-06 L=1e-06
+ngw2_col_porh gw2_col_h por_hold vthe 0 nch W=2e-06 L=1e-06
+ngw2_col_porm gw2_col_vm por_hold vrest 0 nch W=2e-06 L=1e-06
+ngw2_cin_sw gw2_cin_x gw2_gb vdd vsrc pch W=4e-06 L=1e-06
+ngw2_cin_cp gw2_col_vm ilimp_n gw2_cin_x vsrc pch W=4e-06 L=4e-06
+ngw2_op_tsw gw2_op_tt gw2_col_qb vdd vsrc pch W=2e-06 L=1e-06
+rgw2_op_trc gw2_op_tt gw2_op_at 10000
+cgw2_op_tc gw2_op_at 0 1e-07
+rgw2_op_trl gw2_op_at 0 2.2e+07
+ngw2_op_sh1p gw2_op_an gw2_op_at vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_op_sh1n gw2_op_an gw2_op_at 0 0 nch W=1.2e-06 L=5e-07
+ngw2_op_sh2p gw2_op_aq gw2_op_an vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_op_sh2n gw2_op_aq gw2_op_an 0 0 nch W=1.2e-06 L=5e-07
+ngw2_op_abp gw2_op_aqb gw2_op_aq vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_op_abn gw2_op_aqb gw2_op_aq 0 0 nch W=1.2e-06 L=5e-07
+rgw2_op_dr gw2_op_aq gw2_op_ad 1e+06
+cgw2_op_dc gw2_op_ad 0 3.3e-07
+ngw2_op_d2p gw2_op_adn gw2_op_ad vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_op_d2n gw2_op_adn gw2_op_ad 0 0 nch W=1.2e-06 L=5e-07
+ngw2_op_gpa gw2_op_pb gw2_op_aq vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_op_gpb gw2_op_pb gw2_op_adn vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_op_gna gw2_op_pb gw2_op_aq gw2_op_gx 0 nch W=2.4e-06 L=5e-07
+ngw2_op_gnb gw2_op_gx gw2_op_adn 0 0 nch W=2.4e-06 L=5e-07
+ngw2_op_op gw2_op_p gw2_op_pb vdd vsrc pch W=2.4e-06 L=5e-07
+ngw2_op_on gw2_op_p gw2_op_pb 0 0 nch W=1.2e-06 L=5e-07
+nhsw1_sw hsw1_sd gw1_col_qb vdd vsrc pch W=4e-06 L=5e-07
+rhsw1_rr hsw1_sd hsw1_h1 100000
+chsw1_c1 hsw1_h1 0 1e-06
+rhsw1_r2 hsw1_h1 hw1 1e+06
+chsw1_c2 hw1 0 4.7e-07
+rhsw1_rl hw1 0 4.7e+06
+nhsw2_sw hsw2_sd gw2_col_qb vdd vsrc pch W=4e-06 L=5e-07
+rhsw2_rr hsw2_sd hsw2_h1 100000
+chsw2_c1 hsw2_h1 0 1e-06
+rhsw2_r2 hsw2_h1 hw2 1e+06
+chsw2_c2 hw2 0 4.7e-07
+rhsw2_rl hw2 0 4.7e+06
+nthw12f_st_mh thw12f_mi hw1 thw12f_st_x 0 nch W=2e-06 L=4e-06
+nthw12f_st_mp thw12f_st_x gw2_op_aq 0 0 nch W=4e-06 L=1e-06
+va_cthw12f_cm_p thw12f_vm cthw12f_cm_p 0
+cthw12f_cm cthw12f_cm_p 0 1.5e-06
+va_rthw12f_rm_p thw12f_vm rthw12f_rm_p 0
+rthw12f_rm rthw12f_rm_p vrest 1e+06
+rthw12f_kb vdd thw12f_knb 1e+06
+nthw12f_kmb thw12f_knb thw12f_knb 0 0 nch W=4e-06 L=4e-06
+nthw12f_kmt thw12f_ktail thw12f_knb 0 0 nch W=4e-06 L=4e-06
+va_nthw12f_km1_g thw12f_vm nthw12f_km1_g 0
+nthw12f_km1 thw12f_kd1 nthw12f_km1_g thw12f_ktail 0 nch W=4e-06 L=4e-06
+nthw12f_km2 thw12f_ko1 thw12f_h thw12f_ktail 0 nch W=4e-06 L=4e-06
+nthw12f_km3 thw12f_kd1 thw12f_kd1 vdd vsrc pch W=4e-06 L=4e-06
+nthw12f_km4 thw12f_ko1 thw12f_kd1 vdd vsrc pch W=4e-06 L=4e-06
+nthw12f_ki1p thw12f_qb thw12f_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+nthw12f_ki1n thw12f_qb thw12f_ko1 0 0 nch W=1.2e-06 L=5e-07
+nthw12f_ki2p thw12f_q thw12f_qb vdd vsrc pch W=2.4e-06 L=5e-07
+nthw12f_ki2n thw12f_q thw12f_qb 0 0 nch W=1.2e-06 L=5e-07
+rthw12f_hra thw12f_h vthr 1e+06
+rthw12f_hrf thw12f_h thw12f_qb 1.9e+07
+cthw12f_hc thw12f_h 0 2.1e-09
+va_nthw12f_dis_d thw12f_vm nthw12f_dis_d 0
+va_nthw12f_dis_s thw12f_vmd nthw12f_dis_s 0
+nthw12f_dis nthw12f_dis_d thw12f_q nthw12f_dis_s 0 nch W=4e-06 L=1e-06
+va_rthw12f_rdis_p thw12f_vmd rthw12f_rdis_p 0
+rthw12f_rdis rthw12f_rdis_p vrest 12000
+nthw12f_rp thw12f_rt thw12f_qb vdd vsrc pch W=2e-06 L=1e-06
+rthw12f_rrc thw12f_rt thw12f_rec 10000
+cthw12f_rc thw12f_rec 0 1e-07
+rthw12f_rr thw12f_rec 0 8.2e+06
+va_nthw12f_sh1_d thw12f_vm nthw12f_sh1_d 0
+va_nthw12f_sh1_s thw12f_vms nthw12f_sh1_s 0
+nthw12f_sh1 nthw12f_sh1_d thw12f_rec nthw12f_sh1_s 0 nch W=2e-06 L=1e-06
+va_nthw12f_sh2_d thw12f_vms nthw12f_sh2_d 0
+nthw12f_sh2 nthw12f_sh2_d thw12f_qb vrest 0 nch W=2e-06 L=1e-06
+nthw12f_porh thw12f_h por_hold vthr 0 nch W=2e-06 L=1e-06
+va_nthw12f_porm_d thw12f_vm nthw12f_porm_d 0
+nthw12f_porm nthw12f_porm_d por_hold vrest 0 nch W=2e-06 L=1e-06
+nthw12f_op_tsw thw12f_op_tt thw12f_qb vdd vsrc pch W=2e-06 L=1e-06
+rthw12f_op_trc thw12f_op_tt thw12f_op_at 10000
+cthw12f_op_tc thw12f_op_at 0 1e-07
+rthw12f_op_trl thw12f_op_at 0 2.2e+07
+nthw12f_op_sh1p thw12f_op_an thw12f_op_at vdd vsrc pch W=2.4e-06 L=5e-07
+nthw12f_op_sh1n thw12f_op_an thw12f_op_at 0 0 nch W=1.2e-06 L=5e-07
+nthw12f_op_sh2p thw12f_op_aq thw12f_op_an vdd vsrc pch W=2.4e-06 L=5e-07
+nthw12f_op_sh2n thw12f_op_aq thw12f_op_an 0 0 nch W=1.2e-06 L=5e-07
+nthw12f_op_abp thw12f_op_aqb thw12f_op_aq vdd vsrc pch W=2.4e-06 L=5e-07
+nthw12f_op_abn thw12f_op_aqb thw12f_op_aq 0 0 nch W=1.2e-06 L=5e-07
+rthw12f_op_dr thw12f_op_aq thw12f_op_ad 1e+06
+cthw12f_op_dc thw12f_op_ad 0 3.3e-07
+nthw12f_op_d2p thw12f_op_adn thw12f_op_ad vdd vsrc pch W=2.4e-06 L=5e-07
+nthw12f_op_d2n thw12f_op_adn thw12f_op_ad 0 0 nch W=1.2e-06 L=5e-07
+nthw12f_op_gpa thw12f_op_pb thw12f_op_aq vdd vsrc pch W=2.4e-06 L=5e-07
+nthw12f_op_gpb thw12f_op_pb thw12f_op_adn vdd vsrc pch W=2.4e-06 L=5e-07
+nthw12f_op_gna thw12f_op_pb thw12f_op_aq thw12f_op_gx 0 nch W=2.4e-06 L=5e-07
+nthw12f_op_gnb thw12f_op_gx thw12f_op_adn 0 0 nch W=2.4e-06 L=5e-07
+nthw12f_op_op thw12f_op_p thw12f_op_pb vdd vsrc pch W=2.4e-06 L=5e-07
+nthw12f_op_on thw12f_op_p thw12f_op_pb 0 0 nch W=1.2e-06 L=5e-07
+nthw12f_rm_md thw12f_mi thw12f_mi vdd vsrc pch W=4e-06 L=2e-06
+va_nthw12f_rm_mo_d thw12f_vm nthw12f_rm_mo_d 0
+nthw12f_rm_mo nthw12f_rm_mo_d thw12f_mi vdd vsrc pch W=1e-06 L=8e-06
+nthw12r_st_mh thw12r_mi hw2 thw12r_st_x 0 nch W=2e-06 L=4e-06
+nthw12r_st_mp thw12r_st_x gw1_op_aq 0 0 nch W=4e-06 L=1e-06
+va_cthw12r_cm_p thw12r_vm cthw12r_cm_p 0
+cthw12r_cm cthw12r_cm_p 0 1.5e-06
+va_rthw12r_rm_p thw12r_vm rthw12r_rm_p 0
+rthw12r_rm rthw12r_rm_p vrest 1e+06
+rthw12r_kb vdd thw12r_knb 1e+06
+nthw12r_kmb thw12r_knb thw12r_knb 0 0 nch W=4e-06 L=4e-06
+nthw12r_kmt thw12r_ktail thw12r_knb 0 0 nch W=4e-06 L=4e-06
+va_nthw12r_km1_g thw12r_vm nthw12r_km1_g 0
+nthw12r_km1 thw12r_kd1 nthw12r_km1_g thw12r_ktail 0 nch W=4e-06 L=4e-06
+nthw12r_km2 thw12r_ko1 thw12r_h thw12r_ktail 0 nch W=4e-06 L=4e-06
+nthw12r_km3 thw12r_kd1 thw12r_kd1 vdd vsrc pch W=4e-06 L=4e-06
+nthw12r_km4 thw12r_ko1 thw12r_kd1 vdd vsrc pch W=4e-06 L=4e-06
+nthw12r_ki1p thw12r_qb thw12r_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+nthw12r_ki1n thw12r_qb thw12r_ko1 0 0 nch W=1.2e-06 L=5e-07
+nthw12r_ki2p thw12r_q thw12r_qb vdd vsrc pch W=2.4e-06 L=5e-07
+nthw12r_ki2n thw12r_q thw12r_qb 0 0 nch W=1.2e-06 L=5e-07
+rthw12r_hra thw12r_h vthr 1e+06
+rthw12r_hrf thw12r_h thw12r_qb 1.9e+07
+cthw12r_hc thw12r_h 0 2.1e-09
+va_nthw12r_dis_d thw12r_vm nthw12r_dis_d 0
+va_nthw12r_dis_s thw12r_vmd nthw12r_dis_s 0
+nthw12r_dis nthw12r_dis_d thw12r_q nthw12r_dis_s 0 nch W=4e-06 L=1e-06
+va_rthw12r_rdis_p thw12r_vmd rthw12r_rdis_p 0
+rthw12r_rdis rthw12r_rdis_p vrest 12000
+nthw12r_rp thw12r_rt thw12r_qb vdd vsrc pch W=2e-06 L=1e-06
+rthw12r_rrc thw12r_rt thw12r_rec 10000
+cthw12r_rc thw12r_rec 0 1e-07
+rthw12r_rr thw12r_rec 0 8.2e+06
+va_nthw12r_sh1_d thw12r_vm nthw12r_sh1_d 0
+va_nthw12r_sh1_s thw12r_vms nthw12r_sh1_s 0
+nthw12r_sh1 nthw12r_sh1_d thw12r_rec nthw12r_sh1_s 0 nch W=2e-06 L=1e-06
+va_nthw12r_sh2_d thw12r_vms nthw12r_sh2_d 0
+nthw12r_sh2 nthw12r_sh2_d thw12r_qb vrest 0 nch W=2e-06 L=1e-06
+nthw12r_porh thw12r_h por_hold vthr 0 nch W=2e-06 L=1e-06
+va_nthw12r_porm_d thw12r_vm nthw12r_porm_d 0
+nthw12r_porm nthw12r_porm_d por_hold vrest 0 nch W=2e-06 L=1e-06
+nthw12r_op_tsw thw12r_op_tt thw12r_qb vdd vsrc pch W=2e-06 L=1e-06
+rthw12r_op_trc thw12r_op_tt thw12r_op_at 10000
+cthw12r_op_tc thw12r_op_at 0 1e-07
+rthw12r_op_trl thw12r_op_at 0 2.2e+07
+nthw12r_op_sh1p thw12r_op_an thw12r_op_at vdd vsrc pch W=2.4e-06 L=5e-07
+nthw12r_op_sh1n thw12r_op_an thw12r_op_at 0 0 nch W=1.2e-06 L=5e-07
+nthw12r_op_sh2p thw12r_op_aq thw12r_op_an vdd vsrc pch W=2.4e-06 L=5e-07
+nthw12r_op_sh2n thw12r_op_aq thw12r_op_an 0 0 nch W=1.2e-06 L=5e-07
+nthw12r_op_abp thw12r_op_aqb thw12r_op_aq vdd vsrc pch W=2.4e-06 L=5e-07
+nthw12r_op_abn thw12r_op_aqb thw12r_op_aq 0 0 nch W=1.2e-06 L=5e-07
+rthw12r_op_dr thw12r_op_aq thw12r_op_ad 1e+06
+cthw12r_op_dc thw12r_op_ad 0 3.3e-07
+nthw12r_op_d2p thw12r_op_adn thw12r_op_ad vdd vsrc pch W=2.4e-06 L=5e-07
+nthw12r_op_d2n thw12r_op_adn thw12r_op_ad 0 0 nch W=1.2e-06 L=5e-07
+nthw12r_op_gpa thw12r_op_pb thw12r_op_aq vdd vsrc pch W=2.4e-06 L=5e-07
+nthw12r_op_gpb thw12r_op_pb thw12r_op_adn vdd vsrc pch W=2.4e-06 L=5e-07
+nthw12r_op_gna thw12r_op_pb thw12r_op_aq thw12r_op_gx 0 nch W=2.4e-06 L=5e-07
+nthw12r_op_gnb thw12r_op_gx thw12r_op_adn 0 0 nch W=2.4e-06 L=5e-07
+nthw12r_op_op thw12r_op_p thw12r_op_pb vdd vsrc pch W=2.4e-06 L=5e-07
+nthw12r_op_on thw12r_op_p thw12r_op_pb 0 0 nch W=1.2e-06 L=5e-07
+nthw12r_rm_md thw12r_mi thw12r_mi vdd vsrc pch W=4e-06 L=2e-06
+va_nthw12r_rm_mo_d thw12r_vm nthw12r_rm_mo_d 0
+nthw12r_rm_mo nthw12r_rm_mo_d thw12r_mi vdd vsrc pch W=1e-06 L=8e-06
+cspwc1 spw1 0 1e-07
+rspwl1 spw1 vmid 1e+06
+nspwi1_sw spwi1_x gw1_op_aqb vdd vsrc pch W=4e-06 L=1e-06
+nspwi1_cp spw1 irefp_n spwi1_x vsrc pch W=2e-06 L=4e-06
+cspwc2 spw2 0 1e-07
+rspwl2 spw2 vmid 1e+06
+nspwi2_sw spwi2_x gw2_op_aqb vdd vsrc pch W=4e-06 L=1e-06
+nspwi2_cp spw2 irefp_n spwi2_x vsrc pch W=2e-06 L=4e-06
+cspwc3 spw3 0 1e-07
+rspwl3 spw3 vmid 1e+06
+nspwi3_sw spwi3_x vdd vdd vsrc pch W=4e-06 L=1e-06
+nspwi3_cp spw3 irefp_n spwi3_x vsrc pch W=2e-06 L=4e-06
+cspwc4 spw4 0 1e-07
+rspwl4 spw4 vmid 1e+06
+nspwi4_sw spwi4_x vdd vdd vsrc pch W=4e-06 L=1e-06
+nspwi4_cp spw4 irefp_n spwi4_x vsrc pch W=2e-06 L=4e-06
+rspwrs12 spw1 spws12 200000
+cspwcs12 spws12 0 1e-12
+rspwrt12 spws12 spw2 800000
+rspwrs23 spw2 spws23 200000
+cspwcs23 spws23 0 1e-12
+rspwrt23 spws23 spw3 800000
+rspwrs34 spw3 spws34 200000
+cspwcs34 spws34 0 1e-12
+rspwrt34 spws34 spw4 800000
+va_csgw12f_cm_p sgw12f_vm csgw12f_cm_p 0
+csgw12f_cm csgw12f_cm_p 0 1e-07
+va_rsgw12f_rm_p sgw12f_vm rsgw12f_rm_p 0
+rsgw12f_rm rsgw12f_rm_p vrest 1e+06
+rsgw12f_kb vdd sgw12f_knb 1e+06
+nsgw12f_kmb sgw12f_knb sgw12f_knb 0 0 nch W=4e-06 L=4e-06
+nsgw12f_kmt sgw12f_ktail sgw12f_knb 0 0 nch W=4e-06 L=4e-06
+va_nsgw12f_km1_g sgw12f_vm nsgw12f_km1_g 0
+nsgw12f_km1 sgw12f_kd1 nsgw12f_km1_g sgw12f_ktail 0 nch W=4e-06 L=4e-06
+nsgw12f_km2 sgw12f_ko1 sgw12f_h sgw12f_ktail 0 nch W=4e-06 L=4e-06
+nsgw12f_km3 sgw12f_kd1 sgw12f_kd1 vdd vsrc pch W=4e-06 L=4e-06
+nsgw12f_km4 sgw12f_ko1 sgw12f_kd1 vdd vsrc pch W=4e-06 L=4e-06
+nsgw12f_ki1p sgw12f_qb sgw12f_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+nsgw12f_ki1n sgw12f_qb sgw12f_ko1 0 0 nch W=1.2e-06 L=5e-07
+nsgw12f_ki2p sgw12f_q sgw12f_qb vdd vsrc pch W=2.4e-06 L=5e-07
+nsgw12f_ki2n sgw12f_q sgw12f_qb 0 0 nch W=1.2e-06 L=5e-07
+rsgw12f_hra sgw12f_h vthr 1e+06
+rsgw12f_hrf sgw12f_h sgw12f_qb 1.9e+07
+csgw12f_hc sgw12f_h 0 2.1e-09
+va_nsgw12f_dis_d sgw12f_vm nsgw12f_dis_d 0
+va_nsgw12f_dis_s sgw12f_vmd nsgw12f_dis_s 0
+nsgw12f_dis nsgw12f_dis_d sgw12f_q nsgw12f_dis_s 0 nch W=4e-06 L=1e-06
+va_rsgw12f_rdis_p sgw12f_vmd rsgw12f_rdis_p 0
+rsgw12f_rdis rsgw12f_rdis_p vrest 75000
+nsgw12f_rp sgw12f_rt sgw12f_qb vdd vsrc pch W=2e-06 L=1e-06
+rsgw12f_rrc sgw12f_rt sgw12f_rec 10000
+csgw12f_rc sgw12f_rec 0 1e-07
+rsgw12f_rr sgw12f_rec 0 8.2e+06
+va_nsgw12f_sh1_d sgw12f_vm nsgw12f_sh1_d 0
+va_nsgw12f_sh1_s sgw12f_vms nsgw12f_sh1_s 0
+nsgw12f_sh1 nsgw12f_sh1_d sgw12f_rec nsgw12f_sh1_s 0 nch W=2e-06 L=1e-06
+va_nsgw12f_sh2_d sgw12f_vms nsgw12f_sh2_d 0
+nsgw12f_sh2 nsgw12f_sh2_d sgw12f_qb vrest 0 nch W=2e-06 L=1e-06
+nsgw12f_porh sgw12f_h por_hold vthr 0 nch W=2e-06 L=1e-06
+va_nsgw12f_porm_d sgw12f_vm nsgw12f_porm_d 0
+nsgw12f_porm nsgw12f_porm_d por_hold vrest 0 nch W=2e-06 L=1e-06
+nsgw12f_op_tsw sgw12f_op_tt sgw12f_qb vdd vsrc pch W=2e-06 L=1e-06
+rsgw12f_op_trc sgw12f_op_tt sgw12f_op_at 10000
+csgw12f_op_tc sgw12f_op_at 0 1e-07
+rsgw12f_op_trl sgw12f_op_at 0 2.2e+07
+nsgw12f_op_sh1p sgw12f_op_an sgw12f_op_at vdd vsrc pch W=2.4e-06 L=5e-07
+nsgw12f_op_sh1n sgw12f_op_an sgw12f_op_at 0 0 nch W=1.2e-06 L=5e-07
+nsgw12f_op_sh2p sgw12f_op_aq sgw12f_op_an vdd vsrc pch W=2.4e-06 L=5e-07
+nsgw12f_op_sh2n sgw12f_op_aq sgw12f_op_an 0 0 nch W=1.2e-06 L=5e-07
+nsgw12f_op_abp sgw12f_op_aqb sgw12f_op_aq vdd vsrc pch W=2.4e-06 L=5e-07
+nsgw12f_op_abn sgw12f_op_aqb sgw12f_op_aq 0 0 nch W=1.2e-06 L=5e-07
+rsgw12f_op_dr sgw12f_op_aq sgw12f_op_ad 1e+06
+csgw12f_op_dc sgw12f_op_ad 0 3.3e-07
+nsgw12f_op_d2p sgw12f_op_adn sgw12f_op_ad vdd vsrc pch W=2.4e-06 L=5e-07
+nsgw12f_op_d2n sgw12f_op_adn sgw12f_op_ad 0 0 nch W=1.2e-06 L=5e-07
+nsgw12f_op_gpa sgw12f_op_pb sgw12f_op_aq vdd vsrc pch W=2.4e-06 L=5e-07
+nsgw12f_op_gpb sgw12f_op_pb sgw12f_op_adn vdd vsrc pch W=2.4e-06 L=5e-07
+nsgw12f_op_gna sgw12f_op_pb sgw12f_op_aq sgw12f_op_gx 0 nch W=2.4e-06 L=5e-07
+nsgw12f_op_gnb sgw12f_op_gx sgw12f_op_adn 0 0 nch W=2.4e-06 L=5e-07
+nsgw12f_op_op sgw12f_op_p sgw12f_op_pb vdd vsrc pch W=2.4e-06 L=5e-07
+nsgw12f_op_on sgw12f_op_p sgw12f_op_pb 0 0 nch W=1.2e-06 L=5e-07
+rsgw12f_ota_b vdd sgw12f_ota_nb 3.3e+06
+nsgw12f_ota_mb sgw12f_ota_nb sgw12f_ota_nb 0 0 nch W=4e-06 L=4e-06
+nsgw12f_ota_mt sgw12f_ota_tail sgw12f_ota_nb 0 0 nch W=4e-06 L=4e-06
+nsgw12f_ota_m1 sgw12f_ota_d1 spw1 sgw12f_ota_tail 0 nch W=1e-05 L=2e-06
+va_nsgw12f_ota_m2_d sgw12f_vm nsgw12f_ota_m2_d 0
+nsgw12f_ota_m2 nsgw12f_ota_m2_d spws12 sgw12f_ota_tail 0 nch W=1e-05 L=2e-06
+nsgw12f_ota_m3 sgw12f_ota_d1 sgw12f_ota_d1 vdd vsrc pch W=1e-05 L=2e-06
+va_nsgw12f_ota_m4_d sgw12f_vm nsgw12f_ota_m4_d 0
+nsgw12f_ota_m4 nsgw12f_ota_m4_d sgw12f_ota_d1 vdd vsrc pch W=1e-05 L=2e-06
+va_csgw12r_cm_p sgw12r_vm csgw12r_cm_p 0
+csgw12r_cm csgw12r_cm_p 0 1e-07
+va_rsgw12r_rm_p sgw12r_vm rsgw12r_rm_p 0
+rsgw12r_rm rsgw12r_rm_p vrest 1e+06
+rsgw12r_kb vdd sgw12r_knb 1e+06
+nsgw12r_kmb sgw12r_knb sgw12r_knb 0 0 nch W=4e-06 L=4e-06
+nsgw12r_kmt sgw12r_ktail sgw12r_knb 0 0 nch W=4e-06 L=4e-06
+va_nsgw12r_km1_g sgw12r_vm nsgw12r_km1_g 0
+nsgw12r_km1 sgw12r_kd1 nsgw12r_km1_g sgw12r_ktail 0 nch W=4e-06 L=4e-06
+nsgw12r_km2 sgw12r_ko1 sgw12r_h sgw12r_ktail 0 nch W=4e-06 L=4e-06
+nsgw12r_km3 sgw12r_kd1 sgw12r_kd1 vdd vsrc pch W=4e-06 L=4e-06
+nsgw12r_km4 sgw12r_ko1 sgw12r_kd1 vdd vsrc pch W=4e-06 L=4e-06
+nsgw12r_ki1p sgw12r_qb sgw12r_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+nsgw12r_ki1n sgw12r_qb sgw12r_ko1 0 0 nch W=1.2e-06 L=5e-07
+nsgw12r_ki2p sgw12r_q sgw12r_qb vdd vsrc pch W=2.4e-06 L=5e-07
+nsgw12r_ki2n sgw12r_q sgw12r_qb 0 0 nch W=1.2e-06 L=5e-07
+rsgw12r_hra sgw12r_h vthr 1e+06
+rsgw12r_hrf sgw12r_h sgw12r_qb 1.9e+07
+csgw12r_hc sgw12r_h 0 2.1e-09
+va_nsgw12r_dis_d sgw12r_vm nsgw12r_dis_d 0
+va_nsgw12r_dis_s sgw12r_vmd nsgw12r_dis_s 0
+nsgw12r_dis nsgw12r_dis_d sgw12r_q nsgw12r_dis_s 0 nch W=4e-06 L=1e-06
+va_rsgw12r_rdis_p sgw12r_vmd rsgw12r_rdis_p 0
+rsgw12r_rdis rsgw12r_rdis_p vrest 75000
+nsgw12r_rp sgw12r_rt sgw12r_qb vdd vsrc pch W=2e-06 L=1e-06
+rsgw12r_rrc sgw12r_rt sgw12r_rec 10000
+csgw12r_rc sgw12r_rec 0 1e-07
+rsgw12r_rr sgw12r_rec 0 8.2e+06
+va_nsgw12r_sh1_d sgw12r_vm nsgw12r_sh1_d 0
+va_nsgw12r_sh1_s sgw12r_vms nsgw12r_sh1_s 0
+nsgw12r_sh1 nsgw12r_sh1_d sgw12r_rec nsgw12r_sh1_s 0 nch W=2e-06 L=1e-06
+va_nsgw12r_sh2_d sgw12r_vms nsgw12r_sh2_d 0
+nsgw12r_sh2 nsgw12r_sh2_d sgw12r_qb vrest 0 nch W=2e-06 L=1e-06
+nsgw12r_porh sgw12r_h por_hold vthr 0 nch W=2e-06 L=1e-06
+va_nsgw12r_porm_d sgw12r_vm nsgw12r_porm_d 0
+nsgw12r_porm nsgw12r_porm_d por_hold vrest 0 nch W=2e-06 L=1e-06
+nsgw12r_op_tsw sgw12r_op_tt sgw12r_qb vdd vsrc pch W=2e-06 L=1e-06
+rsgw12r_op_trc sgw12r_op_tt sgw12r_op_at 10000
+csgw12r_op_tc sgw12r_op_at 0 1e-07
+rsgw12r_op_trl sgw12r_op_at 0 2.2e+07
+nsgw12r_op_sh1p sgw12r_op_an sgw12r_op_at vdd vsrc pch W=2.4e-06 L=5e-07
+nsgw12r_op_sh1n sgw12r_op_an sgw12r_op_at 0 0 nch W=1.2e-06 L=5e-07
+nsgw12r_op_sh2p sgw12r_op_aq sgw12r_op_an vdd vsrc pch W=2.4e-06 L=5e-07
+nsgw12r_op_sh2n sgw12r_op_aq sgw12r_op_an 0 0 nch W=1.2e-06 L=5e-07
+nsgw12r_op_abp sgw12r_op_aqb sgw12r_op_aq vdd vsrc pch W=2.4e-06 L=5e-07
+nsgw12r_op_abn sgw12r_op_aqb sgw12r_op_aq 0 0 nch W=1.2e-06 L=5e-07
+rsgw12r_op_dr sgw12r_op_aq sgw12r_op_ad 1e+06
+csgw12r_op_dc sgw12r_op_ad 0 3.3e-07
+nsgw12r_op_d2p sgw12r_op_adn sgw12r_op_ad vdd vsrc pch W=2.4e-06 L=5e-07
+nsgw12r_op_d2n sgw12r_op_adn sgw12r_op_ad 0 0 nch W=1.2e-06 L=5e-07
+nsgw12r_op_gpa sgw12r_op_pb sgw12r_op_aq vdd vsrc pch W=2.4e-06 L=5e-07
+nsgw12r_op_gpb sgw12r_op_pb sgw12r_op_adn vdd vsrc pch W=2.4e-06 L=5e-07
+nsgw12r_op_gna sgw12r_op_pb sgw12r_op_aq sgw12r_op_gx 0 nch W=2.4e-06 L=5e-07
+nsgw12r_op_gnb sgw12r_op_gx sgw12r_op_adn 0 0 nch W=2.4e-06 L=5e-07
+nsgw12r_op_op sgw12r_op_p sgw12r_op_pb vdd vsrc pch W=2.4e-06 L=5e-07
+nsgw12r_op_on sgw12r_op_p sgw12r_op_pb 0 0 nch W=1.2e-06 L=5e-07
+rsgw12r_ota_b vdd sgw12r_ota_nb 3.3e+06
+nsgw12r_ota_mb sgw12r_ota_nb sgw12r_ota_nb 0 0 nch W=4e-06 L=4e-06
+nsgw12r_ota_mt sgw12r_ota_tail sgw12r_ota_nb 0 0 nch W=4e-06 L=4e-06
+nsgw12r_ota_m1 sgw12r_ota_d1 spws12 sgw12r_ota_tail 0 nch W=1e-05 L=2e-06
+va_nsgw12r_ota_m2_d sgw12r_vm nsgw12r_ota_m2_d 0
+nsgw12r_ota_m2 nsgw12r_ota_m2_d spw1 sgw12r_ota_tail 0 nch W=1e-05 L=2e-06
+nsgw12r_ota_m3 sgw12r_ota_d1 sgw12r_ota_d1 vdd vsrc pch W=1e-05 L=2e-06
+va_nsgw12r_ota_m4_d sgw12r_vm nsgw12r_ota_m4_d 0
+nsgw12r_ota_m4 nsgw12r_ota_m4_d sgw12r_ota_d1 vdd vsrc pch W=1e-05 L=2e-06
+ncdw12f_hsf_sw cdw12f_hsf_sd sgw12f_op_aqb vdd vsrc pch W=4e-06 L=5e-07
+rcdw12f_hsf_rr cdw12f_hsf_sd cdw12f_hsf_h1 100000
+ccdw12f_hsf_c1 cdw12f_hsf_h1 0 1e-06
+rcdw12f_hsf_r2 cdw12f_hsf_h1 cdw12f_hs 1e+06
+ccdw12f_hsf_c2 cdw12f_hs 0 4.7e-07
+rcdw12f_hsf_rl cdw12f_hs 0 4.7e+06
+ncdw12f_hcf_sw cdw12f_hcf_sd sgw12r_op_aqb vdd vsrc pch W=4e-06 L=5e-07
+rcdw12f_hcf_rr cdw12f_hcf_sd cdw12f_hcf_h1 100000
+ccdw12f_hcf_c1 cdw12f_hcf_h1 0 1e-06
+rcdw12f_hcf_r2 cdw12f_hcf_h1 cdw12f_hc 1e+06
+ccdw12f_hcf_c2 cdw12f_hc 0 4.7e-07
+rcdw12f_hcf_rl cdw12f_hc 0 4.7e+06
+va_ccdw12f_cm_p cdw12f_vm ccdw12f_cm_p 0
+ccdw12f_cm ccdw12f_cm_p 0 1.5e-06
+va_rcdw12f_rm_p cdw12f_vm rcdw12f_rm_p 0
+rcdw12f_rm rcdw12f_rm_p vrest 1e+06
+rcdw12f_kb vdd cdw12f_knb 1e+06
+ncdw12f_kmb cdw12f_knb cdw12f_knb 0 0 nch W=4e-06 L=4e-06
+ncdw12f_kmt cdw12f_ktail cdw12f_knb 0 0 nch W=4e-06 L=4e-06
+va_ncdw12f_km1_g cdw12f_vm ncdw12f_km1_g 0
+ncdw12f_km1 cdw12f_kd1 ncdw12f_km1_g cdw12f_ktail 0 nch W=4e-06 L=4e-06
+ncdw12f_km2 cdw12f_ko1 cdw12f_h cdw12f_ktail 0 nch W=4e-06 L=4e-06
+ncdw12f_km3 cdw12f_kd1 cdw12f_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ncdw12f_km4 cdw12f_ko1 cdw12f_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ncdw12f_ki1p cdw12f_qb cdw12f_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+ncdw12f_ki1n cdw12f_qb cdw12f_ko1 0 0 nch W=1.2e-06 L=5e-07
+ncdw12f_ki2p cdw12f_q cdw12f_qb vdd vsrc pch W=2.4e-06 L=5e-07
+ncdw12f_ki2n cdw12f_q cdw12f_qb 0 0 nch W=1.2e-06 L=5e-07
+rcdw12f_hra cdw12f_h vthr 1e+06
+rcdw12f_hrf cdw12f_h cdw12f_qb 1.9e+07
+ccdw12f_hc cdw12f_h 0 2.1e-09
+va_ncdw12f_dis_d cdw12f_vm ncdw12f_dis_d 0
+va_ncdw12f_dis_s cdw12f_vmd ncdw12f_dis_s 0
+ncdw12f_dis ncdw12f_dis_d cdw12f_q ncdw12f_dis_s 0 nch W=4e-06 L=1e-06
+va_rcdw12f_rdis_p cdw12f_vmd rcdw12f_rdis_p 0
+rcdw12f_rdis rcdw12f_rdis_p vrest 12000
+ncdw12f_rp cdw12f_rt cdw12f_qb vdd vsrc pch W=2e-06 L=1e-06
+rcdw12f_rrc cdw12f_rt cdw12f_rec 10000
+ccdw12f_rc cdw12f_rec 0 1e-07
+rcdw12f_rr cdw12f_rec 0 8.2e+06
+va_ncdw12f_sh1_d cdw12f_vm ncdw12f_sh1_d 0
+va_ncdw12f_sh1_s cdw12f_vms ncdw12f_sh1_s 0
+ncdw12f_sh1 ncdw12f_sh1_d cdw12f_rec ncdw12f_sh1_s 0 nch W=2e-06 L=1e-06
+va_ncdw12f_sh2_d cdw12f_vms ncdw12f_sh2_d 0
+ncdw12f_sh2 ncdw12f_sh2_d cdw12f_qb vrest 0 nch W=2e-06 L=1e-06
+ncdw12f_porh cdw12f_h por_hold vthr 0 nch W=2e-06 L=1e-06
+va_ncdw12f_porm_d cdw12f_vm ncdw12f_porm_d 0
+ncdw12f_porm ncdw12f_porm_d por_hold vrest 0 nch W=2e-06 L=1e-06
+ncdw12f_op_tsw cdw12f_op_tt cdw12f_qb vdd vsrc pch W=2e-06 L=1e-06
+rcdw12f_op_trc cdw12f_op_tt cdw12f_op_at 10000
+ccdw12f_op_tc cdw12f_op_at 0 1e-07
+rcdw12f_op_trl cdw12f_op_at 0 2.2e+07
+ncdw12f_op_sh1p cdw12f_op_an cdw12f_op_at vdd vsrc pch W=2.4e-06 L=5e-07
+ncdw12f_op_sh1n cdw12f_op_an cdw12f_op_at 0 0 nch W=1.2e-06 L=5e-07
+ncdw12f_op_sh2p cdw12f_op_aq cdw12f_op_an vdd vsrc pch W=2.4e-06 L=5e-07
+ncdw12f_op_sh2n cdw12f_op_aq cdw12f_op_an 0 0 nch W=1.2e-06 L=5e-07
+ncdw12f_op_abp cdw12f_op_aqb cdw12f_op_aq vdd vsrc pch W=2.4e-06 L=5e-07
+ncdw12f_op_abn cdw12f_op_aqb cdw12f_op_aq 0 0 nch W=1.2e-06 L=5e-07
+rcdw12f_op_dr cdw12f_op_aq cdw12f_op_ad 1e+06
+ccdw12f_op_dc cdw12f_op_ad 0 3.3e-07
+ncdw12f_op_d2p cdw12f_op_adn cdw12f_op_ad vdd vsrc pch W=2.4e-06 L=5e-07
+ncdw12f_op_d2n cdw12f_op_adn cdw12f_op_ad 0 0 nch W=1.2e-06 L=5e-07
+ncdw12f_op_gpa cdw12f_op_pb cdw12f_op_aq vdd vsrc pch W=2.4e-06 L=5e-07
+ncdw12f_op_gpb cdw12f_op_pb cdw12f_op_adn vdd vsrc pch W=2.4e-06 L=5e-07
+ncdw12f_op_gna cdw12f_op_pb cdw12f_op_aq cdw12f_op_gx 0 nch W=2.4e-06 L=5e-07
+ncdw12f_op_gnb cdw12f_op_gx cdw12f_op_adn 0 0 nch W=2.4e-06 L=5e-07
+ncdw12f_op_op cdw12f_op_p cdw12f_op_pb vdd vsrc pch W=2.4e-06 L=5e-07
+ncdw12f_op_on cdw12f_op_p cdw12f_op_pb 0 0 nch W=1.2e-06 L=5e-07
+ncdw12f_st_mh cdw12f_mi cdw12f_hs cdw12f_st_x 0 nch W=2e-06 L=4e-06
+ncdw12f_st_mp cdw12f_st_x thw12f_op_aq 0 0 nch W=4e-06 L=1e-06
+ncdw12f_rm_md cdw12f_mi cdw12f_mi vdd vsrc pch W=4e-06 L=2e-06
+va_ncdw12f_rm_mo_d cdw12f_vm ncdw12f_rm_mo_d 0
+ncdw12f_rm_mo ncdw12f_rm_mo_d cdw12f_mi vdd vsrc pch W=1e-06 L=8e-06
+va_ncdw12f_kh_d cdw12f_vm ncdw12f_kh_d 0
+ncdw12f_kh ncdw12f_kh_d cdw12f_hc cdw12f_kx 0 nch W=2e-06 L=4e-06
+ncdw12f_kp cdw12f_kx thw12f_op_aq vrest 0 nch W=4e-06 L=1e-06
+ncdw12r_hsf_sw cdw12r_hsf_sd sgw12r_op_aqb vdd vsrc pch W=4e-06 L=5e-07
+rcdw12r_hsf_rr cdw12r_hsf_sd cdw12r_hsf_h1 100000
+ccdw12r_hsf_c1 cdw12r_hsf_h1 0 1e-06
+rcdw12r_hsf_r2 cdw12r_hsf_h1 cdw12r_hs 1e+06
+ccdw12r_hsf_c2 cdw12r_hs 0 4.7e-07
+rcdw12r_hsf_rl cdw12r_hs 0 4.7e+06
+ncdw12r_hcf_sw cdw12r_hcf_sd sgw12f_op_aqb vdd vsrc pch W=4e-06 L=5e-07
+rcdw12r_hcf_rr cdw12r_hcf_sd cdw12r_hcf_h1 100000
+ccdw12r_hcf_c1 cdw12r_hcf_h1 0 1e-06
+rcdw12r_hcf_r2 cdw12r_hcf_h1 cdw12r_hc 1e+06
+ccdw12r_hcf_c2 cdw12r_hc 0 4.7e-07
+rcdw12r_hcf_rl cdw12r_hc 0 4.7e+06
+va_ccdw12r_cm_p cdw12r_vm ccdw12r_cm_p 0
+ccdw12r_cm ccdw12r_cm_p 0 1.5e-06
+va_rcdw12r_rm_p cdw12r_vm rcdw12r_rm_p 0
+rcdw12r_rm rcdw12r_rm_p vrest 1e+06
+rcdw12r_kb vdd cdw12r_knb 1e+06
+ncdw12r_kmb cdw12r_knb cdw12r_knb 0 0 nch W=4e-06 L=4e-06
+ncdw12r_kmt cdw12r_ktail cdw12r_knb 0 0 nch W=4e-06 L=4e-06
+va_ncdw12r_km1_g cdw12r_vm ncdw12r_km1_g 0
+ncdw12r_km1 cdw12r_kd1 ncdw12r_km1_g cdw12r_ktail 0 nch W=4e-06 L=4e-06
+ncdw12r_km2 cdw12r_ko1 cdw12r_h cdw12r_ktail 0 nch W=4e-06 L=4e-06
+ncdw12r_km3 cdw12r_kd1 cdw12r_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ncdw12r_km4 cdw12r_ko1 cdw12r_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ncdw12r_ki1p cdw12r_qb cdw12r_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+ncdw12r_ki1n cdw12r_qb cdw12r_ko1 0 0 nch W=1.2e-06 L=5e-07
+ncdw12r_ki2p cdw12r_q cdw12r_qb vdd vsrc pch W=2.4e-06 L=5e-07
+ncdw12r_ki2n cdw12r_q cdw12r_qb 0 0 nch W=1.2e-06 L=5e-07
+rcdw12r_hra cdw12r_h vthr 1e+06
+rcdw12r_hrf cdw12r_h cdw12r_qb 1.9e+07
+ccdw12r_hc cdw12r_h 0 2.1e-09
+va_ncdw12r_dis_d cdw12r_vm ncdw12r_dis_d 0
+va_ncdw12r_dis_s cdw12r_vmd ncdw12r_dis_s 0
+ncdw12r_dis ncdw12r_dis_d cdw12r_q ncdw12r_dis_s 0 nch W=4e-06 L=1e-06
+va_rcdw12r_rdis_p cdw12r_vmd rcdw12r_rdis_p 0
+rcdw12r_rdis rcdw12r_rdis_p vrest 12000
+ncdw12r_rp cdw12r_rt cdw12r_qb vdd vsrc pch W=2e-06 L=1e-06
+rcdw12r_rrc cdw12r_rt cdw12r_rec 10000
+ccdw12r_rc cdw12r_rec 0 1e-07
+rcdw12r_rr cdw12r_rec 0 8.2e+06
+va_ncdw12r_sh1_d cdw12r_vm ncdw12r_sh1_d 0
+va_ncdw12r_sh1_s cdw12r_vms ncdw12r_sh1_s 0
+ncdw12r_sh1 ncdw12r_sh1_d cdw12r_rec ncdw12r_sh1_s 0 nch W=2e-06 L=1e-06
+va_ncdw12r_sh2_d cdw12r_vms ncdw12r_sh2_d 0
+ncdw12r_sh2 ncdw12r_sh2_d cdw12r_qb vrest 0 nch W=2e-06 L=1e-06
+ncdw12r_porh cdw12r_h por_hold vthr 0 nch W=2e-06 L=1e-06
+va_ncdw12r_porm_d cdw12r_vm ncdw12r_porm_d 0
+ncdw12r_porm ncdw12r_porm_d por_hold vrest 0 nch W=2e-06 L=1e-06
+ncdw12r_op_tsw cdw12r_op_tt cdw12r_qb vdd vsrc pch W=2e-06 L=1e-06
+rcdw12r_op_trc cdw12r_op_tt cdw12r_op_at 10000
+ccdw12r_op_tc cdw12r_op_at 0 1e-07
+rcdw12r_op_trl cdw12r_op_at 0 2.2e+07
+ncdw12r_op_sh1p cdw12r_op_an cdw12r_op_at vdd vsrc pch W=2.4e-06 L=5e-07
+ncdw12r_op_sh1n cdw12r_op_an cdw12r_op_at 0 0 nch W=1.2e-06 L=5e-07
+ncdw12r_op_sh2p cdw12r_op_aq cdw12r_op_an vdd vsrc pch W=2.4e-06 L=5e-07
+ncdw12r_op_sh2n cdw12r_op_aq cdw12r_op_an 0 0 nch W=1.2e-06 L=5e-07
+ncdw12r_op_abp cdw12r_op_aqb cdw12r_op_aq vdd vsrc pch W=2.4e-06 L=5e-07
+ncdw12r_op_abn cdw12r_op_aqb cdw12r_op_aq 0 0 nch W=1.2e-06 L=5e-07
+rcdw12r_op_dr cdw12r_op_aq cdw12r_op_ad 1e+06
+ccdw12r_op_dc cdw12r_op_ad 0 3.3e-07
+ncdw12r_op_d2p cdw12r_op_adn cdw12r_op_ad vdd vsrc pch W=2.4e-06 L=5e-07
+ncdw12r_op_d2n cdw12r_op_adn cdw12r_op_ad 0 0 nch W=1.2e-06 L=5e-07
+ncdw12r_op_gpa cdw12r_op_pb cdw12r_op_aq vdd vsrc pch W=2.4e-06 L=5e-07
+ncdw12r_op_gpb cdw12r_op_pb cdw12r_op_adn vdd vsrc pch W=2.4e-06 L=5e-07
+ncdw12r_op_gna cdw12r_op_pb cdw12r_op_aq cdw12r_op_gx 0 nch W=2.4e-06 L=5e-07
+ncdw12r_op_gnb cdw12r_op_gx cdw12r_op_adn 0 0 nch W=2.4e-06 L=5e-07
+ncdw12r_op_op cdw12r_op_p cdw12r_op_pb vdd vsrc pch W=2.4e-06 L=5e-07
+ncdw12r_op_on cdw12r_op_p cdw12r_op_pb 0 0 nch W=1.2e-06 L=5e-07
+ncdw12r_st_mh cdw12r_mi cdw12r_hs cdw12r_st_x 0 nch W=2e-06 L=4e-06
+ncdw12r_st_mp cdw12r_st_x thw12r_op_aq 0 0 nch W=4e-06 L=1e-06
+ncdw12r_rm_md cdw12r_mi cdw12r_mi vdd vsrc pch W=4e-06 L=2e-06
+va_ncdw12r_rm_mo_d cdw12r_vm ncdw12r_rm_mo_d 0
+ncdw12r_rm_mo ncdw12r_rm_mo_d cdw12r_mi vdd vsrc pch W=1e-06 L=8e-06
+va_ncdw12r_kh_d cdw12r_vm ncdw12r_kh_d 0
+ncdw12r_kh ncdw12r_kh_d cdw12r_hc cdw12r_kx 0 nch W=2e-06 L=4e-06
+ncdw12r_kp cdw12r_kx thw12r_op_aq vrest 0 nch W=4e-06 L=1e-06
+va_cldpos_p load_pos cldpos_p 0
+cldpos cldpos_p vmid 1e-06
+va_rldpos_p load_pos rldpos_p 0
+rldpos rldpos_p vmid 100000
+nagw12f_sw agw12f_x cdw12f_op_aqb vdd vsrc pch W=4e-06 L=1e-06
+va_nagw12f_cp_d load_pos nagw12f_cp_d 0
+nagw12f_cp nagw12f_cp_d irefp_n agw12f_x vsrc pch W=4e-06 L=4e-06
+va_cldneg_p load_neg cldneg_p 0
+cldneg cldneg_p vmid 1e-06
+va_rldneg_p load_neg rldneg_p 0
+rldneg rldneg_p vmid 100000
+nagw12r_sw agw12r_x cdw12r_op_aqb vdd vsrc pch W=4e-06 L=1e-06
+va_nagw12r_cp_d load_neg nagw12r_cp_d 0
+nagw12r_cp nagw12r_cp_d irefp_n agw12r_x vsrc pch W=4e-06 L=4e-06
+cpar_agw12f_x agw12f_x 0 5e-14
+cpar_agw12r_x agw12r_x 0 5e-14
+cpar_cdw12f_h cdw12f_h 0 5e-14
+cpar_cdw12f_hc cdw12f_hc 0 5e-14
+cpar_cdw12f_hcf_h1 cdw12f_hcf_h1 0 5e-14
+cpar_cdw12f_hcf_sd cdw12f_hcf_sd 0 5e-14
+cpar_cdw12f_hs cdw12f_hs 0 5e-14
+cpar_cdw12f_hsf_h1 cdw12f_hsf_h1 0 5e-14
+cpar_cdw12f_hsf_sd cdw12f_hsf_sd 0 5e-14
+cpar_cdw12f_kd1 cdw12f_kd1 0 5e-14
+cpar_cdw12f_knb cdw12f_knb 0 5e-14
+cpar_cdw12f_ko1 cdw12f_ko1 0 5e-14
+cpar_cdw12f_ktail cdw12f_ktail 0 5e-14
+cpar_cdw12f_kx cdw12f_kx 0 5e-14
+cpar_cdw12f_mi cdw12f_mi 0 5e-14
+cpar_cdw12f_op_ad cdw12f_op_ad 0 5e-14
+cpar_cdw12f_op_adn cdw12f_op_adn 0 5e-14
+cpar_cdw12f_op_an cdw12f_op_an 0 5e-14
+cpar_cdw12f_op_aq cdw12f_op_aq 0 5e-14
+cpar_cdw12f_op_aqb cdw12f_op_aqb 0 5e-14
+cpar_cdw12f_op_at cdw12f_op_at 0 5e-14
+cpar_cdw12f_op_gx cdw12f_op_gx 0 5e-14
+cpar_cdw12f_op_p cdw12f_op_p 0 5e-14
+cpar_cdw12f_op_pb cdw12f_op_pb 0 5e-14
+cpar_cdw12f_op_tt cdw12f_op_tt 0 5e-14
+cpar_cdw12f_q cdw12f_q 0 5e-14
+cpar_cdw12f_qb cdw12f_qb 0 5e-14
+cpar_cdw12f_rec cdw12f_rec 0 5e-14
+cpar_cdw12f_rt cdw12f_rt 0 5e-14
+cpar_cdw12f_st_x cdw12f_st_x 0 5e-14
+va_cpar_cdw12f_vm_p cdw12f_vm cpar_cdw12f_vm_p 0
+cpar_cdw12f_vm cpar_cdw12f_vm_p 0 5e-14
+va_cpar_cdw12f_vmd_p cdw12f_vmd cpar_cdw12f_vmd_p 0
+cpar_cdw12f_vmd cpar_cdw12f_vmd_p 0 5e-14
+va_cpar_cdw12f_vms_p cdw12f_vms cpar_cdw12f_vms_p 0
+cpar_cdw12f_vms cpar_cdw12f_vms_p 0 5e-14
+cpar_cdw12r_h cdw12r_h 0 5e-14
+cpar_cdw12r_hc cdw12r_hc 0 5e-14
+cpar_cdw12r_hcf_h1 cdw12r_hcf_h1 0 5e-14
+cpar_cdw12r_hcf_sd cdw12r_hcf_sd 0 5e-14
+cpar_cdw12r_hs cdw12r_hs 0 5e-14
+cpar_cdw12r_hsf_h1 cdw12r_hsf_h1 0 5e-14
+cpar_cdw12r_hsf_sd cdw12r_hsf_sd 0 5e-14
+cpar_cdw12r_kd1 cdw12r_kd1 0 5e-14
+cpar_cdw12r_knb cdw12r_knb 0 5e-14
+cpar_cdw12r_ko1 cdw12r_ko1 0 5e-14
+cpar_cdw12r_ktail cdw12r_ktail 0 5e-14
+cpar_cdw12r_kx cdw12r_kx 0 5e-14
+cpar_cdw12r_mi cdw12r_mi 0 5e-14
+cpar_cdw12r_op_ad cdw12r_op_ad 0 5e-14
+cpar_cdw12r_op_adn cdw12r_op_adn 0 5e-14
+cpar_cdw12r_op_an cdw12r_op_an 0 5e-14
+cpar_cdw12r_op_aq cdw12r_op_aq 0 5e-14
+cpar_cdw12r_op_aqb cdw12r_op_aqb 0 5e-14
+cpar_cdw12r_op_at cdw12r_op_at 0 5e-14
+cpar_cdw12r_op_gx cdw12r_op_gx 0 5e-14
+cpar_cdw12r_op_p cdw12r_op_p 0 5e-14
+cpar_cdw12r_op_pb cdw12r_op_pb 0 5e-14
+cpar_cdw12r_op_tt cdw12r_op_tt 0 5e-14
+cpar_cdw12r_q cdw12r_q 0 5e-14
+cpar_cdw12r_qb cdw12r_qb 0 5e-14
+cpar_cdw12r_rec cdw12r_rec 0 5e-14
+cpar_cdw12r_rt cdw12r_rt 0 5e-14
+cpar_cdw12r_st_x cdw12r_st_x 0 5e-14
+va_cpar_cdw12r_vm_p cdw12r_vm cpar_cdw12r_vm_p 0
+cpar_cdw12r_vm cpar_cdw12r_vm_p 0 5e-14
+va_cpar_cdw12r_vmd_p cdw12r_vmd cpar_cdw12r_vmd_p 0
+cpar_cdw12r_vmd cpar_cdw12r_vmd_p 0 5e-14
+va_cpar_cdw12r_vms_p cdw12r_vms cpar_cdw12r_vms_p 0
+cpar_cdw12r_vms cpar_cdw12r_vms_p 0 5e-14
+cpar_gw1_and_a0_nb gw1_and_a0_nb 0 5e-14
+cpar_gw1_and_a0_nx gw1_and_a0_nx 0 5e-14
+cpar_gw1_and_a1_nb gw1_and_a1_nb 0 5e-14
+cpar_gw1_and_a1_nx gw1_and_a1_nx 0 5e-14
+cpar_gw1_and_a2_nb gw1_and_a2_nb 0 5e-14
+cpar_gw1_and_a2_nx gw1_and_a2_nx 0 5e-14
+cpar_gw1_and_a3_nb gw1_and_a3_nb 0 5e-14
+cpar_gw1_and_a3_nx gw1_and_a3_nx 0 5e-14
+cpar_gw1_and_a4_nb gw1_and_a4_nb 0 5e-14
+cpar_gw1_and_a4_nx gw1_and_a4_nx 0 5e-14
+cpar_gw1_and_a5_nb gw1_and_a5_nb 0 5e-14
+cpar_gw1_and_a5_nx gw1_and_a5_nx 0 5e-14
+cpar_gw1_and_a6_nb gw1_and_a6_nb 0 5e-14
+cpar_gw1_and_a6_nx gw1_and_a6_nx 0 5e-14
+cpar_gw1_and_a7_nb gw1_and_a7_nb 0 5e-14
+cpar_gw1_and_a7_nx gw1_and_a7_nx 0 5e-14
+cpar_gw1_and_a8_nb gw1_and_a8_nb 0 5e-14
+cpar_gw1_and_a8_nx gw1_and_a8_nx 0 5e-14
+cpar_gw1_and_g0 gw1_and_g0 0 5e-14
+cpar_gw1_and_g1 gw1_and_g1 0 5e-14
+cpar_gw1_and_g2 gw1_and_g2 0 5e-14
+cpar_gw1_and_g3 gw1_and_g3 0 5e-14
+cpar_gw1_and_g4 gw1_and_g4 0 5e-14
+cpar_gw1_and_g5 gw1_and_g5 0 5e-14
+cpar_gw1_and_g6 gw1_and_g6 0 5e-14
+cpar_gw1_and_g7 gw1_and_g7 0 5e-14
+cpar_gw1_and_g8 gw1_and_g8 0 5e-14
+cpar_gw1_b1 gw1_b1 0 5e-14
+cpar_gw1_b10 gw1_b10 0 5e-14
+cpar_gw1_b10_n gw1_b10_n 0 5e-14
+cpar_gw1_b10_q gw1_b10_q 0 5e-14
+cpar_gw1_b10_t gw1_b10_t 0 5e-14
+cpar_gw1_b1_n gw1_b1_n 0 5e-14
+cpar_gw1_b1_q gw1_b1_q 0 5e-14
+cpar_gw1_b1_t gw1_b1_t 0 5e-14
+cpar_gw1_b2 gw1_b2 0 5e-14
+cpar_gw1_b2_n gw1_b2_n 0 5e-14
+cpar_gw1_b2_q gw1_b2_q 0 5e-14
+cpar_gw1_b2_t gw1_b2_t 0 5e-14
+cpar_gw1_b3 gw1_b3 0 5e-14
+cpar_gw1_b3_n gw1_b3_n 0 5e-14
+cpar_gw1_b3_q gw1_b3_q 0 5e-14
+cpar_gw1_b3_t gw1_b3_t 0 5e-14
+cpar_gw1_b4 gw1_b4 0 5e-14
+cpar_gw1_b4_n gw1_b4_n 0 5e-14
+cpar_gw1_b4_q gw1_b4_q 0 5e-14
+cpar_gw1_b4_t gw1_b4_t 0 5e-14
+cpar_gw1_b5 gw1_b5 0 5e-14
+cpar_gw1_b5_n gw1_b5_n 0 5e-14
+cpar_gw1_b5_q gw1_b5_q 0 5e-14
+cpar_gw1_b5_t gw1_b5_t 0 5e-14
+cpar_gw1_b6 gw1_b6 0 5e-14
+cpar_gw1_b6_n gw1_b6_n 0 5e-14
+cpar_gw1_b6_q gw1_b6_q 0 5e-14
+cpar_gw1_b6_t gw1_b6_t 0 5e-14
+cpar_gw1_b7 gw1_b7 0 5e-14
+cpar_gw1_b7_n gw1_b7_n 0 5e-14
+cpar_gw1_b7_q gw1_b7_q 0 5e-14
+cpar_gw1_b7_t gw1_b7_t 0 5e-14
+cpar_gw1_b8 gw1_b8 0 5e-14
+cpar_gw1_b8_n gw1_b8_n 0 5e-14
+cpar_gw1_b8_q gw1_b8_q 0 5e-14
+cpar_gw1_b8_t gw1_b8_t 0 5e-14
+cpar_gw1_b9 gw1_b9 0 5e-14
+cpar_gw1_b9_n gw1_b9_n 0 5e-14
+cpar_gw1_b9_q gw1_b9_q 0 5e-14
+cpar_gw1_b9_t gw1_b9_t 0 5e-14
+cpar_gw1_cin_x gw1_cin_x 0 5e-14
+cpar_gw1_col_h gw1_col_h 0 5e-14
+cpar_gw1_col_kd1 gw1_col_kd1 0 5e-14
+cpar_gw1_col_knb gw1_col_knb 0 5e-14
+cpar_gw1_col_ko1 gw1_col_ko1 0 5e-14
+cpar_gw1_col_ktail gw1_col_ktail 0 5e-14
+cpar_gw1_col_q gw1_col_q 0 5e-14
+cpar_gw1_col_qb gw1_col_qb 0 5e-14
+cpar_gw1_col_rec gw1_col_rec 0 5e-14
+cpar_gw1_col_rt gw1_col_rt 0 5e-14
+cpar_gw1_col_vm gw1_col_vm 0 5e-14
+cpar_gw1_col_vmd gw1_col_vmd 0 5e-14
+cpar_gw1_col_vms gw1_col_vms 0 5e-14
+cpar_gw1_e10_h gw1_e10_h 0 5e-14
+cpar_gw1_e10_kd1 gw1_e10_kd1 0 5e-14
+cpar_gw1_e10_knb gw1_e10_knb 0 5e-14
+cpar_gw1_e10_ko1 gw1_e10_ko1 0 5e-14
+cpar_gw1_e10_ktail gw1_e10_ktail 0 5e-14
+cpar_gw1_e10_q gw1_e10_q 0 5e-14
+cpar_gw1_e10_qb gw1_e10_qb 0 5e-14
+cpar_gw1_e10_rec gw1_e10_rec 0 5e-14
+cpar_gw1_e10_rt gw1_e10_rt 0 5e-14
+cpar_gw1_e10_vm gw1_e10_vm 0 5e-14
+cpar_gw1_e10_vmd gw1_e10_vmd 0 5e-14
+cpar_gw1_e10_vms gw1_e10_vms 0 5e-14
+cpar_gw1_e1_h gw1_e1_h 0 5e-14
+cpar_gw1_e1_kd1 gw1_e1_kd1 0 5e-14
+cpar_gw1_e1_knb gw1_e1_knb 0 5e-14
+cpar_gw1_e1_ko1 gw1_e1_ko1 0 5e-14
+cpar_gw1_e1_ktail gw1_e1_ktail 0 5e-14
+cpar_gw1_e1_q gw1_e1_q 0 5e-14
+cpar_gw1_e1_qb gw1_e1_qb 0 5e-14
+cpar_gw1_e1_rec gw1_e1_rec 0 5e-14
+cpar_gw1_e1_rt gw1_e1_rt 0 5e-14
+cpar_gw1_e1_vm gw1_e1_vm 0 5e-14
+cpar_gw1_e1_vmd gw1_e1_vmd 0 5e-14
+cpar_gw1_e1_vms gw1_e1_vms 0 5e-14
+cpar_gw1_e2_h gw1_e2_h 0 5e-14
+cpar_gw1_e2_kd1 gw1_e2_kd1 0 5e-14
+cpar_gw1_e2_knb gw1_e2_knb 0 5e-14
+cpar_gw1_e2_ko1 gw1_e2_ko1 0 5e-14
+cpar_gw1_e2_ktail gw1_e2_ktail 0 5e-14
+cpar_gw1_e2_q gw1_e2_q 0 5e-14
+cpar_gw1_e2_qb gw1_e2_qb 0 5e-14
+cpar_gw1_e2_rec gw1_e2_rec 0 5e-14
+cpar_gw1_e2_rt gw1_e2_rt 0 5e-14
+cpar_gw1_e2_vm gw1_e2_vm 0 5e-14
+cpar_gw1_e2_vmd gw1_e2_vmd 0 5e-14
+cpar_gw1_e2_vms gw1_e2_vms 0 5e-14
+cpar_gw1_e3_h gw1_e3_h 0 5e-14
+cpar_gw1_e3_kd1 gw1_e3_kd1 0 5e-14
+cpar_gw1_e3_knb gw1_e3_knb 0 5e-14
+cpar_gw1_e3_ko1 gw1_e3_ko1 0 5e-14
+cpar_gw1_e3_ktail gw1_e3_ktail 0 5e-14
+cpar_gw1_e3_q gw1_e3_q 0 5e-14
+cpar_gw1_e3_qb gw1_e3_qb 0 5e-14
+cpar_gw1_e3_rec gw1_e3_rec 0 5e-14
+cpar_gw1_e3_rt gw1_e3_rt 0 5e-14
+cpar_gw1_e3_vm gw1_e3_vm 0 5e-14
+cpar_gw1_e3_vmd gw1_e3_vmd 0 5e-14
+cpar_gw1_e3_vms gw1_e3_vms 0 5e-14
+cpar_gw1_e4_h gw1_e4_h 0 5e-14
+cpar_gw1_e4_kd1 gw1_e4_kd1 0 5e-14
+cpar_gw1_e4_knb gw1_e4_knb 0 5e-14
+cpar_gw1_e4_ko1 gw1_e4_ko1 0 5e-14
+cpar_gw1_e4_ktail gw1_e4_ktail 0 5e-14
+cpar_gw1_e4_q gw1_e4_q 0 5e-14
+cpar_gw1_e4_qb gw1_e4_qb 0 5e-14
+cpar_gw1_e4_rec gw1_e4_rec 0 5e-14
+cpar_gw1_e4_rt gw1_e4_rt 0 5e-14
+cpar_gw1_e4_vm gw1_e4_vm 0 5e-14
+cpar_gw1_e4_vmd gw1_e4_vmd 0 5e-14
+cpar_gw1_e4_vms gw1_e4_vms 0 5e-14
+cpar_gw1_e5_h gw1_e5_h 0 5e-14
+cpar_gw1_e5_kd1 gw1_e5_kd1 0 5e-14
+cpar_gw1_e5_knb gw1_e5_knb 0 5e-14
+cpar_gw1_e5_ko1 gw1_e5_ko1 0 5e-14
+cpar_gw1_e5_ktail gw1_e5_ktail 0 5e-14
+cpar_gw1_e5_q gw1_e5_q 0 5e-14
+cpar_gw1_e5_qb gw1_e5_qb 0 5e-14
+cpar_gw1_e5_rec gw1_e5_rec 0 5e-14
+cpar_gw1_e5_rt gw1_e5_rt 0 5e-14
+cpar_gw1_e5_vm gw1_e5_vm 0 5e-14
+cpar_gw1_e5_vmd gw1_e5_vmd 0 5e-14
+cpar_gw1_e5_vms gw1_e5_vms 0 5e-14
+cpar_gw1_e6_h gw1_e6_h 0 5e-14
+cpar_gw1_e6_kd1 gw1_e6_kd1 0 5e-14
+cpar_gw1_e6_knb gw1_e6_knb 0 5e-14
+cpar_gw1_e6_ko1 gw1_e6_ko1 0 5e-14
+cpar_gw1_e6_ktail gw1_e6_ktail 0 5e-14
+cpar_gw1_e6_q gw1_e6_q 0 5e-14
+cpar_gw1_e6_qb gw1_e6_qb 0 5e-14
+cpar_gw1_e6_rec gw1_e6_rec 0 5e-14
+cpar_gw1_e6_rt gw1_e6_rt 0 5e-14
+cpar_gw1_e6_vm gw1_e6_vm 0 5e-14
+cpar_gw1_e6_vmd gw1_e6_vmd 0 5e-14
+cpar_gw1_e6_vms gw1_e6_vms 0 5e-14
+cpar_gw1_e7_h gw1_e7_h 0 5e-14
+cpar_gw1_e7_kd1 gw1_e7_kd1 0 5e-14
+cpar_gw1_e7_knb gw1_e7_knb 0 5e-14
+cpar_gw1_e7_ko1 gw1_e7_ko1 0 5e-14
+cpar_gw1_e7_ktail gw1_e7_ktail 0 5e-14
+cpar_gw1_e7_q gw1_e7_q 0 5e-14
+cpar_gw1_e7_qb gw1_e7_qb 0 5e-14
+cpar_gw1_e7_rec gw1_e7_rec 0 5e-14
+cpar_gw1_e7_rt gw1_e7_rt 0 5e-14
+cpar_gw1_e7_vm gw1_e7_vm 0 5e-14
+cpar_gw1_e7_vmd gw1_e7_vmd 0 5e-14
+cpar_gw1_e7_vms gw1_e7_vms 0 5e-14
+cpar_gw1_e8_h gw1_e8_h 0 5e-14
+cpar_gw1_e8_kd1 gw1_e8_kd1 0 5e-14
+cpar_gw1_e8_knb gw1_e8_knb 0 5e-14
+cpar_gw1_e8_ko1 gw1_e8_ko1 0 5e-14
+cpar_gw1_e8_ktail gw1_e8_ktail 0 5e-14
+cpar_gw1_e8_q gw1_e8_q 0 5e-14
+cpar_gw1_e8_qb gw1_e8_qb 0 5e-14
+cpar_gw1_e8_rec gw1_e8_rec 0 5e-14
+cpar_gw1_e8_rt gw1_e8_rt 0 5e-14
+cpar_gw1_e8_vm gw1_e8_vm 0 5e-14
+cpar_gw1_e8_vmd gw1_e8_vmd 0 5e-14
+cpar_gw1_e8_vms gw1_e8_vms 0 5e-14
+cpar_gw1_e9_h gw1_e9_h 0 5e-14
+cpar_gw1_e9_kd1 gw1_e9_kd1 0 5e-14
+cpar_gw1_e9_knb gw1_e9_knb 0 5e-14
+cpar_gw1_e9_ko1 gw1_e9_ko1 0 5e-14
+cpar_gw1_e9_ktail gw1_e9_ktail 0 5e-14
+cpar_gw1_e9_q gw1_e9_q 0 5e-14
+cpar_gw1_e9_qb gw1_e9_qb 0 5e-14
+cpar_gw1_e9_rec gw1_e9_rec 0 5e-14
+cpar_gw1_e9_rt gw1_e9_rt 0 5e-14
+cpar_gw1_e9_vm gw1_e9_vm 0 5e-14
+cpar_gw1_e9_vmd gw1_e9_vmd 0 5e-14
+cpar_gw1_e9_vms gw1_e9_vms 0 5e-14
+cpar_gw1_gb gw1_gb 0 5e-14
+cpar_gw1_op_ad gw1_op_ad 0 5e-14
+cpar_gw1_op_adn gw1_op_adn 0 5e-14
+cpar_gw1_op_an gw1_op_an 0 5e-14
+cpar_gw1_op_aq gw1_op_aq 0 5e-14
+cpar_gw1_op_aqb gw1_op_aqb 0 5e-14
+cpar_gw1_op_at gw1_op_at 0 5e-14
+cpar_gw1_op_gx gw1_op_gx 0 5e-14
+cpar_gw1_op_p gw1_op_p 0 5e-14
+cpar_gw1_op_pb gw1_op_pb 0 5e-14
+cpar_gw1_op_tt gw1_op_tt 0 5e-14
+cpar_gw2_and_a0_nb gw2_and_a0_nb 0 5e-14
+cpar_gw2_and_a0_nx gw2_and_a0_nx 0 5e-14
+cpar_gw2_and_a1_nb gw2_and_a1_nb 0 5e-14
+cpar_gw2_and_a1_nx gw2_and_a1_nx 0 5e-14
+cpar_gw2_and_a2_nb gw2_and_a2_nb 0 5e-14
+cpar_gw2_and_a2_nx gw2_and_a2_nx 0 5e-14
+cpar_gw2_and_a3_nb gw2_and_a3_nb 0 5e-14
+cpar_gw2_and_a3_nx gw2_and_a3_nx 0 5e-14
+cpar_gw2_and_a4_nb gw2_and_a4_nb 0 5e-14
+cpar_gw2_and_a4_nx gw2_and_a4_nx 0 5e-14
+cpar_gw2_and_a5_nb gw2_and_a5_nb 0 5e-14
+cpar_gw2_and_a5_nx gw2_and_a5_nx 0 5e-14
+cpar_gw2_and_a6_nb gw2_and_a6_nb 0 5e-14
+cpar_gw2_and_a6_nx gw2_and_a6_nx 0 5e-14
+cpar_gw2_and_a7_nb gw2_and_a7_nb 0 5e-14
+cpar_gw2_and_a7_nx gw2_and_a7_nx 0 5e-14
+cpar_gw2_and_a8_nb gw2_and_a8_nb 0 5e-14
+cpar_gw2_and_a8_nx gw2_and_a8_nx 0 5e-14
+cpar_gw2_and_g0 gw2_and_g0 0 5e-14
+cpar_gw2_and_g1 gw2_and_g1 0 5e-14
+cpar_gw2_and_g2 gw2_and_g2 0 5e-14
+cpar_gw2_and_g3 gw2_and_g3 0 5e-14
+cpar_gw2_and_g4 gw2_and_g4 0 5e-14
+cpar_gw2_and_g5 gw2_and_g5 0 5e-14
+cpar_gw2_and_g6 gw2_and_g6 0 5e-14
+cpar_gw2_and_g7 gw2_and_g7 0 5e-14
+cpar_gw2_and_g8 gw2_and_g8 0 5e-14
+cpar_gw2_b1 gw2_b1 0 5e-14
+cpar_gw2_b10 gw2_b10 0 5e-14
+cpar_gw2_b10_n gw2_b10_n 0 5e-14
+cpar_gw2_b10_q gw2_b10_q 0 5e-14
+cpar_gw2_b10_t gw2_b10_t 0 5e-14
+cpar_gw2_b1_n gw2_b1_n 0 5e-14
+cpar_gw2_b1_q gw2_b1_q 0 5e-14
+cpar_gw2_b1_t gw2_b1_t 0 5e-14
+cpar_gw2_b2 gw2_b2 0 5e-14
+cpar_gw2_b2_n gw2_b2_n 0 5e-14
+cpar_gw2_b2_q gw2_b2_q 0 5e-14
+cpar_gw2_b2_t gw2_b2_t 0 5e-14
+cpar_gw2_b3 gw2_b3 0 5e-14
+cpar_gw2_b3_n gw2_b3_n 0 5e-14
+cpar_gw2_b3_q gw2_b3_q 0 5e-14
+cpar_gw2_b3_t gw2_b3_t 0 5e-14
+cpar_gw2_b4 gw2_b4 0 5e-14
+cpar_gw2_b4_n gw2_b4_n 0 5e-14
+cpar_gw2_b4_q gw2_b4_q 0 5e-14
+cpar_gw2_b4_t gw2_b4_t 0 5e-14
+cpar_gw2_b5 gw2_b5 0 5e-14
+cpar_gw2_b5_n gw2_b5_n 0 5e-14
+cpar_gw2_b5_q gw2_b5_q 0 5e-14
+cpar_gw2_b5_t gw2_b5_t 0 5e-14
+cpar_gw2_b6 gw2_b6 0 5e-14
+cpar_gw2_b6_n gw2_b6_n 0 5e-14
+cpar_gw2_b6_q gw2_b6_q 0 5e-14
+cpar_gw2_b6_t gw2_b6_t 0 5e-14
+cpar_gw2_b7 gw2_b7 0 5e-14
+cpar_gw2_b7_n gw2_b7_n 0 5e-14
+cpar_gw2_b7_q gw2_b7_q 0 5e-14
+cpar_gw2_b7_t gw2_b7_t 0 5e-14
+cpar_gw2_b8 gw2_b8 0 5e-14
+cpar_gw2_b8_n gw2_b8_n 0 5e-14
+cpar_gw2_b8_q gw2_b8_q 0 5e-14
+cpar_gw2_b8_t gw2_b8_t 0 5e-14
+cpar_gw2_b9 gw2_b9 0 5e-14
+cpar_gw2_b9_n gw2_b9_n 0 5e-14
+cpar_gw2_b9_q gw2_b9_q 0 5e-14
+cpar_gw2_b9_t gw2_b9_t 0 5e-14
+cpar_gw2_cin_x gw2_cin_x 0 5e-14
+cpar_gw2_col_h gw2_col_h 0 5e-14
+cpar_gw2_col_kd1 gw2_col_kd1 0 5e-14
+cpar_gw2_col_knb gw2_col_knb 0 5e-14
+cpar_gw2_col_ko1 gw2_col_ko1 0 5e-14
+cpar_gw2_col_ktail gw2_col_ktail 0 5e-14
+cpar_gw2_col_q gw2_col_q 0 5e-14
+cpar_gw2_col_qb gw2_col_qb 0 5e-14
+cpar_gw2_col_rec gw2_col_rec 0 5e-14
+cpar_gw2_col_rt gw2_col_rt 0 5e-14
+cpar_gw2_col_vm gw2_col_vm 0 5e-14
+cpar_gw2_col_vmd gw2_col_vmd 0 5e-14
+cpar_gw2_col_vms gw2_col_vms 0 5e-14
+cpar_gw2_e10_h gw2_e10_h 0 5e-14
+cpar_gw2_e10_kd1 gw2_e10_kd1 0 5e-14
+cpar_gw2_e10_knb gw2_e10_knb 0 5e-14
+cpar_gw2_e10_ko1 gw2_e10_ko1 0 5e-14
+cpar_gw2_e10_ktail gw2_e10_ktail 0 5e-14
+cpar_gw2_e10_q gw2_e10_q 0 5e-14
+cpar_gw2_e10_qb gw2_e10_qb 0 5e-14
+cpar_gw2_e10_rec gw2_e10_rec 0 5e-14
+cpar_gw2_e10_rt gw2_e10_rt 0 5e-14
+cpar_gw2_e10_vm gw2_e10_vm 0 5e-14
+cpar_gw2_e10_vmd gw2_e10_vmd 0 5e-14
+cpar_gw2_e10_vms gw2_e10_vms 0 5e-14
+cpar_gw2_e1_h gw2_e1_h 0 5e-14
+cpar_gw2_e1_kd1 gw2_e1_kd1 0 5e-14
+cpar_gw2_e1_knb gw2_e1_knb 0 5e-14
+cpar_gw2_e1_ko1 gw2_e1_ko1 0 5e-14
+cpar_gw2_e1_ktail gw2_e1_ktail 0 5e-14
+cpar_gw2_e1_q gw2_e1_q 0 5e-14
+cpar_gw2_e1_qb gw2_e1_qb 0 5e-14
+cpar_gw2_e1_rec gw2_e1_rec 0 5e-14
+cpar_gw2_e1_rt gw2_e1_rt 0 5e-14
+cpar_gw2_e1_vm gw2_e1_vm 0 5e-14
+cpar_gw2_e1_vmd gw2_e1_vmd 0 5e-14
+cpar_gw2_e1_vms gw2_e1_vms 0 5e-14
+cpar_gw2_e2_h gw2_e2_h 0 5e-14
+cpar_gw2_e2_kd1 gw2_e2_kd1 0 5e-14
+cpar_gw2_e2_knb gw2_e2_knb 0 5e-14
+cpar_gw2_e2_ko1 gw2_e2_ko1 0 5e-14
+cpar_gw2_e2_ktail gw2_e2_ktail 0 5e-14
+cpar_gw2_e2_q gw2_e2_q 0 5e-14
+cpar_gw2_e2_qb gw2_e2_qb 0 5e-14
+cpar_gw2_e2_rec gw2_e2_rec 0 5e-14
+cpar_gw2_e2_rt gw2_e2_rt 0 5e-14
+cpar_gw2_e2_vm gw2_e2_vm 0 5e-14
+cpar_gw2_e2_vmd gw2_e2_vmd 0 5e-14
+cpar_gw2_e2_vms gw2_e2_vms 0 5e-14
+cpar_gw2_e3_h gw2_e3_h 0 5e-14
+cpar_gw2_e3_kd1 gw2_e3_kd1 0 5e-14
+cpar_gw2_e3_knb gw2_e3_knb 0 5e-14
+cpar_gw2_e3_ko1 gw2_e3_ko1 0 5e-14
+cpar_gw2_e3_ktail gw2_e3_ktail 0 5e-14
+cpar_gw2_e3_q gw2_e3_q 0 5e-14
+cpar_gw2_e3_qb gw2_e3_qb 0 5e-14
+cpar_gw2_e3_rec gw2_e3_rec 0 5e-14
+cpar_gw2_e3_rt gw2_e3_rt 0 5e-14
+cpar_gw2_e3_vm gw2_e3_vm 0 5e-14
+cpar_gw2_e3_vmd gw2_e3_vmd 0 5e-14
+cpar_gw2_e3_vms gw2_e3_vms 0 5e-14
+cpar_gw2_e4_h gw2_e4_h 0 5e-14
+cpar_gw2_e4_kd1 gw2_e4_kd1 0 5e-14
+cpar_gw2_e4_knb gw2_e4_knb 0 5e-14
+cpar_gw2_e4_ko1 gw2_e4_ko1 0 5e-14
+cpar_gw2_e4_ktail gw2_e4_ktail 0 5e-14
+cpar_gw2_e4_q gw2_e4_q 0 5e-14
+cpar_gw2_e4_qb gw2_e4_qb 0 5e-14
+cpar_gw2_e4_rec gw2_e4_rec 0 5e-14
+cpar_gw2_e4_rt gw2_e4_rt 0 5e-14
+cpar_gw2_e4_vm gw2_e4_vm 0 5e-14
+cpar_gw2_e4_vmd gw2_e4_vmd 0 5e-14
+cpar_gw2_e4_vms gw2_e4_vms 0 5e-14
+cpar_gw2_e5_h gw2_e5_h 0 5e-14
+cpar_gw2_e5_kd1 gw2_e5_kd1 0 5e-14
+cpar_gw2_e5_knb gw2_e5_knb 0 5e-14
+cpar_gw2_e5_ko1 gw2_e5_ko1 0 5e-14
+cpar_gw2_e5_ktail gw2_e5_ktail 0 5e-14
+cpar_gw2_e5_q gw2_e5_q 0 5e-14
+cpar_gw2_e5_qb gw2_e5_qb 0 5e-14
+cpar_gw2_e5_rec gw2_e5_rec 0 5e-14
+cpar_gw2_e5_rt gw2_e5_rt 0 5e-14
+cpar_gw2_e5_vm gw2_e5_vm 0 5e-14
+cpar_gw2_e5_vmd gw2_e5_vmd 0 5e-14
+cpar_gw2_e5_vms gw2_e5_vms 0 5e-14
+cpar_gw2_e6_h gw2_e6_h 0 5e-14
+cpar_gw2_e6_kd1 gw2_e6_kd1 0 5e-14
+cpar_gw2_e6_knb gw2_e6_knb 0 5e-14
+cpar_gw2_e6_ko1 gw2_e6_ko1 0 5e-14
+cpar_gw2_e6_ktail gw2_e6_ktail 0 5e-14
+cpar_gw2_e6_q gw2_e6_q 0 5e-14
+cpar_gw2_e6_qb gw2_e6_qb 0 5e-14
+cpar_gw2_e6_rec gw2_e6_rec 0 5e-14
+cpar_gw2_e6_rt gw2_e6_rt 0 5e-14
+cpar_gw2_e6_vm gw2_e6_vm 0 5e-14
+cpar_gw2_e6_vmd gw2_e6_vmd 0 5e-14
+cpar_gw2_e6_vms gw2_e6_vms 0 5e-14
+cpar_gw2_e7_h gw2_e7_h 0 5e-14
+cpar_gw2_e7_kd1 gw2_e7_kd1 0 5e-14
+cpar_gw2_e7_knb gw2_e7_knb 0 5e-14
+cpar_gw2_e7_ko1 gw2_e7_ko1 0 5e-14
+cpar_gw2_e7_ktail gw2_e7_ktail 0 5e-14
+cpar_gw2_e7_q gw2_e7_q 0 5e-14
+cpar_gw2_e7_qb gw2_e7_qb 0 5e-14
+cpar_gw2_e7_rec gw2_e7_rec 0 5e-14
+cpar_gw2_e7_rt gw2_e7_rt 0 5e-14
+cpar_gw2_e7_vm gw2_e7_vm 0 5e-14
+cpar_gw2_e7_vmd gw2_e7_vmd 0 5e-14
+cpar_gw2_e7_vms gw2_e7_vms 0 5e-14
+cpar_gw2_e8_h gw2_e8_h 0 5e-14
+cpar_gw2_e8_kd1 gw2_e8_kd1 0 5e-14
+cpar_gw2_e8_knb gw2_e8_knb 0 5e-14
+cpar_gw2_e8_ko1 gw2_e8_ko1 0 5e-14
+cpar_gw2_e8_ktail gw2_e8_ktail 0 5e-14
+cpar_gw2_e8_q gw2_e8_q 0 5e-14
+cpar_gw2_e8_qb gw2_e8_qb 0 5e-14
+cpar_gw2_e8_rec gw2_e8_rec 0 5e-14
+cpar_gw2_e8_rt gw2_e8_rt 0 5e-14
+cpar_gw2_e8_vm gw2_e8_vm 0 5e-14
+cpar_gw2_e8_vmd gw2_e8_vmd 0 5e-14
+cpar_gw2_e8_vms gw2_e8_vms 0 5e-14
+cpar_gw2_e9_h gw2_e9_h 0 5e-14
+cpar_gw2_e9_kd1 gw2_e9_kd1 0 5e-14
+cpar_gw2_e9_knb gw2_e9_knb 0 5e-14
+cpar_gw2_e9_ko1 gw2_e9_ko1 0 5e-14
+cpar_gw2_e9_ktail gw2_e9_ktail 0 5e-14
+cpar_gw2_e9_q gw2_e9_q 0 5e-14
+cpar_gw2_e9_qb gw2_e9_qb 0 5e-14
+cpar_gw2_e9_rec gw2_e9_rec 0 5e-14
+cpar_gw2_e9_rt gw2_e9_rt 0 5e-14
+cpar_gw2_e9_vm gw2_e9_vm 0 5e-14
+cpar_gw2_e9_vmd gw2_e9_vmd 0 5e-14
+cpar_gw2_e9_vms gw2_e9_vms 0 5e-14
+cpar_gw2_gb gw2_gb 0 5e-14
+cpar_gw2_op_ad gw2_op_ad 0 5e-14
+cpar_gw2_op_adn gw2_op_adn 0 5e-14
+cpar_gw2_op_an gw2_op_an 0 5e-14
+cpar_gw2_op_aq gw2_op_aq 0 5e-14
+cpar_gw2_op_aqb gw2_op_aqb 0 5e-14
+cpar_gw2_op_at gw2_op_at 0 5e-14
+cpar_gw2_op_gx gw2_op_gx 0 5e-14
+cpar_gw2_op_p gw2_op_p 0 5e-14
+cpar_gw2_op_pb gw2_op_pb 0 5e-14
+cpar_gw2_op_tt gw2_op_tt 0 5e-14
+cpar_hsw1_h1 hsw1_h1 0 5e-14
+cpar_hsw1_sd hsw1_sd 0 5e-14
+cpar_hsw2_h1 hsw2_h1 0 5e-14
+cpar_hsw2_sd hsw2_sd 0 5e-14
+cpar_hw1 hw1 0 5e-14
+cpar_hw2 hw2 0 5e-14
+cpar_ilim_n ilim_n 0 5e-14
+cpar_ilimp_n ilimp_n 0 5e-14
+cpar_iref_n iref_n 0 5e-14
+cpar_irefp_n irefp_n 0 5e-14
+cpar_istep_n istep_n 0 5e-14
+va_cpar_load_neg_p load_neg cpar_load_neg_p 0
+cpar_load_neg cpar_load_neg_p 0 5e-14
+va_cpar_load_pos_p load_pos cpar_load_pos_p 0
+cpar_load_pos cpar_load_pos_p 0 5e-14
+cpar_por_hold por_hold 0 5e-14
+cpar_por_ok por_ok 0 5e-14
+cpar_porc porc 0 5e-14
+cpar_porx porx 0 5e-14
+cpar_s1_anb s1_anb 0 5e-14
+cpar_s1_atl s1_atl 0 5e-14
+cpar_s1_da s1_da 0 5e-14
+cpar_s1_db s1_db 0 5e-14
+cpar_s1_m s1_m 0 5e-14
+cpar_s1_s s1_s 0 5e-14
+cpar_s1_tl s1_tl 0 5e-14
+cpar_s1_ya s1_ya 0 5e-14
+cpar_s1_yb s1_yb 0 5e-14
+cpar_s1_za s1_za 0 5e-14
+cpar_s1_zb s1_zb 0 5e-14
+cpar_s2_anb s2_anb 0 5e-14
+cpar_s2_atl s2_atl 0 5e-14
+cpar_s2_da s2_da 0 5e-14
+cpar_s2_db s2_db 0 5e-14
+cpar_s2_m s2_m 0 5e-14
+cpar_s2_s s2_s 0 5e-14
+cpar_s2_tl s2_tl 0 5e-14
+cpar_s2_ya s2_ya 0 5e-14
+cpar_s2_yb s2_yb 0 5e-14
+cpar_s2_za s2_za 0 5e-14
+cpar_s2_zb s2_zb 0 5e-14
+cpar_s3_anb s3_anb 0 5e-14
+cpar_s3_atl s3_atl 0 5e-14
+cpar_s3_da s3_da 0 5e-14
+cpar_s3_db s3_db 0 5e-14
+cpar_s3_m s3_m 0 5e-14
+cpar_s3_s s3_s 0 5e-14
+cpar_s3_tl s3_tl 0 5e-14
+cpar_s3_ya s3_ya 0 5e-14
+cpar_s3_yb s3_yb 0 5e-14
+cpar_s3_za s3_za 0 5e-14
+cpar_s3_zb s3_zb 0 5e-14
+cpar_s4_anb s4_anb 0 5e-14
+cpar_s4_atl s4_atl 0 5e-14
+cpar_s4_da s4_da 0 5e-14
+cpar_s4_db s4_db 0 5e-14
+cpar_s4_m s4_m 0 5e-14
+cpar_s4_s s4_s 0 5e-14
+cpar_s4_tl s4_tl 0 5e-14
+cpar_s4_ya s4_ya 0 5e-14
+cpar_s4_yb s4_yb 0 5e-14
+cpar_s4_za s4_za 0 5e-14
+cpar_s4_zb s4_zb 0 5e-14
+cpar_sgw12f_h sgw12f_h 0 5e-14
+cpar_sgw12f_kd1 sgw12f_kd1 0 5e-14
+cpar_sgw12f_knb sgw12f_knb 0 5e-14
+cpar_sgw12f_ko1 sgw12f_ko1 0 5e-14
+cpar_sgw12f_ktail sgw12f_ktail 0 5e-14
+cpar_sgw12f_op_ad sgw12f_op_ad 0 5e-14
+cpar_sgw12f_op_adn sgw12f_op_adn 0 5e-14
+cpar_sgw12f_op_an sgw12f_op_an 0 5e-14
+cpar_sgw12f_op_aq sgw12f_op_aq 0 5e-14
+cpar_sgw12f_op_aqb sgw12f_op_aqb 0 5e-14
+cpar_sgw12f_op_at sgw12f_op_at 0 5e-14
+cpar_sgw12f_op_gx sgw12f_op_gx 0 5e-14
+cpar_sgw12f_op_p sgw12f_op_p 0 5e-14
+cpar_sgw12f_op_pb sgw12f_op_pb 0 5e-14
+cpar_sgw12f_op_tt sgw12f_op_tt 0 5e-14
+cpar_sgw12f_ota_d1 sgw12f_ota_d1 0 5e-14
+cpar_sgw12f_ota_nb sgw12f_ota_nb 0 5e-14
+cpar_sgw12f_ota_tail sgw12f_ota_tail 0 5e-14
+cpar_sgw12f_q sgw12f_q 0 5e-14
+cpar_sgw12f_qb sgw12f_qb 0 5e-14
+cpar_sgw12f_rec sgw12f_rec 0 5e-14
+cpar_sgw12f_rt sgw12f_rt 0 5e-14
+va_cpar_sgw12f_vm_p sgw12f_vm cpar_sgw12f_vm_p 0
+cpar_sgw12f_vm cpar_sgw12f_vm_p 0 5e-14
+va_cpar_sgw12f_vmd_p sgw12f_vmd cpar_sgw12f_vmd_p 0
+cpar_sgw12f_vmd cpar_sgw12f_vmd_p 0 5e-14
+va_cpar_sgw12f_vms_p sgw12f_vms cpar_sgw12f_vms_p 0
+cpar_sgw12f_vms cpar_sgw12f_vms_p 0 5e-14
+cpar_sgw12r_h sgw12r_h 0 5e-14
+cpar_sgw12r_kd1 sgw12r_kd1 0 5e-14
+cpar_sgw12r_knb sgw12r_knb 0 5e-14
+cpar_sgw12r_ko1 sgw12r_ko1 0 5e-14
+cpar_sgw12r_ktail sgw12r_ktail 0 5e-14
+cpar_sgw12r_op_ad sgw12r_op_ad 0 5e-14
+cpar_sgw12r_op_adn sgw12r_op_adn 0 5e-14
+cpar_sgw12r_op_an sgw12r_op_an 0 5e-14
+cpar_sgw12r_op_aq sgw12r_op_aq 0 5e-14
+cpar_sgw12r_op_aqb sgw12r_op_aqb 0 5e-14
+cpar_sgw12r_op_at sgw12r_op_at 0 5e-14
+cpar_sgw12r_op_gx sgw12r_op_gx 0 5e-14
+cpar_sgw12r_op_p sgw12r_op_p 0 5e-14
+cpar_sgw12r_op_pb sgw12r_op_pb 0 5e-14
+cpar_sgw12r_op_tt sgw12r_op_tt 0 5e-14
+cpar_sgw12r_ota_d1 sgw12r_ota_d1 0 5e-14
+cpar_sgw12r_ota_nb sgw12r_ota_nb 0 5e-14
+cpar_sgw12r_ota_tail sgw12r_ota_tail 0 5e-14
+cpar_sgw12r_q sgw12r_q 0 5e-14
+cpar_sgw12r_qb sgw12r_qb 0 5e-14
+cpar_sgw12r_rec sgw12r_rec 0 5e-14
+cpar_sgw12r_rt sgw12r_rt 0 5e-14
+va_cpar_sgw12r_vm_p sgw12r_vm cpar_sgw12r_vm_p 0
+cpar_sgw12r_vm cpar_sgw12r_vm_p 0 5e-14
+va_cpar_sgw12r_vmd_p sgw12r_vmd cpar_sgw12r_vmd_p 0
+cpar_sgw12r_vmd cpar_sgw12r_vmd_p 0 5e-14
+va_cpar_sgw12r_vms_p sgw12r_vms cpar_sgw12r_vms_p 0
+cpar_sgw12r_vms cpar_sgw12r_vms_p 0 5e-14
+cpar_spw1 spw1 0 5e-14
+cpar_spw2 spw2 0 5e-14
+cpar_spw3 spw3 0 5e-14
+cpar_spw4 spw4 0 5e-14
+cpar_spwi1_x spwi1_x 0 5e-14
+cpar_spwi2_x spwi2_x 0 5e-14
+cpar_spwi3_x spwi3_x 0 5e-14
+cpar_spwi4_x spwi4_x 0 5e-14
+cpar_spws12 spws12 0 5e-14
+cpar_spws23 spws23 0 5e-14
+cpar_spws34 spws34 0 5e-14
+cpar_thw12f_h thw12f_h 0 5e-14
+cpar_thw12f_kd1 thw12f_kd1 0 5e-14
+cpar_thw12f_knb thw12f_knb 0 5e-14
+cpar_thw12f_ko1 thw12f_ko1 0 5e-14
+cpar_thw12f_ktail thw12f_ktail 0 5e-14
+cpar_thw12f_mi thw12f_mi 0 5e-14
+cpar_thw12f_op_ad thw12f_op_ad 0 5e-14
+cpar_thw12f_op_adn thw12f_op_adn 0 5e-14
+cpar_thw12f_op_an thw12f_op_an 0 5e-14
+cpar_thw12f_op_aq thw12f_op_aq 0 5e-14
+cpar_thw12f_op_aqb thw12f_op_aqb 0 5e-14
+cpar_thw12f_op_at thw12f_op_at 0 5e-14
+cpar_thw12f_op_gx thw12f_op_gx 0 5e-14
+cpar_thw12f_op_p thw12f_op_p 0 5e-14
+cpar_thw12f_op_pb thw12f_op_pb 0 5e-14
+cpar_thw12f_op_tt thw12f_op_tt 0 5e-14
+cpar_thw12f_q thw12f_q 0 5e-14
+cpar_thw12f_qb thw12f_qb 0 5e-14
+cpar_thw12f_rec thw12f_rec 0 5e-14
+cpar_thw12f_rt thw12f_rt 0 5e-14
+cpar_thw12f_st_x thw12f_st_x 0 5e-14
+va_cpar_thw12f_vm_p thw12f_vm cpar_thw12f_vm_p 0
+cpar_thw12f_vm cpar_thw12f_vm_p 0 5e-14
+va_cpar_thw12f_vmd_p thw12f_vmd cpar_thw12f_vmd_p 0
+cpar_thw12f_vmd cpar_thw12f_vmd_p 0 5e-14
+va_cpar_thw12f_vms_p thw12f_vms cpar_thw12f_vms_p 0
+cpar_thw12f_vms cpar_thw12f_vms_p 0 5e-14
+cpar_thw12r_h thw12r_h 0 5e-14
+cpar_thw12r_kd1 thw12r_kd1 0 5e-14
+cpar_thw12r_knb thw12r_knb 0 5e-14
+cpar_thw12r_ko1 thw12r_ko1 0 5e-14
+cpar_thw12r_ktail thw12r_ktail 0 5e-14
+cpar_thw12r_mi thw12r_mi 0 5e-14
+cpar_thw12r_op_ad thw12r_op_ad 0 5e-14
+cpar_thw12r_op_adn thw12r_op_adn 0 5e-14
+cpar_thw12r_op_an thw12r_op_an 0 5e-14
+cpar_thw12r_op_aq thw12r_op_aq 0 5e-14
+cpar_thw12r_op_aqb thw12r_op_aqb 0 5e-14
+cpar_thw12r_op_at thw12r_op_at 0 5e-14
+cpar_thw12r_op_gx thw12r_op_gx 0 5e-14
+cpar_thw12r_op_p thw12r_op_p 0 5e-14
+cpar_thw12r_op_pb thw12r_op_pb 0 5e-14
+cpar_thw12r_op_tt thw12r_op_tt 0 5e-14
+cpar_thw12r_q thw12r_q 0 5e-14
+cpar_thw12r_qb thw12r_qb 0 5e-14
+cpar_thw12r_rec thw12r_rec 0 5e-14
+cpar_thw12r_rt thw12r_rt 0 5e-14
+cpar_thw12r_st_x thw12r_st_x 0 5e-14
+va_cpar_thw12r_vm_p thw12r_vm cpar_thw12r_vm_p 0
+cpar_thw12r_vm cpar_thw12r_vm_p 0 5e-14
+va_cpar_thw12r_vmd_p thw12r_vmd cpar_thw12r_vmd_p 0
+cpar_thw12r_vmd cpar_thw12r_vmd_p 0 5e-14
+va_cpar_thw12r_vms_p thw12r_vms cpar_thw12r_vms_p 0
+cpar_thw12r_vms cpar_thw12r_vms_p 0 5e-14
+cpar_vdd vdd 0 5e-14
+cpar_vmid vmid 0 5e-14
+cpar_vrest vrest 0 5e-14
+cpar_vthe vthe 0 5e-14
+cpar_vthr vthr 0 5e-14
+.options sparse method=gear reltol=1e-5 abstol=1e-16
+.save v(vdd) v(vrest) v(vmid) v(load_pos) v(load_neg) v(gw1_col_q) v(gw1_op_aq) v(gw1_op_p) v(hw1) v(gw2_col_q) v(gw2_op_aq) v(gw2_op_p) v(hw2) v(thw12f_vm) v(thw12f_q) v(thw12f_qb) v(thw12f_h) v(thw12f_rec) v(thw12f_vmd) v(thw12f_op_at) v(thw12f_op_aq) v(thw12f_op_p) v(sgw12f_vm) v(sgw12f_q) v(sgw12f_qb) v(sgw12f_h) v(sgw12f_rec) v(sgw12f_vmd) v(sgw12f_op_at) v(sgw12f_op_aq) v(sgw12f_op_p) v(cdw12f_vm) v(cdw12f_q) v(cdw12f_qb) v(cdw12f_h) v(cdw12f_rec) v(cdw12f_vmd) v(cdw12f_op_at) v(cdw12f_op_aq) v(cdw12f_op_p) v(cdw12f_hs) v(cdw12f_hc) v(thw12r_vm) v(thw12r_q) v(thw12r_qb) v(thw12r_h) v(thw12r_rec) v(thw12r_vmd) v(thw12r_op_at) v(thw12r_op_aq) v(thw12r_op_p) v(sgw12r_vm) v(sgw12r_q) v(sgw12r_qb) v(sgw12r_h) v(sgw12r_rec) v(sgw12r_vmd) v(sgw12r_op_at) v(sgw12r_op_aq) v(sgw12r_op_p) v(cdw12r_vm) v(cdw12r_q) v(cdw12r_qb) v(cdw12r_h) v(cdw12r_rec) v(cdw12r_vmd) v(cdw12r_op_at) v(cdw12r_op_aq) v(cdw12r_op_p) v(cdw12r_hs) v(cdw12r_hc) v(spw1) v(spw2) v(spws12) v(thw12f_vms) v(thw12r_vms) v(sgw12f_vms) v(sgw12r_vms) v(cdw12f_vms) v(cdw12r_vms) i(va_cthw12f_cm_p) i(va_rthw12f_rm_p) i(va_nthw12f_km1_g) i(va_nthw12f_dis_d) i(va_nthw12f_sh1_d) i(va_nthw12f_porm_d) i(va_nthw12f_rm_mo_d) i(va_cpar_thw12f_vm_p) i(va_nthw12f_dis_s) i(va_rthw12f_rdis_p) i(va_cpar_thw12f_vmd_p) i(va_nthw12f_sh1_s) i(va_nthw12f_sh2_d) i(va_cpar_thw12f_vms_p) i(va_cthw12r_cm_p) i(va_rthw12r_rm_p) i(va_nthw12r_km1_g) i(va_nthw12r_dis_d) i(va_nthw12r_sh1_d) i(va_nthw12r_porm_d) i(va_nthw12r_rm_mo_d) i(va_cpar_thw12r_vm_p) i(va_nthw12r_dis_s) i(va_rthw12r_rdis_p) i(va_cpar_thw12r_vmd_p) i(va_nthw12r_sh1_s) i(va_nthw12r_sh2_d) i(va_cpar_thw12r_vms_p) i(va_csgw12f_cm_p) i(va_rsgw12f_rm_p) i(va_nsgw12f_km1_g) i(va_nsgw12f_dis_d) i(va_nsgw12f_sh1_d) i(va_nsgw12f_porm_d) i(va_nsgw12f_ota_m2_d) i(va_nsgw12f_ota_m4_d) i(va_cpar_sgw12f_vm_p) i(va_nsgw12f_dis_s) i(va_rsgw12f_rdis_p) i(va_cpar_sgw12f_vmd_p) i(va_nsgw12f_sh1_s) i(va_nsgw12f_sh2_d) i(va_cpar_sgw12f_vms_p) i(va_csgw12r_cm_p) i(va_rsgw12r_rm_p) i(va_nsgw12r_km1_g) i(va_nsgw12r_dis_d) i(va_nsgw12r_sh1_d) i(va_nsgw12r_porm_d) i(va_nsgw12r_ota_m2_d) i(va_nsgw12r_ota_m4_d) i(va_cpar_sgw12r_vm_p) i(va_nsgw12r_dis_s) i(va_rsgw12r_rdis_p) i(va_cpar_sgw12r_vmd_p) i(va_nsgw12r_sh1_s) i(va_nsgw12r_sh2_d) i(va_cpar_sgw12r_vms_p) i(va_ccdw12f_cm_p) i(va_rcdw12f_rm_p) i(va_ncdw12f_km1_g) i(va_ncdw12f_dis_d) i(va_ncdw12f_sh1_d) i(va_ncdw12f_porm_d) i(va_ncdw12f_rm_mo_d) i(va_ncdw12f_kh_d) i(va_cpar_cdw12f_vm_p) i(va_ncdw12f_dis_s) i(va_rcdw12f_rdis_p) i(va_cpar_cdw12f_vmd_p) i(va_ncdw12f_sh1_s) i(va_ncdw12f_sh2_d) i(va_cpar_cdw12f_vms_p) i(va_ccdw12r_cm_p) i(va_rcdw12r_rm_p) i(va_ncdw12r_km1_g) i(va_ncdw12r_dis_d) i(va_ncdw12r_sh1_d) i(va_ncdw12r_porm_d) i(va_ncdw12r_rm_mo_d) i(va_ncdw12r_kh_d) i(va_cpar_cdw12r_vm_p) i(va_ncdw12r_dis_s) i(va_rcdw12r_rdis_p) i(va_cpar_cdw12r_vmd_p) i(va_ncdw12r_sh1_s) i(va_ncdw12r_sh2_d) i(va_cpar_cdw12r_vms_p) i(va_cldpos_p) i(va_rldpos_p) i(va_nagw12f_cp_d) i(va_cpar_load_pos_p) i(va_cldneg_p) i(va_rldneg_p) i(va_nagw12r_cp_d) i(va_cpar_load_neg_p) v(vsrc) i(vsrc)
+.control
+pre_osdi /workspace/thermal-g3-env/host/native/models/ekv26_linux.osdi
+set filetype=binary
+tran 0.001 39.2 0 0.000125
+write /workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/CHAIN_12_W_F/CHAIN_12_W_F.raw
+quit
+.endc
+.end

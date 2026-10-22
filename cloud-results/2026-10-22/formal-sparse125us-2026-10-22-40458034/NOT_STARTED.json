@@ -1,0 +1,7 @@
+{
+  "all_formal_cases": "NOT_STARTED",
+  "reason": "Original whole-matrix cost gate refused before first reservation.",
+  "global_starts": 34,
+  "no_solver_or_extra_smoke_started": true,
+  "forecast_s": 176400
+}

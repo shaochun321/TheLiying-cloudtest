@@ -1,0 +1,43 @@
+{
+  "case_id": "Q1_MOTHER_PROTOCOL",
+  "scientific": "PASS",
+  "candidate_manifest_sha256": "035f98db70cb1072460e04b38f3e95573174503acb3fe0dced1c93cbc5752fd9",
+  "deck_sha256": "3ff1cf00c7a34abd23e574b5ab1fccea886f349d9e2234a03b88ca7035163508",
+  "raw_path": "/workspace/thermal-g3-qualification/sparse-125us-1800s-2026-10-22-abf2dedc/runs/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw",
+  "raw_sha256": "f62e385ac452b5e33a0a324787ddd949214489de5c1d9d0e85f845d2d38ea203",
+  "judge_output_path": "/workspace/thermal-g3-qualification/sparse-125us-1800s-2026-10-22-abf2dedc/runs/Q1_MOTHER_PROTOCOL/judge-output.json",
+  "judge_output_sha256": "47d9d2aa9c67c394ce41be2be6e49140722bd4067c79320147d1117f2b3ed097",
+  "functional_confirmation_result": null,
+  "numerical_pair_s": [
+    0.000125,
+    6.25e-05
+  ],
+  "judge_wall_s": 247.27724772200054,
+  "abandoned_offline_analysis_wall_s": 512.427286,
+  "offline_layout_corrections": 1,
+  "new_solver_launches_during_correction": 0,
+  "complete_transient": true,
+  "actual_end_s": 100.27,
+  "global_start_count": 33,
+  "backend": {
+    "ngspice": {
+      "path": "/workspace/thermal-g3-env/host/native/bin/ngspice",
+      "sha256": "37d80c673bc4c03904ed4434bb3aa9aecd099ecfaeb66b86730a905e8c76ed89"
+    },
+    "osdi": {
+      "path": "/workspace/thermal-g3-env/host/native/models/ekv26_linux.osdi",
+      "sha256": "7c07ae3728941189b77bf0ecfca5ebe56473d01eedc6ea59c46cc32bfdb9a43f"
+    }
+  },
+  "time_layout": {
+    "original_time_stride_bytes": 768,
+    "corrected_time_stride_bytes": 8,
+    "points": 818885,
+    "time_bit_patterns_identical": true,
+    "interpolation": false,
+    "resampling": false,
+    "original_scientific_code_unchanged": true,
+    "same_RAW_sha256": "f62e385ac452b5e33a0a324787ddd949214489de5c1d9d0e85f845d2d38ea203",
+    "new_solver_launches": 0
+  }
+}
