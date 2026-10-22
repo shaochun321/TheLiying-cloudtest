@@ -1,0 +1,61 @@
+{
+  "case_id": "G0_W",
+  "overall_result": "FAIL",
+  "solver_returncode": 0,
+  "solver_wall_s": 4945.015474932996,
+  "actual_end_s": 64.8,
+  "functional_gate_count": 10,
+  "functional_pass_count": 10,
+  "physical_nodes": {
+    "gw1_col_vm": {
+      "kcl_p99": 6.330862641141485e-10,
+      "kcl_peak": 1.1162920218139794e-09,
+      "kcl": true,
+      "energy_net_J": 2.355535551757293e-18,
+      "energy_abs_J": 2.1674535284607237e-05,
+      "energy": true,
+      "cap_mismatch_J": 1.3639163104460103e-09,
+      "cap": false,
+      "n_terms": 8,
+      "result": "FAIL"
+    },
+    "gw1_col_vmd": {
+      "kcl_p99": 0.0,
+      "kcl_peak": 0.0,
+      "kcl": true,
+      "energy_net_J": 0.0,
+      "energy_abs_J": 1.3692509179749793e-06,
+      "energy": true,
+      "cap_mismatch_J": 2.80103134462793e-15,
+      "cap": true,
+      "n_terms": 3,
+      "result": "PASS"
+    },
+    "gw1_col_vms": {
+      "kcl_p99": 0.0,
+      "kcl_peak": 0.0,
+      "kcl": true,
+      "energy_net_J": 0.0,
+      "energy_abs_J": 1.5969563348631716e-05,
+      "energy": true,
+      "cap_mismatch_J": 1.7224094708682341e-15,
+      "cap": true,
+      "n_terms": 3,
+      "result": "PASS"
+    }
+  },
+  "physical_failed_nodes": [
+    "gw1_col_vm"
+  ],
+  "failure_category": "Original capacitor-energy ledger criterion",
+  "cap_energy_criterion": "abs(integral(v_cap*i_cap dt) - delta(0.5*C*v_cap**2)) <= max(0.01*max(abs(e_integral),abs(e_state)),1e-12 J)",
+  "ngspice_log_error_warning_fatal_abort_matching_lines": 0,
+  "single_case_wall_limit_removed_during_same_process": true,
+  "actual_new_solver_starts": 1,
+  "global_start_count": 35,
+  "remaining_unstarted_formal_cases": 30,
+  "remaining_formal_forecast_s": 173700,
+  "remaining_cost_gate_pass": false,
+  "no_retry_or_next_case": true,
+  "previous_two_qualification_PASS_evidence_unchanged": true
+}

@@ -1,0 +1,8 @@
+{
+  "state": "SOLVER_EXITED_ORIGINAL_WAITER_RESUMED",
+  "updated_at": "2026-10-23T00:58:50.392015+08:00",
+  "solver_pid": 31807,
+  "parent_pid": 31800,
+  "additional_solver_launches": 0,
+  "old_deadline_not_enforced": true
+}

@@ -1,0 +1,10 @@
+{
+  "actual_end_s": 64.8,
+  "expected_end_s": 64.8,
+  "raw_exists": true,
+  "raw_points": 615243,
+  "variables": 56,
+  "raw_sha256": "7af17a7cb116d5999c02c52d36e0de438afc8494d3b7533c94b404b0df48fbef",
+  "raw_bytes": 275630524,
+  "completion_failure": null
+}

@@ -1,0 +1,23 @@
+{
+  "updated_at": "2026-10-23T01:00:46.546363+08:00",
+  "preflight_pushed_commit": "ee029ce94e2e103676b452d4919626a97b248af0",
+  "case_id": "G0_W",
+  "scientific": "FAIL",
+  "complete_transient": true,
+  "actual_end_s": 64.8,
+  "actual_new_solver_launches": 1,
+  "global_starts": 35,
+  "remaining_unstarted_formal_cases": 30,
+  "solver_wall_s": 4945.015474932996,
+  "single_case_wall_cap_s": null,
+  "timed_out": false,
+  "next_case_started": false,
+  "original_remaining_cost_gate": {
+    "allowed": false,
+    "exception_type": "Refused",
+    "message": "cost gate: forecast 173700 s of remaining formal cases exceeds phase 103055 s / total 162443 s"
+  },
+  "no_automatic_retry_or_next_case": true,
+  "main_and_original_deliveries_unchanged": true,
+  "preflight_NOT_STARTED_and_PREFLIGHT_STATUS_are_historical_snapshots": true
+}

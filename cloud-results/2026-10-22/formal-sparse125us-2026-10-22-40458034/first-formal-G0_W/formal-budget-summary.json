@@ -1,0 +1,11 @@
+{
+  "global_starts_before": 34,
+  "new_formal_starts": 1,
+  "global_starts_after": 35,
+  "remaining_formal_starts": 30,
+  "formal_phase_cap_s": 108000,
+  "formal_wall_charge_s": 4945.015474932996,
+  "global_wall_cap_s": 172800,
+  "global_historical_exact_wall_s": null,
+  "actual_new_wall_delta_s": 4945.015474932996
+}

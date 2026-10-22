@@ -1,0 +1,7 @@
+{
+  "case_id": "G0_W",
+  "scientific": "FAIL",
+  "only_one_cost_gate_exception_used": true,
+  "recompute_remaining_original_cost_gate_before_any_next_case": true,
+  "no_automatic_next_run": true
+}

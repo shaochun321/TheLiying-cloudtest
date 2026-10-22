@@ -1,0 +1,13 @@
+{
+  "case_id": "G0_W",
+  "scientific": "FAIL",
+  "raw_sha256": "7af17a7cb116d5999c02c52d36e0de438afc8494d3b7533c94b404b0df48fbef",
+  "raw_path": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/G0_W/G0_W.raw",
+  "deck_sha256": "6be115c2ab095b375eb8cc1cbb0edc1c12845301503e532dfe07259a3abd93d6",
+  "judge_output_sha256": "5dac5378173950144c93aa0f89dce511ad5113c8b43949a8cb95db72e430b5d8",
+  "complete_transient": true,
+  "actual_end_s": 64.8,
+  "global_start_count": 35,
+  "judge_wall_s": 41.20895858400036,
+  "next_case_automatically_authorized": false
+}

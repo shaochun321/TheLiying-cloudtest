@@ -1,0 +1,306 @@
+{
+  "actual_first_case": {
+    "case_id": "G0_W",
+    "scientific": "FAIL",
+    "raw_sha256": "7af17a7cb116d5999c02c52d36e0de438afc8494d3b7533c94b404b0df48fbef",
+    "raw_path": "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/G0_W/G0_W.raw",
+    "deck_sha256": "6be115c2ab095b375eb8cc1cbb0edc1c12845301503e532dfe07259a3abd93d6",
+    "judge_output_sha256": "5dac5378173950144c93aa0f89dce511ad5113c8b43949a8cb95db72e430b5d8",
+    "complete_transient": true,
+    "actual_end_s": 64.8,
+    "global_start_count": 35,
+    "judge_wall_s": 41.20895858400036,
+    "next_case_automatically_authorized": false
+  },
+  "global_start_count": 35,
+  "remaining_formal_starts": 30,
+  "formal_spent_s": 4945.015474932996,
+  "formal_phase_remaining_s": 103054.984525067,
+  "global_exact_historical_wall_s": null,
+  "known_total_wall_lower_bound_s": 10357.242171702996,
+  "global_remaining_optimistic_upper_bound_s": 162442.757828297,
+  "forecast_rows": [
+    {
+      "case_id": "G0_C",
+      "scale": "single_site_single_polarity",
+      "elements": 937,
+      "hard_cap_s": 2700,
+      "measured_rate_s_per_element": 5.277497838775876,
+      "forecast_s": 2700,
+      "rate_source": "same scale"
+    },
+    {
+      "case_id": "G0_CUT_K1",
+      "scale": "single_site_single_polarity",
+      "elements": 939,
+      "hard_cap_s": 2700,
+      "measured_rate_s_per_element": 5.277497838775876,
+      "forecast_s": 2700,
+      "rate_source": "same scale"
+    },
+    {
+      "case_id": "G0_CUT_K10",
+      "scale": "single_site_single_polarity",
+      "elements": 939,
+      "hard_cap_s": 2700,
+      "measured_rate_s_per_element": 5.277497838775876,
+      "forecast_s": 2700,
+      "rate_source": "same scale"
+    },
+    {
+      "case_id": "CHAIN_12_W_F",
+      "scale": "two_actual_G0_parent_chain",
+      "elements": 2227,
+      "hard_cap_s": 5400,
+      "measured_rate_s_per_element": 8.672331209514565,
+      "forecast_s": 5400,
+      "rate_source": "largest completed rate fallback"
+    },
+    {
+      "case_id": "CHAIN_12_W_R",
+      "scale": "two_actual_G0_parent_chain",
+      "elements": 2227,
+      "hard_cap_s": 5400,
+      "measured_rate_s_per_element": 8.672331209514565,
+      "forecast_s": 5400,
+      "rate_source": "largest completed rate fallback"
+    },
+    {
+      "case_id": "CHAIN_12_C_F",
+      "scale": "two_actual_G0_parent_chain",
+      "elements": 2227,
+      "hard_cap_s": 5400,
+      "measured_rate_s_per_element": 8.672331209514565,
+      "forecast_s": 5400,
+      "rate_source": "largest completed rate fallback"
+    },
+    {
+      "case_id": "CHAIN_12_C_R",
+      "scale": "two_actual_G0_parent_chain",
+      "elements": 2227,
+      "hard_cap_s": 5400,
+      "measured_rate_s_per_element": 8.672331209514565,
+      "forecast_s": 5400,
+      "rate_source": "largest completed rate fallback"
+    },
+    {
+      "case_id": "CHAIN_23_W_F",
+      "scale": "two_actual_G0_parent_chain",
+      "elements": 2227,
+      "hard_cap_s": 5400,
+      "measured_rate_s_per_element": 8.672331209514565,
+      "forecast_s": 5400,
+      "rate_source": "largest completed rate fallback"
+    },
+    {
+      "case_id": "CHAIN_23_W_R",
+      "scale": "two_actual_G0_parent_chain",
+      "elements": 2227,
+      "hard_cap_s": 5400,
+      "measured_rate_s_per_element": 8.672331209514565,
+      "forecast_s": 5400,
+      "rate_source": "largest completed rate fallback"
+    },
+    {
+      "case_id": "CHAIN_23_C_F",
+      "scale": "two_actual_G0_parent_chain",
+      "elements": 2227,
+      "hard_cap_s": 5400,
+      "measured_rate_s_per_element": 8.672331209514565,
+      "forecast_s": 5400,
+      "rate_source": "largest completed rate fallback"
+    },
+    {
+      "case_id": "CHAIN_23_C_R",
+      "scale": "two_actual_G0_parent_chain",
+      "elements": 2227,
+      "hard_cap_s": 5400,
+      "measured_rate_s_per_element": 8.672331209514565,
+      "forecast_s": 5400,
+      "rate_source": "largest completed rate fallback"
+    },
+    {
+      "case_id": "CHAIN_34_W_F",
+      "scale": "two_actual_G0_parent_chain",
+      "elements": 2227,
+      "hard_cap_s": 5400,
+      "measured_rate_s_per_element": 8.672331209514565,
+      "forecast_s": 5400,
+      "rate_source": "largest completed rate fallback"
+    },
+    {
+      "case_id": "CHAIN_34_W_R",
+      "scale": "two_actual_G0_parent_chain",
+      "elements": 2227,
+      "hard_cap_s": 5400,
+      "measured_rate_s_per_element": 8.672331209514565,
+      "forecast_s": 5400,
+      "rate_source": "largest completed rate fallback"
+    },
+    {
+      "case_id": "CHAIN_34_C_F",
+      "scale": "two_actual_G0_parent_chain",
+      "elements": 2227,
+      "hard_cap_s": 5400,
+      "measured_rate_s_per_element": 8.672331209514565,
+      "forecast_s": 5400,
+      "rate_source": "largest completed rate fallback"
+    },
+    {
+      "case_id": "CHAIN_34_C_R",
+      "scale": "two_actual_G0_parent_chain",
+      "elements": 2227,
+      "hard_cap_s": 5400,
+      "measured_rate_s_per_element": 8.672331209514565,
+      "forecast_s": 5400,
+      "rate_source": "largest completed rate fallback"
+    },
+    {
+      "case_id": "STRUCT_THETA_PORT_CUT",
+      "scale": "two_actual_G0_parent_chain",
+      "elements": 2229,
+      "hard_cap_s": 5400,
+      "measured_rate_s_per_element": 8.672331209514565,
+      "forecast_s": 5400,
+      "rate_source": "largest completed rate fallback"
+    },
+    {
+      "case_id": "STRUCT_SIGMA_PORT_CUT",
+      "scale": "two_actual_G0_parent_chain",
+      "elements": 2229,
+      "hard_cap_s": 5400,
+      "measured_rate_s_per_element": 8.672331209514565,
+      "forecast_s": 5400,
+      "rate_source": "largest completed rate fallback"
+    },
+    {
+      "case_id": "STRUCT_CDIR_HISTORY_BLEED",
+      "scale": "two_actual_G0_parent_chain",
+      "elements": 2230,
+      "hard_cap_s": 5400,
+      "measured_rate_s_per_element": 8.672331209514565,
+      "forecast_s": 5400,
+      "rate_source": "largest completed rate fallback"
+    },
+    {
+      "case_id": "STRUCT_REAL_SIGMA_SWAP",
+      "scale": "two_actual_G0_parent_chain",
+      "elements": 2227,
+      "hard_cap_s": 5400,
+      "measured_rate_s_per_element": 8.672331209514565,
+      "forecast_s": 5400,
+      "rate_source": "largest completed rate fallback"
+    },
+    {
+      "case_id": "INVALID_SYNC",
+      "scale": "two_actual_G0_parent_chain",
+      "elements": 2227,
+      "hard_cap_s": 5400,
+      "measured_rate_s_per_element": 8.672331209514565,
+      "forecast_s": 5400,
+      "rate_source": "largest completed rate fallback"
+    },
+    {
+      "case_id": "INVALID_STALE",
+      "scale": "two_actual_G0_parent_chain",
+      "elements": 2227,
+      "hard_cap_s": 5400,
+      "measured_rate_s_per_element": 8.672331209514565,
+      "forecast_s": 5400,
+      "rate_source": "largest completed rate fallback"
+    },
+    {
+      "case_id": "FULL_NOM",
+      "scale": "four_sites_both_polarities_124_cores",
+      "elements": 9197,
+      "hard_cap_s": 14400,
+      "measured_rate_s_per_element": 8.672331209514565,
+      "forecast_s": 14400,
+      "rate_source": "largest completed rate fallback"
+    },
+    {
+      "case_id": "FULL_REAL_MIRROR",
+      "scale": "four_sites_both_polarities_124_cores",
+      "elements": 9197,
+      "hard_cap_s": 14400,
+      "measured_rate_s_per_element": 8.672331209514565,
+      "forecast_s": 14400,
+      "rate_source": "largest completed rate fallback"
+    },
+    {
+      "case_id": "FULL_SPACE_CUT",
+      "scale": "four_sites_both_polarities_124_cores",
+      "elements": 9195,
+      "hard_cap_s": 14400,
+      "measured_rate_s_per_element": 8.672331209514565,
+      "forecast_s": 14400,
+      "rate_source": "largest completed rate fallback"
+    },
+    {
+      "case_id": "FULL_NUM_HALFSTEP",
+      "scale": "four_sites_both_polarities_124_cores",
+      "elements": 9197,
+      "hard_cap_s": 14400,
+      "measured_rate_s_per_element": 8.672331209514565,
+      "forecast_s": 14400,
+      "rate_source": "largest completed rate fallback"
+    },
+    {
+      "case_id": "NUM_G0_HALFSTEP",
+      "scale": "single_site_single_polarity",
+      "elements": 937,
+      "hard_cap_s": 2700,
+      "measured_rate_s_per_element": 5.277497838775876,
+      "forecast_s": 2700,
+      "rate_source": "same scale"
+    },
+    {
+      "case_id": "NUM_CHAIN_HALFSTEP",
+      "scale": "two_actual_G0_parent_chain",
+      "elements": 2227,
+      "hard_cap_s": 5400,
+      "measured_rate_s_per_element": 8.672331209514565,
+      "forecast_s": 5400,
+      "rate_source": "largest completed rate fallback"
+    },
+    {
+      "case_id": "DC_2P7",
+      "scale": "four_sites_both_polarities_124_cores",
+      "elements": 9197,
+      "hard_cap_s": 900,
+      "measured_rate_s_per_element": 8.672331209514565,
+      "forecast_s": 900,
+      "rate_source": "largest completed rate fallback"
+    },
+    {
+      "case_id": "DC_3",
+      "scale": "four_sites_both_polarities_124_cores",
+      "elements": 9197,
+      "hard_cap_s": 900,
+      "measured_rate_s_per_element": 8.672331209514565,
+      "forecast_s": 900,
+      "rate_source": "largest completed rate fallback"
+    },
+    {
+      "case_id": "DC_3P2",
+      "scale": "four_sites_both_polarities_124_cores",
+      "elements": 9197,
+      "hard_cap_s": 900,
+      "measured_rate_s_per_element": 8.672331209514565,
+      "forecast_s": 900,
+      "rate_source": "largest completed rate fallback"
+    }
+  ],
+  "remaining_formal_forecast_s": 173700,
+  "unmodified_original_cost_gate": {
+    "allowed": false,
+    "exception_type": "Refused",
+    "message": "cost gate: forecast 173700 s of remaining formal cases exceeds phase 103055 s / total 162443 s"
+  },
+  "current_candidate_STOPPED": true,
+  "next_case_automatically_authorized": false,
+  "other_case_cost_gate_waiver": false,
+  "new_solver_launches_by_this_script": 0,
+  "single_case_wall_limit_removed_by_user": true,
+  "other_phase_and_global_caps_not_changed": true
+}

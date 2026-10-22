@@ -1,0 +1,20 @@
+{
+  "approved": true,
+  "status": "AUTHORIZED_ONE_CASE_ONLY",
+  "case_id": "G0_W",
+  "manifest_sha256": "6aa34994c8edcc139ba8e249fe8d15d4b4d101e0e5fae254a75ec6fc46a8f3ea",
+  "whole_matrix_cost_gate_exception_for_this_case_only": true,
+  "max_solver_starts": 1,
+  "wall_cap_s": 2700,
+  "global_start_cap": 65,
+  "formal_phase_wall_cap_s": 108000,
+  "global_wall_cap_s": 172800,
+  "global_starts_before": 34,
+  "global_starts_after_if_launched": 35,
+  "next_case_automatically_authorized": false,
+  "cost_gate_waiver_for_other_cases": false,
+  "purpose": "One original formal case to obtain an actual rate for its scale; consumes one of the 31 formal starts. No extra diagnostic or qualification run.",
+  "user_instruction": "授权，并推送",
+  "approved_at": "2026-10-22T23:36:20.574084+08:00",
+  "preflight_publication_authorized_commit": "ee029ce94e2e103676b452d4919626a97b248af0"
+}

@@ -1,0 +1,33 @@
+[
+  {
+    "original_path": "runs/G0_W/G0_W.raw",
+    "original_bytes": 275630524,
+    "original_sha256": "7af17a7cb116d5999c02c52d36e0de438afc8494d3b7533c94b404b0df48fbef",
+    "encoding": "gzip, split into ordered binary chunks",
+    "compressed_bytes": 184856709,
+    "compressed_sha256": "2230aa3f6939d0230a37073a36e390040dc2f9de021e5262df7a2a457f2b0db1",
+    "lossless_decompression_verified": true,
+    "parts": [
+      {
+        "path": "runs/G0_W/G0_W.raw.gz.part001",
+        "bytes": 50331648,
+        "sha256": "095c217158d7fad0421a560c7b244bc1e25095de4d18fff3086f9791e9a6586f"
+      },
+      {
+        "path": "runs/G0_W/G0_W.raw.gz.part002",
+        "bytes": 50331648,
+        "sha256": "dc57ed09f39139a8a316fcfbd80feab05a57a88c662e3154137bcbc1c78c4217"
+      },
+      {
+        "path": "runs/G0_W/G0_W.raw.gz.part003",
+        "bytes": 50331648,
+        "sha256": "ab49b67337721a9422af14347b4fd259e9166b48be89a20e06d166f5e5ac05d5"
+      },
+      {
+        "path": "runs/G0_W/G0_W.raw.gz.part004",
+        "bytes": 33861765,
+        "sha256": "4625e53a31f8bab25cfa941cacd447f48de34ca49387687cc7acefceaee56b16"
+      }
+    ]
+  }
+]

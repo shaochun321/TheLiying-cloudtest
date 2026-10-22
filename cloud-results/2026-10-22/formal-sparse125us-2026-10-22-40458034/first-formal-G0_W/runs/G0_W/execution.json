@@ -1,0 +1,28 @@
+{
+  "case_id": "G0_W",
+  "analysis_id": "formal-001",
+  "phase": "formal",
+  "scale": "single_site_single_polarity",
+  "command": [
+    "/workspace/thermal-g3-env/host/native/bin/ngspice",
+    "-n",
+    "-b",
+    "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/G0_W/G0_W.cir"
+  ],
+  "actual_solver_launches": 1,
+  "automatic_retries": 0,
+  "global_starts_before": 34,
+  "global_starts_after": 35,
+  "wall_cap_s": 2700,
+  "watchdog_dispatch_s": 2670,
+  "kill_grace_inside_cap_s": 30,
+  "returncode": 0,
+  "timed_out": false,
+  "spawn_error": null,
+  "solver_wall_s": 4945.015474932996,
+  "started_at": "2026-10-22T23:36:25.377906+08:00",
+  "pid": 31807,
+  "ended_at": "2026-10-23T00:58:50.393518+08:00",
+  "solver_process_reaped": true,
+  "wall_within_cap": false
+}

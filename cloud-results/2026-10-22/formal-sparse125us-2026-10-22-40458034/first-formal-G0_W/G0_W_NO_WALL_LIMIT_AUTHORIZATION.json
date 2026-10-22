@@ -1,0 +1,15 @@
+{
+  "user_instruction": "暂不设置时间上限",
+  "effective_at": "2026-10-22T23:55:55.749411+08:00",
+  "case_id": "G0_W",
+  "existing_solver_pid": 31807,
+  "existing_solver_start_ticks": 4189089,
+  "new_solver_starts": 0,
+  "global_start_count": 35,
+  "single_case_wall_cap_s": null,
+  "old_single_case_cap_s": 2700,
+  "old_watchdog_dispatch_s": 2670,
+  "scope": "Existing G0_W run only; no retry and no automatic next case. Original phase/global budgets remain recorded; no exact historical balance is invented.",
+  "original_timeout_waiter_pid": 31800,
+  "original_timeout_waiter_start_ticks": 4189071
+}

@@ -1,0 +1,9 @@
+{
+  "case_id": "G0_W",
+  "reserved_at": "2026-10-22T23:36:25.377069+08:00",
+  "global_start_index": 35,
+  "max_starts": 1,
+  "wall_cap_s": 2700,
+  "authorization_sha256": "7914abff3ec2ffaa5d04088e432be5a5aaf3bccf3fffc36de0228780b1d09e68",
+  "manifest_sha256": "6aa34994c8edcc139ba8e249fe8d15d4b4d101e0e5fae254a75ec6fc46a8f3ea"
+}
