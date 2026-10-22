@@ -1,0 +1,7 @@
+{
+  "case_id": "Q1_MOTHER_PROTOCOL",
+  "reserved_at": "2026-10-22T15:41:46.228860+08:00",
+  "reserved_start_index": 33,
+  "candidate_manifest_sha256": "035f98db70cb1072460e04b38f3e95573174503acb3fe0dced1c93cbc5752fd9",
+  "wall_cap_s": 1800
+}

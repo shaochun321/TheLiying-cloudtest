@@ -1,0 +1,9 @@
+{
+  "restore_command": "python3 restore_raw.py --output-dir /tmp/sparse-125us-1800s-abf2dedc-recovery",
+  "returncode": 0,
+  "verified_all_8_part_checksums": true,
+  "verified_joined_gzip_checksum": true,
+  "verified_recovered_RAW_bytes": 628906283,
+  "verified_recovered_RAW_sha256": "f62e385ac452b5e33a0a324787ddd949214489de5c1d9d0e85f845d2d38ea203",
+  "recovery_is_not_a_solver_run": true
+}

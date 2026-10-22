@@ -1,0 +1,12 @@
+{
+  "reason": "Read-only mmap time column has stride 768 bytes; original 10ms window loop repeatedly scans it. Replace only time-array layout, not values or science.",
+  "interrupted_process_pid": 10155,
+  "solver_already_reaped": true,
+  "new_solver_launches": 0,
+  "first_analysis_completed": false,
+  "offline_layout_corrections": 1,
+  "interrupted_at_Asia_Shanghai": "2026-10-22T16:15:51.212523+08:00",
+  "first_analysis_wall_since_solver_exit_s": 512.427286,
+  "original_analysis_process_exit_code": 143,
+  "original_analysis_process_signal": "SIGTERM after solver already reaped"
+}

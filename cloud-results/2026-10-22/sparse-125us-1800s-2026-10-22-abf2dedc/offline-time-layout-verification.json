@@ -1,0 +1,11 @@
+{
+  "original_time_stride_bytes": 768,
+  "corrected_time_stride_bytes": 8,
+  "points": 818885,
+  "time_bit_patterns_identical": true,
+  "interpolation": false,
+  "resampling": false,
+  "original_scientific_code_unchanged": true,
+  "same_RAW_sha256": "f62e385ac452b5e33a0a324787ddd949214489de5c1d9d0e85f845d2d38ea203",
+  "new_solver_launches": 0
+}

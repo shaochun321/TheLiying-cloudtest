@@ -1,0 +1,20 @@
+{
+  "baseline_global_starts": 32,
+  "qualification_starts_this_round": 1,
+  "global_starts_after": 33,
+  "global_start_cap": 65,
+  "total_starts_remaining": 32,
+  "formal_31_reserved": 31,
+  "unused_diagnostic_allocation": 1,
+  "qualification_allocation_unspent": 0,
+  "solver_wall_charge_this_round_s": 1532.5475344089991,
+  "phase_wall_cap_s": 3600,
+  "phase_remaining_wall_s": 867.5236469700012,
+  "phase_prior_charged_wall_s": 1199.9288186209997,
+  "phase_total_charged_wall_s": 2732.476353029999,
+  "global_wall_cap_s_unchanged": 172800,
+  "exact_prior_cumulative_wall_s": null,
+  "note": "Earlier three extra launch durations remain incomplete; charge the exact new delta without inventing a total.",
+  "formal_runs_started": 0,
+  "diagnostic_runs_started": 0
+}

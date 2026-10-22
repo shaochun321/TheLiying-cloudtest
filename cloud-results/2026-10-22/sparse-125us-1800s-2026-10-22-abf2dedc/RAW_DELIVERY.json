@@ -1,0 +1,53 @@
+[
+  {
+    "original_path": "runs/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw",
+    "original_bytes": 628906283,
+    "original_sha256": "f62e385ac452b5e33a0a324787ddd949214489de5c1d9d0e85f845d2d38ea203",
+    "encoding": "gzip, split into ordered binary chunks",
+    "compressed_bytes": 355850690,
+    "compressed_sha256": "bdff2e01c4db63b546bd1595baf8f344c754f6d44ed7394f550d1c05b0ce40ee",
+    "lossless_decompression_verified": true,
+    "parts": [
+      {
+        "path": "runs/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw.gz.part001",
+        "bytes": 50331648,
+        "sha256": "eb8d289f3ca81b613b55d3d3d375c91b9e23403e17393beec9bf8b6226f9c6ab"
+      },
+      {
+        "path": "runs/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw.gz.part002",
+        "bytes": 50331648,
+        "sha256": "6eaf33d266c52383d0aa90122ae309c9d36eb007fdc73f53f9b9667d26dd307c"
+      },
+      {
+        "path": "runs/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw.gz.part003",
+        "bytes": 50331648,
+        "sha256": "c33ed67ed8f5359f14b0ae8d8d57a85eedc1071cf05c7ad09a84c6730c5f5131"
+      },
+      {
+        "path": "runs/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw.gz.part004",
+        "bytes": 50331648,
+        "sha256": "cdd8459f583ed93c993d230f6c274a558f45e0959bd4bd36be8b1607bf1b551f"
+      },
+      {
+        "path": "runs/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw.gz.part005",
+        "bytes": 50331648,
+        "sha256": "b6e57861be5e88748227c66ec2424e847e5ca92d5006b961392c4500d1968a09"
+      },
+      {
+        "path": "runs/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw.gz.part006",
+        "bytes": 50331648,
+        "sha256": "fc97de2708c5bce7663128ef482fabb2bd11304c4806d0b19ba24c936fba4e24"
+      },
+      {
+        "path": "runs/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw.gz.part007",
+        "bytes": 50331648,
+        "sha256": "52d50a71151509daaaed858d3c47426ead42bea79b3d78d99dbd7779fb6850f1"
+      },
+      {
+        "path": "runs/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw.gz.part008",
+        "bytes": 3529154,
+        "sha256": "51e66e98e4e84e666473ac310be9899dec8395ac4ad9f1cc8dfe8c8be566aa31"
+      }
+    ]
+  }
+]

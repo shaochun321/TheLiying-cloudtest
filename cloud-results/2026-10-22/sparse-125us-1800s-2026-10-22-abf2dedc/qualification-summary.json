@@ -1,0 +1,278 @@
+{
+  "scope": "ONE_125us_FULL_MOTHER_ONLY_NOT_TWO_RUN_QUALIFICATION",
+  "candidate_id": "SPARSE_GEAR_125us_original_physics_2026-10-22",
+  "mother_result": "PASS",
+  "full_two_run_qualification_completed": false,
+  "halfstep_started": false,
+  "execution": {
+    "case_id": "Q1_MOTHER_PROTOCOL",
+    "candidate_id": "SPARSE_GEAR_125us_original_physics_2026-10-22",
+    "candidate_manifest_sha256": "035f98db70cb1072460e04b38f3e95573174503acb3fe0dced1c93cbc5752fd9",
+    "command": [
+      "/workspace/thermal-g3-env/host/native/bin/ngspice",
+      "-n",
+      "-b",
+      "/workspace/thermal-g3-qualification/sparse-125us-1800s-2026-10-22-abf2dedc/runs/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.cir"
+    ],
+    "cwd": "/workspace/thermal-g3-qualification/sparse-125us-1800s-2026-10-22-abf2dedc/runs/Q1_MOTHER_PROTOCOL",
+    "actual_solver_launches": 1,
+    "automatic_retries": 0,
+    "conservative_starts_before": 32,
+    "conservative_starts_after": 33,
+    "global_start_cap": 65,
+    "wall_clock_cap_s": 1800,
+    "kill_dispatch_s": 1799.9,
+    "kill_margin_reason": "Reserve 0.1 seconds inside the authorized per-case limit for termination/reaping.",
+    "explicit_analysis": "tran 0.001 100.27 0 0.000125",
+    "timed_out": false,
+    "returncode": 0,
+    "spawn_error": null,
+    "signal_sent": null,
+    "elapsed_solver_wall_s": 1532.5475344089991,
+    "started_at_Asia_Shanghai": "2026-10-22T15:41:46.234716+08:00",
+    "pid": 10158,
+    "ended_at_Asia_Shanghai": "2026-10-22T16:07:18.785246+08:00",
+    "solver_process_reaped": true,
+    "wall_within_cap": true,
+    "original_frozen_permission_ledger_stop_records_unchanged": true
+  },
+  "completion": {
+    "case_id": "Q1_MOTHER_PROTOCOL",
+    "expected_end_s": 100.27,
+    "solver_log_CONFIRMS_SPARSE": true,
+    "raw_exists": true,
+    "actual_end_s": 100.27,
+    "raw_points": 818885,
+    "process_returncode": 0,
+    "completion_failure": null,
+    "raw_variables": 96,
+    "raw_bytes": 628906283,
+    "raw_sha256": "f62e385ac452b5e33a0a324787ddd949214489de5c1d9d0e85f845d2d38ea203"
+  },
+  "verdict_binding": {
+    "case_id": "Q1_MOTHER_PROTOCOL",
+    "scientific": "PASS",
+    "candidate_manifest_sha256": "035f98db70cb1072460e04b38f3e95573174503acb3fe0dced1c93cbc5752fd9",
+    "deck_sha256": "3ff1cf00c7a34abd23e574b5ab1fccea886f349d9e2234a03b88ca7035163508",
+    "raw_path": "/workspace/thermal-g3-qualification/sparse-125us-1800s-2026-10-22-abf2dedc/runs/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw",
+    "raw_sha256": "f62e385ac452b5e33a0a324787ddd949214489de5c1d9d0e85f845d2d38ea203",
+    "judge_output_path": "/workspace/thermal-g3-qualification/sparse-125us-1800s-2026-10-22-abf2dedc/runs/Q1_MOTHER_PROTOCOL/judge-output.json",
+    "judge_output_sha256": "47d9d2aa9c67c394ce41be2be6e49140722bd4067c79320147d1117f2b3ed097",
+    "functional_confirmation_result": null,
+    "numerical_pair_s": [
+      0.000125,
+      6.25e-05
+    ],
+    "judge_wall_s": 247.27724772200054,
+    "abandoned_offline_analysis_wall_s": 512.427286,
+    "offline_layout_corrections": 1,
+    "new_solver_launches_during_correction": 0,
+    "complete_transient": true,
+    "actual_end_s": 100.27,
+    "global_start_count": 33,
+    "backend": {
+      "ngspice": {
+        "path": "/workspace/thermal-g3-env/host/native/bin/ngspice",
+        "sha256": "37d80c673bc4c03904ed4434bb3aa9aecd099ecfaeb66b86730a905e8c76ed89"
+      },
+      "osdi": {
+        "path": "/workspace/thermal-g3-env/host/native/models/ekv26_linux.osdi",
+        "sha256": "7c07ae3728941189b77bf0ecfca5ebe56473d01eedc6ea59c46cc32bfdb9a43f"
+      }
+    },
+    "time_layout": {
+      "original_time_stride_bytes": 768,
+      "corrected_time_stride_bytes": 8,
+      "points": 818885,
+      "time_bit_patterns_identical": true,
+      "interpolation": false,
+      "resampling": false,
+      "original_scientific_code_unchanged": true,
+      "same_RAW_sha256": "f62e385ac452b5e33a0a324787ddd949214489de5c1d9d0e85f845d2d38ea203",
+      "new_solver_launches": 0
+    }
+  },
+  "gate_outcomes": [
+    {
+      "gate": "result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.G0.gates.idle_before.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.G0.gates.weak_no_entry.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.G0.gates.trace_charged_at_q_end.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.G0.gates.rec_charged_at_q_end.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.G0.gates.valid_entry.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.G0.gates.max_exit.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.G0.gates.withdraw_recovery.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.G0.gates.re_arm.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.G0.gates.idle_others_active.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.Sigma.gates.idle_before.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.Sigma.gates.weak_no_entry.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.Sigma.gates.trace_charged_at_q_end.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.Sigma.gates.rec_charged_at_q_end.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.Sigma.gates.valid_entry.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.Sigma.gates.max_exit.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.Sigma.gates.withdraw_recovery.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.Sigma.gates.re_arm.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.Sigma.gates.idle_others_active.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.Theta_Cdir.gates.idle_before.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.Theta_Cdir.gates.weak_no_entry.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.Theta_Cdir.gates.trace_charged_at_q_end.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.Theta_Cdir.gates.rec_charged_at_q_end.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.Theta_Cdir.gates.valid_entry.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.Theta_Cdir.gates.max_exit.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.Theta_Cdir.gates.withdraw_recovery.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.Theta_Cdir.gates.re_arm.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.Theta_Cdir.gates.idle_others_active.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.joint",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.physical_ledger.nodes.g0_vm.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.physical_ledger.nodes.g0_vmd.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.physical_ledger.nodes.g0_vms.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.physical_ledger.nodes.sg_vm.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.physical_ledger.nodes.sg_vmd.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.physical_ledger.nodes.sg_vms.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.physical_ledger.nodes.tc_vm.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.physical_ledger.nodes.tc_vmd.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.physical_ledger.nodes.tc_vms.result",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "gates.physical_ledger.result",
+      "outcome": "PASS"
+    }
+  ],
+  "first_nonpassing_gate_paths": [],
+  "budget": {
+    "baseline_global_starts": 32,
+    "qualification_starts_this_round": 1,
+    "global_starts_after": 33,
+    "global_start_cap": 65,
+    "total_starts_remaining": 32,
+    "formal_31_reserved": 31,
+    "unused_diagnostic_allocation": 1,
+    "qualification_allocation_unspent": 0,
+    "solver_wall_charge_this_round_s": 1532.5475344089991,
+    "phase_wall_cap_s": 3600,
+    "phase_remaining_wall_s": 867.5236469700012,
+    "phase_prior_charged_wall_s": 1199.9288186209997,
+    "phase_total_charged_wall_s": 2732.476353029999,
+    "global_wall_cap_s_unchanged": 172800,
+    "exact_prior_cumulative_wall_s": null,
+    "note": "Earlier three extra launch durations remain incomplete; charge the exact new delta without inventing a total.",
+    "formal_runs_started": 0,
+    "diagnostic_runs_started": 0
+  },
+  "old_qualification": "FAIL_UNCHANGED",
+  "automatic_next_run": false,
+  "formal_runs_started": 0,
+  "finished_at_Asia_Shanghai": "2026-10-22T16:20:57.450741+08:00"
+}

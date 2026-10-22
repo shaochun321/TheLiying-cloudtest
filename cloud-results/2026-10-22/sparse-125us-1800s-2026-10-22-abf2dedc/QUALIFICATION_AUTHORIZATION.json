@@ -1,0 +1,21 @@
+{
+  "user_instruction": "请你执行吧。上限为30分钟",
+  "manifest_sha256": "035f98db70cb1072460e04b38f3e95573174503acb3fe0dced1c93cbc5752fd9",
+  "authorized_cases": [
+    "Q1_MOTHER_PROTOCOL"
+  ],
+  "formal_31_authorized": false,
+  "parameter_tuning_authorized": false,
+  "halfstep_authorized_this_round": false,
+  "max_solver_starts": 1,
+  "case_wall_caps_s": [
+    1800
+  ],
+  "qualification_phase_wall_cap_s": 3600,
+  "qualification_phase_prior_charged_wall_s": 1199.9288186209997,
+  "global_start_cap": 65,
+  "baseline_global_starts": 32,
+  "stop_on_any_failure": true,
+  "old_STOPPED_round_resume": false,
+  "automatic_retries": 0
+}
