@@ -1,0 +1,12 @@
+{
+  "analysis": "op",
+  "raw_exists": true,
+  "actual_end_s": null,
+  "expected_end_s": null,
+  "raw_sha256": "1a6a5677a4b56f38682800aa1ab85b03c2a39aa206090a7ab9e092c6da41473c",
+  "raw_bytes": 98344,
+  "variables": 2768,
+  "points": 1,
+  "expected_solver_banner_seen": true,
+  "completion_failure": null
+}

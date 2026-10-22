@@ -1,0 +1,98 @@
+{
+  "batch_status": "PARTIAL",
+  "global_starts_before": 35,
+  "global_starts_after": 39,
+  "new_solver_starts": 4,
+  "counts": {
+    "BLOCKED_DEPENDENCY": 26,
+    "FAIL": 4
+  },
+  "termination_reason": "NO_LEGAL_DEPENDENCY_FRONTIER",
+  "solver_wall_s": 11309.627701977006,
+  "offline_judge_wall_s": 114.48982594701374,
+  "original_records_unchanged": true,
+  "cases": {
+    "CHAIN_12_W_F": {
+      "scientific": "FAIL",
+      "solver_wall_s": 9495.507018977005,
+      "raw_sha256": "824fff1380e0e78c7efd2f52ebd0edede03a04b91b33296cb0a6ed703764bdf8",
+      "raw_bytes": 598509895,
+      "raw_points": 417950,
+      "actual_end_s": 39.2,
+      "failed_gates": [
+        "parents_after_stimulus",
+        "no_relation_before_parents",
+        "theta_after_parents_in_target_activity",
+        "sigma_after_first_parent",
+        "cdir_after_theta_and_sigma_in_theta_activity",
+        "cdir_opposite_silent",
+        "theta_support_all_events",
+        "sigma_spatial_support_all_events",
+        "cdir_support_all_events",
+        "ports_canonical"
+      ],
+      "physical_nodes": 20,
+      "physical_pass_count": 20,
+      "functional_gate_count": 18,
+      "functional_pass_count": 8,
+      "first_observed_edges_s": {
+        "v(gw1_col_q)": 0.010213751922758292,
+        "v(gw2_col_q)": 0.01021375192275829,
+        "v(thw12f_q)": 0.010213751946891043,
+        "v(sgw12f_q)": 0.010213751939085036,
+        "v(cdw12f_q)": 0.010213751946891038,
+        "v(cdw12r_q)": 0.010213751946891038,
+        "v(thw12r_q)": 0.010213751946891043
+      },
+      "interpretation": "Original judge reports startup/pre-stimulus threshold events; no new RAW analysis or unique physical cause adjudication."
+    },
+    "DC_2P7": {
+      "scientific": "FAIL",
+      "solver_wall_s": 579.7534040879982,
+      "raw_sha256": "1a6a5677a4b56f38682800aa1ab85b03c2a39aa206090a7ab9e092c6da41473c",
+      "raw_bytes": 98344,
+      "raw_points": 1,
+      "actual_end_s": null,
+      "failed_gates": [
+        "vrest_divider_ratio"
+      ],
+      "vrest": {
+        "result": "FAIL",
+        "value": 0.8776909942923373,
+        "want": 0.888429927584175
+      }
+    },
+    "DC_3": {
+      "scientific": "FAIL",
+      "solver_wall_s": 620.276752566002,
+      "raw_sha256": "78d1a32d62752f98a5f928fdb29575d3d916b899ab1360af7813c8d487083b15",
+      "raw_bytes": 98342,
+      "raw_points": 1,
+      "actual_end_s": null,
+      "failed_gates": [
+        "vrest_divider_ratio"
+      ],
+      "vrest": {
+        "result": "FAIL",
+        "value": 0.9747468921419102,
+        "want": 0.9869903755038435
+      }
+    },
+    "DC_3P2": {
+      "scientific": "FAIL",
+      "solver_wall_s": 614.0905263460008,
+      "raw_sha256": "1932fb4dbca35c8098f23b162bdaa83d90c6c481195809560a2ad313f0cb5b18",
+      "raw_bytes": 98344,
+      "raw_points": 1,
+      "actual_end_s": null,
+      "failed_gates": [
+        "vrest_divider_ratio"
+      ],
+      "vrest": {
+        "result": "FAIL",
+        "value": 1.0394506055760082,
+        "want": 1.0527001751790375
+      }
+    }
+  }
+}

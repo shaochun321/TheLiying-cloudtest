@@ -1,0 +1,8 @@
+{
+  "fixed_at": "2026-10-23T07:37:11.885437+08:00",
+  "problem": "Git quoted two Chinese file paths; the local delivery boundary assertion misclassified those quoted names. No out-of-scope file was staged.",
+  "correction": "Use NUL-delimited git diff --name-only -z for exact path checking.",
+  "additional_solver_starts": 0,
+  "scientific_judges_or_results_changed": false,
+  "new_raw_recompressed_again": false
+}

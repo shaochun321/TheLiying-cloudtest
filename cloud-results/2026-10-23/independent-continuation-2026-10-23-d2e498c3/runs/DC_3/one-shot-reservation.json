@@ -1,0 +1,11 @@
+{
+  "case_id": "DC_3",
+  "reserved_at": "2026-10-23T04:33:42.259743+08:00",
+  "parents": {
+    "Q1_MOTHER_PROTOCOL": "PASS",
+    "Q1_MOTHER_HALFSTEP": "PASS"
+  },
+  "max_starts": 1,
+  "effective_wall_cap_s": null,
+  "next_global_index_if_launched": 37
+}

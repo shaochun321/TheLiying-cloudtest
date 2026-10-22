@@ -1,0 +1,56 @@
+{
+  "result": "FAIL",
+  "gates": {
+    "supply_kcl_across_R_INT": {
+      "result": "PASS",
+      "drop_current": 0.0041899474462888,
+      "i_vsrc": 0.004189947460092944
+    },
+    "vrest_divider_ratio": {
+      "result": "FAIL",
+      "value": 1.0394506055760082,
+      "want": 1.0527001751790375
+    },
+    "vthe_divider_ratio": {
+      "result": "PASS",
+      "value": 1.5028408702737257,
+      "want": 1.49594235420179
+    },
+    "vthr_divider_ratio": {
+      "result": "PASS",
+      "value": 1.2178771702468083,
+      "want": 1.2146540482835047
+    },
+    "vmid_divider_ratio": {
+      "result": "PASS",
+      "value": 1.579050263780635,
+      "want": 1.579050262768556
+    },
+    "Iref_within_10pct_of_estimate": {
+      "result": "PASS",
+      "value": 1.1001145056128138e-06,
+      "estimate": 1.1032368457247754e-06
+    },
+    "Ilim_within_10pct_of_estimate": {
+      "result": "PASS",
+      "value": 1.299996781558438e-06,
+      "estimate": 1.3037182071226942e-06
+    },
+    "Istep_within_10pct_of_estimate": {
+      "result": "PASS",
+      "value": 4.644727773258333e-08,
+      "estimate": 4.656925148119441e-08
+    },
+    "vdd_at_setpoint": {
+      "result": "PASS",
+      "vsrc": 3.2
+    },
+    "model_domain": {
+      "result": "PASS",
+      "covered": 4439,
+      "total": 4439,
+      "outside": []
+    }
+  },
+  "scope": "static ledger at the op point"
+}

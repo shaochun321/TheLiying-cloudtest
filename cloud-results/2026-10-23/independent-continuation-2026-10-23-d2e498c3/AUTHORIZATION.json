@@ -1,0 +1,9 @@
+{
+  "user_instruction": "执行，暂时解除时间限制",
+  "authorized_at": "2026-10-23T04:22:10.850561+08:00",
+  "manifest_sha256": "bb4bd9406c227e0dba23018c191278b4fe4feafaf01d4d914e16d236f1a3102b",
+  "policy": "Independent branches continue; only scientific PASS parents may release children; no retry, no new cases, global count <=65.",
+  "wall_limit_override": "Temporary for this independent continuation batch: per-case, phase and global wall limits recorded as historical references and not enforced. Record actual elapsed time; do not claim original budget compliance.",
+  "scientific_criteria_models_circuits_inputs_unchanged": true,
+  "original_STOPPED_and_G0_W_FAIL_preserved": true
+}

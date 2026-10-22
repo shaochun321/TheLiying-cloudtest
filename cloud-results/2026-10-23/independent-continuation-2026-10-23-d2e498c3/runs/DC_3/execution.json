@@ -1,0 +1,24 @@
+{
+  "case_id": "DC_3",
+  "phase": "formal",
+  "command": [
+    "/workspace/thermal-g3-env/host/native/bin/ngspice",
+    "-n",
+    "-b",
+    "/workspace/thermal-g3-formal/independent-continuation-2026-10-23-d2e498c3/runs/DC_3/DC_3.cir"
+  ],
+  "actual_solver_launches": 1,
+  "automatic_retries": 0,
+  "original_case_timeout_s": 900,
+  "effective_wall_cap_s": null,
+  "global_starts_before": 36,
+  "global_starts_after": 37,
+  "returncode": 0,
+  "spawn_error": null,
+  "timed_out": false,
+  "solver_wall_s": 620.276752566002,
+  "started_at": "2026-10-23T04:33:42.261017+08:00",
+  "solver_process_reaped": true,
+  "pid": 45730,
+  "ended_at": "2026-10-23T04:44:02.537777+08:00"
+}

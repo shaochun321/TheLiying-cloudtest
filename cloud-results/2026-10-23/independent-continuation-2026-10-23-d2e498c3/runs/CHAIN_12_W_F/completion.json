@@ -1,0 +1,12 @@
+{
+  "analysis": "tran 0.001 39.2 0 0.000125",
+  "raw_exists": true,
+  "actual_end_s": 39.2,
+  "expected_end_s": 39.2,
+  "raw_sha256": "824fff1380e0e78c7efd2f52ebd0edede03a04b91b33296cb0a6ed703764bdf8",
+  "raw_bytes": 598509895,
+  "variables": 179,
+  "points": 417950,
+  "expected_solver_banner_seen": true,
+  "completion_failure": null
+}

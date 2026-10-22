@@ -1,0 +1,24 @@
+{"case_id": "DC_2P7", "scientific": "FAIL", "solver_wall_s": 579.7534040879982, "actual_end_s": null, "global_starts": 36}
+{"case_id": "DC_3", "scientific": "FAIL", "solver_wall_s": 620.276752566002, "actual_end_s": null, "global_starts": 37}
+{"case_id": "DC_3P2", "scientific": "FAIL", "solver_wall_s": 614.0905263460008, "actual_end_s": null, "global_starts": 38}
+{"case_id": "CHAIN_12_W_F", "scientific": "FAIL", "solver_wall_s": 9495.507018977005, "actual_end_s": 39.2, "global_starts": 39}
+{
+  "status": "PARTIAL",
+  "started_at": "2026-10-23T04:24:01.857979+08:00",
+  "global_starts_before": 35,
+  "global_start_count": 39,
+  "actual_new_solver_starts": 4,
+  "solver_wall_s": 11309.627701977006,
+  "offline_judge_wall_s": 114.48982594701374,
+  "active_case": null,
+  "original_global_exact_historical_wall_s": null,
+  "wall_limits_temporarily_waived": true,
+  "original_all_matrix_cost_gate_not_claimed_passed": true,
+  "ended_at": "2026-10-23T07:34:27.446441+08:00",
+  "remaining_global_start_slots": 26,
+  "counts": {
+    "BLOCKED_DEPENDENCY": 26,
+    "FAIL": 4
+  },
+  "original_records_unchanged": true
+}

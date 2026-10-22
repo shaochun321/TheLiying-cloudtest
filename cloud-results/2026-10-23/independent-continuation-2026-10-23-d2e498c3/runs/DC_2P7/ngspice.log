@@ -1,0 +1,19 @@
+Note: Starting dynamic gmin stepping
+Warning: Dynamic gmin stepping failed
+Note: Starting true gmin stepping
+Warning: True gmin stepping failed
+Note: Starting source stepping
+Note: Source stepping completed
+
+Note: No compatibility mode selected!
+
+
+Circuit: * thermal-g3-q1-r dc_2p7
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+binary raw file "/workspace/thermal-g3-formal/independent-continuation-2026-10-23-d2e498c3/runs/DC_2P7/DC_2P7.raw"
+ngspice-47 done

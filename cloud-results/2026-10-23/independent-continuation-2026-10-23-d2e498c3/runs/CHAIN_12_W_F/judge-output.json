@@ -1,0 +1,1802 @@
+{
+  "result": "FAIL",
+  "gates": {
+    "parents_after_stimulus": {
+      "result": "FAIL",
+      "first": {
+        "v(gw1_col_q)": 0.010213751922758292,
+        "v(gw2_col_q)": 0.01021375192275829,
+        "v(thw12f_q)": 0.010213751946891043,
+        "v(sgw12f_q)": 0.010213751939085036,
+        "v(cdw12f_q)": 0.010213751946891038,
+        "v(cdw12r_q)": 0.010213751946891038,
+        "v(thw12r_q)": 0.010213751946891043
+      }
+    },
+    "no_relation_before_parents": {
+      "result": "FAIL",
+      "early": [
+        0.010213751946891043,
+        0.010213751939085036,
+        0.010213751946891038,
+        0.010213751946891038,
+        0.010213751946891043
+      ]
+    },
+    "theta_after_parents_in_target_activity": {
+      "result": "FAIL"
+    },
+    "sigma_after_first_parent": {
+      "result": "FAIL"
+    },
+    "cdir_after_theta_and_sigma_in_theta_activity": {
+      "result": "FAIL"
+    },
+    "cdir_opposite_silent": {
+      "result": "FAIL"
+    },
+    "matching_rail_consumed": {
+      "result": "PASS",
+      "rise_V": 0.1003438413635469,
+      "min_V": 0.091490314693045
+    },
+    "opposite_rail_flat": {
+      "result": "PASS",
+      "rise_V": 5.561931359920891e-09,
+      "max_V": 0.0091490314693045
+    },
+    "returned": {
+      "result": "PASS"
+    },
+    "theta_support_all_events": {
+      "result": "FAIL",
+      "n_events": 6,
+      "unsupported": {
+        "thw12f_": [
+          {
+            "t_q": 0.010213751946891043,
+            "scope": "complete vm ledger node",
+            "anchor_s": 0.0,
+            "anchor": "record start",
+            "ok": false,
+            "why": "no cause interval before the event"
+          }
+        ],
+        "thw12r_": [
+          {
+            "t_q": 0.010213751946891043,
+            "scope": "complete vm ledger node",
+            "anchor_s": 0.0,
+            "anchor": "record start",
+            "ok": false,
+            "why": "no cause interval before the event"
+          }
+        ]
+      },
+      "unmeasured": {},
+      "events": {
+        "thw12f_": [
+          {
+            "t_q": 0.010213751946891043,
+            "scope": "complete vm ledger node",
+            "anchor_s": 0.0,
+            "anchor": "record start",
+            "ok": false,
+            "why": "no cause interval before the event"
+          },
+          {
+            "t_q": 16.205359219854536,
+            "scope": "complete vm ledger node",
+            "anchor_s": 0.0,
+            "anchor": "record start",
+            "ok": true,
+            "cause": [
+              14.160544630650538,
+              19.0522018889685
+            ],
+            "stretch_start_s": 0.011609997821817535,
+            "u_entry_state_V": 0.22756038293788095,
+            "supported_state_V": 0.22415191865623654,
+            "checks": {
+              "membrane_rose": true,
+              "account_closes": true,
+              "net_charge_sufficient": true,
+              "retained_state_supported": true,
+              "source_history_valid": true
+            },
+            "account_from_anchor": {
+              "Q_in_C": 5.026393324967646e-07,
+              "Q_sh_C": 0.0,
+              "Q_leak_C": 1.3255370696803846e-07,
+              "Q_other_C": -1.4719423222404744e-06,
+              "Q_cap_C": 1.8420213965893185e-06,
+              "Q_net_C": 1.8420279477692005e-06,
+              "residual_C": 6.5511798819985775e-12,
+              "throughput_C": 2.1980326209982695e-06,
+              "Q_in_supported_C": 5.026392028238461e-07,
+              "Q_in_outside_support_C": 1.296729184872337e-13
+            },
+            "account_stretch": {
+              "Q_in_C": 5.026393206291818e-07,
+              "Q_sh_C": 0.0,
+              "Q_leak_C": 1.3340023721589327e-07,
+              "Q_other_C": -1.3384831115158403e-06,
+              "Q_cap_C": 1.707713214999329e-06,
+              "Q_net_C": 1.7077221949291289e-06,
+              "residual_C": 8.979929799779281e-12,
+              "throughput_C": 2.0637268681581977e-06,
+              "Q_in_supported_C": 5.026392028238461e-07,
+              "Q_in_outside_support_C": 1.1780533563374363e-13
+            },
+            "source_ledger": [
+              {
+                "start_s": 0.0,
+                "end_s": 14.159321966039197,
+                "cause_with_tolerance": false,
+                "account": {
+                  "Q_in_C": 1.2967309170073658e-13,
+                  "Q_sh_C": 0.0,
+                  "Q_leak_C": -1.990267224383037e-08,
+                  "Q_other_C": -1.4719423337306053e-06,
+                  "Q_cap_C": 1.4918392337005388e-06,
+                  "Q_net_C": 1.4918451356475275e-06,
+                  "residual_C": 5.90194698867664e-12,
+                  "throughput_C": 1.541505341039024e-06,
+                  "Q_in_supported_C": 1.7319155273782364e-19,
+                  "Q_in_outside_support_C": 1.2967291850918385e-13
+                },
+                "supported_state_start_V": 0.0,
+                "supported_state_end_V": 0.0
+              },
+              {
+                "start_s": 14.159321966039197,
+                "end_s": 16.20535923522986,
+                "cause_with_tolerance": true,
+                "account": {
+                  "Q_in_C": 5.026392028236729e-07,
+                  "Q_sh_C": 0.0,
+                  "Q_leak_C": 1.5245637921186882e-07,
+                  "Q_other_C": 1.1490130890270804e-14,
+                  "Q_cap_C": 3.5018216288877996e-07,
+                  "Q_net_C": 3.5018281212167317e-07,
+                  "residual_C": 6.492328932160581e-13,
+                  "throughput_C": 6.565272799592455e-07,
+                  "Q_in_supported_C": 5.026392028236729e-07,
+                  "Q_in_outside_support_C": 0.0
+                },
+                "supported_state_start_V": 0.0,
+                "supported_state_end_V": 0.22415191865623654
+              }
+            ],
+            "account_sample_s": 16.20535923522986,
+            "why": ""
+          },
+          {
+            "t_q": 17.079083361622214,
+            "scope": "complete vm ledger node",
+            "anchor_s": 0.0,
+            "anchor": "record start",
+            "ok": true,
+            "cause": [
+              14.160544630650538,
+              19.0522018889685
+            ],
+            "stretch_start_s": 16.229593997764,
+            "u_entry_state_V": 0.2311979028699518,
+            "supported_state_V": 0.22419250755865583,
+            "checks": {
+              "membrane_rose": true,
+              "account_closes": true,
+              "net_charge_sufficient": true,
+              "retained_state_supported": true,
+              "source_history_valid": true
+            },
+            "account_from_anchor": {
+              "Q_in_C": 1.097332438004638e-06,
+              "Q_sh_C": 0.0,
+              "Q_leak_C": 2.0444104200227848e-07,
+              "Q_other_C": -9.482153732602637e-07,
+              "Q_cap_C": 1.8410909029226498e-06,
+              "Q_net_C": 1.8411067692626233e-06,
+              "residual_C": 1.5866339973569614e-11,
+              "throughput_C": 3.388340013596089e-06,
+              "Q_in_supported_C": 1.0973323083317194e-06,
+              "Q_in_outside_support_C": 1.296729184872337e-13
+            },
+            "account_stretch": {
+              "Q_in_C": 5.811389058747238e-07,
+              "Q_sh_C": 0.0,
+              "Q_leak_C": 6.858079734949294e-08,
+              "Q_other_C": 2.9480234406326515e-07,
+              "Q_cap_C": 2.1774882650518136e-07,
+              "Q_net_C": 2.1775576446196563e-07,
+              "residual_C": 6.937956784267943e-12,
+              "throughput_C": 9.445220502647861e-07,
+              "Q_in_supported_C": 5.811389058747238e-07,
+              "Q_in_outside_support_C": 0.0
+            },
+            "source_ledger": [
+              {
+                "start_s": 0.0,
+                "end_s": 14.159321966039197,
+                "cause_with_tolerance": false,
+                "account": {
+                  "Q_in_C": 1.2967309170073658e-13,
+                  "Q_sh_C": 0.0,
+                  "Q_leak_C": -1.990267224383037e-08,
+                  "Q_other_C": -1.4719423337306053e-06,
+                  "Q_cap_C": 1.4918392337005388e-06,
+                  "Q_net_C": 1.4918451356475275e-06,
+                  "residual_C": 5.90194698867664e-12,
+                  "throughput_C": 1.541505341039024e-06,
+                  "Q_in_supported_C": 1.7319155273782364e-19,
+                  "Q_in_outside_support_C": 1.2967291850918385e-13
+                },
+                "supported_state_start_V": 0.0,
+                "supported_state_end_V": 0.0
+              },
+              {
+                "start_s": 14.159321966039197,
+                "end_s": 17.079083376504805,
+                "cause_with_tolerance": true,
+                "account": {
+                  "Q_in_C": 1.0973323083315462e-06,
+                  "Q_sh_C": 0.0,
+                  "Q_leak_C": 2.2434371424610885e-07,
+                  "Q_other_C": 5.237269604703415e-07,
+                  "Q_cap_C": 3.4925166922211104e-07,
+                  "Q_net_C": 3.492616336150958e-07,
+                  "residual_C": 9.964392984734155e-12,
+                  "throughput_C": 1.8468346725570648e-06,
+                  "Q_in_supported_C": 1.0973323083315462e-06,
+                  "Q_in_outside_support_C": 0.0
+                },
+                "supported_state_start_V": 0.0,
+                "supported_state_end_V": 0.22419250755865583
+              }
+            ],
+            "account_sample_s": 17.079083376504805,
+            "why": ""
+          },
+          {
+            "t_q": 18.019101095095525,
+            "scope": "complete vm ledger node",
+            "anchor_s": 0.0,
+            "anchor": "record start",
+            "ok": true,
+            "cause": [
+              14.160544630650538,
+              19.0522018889685
+            ],
+            "stretch_start_s": 17.10329799894276,
+            "u_entry_state_V": 0.23475168586964068,
+            "supported_state_V": 0.2256425767121224,
+            "checks": {
+              "membrane_rose": true,
+              "account_closes": true,
+              "net_charge_sufficient": true,
+              "retained_state_supported": true,
+              "source_history_valid": true
+            },
+            "account_from_anchor": {
+              "Q_in_C": 1.773510562786713e-06,
+              "Q_sh_C": 0.0,
+              "Q_leak_C": 2.935045366939609e-07,
+              "Q_other_C": -3.6012573198049517e-07,
+              "Q_cap_C": 1.8401069497254747e-06,
+              "Q_net_C": 1.8401317580732474e-06,
+              "residual_C": 2.4808347772663515e-11,
+              "throughput_C": 4.741671276225983e-06,
+              "Q_in_supported_C": 1.7735104331137945e-06,
+              "Q_in_outside_support_C": 1.296729184872337e-13
+            },
+            "account_stretch": {
+              "Q_in_C": 6.567354606257618e-07,
+              "Q_sh_C": 0.0,
+              "Q_leak_C": 8.567607252248367e-08,
+              "Q_other_C": 3.5355136185666853e-07,
+              "Q_cap_C": 2.1750112153999248e-07,
+              "Q_net_C": 2.1750802624660955e-07,
+              "residual_C": 6.90470661707008e-12,
+              "throughput_C": 1.0959628967829056e-06,
+              "Q_in_supported_C": 6.567354606257618e-07,
+              "Q_in_outside_support_C": 0.0
+            },
+            "source_ledger": [
+              {
+                "start_s": 0.0,
+                "end_s": 14.159321966039197,
+                "cause_with_tolerance": false,
+                "account": {
+                  "Q_in_C": 1.2967309170073658e-13,
+                  "Q_sh_C": 0.0,
+                  "Q_leak_C": -1.990267224383037e-08,
+                  "Q_other_C": -1.4719423337306053e-06,
+                  "Q_cap_C": 1.4918392337005388e-06,
+                  "Q_net_C": 1.4918451356475275e-06,
+                  "residual_C": 5.90194698867664e-12,
+                  "throughput_C": 1.541505341039024e-06,
+                  "Q_in_supported_C": 1.7319155273782364e-19,
+                  "Q_in_outside_support_C": 1.2967291850918385e-13
+                },
+                "supported_state_start_V": 0.0,
+                "supported_state_end_V": 0.0
+              },
+              {
+                "start_s": 14.159321966039197,
+                "end_s": 18.01910110958168,
+                "cause_with_tolerance": true,
+                "account": {
+                  "Q_in_C": 1.7735104331136213e-06,
+                  "Q_sh_C": 0.0,
+                  "Q_leak_C": 3.1340720893779124e-07,
+                  "Q_other_C": 1.11181660175011e-06,
+                  "Q_cap_C": 3.48267716024936e-07,
+                  "Q_net_C": 3.482866224257201e-07,
+                  "residual_C": 1.8906400784092754e-11,
+                  "throughput_C": 3.200165935186959e-06,
+                  "Q_in_supported_C": 1.7735104331136213e-06,
+                  "Q_in_outside_support_C": 0.0
+                },
+                "supported_state_start_V": 0.0,
+                "supported_state_end_V": 0.2256425767121224
+              }
+            ],
+            "account_sample_s": 18.01910110958168,
+            "why": ""
+          }
+        ],
+        "thw12r_": [
+          {
+            "t_q": 0.010213751946891043,
+            "scope": "complete vm ledger node",
+            "anchor_s": 0.0,
+            "anchor": "record start",
+            "ok": false,
+            "why": "no cause interval before the event"
+          },
+          {
+            "t_q": 17.58862837708365,
+            "scope": "complete vm ledger node",
+            "anchor_s": 0.0,
+            "anchor": "record start",
+            "ok": true,
+            "cause": [
+              15.427555919859586,
+              18.431469076231174
+            ],
+            "stretch_start_s": 0.011609997821817562,
+            "u_entry_state_V": 0.2308178543914161,
+            "supported_state_V": 0.22431897665996572,
+            "checks": {
+              "membrane_rose": true,
+              "account_closes": true,
+              "net_charge_sufficient": true,
+              "retained_state_supported": true,
+              "source_history_valid": true
+            },
+            "account_from_anchor": {
+              "Q_in_C": 5.000223326586318e-07,
+              "Q_sh_C": 0.0,
+              "Q_leak_C": 1.3179866372605896e-07,
+              "Q_other_C": -1.471942317980825e-06,
+              "Q_cap_C": 1.8401591171670508e-06,
+              "Q_net_C": 1.8401659869133978e-06,
+              "residual_C": 6.869746347023509e-12,
+              "throughput_C": 2.2019091858097497e-06,
+              "Q_in_supported_C": 4.994862200015975e-07,
+              "Q_in_outside_support_C": 5.361126570343069e-10
+            },
+            "account_stretch": {
+              "Q_in_C": 5.00022320791049e-07,
+              "Q_sh_C": 0.0,
+              "Q_leak_C": 1.3264519397391376e-07,
+              "Q_other_C": -1.3384831072561908e-06,
+              "Q_cap_C": 1.7058509355770611e-06,
+              "Q_net_C": 1.705860234073326e-06,
+              "residual_C": 9.298496264804212e-12,
+              "throughput_C": 2.067603432969678e-06,
+              "Q_in_supported_C": 4.994862200015975e-07,
+              "Q_in_outside_support_C": 5.361007894514534e-10
+            },
+            "source_ledger": [
+              {
+                "start_s": 0.0,
+                "end_s": 15.42643091985958,
+                "cause_with_tolerance": false,
+                "account": {
+                  "Q_in_C": 5.364455206933987e-10,
+                  "Q_sh_C": 0.0,
+                  "Q_leak_C": -2.399216047728612e-08,
+                  "Q_other_C": -1.4719423297687133e-06,
+                  "Q_cap_C": 1.496464636785396e-06,
+                  "Q_net_C": 1.4964709357666928e-06,
+                  "residual_C": 6.298981296751064e-12,
+                  "throughput_C": 1.546131149082152e-06,
+                  "Q_in_supported_C": 3.3286365919677797e-13,
+                  "Q_in_outside_support_C": 5.361126570342019e-10
+                },
+                "supported_state_start_V": 0.0,
+                "supported_state_end_V": 0.0
+              },
+              {
+                "start_s": 15.42643091985958,
+                "end_s": 17.58862838013312,
+                "cause_with_tolerance": true,
+                "account": {
+                  "Q_in_C": 4.994858871379385e-07,
+                  "Q_sh_C": 0.0,
+                  "Q_leak_C": 1.5579082420334507e-07,
+                  "Q_other_C": 1.1787888382219108e-14,
+                  "Q_cap_C": 3.4369448038165476e-07,
+                  "Q_net_C": 3.43695051146705e-07,
+                  "residual_C": 5.707650502195049e-13,
+                  "throughput_C": 6.557780367275978e-07,
+                  "Q_in_supported_C": 4.994858871379384e-07,
+                  "Q_in_outside_support_C": 1.0587911840678754e-22
+                },
+                "supported_state_start_V": 0.0,
+                "supported_state_end_V": 0.22431897665996572
+              }
+            ],
+            "account_sample_s": 17.58862838013312,
+            "why": ""
+          }
+        ]
+      }
+    },
+    "sigma_spatial_support_all_events": {
+      "result": "FAIL",
+      "n_events": 6,
+      "unsupported": {
+        "sgw12f_": [
+          {
+            "t_q": 0.010213751939085036,
+            "scope": "complete vm ledger node",
+            "anchor_s": 0.0,
+            "anchor": "record start",
+            "ok": false,
+            "why": "no cause interval before the event"
+          }
+        ],
+        "sgw12r_": [
+          {
+            "t_q": 0.010213751939085036,
+            "scope": "complete vm ledger node",
+            "anchor_s": 0.0,
+            "anchor": "record start",
+            "ok": false,
+            "why": "no cause interval before the event"
+          }
+        ]
+      },
+      "unmeasured": {},
+      "events": {
+        "sgw12f_": [
+          {
+            "t_q": 0.010213751939085036,
+            "scope": "complete vm ledger node",
+            "anchor_s": 0.0,
+            "anchor": "record start",
+            "ok": false,
+            "why": "no cause interval before the event"
+          },
+          {
+            "t_q": 12.858583513172755,
+            "scope": "complete vm ledger node",
+            "anchor_s": 0.0,
+            "anchor": "record start",
+            "ok": true,
+            "cause": [
+              12.746714815173073,
+              18.436824576845837
+            ],
+            "stretch_start_s": 0.011810874599367293,
+            "u_entry_state_V": 0.2327949285759816,
+            "supported_state_V": 0.21406235267069812,
+            "checks": {
+              "membrane_rose": true,
+              "account_closes": true,
+              "net_charge_sufficient": true,
+              "retained_state_supported": true,
+              "source_history_valid": true
+            },
+            "account_from_anchor": {
+              "Q_in_C": 7.66746375346005e-07,
+              "Q_sh_C": 0.0,
+              "Q_leak_C": 5.859346078826459e-07,
+              "Q_other_C": 5.793740981311872e-08,
+              "Q_cap_C": 1.2287325615630555e-07,
+              "Q_net_C": 1.2287435765024042e-07,
+              "residual_C": 1.1014939348722684e-12,
+              "throughput_C": 1.6085561391944262e-06,
+              "Q_in_supported_C": 3.385739564307402e-08,
+              "Q_in_outside_support_C": 7.32888979702931e-07
+            },
+            "account_stretch": {
+              "Q_in_C": 7.667462751940424e-07,
+              "Q_sh_C": 0.0,
+              "Q_leak_C": 5.862808223841602e-07,
+              "Q_other_C": 7.9377292061542e-08,
+              "Q_cap_C": 1.010884383057552e-07,
+              "Q_net_C": 1.0108816074834013e-07,
+              "residual_C": -2.7755741507031633e-13,
+              "throughput_C": 1.586769942292526e-06,
+              "Q_in_supported_C": 3.385739564307402e-08,
+              "Q_in_outside_support_C": 7.328888795509684e-07
+            },
+            "source_ledger": [
+              {
+                "start_s": 0.0,
+                "end_s": 12.745589815173068,
+                "cause_with_tolerance": false,
+                "account": {
+                  "Q_in_C": 7.328975752103874e-07,
+                  "Q_sh_C": 0.0,
+                  "Q_leak_C": 5.694663038946459e-07,
+                  "Q_other_C": 5.7937405809618726e-08,
+                  "Q_cap_C": 1.0549282085899251e-07,
+                  "Q_net_C": 1.054938655061228e-07,
+                  "residual_C": 1.0446471302884213e-12,
+                  "throughput_C": 1.5582390293536278e-06,
+                  "Q_in_supported_C": 8.595507458415905e-12,
+                  "Q_in_outside_support_C": 7.32888979702929e-07
+                },
+                "supported_state_start_V": 0.0,
+                "supported_state_end_V": 8.595500223720467e-05
+              },
+              {
+                "start_s": 12.745589815173068,
+                "end_s": 12.858583520504485,
+                "cause_with_tolerance": true,
+                "account": {
+                  "Q_in_C": 3.384880013561759e-08,
+                  "Q_sh_C": 0.0,
+                  "Q_leak_C": 1.6468303987999955e-08,
+                  "Q_other_C": 4.003499994352699e-15,
+                  "Q_cap_C": 1.7380435297313055e-08,
+                  "Q_net_C": 1.738049214411764e-08,
+                  "residual_C": 5.684680458384709e-14,
+                  "throughput_C": 5.031710984079845e-08,
+                  "Q_in_supported_C": 3.38488001356156e-08,
+                  "Q_in_outside_support_C": 1.9852334701272664e-21
+                },
+                "supported_state_start_V": 8.595500223720467e-05,
+                "supported_state_end_V": 0.21406235267069812
+              }
+            ],
+            "account_sample_s": 12.858583520504485,
+            "why": ""
+          },
+          {
+            "t_q": 13.30252504213413,
+            "scope": "complete vm ledger node",
+            "anchor_s": 0.0,
+            "anchor": "record start",
+            "ok": true,
+            "cause": [
+              12.746714815173073,
+              18.436824576845837
+            ],
+            "stretch_start_s": 12.867246668373102,
+            "u_entry_state_V": 0.23158368943853747,
+            "supported_state_V": 0.22851859447386882,
+            "checks": {
+              "membrane_rose": true,
+              "account_closes": true,
+              "net_charge_sufficient": true,
+              "retained_state_supported": true,
+              "source_history_valid": true
+            },
+            "account_from_anchor": {
+              "Q_in_C": 9.419675168488308e-07,
+              "Q_sh_C": 0.0,
+              "Q_leak_C": 6.032491409223467e-07,
+              "Q_other_C": 2.158121609758891e-07,
+              "Q_cap_C": 1.2287706775878532e-07,
+              "Q_net_C": 1.22906214950595e-07,
+              "residual_C": 2.9147191809668254e-11,
+              "throughput_C": 1.9589665662186487e-06,
+              "Q_in_supported_C": 2.0907853714589897e-07,
+              "Q_in_outside_support_C": 7.328889797029318e-07
+            },
+            "account_stretch": {
+              "Q_in_C": 1.720551707855152e-07,
+              "Q_sh_C": 0.0,
+              "Q_leak_C": 1.6046354162504592e-08,
+              "Q_other_C": 1.415040172247008e-07,
+              "Q_cap_C": 1.4477422903935987e-08,
+              "Q_net_C": 1.45047993983098e-08,
+              "residual_C": 2.737649437381369e-11,
+              "throughput_C": 3.2960554331089696e-07,
+              "Q_in_supported_C": 1.7205517078551506e-07,
+              "Q_in_outside_support_C": 1.3234889800848443e-22
+            },
+            "source_ledger": [
+              {
+                "start_s": 0.0,
+                "end_s": 12.745589815173068,
+                "cause_with_tolerance": false,
+                "account": {
+                  "Q_in_C": 7.328975752103874e-07,
+                  "Q_sh_C": 0.0,
+                  "Q_leak_C": 5.694663038946459e-07,
+                  "Q_other_C": 5.7937405809618726e-08,
+                  "Q_cap_C": 1.0549282085899251e-07,
+                  "Q_net_C": 1.054938655061228e-07,
+                  "residual_C": 1.0446471302884213e-12,
+                  "throughput_C": 1.5582390293536278e-06,
+                  "Q_in_supported_C": 8.595507458415905e-12,
+                  "Q_in_outside_support_C": 7.32888979702929e-07
+                },
+                "supported_state_start_V": 0.0,
+                "supported_state_end_V": 8.595500223720467e-05
+              },
+              {
+                "start_s": 12.745589815173068,
+                "end_s": 13.302525057278688,
+                "cause_with_tolerance": true,
+                "account": {
+                  "Q_in_C": 2.090699416384434e-07,
+                  "Q_sh_C": 0.0,
+                  "Q_leak_C": 3.378283702770083e-08,
+                  "Q_other_C": 1.5787475516627038e-07,
+                  "Q_cap_C": 1.738424689979282e-08,
+                  "Q_net_C": 1.7412349444472194e-08,
+                  "residual_C": 2.8102544679373215e-11,
+                  "throughput_C": 4.0072753686502093e-07,
+                  "Q_in_supported_C": 2.0906994163844055e-07,
+                  "Q_in_outside_support_C": 2.8587361969832636e-21
+                },
+                "supported_state_start_V": 8.595500223720467e-05,
+                "supported_state_end_V": 0.22851859447386882
+              }
+            ],
+            "account_sample_s": 13.302525057278688,
+            "why": ""
+          },
+          {
+            "t_q": 13.753229783267813,
+            "scope": "complete vm ledger node",
+            "anchor_s": 0.0,
+            "anchor": "record start",
+            "ok": true,
+            "cause": [
+              12.746714815173073,
+              18.436824576845837
+            ],
+            "stretch_start_s": 13.311495605784335,
+            "u_entry_state_V": 0.2310663024358468,
+            "supported_state_V": 0.2288728536615756,
+            "checks": {
+              "membrane_rose": true,
+              "account_closes": true,
+              "net_charge_sufficient": true,
+              "retained_state_supported": true,
+              "source_history_valid": true
+            },
+            "account_from_anchor": {
+              "Q_in_C": 1.1223605621956643e-06,
+              "Q_sh_C": 0.0,
+              "Q_leak_C": 6.205906184894926e-07,
+              "Q_other_C": 3.788470303950113e-07,
+              "Q_cap_C": 1.2287730459403129e-07,
+              "Q_net_C": 1.2292291331116044e-07,
+              "residual_C": 4.560871712914881e-11,
+              "throughput_C": 2.319735959782171e-06,
+              "Q_in_supported_C": 3.894715824927329e-07,
+              "Q_in_outside_support_C": 7.328889797029314e-07
+            },
+            "account_stretch": {
+              "Q_in_C": 1.7693944177692454e-07,
+              "Q_sh_C": 0.0,
+              "Q_leak_C": 1.6051679141060623e-08,
+              "Q_other_C": 1.463843490495958e-07,
+              "Q_cap_C": 1.4487817020931815e-08,
+              "Q_net_C": 1.4503413586268107e-08,
+              "residual_C": 1.5596565336292066e-11,
+              "throughput_C": 3.393754711091679e-07,
+              "Q_in_supported_C": 1.769394417769234e-07,
+              "Q_in_outside_support_C": 1.138200522872966e-21
+            },
+            "source_ledger": [
+              {
+                "start_s": 0.0,
+                "end_s": 12.745589815173068,
+                "cause_with_tolerance": false,
+                "account": {
+                  "Q_in_C": 7.328975752103874e-07,
+                  "Q_sh_C": 0.0,
+                  "Q_leak_C": 5.694663038946459e-07,
+                  "Q_other_C": 5.7937405809618726e-08,
+                  "Q_cap_C": 1.0549282085899251e-07,
+                  "Q_net_C": 1.054938655061228e-07,
+                  "residual_C": 1.0446471302884213e-12,
+                  "throughput_C": 1.5582390293536278e-06,
+                  "Q_in_supported_C": 8.595507458415905e-12,
+                  "Q_in_outside_support_C": 7.32888979702929e-07
+                },
+                "supported_state_start_V": 0.0,
+                "supported_state_end_V": 8.595500223720467e-05
+              },
+              {
+                "start_s": 12.745589815173068,
+                "end_s": 13.75322979893228,
+                "cause_with_tolerance": true,
+                "account": {
+                  "Q_in_C": 3.894629869852769e-07,
+                  "Q_sh_C": 0.0,
+                  "Q_leak_C": 5.1124314594846704e-08,
+                  "Q_other_C": 3.2090962458539256e-07,
+                  "Q_cap_C": 1.7384483735038794e-08,
+                  "Q_net_C": 1.7429047805037638e-08,
+                  "residual_C": 4.4564069998843843e-11,
+                  "throughput_C": 7.614969304285433e-07,
+                  "Q_in_supported_C": 3.8946298698527447e-07,
+                  "Q_in_outside_support_C": 2.4352197233561135e-21
+                },
+                "supported_state_start_V": 8.595500223720467e-05,
+                "supported_state_end_V": 0.2288728536615756
+              }
+            ],
+            "account_sample_s": 13.75322979893228,
+            "why": ""
+          }
+        ],
+        "sgw12r_": [
+          {
+            "t_q": 0.010213751939085036,
+            "scope": "complete vm ledger node",
+            "anchor_s": 0.0,
+            "anchor": "record start",
+            "ok": false,
+            "why": "no cause interval before the event"
+          },
+          {
+            "t_q": 18.70732884958809,
+            "scope": "complete vm ledger node",
+            "anchor_s": 0.0,
+            "anchor": "record start",
+            "ok": true,
+            "cause": [
+              18.47213036364007,
+              19.073677540210312
+            ],
+            "stretch_start_s": 0.01181087459936721,
+            "u_entry_state_V": 0.23362357989251692,
+            "supported_state_V": 0.22972748541862567,
+            "checks": {
+              "membrane_rose": true,
+              "account_closes": true,
+              "net_charge_sufficient": true,
+              "retained_state_supported": true,
+              "source_history_valid": true
+            },
+            "account_from_anchor": {
+              "Q_in_C": 9.644164784014876e-07,
+              "Q_sh_C": 0.0,
+              "Q_leak_C": 7.838972453422494e-07,
+              "Q_other_C": 5.79347732059733e-08,
+              "Q_cap_C": 1.2258201350958717e-07,
+              "Q_net_C": 1.225844598532649e-07,
+              "residual_C": 2.446343677721061e-12,
+              "throughput_C": 2.376070239687039e-06,
+              "Q_in_supported_C": 5.708203766730997e-08,
+              "Q_in_outside_support_C": 9.073344407341776e-07
+            },
+            "account_stretch": {
+              "Q_in_C": 9.644163782495325e-07,
+              "Q_sh_C": 0.0,
+              "Q_leak_C": 7.842434598437638e-07,
+              "Q_other_C": 7.937465545440295e-08,
+              "Q_cap_C": 1.0079719565903808e-07,
+              "Q_net_C": 1.0079826295136575e-07,
+              "residual_C": 1.0672923276725973e-12,
+              "throughput_C": 2.3542840427851402e-06,
+              "Q_in_supported_C": 5.708203766730997e-08,
+              "Q_in_outside_support_C": 9.073343405822225e-07
+            },
+            "source_ledger": [
+              {
+                "start_s": 0.0,
+                "end_s": 18.471005363640064,
+                "cause_with_tolerance": false,
+                "account": {
+                  "Q_in_C": 9.073436378210055e-07,
+                  "Q_sh_C": 0.0,
+                  "Q_leak_C": 7.428779339400542e-07,
+                  "Q_other_C": 5.793476920542906e-08,
+                  "Q_cap_C": 1.0652852015642858e-07,
+                  "Q_net_C": 1.0653093467552224e-07,
+                  "residual_C": 2.414519093654965e-12,
+                  "throughput_C": 2.277978081926001e-06,
+                  "Q_in_supported_C": 9.19708682463808e-12,
+                  "Q_in_outside_support_C": 9.073344407341809e-07
+                },
+                "supported_state_start_V": 0.0,
+                "supported_state_end_V": 9.197079508779255e-05
+              },
+              {
+                "start_s": 18.471005363640064,
+                "end_s": 18.70732886392467,
+                "cause_with_tolerance": true,
+                "account": {
+                  "Q_in_C": 5.7072840580482054e-08,
+                  "Q_sh_C": 0.0,
+                  "Q_leak_C": 4.101931140219514e-08,
+                  "Q_other_C": 4.000544239796031e-15,
+                  "Q_cap_C": 1.605349335315859e-08,
+                  "Q_net_C": 1.6053525177742674e-08,
+                  "residual_C": 3.18245840826398e-14,
+                  "throughput_C": 9.809215776103813e-08,
+                  "Q_in_supported_C": 5.707284058048533e-08,
+                  "Q_in_outside_support_C": -3.2756352257099896e-21
+                },
+                "supported_state_start_V": 9.197079508779255e-05,
+                "supported_state_end_V": 0.22972748541862567
+              }
+            ],
+            "account_sample_s": 18.70732886392467,
+            "why": ""
+          }
+        ]
+      }
+    },
+    "cdir_hs_from_matching_sigma": {
+      "result": "PASS",
+      "n_events": 2,
+      "unsupported": {},
+      "unmeasured": {},
+      "events": {
+        "cdw12f_": [
+          {
+            "t_q": 13.069109859372295,
+            "ok": true,
+            "why": "hs rose without a matching Σ activity"
+          }
+        ],
+        "cdw12r_": [
+          {
+            "t_q": 18.91813139740256,
+            "ok": true,
+            "why": "hs rose without a matching Σ activity"
+          }
+        ]
+      }
+    },
+    "cdir_support_all_events": {
+      "result": "FAIL",
+      "n_events": 9,
+      "unsupported": {
+        "cdw12f_": [
+          {
+            "t_q": 0.010213751946891038,
+            "scope": "complete vm ledger node",
+            "anchor_s": 0.0,
+            "anchor": "record start",
+            "ok": false,
+            "why": "no cause interval before the event"
+          }
+        ],
+        "cdw12r_": [
+          {
+            "t_q": 0.010213751946891038,
+            "scope": "complete vm ledger node",
+            "anchor_s": 0.0,
+            "anchor": "record start",
+            "ok": false,
+            "why": "no cause interval before the event"
+          }
+        ]
+      },
+      "unmeasured": {},
+      "events": {
+        "cdw12f_": [
+          {
+            "t_q": 0.010213751946891038,
+            "scope": "complete vm ledger node",
+            "anchor_s": 0.0,
+            "anchor": "record start",
+            "ok": false,
+            "why": "no cause interval before the event"
+          },
+          {
+            "t_q": 16.311964831187726,
+            "scope": "complete vm ledger node",
+            "anchor_s": 0.0,
+            "anchor": "record start",
+            "ok": true,
+            "cause": [
+              16.206800415663093,
+              19.701308305198584
+            ],
+            "stretch_start_s": 0.011609997821775216,
+            "u_entry_state_V": 0.23145210074960088,
+            "supported_state_V": 0.22050849131445624,
+            "checks": {
+              "membrane_rose": true,
+              "account_closes": true,
+              "net_charge_sufficient": true,
+              "retained_state_supported": true,
+              "source_history_valid": true
+            },
+            "account_from_anchor": {
+              "Q_in_C": 3.5773711811959253e-07,
+              "Q_sh_C": 2.697192589623831e-14,
+              "Q_leak_C": -1.3085506913816413e-08,
+              "Q_other_C": -1.4719423310316862e-06,
+              "Q_cap_C": 1.8427583564028892e-06,
+              "Q_net_C": 1.8427649290931693e-06,
+              "residual_C": 6.5726902800942105e-12,
+              "throughput_C": 1.916645564393832e-06,
+              "Q_in_supported_C": 3.577369622871678e-07,
+              "Q_in_outside_support_C": 1.5583242473227453e-13
+            },
+            "account_stretch": {
+              "Q_in_C": 3.5773710625201656e-07,
+              "Q_sh_C": 2.651470103108169e-14,
+              "Q_leak_C": -1.223897666538675e-08,
+              "Q_other_C": -1.3384831201708238e-06,
+              "Q_cap_C": 1.7084501751332851e-06,
+              "Q_net_C": 1.708459176573526e-06,
+              "residual_C": 9.001440240861836e-12,
+              "throughput_C": 1.78233981095957e-06,
+              "Q_in_supported_C": 3.577369622871678e-07,
+              "Q_in_outside_support_C": 1.4396484876092716e-13
+            },
+            "source_ledger": [
+              {
+                "start_s": 0.0,
+                "end_s": 16.205564442089138,
+                "cause_with_tolerance": false,
+                "account": {
+                  "Q_in_C": 1.5583255457392977e-13,
+                  "Q_sh_C": 2.618505390445277e-14,
+                  "Q_leak_C": -2.5131677944687246e-08,
+                  "Q_other_C": -1.4719423365043773e-06,
+                  "Q_cap_C": 1.4970675972400984e-06,
+                  "Q_net_C": 1.4970741440965652e-06,
+                  "residual_C": 6.546856466805356e-12,
+                  "throughput_C": 1.5468444287268493e-06,
+                  "Q_in_supported_C": 1.2984834477391617e-19,
+                  "Q_in_outside_support_C": 1.55832424725585e-13
+                },
+                "supported_state_start_V": 0.0,
+                "supported_state_end_V": 0.0
+              },
+              {
+                "start_s": 16.205564442089138,
+                "end_s": 16.31196484547729,
+                "cause_with_tolerance": true,
+                "account": {
+                  "Q_in_C": 3.5773696228703794e-07,
+                  "Q_sh_C": 7.868719917855383e-16,
+                  "Q_leak_C": 1.2046171030870833e-08,
+                  "Q_other_C": 5.472691095396586e-15,
+                  "Q_cap_C": 3.4569075916279086e-07,
+                  "Q_net_C": 3.45690784996604e-07,
+                  "residual_C": 2.583381313003605e-14,
+                  "throughput_C": 3.6980113566698257e-07,
+                  "Q_in_supported_C": 3.5773696228703794e-07,
+                  "Q_in_outside_support_C": 0.0
+                },
+                "supported_state_start_V": 0.0,
+                "supported_state_end_V": 0.22050849131445624
+              }
+            ],
+            "account_sample_s": 16.31196484547729,
+            "why": ""
+          },
+          {
+            "t_q": 16.735566615051923,
+            "scope": "complete vm ledger node",
+            "anchor_s": 0.0,
+            "anchor": "record start",
+            "ok": true,
+            "cause": [
+              16.206800415663093,
+              19.701308305198584
+            ],
+            "stretch_start_s": 16.348313962068957,
+            "u_entry_state_V": 0.2307115044352832,
+            "supported_state_V": 0.22215345919537904,
+            "checks": {
+              "membrane_rose": true,
+              "account_closes": true,
+              "net_charge_sufficient": true,
+              "retained_state_supported": true,
+              "source_history_valid": true
+            },
+            "account_from_anchor": {
+              "Q_in_C": 1.7266772512952258e-06,
+              "Q_sh_C": 2.7354736946668204e-14,
+              "Q_leak_C": 1.8650450364348876e-08,
+              "Q_other_C": -1.341949825718248e-07,
+              "Q_cap_C": 1.842205291169804e-06,
+              "Q_net_C": 1.8422217561479649e-06,
+              "residual_C": 1.6464978160854503e-11,
+              "throughput_C": 4.655069005618558e-06,
+              "Q_in_supported_C": 1.7266770954628012e-06,
+              "Q_in_outside_support_C": 1.5583242462639541e-13
+            },
+            "account_stretch": {
+              "Q_in_C": 1.246857758406425e-06,
+              "Q_sh_C": 7.82696511535082e-16,
+              "Q_leak_C": 2.6883412876114684e-08,
+              "Q_other_C": 1.0014006650438685e-06,
+              "Q_cap_C": 2.1856592335232397e-07,
+              "Q_net_C": 2.185736797037453e-07,
+              "residual_C": 7.756351421314727e-12,
+              "throughput_C": 2.2751418381395758e-06,
+              "Q_in_supported_C": 1.2468577584064252e-06,
+              "Q_in_outside_support_C": -2.117582368135751e-22
+            },
+            "source_ledger": [
+              {
+                "start_s": 0.0,
+                "end_s": 16.205564442089138,
+                "cause_with_tolerance": false,
+                "account": {
+                  "Q_in_C": 1.5583255457392977e-13,
+                  "Q_sh_C": 2.618505390445277e-14,
+                  "Q_leak_C": -2.5131677944687246e-08,
+                  "Q_other_C": -1.4719423365043773e-06,
+                  "Q_cap_C": 1.4970675972400984e-06,
+                  "Q_net_C": 1.4970741440965652e-06,
+                  "residual_C": 6.546856466805356e-12,
+                  "throughput_C": 1.5468444287268493e-06,
+                  "Q_in_supported_C": 1.2984834477391617e-19,
+                  "Q_in_outside_support_C": 1.55832424725585e-13
+                },
+                "supported_state_start_V": 0.0,
+                "supported_state_end_V": 0.0
+              },
+              {
+                "start_s": 16.205564442089138,
+                "end_s": 16.73556661607254,
+                "cause_with_tolerance": true,
+                "account": {
+                  "Q_in_C": 1.7266770954626712e-06,
+                  "Q_sh_C": 1.1696830422154338e-15,
+                  "Q_leak_C": 4.378212830903612e-08,
+                  "Q_other_C": 1.3377473539325524e-06,
+                  "Q_cap_C": 3.451376939297056e-07,
+                  "Q_net_C": 3.4514761205139966e-07,
+                  "residual_C": 9.918121694049147e-12,
+                  "throughput_C": 3.1082245768917092e-06,
+                  "Q_in_supported_C": 1.7266770954626714e-06,
+                  "Q_in_outside_support_C": -2.117582368135751e-22
+                },
+                "supported_state_start_V": 0.0,
+                "supported_state_end_V": 0.22215345919537904
+              }
+            ],
+            "account_sample_s": 16.73556661607254,
+            "why": ""
+          },
+          {
+            "t_q": 17.17443710182801,
+            "scope": "complete vm ledger node",
+            "anchor_s": 0.0,
+            "anchor": "record start",
+            "ok": true,
+            "cause": [
+              16.206800415663093,
+              19.701308305198584
+            ],
+            "stretch_start_s": 16.76970460128034,
+            "u_entry_state_V": 0.23235031563228403,
+            "supported_state_V": 0.22363806101999564,
+            "checks": {
+              "membrane_rose": true,
+              "account_closes": true,
+              "net_charge_sufficient": true,
+              "retained_state_supported": true,
+              "source_history_valid": true
+            },
+            "account_from_anchor": {
+              "Q_in_C": 3.0008958789938204e-06,
+              "Q_sh_C": 2.7751545634910842e-14,
+              "Q_leak_C": 5.083176953445598e-08,
+              "Q_other_C": 1.1083031762131359e-06,
+              "Q_cap_C": 1.8417343063961326e-06,
+              "Q_net_C": 1.841760905494683e-06,
+              "residual_C": 2.6599098550409418e-11,
+              "throughput_C": 7.203967113848744e-06,
+              "Q_in_supported_C": 3.0008957231613964e-06,
+              "Q_in_outside_support_C": 1.558324239911207e-13
+            },
+            "account_stretch": {
+              "Q_in_C": 1.1694884265753115e-06,
+              "Q_sh_C": 7.985433576941982e-16,
+              "Q_leak_C": 2.7576086377121325e-08,
+              "Q_other_C": 9.233517376173476e-07,
+              "Q_cap_C": 2.185524042040814e-07,
+              "Q_net_C": 2.1856060178229922e-07,
+              "residual_C": 8.197578217812494e-12,
+              "throughput_C": 2.1204162525279753e-06,
+              "Q_in_supported_C": 1.1694884265753121e-06,
+              "Q_in_outside_support_C": -6.352747104407253e-22
+            },
+            "source_ledger": [
+              {
+                "start_s": 0.0,
+                "end_s": 16.205564442089138,
+                "cause_with_tolerance": false,
+                "account": {
+                  "Q_in_C": 1.5583255457392977e-13,
+                  "Q_sh_C": 2.618505390445277e-14,
+                  "Q_leak_C": -2.5131677944687246e-08,
+                  "Q_other_C": -1.4719423365043773e-06,
+                  "Q_cap_C": 1.4970675972400984e-06,
+                  "Q_net_C": 1.4970741440965652e-06,
+                  "residual_C": 6.546856466805356e-12,
+                  "throughput_C": 1.5468444287268493e-06,
+                  "Q_in_supported_C": 1.2984834477391617e-19,
+                  "Q_in_outside_support_C": 1.55832424725585e-13
+                },
+                "supported_state_start_V": 0.0,
+                "supported_state_end_V": 0.0
+              },
+              {
+                "start_s": 16.205564442089138,
+                "end_s": 17.174437115204,
+                "cause_with_tolerance": true,
+                "account": {
+                  "Q_in_C": 3.000895723161266e-06,
+                  "Q_sh_C": 1.5664917304580714e-15,
+                  "Q_leak_C": 7.596344747914323e-08,
+                  "Q_other_C": 2.5802455127175134e-06,
+                  "Q_cap_C": 3.446667091560342e-07,
+                  "Q_net_C": 3.4468676139811777e-07,
+                  "residual_C": 2.0052242083551122e-11,
+                  "throughput_C": 5.657122685121895e-06,
+                  "Q_in_supported_C": 3.0008957231612664e-06,
+                  "Q_in_outside_support_C": -4.235164736271502e-22
+                },
+                "supported_state_start_V": 0.0,
+                "supported_state_end_V": 0.22363806101999564
+              }
+            ],
+            "account_sample_s": 17.174437115204,
+            "why": ""
+          },
+          {
+            "t_q": 17.639235377312797,
+            "scope": "complete vm ledger node",
+            "anchor_s": 0.0,
+            "anchor": "record start",
+            "ok": true,
+            "cause": [
+              16.206800415663093,
+              19.701308305198584
+            ],
+            "stretch_start_s": 17.206247237648228,
+            "u_entry_state_V": 0.23207718216042217,
+            "supported_state_V": 0.22437143712436639,
+            "checks": {
+              "membrane_rose": true,
+              "account_closes": true,
+              "net_charge_sufficient": true,
+              "retained_state_supported": true,
+              "source_history_valid": true
+            },
+            "account_from_anchor": {
+              "Q_in_C": 4.168148482886009e-06,
+              "Q_sh_C": 2.8171042147567565e-14,
+              "Q_leak_C": 8.449063427478976e-08,
+              "Q_other_C": 2.2427758051353226e-06,
+              "Q_cap_C": 1.8408469319776923e-06,
+              "Q_net_C": 1.8408820153048545e-06,
+              "residual_C": 3.5083327162131495e-11,
+              "throughput_C": 9.539351214026662e-06,
+              "Q_in_supported_C": 4.168148327053585e-06,
+              "Q_in_outside_support_C": 1.558324239911207e-13
+            },
+            "account_stretch": {
+              "Q_in_C": 1.0813673739406115e-06,
+              "Q_sh_C": 8.231965548724375e-16,
+              "Q_leak_C": 2.9321874430618966e-08,
+              "Q_other_C": 8.339879600402276e-07,
+              "Q_cap_C": 2.1805146857655114e-07,
+              "Q_net_C": 2.180575386465684e-07,
+              "residual_C": 6.0700700172746975e-12,
+              "throughput_C": 1.944677210552968e-06,
+              "Q_in_supported_C": 1.0813673739406115e-06,
+              "Q_in_outside_support_C": 0.0
+            },
+            "source_ledger": [
+              {
+                "start_s": 0.0,
+                "end_s": 16.205564442089138,
+                "cause_with_tolerance": false,
+                "account": {
+                  "Q_in_C": 1.5583255457392977e-13,
+                  "Q_sh_C": 2.618505390445277e-14,
+                  "Q_leak_C": -2.5131677944687246e-08,
+                  "Q_other_C": -1.4719423365043773e-06,
+                  "Q_cap_C": 1.4970675972400984e-06,
+                  "Q_net_C": 1.4970741440965652e-06,
+                  "residual_C": 6.546856466805356e-12,
+                  "throughput_C": 1.5468444287268493e-06,
+                  "Q_in_supported_C": 1.2984834477391617e-19,
+                  "Q_in_outside_support_C": 1.55832424725585e-13
+                },
+                "supported_state_start_V": 0.0,
+                "supported_state_end_V": 0.0
+              },
+              {
+                "start_s": 16.205564442089138,
+                "end_s": 17.639235392178517,
+                "cause_with_tolerance": true,
+                "account": {
+                  "Q_in_C": 4.168148327053454e-06,
+                  "Q_sh_C": 1.9859882431147945e-15,
+                  "Q_leak_C": 1.09622312219477e-07,
+                  "Q_other_C": 3.7147181416397e-06,
+                  "Q_cap_C": 3.437793347375941e-07,
+                  "Q_net_C": 3.438078712082895e-07,
+                  "residual_C": 2.853647069537908e-11,
+                  "throughput_C": 7.992506785299812e-06,
+                  "Q_in_supported_C": 4.168148327053455e-06,
+                  "Q_in_outside_support_C": -8.470329472543003e-22
+                },
+                "supported_state_start_V": 0.0,
+                "supported_state_end_V": 0.22437143712436639
+              }
+            ],
+            "account_sample_s": 17.639235392178517,
+            "why": ""
+          },
+          {
+            "t_q": 18.13735906540012,
+            "scope": "complete vm ledger node",
+            "anchor_s": 0.0,
+            "anchor": "record start",
+            "ok": true,
+            "cause": [
+              16.206800415663093,
+              19.701308305198584
+            ],
+            "stretch_start_s": 17.66836381807937,
+            "u_entry_state_V": 0.23575901901638652,
+            "supported_state_V": 0.22658255208231304,
+            "checks": {
+              "membrane_rose": true,
+              "account_closes": true,
+              "net_charge_sufficient": true,
+              "retained_state_supported": true,
+              "source_history_valid": true
+            },
+            "account_from_anchor": {
+              "Q_in_C": 5.223579773587497e-06,
+              "Q_sh_C": 2.86222163664738e-14,
+              "Q_leak_C": 1.2077704396505274e-07,
+              "Q_other_C": 3.2620333703971504e-06,
+              "Q_cap_C": 1.8407278491740938e-06,
+              "Q_net_C": 1.8407693306030766e-06,
+              "residual_C": 4.148142898281859e-11,
+              "throughput_C": 1.1650326482673731e-05,
+              "Q_in_supported_C": 5.223579617755073e-06,
+              "Q_in_outside_support_C": 1.558324239911207e-13
+            },
+            "account_stretch": {
+              "Q_in_C": 9.884051753687257e-07,
+              "Q_sh_C": 8.569647076577816e-16,
+              "Q_leak_C": 3.2219382987359613e-08,
+              "Q_other_C": 7.375656934091278e-07,
+              "Q_cap_C": 2.1861556881363407e-07,
+              "Q_net_C": 2.1862009811527374e-07,
+              "residual_C": 4.5293016396733595e-12,
+              "throughput_C": 1.7581902542686932e-06,
+              "Q_in_supported_C": 9.884051753687257e-07,
+              "Q_in_outside_support_C": 0.0
+            },
+            "source_ledger": [
+              {
+                "start_s": 0.0,
+                "end_s": 16.205564442089138,
+                "cause_with_tolerance": false,
+                "account": {
+                  "Q_in_C": 1.5583255457392977e-13,
+                  "Q_sh_C": 2.618505390445277e-14,
+                  "Q_leak_C": -2.5131677944687246e-08,
+                  "Q_other_C": -1.4719423365043773e-06,
+                  "Q_cap_C": 1.4970675972400984e-06,
+                  "Q_net_C": 1.4970741440965652e-06,
+                  "residual_C": 6.546856466805356e-12,
+                  "throughput_C": 1.5468444287268493e-06,
+                  "Q_in_supported_C": 1.2984834477391617e-19,
+                  "Q_in_outside_support_C": 1.55832424725585e-13
+                },
+                "supported_state_start_V": 0.0,
+                "supported_state_end_V": 0.0
+              },
+              {
+                "start_s": 16.205564442089138,
+                "end_s": 18.13735908192397,
+                "cause_with_tolerance": true,
+                "account": {
+                  "Q_in_C": 5.223579617754942e-06,
+                  "Q_sh_C": 2.437162462021027e-15,
+                  "Q_leak_C": 1.4590872190974e-07,
+                  "Q_other_C": 4.733975706901528e-06,
+                  "Q_cap_C": 3.4366025193399555e-07,
+                  "Q_net_C": 3.436951865065112e-07,
+                  "residual_C": 3.493457251564266e-11,
+                  "throughput_C": 1.0103482053946881e-05,
+                  "Q_in_supported_C": 5.223579617754943e-06,
+                  "Q_in_outside_support_C": -8.470329472543003e-22
+                },
+                "supported_state_start_V": 0.0,
+                "supported_state_end_V": 0.22658255208231304
+              }
+            ],
+            "account_sample_s": 18.13735908192397,
+            "why": ""
+          },
+          {
+            "t_q": 18.68571373463427,
+            "scope": "complete vm ledger node",
+            "anchor_s": 0.0,
+            "anchor": "record start",
+            "ok": true,
+            "cause": [
+              16.206800415663093,
+              19.701308305198584
+            ],
+            "stretch_start_s": 18.164256784533,
+            "u_entry_state_V": 0.23911318669735948,
+            "supported_state_V": 0.22878675573988008,
+            "checks": {
+              "membrane_rose": true,
+              "account_closes": true,
+              "net_charge_sufficient": true,
+              "retained_state_supported": true,
+              "source_history_valid": true
+            },
+            "account_from_anchor": {
+              "Q_in_C": 6.1812180409576745e-06,
+              "Q_sh_C": 2.9116276324056577e-14,
+              "Q_leak_C": 1.6229383366656817e-07,
+              "Q_other_C": 4.179624410721478e-06,
+              "Q_cap_C": 1.8392529928583045e-06,
+              "Q_net_C": 1.8392997674533515e-06,
+              "residual_C": 4.677459504705224e-11,
+              "throughput_C": 1.3567072583513938e-05,
+              "Q_in_supported_C": 6.1812178851252505e-06,
+              "Q_in_outside_support_C": 1.558324239911207e-13
+            },
+            "account_stretch": {
+              "Q_in_C": 9.05937597634105e-07,
+              "Q_sh_C": 9.021058940022534e-16,
+              "Q_leak_C": 3.766574714322988e-08,
+              "Q_other_C": 6.508935835335038e-07,
+              "Q_cap_C": 2.173748682056332e-07,
+              "Q_net_C": 2.1737826605526537e-07,
+              "residual_C": 3.397849632161411e-12,
+              "throughput_C": 1.594496931253454e-06,
+              "Q_in_supported_C": 9.05937597634105e-07,
+              "Q_in_outside_support_C": 0.0
+            },
+            "source_ledger": [
+              {
+                "start_s": 0.0,
+                "end_s": 16.205564442089138,
+                "cause_with_tolerance": false,
+                "account": {
+                  "Q_in_C": 1.5583255457392977e-13,
+                  "Q_sh_C": 2.618505390445277e-14,
+                  "Q_leak_C": -2.5131677944687246e-08,
+                  "Q_other_C": -1.4719423365043773e-06,
+                  "Q_cap_C": 1.4970675972400984e-06,
+                  "Q_net_C": 1.4970741440965652e-06,
+                  "residual_C": 6.546856466805356e-12,
+                  "throughput_C": 1.5468444287268493e-06,
+                  "Q_in_supported_C": 1.2984834477391617e-19,
+                  "Q_in_outside_support_C": 1.55832424725585e-13
+                },
+                "supported_state_start_V": 0.0,
+                "supported_state_end_V": 0.0
+              },
+              {
+                "start_s": 16.205564442089138,
+                "end_s": 18.685713749447444,
+                "cause_with_tolerance": true,
+                "account": {
+                  "Q_in_C": 6.18121788512512e-06,
+                  "Q_sh_C": 2.9312224196038063e-15,
+                  "Q_leak_C": 1.8742551161125542e-07,
+                  "Q_other_C": 5.651566747225855e-06,
+                  "Q_cap_C": 3.421853956182062e-07,
+                  "Q_net_C": 3.4222562335678655e-07,
+                  "residual_C": 4.022773858035276e-11,
+                  "throughput_C": 1.2020228154787088e-05,
+                  "Q_in_supported_C": 6.181217885125121e-06,
+                  "Q_in_outside_support_C": -8.470329472543003e-22
+                },
+                "supported_state_start_V": 0.0,
+                "supported_state_end_V": 0.22878675573988008
+              }
+            ],
+            "account_sample_s": 18.685713749447444,
+            "why": ""
+          },
+          {
+            "t_q": 19.307886454569115,
+            "scope": "complete vm ledger node",
+            "anchor_s": 0.0,
+            "anchor": "record start",
+            "ok": true,
+            "cause": [
+              16.206800415663093,
+              19.701308305198584
+            ],
+            "stretch_start_s": 18.710549166898566,
+            "u_entry_state_V": 0.24226752275261343,
+            "supported_state_V": 0.2322616752495714,
+            "checks": {
+              "membrane_rose": true,
+              "account_closes": true,
+              "net_charge_sufficient": true,
+              "retained_state_supported": true,
+              "source_history_valid": true
+            },
+            "account_from_anchor": {
+              "Q_in_C": 7.047016037979634e-06,
+              "Q_sh_C": 1.0366653252139819e-12,
+              "Q_leak_C": 2.123727924989733e-07,
+              "Q_other_C": 4.995975319780533e-06,
+              "Q_cap_C": 1.838615634889888e-06,
+              "Q_net_C": 1.8386668890348032e-06,
+              "residual_C": 5.125414491526689e-11,
+              "throughput_C": 1.5299301459013504e-05,
+              "Q_in_supported_C": 7.04701588214721e-06,
+              "Q_in_outside_support_C": 1.558324239911207e-13
+            },
+            "account_stretch": {
+              "Q_in_C": 8.270120309227311e-07,
+              "Q_sh_C": 1.0079585852624638e-12,
+              "Q_leak_C": 4.641441622170318e-08,
+              "Q_other_C": 5.626351847259403e-07,
+              "Q_cap_C": 2.1795876770165965e-07,
+              "Q_net_C": 2.1796142201650242e-07,
+              "residual_C": 2.6543148427741377e-12,
+              "throughput_C": 1.4360626419494884e-06,
+              "Q_in_supported_C": 8.270120309227311e-07,
+              "Q_in_outside_support_C": 0.0
+            },
+            "source_ledger": [
+              {
+                "start_s": 0.0,
+                "end_s": 16.205564442089138,
+                "cause_with_tolerance": false,
+                "account": {
+                  "Q_in_C": 1.5583255457392977e-13,
+                  "Q_sh_C": 2.618505390445277e-14,
+                  "Q_leak_C": -2.5131677944687246e-08,
+                  "Q_other_C": -1.4719423365043773e-06,
+                  "Q_cap_C": 1.4970675972400984e-06,
+                  "Q_net_C": 1.4970741440965652e-06,
+                  "residual_C": 6.546856466805356e-12,
+                  "throughput_C": 1.5468444287268493e-06,
+                  "Q_in_supported_C": 1.2984834477391617e-19,
+                  "Q_in_outside_support_C": 1.55832424725585e-13
+                },
+                "supported_state_start_V": 0.0,
+                "supported_state_end_V": 0.0
+              },
+              {
+                "start_s": 16.205564442089138,
+                "end_s": 19.30788646116578,
+                "cause_with_tolerance": true,
+                "account": {
+                  "Q_in_C": 7.04701588214708e-06,
+                  "Q_sh_C": 1.0104802713095292e-12,
+                  "Q_leak_C": 2.3750447044366055e-07,
+                  "Q_other_C": 6.467917656284911e-06,
+                  "Q_cap_C": 3.415480376497896e-07,
+                  "Q_net_C": 3.415927449382374e-07,
+                  "residual_C": 4.4707288447826257e-11,
+                  "throughput_C": 1.3752457030286654e-05,
+                  "Q_in_supported_C": 7.047015882147081e-06,
+                  "Q_in_outside_support_C": -8.470329472543003e-22
+                },
+                "supported_state_start_V": 0.0,
+                "supported_state_end_V": 0.2322616752495714
+              }
+            ],
+            "account_sample_s": 19.30788646116578,
+            "why": ""
+          }
+        ],
+        "cdw12r_": [
+          {
+            "t_q": 0.010213751946891038,
+            "scope": "complete vm ledger node",
+            "anchor_s": 0.0,
+            "anchor": "record start",
+            "ok": false,
+            "why": "no cause interval before the event"
+          }
+        ]
+      }
+    },
+    "cdir_conflict_consistent": {
+      "result": "PASS",
+      "why": []
+    },
+    "ports_canonical": {
+      "result": "FAIL",
+      "why": [
+        "thw12f_: q 0.0102 s without activity",
+        "sgw12f_: q 0.0102 s without activity",
+        "cdw12f_: q 0.0102 s without activity",
+        "thw12r_: q 0.0102 s without activity",
+        "sgw12r_: q 0.0102 s without activity",
+        "cdw12r_: q 0.0102 s without activity"
+      ],
+      "n": 8
+    },
+    "load_consumed_in_cdir_activity": {
+      "result": "PASS",
+      "why": []
+    },
+    "load_pos_quiet_outside_cdir_activity": {
+      "result": "PASS",
+      "max_rise_V": 0.0006779180034901522
+    },
+    "load_neg_quiet_outside_cdir_activity": {
+      "result": "PASS",
+      "max_rise_V": 5.561931359920891e-09
+    },
+    "physical_ledger": {
+      "nodes": {
+        "thw12f_vm": {
+          "kcl_p99": 2.08403674107259e-08,
+          "kcl_peak": 4.570988562562138e-08,
+          "kcl": true,
+          "energy_net_J": -5.18934089845891e-17,
+          "energy_abs_J": 9.326148475813699e-06,
+          "energy": true,
+          "cap_mismatch_J": 2.2396201243095993e-11,
+          "cap": true,
+          "n_terms": 8,
+          "result": "PASS"
+        },
+        "thw12f_vmd": {
+          "kcl_p99": 0.0,
+          "kcl_peak": 0.0,
+          "kcl": true,
+          "energy_net_J": 0.0,
+          "energy_abs_J": 1.56658118665241e-06,
+          "energy": true,
+          "cap_mismatch_J": 4.149637713586481e-16,
+          "cap": true,
+          "n_terms": 3,
+          "result": "PASS"
+        },
+        "thw12f_vms": {
+          "kcl_p99": 0.0,
+          "kcl_peak": 0.0,
+          "kcl": true,
+          "energy_net_J": 0.0,
+          "energy_abs_J": 1.9011190072681839e-06,
+          "energy": true,
+          "cap_mismatch_J": 1.6263546141923161e-16,
+          "cap": true,
+          "n_terms": 3,
+          "result": "PASS"
+        },
+        "thw12r_vm": {
+          "kcl_p99": 2.0900277344916714e-08,
+          "kcl_peak": 4.461694941319038e-08,
+          "kcl": true,
+          "energy_net_J": -5.473232624942177e-17,
+          "energy_abs_J": 4.991996906348028e-06,
+          "energy": true,
+          "cap_mismatch_J": 4.6832499375526514e-12,
+          "cap": true,
+          "n_terms": 8,
+          "result": "PASS"
+        },
+        "thw12r_vmd": {
+          "kcl_p99": 0.0,
+          "kcl_peak": 0.0,
+          "kcl": true,
+          "energy_net_J": 0.0,
+          "energy_abs_J": 5.203417161945051e-07,
+          "energy": true,
+          "cap_mismatch_J": 2.324878167998086e-16,
+          "cap": true,
+          "n_terms": 3,
+          "result": "PASS"
+        },
+        "thw12r_vms": {
+          "kcl_p99": 0.0,
+          "kcl_peak": 0.0,
+          "kcl": true,
+          "energy_net_J": 0.0,
+          "energy_abs_J": 5.975700468816463e-07,
+          "energy": true,
+          "cap_mismatch_J": 1.4908323954687106e-17,
+          "cap": true,
+          "n_terms": 3,
+          "result": "PASS"
+        },
+        "sgw12f_vm": {
+          "kcl_p99": 2.915274767979375e-13,
+          "kcl_peak": 4.4962392585268205e-13,
+          "kcl": true,
+          "energy_net_J": 4.25944952747516e-18,
+          "energy_abs_J": 3.324506756523325e-05,
+          "energy": true,
+          "cap_mismatch_J": 7.237164865818642e-11,
+          "cap": true,
+          "n_terms": 9,
+          "result": "PASS"
+        },
+        "sgw12f_vmd": {
+          "kcl_p99": 0.0,
+          "kcl_peak": 0.0,
+          "kcl": true,
+          "energy_net_J": 0.0,
+          "energy_abs_J": 1.147532061809424e-07,
+          "energy": true,
+          "cap_mismatch_J": 2.372381095702706e-16,
+          "cap": true,
+          "n_terms": 3,
+          "result": "PASS"
+        },
+        "sgw12f_vms": {
+          "kcl_p99": 0.0,
+          "kcl_peak": 0.0,
+          "kcl": true,
+          "energy_net_J": 0.0,
+          "energy_abs_J": 8.685376124919142e-07,
+          "energy": true,
+          "cap_mismatch_J": 3.847041037302544e-17,
+          "cap": true,
+          "n_terms": 3,
+          "result": "PASS"
+        },
+        "sgw12r_vm": {
+          "kcl_p99": 3.1098474193460434e-13,
+          "kcl_peak": 5.406508808751766e-13,
+          "kcl": true,
+          "energy_net_J": 1.1812860901067045e-18,
+          "energy_abs_J": 3.161066121905353e-05,
+          "energy": true,
+          "cap_mismatch_J": 2.5976644870364867e-11,
+          "cap": true,
+          "n_terms": 9,
+          "result": "PASS"
+        },
+        "sgw12r_vmd": {
+          "kcl_p99": 0.0,
+          "kcl_peak": 0.0,
+          "kcl": true,
+          "energy_net_J": 0.0,
+          "energy_abs_J": 3.5471972004558645e-08,
+          "energy": true,
+          "cap_mismatch_J": 1.2249312430605363e-16,
+          "cap": true,
+          "n_terms": 3,
+          "result": "PASS"
+        },
+        "sgw12r_vms": {
+          "kcl_p99": 0.0,
+          "kcl_peak": 0.0,
+          "kcl": true,
+          "energy_net_J": 0.0,
+          "energy_abs_J": 2.0225176948212712e-07,
+          "energy": true,
+          "cap_mismatch_J": 2.806045274128043e-18,
+          "cap": true,
+          "n_terms": 3,
+          "result": "PASS"
+        },
+        "cdw12f_vm": {
+          "kcl_p99": 4.197596350983826e-08,
+          "kcl_peak": 6.954428525209939e-08,
+          "kcl": true,
+          "energy_net_J": -7.532083618896293e-17,
+          "energy_abs_J": 2.2734627493690807e-05,
+          "energy": true,
+          "cap_mismatch_J": 4.548442968989476e-11,
+          "cap": true,
+          "n_terms": 9,
+          "result": "PASS"
+        },
+        "cdw12f_vmd": {
+          "kcl_p99": 0.0,
+          "kcl_peak": 0.0,
+          "kcl": true,
+          "energy_net_J": 0.0,
+          "energy_abs_J": 4.504877601857785e-06,
+          "energy": true,
+          "cap_mismatch_J": 8.057234531968685e-16,
+          "cap": true,
+          "n_terms": 3,
+          "result": "PASS"
+        },
+        "cdw12f_vms": {
+          "kcl_p99": 0.0,
+          "kcl_peak": 0.0,
+          "kcl": true,
+          "energy_net_J": 0.0,
+          "energy_abs_J": 1.0424944993905546e-05,
+          "energy": true,
+          "cap_mismatch_J": 9.255002141572241e-17,
+          "cap": true,
+          "n_terms": 3,
+          "result": "PASS"
+        },
+        "cdw12r_vm": {
+          "kcl_p99": 4.197223637448609e-08,
+          "kcl_peak": 6.954428525202447e-08,
+          "kcl": true,
+          "energy_net_J": -9.710682165891354e-17,
+          "energy_abs_J": 2.5263465037390876e-06,
+          "energy": true,
+          "cap_mismatch_J": 3.346028196523639e-12,
+          "cap": true,
+          "n_terms": 9,
+          "result": "PASS"
+        },
+        "cdw12r_vmd": {
+          "kcl_p99": 0.0,
+          "kcl_peak": 0.0,
+          "kcl": true,
+          "energy_net_J": 0.0,
+          "energy_abs_J": 6.015263751591462e-09,
+          "energy": true,
+          "cap_mismatch_J": 1.019946834177697e-16,
+          "cap": true,
+          "n_terms": 3,
+          "result": "PASS"
+        },
+        "cdw12r_vms": {
+          "kcl_p99": 0.0,
+          "kcl_peak": 0.0,
+          "kcl": true,
+          "energy_net_J": 0.0,
+          "energy_abs_J": 3.243600804381051e-11,
+          "energy": true,
+          "cap_mismatch_J": 9.887635619172153e-17,
+          "cap": true,
+          "n_terms": 3,
+          "result": "PASS"
+        },
+        "load_pos": {
+          "kcl_p99": 8.946880918732911e-10,
+          "kcl_peak": 3.2456779100393543e-09,
+          "kcl": true,
+          "energy_net_J": 1.1577236234993894e-18,
+          "energy_abs_J": 1.5112003454211125e-05,
+          "energy": true,
+          "cap_mismatch_J": 6.354836791763196e-15,
+          "cap": true,
+          "n_terms": 4,
+          "result": "PASS"
+        },
+        "load_neg": {
+          "kcl_p99": 0.0,
+          "kcl_peak": 0.0,
+          "kcl": true,
+          "energy_net_J": 3.472703022991555e-19,
+          "energy_abs_J": 6.3573014239021455e-12,
+          "energy": true,
+          "cap_mismatch_J": 5.655095657949076e-17,
+          "cap": true,
+          "n_terms": 4,
+          "result": "PASS"
+        }
+      },
+      "scope": "KCL/charge/energy at ledger nodes only",
+      "supply_energy_J": 0.4188430861203619,
+      "fails": [],
+      "result": "PASS"
+    }
+  }
+}

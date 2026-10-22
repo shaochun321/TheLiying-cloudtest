@@ -1,0 +1,212 @@
+{
+  "status": "PARTIAL",
+  "started_at": "2026-10-23T04:24:01.857979+08:00",
+  "global_starts_before": 35,
+  "global_start_count": 39,
+  "actual_new_solver_starts": 4,
+  "solver_wall_s": 11309.627701977006,
+  "offline_judge_wall_s": 114.48982594701374,
+  "active_case": null,
+  "original_global_exact_historical_wall_s": null,
+  "wall_limits_temporarily_waived": true,
+  "original_all_matrix_cost_gate_not_claimed_passed": true,
+  "cases": {
+    "G0_C": {
+      "status": "BLOCKED_DEPENDENCY",
+      "blocking_parents": [
+        "G0_W"
+      ]
+    },
+    "G0_CUT_K1": {
+      "status": "BLOCKED_DEPENDENCY",
+      "blocking_parents": [
+        "G0_W"
+      ]
+    },
+    "G0_CUT_K10": {
+      "status": "BLOCKED_DEPENDENCY",
+      "blocking_parents": [
+        "G0_W"
+      ]
+    },
+    "CHAIN_12_W_F": {
+      "status": "FAIL",
+      "stage": "FINISHED",
+      "solver_wall_s": 9495.507018977005,
+      "completion_failure": null,
+      "actual_end_s": 39.2,
+      "binding_path": "/workspace/thermal-g3-formal/independent-continuation-2026-10-23-d2e498c3/runs/CHAIN_12_W_F/verdict-binding.json"
+    },
+    "CHAIN_12_W_R": {
+      "status": "BLOCKED_DEPENDENCY",
+      "blocking_parents": [
+        "CHAIN_12_W_F"
+      ]
+    },
+    "CHAIN_12_C_F": {
+      "status": "BLOCKED_DEPENDENCY",
+      "blocking_parents": [
+        "CHAIN_12_W_F"
+      ]
+    },
+    "CHAIN_12_C_R": {
+      "status": "BLOCKED_DEPENDENCY",
+      "blocking_parents": [
+        "CHAIN_12_W_F"
+      ]
+    },
+    "CHAIN_23_W_F": {
+      "status": "BLOCKED_DEPENDENCY",
+      "blocking_parents": [
+        "CHAIN_12_W_F"
+      ]
+    },
+    "CHAIN_23_W_R": {
+      "status": "BLOCKED_DEPENDENCY",
+      "blocking_parents": [
+        "CHAIN_12_W_F"
+      ]
+    },
+    "CHAIN_23_C_F": {
+      "status": "BLOCKED_DEPENDENCY",
+      "blocking_parents": [
+        "CHAIN_12_W_F"
+      ]
+    },
+    "CHAIN_23_C_R": {
+      "status": "BLOCKED_DEPENDENCY",
+      "blocking_parents": [
+        "CHAIN_12_W_F"
+      ]
+    },
+    "CHAIN_34_W_F": {
+      "status": "BLOCKED_DEPENDENCY",
+      "blocking_parents": [
+        "CHAIN_12_W_F"
+      ]
+    },
+    "CHAIN_34_W_R": {
+      "status": "BLOCKED_DEPENDENCY",
+      "blocking_parents": [
+        "CHAIN_12_W_F"
+      ]
+    },
+    "CHAIN_34_C_F": {
+      "status": "BLOCKED_DEPENDENCY",
+      "blocking_parents": [
+        "CHAIN_12_W_F"
+      ]
+    },
+    "CHAIN_34_C_R": {
+      "status": "BLOCKED_DEPENDENCY",
+      "blocking_parents": [
+        "CHAIN_12_W_F"
+      ]
+    },
+    "STRUCT_THETA_PORT_CUT": {
+      "status": "BLOCKED_DEPENDENCY",
+      "blocking_parents": [
+        "CHAIN_12_W_F"
+      ]
+    },
+    "STRUCT_SIGMA_PORT_CUT": {
+      "status": "BLOCKED_DEPENDENCY",
+      "blocking_parents": [
+        "CHAIN_12_W_F"
+      ]
+    },
+    "STRUCT_CDIR_HISTORY_BLEED": {
+      "status": "BLOCKED_DEPENDENCY",
+      "blocking_parents": [
+        "CHAIN_12_W_F"
+      ]
+    },
+    "STRUCT_REAL_SIGMA_SWAP": {
+      "status": "BLOCKED_DEPENDENCY",
+      "blocking_parents": [
+        "CHAIN_12_W_F"
+      ]
+    },
+    "INVALID_SYNC": {
+      "status": "BLOCKED_DEPENDENCY",
+      "blocking_parents": [
+        "CHAIN_12_W_F"
+      ]
+    },
+    "INVALID_STALE": {
+      "status": "BLOCKED_DEPENDENCY",
+      "blocking_parents": [
+        "CHAIN_12_W_F"
+      ]
+    },
+    "FULL_NOM": {
+      "status": "BLOCKED_DEPENDENCY",
+      "blocking_parents": [
+        "CHAIN_12_W_F",
+        "STRUCT_THETA_PORT_CUT"
+      ]
+    },
+    "FULL_REAL_MIRROR": {
+      "status": "BLOCKED_DEPENDENCY",
+      "blocking_parents": [
+        "FULL_NOM"
+      ]
+    },
+    "FULL_SPACE_CUT": {
+      "status": "BLOCKED_DEPENDENCY",
+      "blocking_parents": [
+        "FULL_NOM"
+      ]
+    },
+    "FULL_NUM_HALFSTEP": {
+      "status": "BLOCKED_DEPENDENCY",
+      "blocking_parents": [
+        "FULL_NOM"
+      ]
+    },
+    "NUM_G0_HALFSTEP": {
+      "status": "BLOCKED_DEPENDENCY",
+      "blocking_parents": [
+        "G0_W"
+      ]
+    },
+    "NUM_CHAIN_HALFSTEP": {
+      "status": "BLOCKED_DEPENDENCY",
+      "blocking_parents": [
+        "CHAIN_12_W_F"
+      ]
+    },
+    "DC_2P7": {
+      "status": "FAIL",
+      "stage": "FINISHED",
+      "solver_wall_s": 579.7534040879982,
+      "completion_failure": null,
+      "actual_end_s": null,
+      "binding_path": "/workspace/thermal-g3-formal/independent-continuation-2026-10-23-d2e498c3/runs/DC_2P7/verdict-binding.json"
+    },
+    "DC_3": {
+      "status": "FAIL",
+      "stage": "FINISHED",
+      "solver_wall_s": 620.276752566002,
+      "completion_failure": null,
+      "actual_end_s": null,
+      "binding_path": "/workspace/thermal-g3-formal/independent-continuation-2026-10-23-d2e498c3/runs/DC_3/verdict-binding.json"
+    },
+    "DC_3P2": {
+      "status": "FAIL",
+      "stage": "FINISHED",
+      "solver_wall_s": 614.0905263460008,
+      "completion_failure": null,
+      "actual_end_s": null,
+      "binding_path": "/workspace/thermal-g3-formal/independent-continuation-2026-10-23-d2e498c3/runs/DC_3P2/verdict-binding.json"
+    }
+  },
+  "ended_at": "2026-10-23T07:34:27.446441+08:00",
+  "remaining_global_start_slots": 26,
+  "counts": {
+    "BLOCKED_DEPENDENCY": 26,
+    "FAIL": 4
+  },
+  "original_records_unchanged": true,
+  "termination_reason": "NO_LEGAL_DEPENDENCY_FRONTIER"
+}

@@ -1,0 +1,14 @@
+{
+  "case_id": "CHAIN_12_W_F",
+  "scientific": "FAIL",
+  "complete_analysis": true,
+  "complete_transient": true,
+  "actual_end_s": 39.2,
+  "raw_sha256": "824fff1380e0e78c7efd2f52ebd0edede03a04b91b33296cb0a6ed703764bdf8",
+  "raw_path": "/workspace/thermal-g3-formal/independent-continuation-2026-10-23-d2e498c3/runs/CHAIN_12_W_F/CHAIN_12_W_F.raw",
+  "deck_sha256": "3aa58812b7898af4d6284e9b62495b569b58f2eb7a0a623e59d95d1b21861f76",
+  "judge_output_sha256": "725e6ac93fbde62cedf1e867d54b083c37145870526f1649c81866ca3201ce65",
+  "global_start_count": 39,
+  "judge_wall_s": 113.76635431800969,
+  "original_scientific_judge_used_once": true
+}

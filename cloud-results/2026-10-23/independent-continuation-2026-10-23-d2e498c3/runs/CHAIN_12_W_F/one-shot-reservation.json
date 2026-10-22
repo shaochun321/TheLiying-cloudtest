@@ -1,0 +1,11 @@
+{
+  "case_id": "CHAIN_12_W_F",
+  "reserved_at": "2026-10-23T04:54:16.932740+08:00",
+  "parents": {
+    "Q1_MOTHER_PROTOCOL": "PASS",
+    "Q1_MOTHER_HALFSTEP": "PASS"
+  },
+  "max_starts": 1,
+  "effective_wall_cap_s": null,
+  "next_global_index_if_launched": 39
+}

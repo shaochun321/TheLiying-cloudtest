@@ -1,0 +1,74 @@
+[
+  {
+    "original_path": "runs/CHAIN_12_W_F/CHAIN_12_W_F.raw",
+    "original_bytes": 598509895,
+    "original_sha256": "824fff1380e0e78c7efd2f52ebd0edede03a04b91b33296cb0a6ed703764bdf8",
+    "encoding": "gzip, split into ordered binary chunks",
+    "compressed_bytes": 371832520,
+    "compressed_sha256": "b1aefc8fa208cbcd32dae2371523b26b4c8619e039354f3e8b8d56c5f160e0af",
+    "parts": [
+      {
+        "path": "runs/CHAIN_12_W_F/CHAIN_12_W_F.raw.gz.part001",
+        "bytes": 50331648,
+        "sha256": "0c30f202d1ea7db96c727622452cd7646275d698ae7a96d2ca2e027b72e906d5"
+      },
+      {
+        "path": "runs/CHAIN_12_W_F/CHAIN_12_W_F.raw.gz.part002",
+        "bytes": 50331648,
+        "sha256": "e4e0f43a8753a1a7570e3de40aabcdac29015e5cf20b60c704e964851b7e8503"
+      },
+      {
+        "path": "runs/CHAIN_12_W_F/CHAIN_12_W_F.raw.gz.part003",
+        "bytes": 50331648,
+        "sha256": "f4098f87531d203a4aa31bd108336182378412ecadfda208be999affc5f4f942"
+      },
+      {
+        "path": "runs/CHAIN_12_W_F/CHAIN_12_W_F.raw.gz.part004",
+        "bytes": 50331648,
+        "sha256": "72d33a244df8c610bad14cff3320a3f75fdde7303543fdd947d1bd55e52aedc3"
+      },
+      {
+        "path": "runs/CHAIN_12_W_F/CHAIN_12_W_F.raw.gz.part005",
+        "bytes": 50331648,
+        "sha256": "c7d483e233ffe969e64b940511910f23fa9230eb1df83e67a7821aefe2a38662"
+      },
+      {
+        "path": "runs/CHAIN_12_W_F/CHAIN_12_W_F.raw.gz.part006",
+        "bytes": 50331648,
+        "sha256": "007e226112dcd6e09832e0e5db104b6a472a3aae54695585d4bbd8bb84a1bf6c"
+      },
+      {
+        "path": "runs/CHAIN_12_W_F/CHAIN_12_W_F.raw.gz.part007",
+        "bytes": 50331648,
+        "sha256": "803a676accfd4aab8e840085523f8847dd40910934c0bee81a61ab25ab0f331a"
+      },
+      {
+        "path": "runs/CHAIN_12_W_F/CHAIN_12_W_F.raw.gz.part008",
+        "bytes": 19510984,
+        "sha256": "ff5cf15f6ae44218490a56bf695018a4a61b76908612448bd5eb53c4be2102b3"
+      }
+    ],
+    "lossless_decompression_verified": true
+  },
+  {
+    "original_path": "runs/DC_2P7/DC_2P7.raw",
+    "original_bytes": 98344,
+    "original_sha256": "1a6a5677a4b56f38682800aa1ab85b03c2a39aa206090a7ab9e092c6da41473c",
+    "encoding": "none",
+    "delivery_path": "runs/DC_2P7/DC_2P7.raw"
+  },
+  {
+    "original_path": "runs/DC_3/DC_3.raw",
+    "original_bytes": 98342,
+    "original_sha256": "78d1a32d62752f98a5f928fdb29575d3d916b899ab1360af7813c8d487083b15",
+    "encoding": "none",
+    "delivery_path": "runs/DC_3/DC_3.raw"
+  },
+  {
+    "original_path": "runs/DC_3P2/DC_3P2.raw",
+    "original_bytes": 98344,
+    "original_sha256": "1932fb4dbca35c8098f23b162bdaa83d90c6c481195809560a2ad313f0cb5b18",
+    "encoding": "none",
+    "delivery_path": "runs/DC_3P2/DC_3P2.raw"
+  }
+]

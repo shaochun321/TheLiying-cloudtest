@@ -1,0 +1,14 @@
+{
+  "status": "READY_UNDER_EXPLICIT_TEMPORARY_WALL_LIMIT_WAIVER",
+  "cases": 30,
+  "dependency_ready": [
+    "CHAIN_12_W_F",
+    "DC_2P7",
+    "DC_3",
+    "DC_3P2"
+  ],
+  "new_solver_starts": 0,
+  "global_starts": 35,
+  "old_cost_gate_passed": false,
+  "unknown_historical_time_not_assumed_zero": true
+}

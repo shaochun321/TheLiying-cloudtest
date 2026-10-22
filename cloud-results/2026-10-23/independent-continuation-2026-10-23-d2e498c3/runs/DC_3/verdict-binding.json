@@ -1,0 +1,14 @@
+{
+  "case_id": "DC_3",
+  "scientific": "FAIL",
+  "complete_analysis": true,
+  "complete_transient": false,
+  "actual_end_s": null,
+  "raw_sha256": "78d1a32d62752f98a5f928fdb29575d3d916b899ab1360af7813c8d487083b15",
+  "raw_path": "/workspace/thermal-g3-formal/independent-continuation-2026-10-23-d2e498c3/runs/DC_3/DC_3.raw",
+  "deck_sha256": "e7a46b8441311d06b0bddcdc75d1805ac60b87bd1289188cd78d166ce77ad451",
+  "judge_output_sha256": "80abc004409fc680a3c6293848d4ef2ee4b202baea5d8d868d7f3f7e9cf93879",
+  "global_start_count": 37,
+  "judge_wall_s": 0.07691659199917922,
+  "original_scientific_judge_used_once": true
+}

@@ -1,0 +1,592 @@
+{
+  "schema": "thermal_g3.execution_proposal.only",
+  "date": "2026-10-23",
+  "status": "PROPOSAL_NOT_AUTHORIZED_NOT_EXECUTED",
+  "source_registry_sha256": "148a652db1c61c265222982712f123b9d6c5fcba4b9a2b870cf73c852d24f3a7",
+  "source_registry_origin": "Verified 2026-10-20 host package; any newer approved case registry takes precedence",
+  "current_global_starts": 35,
+  "global_start_cap": 65,
+  "global_wall_cap_s": 172800,
+  "formal_phase_wall_cap_s": 108000,
+  "per_case_max_new_starts": 1,
+  "automatic_retries": 0,
+  "unchanged_science_criteria": true,
+  "proposed_policy_changes_requiring_user_approval": [
+    "Independent-branch continuation after a failed case, without clearing old STOPPED.",
+    "Per-case hard-budget reservation for a budgeted partial campaign instead of all-matrix cost admission; no guarantee of full coverage."
+  ],
+  "failed_G0_W_verdict": "FAIL_UNCHANGED",
+  "initial_dependency_ready": [
+    "CHAIN_12_W_F",
+    "DC_2P7",
+    "DC_3",
+    "DC_3P2"
+  ],
+  "execution_requires": [
+    "Explicit user approval of this proposed scheduling contract",
+    "Validated references to existing qualification PASS, actual current case registry and remaining budget",
+    "Conservative treatment of missing historical wall time; unknown is not zero"
+  ],
+  "cases": [
+    {
+      "case_id": "G0_C",
+      "group": "G0",
+      "dependencies": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "G0_W"
+      ],
+      "baseline_case_id": null,
+      "status": "BLOCKED_FAILED_DEPENDENCY",
+      "failed_dependencies": [
+        "G0_W"
+      ],
+      "pending_dependencies": [],
+      "original_max_step_s": 0.0005,
+      "proposed_candidate_max_step_s": 0.000125,
+      "existing_case_timeout_s": 2700,
+      "budget_admission_not_yet_checked": true
+    },
+    {
+      "case_id": "G0_CUT_K1",
+      "group": "G0",
+      "dependencies": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "G0_W"
+      ],
+      "baseline_case_id": "G0_W",
+      "status": "BLOCKED_FAILED_DEPENDENCY",
+      "failed_dependencies": [
+        "G0_W"
+      ],
+      "pending_dependencies": [],
+      "original_max_step_s": 0.0005,
+      "proposed_candidate_max_step_s": 0.000125,
+      "existing_case_timeout_s": 2700,
+      "budget_admission_not_yet_checked": true
+    },
+    {
+      "case_id": "G0_CUT_K10",
+      "group": "G0",
+      "dependencies": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "G0_W"
+      ],
+      "baseline_case_id": "G0_W",
+      "status": "BLOCKED_FAILED_DEPENDENCY",
+      "failed_dependencies": [
+        "G0_W"
+      ],
+      "pending_dependencies": [],
+      "original_max_step_s": 0.0005,
+      "proposed_candidate_max_step_s": 0.000125,
+      "existing_case_timeout_s": 2700,
+      "budget_admission_not_yet_checked": true
+    },
+    {
+      "case_id": "CHAIN_12_W_F",
+      "group": "CHAIN",
+      "dependencies": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP"
+      ],
+      "baseline_case_id": null,
+      "status": "DEPENDENCY_READY",
+      "failed_dependencies": [],
+      "pending_dependencies": [],
+      "original_max_step_s": 0.0005,
+      "proposed_candidate_max_step_s": 0.000125,
+      "existing_case_timeout_s": 5400,
+      "budget_admission_not_yet_checked": true
+    },
+    {
+      "case_id": "CHAIN_12_W_R",
+      "group": "CHAIN",
+      "dependencies": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": null,
+      "status": "WAITING_DEPENDENCY",
+      "failed_dependencies": [],
+      "pending_dependencies": [
+        "CHAIN_12_W_F"
+      ],
+      "original_max_step_s": 0.0005,
+      "proposed_candidate_max_step_s": 0.000125,
+      "existing_case_timeout_s": 5400,
+      "budget_admission_not_yet_checked": true
+    },
+    {
+      "case_id": "CHAIN_12_C_F",
+      "group": "CHAIN",
+      "dependencies": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": null,
+      "status": "WAITING_DEPENDENCY",
+      "failed_dependencies": [],
+      "pending_dependencies": [
+        "CHAIN_12_W_F"
+      ],
+      "original_max_step_s": 0.0005,
+      "proposed_candidate_max_step_s": 0.000125,
+      "existing_case_timeout_s": 5400,
+      "budget_admission_not_yet_checked": true
+    },
+    {
+      "case_id": "CHAIN_12_C_R",
+      "group": "CHAIN",
+      "dependencies": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": null,
+      "status": "WAITING_DEPENDENCY",
+      "failed_dependencies": [],
+      "pending_dependencies": [
+        "CHAIN_12_W_F"
+      ],
+      "original_max_step_s": 0.0005,
+      "proposed_candidate_max_step_s": 0.000125,
+      "existing_case_timeout_s": 5400,
+      "budget_admission_not_yet_checked": true
+    },
+    {
+      "case_id": "CHAIN_23_W_F",
+      "group": "CHAIN",
+      "dependencies": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": null,
+      "status": "WAITING_DEPENDENCY",
+      "failed_dependencies": [],
+      "pending_dependencies": [
+        "CHAIN_12_W_F"
+      ],
+      "original_max_step_s": 0.0005,
+      "proposed_candidate_max_step_s": 0.000125,
+      "existing_case_timeout_s": 5400,
+      "budget_admission_not_yet_checked": true
+    },
+    {
+      "case_id": "CHAIN_23_W_R",
+      "group": "CHAIN",
+      "dependencies": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": null,
+      "status": "WAITING_DEPENDENCY",
+      "failed_dependencies": [],
+      "pending_dependencies": [
+        "CHAIN_12_W_F"
+      ],
+      "original_max_step_s": 0.0005,
+      "proposed_candidate_max_step_s": 0.000125,
+      "existing_case_timeout_s": 5400,
+      "budget_admission_not_yet_checked": true
+    },
+    {
+      "case_id": "CHAIN_23_C_F",
+      "group": "CHAIN",
+      "dependencies": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": null,
+      "status": "WAITING_DEPENDENCY",
+      "failed_dependencies": [],
+      "pending_dependencies": [
+        "CHAIN_12_W_F"
+      ],
+      "original_max_step_s": 0.0005,
+      "proposed_candidate_max_step_s": 0.000125,
+      "existing_case_timeout_s": 5400,
+      "budget_admission_not_yet_checked": true
+    },
+    {
+      "case_id": "CHAIN_23_C_R",
+      "group": "CHAIN",
+      "dependencies": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": null,
+      "status": "WAITING_DEPENDENCY",
+      "failed_dependencies": [],
+      "pending_dependencies": [
+        "CHAIN_12_W_F"
+      ],
+      "original_max_step_s": 0.0005,
+      "proposed_candidate_max_step_s": 0.000125,
+      "existing_case_timeout_s": 5400,
+      "budget_admission_not_yet_checked": true
+    },
+    {
+      "case_id": "CHAIN_34_W_F",
+      "group": "CHAIN",
+      "dependencies": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": null,
+      "status": "WAITING_DEPENDENCY",
+      "failed_dependencies": [],
+      "pending_dependencies": [
+        "CHAIN_12_W_F"
+      ],
+      "original_max_step_s": 0.0005,
+      "proposed_candidate_max_step_s": 0.000125,
+      "existing_case_timeout_s": 5400,
+      "budget_admission_not_yet_checked": true
+    },
+    {
+      "case_id": "CHAIN_34_W_R",
+      "group": "CHAIN",
+      "dependencies": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": null,
+      "status": "WAITING_DEPENDENCY",
+      "failed_dependencies": [],
+      "pending_dependencies": [
+        "CHAIN_12_W_F"
+      ],
+      "original_max_step_s": 0.0005,
+      "proposed_candidate_max_step_s": 0.000125,
+      "existing_case_timeout_s": 5400,
+      "budget_admission_not_yet_checked": true
+    },
+    {
+      "case_id": "CHAIN_34_C_F",
+      "group": "CHAIN",
+      "dependencies": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": null,
+      "status": "WAITING_DEPENDENCY",
+      "failed_dependencies": [],
+      "pending_dependencies": [
+        "CHAIN_12_W_F"
+      ],
+      "original_max_step_s": 0.0005,
+      "proposed_candidate_max_step_s": 0.000125,
+      "existing_case_timeout_s": 5400,
+      "budget_admission_not_yet_checked": true
+    },
+    {
+      "case_id": "CHAIN_34_C_R",
+      "group": "CHAIN",
+      "dependencies": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": null,
+      "status": "WAITING_DEPENDENCY",
+      "failed_dependencies": [],
+      "pending_dependencies": [
+        "CHAIN_12_W_F"
+      ],
+      "original_max_step_s": 0.0005,
+      "proposed_candidate_max_step_s": 0.000125,
+      "existing_case_timeout_s": 5400,
+      "budget_admission_not_yet_checked": true
+    },
+    {
+      "case_id": "STRUCT_THETA_PORT_CUT",
+      "group": "STRUCTURE",
+      "dependencies": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": "CHAIN_12_W_F",
+      "status": "WAITING_DEPENDENCY",
+      "failed_dependencies": [],
+      "pending_dependencies": [
+        "CHAIN_12_W_F"
+      ],
+      "original_max_step_s": 0.0005,
+      "proposed_candidate_max_step_s": 0.000125,
+      "existing_case_timeout_s": 5400,
+      "budget_admission_not_yet_checked": true
+    },
+    {
+      "case_id": "STRUCT_SIGMA_PORT_CUT",
+      "group": "STRUCTURE",
+      "dependencies": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": "CHAIN_12_W_F",
+      "status": "WAITING_DEPENDENCY",
+      "failed_dependencies": [],
+      "pending_dependencies": [
+        "CHAIN_12_W_F"
+      ],
+      "original_max_step_s": 0.0005,
+      "proposed_candidate_max_step_s": 0.000125,
+      "existing_case_timeout_s": 5400,
+      "budget_admission_not_yet_checked": true
+    },
+    {
+      "case_id": "STRUCT_CDIR_HISTORY_BLEED",
+      "group": "STRUCTURE",
+      "dependencies": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": "CHAIN_12_W_F",
+      "status": "WAITING_DEPENDENCY",
+      "failed_dependencies": [],
+      "pending_dependencies": [
+        "CHAIN_12_W_F"
+      ],
+      "original_max_step_s": 0.0005,
+      "proposed_candidate_max_step_s": 0.000125,
+      "existing_case_timeout_s": 5400,
+      "budget_admission_not_yet_checked": true
+    },
+    {
+      "case_id": "STRUCT_REAL_SIGMA_SWAP",
+      "group": "STRUCTURE",
+      "dependencies": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": "CHAIN_12_W_F",
+      "status": "WAITING_DEPENDENCY",
+      "failed_dependencies": [],
+      "pending_dependencies": [
+        "CHAIN_12_W_F"
+      ],
+      "original_max_step_s": 0.0005,
+      "proposed_candidate_max_step_s": 0.000125,
+      "existing_case_timeout_s": 5400,
+      "budget_admission_not_yet_checked": true
+    },
+    {
+      "case_id": "INVALID_SYNC",
+      "group": "STRUCTURE",
+      "dependencies": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": null,
+      "status": "WAITING_DEPENDENCY",
+      "failed_dependencies": [],
+      "pending_dependencies": [
+        "CHAIN_12_W_F"
+      ],
+      "original_max_step_s": 0.0005,
+      "proposed_candidate_max_step_s": 0.000125,
+      "existing_case_timeout_s": 5400,
+      "budget_admission_not_yet_checked": true
+    },
+    {
+      "case_id": "INVALID_STALE",
+      "group": "STRUCTURE",
+      "dependencies": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": null,
+      "status": "WAITING_DEPENDENCY",
+      "failed_dependencies": [],
+      "pending_dependencies": [
+        "CHAIN_12_W_F"
+      ],
+      "original_max_step_s": 0.0005,
+      "proposed_candidate_max_step_s": 0.000125,
+      "existing_case_timeout_s": 5400,
+      "budget_admission_not_yet_checked": true
+    },
+    {
+      "case_id": "FULL_NOM",
+      "group": "FULL",
+      "dependencies": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F",
+        "STRUCT_THETA_PORT_CUT"
+      ],
+      "baseline_case_id": null,
+      "status": "WAITING_DEPENDENCY",
+      "failed_dependencies": [],
+      "pending_dependencies": [
+        "CHAIN_12_W_F",
+        "STRUCT_THETA_PORT_CUT"
+      ],
+      "original_max_step_s": 0.0005,
+      "proposed_candidate_max_step_s": 0.000125,
+      "existing_case_timeout_s": 14400,
+      "budget_admission_not_yet_checked": true
+    },
+    {
+      "case_id": "FULL_REAL_MIRROR",
+      "group": "FULL",
+      "dependencies": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "FULL_NOM"
+      ],
+      "baseline_case_id": "FULL_NOM",
+      "status": "WAITING_DEPENDENCY",
+      "failed_dependencies": [],
+      "pending_dependencies": [
+        "FULL_NOM"
+      ],
+      "original_max_step_s": 0.0005,
+      "proposed_candidate_max_step_s": 0.000125,
+      "existing_case_timeout_s": 14400,
+      "budget_admission_not_yet_checked": true
+    },
+    {
+      "case_id": "FULL_SPACE_CUT",
+      "group": "FULL",
+      "dependencies": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "FULL_NOM"
+      ],
+      "baseline_case_id": "FULL_NOM",
+      "status": "WAITING_DEPENDENCY",
+      "failed_dependencies": [],
+      "pending_dependencies": [
+        "FULL_NOM"
+      ],
+      "original_max_step_s": 0.0005,
+      "proposed_candidate_max_step_s": 0.000125,
+      "existing_case_timeout_s": 14400,
+      "budget_admission_not_yet_checked": true
+    },
+    {
+      "case_id": "FULL_NUM_HALFSTEP",
+      "group": "FULL",
+      "dependencies": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "FULL_NOM"
+      ],
+      "baseline_case_id": "FULL_NOM",
+      "status": "WAITING_DEPENDENCY",
+      "failed_dependencies": [],
+      "pending_dependencies": [
+        "FULL_NOM"
+      ],
+      "original_max_step_s": 0.00025,
+      "proposed_candidate_max_step_s": 6.25e-05,
+      "existing_case_timeout_s": 14400,
+      "budget_admission_not_yet_checked": true
+    },
+    {
+      "case_id": "NUM_G0_HALFSTEP",
+      "group": "NUM",
+      "dependencies": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "G0_W"
+      ],
+      "baseline_case_id": "G0_W",
+      "status": "BLOCKED_FAILED_DEPENDENCY",
+      "failed_dependencies": [
+        "G0_W"
+      ],
+      "pending_dependencies": [],
+      "original_max_step_s": 0.00025,
+      "proposed_candidate_max_step_s": 6.25e-05,
+      "existing_case_timeout_s": 2700,
+      "budget_admission_not_yet_checked": true
+    },
+    {
+      "case_id": "NUM_CHAIN_HALFSTEP",
+      "group": "NUM",
+      "dependencies": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP",
+        "CHAIN_12_W_F"
+      ],
+      "baseline_case_id": "CHAIN_12_W_F",
+      "status": "WAITING_DEPENDENCY",
+      "failed_dependencies": [],
+      "pending_dependencies": [
+        "CHAIN_12_W_F"
+      ],
+      "original_max_step_s": 0.00025,
+      "proposed_candidate_max_step_s": 6.25e-05,
+      "existing_case_timeout_s": 5400,
+      "budget_admission_not_yet_checked": true
+    },
+    {
+      "case_id": "DC_2P7",
+      "group": "DC",
+      "dependencies": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP"
+      ],
+      "baseline_case_id": null,
+      "status": "DEPENDENCY_READY",
+      "failed_dependencies": [],
+      "pending_dependencies": [],
+      "original_max_step_s": null,
+      "proposed_candidate_max_step_s": null,
+      "existing_case_timeout_s": 900,
+      "budget_admission_not_yet_checked": true
+    },
+    {
+      "case_id": "DC_3",
+      "group": "DC",
+      "dependencies": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP"
+      ],
+      "baseline_case_id": null,
+      "status": "DEPENDENCY_READY",
+      "failed_dependencies": [],
+      "pending_dependencies": [],
+      "original_max_step_s": null,
+      "proposed_candidate_max_step_s": null,
+      "existing_case_timeout_s": 900,
+      "budget_admission_not_yet_checked": true
+    },
+    {
+      "case_id": "DC_3P2",
+      "group": "DC",
+      "dependencies": [
+        "Q1_MOTHER_PROTOCOL",
+        "Q1_MOTHER_HALFSTEP"
+      ],
+      "baseline_case_id": null,
+      "status": "DEPENDENCY_READY",
+      "failed_dependencies": [],
+      "pending_dependencies": [],
+      "original_max_step_s": null,
+      "proposed_candidate_max_step_s": null,
+      "existing_case_timeout_s": 900,
+      "budget_admission_not_yet_checked": true
+    }
+  ]
+}
