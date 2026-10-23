@@ -1,0 +1,14 @@
+{
+  "user_instruction": "执行，暂时接触时间限制",
+  "interpretation": "执行，暂时解除时间限制",
+  "scope": "One physical candidate and fixed C0-C8 sequence; stop at first candidate scientific/engineering failure. No retries or other formal matrix.",
+  "global_starts_before": 39,
+  "global_start_cap": 65,
+  "max_new_starts": 9,
+  "effective_per_run_wall_cap_s": null,
+  "effective_batch_wall_cap_s": null,
+  "reference_plan_total_cap_s": 36600,
+  "wall_waiver_scope": "this batch only, explicit current user instruction",
+  "exact_global_historical_wall_s": null,
+  "original_qualification_not_inherited": true
+}

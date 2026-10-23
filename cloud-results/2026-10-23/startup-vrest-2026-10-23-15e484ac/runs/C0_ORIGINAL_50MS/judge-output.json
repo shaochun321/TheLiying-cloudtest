@@ -1,0 +1,5 @@
+{
+  "result": "UNMEASURED",
+  "why": "Wrong initialization (uic) and output time step introduced by executor; terminated on discovery. No retry.",
+  "original_scientific_judge_executed": false
+}

@@ -1,0 +1,11 @@
+{
+  "scope": "Only six original stopped-batch protected records; no repository/history/environment audit.",
+  "files": {
+    "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/FORMAL_MANIFEST.json": true,
+    "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/STOPPED.json": true,
+    "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/formal-ledger.jsonl": true,
+    "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/formal-budget-summary.json": true,
+    "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/G0_W/verdict-binding.json": true,
+    "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/G0_W/judge-output.json": true
+  }
+}

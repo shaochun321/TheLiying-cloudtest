@@ -1,0 +1,22 @@
+{
+  "status": "NOT_CREATED_OR_FROZEN",
+  "source_evidence_commit": "708e1033c5cb43e6f917f2ac156b041a8f2d1541",
+  "source_software": "/workspace/thermal-g3-qualification/sparse-qualification-2026-10-22-17fb81ea/software/thermal_g3_q1",
+  "source_python_sha256_file": "source-files-sha256.json",
+  "physical_changes": [],
+  "candidate_solver_starts": 0,
+  "parameters_chosen": false,
+  "reason": "Critical original diagnostic invalidated by executor settings error; no physical candidate is represented as causally justified or validated.",
+  "old_qualification_not_inherited": true,
+  "fixed_candidate_test_sequence": [
+    "DC_3",
+    "CHAIN_STARTUP_0_3S",
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP",
+    "CHAIN_12_W_F",
+    "G0_W",
+    "DC_2P7",
+    "DC_3P2"
+  ],
+  "code_diff": "NO_PHYSICAL_CANDIDATE.diff"
+}

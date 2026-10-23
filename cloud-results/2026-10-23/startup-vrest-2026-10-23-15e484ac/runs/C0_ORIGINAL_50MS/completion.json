@@ -1,0 +1,11 @@
+{
+  "result": "UNMEASURED",
+  "engineering_result": "FAIL",
+  "scientific_verdict": null,
+  "why": "Wrong initialization (uic) and output time step introduced by executor; terminated on discovery. No retry.",
+  "raw_exists": false,
+  "raw_sha256": null,
+  "actual_end_s": null,
+  "qualification_claimed": false,
+  "solver_returncode": -15
+}

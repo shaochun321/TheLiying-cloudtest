@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/run_original_50ms.py", line 21, in <module>
+    with raw.open('rb') as f:h=hashlib.file_digest(f,'sha256').hexdigest()
+         ^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/thermal-g3-repair/startup-vrest-2026-10-23-15e484ac/runs/C0_ORIGINAL_50MS/C0_ORIGINAL_50MS.raw'

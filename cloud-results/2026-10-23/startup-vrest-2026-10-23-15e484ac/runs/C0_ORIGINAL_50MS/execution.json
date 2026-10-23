@@ -1,0 +1,14 @@
+{
+  "actual_solver_launches": 1,
+  "global_before": 39,
+  "global_after": 40,
+  "effective_wall_cap_s": null,
+  "original_reference_wall_cap_s": 300,
+  "retry_count": 0,
+  "started_at": "2026-10-23T04:21:22.755030+00:00",
+  "pid": 64603,
+  "returncode": -15,
+  "solver_wall_s": 36.356865214998834,
+  "solver_process_reaped": true,
+  "ended_at": "2026-10-23T04:21:59.112016+00:00"
+}

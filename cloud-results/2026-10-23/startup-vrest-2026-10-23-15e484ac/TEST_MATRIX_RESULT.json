@@ -1,0 +1,109 @@
+{
+  "result": "REPAIR_FAILED",
+  "reason": "Executor numerical/initialization error in the only optional diagnostic; no retry or candidate execution after invalid critical observation. This is an execution failure, not a scientific rejection of a physical candidate.",
+  "actual_new_solver_starts": 1,
+  "global_starts_before": 39,
+  "global_starts_after": 40,
+  "global_cap": 65,
+  "remaining_start_slots": 25,
+  "solver_wall_s": 36.356865214998834,
+  "exact_global_historical_wall_s": null,
+  "effective_wall_limit_s": null,
+  "automatic_retries": 0,
+  "new_candidate_runs": 0,
+  "new_candidate_qualification": "NOT_GRANTED",
+  "cases": [
+    {
+      "case_id": "C0_ORIGINAL_50MS",
+      "status": "INVALID_TERMINATED",
+      "actual_starts": 1,
+      "solver_wall_s": 36.356865214998834,
+      "actual_end_s": null,
+      "raw_sha256": null,
+      "original_scientific_verdict": "UNMEASURED",
+      "reason": "Wrong initialization (uic) and output time step introduced by executor; terminated on discovery. No retry."
+    },
+    {
+      "case_id": "DC_3",
+      "status": "NOT_STARTED",
+      "actual_starts": 0,
+      "solver_wall_s": 0.0,
+      "actual_end_s": null,
+      "raw_sha256": null,
+      "original_scientific_verdict": "UNMEASURED",
+      "reason": "Blocked: invalid preliminary diagnostic; candidate not frozen."
+    },
+    {
+      "case_id": "CHAIN_STARTUP_0_3S",
+      "status": "NOT_STARTED",
+      "actual_starts": 0,
+      "solver_wall_s": 0.0,
+      "actual_end_s": null,
+      "raw_sha256": null,
+      "original_scientific_verdict": "UNMEASURED",
+      "reason": "Blocked: invalid preliminary diagnostic; candidate not frozen."
+    },
+    {
+      "case_id": "Q1_MOTHER_PROTOCOL",
+      "status": "NOT_STARTED",
+      "actual_starts": 0,
+      "solver_wall_s": 0.0,
+      "actual_end_s": null,
+      "raw_sha256": null,
+      "original_scientific_verdict": "UNMEASURED",
+      "reason": "Blocked: invalid preliminary diagnostic; candidate not frozen."
+    },
+    {
+      "case_id": "Q1_MOTHER_HALFSTEP",
+      "status": "NOT_STARTED",
+      "actual_starts": 0,
+      "solver_wall_s": 0.0,
+      "actual_end_s": null,
+      "raw_sha256": null,
+      "original_scientific_verdict": "UNMEASURED",
+      "reason": "Blocked: invalid preliminary diagnostic; candidate not frozen."
+    },
+    {
+      "case_id": "CHAIN_12_W_F",
+      "status": "NOT_STARTED",
+      "actual_starts": 0,
+      "solver_wall_s": 0.0,
+      "actual_end_s": null,
+      "raw_sha256": null,
+      "original_scientific_verdict": "UNMEASURED",
+      "reason": "Blocked: invalid preliminary diagnostic; candidate not frozen."
+    },
+    {
+      "case_id": "G0_W",
+      "status": "NOT_STARTED",
+      "actual_starts": 0,
+      "solver_wall_s": 0.0,
+      "actual_end_s": null,
+      "raw_sha256": null,
+      "original_scientific_verdict": "UNMEASURED",
+      "reason": "Blocked: invalid preliminary diagnostic; candidate not frozen."
+    },
+    {
+      "case_id": "DC_2P7",
+      "status": "NOT_STARTED",
+      "actual_starts": 0,
+      "solver_wall_s": 0.0,
+      "actual_end_s": null,
+      "raw_sha256": null,
+      "original_scientific_verdict": "UNMEASURED",
+      "reason": "Blocked: invalid preliminary diagnostic; candidate not frozen."
+    },
+    {
+      "case_id": "DC_3P2",
+      "status": "NOT_STARTED",
+      "actual_starts": 0,
+      "solver_wall_s": 0.0,
+      "actual_end_s": null,
+      "raw_sha256": null,
+      "original_scientific_verdict": "UNMEASURED",
+      "reason": "Blocked: invalid preliminary diagnostic; candidate not frozen."
+    }
+  ],
+  "original_stopped_records_unchanged": true,
+  "no_solver_process_remaining": true
+}

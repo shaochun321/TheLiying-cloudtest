@@ -1,0 +1,13 @@
+{
+  "result": "PASS",
+  "native_starts": 0,
+  "checks": {
+    "endpoint_only_analysis_accepted": true,
+    "accidental_uic_and_step_rejected": true,
+    "independent_load_positive_case": true,
+    "wrong_load_not_reclosed_or_masked": true,
+    "missing_load_is_unmeasured": true
+  },
+  "scope": "Executor guards and arithmetic only; no physical candidate or qualification certified.",
+  "original_full_software_selfchecks": "NOT_RUN: no physical candidate was created; this batch terminated at preliminary diagnostic."
+}

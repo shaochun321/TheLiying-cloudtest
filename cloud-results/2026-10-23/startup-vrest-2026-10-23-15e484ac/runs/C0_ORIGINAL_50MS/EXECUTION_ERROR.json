@@ -1,0 +1,9 @@
+{
+  "status": "INVALID_DIAGNOSTIC_CONFIGURATION",
+  "requested_analysis": "tran 0.001 0.05 0 0.000125",
+  "actual_analysis": "tran 0.000125 0.05 0 0.000125 uic",
+  "reason": "Executor mistakenly changed output step and added uic. This violates original-initialization/numerical-settings constraint. Diagnostic cannot support root-cause or qualification.",
+  "actual_start_consumed": true,
+  "no_automatic_retry": true,
+  "candidate_runs_authorized_but_not_started": true
+}

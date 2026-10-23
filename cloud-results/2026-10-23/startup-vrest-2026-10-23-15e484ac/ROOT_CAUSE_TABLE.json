@@ -1,0 +1,165 @@
+{
+  "status": "ROOT_CAUSE_NOT_FULLY_CLOSED",
+  "startup": {
+    "facts": [
+      {
+        "node": "v(cdw12f_q)",
+        "first_up_before_stimulus_s": 0.010213751946891038,
+        "first_down_before_stimulus_s": 0.011609997821775216,
+        "absolute_threshold_V": 1.482405739723778,
+        "voltage_at_10p214ms": 1.4824057361890173,
+        "ratio_to_vdd_at_10p214ms": 0.9999999497967874,
+        "maximum_0_50ms_V": 1.6932926175660652,
+        "voltage_at_50ms": 1.8874787206383744e-10,
+        "maximum_0_3s_V": 1.6932926175660652,
+        "voltage_at_3s": 1.7912790994403792e-10
+      },
+      {
+        "node": "v(gw1_col_q)",
+        "first_up_before_stimulus_s": 0.010213751922758292,
+        "first_down_before_stimulus_s": 0.010300172981311476,
+        "absolute_threshold_V": 1.482405739723778,
+        "voltage_at_10p214ms": 1.4824057397595396,
+        "ratio_to_vdd_at_10p214ms": 0.9999999522053872,
+        "maximum_0_50ms_V": 1.4945251878216212,
+        "voltage_at_50ms": 1.8592828427516521e-10,
+        "maximum_0_3s_V": 1.4945251878216212,
+        "voltage_at_3s": 1.7889253222331995e-10
+      },
+      {
+        "node": "v(gw2_col_q)",
+        "first_up_before_stimulus_s": 0.01021375192275829,
+        "first_down_before_stimulus_s": 0.010300172981311494,
+        "absolute_threshold_V": 1.482405739723778,
+        "voltage_at_10p214ms": 1.4824057397595398,
+        "ratio_to_vdd_at_10p214ms": 0.9999999522053874,
+        "maximum_0_50ms_V": 1.4945251878216244,
+        "voltage_at_50ms": 1.8592819397778635e-10,
+        "maximum_0_3s_V": 1.4945251878216244,
+        "voltage_at_3s": 1.7889262997633805e-10
+      },
+      {
+        "node": "v(hw1)",
+        "first_up_before_stimulus_s": null,
+        "first_down_before_stimulus_s": null,
+        "absolute_threshold_V": 1.482405739723778,
+        "voltage_at_10p214ms": 0.00020393673210292689,
+        "ratio_to_vdd_at_10p214ms": 0.0001375714602865274,
+        "maximum_0_50ms_V": 0.003985599057316827,
+        "voltage_at_50ms": 0.003993248247488097,
+        "maximum_0_3s_V": 0.026223611922790064,
+        "voltage_at_3s": 0.020948205207119344
+      },
+      {
+        "node": "v(hw2)",
+        "first_up_before_stimulus_s": null,
+        "first_down_before_stimulus_s": null,
+        "absolute_threshold_V": 1.482405739723778,
+        "voltage_at_10p214ms": 0.00020393673210292689,
+        "ratio_to_vdd_at_10p214ms": 0.0001375714602865274,
+        "maximum_0_50ms_V": 0.003985599057316827,
+        "voltage_at_50ms": 0.003993248247488097,
+        "maximum_0_3s_V": 0.026223611922790064,
+        "voltage_at_3s": 0.020948205207119052
+      },
+      {
+        "node": "v(sgw12f_q)",
+        "first_up_before_stimulus_s": 0.010213751939085036,
+        "first_down_before_stimulus_s": 0.011810874599367293,
+        "absolute_threshold_V": 1.482405739723778,
+        "voltage_at_10p214ms": 1.482405737343942,
+        "ratio_to_vdd_at_10p214ms": 0.9999999505758755,
+        "maximum_0_50ms_V": 1.7245041555767138,
+        "voltage_at_50ms": 1.861631319849144e-10,
+        "maximum_0_3s_V": 1.7245041555767138,
+        "voltage_at_3s": 1.7917877026019527e-10
+      },
+      {
+        "node": "v(thw12f_q)",
+        "first_up_before_stimulus_s": 0.010213751946891043,
+        "first_down_before_stimulus_s": 0.011609997821817535,
+        "absolute_threshold_V": 1.482405739723778,
+        "voltage_at_10p214ms": 1.4824057361890166,
+        "ratio_to_vdd_at_10p214ms": 0.999999949796787,
+        "maximum_0_50ms_V": 1.6932926175756207,
+        "voltage_at_50ms": 1.887483663183726e-10,
+        "maximum_0_3s_V": 1.6932926175756207,
+        "voltage_at_3s": 1.7912726768216154e-10
+      }
+    ],
+    "interpretation": "At the preserved absolute-threshold crossings, all sampled q track vdd to about 0.99999995. This supports a power-up rail-tracking transient; it does not establish a membrane-triggered causal order.",
+    "relative_vdd_is_diagnostic_only": true,
+    "no_early_events_removed": true,
+    "missing_critical_vectors": [
+      "v(por_hold)",
+      "v(por_ok)",
+      "v(porc)",
+      "v(porx)",
+      "v(gw1_col_ko1)",
+      "v(gw1_col_qb)",
+      "v(gw1_col_vm)",
+      "v(gw1_col_h)"
+    ],
+    "por_effectiveness_at_event": "UNMEASURED",
+    "first_causal_stage": "UNMEASURED",
+    "new_diagnostic_status": "INVALID_EXECUTOR_SETTINGS_TERMINATED_NO_RETRY",
+    "evidence": [
+      "offline/original-chain-startup.json",
+      "runs/C0_ORIGINAL_50MS/EXECUTION_ERROR.json"
+    ]
+  },
+  "reference": {
+    "equation": "IL=(VDD-VR)/Rt - VR/Rb; VR=alpha*VDD - Rth*IL; dynamic C*dVR/dt=divider inflow-IL",
+    "load_sign": "positive = net current flowing out of vrest into external loads",
+    "rt_ohm": 2000,
+    "rb_ohm": 1000,
+    "rth_ohm": 666.6666666666666,
+    "actual_internal_vdd_used": true,
+    "dc_capacitor_current_A": 0,
+    "three_points": [
+      {
+        "case": "DC_2P7",
+        "actual_internal_vdd_V": 2.6652897827525255,
+        "vrest_V": 0.8776909942923373,
+        "unloaded_prediction_V": 0.8884299275841752,
+        "upper_divider_current_A": 0.0008937993942300941,
+        "lower_divider_current_A": 0.0008776909942923374,
+        "inferred_net_load_A": 1.610839993775677e-05,
+        "independently_recovered_resistor_load_A": 1.6108399457134883e-05,
+        "unmeasured_mos_terminal_count": 260,
+        "independent_node_residual_A": null
+      },
+      {
+        "case": "DC_3",
+        "actual_internal_vdd_V": 2.960971126511531,
+        "vrest_V": 0.9747468921419102,
+        "unloaded_prediction_V": 0.9869903755038436,
+        "upper_divider_current_A": 0.0009931121171848102,
+        "lower_divider_current_A": 0.0009747468921419102,
+        "inferred_net_load_A": 1.836522504290001e-05,
+        "independently_recovered_resistor_load_A": 1.8365224561808084e-05,
+        "unmeasured_mos_terminal_count": 260,
+        "independent_node_residual_A": null
+      },
+      {
+        "case": "DC_3P2",
+        "actual_internal_vdd_V": 3.158100525537112,
+        "vrest_V": 1.0394506055760082,
+        "unloaded_prediction_V": 1.0527001751790375,
+        "upper_divider_current_A": 0.001059324959980552,
+        "lower_divider_current_A": 0.0010394506055760083,
+        "inferred_net_load_A": 1.987435440454371e-05,
+        "independently_recovered_resistor_load_A": 1.9874353923403236e-05,
+        "unmeasured_mos_terminal_count": 260,
+        "independent_node_residual_A": null
+      }
+    ],
+    "fact": "Independent resistor-current sums explain the inferred net reference load to within approximately 0.49 pA at all three supply points. Missing MOS currents prevent an independent complete-node KCL claim.",
+    "maximum_difference_A": 4.811404740064345e-13,
+    "independent_complete_node_closure": "UNMEASURED",
+    "evidence": [
+      "offline/original-dc-load.json",
+      "offline/vrest-branch-inventory.json"
+    ]
+  }
+}

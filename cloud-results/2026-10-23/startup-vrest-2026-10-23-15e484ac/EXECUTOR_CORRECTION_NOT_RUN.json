@@ -1,0 +1,9 @@
+{
+  "faulty_executed_analysis": "tran 0.000125 0.05 0 0.000125 uic",
+  "correct_analysis": "tran 0.001 0.05 0 0.000125",
+  "generator_correction": "Derive original analysis tokens; replace only stop token. Corrected generator archived but NOT executed.",
+  "executed_deck_not_modified": true,
+  "reruns": 0,
+  "post_termination_record_completion": "This finalizer explicitly records absent RAW; the runner originally raised FileNotFoundError after the native process had already been terminated.",
+  "native_launches_by_finalizer": 0
+}
