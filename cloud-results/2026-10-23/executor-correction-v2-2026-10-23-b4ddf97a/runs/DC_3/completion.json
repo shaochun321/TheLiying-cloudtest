@@ -1,0 +1,11 @@
+{
+  "raw_exists": true,
+  "raw_sha256": "a7a002d2ca54f0ce1b7014744d2184df716eea162925e890b4cf357e5ed5b83f",
+  "actual_end_s": null,
+  "raw_bytes": 120029,
+  "executor_error": null,
+  "points": 1,
+  "variables": 3280,
+  "original_completion_failure": null,
+  "sparse_banner_seen": true
+}

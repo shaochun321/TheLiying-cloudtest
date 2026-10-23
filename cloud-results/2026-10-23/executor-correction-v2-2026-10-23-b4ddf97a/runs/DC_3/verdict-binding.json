@@ -1,0 +1,17 @@
+{
+  "case_id": "DC_3",
+  "result": "PASS",
+  "original_judge_result": "PASS",
+  "engineering_result": "PASS",
+  "deck_sha256": "4624ee7194914bbe02a2360a00dd069c3f98fc26464982522e27acbb7dd99d18",
+  "raw_path": "/workspace/thermal-g3-repair/executor-correction-v2-2026-10-23-b4ddf97a/runs/DC_3/DC_3.raw",
+  "raw_sha256": "a7a002d2ca54f0ce1b7014744d2184df716eea162925e890b4cf357e5ed5b83f",
+  "actual_end_s": null,
+  "solver_wall_s": 292.2767844610062,
+  "offline_score_wall_s": 0.6663391480105929,
+  "global_start_count": 42,
+  "candidate_manifest_sha256": "34e319615d885c77bdb772fd5d5614dd2356d22f001b2489ad7781d159001036",
+  "scoring_view_policy": "por_hold release",
+  "additional_diagnostic_vectors_never_entered_original_view": true,
+  "judge_output_sha256": "240c70bb833093bf34a472b28ff089b1b04893d714e8b3ff2dded681d13be214"
+}

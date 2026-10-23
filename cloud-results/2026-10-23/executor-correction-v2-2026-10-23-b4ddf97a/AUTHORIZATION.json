@@ -1,0 +1,22 @@
+{
+  "user_instruction": "评判后执行，接触时间限制",
+  "interpretation": "评审后执行；解除本批墙钟限制",
+  "global_starts_before": 40,
+  "global_cap": 65,
+  "max_new_starts": 9,
+  "max_global_after": 49,
+  "previous_error_start_retained": true,
+  "across_two_repair_batches_max_starts": 10,
+  "budget_revision": "Explicit v2 one-start increase over original two-batch repair allocation accepted by current execute instruction.",
+  "one_physical_candidate": true,
+  "automatic_retries": 0,
+  "corrected_diagnostic_max_starts": 1,
+  "stop_at_first_candidate_failure": true,
+  "effective_wall_limit_s": null,
+  "effective_batch_wall_limit_s": null,
+  "reference_total_wall_limit_s": 36600,
+  "waiver_scope": "This batch only. No original phase/global cost gate claimed passed.",
+  "exact_global_historical_wall_s": null,
+  "other_formal_cases_authorized": false,
+  "old_qualification_inherited": false
+}

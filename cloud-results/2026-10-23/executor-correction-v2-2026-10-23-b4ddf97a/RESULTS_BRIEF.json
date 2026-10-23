@@ -1,0 +1,107 @@
+{
+  "status": "REPAIR_PARTIAL",
+  "global_starts": 43,
+  "new_starts": 3,
+  "new_solver_wall_s": 848.3571660430025,
+  "candidate_qualification": "NOT_GRANTED",
+  "stop_case": "CHAIN_STARTUP_0_3S",
+  "results": [
+    {
+      "case_id": "C0_CORRECTED_50MS",
+      "status": "PASS",
+      "actual_solver_starts": 1,
+      "solver_wall_s": 49.538144078003825,
+      "actual_end_s": 0.05,
+      "original_judge_result": null,
+      "engineering_result": null
+    },
+    {
+      "case_id": "DC_3",
+      "status": "PASS",
+      "actual_solver_starts": 1,
+      "solver_wall_s": 292.2767844610062,
+      "actual_end_s": null,
+      "original_judge_result": "PASS",
+      "engineering_result": "PASS"
+    },
+    {
+      "case_id": "CHAIN_STARTUP_0_3S",
+      "status": "FAIL",
+      "actual_solver_starts": 1,
+      "solver_wall_s": 506.5422375039925,
+      "actual_end_s": 3.0,
+      "original_judge_result": "FAIL",
+      "engineering_result": "FAIL"
+    },
+    {
+      "case_id": "Q1_MOTHER_PROTOCOL",
+      "status": "BLOCKED_FIRST_FAILURE",
+      "actual_solver_starts": 0,
+      "solver_wall_s": null,
+      "actual_end_s": null,
+      "original_judge_result": null,
+      "engineering_result": null
+    },
+    {
+      "case_id": "Q1_MOTHER_HALFSTEP",
+      "status": "BLOCKED_FIRST_FAILURE",
+      "actual_solver_starts": 0,
+      "solver_wall_s": null,
+      "actual_end_s": null,
+      "original_judge_result": null,
+      "engineering_result": null
+    },
+    {
+      "case_id": "CHAIN_12_W_F",
+      "status": "BLOCKED_FIRST_FAILURE",
+      "actual_solver_starts": 0,
+      "solver_wall_s": null,
+      "actual_end_s": null,
+      "original_judge_result": null,
+      "engineering_result": null
+    },
+    {
+      "case_id": "G0_W",
+      "status": "BLOCKED_FIRST_FAILURE",
+      "actual_solver_starts": 0,
+      "solver_wall_s": null,
+      "actual_end_s": null,
+      "original_judge_result": null,
+      "engineering_result": null
+    },
+    {
+      "case_id": "DC_2P7",
+      "status": "BLOCKED_FIRST_FAILURE",
+      "actual_solver_starts": 0,
+      "solver_wall_s": null,
+      "actual_end_s": null,
+      "original_judge_result": null,
+      "engineering_result": null
+    },
+    {
+      "case_id": "DC_3P2",
+      "status": "BLOCKED_FIRST_FAILURE",
+      "actual_solver_starts": 0,
+      "solver_wall_s": null,
+      "actual_end_s": null,
+      "original_judge_result": null,
+      "engineering_result": null
+    }
+  ],
+  "old_records_unchanged": true,
+  "no_automatic_followup": true,
+  "stop_reason": "C2 full 1079/1079 MOS domain check fails for eight original PMOS with abs(Vs-Vb)>=2V. Same eight already exceed this range in corrected original 50ms diagnostic; no failure attributed to newly added clamp MOS. No further native tests.",
+  "reference_relative_error": 0.006203588802306743,
+  "por_release_s": 2.699157136194259,
+  "logic_event_vectors": 64,
+  "pre_stimulus_threshold_events": 0,
+  "state_capacitors": 76,
+  "max_state_voltage_V": 1.7063877829168285e-06,
+  "model_domain_coverage": {
+    "covered": 1079,
+    "total": 1079,
+    "violations": 8
+  },
+  "same_domain_violation_devices_in_original_50ms": 8,
+  "remaining_start_slots": 22
+}

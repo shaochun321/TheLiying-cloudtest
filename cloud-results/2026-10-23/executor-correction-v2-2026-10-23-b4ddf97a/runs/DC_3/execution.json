@@ -1,0 +1,23 @@
+{
+  "case_id": "DC_3",
+  "command": [
+    "/workspace/thermal-g3-env/host/native/bin/ngspice",
+    "-n",
+    "-b",
+    "/workspace/thermal-g3-repair/executor-correction-v2-2026-10-23-b4ddf97a/runs/DC_3/DC_3.cir"
+  ],
+  "cwd": "/workspace/thermal-g3-repair/executor-correction-v2-2026-10-23-b4ddf97a/runs/DC_3",
+  "actual_solver_starts": 1,
+  "returncode": 0,
+  "spawn_error": null,
+  "solver_wall_s": 292.2767844610062,
+  "effective_wall_limit_s": null,
+  "original_default_wall_s": 900,
+  "global_before": 41,
+  "global_after": 42,
+  "solver_process_reaped": true,
+  "retry_count": 0,
+  "pid": 67600,
+  "started_at": "2026-10-23T14:08:13.213264+08:00",
+  "ended_at": "2026-10-23T14:13:05.488624+08:00"
+}

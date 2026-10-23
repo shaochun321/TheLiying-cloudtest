@@ -1,0 +1,3096 @@
+{
+  "result": "PASS",
+  "checks": {
+    "independent_full_node_kcl": true,
+    "loaded_prediction_matches": true,
+    "load_within_frozen_25pct_envelope": true,
+    "extra_supply_drop_within_20mV": true,
+    "reference_error_within_design_epsilon": true
+  },
+  "actual_internal_vdd_V": 2.95125034495284,
+  "vrest_V": 0.9776473337866955,
+  "unloaded_prediction_V": 0.98375011498428,
+  "independently_measured_load_A": 1.830834359272951e-05,
+  "loaded_prediction_V": 0.9776473337867035,
+  "independent_node_residual_A": -2.2725081133647922e-17,
+  "residual_tolerance_A": 1e-09,
+  "branch_count": 512,
+  "branch_currents": [
+    {
+      "element": "rvrestt",
+      "kind": "R",
+      "current_out_of_vrest_A": -0.0019736030111661444,
+      "measurement_vector": "i(va_rvrestt_n)"
+    },
+    {
+      "element": "rvrestb",
+      "kind": "R",
+      "current_out_of_vrest_A": 0.0019552946675733913,
+      "measurement_vector": "i(va_rvrestb_p)"
+    },
+    {
+      "element": "cvrestc",
+      "kind": "C",
+      "current_out_of_vrest_A": 0.0,
+      "measurement_vector": "i(va_cvrestc_p)"
+    },
+    {
+      "element": "rgw1_e1_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 4.818691876066354e-08,
+      "measurement_vector": "i(va_rgw1_e1_rm_n)"
+    },
+    {
+      "element": "rgw1_e1_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw1_e1_rdis_n)"
+    },
+    {
+      "element": "ngw1_e1_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718531727102133e-15,
+      "measurement_vector": "i(va_ngw1_e1_sh2_s)"
+    },
+    {
+      "element": "ngw1_e1_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135802e-16,
+      "measurement_vector": "i(va_ngw1_e1_porm_s)"
+    },
+    {
+      "element": "rgw1_e2_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 9.052679380086925e-08,
+      "measurement_vector": "i(va_rgw1_e2_rm_n)"
+    },
+    {
+      "element": "rgw1_e2_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw1_e2_rdis_n)"
+    },
+    {
+      "element": "ngw1_e2_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718565923894658e-15,
+      "measurement_vector": "i(va_ngw1_e2_sh2_s)"
+    },
+    {
+      "element": "ngw1_e2_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135999e-16,
+      "measurement_vector": "i(va_ngw1_e2_porm_s)"
+    },
+    {
+      "element": "rgw1_e3_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.327592531347472e-07,
+      "measurement_vector": "i(va_rgw1_e3_rm_n)"
+    },
+    {
+      "element": "rgw1_e3_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw1_e3_rdis_n)"
+    },
+    {
+      "element": "ngw1_e3_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185571968690847e-15,
+      "measurement_vector": "i(va_ngw1_e3_sh2_s)"
+    },
+    {
+      "element": "ngw1_e3_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215137007e-16,
+      "measurement_vector": "i(va_ngw1_e3_porm_s)"
+    },
+    {
+      "element": "rgw1_e4_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.748818556510516e-07,
+      "measurement_vector": "i(va_rgw1_e4_rm_n)"
+    },
+    {
+      "element": "rgw1_e4_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw1_e4_rdis_n)"
+    },
+    {
+      "element": "ngw1_e4_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185970410789197e-15,
+      "measurement_vector": "i(va_ngw1_e4_sh2_s)"
+    },
+    {
+      "element": "ngw1_e4_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215142122e-16,
+      "measurement_vector": "i(va_ngw1_e4_porm_s)"
+    },
+    {
+      "element": "rgw1_e5_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 2.1689199710558443e-07,
+      "measurement_vector": "i(va_rgw1_e5_rm_n)"
+    },
+    {
+      "element": "rgw1_e5_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw1_e5_rdis_n)"
+    },
+    {
+      "element": "ngw1_e5_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718543805519003e-15,
+      "measurement_vector": "i(va_ngw1_e5_sh2_s)"
+    },
+    {
+      "element": "ngw1_e5_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215168019e-16,
+      "measurement_vector": "i(va_ngw1_e5_porm_s)"
+    },
+    {
+      "element": "rgw1_e6_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 2.587868892788202e-07,
+      "measurement_vector": "i(va_rgw1_e6_rm_n)"
+    },
+    {
+      "element": "rgw1_e6_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw1_e6_rdis_n)"
+    },
+    {
+      "element": "ngw1_e6_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185352855102008e-15,
+      "measurement_vector": "i(va_ngw1_e6_sh2_s)"
+    },
+    {
+      "element": "ngw1_e6_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215298473e-16,
+      "measurement_vector": "i(va_ngw1_e6_porm_s)"
+    },
+    {
+      "element": "rgw1_e7_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 3.0056353546409666e-07,
+      "measurement_vector": "i(va_rgw1_e7_rm_n)"
+    },
+    {
+      "element": "rgw1_e7_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw1_e7_rdis_n)"
+    },
+    {
+      "element": "ngw1_e7_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185624566706205e-15,
+      "measurement_vector": "i(va_ngw1_e7_sh2_s)"
+    },
+    {
+      "element": "ngw1_e7_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215952513e-16,
+      "measurement_vector": "i(va_ngw1_e7_porm_s)"
+    },
+    {
+      "element": "rgw1_e8_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 3.4221870141380265e-07,
+      "measurement_vector": "i(va_rgw1_e8_rm_n)"
+    },
+    {
+      "element": "rgw1_e8_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw1_e8_rdis_n)"
+    },
+    {
+      "element": "ngw1_e8_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718587448293799e-15,
+      "measurement_vector": "i(va_ngw1_e8_sh2_s)"
+    },
+    {
+      "element": "ngw1_e8_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823219215686e-16,
+      "measurement_vector": "i(va_ngw1_e8_porm_s)"
+    },
+    {
+      "element": "rgw1_e9_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 3.8374888060495505e-07,
+      "measurement_vector": "i(va_rgw1_e9_rm_n)"
+    },
+    {
+      "element": "rgw1_e9_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw1_e9_rdis_n)"
+    },
+    {
+      "element": "ngw1_e9_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185330605341936e-15,
+      "measurement_vector": "i(va_ngw1_e9_sh2_s)"
+    },
+    {
+      "element": "ngw1_e9_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823235415461e-16,
+      "measurement_vector": "i(va_ngw1_e9_porm_s)"
+    },
+    {
+      "element": "rgw1_e10_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 4.2515025228726353e-07,
+      "measurement_vector": "i(va_rgw1_e10_rm_n)"
+    },
+    {
+      "element": "rgw1_e10_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw1_e10_rdis_n)"
+    },
+    {
+      "element": "ngw1_e10_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185691911517106e-15,
+      "measurement_vector": "i(va_ngw1_e10_sh2_s)"
+    },
+    {
+      "element": "ngw1_e10_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823315426215e-16,
+      "measurement_vector": "i(va_ngw1_e10_porm_s)"
+    },
+    {
+      "element": "rgw1_col_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -4.5934921778494216e-14,
+      "measurement_vector": "i(va_rgw1_col_rm_n)"
+    },
+    {
+      "element": "rgw1_col_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw1_col_rdis_n)"
+    },
+    {
+      "element": "ngw1_col_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718534518590361e-15,
+      "measurement_vector": "i(va_ngw1_col_sh2_s)"
+    },
+    {
+      "element": "ngw1_col_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135764e-16,
+      "measurement_vector": "i(va_ngw1_col_porm_s)"
+    },
+    {
+      "element": "rgc1_e1_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 4.818496301302864e-08,
+      "measurement_vector": "i(va_rgc1_e1_rm_n)"
+    },
+    {
+      "element": "rgc1_e1_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc1_e1_rdis_n)"
+    },
+    {
+      "element": "ngc1_e1_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185500407913616e-15,
+      "measurement_vector": "i(va_ngc1_e1_sh2_s)"
+    },
+    {
+      "element": "ngc1_e1_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135802e-16,
+      "measurement_vector": "i(va_ngc1_e1_porm_s)"
+    },
+    {
+      "element": "rgc1_e2_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 9.052484073838596e-08,
+      "measurement_vector": "i(va_rgc1_e2_rm_n)"
+    },
+    {
+      "element": "rgc1_e2_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc1_e2_rdis_n)"
+    },
+    {
+      "element": "ngc1_e2_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718557132539858e-15,
+      "measurement_vector": "i(va_ngc1_e2_sh2_s)"
+    },
+    {
+      "element": "ngc1_e2_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135999e-16,
+      "measurement_vector": "i(va_ngc1_e2_porm_s)"
+    },
+    {
+      "element": "rgc1_e3_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.3275730286077112e-07,
+      "measurement_vector": "i(va_rgc1_e3_rm_n)"
+    },
+    {
+      "element": "rgc1_e3_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc1_e3_rdis_n)"
+    },
+    {
+      "element": "ngc1_e3_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185354527774477e-15,
+      "measurement_vector": "i(va_ngc1_e3_sh2_s)"
+    },
+    {
+      "element": "ngc1_e3_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215137009e-16,
+      "measurement_vector": "i(va_ngc1_e3_porm_s)"
+    },
+    {
+      "element": "rgc1_e4_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.7487990827554275e-07,
+      "measurement_vector": "i(va_rgc1_e4_rm_n)"
+    },
+    {
+      "element": "rgc1_e4_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc1_e4_rdis_n)"
+    },
+    {
+      "element": "ngc1_e4_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185516221973047e-15,
+      "measurement_vector": "i(va_ngc1_e4_sh2_s)"
+    },
+    {
+      "element": "ngc1_e4_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215142122e-16,
+      "measurement_vector": "i(va_ngc1_e4_porm_s)"
+    },
+    {
+      "element": "rgc1_e5_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 2.1689005274604884e-07,
+      "measurement_vector": "i(va_rgc1_e5_rm_n)"
+    },
+    {
+      "element": "rgc1_e5_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc1_e5_rdis_n)"
+    },
+    {
+      "element": "ngc1_e5_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185553717624973e-15,
+      "measurement_vector": "i(va_ngc1_e5_sh2_s)"
+    },
+    {
+      "element": "ngc1_e5_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215168017e-16,
+      "measurement_vector": "i(va_ngc1_e5_porm_s)"
+    },
+    {
+      "element": "rgc1_e6_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 2.5878494806130464e-07,
+      "measurement_vector": "i(va_rgc1_e6_rm_n)"
+    },
+    {
+      "element": "rgc1_e6_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc1_e6_rdis_n)"
+    },
+    {
+      "element": "ngc1_e6_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185393339261106e-15,
+      "measurement_vector": "i(va_ngc1_e6_sh2_s)"
+    },
+    {
+      "element": "ngc1_e6_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.06182321529846e-16,
+      "measurement_vector": "i(va_ngc1_e6_porm_s)"
+    },
+    {
+      "element": "rgc1_e7_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 3.0056159752443903e-07,
+      "measurement_vector": "i(va_rgc1_e7_rm_n)"
+    },
+    {
+      "element": "rgc1_e7_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc1_e7_rdis_n)"
+    },
+    {
+      "element": "ngc1_e7_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718561220139856e-15,
+      "measurement_vector": "i(va_ngc1_e7_sh2_s)"
+    },
+    {
+      "element": "ngc1_e7_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215952452e-16,
+      "measurement_vector": "i(va_ngc1_e7_porm_s)"
+    },
+    {
+      "element": "rgc1_e8_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 3.4221676689910305e-07,
+      "measurement_vector": "i(va_rgc1_e8_rm_n)"
+    },
+    {
+      "element": "rgc1_e8_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc1_e8_rdis_n)"
+    },
+    {
+      "element": "ngc1_e8_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185549821050847e-15,
+      "measurement_vector": "i(va_ngc1_e8_sh2_s)"
+    },
+    {
+      "element": "ngc1_e8_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.06182321921538e-16,
+      "measurement_vector": "i(va_ngc1_e8_porm_s)"
+    },
+    {
+      "element": "rgc1_e9_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 3.8374694967534866e-07,
+      "measurement_vector": "i(va_rgc1_e9_rm_n)"
+    },
+    {
+      "element": "rgc1_e9_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc1_e9_rdis_n)"
+    },
+    {
+      "element": "ngc1_e9_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718549256875401e-15,
+      "measurement_vector": "i(va_ngc1_e9_sh2_s)"
+    },
+    {
+      "element": "ngc1_e9_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823235413952e-16,
+      "measurement_vector": "i(va_ngc1_e9_porm_s)"
+    },
+    {
+      "element": "rgc1_e10_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 4.2514832511808023e-07,
+      "measurement_vector": "i(va_rgc1_e10_rm_n)"
+    },
+    {
+      "element": "rgc1_e10_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc1_e10_rdis_n)"
+    },
+    {
+      "element": "ngc1_e10_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185624438469852e-15,
+      "measurement_vector": "i(va_ngc1_e10_sh2_s)"
+    },
+    {
+      "element": "ngc1_e10_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823315418752e-16,
+      "measurement_vector": "i(va_ngc1_e10_porm_s)"
+    },
+    {
+      "element": "rgc1_col_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -4.5934921778494216e-14,
+      "measurement_vector": "i(va_rgc1_col_rm_n)"
+    },
+    {
+      "element": "rgc1_col_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc1_col_rdis_n)"
+    },
+    {
+      "element": "ngc1_col_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185683341661107e-15,
+      "measurement_vector": "i(va_ngc1_col_sh2_s)"
+    },
+    {
+      "element": "ngc1_col_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135764e-16,
+      "measurement_vector": "i(va_ngc1_col_porm_s)"
+    },
+    {
+      "element": "rgw2_e1_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 4.818691876056761e-08,
+      "measurement_vector": "i(va_rgw2_e1_rm_n)"
+    },
+    {
+      "element": "rgw2_e1_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw2_e1_rdis_n)"
+    },
+    {
+      "element": "ngw2_e1_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185771832178983e-15,
+      "measurement_vector": "i(va_ngw2_e1_sh2_s)"
+    },
+    {
+      "element": "ngw2_e1_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135802e-16,
+      "measurement_vector": "i(va_ngw2_e1_porm_s)"
+    },
+    {
+      "element": "rgw2_e2_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 9.052679380078052e-08,
+      "measurement_vector": "i(va_rgw2_e2_rm_n)"
+    },
+    {
+      "element": "rgw2_e2_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw2_e2_rdis_n)"
+    },
+    {
+      "element": "ngw2_e2_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185625307905357e-15,
+      "measurement_vector": "i(va_ngw2_e2_sh2_s)"
+    },
+    {
+      "element": "ngw2_e2_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135999e-16,
+      "measurement_vector": "i(va_ngw2_e2_porm_s)"
+    },
+    {
+      "element": "rgw2_e3_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.3275925313466185e-07,
+      "measurement_vector": "i(va_rgw2_e3_rm_n)"
+    },
+    {
+      "element": "rgw2_e3_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw2_e3_rdis_n)"
+    },
+    {
+      "element": "ngw2_e3_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718553185371978e-15,
+      "measurement_vector": "i(va_ngw2_e3_sh2_s)"
+    },
+    {
+      "element": "ngw2_e3_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215137007e-16,
+      "measurement_vector": "i(va_ngw2_e3_porm_s)"
+    },
+    {
+      "element": "rgw2_e4_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.7488185565096276e-07,
+      "measurement_vector": "i(va_rgw2_e4_rm_n)"
+    },
+    {
+      "element": "rgw2_e4_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw2_e4_rdis_n)"
+    },
+    {
+      "element": "ngw2_e4_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718582044627576e-15,
+      "measurement_vector": "i(va_ngw2_e4_sh2_s)"
+    },
+    {
+      "element": "ngw2_e4_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215142122e-16,
+      "measurement_vector": "i(va_ngw2_e4_porm_s)"
+    },
+    {
+      "element": "rgw2_e5_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 2.168919971054885e-07,
+      "measurement_vector": "i(va_rgw2_e5_rm_n)"
+    },
+    {
+      "element": "rgw2_e5_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw2_e5_rdis_n)"
+    },
+    {
+      "element": "ngw2_e5_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185662438021315e-15,
+      "measurement_vector": "i(va_ngw2_e5_sh2_s)"
+    },
+    {
+      "element": "ngw2_e5_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215168019e-16,
+      "measurement_vector": "i(va_ngw2_e5_porm_s)"
+    },
+    {
+      "element": "rgw2_e6_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 2.587868892787314e-07,
+      "measurement_vector": "i(va_rgw2_e6_rm_n)"
+    },
+    {
+      "element": "rgw2_e6_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw2_e6_rdis_n)"
+    },
+    {
+      "element": "ngw2_e6_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185407964084583e-15,
+      "measurement_vector": "i(va_ngw2_e6_sh2_s)"
+    },
+    {
+      "element": "ngw2_e6_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215298473e-16,
+      "measurement_vector": "i(va_ngw2_e6_porm_s)"
+    },
+    {
+      "element": "rgw2_e7_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 3.005635354640078e-07,
+      "measurement_vector": "i(va_rgw2_e7_rm_n)"
+    },
+    {
+      "element": "rgw2_e7_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw2_e7_rdis_n)"
+    },
+    {
+      "element": "ngw2_e7_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185591762710426e-15,
+      "measurement_vector": "i(va_ngw2_e7_sh2_s)"
+    },
+    {
+      "element": "ngw2_e7_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215952513e-16,
+      "measurement_vector": "i(va_ngw2_e7_porm_s)"
+    },
+    {
+      "element": "rgw2_e8_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 3.422187014137067e-07,
+      "measurement_vector": "i(va_rgw2_e8_rm_n)"
+    },
+    {
+      "element": "rgw2_e8_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw2_e8_rdis_n)"
+    },
+    {
+      "element": "ngw2_e8_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185278403145062e-15,
+      "measurement_vector": "i(va_ngw2_e8_sh2_s)"
+    },
+    {
+      "element": "ngw2_e8_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823219215686e-16,
+      "measurement_vector": "i(va_ngw2_e8_porm_s)"
+    },
+    {
+      "element": "rgw2_e9_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 3.837488806048627e-07,
+      "measurement_vector": "i(va_rgw2_e9_rm_n)"
+    },
+    {
+      "element": "rgw2_e9_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw2_e9_rdis_n)"
+    },
+    {
+      "element": "ngw2_e9_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718545132234686e-15,
+      "measurement_vector": "i(va_ngw2_e9_sh2_s)"
+    },
+    {
+      "element": "ngw2_e9_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823235415461e-16,
+      "measurement_vector": "i(va_ngw2_e9_porm_s)"
+    },
+    {
+      "element": "rgw2_e10_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 4.251502522871677e-07,
+      "measurement_vector": "i(va_rgw2_e10_rm_n)"
+    },
+    {
+      "element": "rgw2_e10_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw2_e10_rdis_n)"
+    },
+    {
+      "element": "ngw2_e10_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185853875263096e-15,
+      "measurement_vector": "i(va_ngw2_e10_sh2_s)"
+    },
+    {
+      "element": "ngw2_e10_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823315426215e-16,
+      "measurement_vector": "i(va_ngw2_e10_porm_s)"
+    },
+    {
+      "element": "rgw2_col_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -4.5934921778494216e-14,
+      "measurement_vector": "i(va_rgw2_col_rm_n)"
+    },
+    {
+      "element": "rgw2_col_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw2_col_rdis_n)"
+    },
+    {
+      "element": "ngw2_col_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185847173604265e-15,
+      "measurement_vector": "i(va_ngw2_col_sh2_s)"
+    },
+    {
+      "element": "ngw2_col_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135764e-16,
+      "measurement_vector": "i(va_ngw2_col_porm_s)"
+    },
+    {
+      "element": "rgc2_e1_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 4.818496301312446e-08,
+      "measurement_vector": "i(va_rgc2_e1_rm_n)"
+    },
+    {
+      "element": "rgc2_e1_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc2_e1_rdis_n)"
+    },
+    {
+      "element": "ngc2_e1_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718510714127918e-15,
+      "measurement_vector": "i(va_ngc2_e1_sh2_s)"
+    },
+    {
+      "element": "ngc2_e1_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135802e-16,
+      "measurement_vector": "i(va_ngc2_e1_porm_s)"
+    },
+    {
+      "element": "rgc2_e2_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 9.05248407384748e-08,
+      "measurement_vector": "i(va_rgc2_e2_rm_n)"
+    },
+    {
+      "element": "rgc2_e2_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc2_e2_rdis_n)"
+    },
+    {
+      "element": "ngc2_e2_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185678917188545e-15,
+      "measurement_vector": "i(va_ngc2_e2_sh2_s)"
+    },
+    {
+      "element": "ngc2_e2_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135999e-16,
+      "measurement_vector": "i(va_ngc2_e2_porm_s)"
+    },
+    {
+      "element": "rgc2_e3_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.3275730286086345e-07,
+      "measurement_vector": "i(va_rgc2_e3_rm_n)"
+    },
+    {
+      "element": "rgc2_e3_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc2_e3_rdis_n)"
+    },
+    {
+      "element": "ngc2_e3_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718563213238516e-15,
+      "measurement_vector": "i(va_ngc2_e3_sh2_s)"
+    },
+    {
+      "element": "ngc2_e3_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215137009e-16,
+      "measurement_vector": "i(va_ngc2_e3_porm_s)"
+    },
+    {
+      "element": "rgc2_e4_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.7487990827563868e-07,
+      "measurement_vector": "i(va_rgc2_e4_rm_n)"
+    },
+    {
+      "element": "rgc2_e4_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc2_e4_rdis_n)"
+    },
+    {
+      "element": "ngc2_e4_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718533271427779e-15,
+      "measurement_vector": "i(va_ngc2_e4_sh2_s)"
+    },
+    {
+      "element": "ngc2_e4_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215142122e-16,
+      "measurement_vector": "i(va_ngc2_e4_porm_s)"
+    },
+    {
+      "element": "rgc2_e5_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 2.1689005274614117e-07,
+      "measurement_vector": "i(va_rgc2_e5_rm_n)"
+    },
+    {
+      "element": "rgc2_e5_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc2_e5_rdis_n)"
+    },
+    {
+      "element": "ngc2_e5_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185615009672502e-15,
+      "measurement_vector": "i(va_ngc2_e5_sh2_s)"
+    },
+    {
+      "element": "ngc2_e5_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215168017e-16,
+      "measurement_vector": "i(va_ngc2_e5_porm_s)"
+    },
+    {
+      "element": "rgc2_e6_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 2.5878494806139697e-07,
+      "measurement_vector": "i(va_rgc2_e6_rm_n)"
+    },
+    {
+      "element": "rgc2_e6_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc2_e6_rdis_n)"
+    },
+    {
+      "element": "ngc2_e6_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185400651476813e-15,
+      "measurement_vector": "i(va_ngc2_e6_sh2_s)"
+    },
+    {
+      "element": "ngc2_e6_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.06182321529846e-16,
+      "measurement_vector": "i(va_ngc2_e6_porm_s)"
+    },
+    {
+      "element": "rgc2_e7_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 3.0056159752453136e-07,
+      "measurement_vector": "i(va_rgc2_e7_rm_n)"
+    },
+    {
+      "element": "rgc2_e7_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc2_e7_rdis_n)"
+    },
+    {
+      "element": "ngc2_e7_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185129525806704e-15,
+      "measurement_vector": "i(va_ngc2_e7_sh2_s)"
+    },
+    {
+      "element": "ngc2_e7_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215952452e-16,
+      "measurement_vector": "i(va_ngc2_e7_porm_s)"
+    },
+    {
+      "element": "rgc2_e8_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 3.42216766899199e-07,
+      "measurement_vector": "i(va_rgc2_e8_rm_n)"
+    },
+    {
+      "element": "rgc2_e8_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc2_e8_rdis_n)"
+    },
+    {
+      "element": "ngc2_e8_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185462275891108e-15,
+      "measurement_vector": "i(va_ngc2_e8_sh2_s)"
+    },
+    {
+      "element": "ngc2_e8_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.06182321921538e-16,
+      "measurement_vector": "i(va_ngc2_e8_porm_s)"
+    },
+    {
+      "element": "rgc2_e9_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 3.837469496754375e-07,
+      "measurement_vector": "i(va_rgc2_e9_rm_n)"
+    },
+    {
+      "element": "rgc2_e9_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc2_e9_rdis_n)"
+    },
+    {
+      "element": "ngc2_e9_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718602004522774e-15,
+      "measurement_vector": "i(va_ngc2_e9_sh2_s)"
+    },
+    {
+      "element": "ngc2_e9_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823235413952e-16,
+      "measurement_vector": "i(va_ngc2_e9_porm_s)"
+    },
+    {
+      "element": "rgc2_e10_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 4.2514832511817966e-07,
+      "measurement_vector": "i(va_rgc2_e10_rm_n)"
+    },
+    {
+      "element": "rgc2_e10_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc2_e10_rdis_n)"
+    },
+    {
+      "element": "ngc2_e10_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185656112749258e-15,
+      "measurement_vector": "i(va_ngc2_e10_sh2_s)"
+    },
+    {
+      "element": "ngc2_e10_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823315418752e-16,
+      "measurement_vector": "i(va_ngc2_e10_porm_s)"
+    },
+    {
+      "element": "rgc2_col_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -4.5934921778494216e-14,
+      "measurement_vector": "i(va_rgc2_col_rm_n)"
+    },
+    {
+      "element": "rgc2_col_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc2_col_rdis_n)"
+    },
+    {
+      "element": "ngc2_col_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185847173604265e-15,
+      "measurement_vector": "i(va_ngc2_col_sh2_s)"
+    },
+    {
+      "element": "ngc2_col_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135764e-16,
+      "measurement_vector": "i(va_ngc2_col_porm_s)"
+    },
+    {
+      "element": "rgw3_e1_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 4.818691876056761e-08,
+      "measurement_vector": "i(va_rgw3_e1_rm_n)"
+    },
+    {
+      "element": "rgw3_e1_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw3_e1_rdis_n)"
+    },
+    {
+      "element": "ngw3_e1_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718537856554447e-15,
+      "measurement_vector": "i(va_ngw3_e1_sh2_s)"
+    },
+    {
+      "element": "ngw3_e1_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135802e-16,
+      "measurement_vector": "i(va_ngw3_e1_porm_s)"
+    },
+    {
+      "element": "rgw3_e2_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 9.052679380078052e-08,
+      "measurement_vector": "i(va_rgw3_e2_rm_n)"
+    },
+    {
+      "element": "rgw3_e2_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw3_e2_rdis_n)"
+    },
+    {
+      "element": "ngw3_e2_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.71857190324013e-15,
+      "measurement_vector": "i(va_ngw3_e2_sh2_s)"
+    },
+    {
+      "element": "ngw3_e2_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135999e-16,
+      "measurement_vector": "i(va_ngw3_e2_porm_s)"
+    },
+    {
+      "element": "rgw3_e3_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.3275925313466185e-07,
+      "measurement_vector": "i(va_rgw3_e3_rm_n)"
+    },
+    {
+      "element": "rgw3_e3_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw3_e3_rdis_n)"
+    },
+    {
+      "element": "ngw3_e3_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185442812065077e-15,
+      "measurement_vector": "i(va_ngw3_e3_sh2_s)"
+    },
+    {
+      "element": "ngw3_e3_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215137007e-16,
+      "measurement_vector": "i(va_ngw3_e3_porm_s)"
+    },
+    {
+      "element": "rgw3_e4_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.7488185565096276e-07,
+      "measurement_vector": "i(va_rgw3_e4_rm_n)"
+    },
+    {
+      "element": "rgw3_e4_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw3_e4_rdis_n)"
+    },
+    {
+      "element": "ngw3_e4_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185332714818545e-15,
+      "measurement_vector": "i(va_ngw3_e4_sh2_s)"
+    },
+    {
+      "element": "ngw3_e4_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215142122e-16,
+      "measurement_vector": "i(va_ngw3_e4_porm_s)"
+    },
+    {
+      "element": "rgw3_e5_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 2.168919971054885e-07,
+      "measurement_vector": "i(va_rgw3_e5_rm_n)"
+    },
+    {
+      "element": "rgw3_e5_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw3_e5_rdis_n)"
+    },
+    {
+      "element": "ngw3_e5_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7186015218554255e-15,
+      "measurement_vector": "i(va_ngw3_e5_sh2_s)"
+    },
+    {
+      "element": "ngw3_e5_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215168019e-16,
+      "measurement_vector": "i(va_ngw3_e5_porm_s)"
+    },
+    {
+      "element": "rgw3_e6_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 2.587868892787314e-07,
+      "measurement_vector": "i(va_rgw3_e6_rm_n)"
+    },
+    {
+      "element": "rgw3_e6_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw3_e6_rdis_n)"
+    },
+    {
+      "element": "ngw3_e6_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185461943486043e-15,
+      "measurement_vector": "i(va_ngw3_e6_sh2_s)"
+    },
+    {
+      "element": "ngw3_e6_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215298473e-16,
+      "measurement_vector": "i(va_ngw3_e6_porm_s)"
+    },
+    {
+      "element": "rgw3_e7_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 3.005635354640078e-07,
+      "measurement_vector": "i(va_rgw3_e7_rm_n)"
+    },
+    {
+      "element": "rgw3_e7_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw3_e7_rdis_n)"
+    },
+    {
+      "element": "ngw3_e7_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185333470908054e-15,
+      "measurement_vector": "i(va_ngw3_e7_sh2_s)"
+    },
+    {
+      "element": "ngw3_e7_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215952513e-16,
+      "measurement_vector": "i(va_ngw3_e7_porm_s)"
+    },
+    {
+      "element": "rgw3_e8_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 3.422187014137103e-07,
+      "measurement_vector": "i(va_rgw3_e8_rm_n)"
+    },
+    {
+      "element": "rgw3_e8_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw3_e8_rdis_n)"
+    },
+    {
+      "element": "ngw3_e8_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185977020261333e-15,
+      "measurement_vector": "i(va_ngw3_e8_sh2_s)"
+    },
+    {
+      "element": "ngw3_e8_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823219215686e-16,
+      "measurement_vector": "i(va_ngw3_e8_porm_s)"
+    },
+    {
+      "element": "rgw3_e9_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 3.837488806048591e-07,
+      "measurement_vector": "i(va_rgw3_e9_rm_n)"
+    },
+    {
+      "element": "rgw3_e9_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw3_e9_rdis_n)"
+    },
+    {
+      "element": "ngw3_e9_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718535685997491e-15,
+      "measurement_vector": "i(va_ngw3_e9_sh2_s)"
+    },
+    {
+      "element": "ngw3_e9_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823235415461e-16,
+      "measurement_vector": "i(va_ngw3_e9_porm_s)"
+    },
+    {
+      "element": "rgw3_e10_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 4.251502522871712e-07,
+      "measurement_vector": "i(va_rgw3_e10_rm_n)"
+    },
+    {
+      "element": "rgw3_e10_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw3_e10_rdis_n)"
+    },
+    {
+      "element": "ngw3_e10_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718571235128709e-15,
+      "measurement_vector": "i(va_ngw3_e10_sh2_s)"
+    },
+    {
+      "element": "ngw3_e10_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823315426215e-16,
+      "measurement_vector": "i(va_ngw3_e10_porm_s)"
+    },
+    {
+      "element": "rgw3_col_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -4.5934921778494216e-14,
+      "measurement_vector": "i(va_rgw3_col_rm_n)"
+    },
+    {
+      "element": "rgw3_col_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw3_col_rdis_n)"
+    },
+    {
+      "element": "ngw3_col_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185216031935767e-15,
+      "measurement_vector": "i(va_ngw3_col_sh2_s)"
+    },
+    {
+      "element": "ngw3_col_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135764e-16,
+      "measurement_vector": "i(va_ngw3_col_porm_s)"
+    },
+    {
+      "element": "rgc3_e1_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 4.818496301312446e-08,
+      "measurement_vector": "i(va_rgc3_e1_rm_n)"
+    },
+    {
+      "element": "rgc3_e1_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc3_e1_rdis_n)"
+    },
+    {
+      "element": "ngc3_e1_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718572403254635e-15,
+      "measurement_vector": "i(va_ngc3_e1_sh2_s)"
+    },
+    {
+      "element": "ngc3_e1_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135802e-16,
+      "measurement_vector": "i(va_ngc3_e1_porm_s)"
+    },
+    {
+      "element": "rgc3_e2_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 9.052484073848189e-08,
+      "measurement_vector": "i(va_rgc3_e2_rm_n)"
+    },
+    {
+      "element": "rgc3_e2_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc3_e2_rdis_n)"
+    },
+    {
+      "element": "ngc3_e2_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185598316306052e-15,
+      "measurement_vector": "i(va_ngc3_e2_sh2_s)"
+    },
+    {
+      "element": "ngc3_e2_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135999e-16,
+      "measurement_vector": "i(va_ngc3_e2_porm_s)"
+    },
+    {
+      "element": "rgc3_e3_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.3275730286086345e-07,
+      "measurement_vector": "i(va_rgc3_e3_rm_n)"
+    },
+    {
+      "element": "rgc3_e3_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc3_e3_rdis_n)"
+    },
+    {
+      "element": "ngc3_e3_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718515058274511e-15,
+      "measurement_vector": "i(va_ngc3_e3_sh2_s)"
+    },
+    {
+      "element": "ngc3_e3_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215137009e-16,
+      "measurement_vector": "i(va_ngc3_e3_porm_s)"
+    },
+    {
+      "element": "rgc3_e4_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.7487990827563868e-07,
+      "measurement_vector": "i(va_rgc3_e4_rm_n)"
+    },
+    {
+      "element": "rgc3_e4_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc3_e4_rdis_n)"
+    },
+    {
+      "element": "ngc3_e4_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185617629893657e-15,
+      "measurement_vector": "i(va_ngc3_e4_sh2_s)"
+    },
+    {
+      "element": "ngc3_e4_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215142122e-16,
+      "measurement_vector": "i(va_ngc3_e4_porm_s)"
+    },
+    {
+      "element": "rgc3_e5_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 2.1689005274614117e-07,
+      "measurement_vector": "i(va_rgc3_e5_rm_n)"
+    },
+    {
+      "element": "rgc3_e5_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc3_e5_rdis_n)"
+    },
+    {
+      "element": "ngc3_e5_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718495763665923e-15,
+      "measurement_vector": "i(va_ngc3_e5_sh2_s)"
+    },
+    {
+      "element": "ngc3_e5_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215168017e-16,
+      "measurement_vector": "i(va_ngc3_e5_porm_s)"
+    },
+    {
+      "element": "rgc3_e6_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 2.5878494806139347e-07,
+      "measurement_vector": "i(va_rgc3_e6_rm_n)"
+    },
+    {
+      "element": "rgc3_e6_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc3_e6_rdis_n)"
+    },
+    {
+      "element": "ngc3_e6_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185618091160626e-15,
+      "measurement_vector": "i(va_ngc3_e6_sh2_s)"
+    },
+    {
+      "element": "ngc3_e6_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.06182321529846e-16,
+      "measurement_vector": "i(va_ngc3_e6_porm_s)"
+    },
+    {
+      "element": "rgc3_e7_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 3.0056159752453136e-07,
+      "measurement_vector": "i(va_rgc3_e7_rm_n)"
+    },
+    {
+      "element": "rgc3_e7_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc3_e7_rdis_n)"
+    },
+    {
+      "element": "ngc3_e7_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185645373400073e-15,
+      "measurement_vector": "i(va_ngc3_e7_sh2_s)"
+    },
+    {
+      "element": "ngc3_e7_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215952452e-16,
+      "measurement_vector": "i(va_ngc3_e7_porm_s)"
+    },
+    {
+      "element": "rgc3_e8_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 3.42216766899199e-07,
+      "measurement_vector": "i(va_rgc3_e8_rm_n)"
+    },
+    {
+      "element": "rgc3_e8_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc3_e8_rdis_n)"
+    },
+    {
+      "element": "ngc3_e8_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718545459601282e-15,
+      "measurement_vector": "i(va_ngc3_e8_sh2_s)"
+    },
+    {
+      "element": "ngc3_e8_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.06182321921538e-16,
+      "measurement_vector": "i(va_ngc3_e8_porm_s)"
+    },
+    {
+      "element": "rgc3_e9_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 3.837469496754375e-07,
+      "measurement_vector": "i(va_rgc3_e9_rm_n)"
+    },
+    {
+      "element": "rgc3_e9_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc3_e9_rdis_n)"
+    },
+    {
+      "element": "ngc3_e9_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7186014230217516e-15,
+      "measurement_vector": "i(va_ngc3_e9_sh2_s)"
+    },
+    {
+      "element": "ngc3_e9_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823235413952e-16,
+      "measurement_vector": "i(va_ngc3_e9_porm_s)"
+    },
+    {
+      "element": "rgc3_e10_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 4.2514832511817966e-07,
+      "measurement_vector": "i(va_rgc3_e10_rm_n)"
+    },
+    {
+      "element": "rgc3_e10_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc3_e10_rdis_n)"
+    },
+    {
+      "element": "ngc3_e10_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718566455511011e-15,
+      "measurement_vector": "i(va_ngc3_e10_sh2_s)"
+    },
+    {
+      "element": "ngc3_e10_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823315418752e-16,
+      "measurement_vector": "i(va_ngc3_e10_porm_s)"
+    },
+    {
+      "element": "rgc3_col_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -4.5934921778494216e-14,
+      "measurement_vector": "i(va_rgc3_col_rm_n)"
+    },
+    {
+      "element": "rgc3_col_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc3_col_rdis_n)"
+    },
+    {
+      "element": "ngc3_col_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185847173604265e-15,
+      "measurement_vector": "i(va_ngc3_col_sh2_s)"
+    },
+    {
+      "element": "ngc3_col_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135764e-16,
+      "measurement_vector": "i(va_ngc3_col_porm_s)"
+    },
+    {
+      "element": "rgw4_e1_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 4.818691876056761e-08,
+      "measurement_vector": "i(va_rgw4_e1_rm_n)"
+    },
+    {
+      "element": "rgw4_e1_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw4_e1_rdis_n)"
+    },
+    {
+      "element": "ngw4_e1_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185500408680664e-15,
+      "measurement_vector": "i(va_ngw4_e1_sh2_s)"
+    },
+    {
+      "element": "ngw4_e1_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135802e-16,
+      "measurement_vector": "i(va_ngw4_e1_porm_s)"
+    },
+    {
+      "element": "rgw4_e2_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 9.052679380078052e-08,
+      "measurement_vector": "i(va_rgw4_e2_rm_n)"
+    },
+    {
+      "element": "rgw4_e2_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw4_e2_rdis_n)"
+    },
+    {
+      "element": "ngw4_e2_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185685858013878e-15,
+      "measurement_vector": "i(va_ngw4_e2_sh2_s)"
+    },
+    {
+      "element": "ngw4_e2_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135999e-16,
+      "measurement_vector": "i(va_ngw4_e2_porm_s)"
+    },
+    {
+      "element": "rgw4_e3_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.3275925313466185e-07,
+      "measurement_vector": "i(va_rgw4_e3_rm_n)"
+    },
+    {
+      "element": "rgw4_e3_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw4_e3_rdis_n)"
+    },
+    {
+      "element": "ngw4_e3_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.71852250009211e-15,
+      "measurement_vector": "i(va_ngw4_e3_sh2_s)"
+    },
+    {
+      "element": "ngw4_e3_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215137007e-16,
+      "measurement_vector": "i(va_ngw4_e3_porm_s)"
+    },
+    {
+      "element": "rgw4_e4_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.7488185565096276e-07,
+      "measurement_vector": "i(va_rgw4_e4_rm_n)"
+    },
+    {
+      "element": "rgw4_e4_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw4_e4_rdis_n)"
+    },
+    {
+      "element": "ngw4_e4_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185481920181526e-15,
+      "measurement_vector": "i(va_ngw4_e4_sh2_s)"
+    },
+    {
+      "element": "ngw4_e4_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215142122e-16,
+      "measurement_vector": "i(va_ngw4_e4_porm_s)"
+    },
+    {
+      "element": "rgw4_e5_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 2.168919971054885e-07,
+      "measurement_vector": "i(va_rgw4_e5_rm_n)"
+    },
+    {
+      "element": "rgw4_e5_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw4_e5_rdis_n)"
+    },
+    {
+      "element": "ngw4_e5_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718538407531044e-15,
+      "measurement_vector": "i(va_ngw4_e5_sh2_s)"
+    },
+    {
+      "element": "ngw4_e5_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215168019e-16,
+      "measurement_vector": "i(va_ngw4_e5_porm_s)"
+    },
+    {
+      "element": "rgw4_e6_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 2.587868892787314e-07,
+      "measurement_vector": "i(va_rgw4_e6_rm_n)"
+    },
+    {
+      "element": "rgw4_e6_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw4_e6_rdis_n)"
+    },
+    {
+      "element": "ngw4_e6_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718563776903768e-15,
+      "measurement_vector": "i(va_ngw4_e6_sh2_s)"
+    },
+    {
+      "element": "ngw4_e6_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215298473e-16,
+      "measurement_vector": "i(va_ngw4_e6_porm_s)"
+    },
+    {
+      "element": "rgw4_e7_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 3.005635354640078e-07,
+      "measurement_vector": "i(va_rgw4_e7_rm_n)"
+    },
+    {
+      "element": "rgw4_e7_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw4_e7_rdis_n)"
+    },
+    {
+      "element": "ngw4_e7_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185191185389957e-15,
+      "measurement_vector": "i(va_ngw4_e7_sh2_s)"
+    },
+    {
+      "element": "ngw4_e7_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215952513e-16,
+      "measurement_vector": "i(va_ngw4_e7_porm_s)"
+    },
+    {
+      "element": "rgw4_e8_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 3.422187014137103e-07,
+      "measurement_vector": "i(va_rgw4_e8_rm_n)"
+    },
+    {
+      "element": "rgw4_e8_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw4_e8_rdis_n)"
+    },
+    {
+      "element": "ngw4_e8_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185339694137128e-15,
+      "measurement_vector": "i(va_ngw4_e8_sh2_s)"
+    },
+    {
+      "element": "ngw4_e8_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823219215686e-16,
+      "measurement_vector": "i(va_ngw4_e8_porm_s)"
+    },
+    {
+      "element": "rgw4_e9_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 3.837488806048591e-07,
+      "measurement_vector": "i(va_rgw4_e9_rm_n)"
+    },
+    {
+      "element": "rgw4_e9_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw4_e9_rdis_n)"
+    },
+    {
+      "element": "ngw4_e9_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718522883066364e-15,
+      "measurement_vector": "i(va_ngw4_e9_sh2_s)"
+    },
+    {
+      "element": "ngw4_e9_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823235415461e-16,
+      "measurement_vector": "i(va_ngw4_e9_porm_s)"
+    },
+    {
+      "element": "rgw4_e10_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 4.251502522871712e-07,
+      "measurement_vector": "i(va_rgw4_e10_rm_n)"
+    },
+    {
+      "element": "rgw4_e10_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw4_e10_rdis_n)"
+    },
+    {
+      "element": "ngw4_e10_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185664922328536e-15,
+      "measurement_vector": "i(va_ngw4_e10_sh2_s)"
+    },
+    {
+      "element": "ngw4_e10_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823315426215e-16,
+      "measurement_vector": "i(va_ngw4_e10_porm_s)"
+    },
+    {
+      "element": "rgw4_col_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -4.5934921778494216e-14,
+      "measurement_vector": "i(va_rgw4_col_rm_n)"
+    },
+    {
+      "element": "rgw4_col_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgw4_col_rdis_n)"
+    },
+    {
+      "element": "ngw4_col_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185847173604296e-15,
+      "measurement_vector": "i(va_ngw4_col_sh2_s)"
+    },
+    {
+      "element": "ngw4_col_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135764e-16,
+      "measurement_vector": "i(va_ngw4_col_porm_s)"
+    },
+    {
+      "element": "rgc4_e1_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 4.818496301312446e-08,
+      "measurement_vector": "i(va_rgc4_e1_rm_n)"
+    },
+    {
+      "element": "rgc4_e1_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc4_e1_rdis_n)"
+    },
+    {
+      "element": "ngc4_e1_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718585937134031e-15,
+      "measurement_vector": "i(va_ngc4_e1_sh2_s)"
+    },
+    {
+      "element": "ngc4_e1_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135802e-16,
+      "measurement_vector": "i(va_ngc4_e1_porm_s)"
+    },
+    {
+      "element": "rgc4_e2_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 9.052484073848189e-08,
+      "measurement_vector": "i(va_rgc4_e2_rm_n)"
+    },
+    {
+      "element": "rgc4_e2_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc4_e2_rdis_n)"
+    },
+    {
+      "element": "ngc4_e2_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718548959602194e-15,
+      "measurement_vector": "i(va_ngc4_e2_sh2_s)"
+    },
+    {
+      "element": "ngc4_e2_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135999e-16,
+      "measurement_vector": "i(va_ngc4_e2_porm_s)"
+    },
+    {
+      "element": "rgc4_e3_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.3275730286086345e-07,
+      "measurement_vector": "i(va_rgc4_e3_rm_n)"
+    },
+    {
+      "element": "rgc4_e3_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc4_e3_rdis_n)"
+    },
+    {
+      "element": "ngc4_e3_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185347586570743e-15,
+      "measurement_vector": "i(va_ngc4_e3_sh2_s)"
+    },
+    {
+      "element": "ngc4_e3_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215137009e-16,
+      "measurement_vector": "i(va_ngc4_e3_porm_s)"
+    },
+    {
+      "element": "rgc4_e4_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.7487990827563868e-07,
+      "measurement_vector": "i(va_rgc4_e4_rm_n)"
+    },
+    {
+      "element": "rgc4_e4_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc4_e4_rdis_n)"
+    },
+    {
+      "element": "ngc4_e4_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185617629893657e-15,
+      "measurement_vector": "i(va_ngc4_e4_sh2_s)"
+    },
+    {
+      "element": "ngc4_e4_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215142122e-16,
+      "measurement_vector": "i(va_ngc4_e4_porm_s)"
+    },
+    {
+      "element": "rgc4_e5_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 2.1689005274614117e-07,
+      "measurement_vector": "i(va_rgc4_e5_rm_n)"
+    },
+    {
+      "element": "rgc4_e5_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc4_e5_rdis_n)"
+    },
+    {
+      "element": "ngc4_e5_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185594202534885e-15,
+      "measurement_vector": "i(va_ngc4_e5_sh2_s)"
+    },
+    {
+      "element": "ngc4_e5_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215168017e-16,
+      "measurement_vector": "i(va_ngc4_e5_porm_s)"
+    },
+    {
+      "element": "rgc4_e6_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 2.5878494806139347e-07,
+      "measurement_vector": "i(va_rgc4_e6_rm_n)"
+    },
+    {
+      "element": "rgc4_e6_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc4_e6_rdis_n)"
+    },
+    {
+      "element": "ngc4_e6_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185400651476797e-15,
+      "measurement_vector": "i(va_ngc4_e6_sh2_s)"
+    },
+    {
+      "element": "ngc4_e6_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.06182321529846e-16,
+      "measurement_vector": "i(va_ngc4_e6_porm_s)"
+    },
+    {
+      "element": "rgc4_e7_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 3.0056159752453136e-07,
+      "measurement_vector": "i(va_rgc4_e7_rm_n)"
+    },
+    {
+      "element": "rgc4_e7_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc4_e7_rdis_n)"
+    },
+    {
+      "element": "ngc4_e7_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185597944894175e-15,
+      "measurement_vector": "i(va_ngc4_e7_sh2_s)"
+    },
+    {
+      "element": "ngc4_e7_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215952452e-16,
+      "measurement_vector": "i(va_ngc4_e7_porm_s)"
+    },
+    {
+      "element": "rgc4_e8_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 3.42216766899199e-07,
+      "measurement_vector": "i(va_rgc4_e8_rm_n)"
+    },
+    {
+      "element": "rgc4_e8_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc4_e8_rdis_n)"
+    },
+    {
+      "element": "ngc4_e8_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185462275891108e-15,
+      "measurement_vector": "i(va_ngc4_e8_sh2_s)"
+    },
+    {
+      "element": "ngc4_e8_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.06182321921538e-16,
+      "measurement_vector": "i(va_ngc4_e8_porm_s)"
+    },
+    {
+      "element": "rgc4_e9_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 3.837469496754375e-07,
+      "measurement_vector": "i(va_rgc4_e9_rm_n)"
+    },
+    {
+      "element": "rgc4_e9_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc4_e9_rdis_n)"
+    },
+    {
+      "element": "ngc4_e9_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7186014230217516e-15,
+      "measurement_vector": "i(va_ngc4_e9_sh2_s)"
+    },
+    {
+      "element": "ngc4_e9_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823235413952e-16,
+      "measurement_vector": "i(va_ngc4_e9_porm_s)"
+    },
+    {
+      "element": "rgc4_e10_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": 4.2514832511817966e-07,
+      "measurement_vector": "i(va_rgc4_e10_rm_n)"
+    },
+    {
+      "element": "rgc4_e10_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc4_e10_rdis_n)"
+    },
+    {
+      "element": "ngc4_e10_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718566455511011e-15,
+      "measurement_vector": "i(va_ngc4_e10_sh2_s)"
+    },
+    {
+      "element": "ngc4_e10_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823315418752e-16,
+      "measurement_vector": "i(va_ngc4_e10_porm_s)"
+    },
+    {
+      "element": "rgc4_col_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -4.5934921778494216e-14,
+      "measurement_vector": "i(va_rgc4_col_rm_n)"
+    },
+    {
+      "element": "rgc4_col_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.247891289542398e-15,
+      "measurement_vector": "i(va_rgc4_col_rdis_n)"
+    },
+    {
+      "element": "ngc4_col_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7185847173604265e-15,
+      "measurement_vector": "i(va_ngc4_col_sh2_s)"
+    },
+    {
+      "element": "ngc4_col_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135764e-16,
+      "measurement_vector": "i(va_ngc4_col_porm_s)"
+    },
+    {
+      "element": "rthw12f_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -3.490724843105116e-15,
+      "measurement_vector": "i(va_rthw12f_rm_n)"
+    },
+    {
+      "element": "rthw12f_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478895954765035e-15,
+      "measurement_vector": "i(va_rthw12f_rdis_n)"
+    },
+    {
+      "element": "nthw12f_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7186640525617145e-15,
+      "measurement_vector": "i(va_nthw12f_sh2_s)"
+    },
+    {
+      "element": "nthw12f_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135764e-16,
+      "measurement_vector": "i(va_nthw12f_porm_s)"
+    },
+    {
+      "element": "rthw12r_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -3.490724843105116e-15,
+      "measurement_vector": "i(va_rthw12r_rm_n)"
+    },
+    {
+      "element": "rthw12r_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478895954765035e-15,
+      "measurement_vector": "i(va_rthw12r_rdis_n)"
+    },
+    {
+      "element": "nthw12r_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7186098424530902e-15,
+      "measurement_vector": "i(va_nthw12r_sh2_s)"
+    },
+    {
+      "element": "nthw12r_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135764e-16,
+      "measurement_vector": "i(va_nthw12r_porm_s)"
+    },
+    {
+      "element": "rthw23f_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -3.490724843105116e-15,
+      "measurement_vector": "i(va_rthw23f_rm_n)"
+    },
+    {
+      "element": "rthw23f_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478895954765035e-15,
+      "measurement_vector": "i(va_rthw23f_rdis_n)"
+    },
+    {
+      "element": "nthw23f_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7186640525617145e-15,
+      "measurement_vector": "i(va_nthw23f_sh2_s)"
+    },
+    {
+      "element": "nthw23f_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135764e-16,
+      "measurement_vector": "i(va_nthw23f_porm_s)"
+    },
+    {
+      "element": "rthw23r_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -3.490724843105116e-15,
+      "measurement_vector": "i(va_rthw23r_rm_n)"
+    },
+    {
+      "element": "rthw23r_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478895954765035e-15,
+      "measurement_vector": "i(va_rthw23r_rdis_n)"
+    },
+    {
+      "element": "nthw23r_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7186098424530902e-15,
+      "measurement_vector": "i(va_nthw23r_sh2_s)"
+    },
+    {
+      "element": "nthw23r_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135764e-16,
+      "measurement_vector": "i(va_nthw23r_porm_s)"
+    },
+    {
+      "element": "rthw34f_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -3.490724843105116e-15,
+      "measurement_vector": "i(va_rthw34f_rm_n)"
+    },
+    {
+      "element": "rthw34f_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478895954765035e-15,
+      "measurement_vector": "i(va_rthw34f_rdis_n)"
+    },
+    {
+      "element": "nthw34f_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7186098424530902e-15,
+      "measurement_vector": "i(va_nthw34f_sh2_s)"
+    },
+    {
+      "element": "nthw34f_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135764e-16,
+      "measurement_vector": "i(va_nthw34f_porm_s)"
+    },
+    {
+      "element": "rthw34r_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -3.490724843105116e-15,
+      "measurement_vector": "i(va_rthw34r_rm_n)"
+    },
+    {
+      "element": "rthw34r_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478895954765035e-15,
+      "measurement_vector": "i(va_rthw34r_rdis_n)"
+    },
+    {
+      "element": "nthw34r_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7186369475074024e-15,
+      "measurement_vector": "i(va_nthw34r_sh2_s)"
+    },
+    {
+      "element": "nthw34r_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135764e-16,
+      "measurement_vector": "i(va_nthw34r_porm_s)"
+    },
+    {
+      "element": "rsgw12f_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -5.677496141050027e-08,
+      "measurement_vector": "i(va_rsgw12f_rm_n)"
+    },
+    {
+      "element": "rsgw12f_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478929836082925e-15,
+      "measurement_vector": "i(va_rsgw12f_rdis_n)"
+    },
+    {
+      "element": "nsgw12f_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7184472121272174e-15,
+      "measurement_vector": "i(va_nsgw12f_sh2_s)"
+    },
+    {
+      "element": "nsgw12f_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135756e-16,
+      "measurement_vector": "i(va_nsgw12f_porm_s)"
+    },
+    {
+      "element": "rsgw12r_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -5.677496141050747e-08,
+      "measurement_vector": "i(va_rsgw12r_rm_n)"
+    },
+    {
+      "element": "rsgw12r_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478929836082925e-15,
+      "measurement_vector": "i(va_rsgw12r_rdis_n)"
+    },
+    {
+      "element": "nsgw12r_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7184472121272174e-15,
+      "measurement_vector": "i(va_nsgw12r_sh2_s)"
+    },
+    {
+      "element": "nsgw12r_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135756e-16,
+      "measurement_vector": "i(va_nsgw12r_porm_s)"
+    },
+    {
+      "element": "rsgw23f_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -5.67749614105062e-08,
+      "measurement_vector": "i(va_rsgw23f_rm_n)"
+    },
+    {
+      "element": "rsgw23f_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478929836082925e-15,
+      "measurement_vector": "i(va_rsgw23f_rdis_n)"
+    },
+    {
+      "element": "nsgw23f_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7184743171815295e-15,
+      "measurement_vector": "i(va_nsgw23f_sh2_s)"
+    },
+    {
+      "element": "nsgw23f_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135756e-16,
+      "measurement_vector": "i(va_nsgw23f_porm_s)"
+    },
+    {
+      "element": "rsgw23r_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -5.6774961410506625e-08,
+      "measurement_vector": "i(va_rsgw23r_rm_n)"
+    },
+    {
+      "element": "rsgw23r_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478929836082925e-15,
+      "measurement_vector": "i(va_rsgw23r_rdis_n)"
+    },
+    {
+      "element": "nsgw23r_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7184201070729053e-15,
+      "measurement_vector": "i(va_nsgw23r_sh2_s)"
+    },
+    {
+      "element": "nsgw23r_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135756e-16,
+      "measurement_vector": "i(va_nsgw23r_porm_s)"
+    },
+    {
+      "element": "rsgw34f_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -5.677496141050091e-08,
+      "measurement_vector": "i(va_rsgw34f_rm_n)"
+    },
+    {
+      "element": "rsgw34f_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478929836082925e-15,
+      "measurement_vector": "i(va_rsgw34f_rdis_n)"
+    },
+    {
+      "element": "nsgw34f_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718393002018593e-15,
+      "measurement_vector": "i(va_nsgw34f_sh2_s)"
+    },
+    {
+      "element": "nsgw34f_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135756e-16,
+      "measurement_vector": "i(va_nsgw34f_porm_s)"
+    },
+    {
+      "element": "rsgw34r_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -5.677496141050874e-08,
+      "measurement_vector": "i(va_rsgw34r_rm_n)"
+    },
+    {
+      "element": "rsgw34r_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478929836082925e-15,
+      "measurement_vector": "i(va_rsgw34r_rdis_n)"
+    },
+    {
+      "element": "nsgw34r_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718365896964281e-15,
+      "measurement_vector": "i(va_nsgw34r_sh2_s)"
+    },
+    {
+      "element": "nsgw34r_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135756e-16,
+      "measurement_vector": "i(va_nsgw34r_porm_s)"
+    },
+    {
+      "element": "rcdw12f_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -2.174390326809255e-15,
+      "measurement_vector": "i(va_rcdw12f_rm_n)"
+    },
+    {
+      "element": "rcdw12f_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478895954765035e-15,
+      "measurement_vector": "i(va_rcdw12f_rdis_n)"
+    },
+    {
+      "element": "ncdw12f_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7186369475074024e-15,
+      "measurement_vector": "i(va_ncdw12f_sh2_s)"
+    },
+    {
+      "element": "ncdw12f_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135764e-16,
+      "measurement_vector": "i(va_ncdw12f_porm_s)"
+    },
+    {
+      "element": "ncdw12f_kp",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.6043996894894555e-15,
+      "measurement_vector": "i(va_ncdw12f_kp_s)"
+    },
+    {
+      "element": "rcdw12r_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -2.174390326809255e-15,
+      "measurement_vector": "i(va_rcdw12r_rm_n)"
+    },
+    {
+      "element": "rcdw12r_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478895954765035e-15,
+      "measurement_vector": "i(va_rcdw12r_rdis_n)"
+    },
+    {
+      "element": "ncdw12r_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718745367724651e-15,
+      "measurement_vector": "i(va_ncdw12r_sh2_s)"
+    },
+    {
+      "element": "ncdw12r_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135764e-16,
+      "measurement_vector": "i(va_ncdw12r_porm_s)"
+    },
+    {
+      "element": "ncdw12r_kp",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.604399689489457e-15,
+      "measurement_vector": "i(va_ncdw12r_kp_s)"
+    },
+    {
+      "element": "rcdw23f_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -2.174390326809255e-15,
+      "measurement_vector": "i(va_rcdw23f_rm_n)"
+    },
+    {
+      "element": "rcdw23f_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478895954765035e-15,
+      "measurement_vector": "i(va_rcdw23f_rdis_n)"
+    },
+    {
+      "element": "ncdw23f_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7188537879418995e-15,
+      "measurement_vector": "i(va_ncdw23f_sh2_s)"
+    },
+    {
+      "element": "ncdw23f_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135764e-16,
+      "measurement_vector": "i(va_ncdw23f_porm_s)"
+    },
+    {
+      "element": "ncdw23f_kp",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.6043996894894555e-15,
+      "measurement_vector": "i(va_ncdw23f_kp_s)"
+    },
+    {
+      "element": "rcdw23r_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -2.174390326809255e-15,
+      "measurement_vector": "i(va_rcdw23r_rm_n)"
+    },
+    {
+      "element": "rcdw23r_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478895954765035e-15,
+      "measurement_vector": "i(va_rcdw23r_rdis_n)"
+    },
+    {
+      "element": "ncdw23r_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7187182626703388e-15,
+      "measurement_vector": "i(va_ncdw23r_sh2_s)"
+    },
+    {
+      "element": "ncdw23r_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135764e-16,
+      "measurement_vector": "i(va_ncdw23r_porm_s)"
+    },
+    {
+      "element": "ncdw23r_kp",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.604399689489455e-15,
+      "measurement_vector": "i(va_ncdw23r_kp_s)"
+    },
+    {
+      "element": "rcdw34f_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -2.174390326809255e-15,
+      "measurement_vector": "i(va_rcdw34f_rm_n)"
+    },
+    {
+      "element": "rcdw34f_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478895954765035e-15,
+      "measurement_vector": "i(va_rcdw34f_rdis_n)"
+    },
+    {
+      "element": "ncdw34f_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7187182626703388e-15,
+      "measurement_vector": "i(va_ncdw34f_sh2_s)"
+    },
+    {
+      "element": "ncdw34f_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135764e-16,
+      "measurement_vector": "i(va_ncdw34f_porm_s)"
+    },
+    {
+      "element": "ncdw34f_kp",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.604399689489455e-15,
+      "measurement_vector": "i(va_ncdw34f_kp_s)"
+    },
+    {
+      "element": "rcdw34r_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -2.174390326809255e-15,
+      "measurement_vector": "i(va_rcdw34r_rm_n)"
+    },
+    {
+      "element": "rcdw34r_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478895954765035e-15,
+      "measurement_vector": "i(va_rcdw34r_rdis_n)"
+    },
+    {
+      "element": "ncdw34r_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7187182626703388e-15,
+      "measurement_vector": "i(va_ncdw34r_sh2_s)"
+    },
+    {
+      "element": "ncdw34r_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135764e-16,
+      "measurement_vector": "i(va_ncdw34r_porm_s)"
+    },
+    {
+      "element": "ncdw34r_kp",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.604399689489455e-15,
+      "measurement_vector": "i(va_ncdw34r_kp_s)"
+    },
+    {
+      "element": "rthc12f_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -3.490724843105116e-15,
+      "measurement_vector": "i(va_rthc12f_rm_n)"
+    },
+    {
+      "element": "rthc12f_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478895954765035e-15,
+      "measurement_vector": "i(va_rthc12f_rdis_n)"
+    },
+    {
+      "element": "nthc12f_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7186098424530902e-15,
+      "measurement_vector": "i(va_nthc12f_sh2_s)"
+    },
+    {
+      "element": "nthc12f_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135764e-16,
+      "measurement_vector": "i(va_nthc12f_porm_s)"
+    },
+    {
+      "element": "rthc12r_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -3.490724843105116e-15,
+      "measurement_vector": "i(va_rthc12r_rm_n)"
+    },
+    {
+      "element": "rthc12r_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478895954765035e-15,
+      "measurement_vector": "i(va_rthc12r_rdis_n)"
+    },
+    {
+      "element": "nthc12r_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7186640525617145e-15,
+      "measurement_vector": "i(va_nthc12r_sh2_s)"
+    },
+    {
+      "element": "nthc12r_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135764e-16,
+      "measurement_vector": "i(va_nthc12r_porm_s)"
+    },
+    {
+      "element": "rthc23f_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -3.490724843105116e-15,
+      "measurement_vector": "i(va_rthc23f_rm_n)"
+    },
+    {
+      "element": "rthc23f_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478895954765035e-15,
+      "measurement_vector": "i(va_rthc23f_rdis_n)"
+    },
+    {
+      "element": "nthc23f_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7186911576160266e-15,
+      "measurement_vector": "i(va_nthc23f_sh2_s)"
+    },
+    {
+      "element": "nthc23f_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135764e-16,
+      "measurement_vector": "i(va_nthc23f_porm_s)"
+    },
+    {
+      "element": "rthc23r_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -3.490724843105116e-15,
+      "measurement_vector": "i(va_rthc23r_rm_n)"
+    },
+    {
+      "element": "rthc23r_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478895954765035e-15,
+      "measurement_vector": "i(va_rthc23r_rdis_n)"
+    },
+    {
+      "element": "nthc23r_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7186911576160266e-15,
+      "measurement_vector": "i(va_nthc23r_sh2_s)"
+    },
+    {
+      "element": "nthc23r_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135764e-16,
+      "measurement_vector": "i(va_nthc23r_porm_s)"
+    },
+    {
+      "element": "rthc34f_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -3.490724843105116e-15,
+      "measurement_vector": "i(va_rthc34f_rm_n)"
+    },
+    {
+      "element": "rthc34f_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478895954765035e-15,
+      "measurement_vector": "i(va_rthc34f_rdis_n)"
+    },
+    {
+      "element": "nthc34f_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718772472778963e-15,
+      "measurement_vector": "i(va_nthc34f_sh2_s)"
+    },
+    {
+      "element": "nthc34f_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135764e-16,
+      "measurement_vector": "i(va_nthc34f_porm_s)"
+    },
+    {
+      "element": "rthc34r_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -3.490724843105116e-15,
+      "measurement_vector": "i(va_rthc34r_rm_n)"
+    },
+    {
+      "element": "rthc34r_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478895954765035e-15,
+      "measurement_vector": "i(va_rthc34r_rdis_n)"
+    },
+    {
+      "element": "nthc34r_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7187182626703388e-15,
+      "measurement_vector": "i(va_nthc34r_sh2_s)"
+    },
+    {
+      "element": "nthc34r_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135764e-16,
+      "measurement_vector": "i(va_nthc34r_porm_s)"
+    },
+    {
+      "element": "rsgc12f_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -5.677496141050027e-08,
+      "measurement_vector": "i(va_rsgc12f_rm_n)"
+    },
+    {
+      "element": "rsgc12f_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478929836082925e-15,
+      "measurement_vector": "i(va_rsgc12f_rdis_n)"
+    },
+    {
+      "element": "nsgc12f_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7184201070729053e-15,
+      "measurement_vector": "i(va_nsgc12f_sh2_s)"
+    },
+    {
+      "element": "nsgc12f_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135756e-16,
+      "measurement_vector": "i(va_nsgc12f_porm_s)"
+    },
+    {
+      "element": "rsgc12r_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -5.677496141050747e-08,
+      "measurement_vector": "i(va_rsgc12r_rm_n)"
+    },
+    {
+      "element": "rsgc12r_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478929836082925e-15,
+      "measurement_vector": "i(va_rsgc12r_rdis_n)"
+    },
+    {
+      "element": "nsgc12r_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7184743171815295e-15,
+      "measurement_vector": "i(va_nsgc12r_sh2_s)"
+    },
+    {
+      "element": "nsgc12r_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135756e-16,
+      "measurement_vector": "i(va_nsgc12r_porm_s)"
+    },
+    {
+      "element": "rsgc23f_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -5.67749614105062e-08,
+      "measurement_vector": "i(va_rsgc23f_rm_n)"
+    },
+    {
+      "element": "rsgc23f_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478929836082925e-15,
+      "measurement_vector": "i(va_rsgc23f_rdis_n)"
+    },
+    {
+      "element": "nsgc23f_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7182574767470324e-15,
+      "measurement_vector": "i(va_nsgc23f_sh2_s)"
+    },
+    {
+      "element": "nsgc23f_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135756e-16,
+      "measurement_vector": "i(va_nsgc23f_porm_s)"
+    },
+    {
+      "element": "rsgc23r_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -5.6774961410506625e-08,
+      "measurement_vector": "i(va_rsgc23r_rm_n)"
+    },
+    {
+      "element": "rsgc23r_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478929836082925e-15,
+      "measurement_vector": "i(va_rsgc23r_rdis_n)"
+    },
+    {
+      "element": "nsgc23r_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718393002018593e-15,
+      "measurement_vector": "i(va_nsgc23r_sh2_s)"
+    },
+    {
+      "element": "nsgc23r_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135756e-16,
+      "measurement_vector": "i(va_nsgc23r_porm_s)"
+    },
+    {
+      "element": "rsgc34f_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -5.677496141050091e-08,
+      "measurement_vector": "i(va_rsgc34f_rm_n)"
+    },
+    {
+      "element": "rsgc34f_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478929836082925e-15,
+      "measurement_vector": "i(va_rsgc34f_rdis_n)"
+    },
+    {
+      "element": "nsgc34f_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7184201070729053e-15,
+      "measurement_vector": "i(va_nsgc34f_sh2_s)"
+    },
+    {
+      "element": "nsgc34f_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135756e-16,
+      "measurement_vector": "i(va_nsgc34f_porm_s)"
+    },
+    {
+      "element": "rsgc34r_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -5.677496141050874e-08,
+      "measurement_vector": "i(va_rsgc34r_rm_n)"
+    },
+    {
+      "element": "rsgc34r_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478929836082925e-15,
+      "measurement_vector": "i(va_rsgc34r_rdis_n)"
+    },
+    {
+      "element": "nsgc34r_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7184201070729053e-15,
+      "measurement_vector": "i(va_nsgc34r_sh2_s)"
+    },
+    {
+      "element": "nsgc34r_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135756e-16,
+      "measurement_vector": "i(va_nsgc34r_porm_s)"
+    },
+    {
+      "element": "rcdc12f_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -2.174390326809255e-15,
+      "measurement_vector": "i(va_rcdc12f_rm_n)"
+    },
+    {
+      "element": "rcdc12f_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478895954765035e-15,
+      "measurement_vector": "i(va_rcdc12f_rdis_n)"
+    },
+    {
+      "element": "ncdc12f_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718799577833275e-15,
+      "measurement_vector": "i(va_ncdc12f_sh2_s)"
+    },
+    {
+      "element": "ncdc12f_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135764e-16,
+      "measurement_vector": "i(va_ncdc12f_porm_s)"
+    },
+    {
+      "element": "ncdc12f_kp",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.6043996894894547e-15,
+      "measurement_vector": "i(va_ncdc12f_kp_s)"
+    },
+    {
+      "element": "rcdc12r_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -2.174390326809255e-15,
+      "measurement_vector": "i(va_rcdc12r_rm_n)"
+    },
+    {
+      "element": "rcdc12r_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478895954765035e-15,
+      "measurement_vector": "i(va_rcdc12r_rdis_n)"
+    },
+    {
+      "element": "ncdc12r_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718745367724651e-15,
+      "measurement_vector": "i(va_ncdc12r_sh2_s)"
+    },
+    {
+      "element": "ncdc12r_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135764e-16,
+      "measurement_vector": "i(va_ncdc12r_porm_s)"
+    },
+    {
+      "element": "ncdc12r_kp",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.6043996894894555e-15,
+      "measurement_vector": "i(va_ncdc12r_kp_s)"
+    },
+    {
+      "element": "rcdc23f_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -2.174390326809255e-15,
+      "measurement_vector": "i(va_rcdc23f_rm_n)"
+    },
+    {
+      "element": "rcdc23f_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478895954765035e-15,
+      "measurement_vector": "i(va_rcdc23f_rdis_n)"
+    },
+    {
+      "element": "ncdc23f_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.718772472778963e-15,
+      "measurement_vector": "i(va_ncdc23f_sh2_s)"
+    },
+    {
+      "element": "ncdc23f_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135764e-16,
+      "measurement_vector": "i(va_ncdc23f_porm_s)"
+    },
+    {
+      "element": "ncdc23f_kp",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.6043996894894547e-15,
+      "measurement_vector": "i(va_ncdc23f_kp_s)"
+    },
+    {
+      "element": "rcdc23r_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -2.174390326809255e-15,
+      "measurement_vector": "i(va_rcdc23r_rm_n)"
+    },
+    {
+      "element": "rcdc23r_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478895954765035e-15,
+      "measurement_vector": "i(va_rcdc23r_rdis_n)"
+    },
+    {
+      "element": "ncdc23r_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7189079980505237e-15,
+      "measurement_vector": "i(va_ncdc23r_sh2_s)"
+    },
+    {
+      "element": "ncdc23r_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135764e-16,
+      "measurement_vector": "i(va_ncdc23r_porm_s)"
+    },
+    {
+      "element": "ncdc23r_kp",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.604399689489457e-15,
+      "measurement_vector": "i(va_ncdc23r_kp_s)"
+    },
+    {
+      "element": "rcdc34f_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -2.174390326809255e-15,
+      "measurement_vector": "i(va_rcdc34f_rm_n)"
+    },
+    {
+      "element": "rcdc34f_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478895954765035e-15,
+      "measurement_vector": "i(va_rcdc34f_rdis_n)"
+    },
+    {
+      "element": "ncdc34f_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7186911576160266e-15,
+      "measurement_vector": "i(va_ncdc34f_sh2_s)"
+    },
+    {
+      "element": "ncdc34f_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135764e-16,
+      "measurement_vector": "i(va_ncdc34f_porm_s)"
+    },
+    {
+      "element": "ncdc34f_kp",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.6043996894894555e-15,
+      "measurement_vector": "i(va_ncdc34f_kp_s)"
+    },
+    {
+      "element": "rcdc34r_rm",
+      "kind": "R",
+      "current_out_of_vrest_A": -2.174390326809255e-15,
+      "measurement_vector": "i(va_rcdc34r_rm_n)"
+    },
+    {
+      "element": "rcdc34r_rdis",
+      "kind": "R",
+      "current_out_of_vrest_A": 1.2478895954765035e-15,
+      "measurement_vector": "i(va_rcdc34r_rdis_n)"
+    },
+    {
+      "element": "ncdc34r_sh2",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.7186369475074024e-15,
+      "measurement_vector": "i(va_ncdc34r_sh2_s)"
+    },
+    {
+      "element": "ncdc34r_porm",
+      "kind": "M",
+      "current_out_of_vrest_A": 9.061823215135764e-16,
+      "measurement_vector": "i(va_ncdc34r_porm_s)"
+    },
+    {
+      "element": "ncdc34r_kp",
+      "kind": "M",
+      "current_out_of_vrest_A": 2.604399689489455e-15,
+      "measurement_vector": "i(va_ncdc34r_kp_s)"
+    },
+    {
+      "element": "cpar_vrest",
+      "kind": "C",
+      "current_out_of_vrest_A": 8.402566836762659e-19,
+      "measurement_vector": "i(va_cpar_vrest_p)"
+    }
+  ],
+  "measurement_is_independent_of_divider_inference": true,
+  "upper_divider_voltage_derived_current_A": 0.0019736030111661444,
+  "lower_divider_voltage_derived_current_A": 0.0019552946675733913,
+  "reference_dc_capacitor_current_expected_A": 0
+}

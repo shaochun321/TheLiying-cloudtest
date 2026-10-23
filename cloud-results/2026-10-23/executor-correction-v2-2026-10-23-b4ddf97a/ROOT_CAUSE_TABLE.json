@@ -1,0 +1,194 @@
+{
+  "original_error_retained": {
+    "commit": "62a6b07e106e46d4bdb3652f63f34c728b46afd8",
+    "start_index": 40,
+    "result": "INVALID_TERMINATED",
+    "scientific_result": "UNMEASURED",
+    "not_deleted_or_refunded": true
+  },
+  "corrected_diagnostic": {
+    "case_id": "C0_CORRECTED_50MS",
+    "status": "PASS",
+    "actual_solver_starts": 1,
+    "solver_wall_s": 49.538144078003825,
+    "returncode": 0,
+    "actual_end_s": 0.05,
+    "raw_sha256": "59f4fa490060103d954aec4deee3e9157e1f7e0fad6e11c09013243c1b3b5542",
+    "raw_bytes": 8058605,
+    "original_judge_result": null,
+    "engineering_result": null,
+    "evidence_directory": "runs/C0_CORRECTED_50MS"
+  },
+  "startup": {
+    "evidence": "STARTUP_CAUSAL_OBSERVATION.json",
+    "facts": [
+      {
+        "core": "cdw12f_",
+        "first_q_up_s": 0.010213751373666348,
+        "first_q_down_s": 0.011610001943375888,
+        "sample_time_s": 0.010213751373666348,
+        "sample_V": {
+          "vdd": 1.4824058141465164,
+          "vrest": 0.1870267271865983,
+          "vthe": 0.27044973220542945,
+          "vthr": 0.22419842046496205,
+          "porc": 0.0034119870905468066,
+          "porx": 0.002730499037329888,
+          "por_hold": 1.4824054091509409,
+          "por_ok": 2.8448303282558084e-06,
+          "cdw12f_vm": 0.05774170478703022,
+          "cdw12f_h": 0.2235523386017608,
+          "cdw12f_ko1": 0.9419339769543505,
+          "cdw12f_q": 1.482405739723778,
+          "cdw12f_qb": 0.0010026214634811426,
+          "cdw12f_rec": 0.3879002889481684
+        },
+        "q_to_vdd": 0.9999999497959751,
+        "vm_minus_h_V": -0.16581063381473057,
+        "por_membrane_switch_vgs_V": 1.2953786819643427,
+        "por_threshold_switch_vgs_V": 1.2582069886859788,
+        "available_por_terminal_currents_A": {
+          "i(va_ncdw12f_porm_d)": -2.1554497180535447e-05
+        },
+        "missing_por_current": null,
+        "q_max_V": 1.6932929791882543
+      },
+      {
+        "core": "gw1_col_",
+        "first_q_up_s": 0.01021375134947679,
+        "first_q_down_s": 0.010300179767300372,
+        "sample_time_s": 0.01021375134947679,
+        "sample_V": {
+          "vdd": 1.4824058105682183,
+          "vrest": 0.18702672652833893,
+          "vthe": 0.2704497311085013,
+          "vthr": 0.22419841955950184,
+          "porc": 0.0034119870742957306,
+          "porx": 0.0027304990243253477,
+          "por_hold": 1.4824054055726452,
+          "por_ok": 2.8448303241052114e-06,
+          "gw1_col_vm": 0.16772275564340877,
+          "gw1_col_h": 0.269595536433554,
+          "gw1_col_ko1": 0.7662388753468274,
+          "gw1_col_q": 1.482405739723778,
+          "gw1_col_qb": 0.061838372638509935,
+          "gw1_col_rec": 0.3822994171238536
+        },
+        "q_to_vdd": 0.9999999522098202,
+        "vm_minus_h_V": -0.10187278079014522,
+        "por_membrane_switch_vgs_V": 1.2953786790443063,
+        "por_threshold_switch_vgs_V": 1.211955674464144,
+        "available_por_terminal_currents_A": {},
+        "missing_por_current": "UNMEASURED",
+        "q_max_V": 1.4945224413625935
+      },
+      {
+        "core": "gw1_e1_",
+        "first_q_up_s": 0.010213751351490219,
+        "first_q_down_s": 0.010304432701766807,
+        "sample_time_s": 0.010213751351490219,
+        "sample_V": {
+          "vdd": 1.4824058108660598,
+          "vrest": 0.18702672658312947,
+          "vthe": 0.27044973119980464,
+          "vthr": 0.22419841963486828,
+          "porc": 0.003411987075648397,
+          "porx": 0.002730499025407787,
+          "por_hold": 1.4824054058704865,
+          "por_ok": 2.8448303244506886e-06,
+          "gw1_e1_vm": 0.1703087464406205,
+          "gw1_e1_h": 0.269594740077182,
+          "gw1_e1_ko1": 0.7674051822437248,
+          "gw1_e1_q": 1.482405739723778,
+          "gw1_e1_qb": 0.0594917123794792,
+          "gw1_e1_rec": 0.38240060374367996
+        },
+        "q_to_vdd": 0.9999999520089025,
+        "vm_minus_h_V": -0.09928599363656149,
+        "por_membrane_switch_vgs_V": 1.295378679287357,
+        "por_threshold_switch_vgs_V": 1.2119556746706819,
+        "available_por_terminal_currents_A": {},
+        "missing_por_current": "UNMEASURED",
+        "q_max_V": 1.4953237712051004
+      },
+      {
+        "core": "sgw12f_",
+        "first_q_up_s": 0.010213751365858928,
+        "first_q_down_s": 0.011810877180287551,
+        "sample_time_s": 0.010213751365858928,
+        "sample_V": {
+          "vdd": 1.4824058129915854,
+          "vrest": 0.18702672697413858,
+          "vthe": 0.27044973185138504,
+          "vthr": 0.2241984201727158,
+          "porc": 0.003411987085301611,
+          "porx": 0.0027304990331325435,
+          "por_hold": 1.4824054079960105,
+          "por_ok": 2.844830326916162e-06,
+          "sgw12f_vm": 0.16902969614197247,
+          "sgw12f_h": 0.22355220216846947,
+          "sgw12f_ko1": 0.9612918874807105,
+          "sgw12f_q": 1.482405739723778,
+          "sgw12f_qb": 0.0006236768539760069,
+          "sgw12f_rec": 0.3879568448896101
+        },
+        "q_to_vdd": 0.9999999505750674,
+        "vm_minus_h_V": -0.054522506026497,
+        "por_membrane_switch_vgs_V": 1.295378681021872,
+        "por_threshold_switch_vgs_V": 1.2582069878232947,
+        "available_por_terminal_currents_A": {
+          "i(va_nsgw12f_porm_d)": -2.7559638614256e-06
+        },
+        "missing_por_current": null,
+        "q_max_V": 1.724506627652023
+      },
+      {
+        "core": "thw12f_",
+        "first_q_up_s": 0.010213751373666348,
+        "first_q_down_s": 0.01161000194341317,
+        "sample_time_s": 0.010213751373666348,
+        "sample_V": {
+          "vdd": 1.4824058141465164,
+          "vrest": 0.1870267271865983,
+          "vthe": 0.27044973220542945,
+          "vthr": 0.22419842046496205,
+          "porc": 0.0034119870905468066,
+          "porx": 0.002730499037329888,
+          "por_hold": 1.4824054091509409,
+          "por_ok": 2.8448303282558084e-06,
+          "thw12f_vm": 0.05774170494118211,
+          "thw12f_h": 0.2235523386017606,
+          "thw12f_ko1": 0.9419339769582409,
+          "thw12f_q": 1.482405739723778,
+          "thw12f_qb": 0.001002621463384305,
+          "thw12f_rec": 0.38790028894817646
+        },
+        "q_to_vdd": 0.9999999497959751,
+        "vm_minus_h_V": -0.1658106336605785,
+        "por_membrane_switch_vgs_V": 1.2953786819643427,
+        "por_threshold_switch_vgs_V": 1.2582069886859788,
+        "available_por_terminal_currents_A": {
+          "i(va_nthw12f_porm_d)": -2.1554497152479714e-05
+        },
+        "missing_por_current": null,
+        "q_max_V": 1.693292979197838
+      }
+    ],
+    "interpretation": "At the old absolute crossing threshold, measured POR hold is high, POR ok is near zero, and vm<h in every observed core. Comparator o1 nevertheless drives the unchanged inverter chain into rail-tracking q with qb low, causing actual recovery/activity-state charging. Earliest different-stage crossing times within roughly 25ps cannot establish serial causality; common power-up transient is directly measured.",
+    "remaining_uncertainty": "Sub-rail/low-voltage internal device-current decomposition was not measured by the original diagnostic. Newly added clamp terminal currents are measured in candidate smoke only if reached."
+  },
+  "reference": {
+    "prior_evidence": "offline/original-dc-load.json",
+    "no_old_raw_download_or_rehash": true,
+    "missing_old_mos_currents_remain_unmeasured": true,
+    "candidate_design": "CANDIDATE_DESIGN.json",
+    "candidate_actual_evidence": "runs/DC_3/engineering-output.json"
+  },
+  "model_domain_blocker": {
+    "evidence": "MODEL_DOMAIN_FAILURE_WINDOWS.json",
+    "original_devices": 8,
+    "same_eight_already_violate_in_original_50ms": true,
+    "new_clamps_outside_domain": false,
+    "implication": "Candidate remains unqualified. Expanded complete-voltage observation reveals a preexisting model-range blocker; original limited-coverage judgments and stopped records are preserved, not rewritten."
+  }
+}

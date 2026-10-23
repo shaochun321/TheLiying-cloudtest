@@ -1,0 +1,257 @@
+{
+  "result": "CONFIRMED_MODEL_DOMAIN_BLOCKER",
+  "scope": "Targeted offline read only, eight failing original devices; no new solve or RAW rehash.",
+  "new_clamps_outside_domain": false,
+  "all_failure_devices_present_in_original": true,
+  "original_50ms_already_violation_count": 8,
+  "devices": [
+    {
+      "device": "ngw1_cin_cp",
+      "terminal_nodes": {
+        "d": "gw1_col_vm",
+        "g": "ilimp_n",
+        "s": "gw1_cin_x",
+        "b": "vsrc"
+      },
+      "failed_quantity": "abs(Vs-Vb)",
+      "strict_limit_V": 2.0,
+      "candidate_first_violating_sample_s": 0.01653807996217132,
+      "candidate_peak_abs_Vsb": 2.4575592997198177,
+      "candidate_peak_time_s": 0.020163012393134574,
+      "candidate_peak_terminal_V": {
+        "d": 0.6868600632278007,
+        "g": 2.041068671744697,
+        "s": 0.5424407002801824,
+        "b": 3.0
+      },
+      "first_error_windows": [
+        {
+          "first_sample_s": 0.01653807996217132,
+          "last_sample_s": 0.5551026829031523,
+          "sample_count": 4317
+        }
+      ],
+      "original_corrected_50ms_diagnostic_already_violates": true,
+      "original_first_violating_sample_s": 0.016617713184652747,
+      "original_peak_abs_Vsb_0_50ms": 2.4570445420605633,
+      "causal_limit": "Comparisons show presence in original 50ms diagnostic; they do not prove identical long-term behavior or a unique physical root cause."
+    },
+    {
+      "device": "ngw2_cin_cp",
+      "terminal_nodes": {
+        "d": "gw2_col_vm",
+        "g": "ilimp_n",
+        "s": "gw2_cin_x",
+        "b": "vsrc"
+      },
+      "failed_quantity": "abs(Vs-Vb)",
+      "strict_limit_V": 2.0,
+      "candidate_first_violating_sample_s": 0.01653807996217132,
+      "candidate_peak_abs_Vsb": 2.457559299719817,
+      "candidate_peak_time_s": 0.020163012393134574,
+      "candidate_peak_terminal_V": {
+        "d": 0.6868600632278007,
+        "g": 2.041068671744697,
+        "s": 0.5424407002801832,
+        "b": 3.0
+      },
+      "first_error_windows": [
+        {
+          "first_sample_s": 0.01653807996217132,
+          "last_sample_s": 0.5551026829031523,
+          "sample_count": 4317
+        }
+      ],
+      "original_corrected_50ms_diagnostic_already_violates": true,
+      "original_first_violating_sample_s": 0.016617713184652747,
+      "original_peak_abs_Vsb_0_50ms": 2.4570445420605624,
+      "causal_limit": "Comparisons show presence in original 50ms diagnostic; they do not prove identical long-term behavior or a unique physical root cause."
+    },
+    {
+      "device": "nspwi1_cp",
+      "terminal_nodes": {
+        "d": "spw1",
+        "g": "irefp_n",
+        "s": "spwi1_x",
+        "b": "vsrc"
+      },
+      "failed_quantity": "abs(Vs-Vb)",
+      "strict_limit_V": 2.0,
+      "candidate_first_violating_sample_s": 0.01591307996217132,
+      "candidate_peak_abs_Vsb": 2.5649574261882497,
+      "candidate_peak_time_s": 0.02011319997543638,
+      "candidate_peak_terminal_V": {
+        "d": 0.06028336119028427,
+        "g": 2.0652917993974245,
+        "s": 0.43504257381175016,
+        "b": 3.0
+      },
+      "first_error_windows": [
+        {
+          "first_sample_s": 0.01591307996217132,
+          "last_sample_s": 0.6849776829031957,
+          "sample_count": 5361
+        }
+      ],
+      "original_corrected_50ms_diagnostic_already_violates": true,
+      "original_first_violating_sample_s": 0.015867713184652747,
+      "original_peak_abs_Vsb_0_50ms": 2.5644196015800653,
+      "causal_limit": "Comparisons show presence in original 50ms diagnostic; they do not prove identical long-term behavior or a unique physical root cause."
+    },
+    {
+      "device": "nspwi2_cp",
+      "terminal_nodes": {
+        "d": "spw2",
+        "g": "irefp_n",
+        "s": "spwi2_x",
+        "b": "vsrc"
+      },
+      "failed_quantity": "abs(Vs-Vb)",
+      "strict_limit_V": 2.0,
+      "candidate_first_violating_sample_s": 0.01591307996217132,
+      "candidate_peak_abs_Vsb": 2.5649574261892463,
+      "candidate_peak_time_s": 0.02011319997543638,
+      "candidate_peak_terminal_V": {
+        "d": 0.06028323616022532,
+        "g": 2.0652917993974245,
+        "s": 0.43504257381075356,
+        "b": 3.0
+      },
+      "first_error_windows": [
+        {
+          "first_sample_s": 0.01591307996217132,
+          "last_sample_s": 0.6849776829031957,
+          "sample_count": 5361
+        }
+      ],
+      "original_corrected_50ms_diagnostic_already_violates": true,
+      "original_first_violating_sample_s": 0.015867713184652747,
+      "original_peak_abs_Vsb_0_50ms": 2.5644196015810596,
+      "causal_limit": "Comparisons show presence in original 50ms diagnostic; they do not prove identical long-term behavior or a unique physical root cause."
+    },
+    {
+      "device": "nspwi3_cp",
+      "terminal_nodes": {
+        "d": "spw3",
+        "g": "irefp_n",
+        "s": "spwi3_x",
+        "b": "vsrc"
+      },
+      "failed_quantity": "abs(Vs-Vb)",
+      "strict_limit_V": 2.0,
+      "candidate_first_violating_sample_s": 0.01578807996217132,
+      "candidate_peak_abs_Vsb": 2.579687281763412,
+      "candidate_peak_time_s": 0.02011319997543638,
+      "candidate_peak_terminal_V": {
+        "d": 0.06028324746682092,
+        "g": 2.0652917993974245,
+        "s": 0.4203127182365881,
+        "b": 3.0
+      },
+      "first_error_windows": [
+        {
+          "first_sample_s": 0.01578807996217132,
+          "last_sample_s": 0.7018526829032014,
+          "sample_count": 5497
+        }
+      ],
+      "original_corrected_50ms_diagnostic_already_violates": true,
+      "original_first_violating_sample_s": 0.015742713184652746,
+      "original_peak_abs_Vsb_0_50ms": 2.57921976470439,
+      "causal_limit": "Comparisons show presence in original 50ms diagnostic; they do not prove identical long-term behavior or a unique physical root cause."
+    },
+    {
+      "device": "nspwi4_cp",
+      "terminal_nodes": {
+        "d": "spw4",
+        "g": "irefp_n",
+        "s": "spwi4_x",
+        "b": "vsrc"
+      },
+      "failed_quantity": "abs(Vs-Vb)",
+      "strict_limit_V": 2.0,
+      "candidate_first_violating_sample_s": 0.01578807996217132,
+      "candidate_peak_abs_Vsb": 2.5796872817633436,
+      "candidate_peak_time_s": 0.02011319997543638,
+      "candidate_peak_terminal_V": {
+        "d": 0.060283680194570644,
+        "g": 2.0652917993974245,
+        "s": 0.4203127182366563,
+        "b": 3.0
+      },
+      "first_error_windows": [
+        {
+          "first_sample_s": 0.01578807996217132,
+          "last_sample_s": 0.7018526829032014,
+          "sample_count": 5497
+        }
+      ],
+      "original_corrected_50ms_diagnostic_already_violates": true,
+      "original_first_violating_sample_s": 0.015742713184652746,
+      "original_peak_abs_Vsb_0_50ms": 2.579219764704327,
+      "causal_limit": "Comparisons show presence in original 50ms diagnostic; they do not prove identical long-term behavior or a unique physical root cause."
+    },
+    {
+      "device": "nagw12f_cp",
+      "terminal_nodes": {
+        "d": "load_pos",
+        "g": "irefp_n",
+        "s": "agw12f_x",
+        "b": "vsrc"
+      },
+      "failed_quantity": "abs(Vs-Vb)",
+      "strict_limit_V": 2.0,
+      "candidate_first_violating_sample_s": 0.01641307996217132,
+      "candidate_peak_abs_Vsb": 2.475339925597003,
+      "candidate_peak_time_s": 0.020163012393134574,
+      "candidate_peak_terminal_V": {
+        "d": 0.8376868071368625,
+        "g": 2.067780363450175,
+        "s": 0.524660074402997,
+        "b": 3.0
+      },
+      "first_error_windows": [
+        {
+          "first_sample_s": 0.01641307996217132,
+          "last_sample_s": 0.5753526829031591,
+          "sample_count": 4480
+        }
+      ],
+      "original_corrected_50ms_diagnostic_already_violates": true,
+      "original_first_violating_sample_s": 0.016492713184652747,
+      "original_peak_abs_Vsb_0_50ms": 2.4748806001807413,
+      "causal_limit": "Comparisons show presence in original 50ms diagnostic; they do not prove identical long-term behavior or a unique physical root cause."
+    },
+    {
+      "device": "nagw12r_cp",
+      "terminal_nodes": {
+        "d": "load_neg",
+        "g": "irefp_n",
+        "s": "agw12r_x",
+        "b": "vsrc"
+      },
+      "failed_quantity": "abs(Vs-Vb)",
+      "strict_limit_V": 2.0,
+      "candidate_first_violating_sample_s": 0.01641307996217132,
+      "candidate_peak_abs_Vsb": 2.475339925597003,
+      "candidate_peak_time_s": 0.020163012393134574,
+      "candidate_peak_terminal_V": {
+        "d": 0.8376868071368625,
+        "g": 2.067780363450175,
+        "s": 0.524660074402997,
+        "b": 3.0
+      },
+      "first_error_windows": [
+        {
+          "first_sample_s": 0.01641307996217132,
+          "last_sample_s": 0.5753526829031591,
+          "sample_count": 4480
+        }
+      ],
+      "original_corrected_50ms_diagnostic_already_violates": true,
+      "original_first_violating_sample_s": 0.016492713184652747,
+      "original_peak_abs_Vsb_0_50ms": 2.4748806001807413,
+      "causal_limit": "Comparisons show presence in original 50ms diagnostic; they do not prove identical long-term behavior or a unique physical root cause."
+    }
+  ]
+}

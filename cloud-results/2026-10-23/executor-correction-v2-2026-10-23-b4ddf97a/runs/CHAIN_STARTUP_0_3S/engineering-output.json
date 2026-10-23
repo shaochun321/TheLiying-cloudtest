@@ -1,0 +1,3234 @@
+{
+  "result": "FAIL",
+  "kind": "ENGINEERING_DIAGNOSTIC_ONLY",
+  "full_chain_qualification_claimed": false,
+  "failures": [
+    "full model-domain coverage/range"
+  ],
+  "missing": [],
+  "actual_end_s": 3.0,
+  "threshold_V": 1.4763926152474454,
+  "por_release_and_settle": true,
+  "por_hold_falling_edges_s": [
+    2.69915711765091
+  ],
+  "por_ok_rising_edges_s": [
+    2.699157136194259
+  ],
+  "logic_events": {
+    "v(gw1_e1_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.4640758563869143
+    },
+    "v(gw1_e2_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.46407585626197645
+    },
+    "v(gw1_e3_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.464075856137063
+    },
+    "v(gw1_e4_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.4640758560121733
+    },
+    "v(gw1_e5_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.46407585588730726
+    },
+    "v(gw1_e6_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.46407585576246524
+    },
+    "v(gw1_e7_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.4640758556376475
+    },
+    "v(gw1_e8_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.46407585551285346
+    },
+    "v(gw1_e9_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.4640758553880837
+    },
+    "v(gw1_e10_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.4640758552633369
+    },
+    "v(gw1_col_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.464076830947574
+    },
+    "v(gw2_e1_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.4640758563869143
+    },
+    "v(gw2_e2_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.46407585626197645
+    },
+    "v(gw2_e3_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.4640758561370628
+    },
+    "v(gw2_e4_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.4640758560121732
+    },
+    "v(gw2_e5_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.46407585588730715
+    },
+    "v(gw2_e6_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.46407585576246513
+    },
+    "v(gw2_e7_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.46407585563764736
+    },
+    "v(gw2_e8_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.46407585551285335
+    },
+    "v(gw2_e9_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.46407585538808327
+    },
+    "v(gw2_e10_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.464075855263337
+    },
+    "v(gw2_col_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.464076830947574
+    },
+    "v(thw12f_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.4644748526865751
+    },
+    "v(thw12r_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.4644748526865751
+    },
+    "v(sgw12f_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.46447489594055247
+    },
+    "v(sgw12r_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.46447489594055236
+    },
+    "v(cdw12f_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.4644748526865752
+    },
+    "v(cdw12r_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.4644748526865754
+    },
+    "v(cdw12f_op_aq)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 2.739600166580464e-06
+    },
+    "v(cdw12f_op_p)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.03699728484343632
+    },
+    "v(cdw12r_op_aq)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 2.739600166580464e-06
+    },
+    "v(cdw12r_op_p)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.03699728484343632
+    },
+    "v(gw1_b1_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.04848903261987591
+    },
+    "v(gw1_b2_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.04766462256732822
+    },
+    "v(gw1_b3_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.0484890337114109
+    },
+    "v(gw1_b4_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.04766461351495241
+    },
+    "v(gw1_b5_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.048489032619874355
+    },
+    "v(gw1_b6_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.04766462256733963
+    },
+    "v(gw1_b7_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.048489033711422165
+    },
+    "v(gw1_b8_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.047664613514858525
+    },
+    "v(gw1_b9_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.048489033715511026
+    },
+    "v(gw1_b10_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.047664613480069694
+    },
+    "v(gw1_op_aq)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 2.739690395635546e-06
+    },
+    "v(gw1_op_p)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.036997284873329664
+    },
+    "v(gw2_b1_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.048489032619875964
+    },
+    "v(gw2_b2_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.0476646225673282
+    },
+    "v(gw2_b3_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.048489033711410924
+    },
+    "v(gw2_b4_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.04766461351495239
+    },
+    "v(gw2_b5_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.04848903261987439
+    },
+    "v(gw2_b6_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.04766462256733951
+    },
+    "v(gw2_b7_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.04848903371142219
+    },
+    "v(gw2_b8_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.04766461351485849
+    },
+    "v(gw2_b9_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.048489033715511005
+    },
+    "v(gw2_b10_q)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.04766461348006958
+    },
+    "v(gw2_op_aq)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 2.73969039563553e-06
+    },
+    "v(gw2_op_p)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.03699728487332966
+    },
+    "v(sgw12f_op_aq)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 2.7393305332282033e-06
+    },
+    "v(sgw12f_op_p)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.03699728474627281
+    },
+    "v(sgw12r_op_aq)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 2.739330533228204e-06
+    },
+    "v(sgw12r_op_p)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.03699728474627281
+    },
+    "v(thw12f_op_aq)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 2.7495578602559386e-06
+    },
+    "v(thw12f_op_p)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.0369972878725525
+    },
+    "v(thw12r_op_aq)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 2.7495578602559386e-06
+    },
+    "v(thw12r_op_p)": {
+      "up_count": 0,
+      "first_up_s": null,
+      "peak_V": 0.0369972878725525
+    }
+  },
+  "state_voltage_limit_V": 0.011884394856804668,
+  "state_capacitors": [
+    {
+      "capacitor": "cgw1_e1_rc",
+      "node": "gw1_e1_rec",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.5663372843570607e-06,
+      "end_V": 2.392341111845392e-07,
+      "peak_absolute_state_charge_C": 1.5663372843570605e-13,
+      "net_state_charge_change_C": 2.3923411118453882e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw1_e1_rrc",
+          "nodes": [
+            "gw1_e1_rt",
+            "gw1_e1_rec"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.327878000878804e-13,
+          "peak_absolute_current_A": 2.0646668986112527e-10
+        },
+        {
+          "element": "rgw1_e1_rr",
+          "nodes": [
+            "gw1_e1_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0,
+          "net_charge_into_node_C": -2.0960273091693217e-13,
+          "peak_absolute_current_A": 1.910167419947635e-13
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_b1_c",
+      "node": "gw1_b1",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.657024336604275e-06,
+      "end_V": 8.306232990231932e-07,
+      "peak_absolute_state_charge_C": 1.6570243366042748e-13,
+      "net_state_charge_change_C": 8.306232990231921e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw1_b1_rc",
+          "nodes": [
+            "gw1_b1_t",
+            "gw1_b1"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.327877666963178e-13,
+          "peak_absolute_current_A": 2.0646668966940512e-10
+        },
+        {
+          "element": "rgw1_b1_rl",
+          "nodes": [
+            "gw1_b1",
+            "0"
+          ],
+          "R_ohm": 22000000.0,
+          "net_charge_into_node_C": -1.573760029743423e-13,
+          "peak_absolute_current_A": 7.531928802746704e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_e2_rc",
+      "node": "gw1_e2_rec",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.5663368886932248e-06,
+      "end_V": 2.391411293716732e-07,
+      "peak_absolute_state_charge_C": 1.5663368886932247e-13,
+      "net_state_charge_change_C": 2.3914112937167283e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw1_e2_rrc",
+          "nodes": [
+            "gw1_e2_rt",
+            "gw1_e2_rec"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.327874863905603e-13,
+          "peak_absolute_current_A": 2.0646668986159322e-10
+        },
+        {
+          "element": "rgw1_e2_rr",
+          "nodes": [
+            "gw1_e2_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0,
+          "net_charge_into_node_C": -2.0959988675627054e-13,
+          "peak_absolute_current_A": 1.9101669374307619e-13
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_b2_c",
+      "node": "gw1_b2",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.657024336607288e-06,
+      "end_V": 8.306203313279545e-07,
+      "peak_absolute_state_charge_C": 1.657024336607288e-13,
+      "net_state_charge_change_C": 8.306203313279534e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw1_b2_rc",
+          "nodes": [
+            "gw1_b2_t",
+            "gw1_b2"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.327874529943092e-13,
+          "peak_absolute_current_A": 2.0646668966987155e-10
+        },
+        {
+          "element": "rgw1_b2_rl",
+          "nodes": [
+            "gw1_b2",
+            "0"
+          ],
+          "R_ohm": 22000000.0,
+          "net_charge_into_node_C": -1.5737598604050366e-13,
+          "peak_absolute_current_A": 7.5319288027604e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_e3_rc",
+      "node": "gw1_e3_rec",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.5663364930514336e-06,
+      "end_V": 2.3904845011456984e-07,
+      "peak_absolute_state_charge_C": 1.5663364930514334e-13,
+      "net_state_charge_change_C": 2.3904845011456945e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw1_e3_rrc",
+          "nodes": [
+            "gw1_e3_rt",
+            "gw1_e3_rec"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.327871892941933e-13,
+          "peak_absolute_current_A": 2.0646668986205748e-10
+        },
+        {
+          "element": "rgw1_e3_rr",
+          "nodes": [
+            "gw1_e3_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0,
+          "net_charge_into_node_C": -2.0959704793044164e-13,
+          "peak_absolute_current_A": 1.9101664549407726e-13
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_b3_c",
+      "node": "gw1_b3",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.6570243366087289e-06,
+      "end_V": 8.306175219498613e-07,
+      "peak_absolute_state_charge_C": 1.6570243366087288e-13,
+      "net_state_charge_change_C": 8.306175219498602e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw1_b3_rc",
+          "nodes": [
+            "gw1_b3_t",
+            "gw1_b3"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.327871558932632e-13,
+          "peak_absolute_current_A": 2.0646668967033593e-10
+        },
+        {
+          "element": "rgw1_b3_rl",
+          "nodes": [
+            "gw1_b3",
+            "0"
+          ],
+          "R_ohm": 22000000.0,
+          "net_charge_into_node_C": -1.5737596987623114e-13,
+          "peak_absolute_current_A": 7.53192880276695e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_e4_rc",
+      "node": "gw1_e4_rec",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.5663360974316746e-06,
+      "end_V": 2.3895608627535994e-07,
+      "peak_absolute_state_charge_C": 1.5663360974316744e-13,
+      "net_state_charge_change_C": 2.3895608627535956e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw1_e4_rrc",
+          "nodes": [
+            "gw1_e4_rt",
+            "gw1_e4_rec"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.32786909954637e-13,
+          "peak_absolute_current_A": 2.0646668986252245e-10
+        },
+        {
+          "element": "rgw1_e4_rr",
+          "nodes": [
+            "gw1_e4_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0,
+          "net_charge_into_node_C": -2.0959421460359762e-13,
+          "peak_absolute_current_A": 1.9101659724776518e-13
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_b4_c",
+      "node": "gw1_b4",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.6570243366117644e-06,
+      "end_V": 8.306148819377478e-07,
+      "peak_absolute_state_charge_C": 1.6570243366117644e-13,
+      "net_state_charge_change_C": 8.306148819377467e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw1_b4_rc",
+          "nodes": [
+            "gw1_b4_t",
+            "gw1_b4"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.3278687654903385e-13,
+          "peak_absolute_current_A": 2.0646668967080205e-10
+        },
+        {
+          "element": "rgw1_b4_rl",
+          "nodes": [
+            "gw1_b4",
+            "0"
+          ],
+          "R_ohm": 22000000.0,
+          "net_charge_into_node_C": -1.5737595453220458e-13,
+          "peak_absolute_current_A": 7.531928802780748e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_e5_rc",
+      "node": "gw1_e5_rec",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.5663357018339594e-06,
+      "end_V": 2.388640555606252e-07,
+      "peak_absolute_state_charge_C": 1.5663357018339593e-13,
+      "net_state_charge_change_C": 2.3886405556062483e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw1_e5_rrc",
+          "nodes": [
+            "gw1_e5_rt",
+            "gw1_e5_rec"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.327866500535836e-13,
+          "peak_absolute_current_A": 2.064666898629902e-10
+        },
+        {
+          "element": "rgw1_e5_rr",
+          "nodes": [
+            "gw1_e5_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0,
+          "net_charge_into_node_C": -2.0959138699713837e-13,
+          "peak_absolute_current_A": 1.910165490041414e-13
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_b5_c",
+      "node": "gw1_b5",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.6570243366132137e-06,
+      "end_V": 8.30612427382471e-07,
+      "peak_absolute_state_charge_C": 1.6570243366132136e-13,
+      "net_state_charge_change_C": 8.306124273824699e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw1_b5_rc",
+          "nodes": [
+            "gw1_b5_t",
+            "gw1_b5"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.3278661664331424e-13,
+          "peak_absolute_current_A": 2.064666896712696e-10
+        },
+        {
+          "element": "rgw1_b5_rl",
+          "nodes": [
+            "gw1_b5",
+            "0"
+          ],
+          "R_ohm": 22000000.0,
+          "net_charge_into_node_C": -1.5737594008102062e-13,
+          "peak_absolute_current_A": 7.531928802787335e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_e6_rc",
+      "node": "gw1_e6_rec",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.5663353062582696e-06,
+      "end_V": 2.387723689917627e-07,
+      "peak_absolute_state_charge_C": 1.5663353062582695e-13,
+      "net_state_charge_change_C": 2.387723689917623e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw1_e6_rrc",
+          "nodes": [
+            "gw1_e6_rt",
+            "gw1_e6_rec"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.3278641051634295e-13,
+          "peak_absolute_current_A": 2.0646668986345445e-10
+        },
+        {
+          "element": "rgw1_e6_rr",
+          "nodes": [
+            "gw1_e6_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0,
+          "net_charge_into_node_C": -2.0958856526188387e-13,
+          "peak_absolute_current_A": 1.9101650076320362e-13
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_b6_c",
+      "node": "gw1_b6",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.6570243366162471e-06,
+      "end_V": 8.306101670956921e-07,
+      "peak_absolute_state_charge_C": 1.657024336616247e-13,
+      "net_state_charge_change_C": 8.306101670956911e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw1_b6_rc",
+          "nodes": [
+            "gw1_b6_t",
+            "gw1_b6"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.3278637710141356e-13,
+          "peak_absolute_current_A": 2.0646668967173353e-10
+        },
+        {
+          "element": "rgw1_b6_rl",
+          "nodes": [
+            "gw1_b6",
+            "0"
+          ],
+          "R_ohm": 22000000.0,
+          "net_charge_into_node_C": -1.573759265668113e-13,
+          "peak_absolute_current_A": 7.531928802801123e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_e7_rc",
+      "node": "gw1_e7_rec",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.5663349107046051e-06,
+      "end_V": 2.3868103069844245e-07,
+      "peak_absolute_state_charge_C": 1.5663349107046052e-13,
+      "net_state_charge_change_C": 2.3868103069844206e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw1_e7_rrc",
+          "nodes": [
+            "gw1_e7_rt",
+            "gw1_e7_rec"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.3278619148193673e-13,
+          "peak_absolute_current_A": 2.0646668986391897e-10
+        },
+        {
+          "element": "rgw1_e7_rr",
+          "nodes": [
+            "gw1_e7_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0,
+          "net_charge_into_node_C": -2.0958574947132904e-13,
+          "peak_absolute_current_A": 1.9101645252495185e-13
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_b7_c",
+      "node": "gw1_b7",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.6570243366177093e-06,
+      "end_V": 8.306081023368538e-07,
+      "peak_absolute_state_charge_C": 1.6570243366177092e-13,
+      "net_state_charge_change_C": 8.306081023368527e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw1_b7_rc",
+          "nodes": [
+            "gw1_b7_t",
+            "gw1_b7"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.327861580623553e-13,
+          "peak_absolute_current_A": 2.0646668967219711e-10
+        },
+        {
+          "element": "rgw1_b7_rl",
+          "nodes": [
+            "gw1_b7",
+            "0"
+          ],
+          "R_ohm": 22000000.0,
+          "net_charge_into_node_C": -1.573759140026822e-13,
+          "peak_absolute_current_A": 7.53192880280777e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_e8_rc",
+      "node": "gw1_e8_rec",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.5663345151729488e-06,
+      "end_V": 2.385900412132382e-07,
+      "peak_absolute_state_charge_C": 1.5663345151729487e-13,
+      "net_state_charge_change_C": 2.3859004121323786e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw1_e8_rrc",
+          "nodes": [
+            "gw1_e8_rt",
+            "gw1_e8_rec"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.327859926573389e-13,
+          "peak_absolute_current_A": 2.0646668986438457e-10
+        },
+        {
+          "element": "rgw1_e8_rr",
+          "nodes": [
+            "gw1_e8_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0,
+          "net_charge_into_node_C": -2.0958293964846735e-13,
+          "peak_absolute_current_A": 1.9101640428938399e-13
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_b8_c",
+      "node": "gw1_b8",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.6570243366207516e-06,
+      "end_V": 8.306062302542743e-07,
+      "peak_absolute_state_charge_C": 1.6570243366207516e-13,
+      "net_state_charge_change_C": 8.306062302542732e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw1_b8_rc",
+          "nodes": [
+            "gw1_b8_t",
+            "gw1_b8"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.3278595923311167e-13,
+          "peak_absolute_current_A": 2.064666896726658e-10
+        },
+        {
+          "element": "rgw1_b8_rl",
+          "nodes": [
+            "gw1_b8",
+            "0"
+          ],
+          "R_ohm": 22000000.0,
+          "net_charge_into_node_C": -1.5737590238076438e-13,
+          "peak_absolute_current_A": 7.531928802821598e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_e9_rc",
+      "node": "gw1_e9_rec",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.566334119663317e-06,
+      "end_V": 2.38499401924734e-07,
+      "peak_absolute_state_charge_C": 1.566334119663317e-13,
+      "net_state_charge_change_C": 2.3849940192473363e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw1_e9_rrc",
+          "nodes": [
+            "gw1_e9_rt",
+            "gw1_e9_rec"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.327858138055379e-13,
+          "peak_absolute_current_A": 2.06466689864851e-10
+        },
+        {
+          "element": "rgw1_e9_rr",
+          "nodes": [
+            "gw1_e9_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0,
+          "net_charge_into_node_C": -2.0958013581139404e-13,
+          "peak_absolute_current_A": 1.9101635605650206e-13
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_b9_c",
+      "node": "gw1_b9",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.6570243366221935e-06,
+      "end_V": 8.30604548586488e-07,
+      "peak_absolute_state_charge_C": 1.6570243366221935e-13,
+      "net_state_charge_change_C": 8.306045485864869e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw1_b9_rc",
+          "nodes": [
+            "gw1_b9_t",
+            "gw1_b9"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.3278578037667176e-13,
+          "peak_absolute_current_A": 2.0646668967312893e-10
+        },
+        {
+          "element": "rgw1_b9_rl",
+          "nodes": [
+            "gw1_b9",
+            "0"
+          ],
+          "R_ohm": 22000000.0,
+          "net_charge_into_node_C": -1.57375891690181e-13,
+          "peak_absolute_current_A": 7.531928802828152e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_e10_rc",
+      "node": "gw1_e10_rec",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.5663337241756745e-06,
+      "end_V": 2.384091175402263e-07,
+      "peak_absolute_state_charge_C": 1.5663337241756744e-13,
+      "net_state_charge_change_C": 2.3840911754022592e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw1_e10_rrc",
+          "nodes": [
+            "gw1_e10_rt",
+            "gw1_e10_rec"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.3278565501978944e-13,
+          "peak_absolute_current_A": 2.064666898653167e-10
+        },
+        {
+          "element": "rgw1_e10_rr",
+          "nodes": [
+            "gw1_e10_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0,
+          "net_charge_into_node_C": -2.0957733800496731e-13,
+          "peak_absolute_current_A": 1.9101630782630178e-13
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_b10_c",
+      "node": "gw1_b10",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.6570243366252363e-06,
+      "end_V": 8.30603058286237e-07,
+      "peak_absolute_state_charge_C": 1.657024336625236e-13,
+      "net_state_charge_change_C": 8.306030582862359e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw1_b10_rc",
+          "nodes": [
+            "gw1_b10_t",
+            "gw1_b10"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.3278562158629297e-13,
+          "peak_absolute_current_A": 2.0646668967359536e-10
+        },
+        {
+          "element": "rgw1_b10_rl",
+          "nodes": [
+            "gw1_b10",
+            "0"
+          ],
+          "R_ohm": 22000000.0,
+          "net_charge_into_node_C": -1.5737588192893346e-13,
+          "peak_absolute_current_A": 7.531928802841983e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_col_rc",
+      "node": "gw1_col_rec",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.56626023073178e-06,
+      "end_V": 2.3907201631979225e-07,
+      "peak_absolute_state_charge_C": 1.56626023073178e-13,
+      "net_state_charge_change_C": 2.3907201631979185e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw1_col_rrc",
+          "nodes": [
+            "gw1_col_rt",
+            "gw1_col_rec"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.327805148161882e-13,
+          "peak_absolute_current_A": 2.064575250510369e-10
+        },
+        {
+          "element": "rgw1_col_rr",
+          "nodes": [
+            "gw1_col_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0,
+          "net_charge_into_node_C": -2.0959131021224084e-13,
+          "peak_absolute_current_A": 1.9100734521119268e-13
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_op_tc",
+      "node": "gw1_op_at",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.656957347217839e-06,
+      "end_V": 8.306009185607177e-07,
+      "peak_absolute_state_charge_C": 1.6569573472178389e-13,
+      "net_state_charge_change_C": 8.306009185607166e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw1_op_trc",
+          "nodes": [
+            "gw1_op_tt",
+            "gw1_op_at"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.3278048141743684e-13,
+          "peak_absolute_current_A": 2.064575248593243e-10
+        },
+        {
+          "element": "rgw1_op_trl",
+          "nodes": [
+            "gw1_op_at",
+            "0"
+          ],
+          "R_ohm": 22000000.0,
+          "net_charge_into_node_C": -1.573709496739972e-13,
+          "peak_absolute_current_A": 7.531624305535632e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_op_dc",
+      "node": "gw1_op_ad",
+      "C_F": 3.3e-07,
+      "peak_abs_V": 3.725341158712232e-08,
+      "end_V": 1.706591077243193e-10,
+      "peak_absolute_state_charge_C": 1.2293625823750367e-14,
+      "net_state_charge_change_C": 5.631751686346069e-17,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw1_op_dr",
+          "nodes": [
+            "gw1_op_aq",
+            "gw1_op_ad"
+          ],
+          "R_ohm": 1000000.0,
+          "net_charge_into_node_C": -7.459987228662246e-15,
+          "peak_absolute_current_A": 2.731636250318256e-12
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_e1_rc",
+      "node": "gw2_e1_rec",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.5663372843570598e-06,
+      "end_V": 2.392341111846738e-07,
+      "peak_absolute_state_charge_C": 1.5663372843570597e-13,
+      "net_state_charge_change_C": 2.3923411118467343e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw2_e1_rrc",
+          "nodes": [
+            "gw2_e1_rt",
+            "gw2_e1_rec"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.327878000878805e-13,
+          "peak_absolute_current_A": 2.0646668986112638e-10
+        },
+        {
+          "element": "rgw2_e1_rr",
+          "nodes": [
+            "gw2_e1_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0,
+          "net_charge_into_node_C": -2.096027309170082e-13,
+          "peak_absolute_current_A": 1.910167419947634e-13
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_b1_c",
+      "node": "gw2_b1",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.6570243366042658e-06,
+      "end_V": 8.306232990217078e-07,
+      "peak_absolute_state_charge_C": 1.6570243366042658e-13,
+      "net_state_charge_change_C": 8.306232990217067e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw2_b1_rc",
+          "nodes": [
+            "gw2_b1_t",
+            "gw2_b1"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.327877666963172e-13,
+          "peak_absolute_current_A": 2.0646668966940512e-10
+        },
+        {
+          "element": "rgw2_b1_rl",
+          "nodes": [
+            "gw2_b1",
+            "0"
+          ],
+          "R_ohm": 22000000.0,
+          "net_charge_into_node_C": -1.5737600297419806e-13,
+          "peak_absolute_current_A": 7.531928802746663e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_e2_rc",
+      "node": "gw2_e2_rec",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.5663368886932257e-06,
+      "end_V": 2.3914112937180255e-07,
+      "peak_absolute_state_charge_C": 1.5663368886932255e-13,
+      "net_state_charge_change_C": 2.3914112937180217e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw2_e2_rrc",
+          "nodes": [
+            "gw2_e2_rt",
+            "gw2_e2_rec"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.3278748639056054e-13,
+          "peak_absolute_current_A": 2.064666898615919e-10
+        },
+        {
+          "element": "rgw2_e2_rr",
+          "nodes": [
+            "gw2_e2_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0,
+          "net_charge_into_node_C": -2.0959988675633895e-13,
+          "peak_absolute_current_A": 1.910166937430763e-13
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_b2_c",
+      "node": "gw2_b2",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.6570243366073e-06,
+      "end_V": 8.306203313295111e-07,
+      "peak_absolute_state_charge_C": 1.6570243366072998e-13,
+      "net_state_charge_change_C": 8.306203313295099e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw2_b2_rc",
+          "nodes": [
+            "gw2_b2_t",
+            "gw2_b2"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.327874529943125e-13,
+          "peak_absolute_current_A": 2.0646668966987095e-10
+        },
+        {
+          "element": "rgw2_b2_rl",
+          "nodes": [
+            "gw2_b2",
+            "0"
+          ],
+          "R_ohm": 22000000.0,
+          "net_charge_into_node_C": -1.5737598604065543e-13,
+          "peak_absolute_current_A": 7.531928802760454e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_e3_rc",
+      "node": "gw2_e3_rec",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.566336493051424e-06,
+      "end_V": 2.3904845011454977e-07,
+      "peak_absolute_state_charge_C": 1.566336493051424e-13,
+      "net_state_charge_change_C": 2.3904845011454938e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw2_e3_rrc",
+          "nodes": [
+            "gw2_e3_rt",
+            "gw2_e3_rec"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.3278718929419186e-13,
+          "peak_absolute_current_A": 2.0646668986205853e-10
+        },
+        {
+          "element": "rgw2_e3_rr",
+          "nodes": [
+            "gw2_e3_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0,
+          "net_charge_into_node_C": -2.0959704793043647e-13,
+          "peak_absolute_current_A": 1.910166454940761e-13
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_b3_c",
+      "node": "gw2_b3",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.6570243366087289e-06,
+      "end_V": 8.306175219498907e-07,
+      "peak_absolute_state_charge_C": 1.6570243366087288e-13,
+      "net_state_charge_change_C": 8.306175219498896e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw2_b3_rc",
+          "nodes": [
+            "gw2_b3_t",
+            "gw2_b3"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.3278715589326275e-13,
+          "peak_absolute_current_A": 2.0646668967033704e-10
+        },
+        {
+          "element": "rgw2_b3_rl",
+          "nodes": [
+            "gw2_b3",
+            "0"
+          ],
+          "R_ohm": 22000000.0,
+          "net_charge_into_node_C": -1.5737596987623397e-13,
+          "peak_absolute_current_A": 7.53192880276695e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_e4_rc",
+      "node": "gw2_e4_rec",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.566336097431673e-06,
+      "end_V": 2.3895608627535475e-07,
+      "peak_absolute_state_charge_C": 1.566336097431673e-13,
+      "net_state_charge_change_C": 2.3895608627535436e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw2_e4_rrc",
+          "nodes": [
+            "gw2_e4_rt",
+            "gw2_e4_rec"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.327869099546367e-13,
+          "peak_absolute_current_A": 2.0646668986252212e-10
+        },
+        {
+          "element": "rgw2_e4_rr",
+          "nodes": [
+            "gw2_e4_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0,
+          "net_charge_into_node_C": -2.0959421460359598e-13,
+          "peak_absolute_current_A": 1.91016597247765e-13
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_b4_c",
+      "node": "gw2_b4",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.6570243366117684e-06,
+      "end_V": 8.306148819377467e-07,
+      "peak_absolute_state_charge_C": 1.6570243366117684e-13,
+      "net_state_charge_change_C": 8.306148819377455e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw2_b4_rc",
+          "nodes": [
+            "gw2_b4_t",
+            "gw2_b4"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.327868765490341e-13,
+          "peak_absolute_current_A": 2.0646668967080197e-10
+        },
+        {
+          "element": "rgw2_b4_rl",
+          "nodes": [
+            "gw2_b4",
+            "0"
+          ],
+          "R_ohm": 22000000.0,
+          "net_charge_into_node_C": -1.5737595453220504e-13,
+          "peak_absolute_current_A": 7.531928802780765e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_e5_rc",
+      "node": "gw2_e5_rec",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.5663357018339598e-06,
+      "end_V": 2.3886405556063465e-07,
+      "peak_absolute_state_charge_C": 1.5663357018339598e-13,
+      "net_state_charge_change_C": 2.3886405556063426e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw2_e5_rrc",
+          "nodes": [
+            "gw2_e5_rt",
+            "gw2_e5_rec"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.327866500535838e-13,
+          "peak_absolute_current_A": 2.0646668986298867e-10
+        },
+        {
+          "element": "rgw2_e5_rr",
+          "nodes": [
+            "gw2_e5_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0,
+          "net_charge_into_node_C": -2.0959138699714014e-13,
+          "peak_absolute_current_A": 1.9101654900414144e-13
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_b5_c",
+      "node": "gw2_b5",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.6570243366132122e-06,
+      "end_V": 8.306124273824803e-07,
+      "peak_absolute_state_charge_C": 1.657024336613212e-13,
+      "net_state_charge_change_C": 8.306124273824792e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw2_b5_rc",
+          "nodes": [
+            "gw2_b5_t",
+            "gw2_b5"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.327866166433151e-13,
+          "peak_absolute_current_A": 2.0646668967126847e-10
+        },
+        {
+          "element": "rgw2_b5_rl",
+          "nodes": [
+            "gw2_b5",
+            "0"
+          ],
+          "R_ohm": 22000000.0,
+          "net_charge_into_node_C": -1.5737594008101976e-13,
+          "peak_absolute_current_A": 7.531928802787329e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_e6_rc",
+      "node": "gw2_e6_rec",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.5663353062582638e-06,
+      "end_V": 2.3877236899189853e-07,
+      "peak_absolute_state_charge_C": 1.5663353062582637e-13,
+      "net_state_charge_change_C": 2.3877236899189815e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw2_e6_rrc",
+          "nodes": [
+            "gw2_e6_rt",
+            "gw2_e6_rec"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.3278641051634295e-13,
+          "peak_absolute_current_A": 2.0646668986345195e-10
+        },
+        {
+          "element": "rgw2_e6_rr",
+          "nodes": [
+            "gw2_e6_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0,
+          "net_charge_into_node_C": -2.0958856526195096e-13,
+          "peak_absolute_current_A": 1.910165007632029e-13
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_b6_c",
+      "node": "gw2_b6",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.6570243366162471e-06,
+      "end_V": 8.306101670957249e-07,
+      "peak_absolute_state_charge_C": 1.657024336616247e-13,
+      "net_state_charge_change_C": 8.306101670957238e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw2_b6_rc",
+          "nodes": [
+            "gw2_b6_t",
+            "gw2_b6"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.327863771014145e-13,
+          "peak_absolute_current_A": 2.06466689671732e-10
+        },
+        {
+          "element": "rgw2_b6_rl",
+          "nodes": [
+            "gw2_b6",
+            "0"
+          ],
+          "R_ohm": 22000000.0,
+          "net_charge_into_node_C": -1.573759265668127e-13,
+          "peak_absolute_current_A": 7.531928802801123e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_e7_rc",
+      "node": "gw2_e7_rec",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.5663349107046051e-06,
+      "end_V": 2.3868103069844415e-07,
+      "peak_absolute_state_charge_C": 1.5663349107046052e-13,
+      "net_state_charge_change_C": 2.3868103069844376e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw2_e7_rrc",
+          "nodes": [
+            "gw2_e7_rt",
+            "gw2_e7_rec"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.327861914819365e-13,
+          "peak_absolute_current_A": 2.064666898639187e-10
+        },
+        {
+          "element": "rgw2_e7_rr",
+          "nodes": [
+            "gw2_e7_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0,
+          "net_charge_into_node_C": -2.0958574947133063e-13,
+          "peak_absolute_current_A": 1.9101645252495185e-13
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_b7_c",
+      "node": "gw2_b7",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.6570243366177032e-06,
+      "end_V": 8.306081023368861e-07,
+      "peak_absolute_state_charge_C": 1.6570243366177031e-13,
+      "net_state_charge_change_C": 8.30608102336885e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw2_b7_rc",
+          "nodes": [
+            "gw2_b7_t",
+            "gw2_b7"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.3278615806235435e-13,
+          "peak_absolute_current_A": 2.0646668967219678e-10
+        },
+        {
+          "element": "rgw2_b7_rl",
+          "nodes": [
+            "gw2_b7",
+            "0"
+          ],
+          "R_ohm": 22000000.0,
+          "net_charge_into_node_C": -1.5737591400268611e-13,
+          "peak_absolute_current_A": 7.531928802807742e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_e8_rc",
+      "node": "gw2_e8_rec",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.5663345151729558e-06,
+      "end_V": 2.3859004121323907e-07,
+      "peak_absolute_state_charge_C": 1.5663345151729558e-13,
+      "net_state_charge_change_C": 2.3859004121323868e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw2_e8_rrc",
+          "nodes": [
+            "gw2_e8_rt",
+            "gw2_e8_rec"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.327859926573381e-13,
+          "peak_absolute_current_A": 2.0646668986438467e-10
+        },
+        {
+          "element": "rgw2_e8_rr",
+          "nodes": [
+            "gw2_e8_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0,
+          "net_charge_into_node_C": -2.0958293964846786e-13,
+          "peak_absolute_current_A": 1.9101640428938484e-13
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_b8_c",
+      "node": "gw2_b8",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.657024336620748e-06,
+      "end_V": 8.306062302542724e-07,
+      "peak_absolute_state_charge_C": 1.657024336620748e-13,
+      "net_state_charge_change_C": 8.306062302542713e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw2_b8_rc",
+          "nodes": [
+            "gw2_b8_t",
+            "gw2_b8"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.3278595923311157e-13,
+          "peak_absolute_current_A": 2.0646668967266486e-10
+        },
+        {
+          "element": "rgw2_b8_rl",
+          "nodes": [
+            "gw2_b8",
+            "0"
+          ],
+          "R_ohm": 22000000.0,
+          "net_charge_into_node_C": -1.5737590238076238e-13,
+          "peak_absolute_current_A": 7.531928802821582e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_e9_rc",
+      "node": "gw2_e9_rec",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.5663341196633256e-06,
+      "end_V": 2.3849940192475036e-07,
+      "peak_absolute_state_charge_C": 1.5663341196633255e-13,
+      "net_state_charge_change_C": 2.3849940192474998e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw2_e9_rrc",
+          "nodes": [
+            "gw2_e9_rt",
+            "gw2_e9_rec"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.327858138055381e-13,
+          "peak_absolute_current_A": 2.0646668986485104e-10
+        },
+        {
+          "element": "rgw2_e9_rr",
+          "nodes": [
+            "gw2_e9_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0,
+          "net_charge_into_node_C": -2.0958013581140022e-13,
+          "peak_absolute_current_A": 1.9101635605650312e-13
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_b9_c",
+      "node": "gw2_b9",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.6570243366221935e-06,
+      "end_V": 8.306045485864674e-07,
+      "peak_absolute_state_charge_C": 1.6570243366221935e-13,
+      "net_state_charge_change_C": 8.306045485864663e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw2_b9_rc",
+          "nodes": [
+            "gw2_b9_t",
+            "gw2_b9"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.3278578037667226e-13,
+          "peak_absolute_current_A": 2.0646668967312893e-10
+        },
+        {
+          "element": "rgw2_b9_rl",
+          "nodes": [
+            "gw2_b9",
+            "0"
+          ],
+          "R_ohm": 22000000.0,
+          "net_charge_into_node_C": -1.5737589169018187e-13,
+          "peak_absolute_current_A": 7.531928802828152e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_e10_rc",
+      "node": "gw2_e10_rec",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.566333724175688e-06,
+      "end_V": 2.384091175403598e-07,
+      "peak_absolute_state_charge_C": 1.566333724175688e-13,
+      "net_state_charge_change_C": 2.384091175403594e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw2_e10_rrc",
+          "nodes": [
+            "gw2_e10_rt",
+            "gw2_e10_rec"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.3278565501978944e-13,
+          "peak_absolute_current_A": 2.0646668986531651e-10
+        },
+        {
+          "element": "rgw2_e10_rr",
+          "nodes": [
+            "gw2_e10_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0,
+          "net_charge_into_node_C": -2.095773380050403e-13,
+          "peak_absolute_current_A": 1.9101630782630342e-13
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_b10_c",
+      "node": "gw2_b10",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.657024336625242e-06,
+      "end_V": 8.306030582877525e-07,
+      "peak_absolute_state_charge_C": 1.657024336625242e-13,
+      "net_state_charge_change_C": 8.306030582877514e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw2_b10_rc",
+          "nodes": [
+            "gw2_b10_t",
+            "gw2_b10"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.327856215862922e-13,
+          "peak_absolute_current_A": 2.0646668967359497e-10
+        },
+        {
+          "element": "rgw2_b10_rl",
+          "nodes": [
+            "gw2_b10",
+            "0"
+          ],
+          "R_ohm": 22000000.0,
+          "net_charge_into_node_C": -1.5737588192908022e-13,
+          "peak_absolute_current_A": 7.531928802842009e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_col_rc",
+      "node": "gw2_col_rec",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.5662602307317879e-06,
+      "end_V": 2.3907201631992497e-07,
+      "peak_absolute_state_charge_C": 1.5662602307317878e-13,
+      "net_state_charge_change_C": 2.3907201631992457e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw2_col_rrc",
+          "nodes": [
+            "gw2_col_rt",
+            "gw2_col_rec"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.3278051481618805e-13,
+          "peak_absolute_current_A": 2.0645752505103657e-10
+        },
+        {
+          "element": "rgw2_col_rr",
+          "nodes": [
+            "gw2_col_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0,
+          "net_charge_into_node_C": -2.0959131021230955e-13,
+          "peak_absolute_current_A": 1.9100734521119364e-13
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_op_tc",
+      "node": "gw2_op_at",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.6569573472178388e-06,
+      "end_V": 8.30600918562195e-07,
+      "peak_absolute_state_charge_C": 1.6569573472178386e-13,
+      "net_state_charge_change_C": 8.30600918562194e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw2_op_trc",
+          "nodes": [
+            "gw2_op_tt",
+            "gw2_op_at"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.3278048141743684e-13,
+          "peak_absolute_current_A": 2.06457524859324e-10
+        },
+        {
+          "element": "rgw2_op_trl",
+          "nodes": [
+            "gw2_op_at",
+            "0"
+          ],
+          "R_ohm": 22000000.0,
+          "net_charge_into_node_C": -1.5737094967414063e-13,
+          "peak_absolute_current_A": 7.531624305535632e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_op_dc",
+      "node": "gw2_op_ad",
+      "C_F": 3.3e-07,
+      "peak_abs_V": 3.725341158727712e-08,
+      "end_V": 1.7065911244690848e-10,
+      "peak_absolute_state_charge_C": 1.2293625823801449e-14,
+      "net_state_charge_change_C": 5.631751842191513e-17,
+      "resistor_current_readbacks": [
+        {
+          "element": "rgw2_op_dr",
+          "nodes": [
+            "gw2_op_aq",
+            "gw2_op_ad"
+          ],
+          "R_ohm": 1000000.0,
+          "net_charge_into_node_C": -7.459987227108176e-15,
+          "peak_absolute_current_A": 2.7316362503182397e-12
+        }
+      ]
+    },
+    {
+      "capacitor": "chsw1_c1",
+      "node": "hsw1_h1",
+      "C_F": 1e-06,
+      "peak_abs_V": 6.825546298719892e-07,
+      "end_V": 5.603520222165732e-07,
+      "peak_absolute_state_charge_C": 6.825546298719891e-13,
+      "net_state_charge_change_C": 5.603520222165732e-13,
+      "resistor_current_readbacks": [
+        {
+          "element": "rhsw1_rr",
+          "nodes": [
+            "hsw1_sd",
+            "hsw1_h1"
+          ],
+          "R_ohm": 100000.0,
+          "net_charge_into_node_C": 1.0296576835282484e-12,
+          "peak_absolute_current_A": 9.416571494033422e-10
+        },
+        {
+          "element": "rhsw1_r2",
+          "nodes": [
+            "hsw1_h1",
+            "hw1"
+          ],
+          "R_ohm": 1000000.0,
+          "net_charge_into_node_C": -4.699442746896067e-13,
+          "peak_absolute_current_A": 6.802780943730398e-13
+        }
+      ]
+    },
+    {
+      "capacitor": "chsw1_c2",
+      "node": "hw1",
+      "C_F": 4.7e-07,
+      "peak_abs_V": 4.5790406170945357e-07,
+      "end_V": 4.5790406170945357e-07,
+      "peak_absolute_state_charge_C": 2.1521490900344319e-13,
+      "net_state_charge_change_C": 2.1521490900344319e-13,
+      "resistor_current_readbacks": [
+        {
+          "element": "rhsw1_r2",
+          "nodes": [
+            "hsw1_h1",
+            "hw1"
+          ],
+          "R_ohm": 1000000.0,
+          "net_charge_into_node_C": 4.699442746896067e-13,
+          "peak_absolute_current_A": 6.802780943730398e-13
+        },
+        {
+          "element": "rhsw1_rl",
+          "nodes": [
+            "hw1",
+            "0"
+          ],
+          "R_ohm": 4700000.0,
+          "net_charge_into_node_C": -2.555889383862738e-13,
+          "peak_absolute_current_A": 9.742639610839437e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "chsw2_c1",
+      "node": "hsw2_h1",
+      "C_F": 1e-06,
+      "peak_abs_V": 6.825546298719906e-07,
+      "end_V": 5.603520222165732e-07,
+      "peak_absolute_state_charge_C": 6.825546298719905e-13,
+      "net_state_charge_change_C": 5.603520222165732e-13,
+      "resistor_current_readbacks": [
+        {
+          "element": "rhsw2_rr",
+          "nodes": [
+            "hsw2_sd",
+            "hsw2_h1"
+          ],
+          "R_ohm": 100000.0,
+          "net_charge_into_node_C": 1.0296576835282488e-12,
+          "peak_absolute_current_A": 9.416571494033422e-10
+        },
+        {
+          "element": "rhsw2_r2",
+          "nodes": [
+            "hsw2_h1",
+            "hw2"
+          ],
+          "R_ohm": 1000000.0,
+          "net_charge_into_node_C": -4.69944274689608e-13,
+          "peak_absolute_current_A": 6.802780943730417e-13
+        }
+      ]
+    },
+    {
+      "capacitor": "chsw2_c2",
+      "node": "hw2",
+      "C_F": 4.7e-07,
+      "peak_abs_V": 4.579040617094486e-07,
+      "end_V": 4.579040617094486e-07,
+      "peak_absolute_state_charge_C": 2.1521490900344084e-13,
+      "net_state_charge_change_C": 2.1521490900344084e-13,
+      "resistor_current_readbacks": [
+        {
+          "element": "rhsw2_r2",
+          "nodes": [
+            "hsw2_h1",
+            "hw2"
+          ],
+          "R_ohm": 1000000.0,
+          "net_charge_into_node_C": 4.69944274689608e-13,
+          "peak_absolute_current_A": 6.802780943730417e-13
+        },
+        {
+          "element": "rhsw2_rl",
+          "nodes": [
+            "hw2",
+            "0"
+          ],
+          "R_ohm": 4700000.0,
+          "net_charge_into_node_C": -2.5558893838627396e-13,
+          "peak_absolute_current_A": 9.742639610839331e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "cthw12f_rc",
+      "node": "thw12f_rec",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.6144032649165059e-06,
+      "end_V": 2.4057409781731244e-07,
+      "peak_absolute_state_charge_C": 1.6144032649165058e-13,
+      "net_state_charge_change_C": 2.4057409781731206e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rthw12f_rrc",
+          "nodes": [
+            "thw12f_rt",
+            "thw12f_rec"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.378363209727849e-13,
+          "peak_absolute_current_A": 2.1423450441048433e-10
+        },
+        {
+          "element": "rthw12f_rr",
+          "nodes": [
+            "thw12f_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0,
+          "net_charge_into_node_C": -2.1450167860042322e-13,
+          "peak_absolute_current_A": 1.968784469410373e-13
+        }
+      ]
+    },
+    {
+      "capacitor": "cthw12f_op_tc",
+      "node": "thw12f_op_at",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.7063877829168285e-06,
+      "end_V": 8.437933765659442e-07,
+      "peak_absolute_state_charge_C": 1.7063877829168285e-13,
+      "net_state_charge_change_C": 8.437933765659432e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rthw12f_op_trc",
+          "nodes": [
+            "thw12f_op_tt",
+            "thw12f_op_at"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.3783628689717456e-13,
+          "peak_absolute_current_A": 2.1423450421181488e-10
+        },
+        {
+          "element": "rthw12f_op_trl",
+          "nodes": [
+            "thw12f_op_at",
+            "0"
+          ],
+          "R_ohm": 22000000.0,
+          "net_charge_into_node_C": -1.6111267708749972e-13,
+          "peak_absolute_current_A": 7.756308104167403e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "cthw12f_op_dc",
+      "node": "thw12f_op_ad",
+      "C_F": 3.3e-07,
+      "peak_abs_V": 3.738433207739948e-08,
+      "end_V": 1.7067956849727548e-10,
+      "peak_absolute_state_charge_C": 1.2336829585541829e-14,
+      "net_state_charge_change_C": 5.632426891853623e-17,
+      "resistor_current_readbacks": [
+        {
+          "element": "rthw12f_op_dr",
+          "nodes": [
+            "thw12f_op_aq",
+            "thw12f_op_ad"
+          ],
+          "R_ohm": 1000000.0,
+          "net_charge_into_node_C": -7.459992314155513e-15,
+          "peak_absolute_current_A": 2.7414773478047897e-12
+        }
+      ]
+    },
+    {
+      "capacitor": "cthw12r_rc",
+      "node": "thw12r_rec",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.6144032649165059e-06,
+      "end_V": 2.4057409781731244e-07,
+      "peak_absolute_state_charge_C": 1.6144032649165058e-13,
+      "net_state_charge_change_C": 2.4057409781731206e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rthw12r_rrc",
+          "nodes": [
+            "thw12r_rt",
+            "thw12r_rec"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.378363209727849e-13,
+          "peak_absolute_current_A": 2.1423450441048433e-10
+        },
+        {
+          "element": "rthw12r_rr",
+          "nodes": [
+            "thw12r_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0,
+          "net_charge_into_node_C": -2.1450167860042322e-13,
+          "peak_absolute_current_A": 1.968784469410373e-13
+        }
+      ]
+    },
+    {
+      "capacitor": "cthw12r_op_tc",
+      "node": "thw12r_op_at",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.7063877829168285e-06,
+      "end_V": 8.437933765659442e-07,
+      "peak_absolute_state_charge_C": 1.7063877829168285e-13,
+      "net_state_charge_change_C": 8.437933765659432e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rthw12r_op_trc",
+          "nodes": [
+            "thw12r_op_tt",
+            "thw12r_op_at"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.3783628689717456e-13,
+          "peak_absolute_current_A": 2.1423450421181488e-10
+        },
+        {
+          "element": "rthw12r_op_trl",
+          "nodes": [
+            "thw12r_op_at",
+            "0"
+          ],
+          "R_ohm": 22000000.0,
+          "net_charge_into_node_C": -1.6111267708749972e-13,
+          "peak_absolute_current_A": 7.756308104167403e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "cthw12r_op_dc",
+      "node": "thw12r_op_ad",
+      "C_F": 3.3e-07,
+      "peak_abs_V": 3.738433207739963e-08,
+      "end_V": 1.7067956815946153e-10,
+      "peak_absolute_state_charge_C": 1.233682958554188e-14,
+      "net_state_charge_change_C": 5.632426880705764e-17,
+      "resistor_current_readbacks": [
+        {
+          "element": "rthw12r_op_dr",
+          "nodes": [
+            "thw12r_op_aq",
+            "thw12r_op_ad"
+          ],
+          "R_ohm": 1000000.0,
+          "net_charge_into_node_C": -7.459992314266761e-15,
+          "peak_absolute_current_A": 2.7414773478047897e-12
+        }
+      ]
+    },
+    {
+      "capacitor": "csgw12f_rc",
+      "node": "sgw12f_rec",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.615049290143586e-06,
+      "end_V": 2.407017062454244e-07,
+      "peak_absolute_state_charge_C": 1.615049290143586e-13,
+      "net_state_charge_change_C": 2.40701706245424e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rsgw12f_rrc",
+          "nodes": [
+            "sgw12f_rt",
+            "sgw12f_rec"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.3783685619850864e-13,
+          "peak_absolute_current_A": 2.1423449960240523e-10
+        },
+        {
+          "element": "rsgw12f_rr",
+          "nodes": [
+            "sgw12f_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0,
+          "net_charge_into_node_C": -2.1450567603523927e-13,
+          "peak_absolute_current_A": 1.9695723050531535e-13
+        }
+      ]
+    },
+    {
+      "capacitor": "csgw12f_op_tc",
+      "node": "sgw12f_op_at",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.7063877087013096e-06,
+      "end_V": 8.437984747541813e-07,
+      "peak_absolute_state_charge_C": 1.7063877087013095e-13,
+      "net_state_charge_change_C": 8.437984747541803e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rsgw12f_op_trc",
+          "nodes": [
+            "sgw12f_op_tt",
+            "sgw12f_op_at"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.3783682212931054e-13,
+          "peak_absolute_current_A": 2.1423449940385174e-10
+        },
+        {
+          "element": "rsgw12f_op_trl",
+          "nodes": [
+            "sgw12f_op_at",
+            "0"
+          ],
+          "R_ohm": 22000000.0,
+          "net_charge_into_node_C": -1.611127024753443e-13,
+          "peak_absolute_current_A": 7.756307766824134e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "csgw12f_op_dc",
+      "node": "sgw12f_op_ad",
+      "C_F": 3.3e-07,
+      "peak_abs_V": 3.725246604316955e-08,
+      "end_V": 1.7065899434684173e-10,
+      "peak_absolute_state_charge_C": 1.2293313794245951e-14,
+      "net_state_charge_change_C": 5.631747944889309e-17,
+      "resistor_current_readbacks": [
+        {
+          "element": "rsgw12f_op_dr",
+          "nodes": [
+            "sgw12f_op_aq",
+            "sgw12f_op_ad"
+          ],
+          "R_ohm": 1000000.0,
+          "net_charge_into_node_C": -7.459990947655741e-15,
+          "peak_absolute_current_A": 2.731276125019782e-12
+        }
+      ]
+    },
+    {
+      "capacitor": "csgw12r_rc",
+      "node": "sgw12r_rec",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.6150492901435836e-06,
+      "end_V": 2.4070170623579706e-07,
+      "peak_absolute_state_charge_C": 1.6150492901435836e-13,
+      "net_state_charge_change_C": 2.4070170623579667e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rsgw12r_rrc",
+          "nodes": [
+            "sgw12r_rt",
+            "sgw12r_rec"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.378368561983537e-13,
+          "peak_absolute_current_A": 2.1423449960240562e-10
+        },
+        {
+          "element": "rsgw12r_rr",
+          "nodes": [
+            "sgw12r_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0,
+          "net_charge_into_node_C": -2.145056760341152e-13,
+          "peak_absolute_current_A": 1.9695723050531507e-13
+        }
+      ]
+    },
+    {
+      "capacitor": "csgw12r_op_tc",
+      "node": "sgw12r_op_at",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.7063877087013039e-06,
+      "end_V": 8.437984747528288e-07,
+      "peak_absolute_state_charge_C": 1.706387708701304e-13,
+      "net_state_charge_change_C": 8.437984747528277e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rsgw12r_op_trc",
+          "nodes": [
+            "sgw12r_op_tt",
+            "sgw12r_op_at"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.378368221291567e-13,
+          "peak_absolute_current_A": 2.1423449940385045e-10
+        },
+        {
+          "element": "rsgw12r_op_trl",
+          "nodes": [
+            "sgw12r_op_at",
+            "0"
+          ],
+          "R_ohm": 22000000.0,
+          "net_charge_into_node_C": -1.6111270247532062e-13,
+          "peak_absolute_current_A": 7.756307766824109e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "csgw12r_op_dc",
+      "node": "sgw12r_op_ad",
+      "C_F": 3.3e-07,
+      "peak_abs_V": 3.7252466043169575e-08,
+      "end_V": 1.7065899664757842e-10,
+      "peak_absolute_state_charge_C": 1.229331379424596e-14,
+      "net_state_charge_change_C": 5.63174802081362e-17,
+      "resistor_current_readbacks": [
+        {
+          "element": "rsgw12r_op_dr",
+          "nodes": [
+            "sgw12r_op_aq",
+            "sgw12r_op_ad"
+          ],
+          "R_ohm": 1000000.0,
+          "net_charge_into_node_C": -7.459990946897395e-15,
+          "peak_absolute_current_A": 2.7312761250197827e-12
+        }
+      ]
+    },
+    {
+      "capacitor": "ccdw12f_hsf_c1",
+      "node": "cdw12f_hsf_h1",
+      "C_F": 1e-06,
+      "peak_abs_V": 2.2181985705162964e-07,
+      "end_V": 2.2181985705162964e-07,
+      "peak_absolute_state_charge_C": 2.2181985705162962e-13,
+      "net_state_charge_change_C": 2.2181985705162962e-13,
+      "resistor_current_readbacks": [
+        {
+          "element": "rcdw12f_hsf_rr",
+          "nodes": [
+            "cdw12f_hsf_sd",
+            "cdw12f_hsf_h1"
+          ],
+          "R_ohm": 100000.0,
+          "net_charge_into_node_C": 3.5133338613031585e-13,
+          "peak_absolute_current_A": 3.4738291555411665e-12
+        },
+        {
+          "element": "rcdw12f_hsf_r2",
+          "nodes": [
+            "cdw12f_hsf_h1",
+            "cdw12f_hs"
+          ],
+          "R_ohm": 1000000.0,
+          "net_charge_into_node_C": -1.295168108489718e-13,
+          "peak_absolute_current_A": 5.778188122553358e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "ccdw12f_hsf_c2",
+      "node": "cdw12f_hs",
+      "C_F": 4.7e-07,
+      "peak_abs_V": 1.6403797582609606e-07,
+      "end_V": 1.6403797582609606e-07,
+      "peak_absolute_state_charge_C": 7.709784863826515e-14,
+      "net_state_charge_change_C": 7.709784863826515e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rcdw12f_hsf_r2",
+          "nodes": [
+            "cdw12f_hsf_h1",
+            "cdw12f_hs"
+          ],
+          "R_ohm": 1000000.0,
+          "net_charge_into_node_C": 1.295168108489718e-13,
+          "peak_absolute_current_A": 5.778188122553358e-14
+        },
+        {
+          "element": "rcdw12f_hsf_rl",
+          "nodes": [
+            "cdw12f_hs",
+            "0"
+          ],
+          "R_ohm": 4700000.0,
+          "net_charge_into_node_C": -5.3278585855122076e-14,
+          "peak_absolute_current_A": 3.4901696984275754e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "ccdw12f_hcf_c1",
+      "node": "cdw12f_hcf_h1",
+      "C_F": 1e-06,
+      "peak_abs_V": 2.2158407226616716e-07,
+      "end_V": 2.2158407226616716e-07,
+      "peak_absolute_state_charge_C": 2.2158407226616715e-13,
+      "net_state_charge_change_C": 2.2158407226616715e-13,
+      "resistor_current_readbacks": [
+        {
+          "element": "rcdw12f_hcf_rr",
+          "nodes": [
+            "cdw12f_hcf_sd",
+            "cdw12f_hcf_h1"
+          ],
+          "R_ohm": 100000.0,
+          "net_charge_into_node_C": 3.513333861567337e-13,
+          "peak_absolute_current_A": 3.473829155543733e-12
+        },
+        {
+          "element": "rcdw12f_hcf_r2",
+          "nodes": [
+            "cdw12f_hcf_h1",
+            "cdw12f_hc"
+          ],
+          "R_ohm": 1000000.0,
+          "net_charge_into_node_C": -1.297525958443718e-13,
+          "peak_absolute_current_A": 5.775135046349614e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "ccdw12f_hcf_c2",
+      "node": "cdw12f_hc",
+      "C_F": 4.7e-07,
+      "peak_abs_V": 1.6383272180267103e-07,
+      "end_V": 1.6383272180267103e-07,
+      "peak_absolute_state_charge_C": 7.700137924725539e-14,
+      "net_state_charge_change_C": 7.700137924725539e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rcdw12f_hcf_r2",
+          "nodes": [
+            "cdw12f_hcf_h1",
+            "cdw12f_hc"
+          ],
+          "R_ohm": 1000000.0,
+          "net_charge_into_node_C": 1.297525958443718e-13,
+          "peak_absolute_current_A": 5.775135046349614e-14
+        },
+        {
+          "element": "rcdw12f_hcf_rl",
+          "nodes": [
+            "cdw12f_hc",
+            "0"
+          ],
+          "R_ohm": 4700000.0,
+          "net_charge_into_node_C": -5.306525798679914e-14,
+          "peak_absolute_current_A": 3.485802591546192e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "ccdw12f_rc",
+      "node": "cdw12f_rec",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.6144032649148599e-06,
+      "end_V": 2.4057409781682116e-07,
+      "peak_absolute_state_charge_C": 1.61440326491486e-13,
+      "net_state_charge_change_C": 2.405740978168208e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rcdw12f_rrc",
+          "nodes": [
+            "cdw12f_rt",
+            "cdw12f_rec"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.3783632097278377e-13,
+          "peak_absolute_current_A": 2.1423450441048433e-10
+        },
+        {
+          "element": "rcdw12f_rr",
+          "nodes": [
+            "cdw12f_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0,
+          "net_charge_into_node_C": -2.14501678600474e-13,
+          "peak_absolute_current_A": 1.9687844694083657e-13
+        }
+      ]
+    },
+    {
+      "capacitor": "ccdw12f_op_tc",
+      "node": "cdw12f_op_at",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.7063877829168285e-06,
+      "end_V": 8.437933765659507e-07,
+      "peak_absolute_state_charge_C": 1.7063877829168285e-13,
+      "net_state_charge_change_C": 8.437933765659496e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rcdw12f_op_trc",
+          "nodes": [
+            "cdw12f_op_tt",
+            "cdw12f_op_at"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.3783628689717284e-13,
+          "peak_absolute_current_A": 2.1423450421181514e-10
+        },
+        {
+          "element": "rcdw12f_op_trl",
+          "nodes": [
+            "cdw12f_op_at",
+            "0"
+          ],
+          "R_ohm": 22000000.0,
+          "net_charge_into_node_C": -1.6111267708750318e-13,
+          "peak_absolute_current_A": 7.756308104167403e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "ccdw12f_op_dc",
+      "node": "cdw12f_op_ad",
+      "C_F": 3.3e-07,
+      "peak_abs_V": 3.725246644623978e-08,
+      "end_V": 1.706589953394717e-10,
+      "peak_absolute_state_charge_C": 1.2293313927259127e-14,
+      "net_state_charge_change_C": 5.631747977646098e-17,
+      "resistor_current_readbacks": [
+        {
+          "element": "rcdw12f_op_dr",
+          "nodes": [
+            "cdw12f_op_aq",
+            "cdw12f_op_ad"
+          ],
+          "R_ohm": 1000000.0,
+          "net_charge_into_node_C": -7.459991051788962e-15,
+          "peak_absolute_current_A": 2.73154624254542e-12
+        }
+      ]
+    },
+    {
+      "capacitor": "ccdw12r_hsf_c1",
+      "node": "cdw12r_hsf_h1",
+      "C_F": 1e-06,
+      "peak_abs_V": 2.2181985705162964e-07,
+      "end_V": 2.2181985705162964e-07,
+      "peak_absolute_state_charge_C": 2.2181985705162962e-13,
+      "net_state_charge_change_C": 2.2181985705162962e-13,
+      "resistor_current_readbacks": [
+        {
+          "element": "rcdw12r_hsf_rr",
+          "nodes": [
+            "cdw12r_hsf_sd",
+            "cdw12r_hsf_h1"
+          ],
+          "R_ohm": 100000.0,
+          "net_charge_into_node_C": 3.513333861303159e-13,
+          "peak_absolute_current_A": 3.4738291555411705e-12
+        },
+        {
+          "element": "rcdw12r_hsf_r2",
+          "nodes": [
+            "cdw12r_hsf_h1",
+            "cdw12r_hs"
+          ],
+          "R_ohm": 1000000.0,
+          "net_charge_into_node_C": -1.295168108489719e-13,
+          "peak_absolute_current_A": 5.778188122553558e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "ccdw12r_hsf_c2",
+      "node": "cdw12r_hs",
+      "C_F": 4.7e-07,
+      "peak_abs_V": 1.6403797582609407e-07,
+      "end_V": 1.6403797582609407e-07,
+      "peak_absolute_state_charge_C": 7.709784863826422e-14,
+      "net_state_charge_change_C": 7.709784863826422e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rcdw12r_hsf_r2",
+          "nodes": [
+            "cdw12r_hsf_h1",
+            "cdw12r_hs"
+          ],
+          "R_ohm": 1000000.0,
+          "net_charge_into_node_C": 1.295168108489719e-13,
+          "peak_absolute_current_A": 5.778188122553558e-14
+        },
+        {
+          "element": "rcdw12r_hsf_rl",
+          "nodes": [
+            "cdw12r_hs",
+            "0"
+          ],
+          "R_ohm": 4700000.0,
+          "net_charge_into_node_C": -5.327858585512205e-14,
+          "peak_absolute_current_A": 3.490169698427533e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "ccdw12r_hcf_c1",
+      "node": "cdw12r_hcf_h1",
+      "C_F": 1e-06,
+      "peak_abs_V": 2.215840722661779e-07,
+      "end_V": 2.215840722661779e-07,
+      "peak_absolute_state_charge_C": 2.215840722661779e-13,
+      "net_state_charge_change_C": 2.215840722661779e-13,
+      "resistor_current_readbacks": [
+        {
+          "element": "rcdw12r_hcf_rr",
+          "nodes": [
+            "cdw12r_hcf_sd",
+            "cdw12r_hcf_h1"
+          ],
+          "R_ohm": 100000.0,
+          "net_charge_into_node_C": 3.513333861567337e-13,
+          "peak_absolute_current_A": 3.4738291555437373e-12
+        },
+        {
+          "element": "rcdw12r_hcf_r2",
+          "nodes": [
+            "cdw12r_hcf_h1",
+            "cdw12r_hc"
+          ],
+          "R_ohm": 1000000.0,
+          "net_charge_into_node_C": -1.2975259584435846e-13,
+          "peak_absolute_current_A": 5.775135046348663e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "ccdw12r_hcf_c2",
+      "node": "cdw12r_hc",
+      "C_F": 4.7e-07,
+      "peak_abs_V": 1.6383272180269128e-07,
+      "end_V": 1.6383272180269128e-07,
+      "peak_absolute_state_charge_C": 7.70013792472649e-14,
+      "net_state_charge_change_C": 7.70013792472649e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rcdw12r_hcf_r2",
+          "nodes": [
+            "cdw12r_hcf_h1",
+            "cdw12r_hc"
+          ],
+          "R_ohm": 1000000.0,
+          "net_charge_into_node_C": 1.2975259584435846e-13,
+          "peak_absolute_current_A": 5.775135046348663e-14
+        },
+        {
+          "element": "rcdw12r_hcf_rl",
+          "nodes": [
+            "cdw12r_hc",
+            "0"
+          ],
+          "R_ohm": 4700000.0,
+          "net_charge_into_node_C": -5.306525798680371e-14,
+          "peak_absolute_current_A": 3.485802591546623e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "ccdw12r_rc",
+      "node": "cdw12r_rec",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.6144032649148514e-06,
+      "end_V": 2.4057409781682196e-07,
+      "peak_absolute_state_charge_C": 1.6144032649148513e-13,
+      "net_state_charge_change_C": 2.4057409781682157e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rcdw12r_rrc",
+          "nodes": [
+            "cdw12r_rt",
+            "cdw12r_rec"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.378363209727833e-13,
+          "peak_absolute_current_A": 2.14234504410485e-10
+        },
+        {
+          "element": "rcdw12r_rr",
+          "nodes": [
+            "cdw12r_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0,
+          "net_charge_into_node_C": -2.1450167860047146e-13,
+          "peak_absolute_current_A": 1.9687844694083553e-13
+        }
+      ]
+    },
+    {
+      "capacitor": "ccdw12r_op_tc",
+      "node": "cdw12r_op_at",
+      "C_F": 1e-07,
+      "peak_abs_V": 1.7063877829168285e-06,
+      "end_V": 8.437933765659563e-07,
+      "peak_absolute_state_charge_C": 1.7063877829168285e-13,
+      "net_state_charge_change_C": 8.437933765659551e-14,
+      "resistor_current_readbacks": [
+        {
+          "element": "rcdw12r_op_trc",
+          "nodes": [
+            "cdw12r_op_tt",
+            "cdw12r_op_at"
+          ],
+          "R_ohm": 10000.0,
+          "net_charge_into_node_C": 2.3783628689717254e-13,
+          "peak_absolute_current_A": 2.142345042118157e-10
+        },
+        {
+          "element": "rcdw12r_op_trl",
+          "nodes": [
+            "cdw12r_op_at",
+            "0"
+          ],
+          "R_ohm": 22000000.0,
+          "net_charge_into_node_C": -1.611126770875032e-13,
+          "peak_absolute_current_A": 7.756308104167403e-14
+        }
+      ]
+    },
+    {
+      "capacitor": "ccdw12r_op_dc",
+      "node": "cdw12r_op_ad",
+      "C_F": 3.3e-07,
+      "peak_abs_V": 3.725246644623978e-08,
+      "end_V": 1.706589953394717e-10,
+      "peak_absolute_state_charge_C": 1.2293313927259127e-14,
+      "net_state_charge_change_C": 5.631747977646098e-17,
+      "resistor_current_readbacks": [
+        {
+          "element": "rcdw12r_op_dr",
+          "nodes": [
+            "cdw12r_op_aq",
+            "cdw12r_op_ad"
+          ],
+          "R_ohm": 1000000.0,
+          "net_charge_into_node_C": -7.459991051788962e-15,
+          "peak_absolute_current_A": 2.73154624254542e-12
+        }
+      ]
+    }
+  ],
+  "load_rails": [
+    {
+      "node": "v(load_pos)",
+      "max_abs_delta_from_vmid_after_ramp_V": 4.914933660060683e-08
+    },
+    {
+      "node": "v(load_neg)",
+      "max_abs_delta_from_vmid_after_ramp_V": 4.914933660060683e-08
+    }
+  ],
+  "new_clamp_measured_terminal_currents": {
+    "ngw1_e1_kporclamp": {
+      "terminals": {
+        "d": {
+          "current_peak_abs_A": 9.163124389364742e-06,
+          "net_charge_C": 2.3171234989204892e-05
+        },
+        "g": {
+          "current_peak_abs_A": 7.778724993174483e-07,
+          "net_charge_C": 1.376926929020461e-17
+        },
+        "s": {
+          "current_peak_abs_A": 9.163124389181703e-06,
+          "net_charge_C": -2.3171234986313488e-05
+        },
+        "b": {
+          "current_peak_abs_A": 2.2961413646542758e-07,
+          "net_charge_C": -2.9051752774059876e-15
+        }
+      },
+      "net_electrical_port_energy_J": 2.415558702642927e-07
+    },
+    "ngw1_e2_kporclamp": {
+      "terminals": {
+        "d": {
+          "current_peak_abs_A": 9.156316463821164e-06,
+          "net_charge_C": 2.3149351025660123e-05
+        },
+        "g": {
+          "current_peak_abs_A": 7.781215812263765e-07,
+          "net_charge_C": 3.2139756535828376e-17
+        },
+        "s": {
+          "current_peak_abs_A": 9.156316463638286e-06,
+          "net_charge_C": -2.3149351022996167e-05
+        },
+        "b": {
+          "current_peak_abs_A": 2.301609039824304e-07,
+          "net_charge_C": -2.6960949775678356e-15
+        }
+      },
+      "net_electrical_port_energy_J": 2.4108895529532345e-07
+    },
+    "ngw1_e3_kporclamp": {
+      "terminals": {
+        "d": {
+          "current_peak_abs_A": 9.149512076606185e-06,
+          "net_charge_C": 2.3127484599238217e-05
+        },
+        "g": {
+          "current_peak_abs_A": 7.783646401096739e-07,
+          "net_charge_C": 5.00311984286249e-17
+        },
+        "s": {
+          "current_peak_abs_A": 9.14951207642344e-06,
+          "net_charge_C": -2.312748459680076e-05
+        },
+        "b": {
+          "current_peak_abs_A": 2.3070394520545841e-07,
+          "net_charge_C": -2.4874868018120666e-15
+        }
+      },
+      "net_electrical_port_energy_J": 2.406229637208811e-07
+    },
+    "ngw1_e4_kporclamp": {
+      "terminals": {
+        "d": {
+          "current_peak_abs_A": 9.14271122603821e-06,
+          "net_charge_C": 2.3105635646482993e-05
+        },
+        "g": {
+          "current_peak_abs_A": 7.786018247725088e-07,
+          "net_charge_C": 6.716613485649651e-17
+        },
+        "s": {
+          "current_peak_abs_A": 9.142711225855643e-06,
+          "net_charge_C": -2.3105635644268012e-05
+        },
+        "b": {
+          "current_peak_abs_A": 2.3124331317416638e-07,
+          "net_charge_C": -2.282147605051802e-15
+        }
+      },
+      "net_electrical_port_energy_J": 2.401578918665353e-07
+    },
+    "ngw1_e5_kporclamp": {
+      "terminals": {
+        "d": {
+          "current_peak_abs_A": 9.135913910438153e-06,
+          "net_charge_C": 2.3083804108319043e-05
+        },
+        "g": {
+          "current_peak_abs_A": 7.788332797422858e-07,
+          "net_charge_C": 8.326657891958882e-17
+        },
+        "s": {
+          "current_peak_abs_A": 9.135913910255728e-06,
+          "net_charge_C": -2.308380410631934e-05
+        },
+        "b": {
+          "current_peak_abs_A": 2.3177905998104076e-07,
+          "net_charge_C": -2.0829685082106685e-15
+        }
+      },
+      "net_electrical_port_energy_J": 2.396937361718717e-07
+    },
+    "ngw1_e6_kporclamp": {
+      "terminals": {
+        "d": {
+          "current_peak_abs_A": 9.129120128128121e-06,
+          "net_charge_C": 2.30619899283239e-05
+        },
+        "g": {
+          "current_peak_abs_A": 7.790591454049394e-07,
+          "net_charge_C": 9.814587308742663e-17
+        },
+        "s": {
+          "current_peak_abs_A": 9.129120127945865e-06,
+          "net_charge_C": -2.306198992653021e-05
+        },
+        "b": {
+          "current_peak_abs_A": 2.3231123678401452e-07,
+          "net_charge_C": -1.891834467316572e-15
+        }
+      },
+      "net_electrical_port_energy_J": 2.392304931540251e-07
+    },
+    "ngw1_e7_kporclamp": {
+      "terminals": {
+        "d": {
+          "current_peak_abs_A": 9.122329877432558e-06,
+          "net_charge_C": 2.30401930519551e-05
+        },
+        "g": {
+          "current_peak_abs_A": 7.792795581369916e-07,
+          "net_charge_C": 1.1170277535524863e-16
+        },
+        "s": {
+          "current_peak_abs_A": 9.12232987725045e-06,
+          "net_charge_C": -2.3040193050357146e-05
+        },
+        "b": {
+          "current_peak_abs_A": 2.3283989381953264e-07,
+          "net_charge_C": -1.7096588223268195e-15
+        }
+      },
+      "net_electrical_port_energy_J": 2.3876815939231586e-07
+    },
+    "ngw1_e8_kporclamp": {
+      "terminals": {
+        "d": {
+          "current_peak_abs_A": 9.11554315667757e-06,
+          "net_charge_C": 2.3018413426123975e-05
+        },
+        "g": {
+          "current_peak_abs_A": 7.794946504332892e-07,
+          "net_charge_C": 1.2387298526396512e-16
+        },
+        "s": {
+          "current_peak_abs_A": 9.115543156495614e-06,
+          "net_charge_C": -2.301841342471081e-05
+        },
+        "b": {
+          "current_peak_abs_A": 2.3336508041589542e-07,
+          "net_charge_C": -1.5370351821425868e-15
+        }
+      },
+      "net_electrical_port_energy_J": 2.3830673152093389e-07
+    },
+    "ngw1_e9_kporclamp": {
+      "terminals": {
+        "d": {
+          "current_peak_abs_A": 9.108759964191073e-06,
+          "net_charge_C": 2.2996650998939917e-05
+        },
+        "g": {
+          "current_peak_abs_A": 7.797045510304613e-07,
+          "net_charge_C": 1.3457754305432542e-16
+        },
+        "s": {
+          "current_peak_abs_A": 9.108759964009262e-06,
+          "net_charge_C": -2.299665099769938e-05
+        },
+        "b": {
+          "current_peak_abs_A": 2.338868450066052e-07,
+          "net_charge_C": -1.3751138458826112e-15
+        }
+      },
+      "net_electrical_port_energy_J": 2.3784620622567976e-07
+    },
+    "ngw1_e10_kporclamp": {
+      "terminals": {
+        "d": {
+          "current_peak_abs_A": 9.101980298302975e-06,
+          "net_charge_C": 2.29749057195596e-05
+        },
+        "g": {
+          "current_peak_abs_A": 7.799093850264309e-07,
+          "net_charge_C": 1.436989534688089e-16
+        },
+        "s": {
+          "current_peak_abs_A": 9.101980298121329e-06,
+          "net_charge_C": -2.2974905718477e-05
+        },
+        "b": {
+          "current_peak_abs_A": 2.3440523514412887e-07,
+          "net_charge_C": -1.2263008852296797e-15
+        }
+      },
+      "net_electrical_port_energy_J": 2.373865802419547e-07
+    },
+    "ngw1_col_kporclamp": {
+      "terminals": {
+        "d": {
+          "current_peak_abs_A": 8.979886945384931e-06,
+          "net_charge_C": 2.3160023712837394e-05
+        },
+        "g": {
+          "current_peak_abs_A": 7.775789357896244e-07,
+          "net_charge_C": 4.514718468121743e-17
+        },
+        "s": {
+          "current_peak_abs_A": 8.979886945201915e-06,
+          "net_charge_C": -2.3160023710336458e-05
+        },
+        "b": {
+          "current_peak_abs_A": 2.28981806881952e-07,
+          "net_charge_C": -2.546084107951027e-15
+        }
+      },
+      "net_electrical_port_energy_J": 2.4136680044379247e-07
+    },
+    "ngw2_e1_kporclamp": {
+      "terminals": {
+        "d": {
+          "current_peak_abs_A": 9.163124389364762e-06,
+          "net_charge_C": 2.317123498920489e-05
+        },
+        "g": {
+          "current_peak_abs_A": 7.778724993174552e-07,
+          "net_charge_C": 1.3769269288532225e-17
+        },
+        "s": {
+          "current_peak_abs_A": 9.163124389181713e-06,
+          "net_charge_C": -2.3171234986313484e-05
+        },
+        "b": {
+          "current_peak_abs_A": 2.2961413646542928e-07,
+          "net_charge_C": -2.9051752774051356e-15
+        }
+      },
+      "net_electrical_port_energy_J": 2.415558702642926e-07
+    },
+    "ngw2_e2_kporclamp": {
+      "terminals": {
+        "d": {
+          "current_peak_abs_A": 9.156316463821184e-06,
+          "net_charge_C": 2.3149351025660123e-05
+        },
+        "g": {
+          "current_peak_abs_A": 7.781215812263735e-07,
+          "net_charge_C": 3.21397565364216e-17
+        },
+        "s": {
+          "current_peak_abs_A": 9.156316463638284e-06,
+          "net_charge_C": -2.3149351022996167e-05
+        },
+        "b": {
+          "current_peak_abs_A": 2.301609039824338e-07,
+          "net_charge_C": -2.6960949775685144e-15
+        }
+      },
+      "net_electrical_port_energy_J": 2.410889552953234e-07
+    },
+    "ngw2_e3_kporclamp": {
+      "terminals": {
+        "d": {
+          "current_peak_abs_A": 9.149512076606138e-06,
+          "net_charge_C": 2.312748459923821e-05
+        },
+        "g": {
+          "current_peak_abs_A": 7.783646401096823e-07,
+          "net_charge_C": 5.003119842879529e-17
+        },
+        "s": {
+          "current_peak_abs_A": 9.14951207642341e-06,
+          "net_charge_C": -2.3127484596800754e-05
+        },
+        "b": {
+          "current_peak_abs_A": 2.3070394520547281e-07,
+          "net_charge_C": -2.4874868018138392e-15
+        }
+      },
+      "net_electrical_port_energy_J": 2.406229637208811e-07
+    },
+    "ngw2_e4_kporclamp": {
+      "terminals": {
+        "d": {
+          "current_peak_abs_A": 9.14271122603823e-06,
+          "net_charge_C": 2.3105635646482996e-05
+        },
+        "g": {
+          "current_peak_abs_A": 7.786018247725085e-07,
+          "net_charge_C": 6.7166134856263e-17
+        },
+        "s": {
+          "current_peak_abs_A": 9.142711225855653e-06,
+          "net_charge_C": -2.3105635644268012e-05
+        },
+        "b": {
+          "current_peak_abs_A": 2.312433131741901e-07,
+          "net_charge_C": -2.2821476050532626e-15
+        }
+      },
+      "net_electrical_port_energy_J": 2.4015789186653527e-07
+    },
+    "ngw2_e5_kporclamp": {
+      "terminals": {
+        "d": {
+          "current_peak_abs_A": 9.135913910438179e-06,
+          "net_charge_C": 2.3083804108319046e-05
+        },
+        "g": {
+          "current_peak_abs_A": 7.788332797422738e-07,
+          "net_charge_C": 8.326657891959513e-17
+        },
+        "s": {
+          "current_peak_abs_A": 9.135913910255768e-06,
+          "net_charge_C": -2.3083804106319344e-05
+        },
+        "b": {
+          "current_peak_abs_A": 2.317790599810323e-07,
+          "net_charge_C": -2.0829685082099372e-15
+        }
+      },
+      "net_electrical_port_energy_J": 2.3969373617187177e-07
+    },
+    "ngw2_e6_kporclamp": {
+      "terminals": {
+        "d": {
+          "current_peak_abs_A": 9.129120128128162e-06,
+          "net_charge_C": 2.30619899283239e-05
+        },
+        "g": {
+          "current_peak_abs_A": 7.790591454049331e-07,
+          "net_charge_C": 9.814587308781791e-17
+        },
+        "s": {
+          "current_peak_abs_A": 9.129120127945887e-06,
+          "net_charge_C": -2.3061989926530215e-05
+        },
+        "b": {
+          "current_peak_abs_A": 2.3231123678401537e-07,
+          "net_charge_C": -1.891834467316706e-15
+        }
+      },
+      "net_electrical_port_energy_J": 2.392304931540251e-07
+    },
+    "ngw2_e7_kporclamp": {
+      "terminals": {
+        "d": {
+          "current_peak_abs_A": 9.122329877432518e-06,
+          "net_charge_C": 2.3040193051955088e-05
+        },
+        "g": {
+          "current_peak_abs_A": 7.792795581369837e-07,
+          "net_charge_C": 1.1170277535866913e-16
+        },
+        "s": {
+          "current_peak_abs_A": 9.122329877250412e-06,
+          "net_charge_C": -2.304019305035713e-05
+        },
+        "b": {
+          "current_peak_abs_A": 2.3283989381954365e-07,
+          "net_charge_C": -1.7096588223267445e-15
+        }
+      },
+      "net_electrical_port_energy_J": 2.387681593923155e-07
+    },
+    "ngw2_e8_kporclamp": {
+      "terminals": {
+        "d": {
+          "current_peak_abs_A": 9.115543156677563e-06,
+          "net_charge_C": 2.3018413426123958e-05
+        },
+        "g": {
+          "current_peak_abs_A": 7.794946504332714e-07,
+          "net_charge_C": 1.2387298526386415e-16
+        },
+        "s": {
+          "current_peak_abs_A": 9.11554315649561e-06,
+          "net_charge_C": -2.3018413424710792e-05
+        },
+        "b": {
+          "current_peak_abs_A": 2.333650804159022e-07,
+          "net_charge_C": -1.5370351821431433e-15
+        }
+      },
+      "net_electrical_port_energy_J": 2.3830673152093352e-07
+    },
+    "ngw2_e9_kporclamp": {
+      "terminals": {
+        "d": {
+          "current_peak_abs_A": 9.10875996419106e-06,
+          "net_charge_C": 2.2996650998939917e-05
+        },
+        "g": {
+          "current_peak_abs_A": 7.797045510304576e-07,
+          "net_charge_C": 1.345775430530948e-16
+        },
+        "s": {
+          "current_peak_abs_A": 9.108759964009269e-06,
+          "net_charge_C": -2.299665099769938e-05
+        },
+        "b": {
+          "current_peak_abs_A": 2.3388684500660773e-07,
+          "net_charge_C": -1.3751138458825946e-15
+        }
+      },
+      "net_electrical_port_energy_J": 2.3784620622567976e-07
+    },
+    "ngw2_e10_kporclamp": {
+      "terminals": {
+        "d": {
+          "current_peak_abs_A": 9.101980298302961e-06,
+          "net_charge_C": 2.29749057195596e-05
+        },
+        "g": {
+          "current_peak_abs_A": 7.799093850264299e-07,
+          "net_charge_C": 1.4369895346600055e-16
+        },
+        "s": {
+          "current_peak_abs_A": 9.101980298121305e-06,
+          "net_charge_C": -2.2974905718476998e-05
+        },
+        "b": {
+          "current_peak_abs_A": 2.344052351441221e-07,
+          "net_charge_C": -1.2263008852308279e-15
+        }
+      },
+      "net_electrical_port_energy_J": 2.3738658024195464e-07
+    },
+    "ngw2_col_kporclamp": {
+      "terminals": {
+        "d": {
+          "current_peak_abs_A": 8.979886945384931e-06,
+          "net_charge_C": 2.3160023712837394e-05
+        },
+        "g": {
+          "current_peak_abs_A": 7.775789357896247e-07,
+          "net_charge_C": 4.5147184681116457e-17
+        },
+        "s": {
+          "current_peak_abs_A": 8.979886945201915e-06,
+          "net_charge_C": -2.3160023710336458e-05
+        },
+        "b": {
+          "current_peak_abs_A": 2.289818068819537e-07,
+          "net_charge_C": -2.546084107951134e-15
+        }
+      },
+      "net_electrical_port_energy_J": 2.4136680044379247e-07
+    },
+    "nthw12f_kporclamp": {
+      "terminals": {
+        "d": {
+          "current_peak_abs_A": 7.91661171396675e-06,
+          "net_charge_C": 2.039262970916787e-05
+        },
+        "g": {
+          "current_peak_abs_A": 7.844583659195336e-07,
+          "net_charge_C": 3.980983206130319e-17
+        },
+        "s": {
+          "current_peak_abs_A": 7.916611713805559e-06,
+          "net_charge_C": -2.0392629706670126e-05
+        },
+        "b": {
+          "current_peak_abs_A": 2.0842269888745458e-07,
+          "net_charge_C": -2.537556531399205e-15
+        }
+      },
+      "net_electrical_port_energy_J": 1.8744000316298693e-07
+    },
+    "nthw12r_kporclamp": {
+      "terminals": {
+        "d": {
+          "current_peak_abs_A": 7.91661171396675e-06,
+          "net_charge_C": 2.039262970916787e-05
+        },
+        "g": {
+          "current_peak_abs_A": 7.844583659195336e-07,
+          "net_charge_C": 3.980983206130319e-17
+        },
+        "s": {
+          "current_peak_abs_A": 7.916611713805559e-06,
+          "net_charge_C": -2.0392629706670126e-05
+        },
+        "b": {
+          "current_peak_abs_A": 2.0842269888745458e-07,
+          "net_charge_C": -2.537556531399205e-15
+        }
+      },
+      "net_electrical_port_energy_J": 1.8744000316298693e-07
+    },
+    "nsgw12f_kporclamp": {
+      "terminals": {
+        "d": {
+          "current_peak_abs_A": 7.923618286215681e-06,
+          "net_charge_C": 2.046436020862869e-05
+        },
+        "g": {
+          "current_peak_abs_A": 7.842103858013438e-07,
+          "net_charge_C": 1.2809541105876088e-17
+        },
+        "s": {
+          "current_peak_abs_A": 7.923618286056693e-06,
+          "net_charge_C": -2.04643602057943e-05
+        },
+        "b": {
+          "current_peak_abs_A": 2.0740782854108712e-07,
+          "net_charge_C": -2.8472046043204237e-15
+        }
+      },
+      "net_electrical_port_energy_J": 1.883522997491835e-07
+    },
+    "nsgw12r_kporclamp": {
+      "terminals": {
+        "d": {
+          "current_peak_abs_A": 7.923616639756027e-06,
+          "net_charge_C": 2.0464359869663944e-05
+        },
+        "g": {
+          "current_peak_abs_A": 7.842103857987015e-07,
+          "net_charge_C": 1.2809544305224551e-17
+        },
+        "s": {
+          "current_peak_abs_A": 7.923616639597035e-06,
+          "net_charge_C": -2.046435986682955e-05
+        },
+        "b": {
+          "current_peak_abs_A": 2.0740782853040688e-07,
+          "net_charge_C": -2.8472045601726124e-15
+        }
+      },
+      "net_electrical_port_energy_J": 1.8835229366125797e-07
+    },
+    "ncdw12f_kporclamp": {
+      "terminals": {
+        "d": {
+          "current_peak_abs_A": 7.916611713552259e-06,
+          "net_charge_C": 2.039262970834368e-05
+        },
+        "g": {
+          "current_peak_abs_A": 7.844583659225437e-07,
+          "net_charge_C": 3.9809832184882984e-17
+        },
+        "s": {
+          "current_peak_abs_A": 7.916611713391062e-06,
+          "net_charge_C": -2.0392629705845933e-05
+        },
+        "b": {
+          "current_peak_abs_A": 2.0842269889989326e-07,
+          "net_charge_C": -2.537556529971635e-15
+        }
+      },
+      "net_electrical_port_energy_J": 1.8744000314904958e-07
+    },
+    "ncdw12r_kporclamp": {
+      "terminals": {
+        "d": {
+          "current_peak_abs_A": 7.916611713552252e-06,
+          "net_charge_C": 2.039262970834368e-05
+        },
+        "g": {
+          "current_peak_abs_A": 7.844583659217017e-07,
+          "net_charge_C": 3.9613010358254196e-17
+        },
+        "s": {
+          "current_peak_abs_A": 7.916611713391062e-06,
+          "net_charge_C": -2.0392629705845933e-05
+        },
+        "b": {
+          "current_peak_abs_A": 2.0842269889989665e-07,
+          "net_charge_C": -2.5375565299721232e-15
+        }
+      },
+      "net_electrical_port_energy_J": 1.8744000314845745e-07
+    }
+  },
+  "model_domain": {
+    "covered": 1079,
+    "total": 1079,
+    "outside": [
+      "ngw1_cin_cp",
+      "ngw2_cin_cp",
+      "nspwi1_cp",
+      "nspwi2_cp",
+      "nspwi3_cp",
+      "nspwi4_cp",
+      "nagw12f_cp",
+      "nagw12r_cp"
+    ],
+    "result": "FAIL"
+  }
+}

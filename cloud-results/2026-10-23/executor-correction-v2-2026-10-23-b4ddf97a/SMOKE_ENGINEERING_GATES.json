@@ -1,0 +1,15 @@
+{
+  "actual_stop_s": 3.0,
+  "must_have_por_release": true,
+  "por_release_threshold": "median(measured vdd)/2",
+  "no_original_absolute_threshold_q_up_events": true,
+  "all_28_core_outputs_checked": true,
+  "state_voltage_limit_V": 0.011884394856804668,
+  "state_limit_basis": "1% of original minimum valid history level (1.1884394856804668V); engineering quiet-state ceiling, does not replace any original science gate.",
+  "state_nodes": "Every NRC rec; every occurrence/activity trace capacitor and every actual history capacitor. Voltage and C*dV charge reported with real branch current identities.",
+  "ports_no_original_threshold_up_events": true,
+  "rails_max_abs_deviation_from_vmid_after_rail_ramp_V": 0.011884394856804668,
+  "new_clamp_current_and_power_measured": true,
+  "all_mos_domain_coverage_required": true,
+  "formal_judge_inputs": "Unchanged original view; no added por_hold if absent originally."
+}

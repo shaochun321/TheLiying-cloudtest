@@ -1,0 +1,26 @@
+--- original/netlists/neuron_nrc.py
++++ candidate/netlists/neuron_nrc.py
+@@ -95,6 +95,10 @@
+     nl.M(kp + "m2", kp + "o1", h, kp + "tail", "0", "nch", W, L)
+     nl.M(kp + "m3", kp + "d1", kp + "d1", "vdd", WELL, "pch", 4e-6, L)
+     nl.M(kp + "m4", kp + "o1", kp + "d1", "vdd", WELL, "pch", 4e-6, L)
++    # v2 repair: physical POR hold clamps comparator o1 LOW before both output inverters.
++    # vm/h, regenerative qb feedback and q-controlled real discharge stay wired as before.
++    # After physical POR release the clamp is off; no external timer or behavioral source.
++    nl.M(kp + "porclamp", kp + "o1", "por_hold", "0", "0", "nch", 4e-6, 1e-6)
+     # Output inverters: o1 -> qb -> q (v1.1 §4.2 minimal chain)
+     inverter(nl, kp + "i1", kp + "o1", p + "qb")         # qb = inv(o1)
+     inverter(nl, kp + "i2", p + "qb", p + "q")           # q = inv(qb)
+--- original/netlists/params.py
++++ candidate/netlists/params.py
+@@ -15,8 +15,8 @@
+     "T_RAMP": (20e-3, "DESIGN", "common supply rise 0->VDD (plan sec.5.1: real power-up, no DC-powered start)"),
+     "REF_C": (10e-6, "DESIGN", "decoupling on every reference divider node; dividers kept low-impedance (~1 kohm Thevenin) because all 124 membranes leak into vrest (shared-reference coupling is a real effect, recorded)"),
+     # dividers: node = VDD * Rb/(Rt+Rb)
+-    "VREST_RT": (2e3, "DERIVED", "vrest = VDD/3 = 1.0 V @3 V (plan rest ~1.0 V): Rt 2k / Rb 1k"),
+-    "VREST_RB": (1e3, "DERIVED", "see VREST_RT"),
++    "VREST_RT": (1e3, "DERIVED", "v2 single candidate: alpha=1/3, Rth=333.333 ohm; 25% load envelope from three old DC points; see candidate design"),
++    "VREST_RB": (500.0, "DERIVED", "v2: retain 1/3 divider ratio, see VREST_RT"),
+     "VTHE_RT": (2e3, "DERIVED", "ensemble threshold reference 0.47368 VDD = 1.421 V: with hysteresis weight 0.05, entry = 0.95*1.421+0.05*3 = 1.50 V, exit = 1.35 V (plan sec.8)"),
+     "VTHE_RB": (1.8e3, "DERIVED", "see VTHE_RT (1.8/3.8 = 0.47368)"),
+     "VTHR_RT": (2.4e3, "DERIVED", "receiver threshold reference 1.5/3.9 VDD = 1.154 V: entry 0.95*1.154+0.15 = 1.246 V, exit 1.096 V (rest + 0.25 / + 0.10, plan sec.8)"),

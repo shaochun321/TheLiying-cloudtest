@@ -1,0 +1,16 @@
+{
+  "effective_wall_limit_s": null,
+  "user_waiver_scope": "this v2 batch only",
+  "default_v2_limits_s": {
+    "C0_CORRECTED_50MS": 300,
+    "DC_3": 900,
+    "CHAIN_STARTUP_0_3S": 1200,
+    "Q1_MOTHER_PROTOCOL": 3600,
+    "Q1_MOTHER_HALFSTEP": 3600,
+    "CHAIN_12_W_F": 14400,
+    "G0_W": 10800,
+    "DC_2P7": 900,
+    "DC_3P2": 900
+  },
+  "metadata_clarification": "execution.original_default_wall_s retains the parent registered-case timeout (e.g. CHAIN 5400s); it is not the v2 table default or an effective limit. Effective limits are all null under current user waiver. No execution or frozen deck is rewritten."
+}

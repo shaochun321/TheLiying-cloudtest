@@ -1,0 +1,8 @@
+{
+  "raw_available": true,
+  "format": "original-binary-raw",
+  "path": "C0_CORRECTED_50MS.raw",
+  "raw_sha256": "59f4fa490060103d954aec4deee3e9157e1f7e0fad6e11c09013243c1b3b5542",
+  "raw_bytes": 8058605,
+  "actual_end_s": 0.05
+}

@@ -1,0 +1,37 @@
+{
+  "result": "PASS",
+  "checks": {
+    "actual_generated_deck_accepted": true,
+    "uic_rejected": true,
+    "first_time_parameter_rejected": true,
+    "maximum_internal_step_rejected": true,
+    "component_change_rejected": true,
+    "second_analysis_rejected": true,
+    "second_control_block_rejected": true,
+    "initial_state_override_rejected": true,
+    "model_path_change_rejected": true,
+    "all_model_assets_identical": true,
+    "no_extra_measurement_circuit": true,
+    "zero_native_solver_starts": true
+  },
+  "actual_analysis": "tran 0.001 0.05 0 0.000125",
+  "original_analysis": "tran 0.001 39.2 0 0.000125",
+  "only_analysis_token_changed": "stop",
+  "actual_command": [
+    "/workspace/thermal-g3-env/host/native/bin/ngspice",
+    "-n",
+    "-b",
+    "/workspace/thermal-g3-repair/executor-correction-v2-2026-10-23-b4ddf97a/runs/C0_CORRECTED_50MS/C0_CORRECTED_50MS.cir"
+  ],
+  "cwd": "/workspace/thermal-g3-repair/executor-correction-v2-2026-10-23-b4ddf97a/runs/C0_CORRECTED_50MS",
+  "deck_sha256": "ef0f96f9d12697adf06c5b2230a387f7fe377ad9cdbf5e214ca95f8b38a7fbba",
+  "baseline_deck_sha256": "3aa58812b7898af4d6284e9b62495b569b58f2eb7a0a623e59d95d1b21861f76",
+  "assets_sha256": {
+    "/workspace/thermal-g3-formal/independent-continuation-2026-10-23-d2e498c3/inputs/c05_ekv26_typ.lib": "f6acb2379baacfdb5f53cfc30015f3b7c5690bb1118a5e32a678b76c0b739634",
+    "/workspace/thermal-g3-env/host/native/models/ekv26_linux.osdi": "7c07ae3728941189b77bf0ecfca5ebe56473d01eedc6ea59c46cc32bfdb9a43f",
+    "/workspace/thermal-g3-env/host/native/bin/ngspice": "37d80c673bc4c03904ed4434bb3aa9aecd099ecfaeb66b86730a905e8c76ed89"
+  },
+  "diagnostic_save_count": 759,
+  "native_starts_by_preflight": 0,
+  "allowance_record": "AUTHORIZATION.json"
+}

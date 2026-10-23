@@ -1,0 +1,38 @@
+{
+  "logic_vectors": 64,
+  "max_logic_peak_V": 0.46447489594055247,
+  "state_capacitors": 76,
+  "worst_state": {
+    "capacitor": "cthw12f_op_tc",
+    "node": "thw12f_op_at",
+    "C_F": 1e-07,
+    "peak_abs_V": 1.7063877829168285e-06,
+    "end_V": 8.437933765659442e-07,
+    "peak_absolute_state_charge_C": 1.7063877829168285e-13,
+    "net_state_charge_change_C": 8.437933765659432e-14,
+    "resistor_current_readbacks": [
+      {
+        "element": "rthw12f_op_trc",
+        "nodes": [
+          "thw12f_op_tt",
+          "thw12f_op_at"
+        ],
+        "R_ohm": 10000.0,
+        "net_charge_into_node_C": 2.3783628689717456e-13,
+        "peak_absolute_current_A": 2.1423450421181488e-10
+      },
+      {
+        "element": "rthw12f_op_trl",
+        "nodes": [
+          "thw12f_op_at",
+          "0"
+        ],
+        "R_ohm": 22000000.0,
+        "net_charge_into_node_C": -1.6111267708749972e-13,
+        "peak_absolute_current_A": 7.756308104167403e-14
+      }
+    ]
+  },
+  "clamp_count_measured": 28,
+  "net_clamp_electrical_energy_J": 6.398513382629133e-06
+}

@@ -1,0 +1,11 @@
+{
+  "protected_old_stopped_batch_records": {
+    "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/FORMAL_MANIFEST.json": true,
+    "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/STOPPED.json": true,
+    "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/formal-ledger.jsonl": true,
+    "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/formal-budget-summary.json": true,
+    "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/G0_W/verdict-binding.json": true,
+    "/workspace/thermal-g3-formal/formal-sparse125us-2026-10-22-40458034/runs/G0_W/judge-output.json": true
+  },
+  "scope": "Six small protected record files only; no repeat environment, repository, RAW or history audit."
+}

@@ -1,0 +1,7 @@
+{
+  "reserved_at": "2026-10-23T14:13:06.189579+08:00",
+  "global_before": 42,
+  "manifest_sha256": "34e319615d885c77bdb772fd5d5614dd2356d22f001b2489ad7781d159001036",
+  "max_starts": 1,
+  "effective_wall_limit_s": null
+}

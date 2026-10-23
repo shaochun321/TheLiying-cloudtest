@@ -1,0 +1,17 @@
+{
+  "case_id": "CHAIN_STARTUP_0_3S",
+  "result": "FAIL",
+  "original_judge_result": "FAIL",
+  "engineering_result": "FAIL",
+  "deck_sha256": "881b746805d4c19e054203fc3f69b5cd5851aea73d3293a899d80ecca8c164aa",
+  "raw_path": "/workspace/thermal-g3-repair/executor-correction-v2-2026-10-23-b4ddf97a/runs/CHAIN_STARTUP_0_3S/CHAIN_STARTUP_0_3S.raw",
+  "raw_sha256": "e1dafc22faf020066cdebd5b5abe3849192355aaf8b6399d9a05b380d07cd7fc",
+  "actual_end_s": 3.0,
+  "solver_wall_s": 506.5422375039925,
+  "offline_score_wall_s": 2.2644207580015063,
+  "global_start_count": 43,
+  "candidate_manifest_sha256": "34e319615d885c77bdb772fd5d5614dd2356d22f001b2489ad7781d159001036",
+  "scoring_view_policy": "record start",
+  "additional_diagnostic_vectors_never_entered_original_view": true,
+  "judge_output_sha256": "2d9d4de3f321a2bf3140b5683af5f56595c881170c52f429c90c2698b75e9978"
+}
