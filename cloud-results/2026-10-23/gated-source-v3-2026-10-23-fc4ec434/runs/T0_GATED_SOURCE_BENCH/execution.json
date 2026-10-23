@@ -1,0 +1,24 @@
+{
+  "case_id": "T0_GATED_SOURCE_BENCH",
+  "actual_solver_starts": 1,
+  "command": [
+    "/workspace/thermal-g3-env/host/native/bin/ngspice",
+    "-n",
+    "-b",
+    "/workspace/thermal-g3-repair/gated-source-v3-2026-10-23-fc4ec434/runs/T0_GATED_SOURCE_BENCH/T0_GATED_SOURCE_BENCH.cir"
+  ],
+  "cwd": "/workspace/thermal-g3-repair/gated-source-v3-2026-10-23-fc4ec434/runs/T0_GATED_SOURCE_BENCH",
+  "actual_analysis": "tran 0.001 0.06 0 0.000125",
+  "global_before": 43,
+  "global_after": 44,
+  "returncode": 0,
+  "spawn_error": null,
+  "solver_wall_s": 2.6146218920039246,
+  "solver_process_reaped": true,
+  "retry_count": 0,
+  "effective_wall_limit_s": null,
+  "v3_default_reference_wall_s": 300,
+  "pid": 71064,
+  "started_at": "2026-10-23T16:44:03.590785+08:00",
+  "ended_at": "2026-10-23T16:44:06.203655+08:00"
+}

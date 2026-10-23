@@ -1,0 +1,41 @@
+{
+  "result": "REPAIR_FAILED",
+  "actual_new_starts": 1,
+  "global_start_count": 44,
+  "remaining_start_slots": 21,
+  "solver_wall_s": 2.6146218920039246,
+  "actual_end_s": 0.06,
+  "native_returncode": 0,
+  "model_domain": {
+    "covered": 57,
+    "total": 57,
+    "outside": [],
+    "result": "PASS"
+  },
+  "reference_disturbance": {
+    "irefp_n": {
+      "baseline_V": 2.261992901564576,
+      "max_abs_delta_V": 0.8823715731924282,
+      "peak_time_s": 0.04545502581464064,
+      "first_excess_time_s": 0.0251937885961232,
+      "limit_V": 0.02
+    },
+    "ilimp_n": {
+      "baseline_V": 2.234146302204948,
+      "max_abs_delta_V": 0.9009995199827778,
+      "peak_time_s": 0.045515199054017484,
+      "first_excess_time_s": 0.02520381577593143,
+      "limit_V": 0.02
+    }
+  },
+  "current_charge_establishment_gates_passed": true,
+  "independent_reference_monitor": {
+    "baseline_current_A": 1.1304751336681454e-06,
+    "min_current_after24ms_A": -3.339686564032517e-10,
+    "max_current_after24ms_A": 1.133821737574559e-06
+  },
+  "blocked_successor_count": 8,
+  "candidate_qualification": "NOT_GRANTED",
+  "scope": "Frozen9-channel simultaneous standalone T0 bench only; no full DC or full-chain claim.",
+  "no_automatic_followup": true
+}

@@ -1,0 +1,12 @@
+{
+  "parent_commit": "1faf29a6e6b5041032effbae1c5c4f367076ed67",
+  "checks": {
+    "candidate_manifest.json": true,
+    "candidate.diff": true,
+    "repair-ledger.jsonl": true,
+    "TEST_MATRIX_RESULT.json": true,
+    "runs/DC_3/verdict-binding.json": true,
+    "runs/CHAIN_STARTUP_0_3S/verdict-binding.json": true
+  },
+  "scope": "Six small directly related v2 records compared with its delivered originals. No historical RAW/environment/repository audit repeated."
+}

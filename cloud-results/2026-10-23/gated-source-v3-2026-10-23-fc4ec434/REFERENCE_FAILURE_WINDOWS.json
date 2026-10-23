@@ -1,0 +1,260 @@
+{
+  "scope": "Targeted offline failure windows only; no native start, no RAW rehash.",
+  "raw_sha256": "4815fd431401ba21035fde8b4591f1058205550d074bd172cbffa9f0d48a7d2c",
+  "model_domain": {
+    "covered": 57,
+    "total": 57,
+    "outside": [],
+    "result": "PASS"
+  },
+  "reference_windows": [
+    {
+      "reference": "irefp_n",
+      "first_violating_sample_s": 0.0251937885961232,
+      "last_violating_sample_s": 0.02556684718704728,
+      "peak_time_s": 0.02546553310285847,
+      "baseline_V": 2.261992901564576,
+      "peak_actual_V": 3.1397261111819446,
+      "peak_abs_delta_V": 0.8777332096173684,
+      "limit_V": 0.02,
+      "enable_b_at_peak_V": 1.7102940708529009,
+      "vdd_at_peak_V": 3.1469031783398274,
+      "simultaneous_channel_count": 6,
+      "total_bias_drain_current_into_reference_at_peak_A": 1.1298827169122964e-06,
+      "total_off_drain_current_into_gate_at_peak_A": 1.1299458164000216e-06,
+      "reference_injected_charge_over_error_window": {
+        "positive_C": 3.9595327790814263e-10,
+        "negative_magnitude_C": 0.0,
+        "absolute_C": 3.9595327790814263e-10,
+        "net_C": 3.9595327790814263e-10
+      },
+      "device_examples": [
+        {
+          "prefix": "t0_spatial_low_",
+          "cg_V": 3.145545562553445,
+          "enable_a_V": 0.2101770548116555,
+          "bias_vsg_V": 1.4352514917005441,
+          "off_vsg_V": 2.936726123528172,
+          "bias_drain_injection_A": 1.8831376708171245e-07,
+          "off_drain_charge_current_A": 1.883243841115643e-07
+        },
+        {
+          "prefix": "t0_spatial_work_low_",
+          "cg_V": 3.145545562556526,
+          "enable_a_V": 0.2101770548116555,
+          "bias_vsg_V": 1.4352514917036252,
+          "off_vsg_V": 2.936726123528172,
+          "bias_drain_injection_A": 1.8831376718186563e-07,
+          "off_drain_charge_current_A": 1.8832438368433443e-07
+        }
+      ]
+    },
+    {
+      "reference": "irefp_n",
+      "first_violating_sample_s": 0.03543384475631289,
+      "last_violating_sample_s": 0.035809599154556886,
+      "peak_time_s": 0.03547121163408171,
+      "baseline_V": 2.261992901564576,
+      "peak_actual_V": 3.14253798814459,
+      "peak_abs_delta_V": 0.880545086580014,
+      "limit_V": 0.02,
+      "enable_b_at_peak_V": 1.5078772290614704,
+      "vdd_at_peak_V": 3.148930966986908,
+      "simultaneous_channel_count": 6,
+      "total_bias_drain_current_into_reference_at_peak_A": 1.1308393409802749e-06,
+      "total_off_drain_current_into_gate_at_peak_A": 1.1307718852916976e-06,
+      "reference_injected_charge_over_error_window": {
+        "positive_C": 3.9669953954301027e-10,
+        "negative_magnitude_C": 0.0,
+        "absolute_C": 3.9669953954301027e-10,
+        "net_C": 3.9669953954301027e-10
+      },
+      "device_examples": [
+        {
+          "prefix": "t0_spatial_low_",
+          "cg_V": 3.147337742743991,
+          "enable_a_V": 0.6915291874950711,
+          "bias_vsg_V": 1.6394605136825207,
+          "off_vsg_V": 2.457401779491837,
+          "bias_drain_injection_A": 1.8847323736423198e-07,
+          "off_drain_charge_current_A": 1.8846193918978628e-07
+        },
+        {
+          "prefix": "t0_spatial_work_low_",
+          "cg_V": 3.147337742742001,
+          "enable_a_V": 0.691529187495064,
+          "bias_vsg_V": 1.6394605136805307,
+          "off_vsg_V": 2.457401779491844,
+          "bias_drain_injection_A": 1.8847323728589838e-07,
+          "off_drain_charge_current_A": 1.884619394253292e-07
+        }
+      ]
+    },
+    {
+      "reference": "irefp_n",
+      "first_violating_sample_s": 0.045188848058524515,
+      "last_violating_sample_s": 0.04556759820984505,
+      "peak_time_s": 0.04545502581464064,
+      "baseline_V": 2.261992901564576,
+      "peak_actual_V": 3.1443644747570043,
+      "peak_abs_delta_V": 0.8823715731924282,
+      "limit_V": 0.02,
+      "enable_b_at_peak_V": 1.7439173931499392,
+      "vdd_at_peak_V": 3.1517208647657657,
+      "simultaneous_channel_count": 6,
+      "total_bias_drain_current_into_reference_at_peak_A": 1.1321204290563912e-06,
+      "total_off_drain_current_into_gate_at_peak_A": 1.132183583404001e-06,
+      "reference_injected_charge_over_error_window": {
+        "positive_C": 3.9898599025254497e-10,
+        "negative_magnitude_C": 0.0,
+        "absolute_C": 3.9898599025254497e-10,
+        "net_C": 3.9898599025254497e-10
+      },
+      "device_examples": [
+        {
+          "prefix": "t0_spatial_low_",
+          "cg_V": 3.150370961460254,
+          "enable_a_V": 0.19000609104499144,
+          "bias_vsg_V": 1.406453568310315,
+          "off_vsg_V": 2.9617147737207743,
+          "bias_drain_injection_A": 1.886867198680421e-07,
+          "off_drain_charge_current_A": 1.8869734497292331e-07
+        },
+        {
+          "prefix": "t0_spatial_work_low_",
+          "cg_V": 3.150370961463295,
+          "enable_a_V": 0.19000609104499144,
+          "bias_vsg_V": 1.4064535683133557,
+          "off_vsg_V": 2.9617147737207743,
+          "bias_drain_injection_A": 1.88686719963994e-07,
+          "off_drain_charge_current_A": 1.8869734454802448e-07
+        }
+      ]
+    },
+    {
+      "reference": "ilimp_n",
+      "first_violating_sample_s": 0.02520381577593143,
+      "last_violating_sample_s": 0.025563509376515026,
+      "peak_time_s": 0.02551630356097031,
+      "baseline_V": 2.234146302204948,
+      "peak_actual_V": 3.130541074040988,
+      "peak_abs_delta_V": 0.8963947718360399,
+      "limit_V": 0.02,
+      "enable_b_at_peak_V": 1.5478286048950172,
+      "vdd_at_peak_V": 3.145776605477096,
+      "simultaneous_channel_count": 3,
+      "total_bias_drain_current_into_reference_at_peak_A": 1.3322116667497405e-06,
+      "total_off_drain_current_into_gate_at_peak_A": 1.3322405460704147e-06,
+      "reference_injected_charge_over_error_window": {
+        "positive_C": 4.395806186214499e-10,
+        "negative_magnitude_C": 0.0,
+        "absolute_C": 4.395806186214499e-10,
+        "net_C": 4.395806186214499e-10
+      },
+      "device_examples": [
+        {
+          "prefix": "t0_collector_low_",
+          "cg_V": 3.1423647021961076,
+          "enable_a_V": 0.41793188270353454,
+          "bias_vsg_V": 1.5945360973010905,
+          "off_vsg_V": 2.7278447227735616,
+          "bias_drain_injection_A": 4.4407055538102055e-07,
+          "off_drain_charge_current_A": 4.4408018271875236e-07
+        },
+        {
+          "prefix": "t0_collector_work_low_",
+          "cg_V": 3.1423647022021486,
+          "enable_a_V": 0.41793188270353365,
+          "bias_vsg_V": 1.5945360973071314,
+          "off_vsg_V": 2.7278447227735625,
+          "bias_drain_injection_A": 4.440705556094755e-07,
+          "off_drain_charge_current_A": 4.440801819333021e-07
+        }
+      ]
+    },
+    {
+      "reference": "ilimp_n",
+      "first_violating_sample_s": 0.03543609932737269,
+      "last_violating_sample_s": 0.035800443632721966,
+      "peak_time_s": 0.03547265386045946,
+      "baseline_V": 2.234146302204948,
+      "peak_actual_V": 3.133797960757351,
+      "peak_abs_delta_V": 0.8996516585524028,
+      "limit_V": 0.02,
+      "enable_b_at_peak_V": 1.5124923534702615,
+      "vdd_at_peak_V": 3.1488958349966865,
+      "simultaneous_channel_count": 3,
+      "total_bias_drain_current_into_reference_at_peak_A": 1.3339298576222247e-06,
+      "total_off_drain_current_into_gate_at_peak_A": 1.3339011189596249e-06,
+      "reference_injected_charge_over_error_window": {
+        "positive_C": 4.4076302421650773e-10,
+        "negative_magnitude_C": 0.0,
+        "absolute_C": 4.4076302421650773e-10,
+        "net_C": 4.4076302421650773e-10
+      },
+      "device_examples": [
+        {
+          "prefix": "t0_collector_low_",
+          "cg_V": 3.1452415074494713,
+          "enable_a_V": 0.6170686590760681,
+          "bias_vsg_V": 1.6327491539792098,
+          "off_vsg_V": 2.5318271759206183,
+          "bias_drain_injection_A": 4.446432860985951e-07,
+          "off_drain_charge_current_A": 4.4463370562182946e-07
+        },
+        {
+          "prefix": "t0_collector_work_low_",
+          "cg_V": 3.145241507442985,
+          "enable_a_V": 0.6170686590760717,
+          "bias_vsg_V": 1.6327491539727235,
+          "off_vsg_V": 2.531827175920615,
+          "bias_drain_injection_A": 4.4464328584495956e-07,
+          "off_drain_charge_current_A": 4.446337064103697e-07
+        }
+      ]
+    },
+    {
+      "reference": "ilimp_n",
+      "first_violating_sample_s": 0.04519419643068507,
+      "last_violating_sample_s": 0.045563782687515215,
+      "peak_time_s": 0.045515199054017484,
+      "baseline_V": 2.234146302204948,
+      "peak_actual_V": 3.135145822187726,
+      "peak_abs_delta_V": 0.9009995199827778,
+      "limit_V": 0.02,
+      "enable_b_at_peak_V": 1.551363027144047,
+      "vdd_at_peak_V": 3.1503710288771583,
+      "simultaneous_channel_count": 3,
+      "total_bias_drain_current_into_reference_at_peak_A": 1.3347383017712659e-06,
+      "total_off_drain_current_into_gate_at_peak_A": 1.3347670599461302e-06,
+      "reference_injected_charge_over_error_window": {
+        "positive_C": 4.433774877367379e-10,
+        "negative_magnitude_C": 0.0,
+        "absolute_C": 4.433774877367379e-10,
+        "net_C": 4.433774877367379e-10
+      },
+      "device_examples": [
+        {
+          "prefix": "t0_collector_low_",
+          "cg_V": 3.1469607703951556,
+          "enable_a_V": 0.41737074369027827,
+          "bias_vsg_V": 1.5955977432511086,
+          "off_vsg_V": 2.73300028518688,
+          "bias_drain_injection_A": 4.4491276705174525e-07,
+          "off_drain_charge_current_A": 4.449223540212827e-07
+        },
+        {
+          "prefix": "t0_collector_work_low_",
+          "cg_V": 3.1469607704012743,
+          "enable_a_V": 0.41737074369027916,
+          "bias_vsg_V": 1.5955977432572273,
+          "off_vsg_V": 2.733000285186879,
+          "bias_drain_injection_A": 4.449127672837103e-07,
+          "off_drain_charge_current_A": 4.4492235322390623e-07
+        }
+      ]
+    }
+  ],
+  "causal_path": "VDD -> off PMOS -> cg -> bias PMOS -> shared reference diode node during overlapping physical conduction.",
+  "scope_limit": "Measured in the frozen nine-channel simultaneous testbench. No independent single-channel or full-circuit result is claimed."
+}

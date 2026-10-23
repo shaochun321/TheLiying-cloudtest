@@ -1,0 +1,6 @@
+{
+  "manifest_sha256": "36d194f048b66e2823f36f92a8f590f6758ac1deb0054e4350943c766c13a2ea",
+  "global_before": 43,
+  "one_candidate": true,
+  "no_candidate_parameter_change_after_first_start": true
+}

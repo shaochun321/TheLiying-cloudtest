@@ -1,0 +1,22 @@
+{
+  "result": "REPAIR_FAILED",
+  "failure_gate": "Reference disturbance exceeds frozen20mV engineering limit",
+  "reference_peak_delta_V": {
+    "irefp_n": 0.8823715731924282,
+    "ilimp_n": 0.9009995199827778
+  },
+  "reference_peak_limit_factors": {
+    "irefp_n": 44.118578659621406,
+    "ilimp_n": 45.04997599913889
+  },
+  "model_domain_passed": 57,
+  "work_current_windows_all_passed": true,
+  "all_channel_charge_and_settling_gates_passed": true,
+  "largest_OFF_charge_limit_fraction": 3.793563979883668e-05,
+  "independent_reference_monitor": {
+    "baseline_current_A": 1.1304751336681454e-06,
+    "min_current_after24ms_A": -3.339686564032517e-10,
+    "max_current_after24ms_A": 1.133821737574559e-06
+  },
+  "actual_end_s": 0.06
+}

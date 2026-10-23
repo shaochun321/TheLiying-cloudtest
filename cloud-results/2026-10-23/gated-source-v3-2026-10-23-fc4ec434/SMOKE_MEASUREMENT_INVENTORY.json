@@ -1,0 +1,3899 @@
+{
+  "states": [
+    {
+      "capacitor": "cgw1_e1_rc",
+      "node": "gw1_e1_rec",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw1_e1_rrc",
+          "nodes": [
+            "gw1_e1_rt",
+            "gw1_e1_rec"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw1_e1_rr",
+          "nodes": [
+            "gw1_e1_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_b1_c",
+      "node": "gw1_b1",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw1_b1_rc",
+          "nodes": [
+            "gw1_b1_t",
+            "gw1_b1"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw1_b1_rl",
+          "nodes": [
+            "gw1_b1",
+            "0"
+          ],
+          "R_ohm": 22000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_e2_rc",
+      "node": "gw1_e2_rec",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw1_e2_rrc",
+          "nodes": [
+            "gw1_e2_rt",
+            "gw1_e2_rec"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw1_e2_rr",
+          "nodes": [
+            "gw1_e2_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_b2_c",
+      "node": "gw1_b2",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw1_b2_rc",
+          "nodes": [
+            "gw1_b2_t",
+            "gw1_b2"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw1_b2_rl",
+          "nodes": [
+            "gw1_b2",
+            "0"
+          ],
+          "R_ohm": 22000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_e3_rc",
+      "node": "gw1_e3_rec",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw1_e3_rrc",
+          "nodes": [
+            "gw1_e3_rt",
+            "gw1_e3_rec"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw1_e3_rr",
+          "nodes": [
+            "gw1_e3_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_b3_c",
+      "node": "gw1_b3",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw1_b3_rc",
+          "nodes": [
+            "gw1_b3_t",
+            "gw1_b3"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw1_b3_rl",
+          "nodes": [
+            "gw1_b3",
+            "0"
+          ],
+          "R_ohm": 22000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_e4_rc",
+      "node": "gw1_e4_rec",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw1_e4_rrc",
+          "nodes": [
+            "gw1_e4_rt",
+            "gw1_e4_rec"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw1_e4_rr",
+          "nodes": [
+            "gw1_e4_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_b4_c",
+      "node": "gw1_b4",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw1_b4_rc",
+          "nodes": [
+            "gw1_b4_t",
+            "gw1_b4"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw1_b4_rl",
+          "nodes": [
+            "gw1_b4",
+            "0"
+          ],
+          "R_ohm": 22000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_e5_rc",
+      "node": "gw1_e5_rec",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw1_e5_rrc",
+          "nodes": [
+            "gw1_e5_rt",
+            "gw1_e5_rec"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw1_e5_rr",
+          "nodes": [
+            "gw1_e5_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_b5_c",
+      "node": "gw1_b5",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw1_b5_rc",
+          "nodes": [
+            "gw1_b5_t",
+            "gw1_b5"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw1_b5_rl",
+          "nodes": [
+            "gw1_b5",
+            "0"
+          ],
+          "R_ohm": 22000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_e6_rc",
+      "node": "gw1_e6_rec",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw1_e6_rrc",
+          "nodes": [
+            "gw1_e6_rt",
+            "gw1_e6_rec"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw1_e6_rr",
+          "nodes": [
+            "gw1_e6_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_b6_c",
+      "node": "gw1_b6",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw1_b6_rc",
+          "nodes": [
+            "gw1_b6_t",
+            "gw1_b6"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw1_b6_rl",
+          "nodes": [
+            "gw1_b6",
+            "0"
+          ],
+          "R_ohm": 22000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_e7_rc",
+      "node": "gw1_e7_rec",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw1_e7_rrc",
+          "nodes": [
+            "gw1_e7_rt",
+            "gw1_e7_rec"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw1_e7_rr",
+          "nodes": [
+            "gw1_e7_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_b7_c",
+      "node": "gw1_b7",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw1_b7_rc",
+          "nodes": [
+            "gw1_b7_t",
+            "gw1_b7"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw1_b7_rl",
+          "nodes": [
+            "gw1_b7",
+            "0"
+          ],
+          "R_ohm": 22000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_e8_rc",
+      "node": "gw1_e8_rec",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw1_e8_rrc",
+          "nodes": [
+            "gw1_e8_rt",
+            "gw1_e8_rec"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw1_e8_rr",
+          "nodes": [
+            "gw1_e8_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_b8_c",
+      "node": "gw1_b8",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw1_b8_rc",
+          "nodes": [
+            "gw1_b8_t",
+            "gw1_b8"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw1_b8_rl",
+          "nodes": [
+            "gw1_b8",
+            "0"
+          ],
+          "R_ohm": 22000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_e9_rc",
+      "node": "gw1_e9_rec",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw1_e9_rrc",
+          "nodes": [
+            "gw1_e9_rt",
+            "gw1_e9_rec"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw1_e9_rr",
+          "nodes": [
+            "gw1_e9_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_b9_c",
+      "node": "gw1_b9",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw1_b9_rc",
+          "nodes": [
+            "gw1_b9_t",
+            "gw1_b9"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw1_b9_rl",
+          "nodes": [
+            "gw1_b9",
+            "0"
+          ],
+          "R_ohm": 22000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_e10_rc",
+      "node": "gw1_e10_rec",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw1_e10_rrc",
+          "nodes": [
+            "gw1_e10_rt",
+            "gw1_e10_rec"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw1_e10_rr",
+          "nodes": [
+            "gw1_e10_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_b10_c",
+      "node": "gw1_b10",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw1_b10_rc",
+          "nodes": [
+            "gw1_b10_t",
+            "gw1_b10"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw1_b10_rl",
+          "nodes": [
+            "gw1_b10",
+            "0"
+          ],
+          "R_ohm": 22000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_col_rc",
+      "node": "gw1_col_rec",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw1_col_rrc",
+          "nodes": [
+            "gw1_col_rt",
+            "gw1_col_rec"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw1_col_rr",
+          "nodes": [
+            "gw1_col_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_op_tc",
+      "node": "gw1_op_at",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw1_op_trc",
+          "nodes": [
+            "gw1_op_tt",
+            "gw1_op_at"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw1_op_trl",
+          "nodes": [
+            "gw1_op_at",
+            "0"
+          ],
+          "R_ohm": 22000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw1_op_dc",
+      "node": "gw1_op_ad",
+      "C_F": 3.3e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw1_op_dr",
+          "nodes": [
+            "gw1_op_aq",
+            "gw1_op_ad"
+          ],
+          "R_ohm": 1000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_e1_rc",
+      "node": "gw2_e1_rec",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw2_e1_rrc",
+          "nodes": [
+            "gw2_e1_rt",
+            "gw2_e1_rec"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw2_e1_rr",
+          "nodes": [
+            "gw2_e1_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_b1_c",
+      "node": "gw2_b1",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw2_b1_rc",
+          "nodes": [
+            "gw2_b1_t",
+            "gw2_b1"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw2_b1_rl",
+          "nodes": [
+            "gw2_b1",
+            "0"
+          ],
+          "R_ohm": 22000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_e2_rc",
+      "node": "gw2_e2_rec",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw2_e2_rrc",
+          "nodes": [
+            "gw2_e2_rt",
+            "gw2_e2_rec"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw2_e2_rr",
+          "nodes": [
+            "gw2_e2_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_b2_c",
+      "node": "gw2_b2",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw2_b2_rc",
+          "nodes": [
+            "gw2_b2_t",
+            "gw2_b2"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw2_b2_rl",
+          "nodes": [
+            "gw2_b2",
+            "0"
+          ],
+          "R_ohm": 22000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_e3_rc",
+      "node": "gw2_e3_rec",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw2_e3_rrc",
+          "nodes": [
+            "gw2_e3_rt",
+            "gw2_e3_rec"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw2_e3_rr",
+          "nodes": [
+            "gw2_e3_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_b3_c",
+      "node": "gw2_b3",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw2_b3_rc",
+          "nodes": [
+            "gw2_b3_t",
+            "gw2_b3"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw2_b3_rl",
+          "nodes": [
+            "gw2_b3",
+            "0"
+          ],
+          "R_ohm": 22000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_e4_rc",
+      "node": "gw2_e4_rec",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw2_e4_rrc",
+          "nodes": [
+            "gw2_e4_rt",
+            "gw2_e4_rec"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw2_e4_rr",
+          "nodes": [
+            "gw2_e4_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_b4_c",
+      "node": "gw2_b4",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw2_b4_rc",
+          "nodes": [
+            "gw2_b4_t",
+            "gw2_b4"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw2_b4_rl",
+          "nodes": [
+            "gw2_b4",
+            "0"
+          ],
+          "R_ohm": 22000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_e5_rc",
+      "node": "gw2_e5_rec",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw2_e5_rrc",
+          "nodes": [
+            "gw2_e5_rt",
+            "gw2_e5_rec"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw2_e5_rr",
+          "nodes": [
+            "gw2_e5_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_b5_c",
+      "node": "gw2_b5",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw2_b5_rc",
+          "nodes": [
+            "gw2_b5_t",
+            "gw2_b5"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw2_b5_rl",
+          "nodes": [
+            "gw2_b5",
+            "0"
+          ],
+          "R_ohm": 22000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_e6_rc",
+      "node": "gw2_e6_rec",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw2_e6_rrc",
+          "nodes": [
+            "gw2_e6_rt",
+            "gw2_e6_rec"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw2_e6_rr",
+          "nodes": [
+            "gw2_e6_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_b6_c",
+      "node": "gw2_b6",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw2_b6_rc",
+          "nodes": [
+            "gw2_b6_t",
+            "gw2_b6"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw2_b6_rl",
+          "nodes": [
+            "gw2_b6",
+            "0"
+          ],
+          "R_ohm": 22000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_e7_rc",
+      "node": "gw2_e7_rec",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw2_e7_rrc",
+          "nodes": [
+            "gw2_e7_rt",
+            "gw2_e7_rec"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw2_e7_rr",
+          "nodes": [
+            "gw2_e7_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_b7_c",
+      "node": "gw2_b7",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw2_b7_rc",
+          "nodes": [
+            "gw2_b7_t",
+            "gw2_b7"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw2_b7_rl",
+          "nodes": [
+            "gw2_b7",
+            "0"
+          ],
+          "R_ohm": 22000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_e8_rc",
+      "node": "gw2_e8_rec",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw2_e8_rrc",
+          "nodes": [
+            "gw2_e8_rt",
+            "gw2_e8_rec"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw2_e8_rr",
+          "nodes": [
+            "gw2_e8_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_b8_c",
+      "node": "gw2_b8",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw2_b8_rc",
+          "nodes": [
+            "gw2_b8_t",
+            "gw2_b8"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw2_b8_rl",
+          "nodes": [
+            "gw2_b8",
+            "0"
+          ],
+          "R_ohm": 22000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_e9_rc",
+      "node": "gw2_e9_rec",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw2_e9_rrc",
+          "nodes": [
+            "gw2_e9_rt",
+            "gw2_e9_rec"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw2_e9_rr",
+          "nodes": [
+            "gw2_e9_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_b9_c",
+      "node": "gw2_b9",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw2_b9_rc",
+          "nodes": [
+            "gw2_b9_t",
+            "gw2_b9"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw2_b9_rl",
+          "nodes": [
+            "gw2_b9",
+            "0"
+          ],
+          "R_ohm": 22000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_e10_rc",
+      "node": "gw2_e10_rec",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw2_e10_rrc",
+          "nodes": [
+            "gw2_e10_rt",
+            "gw2_e10_rec"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw2_e10_rr",
+          "nodes": [
+            "gw2_e10_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_b10_c",
+      "node": "gw2_b10",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw2_b10_rc",
+          "nodes": [
+            "gw2_b10_t",
+            "gw2_b10"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw2_b10_rl",
+          "nodes": [
+            "gw2_b10",
+            "0"
+          ],
+          "R_ohm": 22000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_col_rc",
+      "node": "gw2_col_rec",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw2_col_rrc",
+          "nodes": [
+            "gw2_col_rt",
+            "gw2_col_rec"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw2_col_rr",
+          "nodes": [
+            "gw2_col_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_op_tc",
+      "node": "gw2_op_at",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw2_op_trc",
+          "nodes": [
+            "gw2_op_tt",
+            "gw2_op_at"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rgw2_op_trl",
+          "nodes": [
+            "gw2_op_at",
+            "0"
+          ],
+          "R_ohm": 22000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cgw2_op_dc",
+      "node": "gw2_op_ad",
+      "C_F": 3.3e-07,
+      "resistor_branches": [
+        {
+          "element": "rgw2_op_dr",
+          "nodes": [
+            "gw2_op_aq",
+            "gw2_op_ad"
+          ],
+          "R_ohm": 1000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "chsw1_c1",
+      "node": "hsw1_h1",
+      "C_F": 1e-06,
+      "resistor_branches": [
+        {
+          "element": "rhsw1_rr",
+          "nodes": [
+            "hsw1_sd",
+            "hsw1_h1"
+          ],
+          "R_ohm": 100000.0
+        },
+        {
+          "element": "rhsw1_r2",
+          "nodes": [
+            "hsw1_h1",
+            "hw1"
+          ],
+          "R_ohm": 1000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "chsw1_c2",
+      "node": "hw1",
+      "C_F": 4.7e-07,
+      "resistor_branches": [
+        {
+          "element": "rhsw1_r2",
+          "nodes": [
+            "hsw1_h1",
+            "hw1"
+          ],
+          "R_ohm": 1000000.0
+        },
+        {
+          "element": "rhsw1_rl",
+          "nodes": [
+            "hw1",
+            "0"
+          ],
+          "R_ohm": 4700000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "chsw2_c1",
+      "node": "hsw2_h1",
+      "C_F": 1e-06,
+      "resistor_branches": [
+        {
+          "element": "rhsw2_rr",
+          "nodes": [
+            "hsw2_sd",
+            "hsw2_h1"
+          ],
+          "R_ohm": 100000.0
+        },
+        {
+          "element": "rhsw2_r2",
+          "nodes": [
+            "hsw2_h1",
+            "hw2"
+          ],
+          "R_ohm": 1000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "chsw2_c2",
+      "node": "hw2",
+      "C_F": 4.7e-07,
+      "resistor_branches": [
+        {
+          "element": "rhsw2_r2",
+          "nodes": [
+            "hsw2_h1",
+            "hw2"
+          ],
+          "R_ohm": 1000000.0
+        },
+        {
+          "element": "rhsw2_rl",
+          "nodes": [
+            "hw2",
+            "0"
+          ],
+          "R_ohm": 4700000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cthw12f_rc",
+      "node": "thw12f_rec",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rthw12f_rrc",
+          "nodes": [
+            "thw12f_rt",
+            "thw12f_rec"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rthw12f_rr",
+          "nodes": [
+            "thw12f_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cthw12f_op_tc",
+      "node": "thw12f_op_at",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rthw12f_op_trc",
+          "nodes": [
+            "thw12f_op_tt",
+            "thw12f_op_at"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rthw12f_op_trl",
+          "nodes": [
+            "thw12f_op_at",
+            "0"
+          ],
+          "R_ohm": 22000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cthw12f_op_dc",
+      "node": "thw12f_op_ad",
+      "C_F": 3.3e-07,
+      "resistor_branches": [
+        {
+          "element": "rthw12f_op_dr",
+          "nodes": [
+            "thw12f_op_aq",
+            "thw12f_op_ad"
+          ],
+          "R_ohm": 1000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cthw12r_rc",
+      "node": "thw12r_rec",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rthw12r_rrc",
+          "nodes": [
+            "thw12r_rt",
+            "thw12r_rec"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rthw12r_rr",
+          "nodes": [
+            "thw12r_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cthw12r_op_tc",
+      "node": "thw12r_op_at",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rthw12r_op_trc",
+          "nodes": [
+            "thw12r_op_tt",
+            "thw12r_op_at"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rthw12r_op_trl",
+          "nodes": [
+            "thw12r_op_at",
+            "0"
+          ],
+          "R_ohm": 22000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "cthw12r_op_dc",
+      "node": "thw12r_op_ad",
+      "C_F": 3.3e-07,
+      "resistor_branches": [
+        {
+          "element": "rthw12r_op_dr",
+          "nodes": [
+            "thw12r_op_aq",
+            "thw12r_op_ad"
+          ],
+          "R_ohm": 1000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "csgw12f_rc",
+      "node": "sgw12f_rec",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rsgw12f_rrc",
+          "nodes": [
+            "sgw12f_rt",
+            "sgw12f_rec"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rsgw12f_rr",
+          "nodes": [
+            "sgw12f_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "csgw12f_op_tc",
+      "node": "sgw12f_op_at",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rsgw12f_op_trc",
+          "nodes": [
+            "sgw12f_op_tt",
+            "sgw12f_op_at"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rsgw12f_op_trl",
+          "nodes": [
+            "sgw12f_op_at",
+            "0"
+          ],
+          "R_ohm": 22000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "csgw12f_op_dc",
+      "node": "sgw12f_op_ad",
+      "C_F": 3.3e-07,
+      "resistor_branches": [
+        {
+          "element": "rsgw12f_op_dr",
+          "nodes": [
+            "sgw12f_op_aq",
+            "sgw12f_op_ad"
+          ],
+          "R_ohm": 1000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "csgw12r_rc",
+      "node": "sgw12r_rec",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rsgw12r_rrc",
+          "nodes": [
+            "sgw12r_rt",
+            "sgw12r_rec"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rsgw12r_rr",
+          "nodes": [
+            "sgw12r_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "csgw12r_op_tc",
+      "node": "sgw12r_op_at",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rsgw12r_op_trc",
+          "nodes": [
+            "sgw12r_op_tt",
+            "sgw12r_op_at"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rsgw12r_op_trl",
+          "nodes": [
+            "sgw12r_op_at",
+            "0"
+          ],
+          "R_ohm": 22000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "csgw12r_op_dc",
+      "node": "sgw12r_op_ad",
+      "C_F": 3.3e-07,
+      "resistor_branches": [
+        {
+          "element": "rsgw12r_op_dr",
+          "nodes": [
+            "sgw12r_op_aq",
+            "sgw12r_op_ad"
+          ],
+          "R_ohm": 1000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "ccdw12f_hsf_c1",
+      "node": "cdw12f_hsf_h1",
+      "C_F": 1e-06,
+      "resistor_branches": [
+        {
+          "element": "rcdw12f_hsf_rr",
+          "nodes": [
+            "cdw12f_hsf_sd",
+            "cdw12f_hsf_h1"
+          ],
+          "R_ohm": 100000.0
+        },
+        {
+          "element": "rcdw12f_hsf_r2",
+          "nodes": [
+            "cdw12f_hsf_h1",
+            "cdw12f_hs"
+          ],
+          "R_ohm": 1000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "ccdw12f_hsf_c2",
+      "node": "cdw12f_hs",
+      "C_F": 4.7e-07,
+      "resistor_branches": [
+        {
+          "element": "rcdw12f_hsf_r2",
+          "nodes": [
+            "cdw12f_hsf_h1",
+            "cdw12f_hs"
+          ],
+          "R_ohm": 1000000.0
+        },
+        {
+          "element": "rcdw12f_hsf_rl",
+          "nodes": [
+            "cdw12f_hs",
+            "0"
+          ],
+          "R_ohm": 4700000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "ccdw12f_hcf_c1",
+      "node": "cdw12f_hcf_h1",
+      "C_F": 1e-06,
+      "resistor_branches": [
+        {
+          "element": "rcdw12f_hcf_rr",
+          "nodes": [
+            "cdw12f_hcf_sd",
+            "cdw12f_hcf_h1"
+          ],
+          "R_ohm": 100000.0
+        },
+        {
+          "element": "rcdw12f_hcf_r2",
+          "nodes": [
+            "cdw12f_hcf_h1",
+            "cdw12f_hc"
+          ],
+          "R_ohm": 1000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "ccdw12f_hcf_c2",
+      "node": "cdw12f_hc",
+      "C_F": 4.7e-07,
+      "resistor_branches": [
+        {
+          "element": "rcdw12f_hcf_r2",
+          "nodes": [
+            "cdw12f_hcf_h1",
+            "cdw12f_hc"
+          ],
+          "R_ohm": 1000000.0
+        },
+        {
+          "element": "rcdw12f_hcf_rl",
+          "nodes": [
+            "cdw12f_hc",
+            "0"
+          ],
+          "R_ohm": 4700000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "ccdw12f_rc",
+      "node": "cdw12f_rec",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rcdw12f_rrc",
+          "nodes": [
+            "cdw12f_rt",
+            "cdw12f_rec"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rcdw12f_rr",
+          "nodes": [
+            "cdw12f_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "ccdw12f_op_tc",
+      "node": "cdw12f_op_at",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rcdw12f_op_trc",
+          "nodes": [
+            "cdw12f_op_tt",
+            "cdw12f_op_at"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rcdw12f_op_trl",
+          "nodes": [
+            "cdw12f_op_at",
+            "0"
+          ],
+          "R_ohm": 22000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "ccdw12f_op_dc",
+      "node": "cdw12f_op_ad",
+      "C_F": 3.3e-07,
+      "resistor_branches": [
+        {
+          "element": "rcdw12f_op_dr",
+          "nodes": [
+            "cdw12f_op_aq",
+            "cdw12f_op_ad"
+          ],
+          "R_ohm": 1000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "ccdw12r_hsf_c1",
+      "node": "cdw12r_hsf_h1",
+      "C_F": 1e-06,
+      "resistor_branches": [
+        {
+          "element": "rcdw12r_hsf_rr",
+          "nodes": [
+            "cdw12r_hsf_sd",
+            "cdw12r_hsf_h1"
+          ],
+          "R_ohm": 100000.0
+        },
+        {
+          "element": "rcdw12r_hsf_r2",
+          "nodes": [
+            "cdw12r_hsf_h1",
+            "cdw12r_hs"
+          ],
+          "R_ohm": 1000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "ccdw12r_hsf_c2",
+      "node": "cdw12r_hs",
+      "C_F": 4.7e-07,
+      "resistor_branches": [
+        {
+          "element": "rcdw12r_hsf_r2",
+          "nodes": [
+            "cdw12r_hsf_h1",
+            "cdw12r_hs"
+          ],
+          "R_ohm": 1000000.0
+        },
+        {
+          "element": "rcdw12r_hsf_rl",
+          "nodes": [
+            "cdw12r_hs",
+            "0"
+          ],
+          "R_ohm": 4700000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "ccdw12r_hcf_c1",
+      "node": "cdw12r_hcf_h1",
+      "C_F": 1e-06,
+      "resistor_branches": [
+        {
+          "element": "rcdw12r_hcf_rr",
+          "nodes": [
+            "cdw12r_hcf_sd",
+            "cdw12r_hcf_h1"
+          ],
+          "R_ohm": 100000.0
+        },
+        {
+          "element": "rcdw12r_hcf_r2",
+          "nodes": [
+            "cdw12r_hcf_h1",
+            "cdw12r_hc"
+          ],
+          "R_ohm": 1000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "ccdw12r_hcf_c2",
+      "node": "cdw12r_hc",
+      "C_F": 4.7e-07,
+      "resistor_branches": [
+        {
+          "element": "rcdw12r_hcf_r2",
+          "nodes": [
+            "cdw12r_hcf_h1",
+            "cdw12r_hc"
+          ],
+          "R_ohm": 1000000.0
+        },
+        {
+          "element": "rcdw12r_hcf_rl",
+          "nodes": [
+            "cdw12r_hc",
+            "0"
+          ],
+          "R_ohm": 4700000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "ccdw12r_rc",
+      "node": "cdw12r_rec",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rcdw12r_rrc",
+          "nodes": [
+            "cdw12r_rt",
+            "cdw12r_rec"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rcdw12r_rr",
+          "nodes": [
+            "cdw12r_rec",
+            "0"
+          ],
+          "R_ohm": 8200000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "ccdw12r_op_tc",
+      "node": "cdw12r_op_at",
+      "C_F": 1e-07,
+      "resistor_branches": [
+        {
+          "element": "rcdw12r_op_trc",
+          "nodes": [
+            "cdw12r_op_tt",
+            "cdw12r_op_at"
+          ],
+          "R_ohm": 10000.0
+        },
+        {
+          "element": "rcdw12r_op_trl",
+          "nodes": [
+            "cdw12r_op_at",
+            "0"
+          ],
+          "R_ohm": 22000000.0
+        }
+      ]
+    },
+    {
+      "capacitor": "ccdw12r_op_dc",
+      "node": "cdw12r_op_ad",
+      "C_F": 3.3e-07,
+      "resistor_branches": [
+        {
+          "element": "rcdw12r_op_dr",
+          "nodes": [
+            "cdw12r_op_aq",
+            "cdw12r_op_ad"
+          ],
+          "R_ohm": 1000000.0
+        }
+      ]
+    }
+  ],
+  "new_clamp_probes": {
+    "ngw1_e1_kporclamp:d": {
+      "element": "ngw1_e1_kporclamp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "gw1_e1_ko1",
+      "vec": "i(va_ngw1_e1_kporclamp_d)",
+      "sign": 1.0
+    },
+    "ngw1_e1_kporclamp:g": {
+      "element": "ngw1_e1_kporclamp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "por_hold",
+      "vec": "i(va_ngw1_e1_kporclamp_g)",
+      "sign": 1.0
+    },
+    "ngw1_e1_kporclamp:s": {
+      "element": "ngw1_e1_kporclamp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_ngw1_e1_kporclamp_s)",
+      "sign": 1.0
+    },
+    "ngw1_e1_kporclamp:b": {
+      "element": "ngw1_e1_kporclamp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_ngw1_e1_kporclamp_b)",
+      "sign": 1.0
+    },
+    "ngw1_e2_kporclamp:d": {
+      "element": "ngw1_e2_kporclamp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "gw1_e2_ko1",
+      "vec": "i(va_ngw1_e2_kporclamp_d)",
+      "sign": 1.0
+    },
+    "ngw1_e2_kporclamp:g": {
+      "element": "ngw1_e2_kporclamp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "por_hold",
+      "vec": "i(va_ngw1_e2_kporclamp_g)",
+      "sign": 1.0
+    },
+    "ngw1_e2_kporclamp:s": {
+      "element": "ngw1_e2_kporclamp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_ngw1_e2_kporclamp_s)",
+      "sign": 1.0
+    },
+    "ngw1_e2_kporclamp:b": {
+      "element": "ngw1_e2_kporclamp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_ngw1_e2_kporclamp_b)",
+      "sign": 1.0
+    },
+    "ngw1_e3_kporclamp:d": {
+      "element": "ngw1_e3_kporclamp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "gw1_e3_ko1",
+      "vec": "i(va_ngw1_e3_kporclamp_d)",
+      "sign": 1.0
+    },
+    "ngw1_e3_kporclamp:g": {
+      "element": "ngw1_e3_kporclamp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "por_hold",
+      "vec": "i(va_ngw1_e3_kporclamp_g)",
+      "sign": 1.0
+    },
+    "ngw1_e3_kporclamp:s": {
+      "element": "ngw1_e3_kporclamp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_ngw1_e3_kporclamp_s)",
+      "sign": 1.0
+    },
+    "ngw1_e3_kporclamp:b": {
+      "element": "ngw1_e3_kporclamp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_ngw1_e3_kporclamp_b)",
+      "sign": 1.0
+    },
+    "ngw1_e4_kporclamp:d": {
+      "element": "ngw1_e4_kporclamp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "gw1_e4_ko1",
+      "vec": "i(va_ngw1_e4_kporclamp_d)",
+      "sign": 1.0
+    },
+    "ngw1_e4_kporclamp:g": {
+      "element": "ngw1_e4_kporclamp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "por_hold",
+      "vec": "i(va_ngw1_e4_kporclamp_g)",
+      "sign": 1.0
+    },
+    "ngw1_e4_kporclamp:s": {
+      "element": "ngw1_e4_kporclamp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_ngw1_e4_kporclamp_s)",
+      "sign": 1.0
+    },
+    "ngw1_e4_kporclamp:b": {
+      "element": "ngw1_e4_kporclamp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_ngw1_e4_kporclamp_b)",
+      "sign": 1.0
+    },
+    "ngw1_e5_kporclamp:d": {
+      "element": "ngw1_e5_kporclamp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "gw1_e5_ko1",
+      "vec": "i(va_ngw1_e5_kporclamp_d)",
+      "sign": 1.0
+    },
+    "ngw1_e5_kporclamp:g": {
+      "element": "ngw1_e5_kporclamp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "por_hold",
+      "vec": "i(va_ngw1_e5_kporclamp_g)",
+      "sign": 1.0
+    },
+    "ngw1_e5_kporclamp:s": {
+      "element": "ngw1_e5_kporclamp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_ngw1_e5_kporclamp_s)",
+      "sign": 1.0
+    },
+    "ngw1_e5_kporclamp:b": {
+      "element": "ngw1_e5_kporclamp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_ngw1_e5_kporclamp_b)",
+      "sign": 1.0
+    },
+    "ngw1_e6_kporclamp:d": {
+      "element": "ngw1_e6_kporclamp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "gw1_e6_ko1",
+      "vec": "i(va_ngw1_e6_kporclamp_d)",
+      "sign": 1.0
+    },
+    "ngw1_e6_kporclamp:g": {
+      "element": "ngw1_e6_kporclamp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "por_hold",
+      "vec": "i(va_ngw1_e6_kporclamp_g)",
+      "sign": 1.0
+    },
+    "ngw1_e6_kporclamp:s": {
+      "element": "ngw1_e6_kporclamp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_ngw1_e6_kporclamp_s)",
+      "sign": 1.0
+    },
+    "ngw1_e6_kporclamp:b": {
+      "element": "ngw1_e6_kporclamp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_ngw1_e6_kporclamp_b)",
+      "sign": 1.0
+    },
+    "ngw1_e7_kporclamp:d": {
+      "element": "ngw1_e7_kporclamp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "gw1_e7_ko1",
+      "vec": "i(va_ngw1_e7_kporclamp_d)",
+      "sign": 1.0
+    },
+    "ngw1_e7_kporclamp:g": {
+      "element": "ngw1_e7_kporclamp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "por_hold",
+      "vec": "i(va_ngw1_e7_kporclamp_g)",
+      "sign": 1.0
+    },
+    "ngw1_e7_kporclamp:s": {
+      "element": "ngw1_e7_kporclamp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_ngw1_e7_kporclamp_s)",
+      "sign": 1.0
+    },
+    "ngw1_e7_kporclamp:b": {
+      "element": "ngw1_e7_kporclamp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_ngw1_e7_kporclamp_b)",
+      "sign": 1.0
+    },
+    "ngw1_e8_kporclamp:d": {
+      "element": "ngw1_e8_kporclamp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "gw1_e8_ko1",
+      "vec": "i(va_ngw1_e8_kporclamp_d)",
+      "sign": 1.0
+    },
+    "ngw1_e8_kporclamp:g": {
+      "element": "ngw1_e8_kporclamp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "por_hold",
+      "vec": "i(va_ngw1_e8_kporclamp_g)",
+      "sign": 1.0
+    },
+    "ngw1_e8_kporclamp:s": {
+      "element": "ngw1_e8_kporclamp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_ngw1_e8_kporclamp_s)",
+      "sign": 1.0
+    },
+    "ngw1_e8_kporclamp:b": {
+      "element": "ngw1_e8_kporclamp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_ngw1_e8_kporclamp_b)",
+      "sign": 1.0
+    },
+    "ngw1_e9_kporclamp:d": {
+      "element": "ngw1_e9_kporclamp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "gw1_e9_ko1",
+      "vec": "i(va_ngw1_e9_kporclamp_d)",
+      "sign": 1.0
+    },
+    "ngw1_e9_kporclamp:g": {
+      "element": "ngw1_e9_kporclamp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "por_hold",
+      "vec": "i(va_ngw1_e9_kporclamp_g)",
+      "sign": 1.0
+    },
+    "ngw1_e9_kporclamp:s": {
+      "element": "ngw1_e9_kporclamp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_ngw1_e9_kporclamp_s)",
+      "sign": 1.0
+    },
+    "ngw1_e9_kporclamp:b": {
+      "element": "ngw1_e9_kporclamp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_ngw1_e9_kporclamp_b)",
+      "sign": 1.0
+    },
+    "ngw1_e10_kporclamp:d": {
+      "element": "ngw1_e10_kporclamp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "gw1_e10_ko1",
+      "vec": "i(va_ngw1_e10_kporclamp_d)",
+      "sign": 1.0
+    },
+    "ngw1_e10_kporclamp:g": {
+      "element": "ngw1_e10_kporclamp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "por_hold",
+      "vec": "i(va_ngw1_e10_kporclamp_g)",
+      "sign": 1.0
+    },
+    "ngw1_e10_kporclamp:s": {
+      "element": "ngw1_e10_kporclamp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_ngw1_e10_kporclamp_s)",
+      "sign": 1.0
+    },
+    "ngw1_e10_kporclamp:b": {
+      "element": "ngw1_e10_kporclamp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_ngw1_e10_kporclamp_b)",
+      "sign": 1.0
+    },
+    "ngw1_col_kporclamp:d": {
+      "element": "ngw1_col_kporclamp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "gw1_col_ko1",
+      "vec": "i(va_ngw1_col_kporclamp_d)",
+      "sign": 1.0
+    },
+    "ngw1_col_kporclamp:g": {
+      "element": "ngw1_col_kporclamp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "por_hold",
+      "vec": "i(va_ngw1_col_kporclamp_g)",
+      "sign": 1.0
+    },
+    "ngw1_col_kporclamp:s": {
+      "element": "ngw1_col_kporclamp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_ngw1_col_kporclamp_s)",
+      "sign": 1.0
+    },
+    "ngw1_col_kporclamp:b": {
+      "element": "ngw1_col_kporclamp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_ngw1_col_kporclamp_b)",
+      "sign": 1.0
+    },
+    "ngw2_e1_kporclamp:d": {
+      "element": "ngw2_e1_kporclamp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "gw2_e1_ko1",
+      "vec": "i(va_ngw2_e1_kporclamp_d)",
+      "sign": 1.0
+    },
+    "ngw2_e1_kporclamp:g": {
+      "element": "ngw2_e1_kporclamp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "por_hold",
+      "vec": "i(va_ngw2_e1_kporclamp_g)",
+      "sign": 1.0
+    },
+    "ngw2_e1_kporclamp:s": {
+      "element": "ngw2_e1_kporclamp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_ngw2_e1_kporclamp_s)",
+      "sign": 1.0
+    },
+    "ngw2_e1_kporclamp:b": {
+      "element": "ngw2_e1_kporclamp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_ngw2_e1_kporclamp_b)",
+      "sign": 1.0
+    },
+    "ngw2_e2_kporclamp:d": {
+      "element": "ngw2_e2_kporclamp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "gw2_e2_ko1",
+      "vec": "i(va_ngw2_e2_kporclamp_d)",
+      "sign": 1.0
+    },
+    "ngw2_e2_kporclamp:g": {
+      "element": "ngw2_e2_kporclamp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "por_hold",
+      "vec": "i(va_ngw2_e2_kporclamp_g)",
+      "sign": 1.0
+    },
+    "ngw2_e2_kporclamp:s": {
+      "element": "ngw2_e2_kporclamp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_ngw2_e2_kporclamp_s)",
+      "sign": 1.0
+    },
+    "ngw2_e2_kporclamp:b": {
+      "element": "ngw2_e2_kporclamp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_ngw2_e2_kporclamp_b)",
+      "sign": 1.0
+    },
+    "ngw2_e3_kporclamp:d": {
+      "element": "ngw2_e3_kporclamp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "gw2_e3_ko1",
+      "vec": "i(va_ngw2_e3_kporclamp_d)",
+      "sign": 1.0
+    },
+    "ngw2_e3_kporclamp:g": {
+      "element": "ngw2_e3_kporclamp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "por_hold",
+      "vec": "i(va_ngw2_e3_kporclamp_g)",
+      "sign": 1.0
+    },
+    "ngw2_e3_kporclamp:s": {
+      "element": "ngw2_e3_kporclamp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_ngw2_e3_kporclamp_s)",
+      "sign": 1.0
+    },
+    "ngw2_e3_kporclamp:b": {
+      "element": "ngw2_e3_kporclamp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_ngw2_e3_kporclamp_b)",
+      "sign": 1.0
+    },
+    "ngw2_e4_kporclamp:d": {
+      "element": "ngw2_e4_kporclamp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "gw2_e4_ko1",
+      "vec": "i(va_ngw2_e4_kporclamp_d)",
+      "sign": 1.0
+    },
+    "ngw2_e4_kporclamp:g": {
+      "element": "ngw2_e4_kporclamp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "por_hold",
+      "vec": "i(va_ngw2_e4_kporclamp_g)",
+      "sign": 1.0
+    },
+    "ngw2_e4_kporclamp:s": {
+      "element": "ngw2_e4_kporclamp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_ngw2_e4_kporclamp_s)",
+      "sign": 1.0
+    },
+    "ngw2_e4_kporclamp:b": {
+      "element": "ngw2_e4_kporclamp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_ngw2_e4_kporclamp_b)",
+      "sign": 1.0
+    },
+    "ngw2_e5_kporclamp:d": {
+      "element": "ngw2_e5_kporclamp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "gw2_e5_ko1",
+      "vec": "i(va_ngw2_e5_kporclamp_d)",
+      "sign": 1.0
+    },
+    "ngw2_e5_kporclamp:g": {
+      "element": "ngw2_e5_kporclamp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "por_hold",
+      "vec": "i(va_ngw2_e5_kporclamp_g)",
+      "sign": 1.0
+    },
+    "ngw2_e5_kporclamp:s": {
+      "element": "ngw2_e5_kporclamp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_ngw2_e5_kporclamp_s)",
+      "sign": 1.0
+    },
+    "ngw2_e5_kporclamp:b": {
+      "element": "ngw2_e5_kporclamp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_ngw2_e5_kporclamp_b)",
+      "sign": 1.0
+    },
+    "ngw2_e6_kporclamp:d": {
+      "element": "ngw2_e6_kporclamp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "gw2_e6_ko1",
+      "vec": "i(va_ngw2_e6_kporclamp_d)",
+      "sign": 1.0
+    },
+    "ngw2_e6_kporclamp:g": {
+      "element": "ngw2_e6_kporclamp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "por_hold",
+      "vec": "i(va_ngw2_e6_kporclamp_g)",
+      "sign": 1.0
+    },
+    "ngw2_e6_kporclamp:s": {
+      "element": "ngw2_e6_kporclamp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_ngw2_e6_kporclamp_s)",
+      "sign": 1.0
+    },
+    "ngw2_e6_kporclamp:b": {
+      "element": "ngw2_e6_kporclamp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_ngw2_e6_kporclamp_b)",
+      "sign": 1.0
+    },
+    "ngw2_e7_kporclamp:d": {
+      "element": "ngw2_e7_kporclamp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "gw2_e7_ko1",
+      "vec": "i(va_ngw2_e7_kporclamp_d)",
+      "sign": 1.0
+    },
+    "ngw2_e7_kporclamp:g": {
+      "element": "ngw2_e7_kporclamp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "por_hold",
+      "vec": "i(va_ngw2_e7_kporclamp_g)",
+      "sign": 1.0
+    },
+    "ngw2_e7_kporclamp:s": {
+      "element": "ngw2_e7_kporclamp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_ngw2_e7_kporclamp_s)",
+      "sign": 1.0
+    },
+    "ngw2_e7_kporclamp:b": {
+      "element": "ngw2_e7_kporclamp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_ngw2_e7_kporclamp_b)",
+      "sign": 1.0
+    },
+    "ngw2_e8_kporclamp:d": {
+      "element": "ngw2_e8_kporclamp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "gw2_e8_ko1",
+      "vec": "i(va_ngw2_e8_kporclamp_d)",
+      "sign": 1.0
+    },
+    "ngw2_e8_kporclamp:g": {
+      "element": "ngw2_e8_kporclamp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "por_hold",
+      "vec": "i(va_ngw2_e8_kporclamp_g)",
+      "sign": 1.0
+    },
+    "ngw2_e8_kporclamp:s": {
+      "element": "ngw2_e8_kporclamp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_ngw2_e8_kporclamp_s)",
+      "sign": 1.0
+    },
+    "ngw2_e8_kporclamp:b": {
+      "element": "ngw2_e8_kporclamp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_ngw2_e8_kporclamp_b)",
+      "sign": 1.0
+    },
+    "ngw2_e9_kporclamp:d": {
+      "element": "ngw2_e9_kporclamp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "gw2_e9_ko1",
+      "vec": "i(va_ngw2_e9_kporclamp_d)",
+      "sign": 1.0
+    },
+    "ngw2_e9_kporclamp:g": {
+      "element": "ngw2_e9_kporclamp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "por_hold",
+      "vec": "i(va_ngw2_e9_kporclamp_g)",
+      "sign": 1.0
+    },
+    "ngw2_e9_kporclamp:s": {
+      "element": "ngw2_e9_kporclamp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_ngw2_e9_kporclamp_s)",
+      "sign": 1.0
+    },
+    "ngw2_e9_kporclamp:b": {
+      "element": "ngw2_e9_kporclamp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_ngw2_e9_kporclamp_b)",
+      "sign": 1.0
+    },
+    "ngw2_e10_kporclamp:d": {
+      "element": "ngw2_e10_kporclamp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "gw2_e10_ko1",
+      "vec": "i(va_ngw2_e10_kporclamp_d)",
+      "sign": 1.0
+    },
+    "ngw2_e10_kporclamp:g": {
+      "element": "ngw2_e10_kporclamp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "por_hold",
+      "vec": "i(va_ngw2_e10_kporclamp_g)",
+      "sign": 1.0
+    },
+    "ngw2_e10_kporclamp:s": {
+      "element": "ngw2_e10_kporclamp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_ngw2_e10_kporclamp_s)",
+      "sign": 1.0
+    },
+    "ngw2_e10_kporclamp:b": {
+      "element": "ngw2_e10_kporclamp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_ngw2_e10_kporclamp_b)",
+      "sign": 1.0
+    },
+    "ngw2_col_kporclamp:d": {
+      "element": "ngw2_col_kporclamp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "gw2_col_ko1",
+      "vec": "i(va_ngw2_col_kporclamp_d)",
+      "sign": 1.0
+    },
+    "ngw2_col_kporclamp:g": {
+      "element": "ngw2_col_kporclamp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "por_hold",
+      "vec": "i(va_ngw2_col_kporclamp_g)",
+      "sign": 1.0
+    },
+    "ngw2_col_kporclamp:s": {
+      "element": "ngw2_col_kporclamp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_ngw2_col_kporclamp_s)",
+      "sign": 1.0
+    },
+    "ngw2_col_kporclamp:b": {
+      "element": "ngw2_col_kporclamp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_ngw2_col_kporclamp_b)",
+      "sign": 1.0
+    },
+    "nthw12f_kporclamp:d": {
+      "element": "nthw12f_kporclamp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "thw12f_ko1",
+      "vec": "i(va_nthw12f_kporclamp_d)",
+      "sign": 1.0
+    },
+    "nthw12f_kporclamp:g": {
+      "element": "nthw12f_kporclamp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "por_hold",
+      "vec": "i(va_nthw12f_kporclamp_g)",
+      "sign": 1.0
+    },
+    "nthw12f_kporclamp:s": {
+      "element": "nthw12f_kporclamp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_nthw12f_kporclamp_s)",
+      "sign": 1.0
+    },
+    "nthw12f_kporclamp:b": {
+      "element": "nthw12f_kporclamp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_nthw12f_kporclamp_b)",
+      "sign": 1.0
+    },
+    "nthw12r_kporclamp:d": {
+      "element": "nthw12r_kporclamp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "thw12r_ko1",
+      "vec": "i(va_nthw12r_kporclamp_d)",
+      "sign": 1.0
+    },
+    "nthw12r_kporclamp:g": {
+      "element": "nthw12r_kporclamp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "por_hold",
+      "vec": "i(va_nthw12r_kporclamp_g)",
+      "sign": 1.0
+    },
+    "nthw12r_kporclamp:s": {
+      "element": "nthw12r_kporclamp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_nthw12r_kporclamp_s)",
+      "sign": 1.0
+    },
+    "nthw12r_kporclamp:b": {
+      "element": "nthw12r_kporclamp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_nthw12r_kporclamp_b)",
+      "sign": 1.0
+    },
+    "nsgw12f_kporclamp:d": {
+      "element": "nsgw12f_kporclamp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "sgw12f_ko1",
+      "vec": "i(va_nsgw12f_kporclamp_d)",
+      "sign": 1.0
+    },
+    "nsgw12f_kporclamp:g": {
+      "element": "nsgw12f_kporclamp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "por_hold",
+      "vec": "i(va_nsgw12f_kporclamp_g)",
+      "sign": 1.0
+    },
+    "nsgw12f_kporclamp:s": {
+      "element": "nsgw12f_kporclamp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_nsgw12f_kporclamp_s)",
+      "sign": 1.0
+    },
+    "nsgw12f_kporclamp:b": {
+      "element": "nsgw12f_kporclamp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_nsgw12f_kporclamp_b)",
+      "sign": 1.0
+    },
+    "nsgw12r_kporclamp:d": {
+      "element": "nsgw12r_kporclamp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "sgw12r_ko1",
+      "vec": "i(va_nsgw12r_kporclamp_d)",
+      "sign": 1.0
+    },
+    "nsgw12r_kporclamp:g": {
+      "element": "nsgw12r_kporclamp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "por_hold",
+      "vec": "i(va_nsgw12r_kporclamp_g)",
+      "sign": 1.0
+    },
+    "nsgw12r_kporclamp:s": {
+      "element": "nsgw12r_kporclamp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_nsgw12r_kporclamp_s)",
+      "sign": 1.0
+    },
+    "nsgw12r_kporclamp:b": {
+      "element": "nsgw12r_kporclamp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_nsgw12r_kporclamp_b)",
+      "sign": 1.0
+    },
+    "ncdw12f_kporclamp:d": {
+      "element": "ncdw12f_kporclamp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "cdw12f_ko1",
+      "vec": "i(va_ncdw12f_kporclamp_d)",
+      "sign": 1.0
+    },
+    "ncdw12f_kporclamp:g": {
+      "element": "ncdw12f_kporclamp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "por_hold",
+      "vec": "i(va_ncdw12f_kporclamp_g)",
+      "sign": 1.0
+    },
+    "ncdw12f_kporclamp:s": {
+      "element": "ncdw12f_kporclamp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_ncdw12f_kporclamp_s)",
+      "sign": 1.0
+    },
+    "ncdw12f_kporclamp:b": {
+      "element": "ncdw12f_kporclamp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_ncdw12f_kporclamp_b)",
+      "sign": 1.0
+    },
+    "ncdw12r_kporclamp:d": {
+      "element": "ncdw12r_kporclamp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "cdw12r_ko1",
+      "vec": "i(va_ncdw12r_kporclamp_d)",
+      "sign": 1.0
+    },
+    "ncdw12r_kporclamp:g": {
+      "element": "ncdw12r_kporclamp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "por_hold",
+      "vec": "i(va_ncdw12r_kporclamp_g)",
+      "sign": 1.0
+    },
+    "ncdw12r_kporclamp:s": {
+      "element": "ncdw12r_kporclamp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_ncdw12r_kporclamp_s)",
+      "sign": 1.0
+    },
+    "ncdw12r_kporclamp:b": {
+      "element": "ncdw12r_kporclamp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_ncdw12r_kporclamp_b)",
+      "sign": 1.0
+    }
+  },
+  "required_q_nodes": [
+    "gw1_e1_q",
+    "gw1_e2_q",
+    "gw1_e3_q",
+    "gw1_e4_q",
+    "gw1_e5_q",
+    "gw1_e6_q",
+    "gw1_e7_q",
+    "gw1_e8_q",
+    "gw1_e9_q",
+    "gw1_e10_q",
+    "gw1_col_q",
+    "gw2_e1_q",
+    "gw2_e2_q",
+    "gw2_e3_q",
+    "gw2_e4_q",
+    "gw2_e5_q",
+    "gw2_e6_q",
+    "gw2_e7_q",
+    "gw2_e8_q",
+    "gw2_e9_q",
+    "gw2_e10_q",
+    "gw2_col_q",
+    "thw12f_q",
+    "thw12r_q",
+    "sgw12f_q",
+    "sgw12r_q",
+    "cdw12f_q",
+    "cdw12r_q"
+  ],
+  "native_starts": 0,
+  "new_selector_probes": {
+    "ngw1_cin_eni_p:d": {
+      "element": "ngw1_cin_eni_p",
+      "kind": "M",
+      "terminal": "d",
+      "node": "gw1_cin_ena",
+      "vec": "i(va_ngw1_cin_eni_p_d)",
+      "sign": 1.0
+    },
+    "ngw1_cin_eni_p:g": {
+      "element": "ngw1_cin_eni_p",
+      "kind": "M",
+      "terminal": "g",
+      "node": "gw1_gb",
+      "vec": "i(va_ngw1_cin_eni_p_g)",
+      "sign": 1.0
+    },
+    "ngw1_cin_eni_p:s": {
+      "element": "ngw1_cin_eni_p",
+      "kind": "M",
+      "terminal": "s",
+      "node": "vdd",
+      "vec": "i(va_ngw1_cin_eni_p_s)",
+      "sign": 1.0
+    },
+    "ngw1_cin_eni_p:b": {
+      "element": "ngw1_cin_eni_p",
+      "kind": "M",
+      "terminal": "b",
+      "node": "vsrc",
+      "vec": "i(va_ngw1_cin_eni_p_b)",
+      "sign": 1.0
+    },
+    "ngw1_cin_eni_n:d": {
+      "element": "ngw1_cin_eni_n",
+      "kind": "M",
+      "terminal": "d",
+      "node": "gw1_cin_ena",
+      "vec": "i(va_ngw1_cin_eni_n_d)",
+      "sign": 1.0
+    },
+    "ngw1_cin_eni_n:g": {
+      "element": "ngw1_cin_eni_n",
+      "kind": "M",
+      "terminal": "g",
+      "node": "gw1_gb",
+      "vec": "i(va_ngw1_cin_eni_n_g)",
+      "sign": 1.0
+    },
+    "ngw1_cin_eni_n:s": {
+      "element": "ngw1_cin_eni_n",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_ngw1_cin_eni_n_s)",
+      "sign": 1.0
+    },
+    "ngw1_cin_eni_n:b": {
+      "element": "ngw1_cin_eni_n",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_ngw1_cin_eni_n_b)",
+      "sign": 1.0
+    },
+    "ngw1_cin_cp:d": {
+      "element": "ngw1_cin_cp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "gw1_col_vm",
+      "vec": "i(va_ngw1_cin_cp_d)",
+      "sign": 1.0
+    },
+    "ngw1_cin_cp:g": {
+      "element": "ngw1_cin_cp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "gw1_cin_cg",
+      "vec": "i(va_ngw1_cin_cp_g)",
+      "sign": 1.0
+    },
+    "ngw1_cin_cp:s": {
+      "element": "ngw1_cin_cp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "vdd",
+      "vec": "i(va_ngw1_cin_cp_s)",
+      "sign": 1.0
+    },
+    "ngw1_cin_cp:b": {
+      "element": "ngw1_cin_cp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "vsrc",
+      "vec": "i(va_ngw1_cin_cp_b)",
+      "sign": 1.0
+    },
+    "ngw1_cin_bias:d": {
+      "element": "ngw1_cin_bias",
+      "kind": "M",
+      "terminal": "d",
+      "node": "ilimp_n",
+      "vec": "i(va_ngw1_cin_bias_d)",
+      "sign": 1.0
+    },
+    "ngw1_cin_bias:g": {
+      "element": "ngw1_cin_bias",
+      "kind": "M",
+      "terminal": "g",
+      "node": "gw1_gb",
+      "vec": "i(va_ngw1_cin_bias_g)",
+      "sign": 1.0
+    },
+    "ngw1_cin_bias:s": {
+      "element": "ngw1_cin_bias",
+      "kind": "M",
+      "terminal": "s",
+      "node": "gw1_cin_cg",
+      "vec": "i(va_ngw1_cin_bias_s)",
+      "sign": 1.0
+    },
+    "ngw1_cin_bias:b": {
+      "element": "ngw1_cin_bias",
+      "kind": "M",
+      "terminal": "b",
+      "node": "vsrc",
+      "vec": "i(va_ngw1_cin_bias_b)",
+      "sign": 1.0
+    },
+    "ngw1_cin_off:d": {
+      "element": "ngw1_cin_off",
+      "kind": "M",
+      "terminal": "d",
+      "node": "gw1_cin_cg",
+      "vec": "i(va_ngw1_cin_off_d)",
+      "sign": 1.0
+    },
+    "ngw1_cin_off:g": {
+      "element": "ngw1_cin_off",
+      "kind": "M",
+      "terminal": "g",
+      "node": "gw1_cin_ena",
+      "vec": "i(va_ngw1_cin_off_g)",
+      "sign": 1.0
+    },
+    "ngw1_cin_off:s": {
+      "element": "ngw1_cin_off",
+      "kind": "M",
+      "terminal": "s",
+      "node": "vdd",
+      "vec": "i(va_ngw1_cin_off_s)",
+      "sign": 1.0
+    },
+    "ngw1_cin_off:b": {
+      "element": "ngw1_cin_off",
+      "kind": "M",
+      "terminal": "b",
+      "node": "vsrc",
+      "vec": "i(va_ngw1_cin_off_b)",
+      "sign": 1.0
+    },
+    "ngw2_cin_eni_p:d": {
+      "element": "ngw2_cin_eni_p",
+      "kind": "M",
+      "terminal": "d",
+      "node": "gw2_cin_ena",
+      "vec": "i(va_ngw2_cin_eni_p_d)",
+      "sign": 1.0
+    },
+    "ngw2_cin_eni_p:g": {
+      "element": "ngw2_cin_eni_p",
+      "kind": "M",
+      "terminal": "g",
+      "node": "gw2_gb",
+      "vec": "i(va_ngw2_cin_eni_p_g)",
+      "sign": 1.0
+    },
+    "ngw2_cin_eni_p:s": {
+      "element": "ngw2_cin_eni_p",
+      "kind": "M",
+      "terminal": "s",
+      "node": "vdd",
+      "vec": "i(va_ngw2_cin_eni_p_s)",
+      "sign": 1.0
+    },
+    "ngw2_cin_eni_p:b": {
+      "element": "ngw2_cin_eni_p",
+      "kind": "M",
+      "terminal": "b",
+      "node": "vsrc",
+      "vec": "i(va_ngw2_cin_eni_p_b)",
+      "sign": 1.0
+    },
+    "ngw2_cin_eni_n:d": {
+      "element": "ngw2_cin_eni_n",
+      "kind": "M",
+      "terminal": "d",
+      "node": "gw2_cin_ena",
+      "vec": "i(va_ngw2_cin_eni_n_d)",
+      "sign": 1.0
+    },
+    "ngw2_cin_eni_n:g": {
+      "element": "ngw2_cin_eni_n",
+      "kind": "M",
+      "terminal": "g",
+      "node": "gw2_gb",
+      "vec": "i(va_ngw2_cin_eni_n_g)",
+      "sign": 1.0
+    },
+    "ngw2_cin_eni_n:s": {
+      "element": "ngw2_cin_eni_n",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_ngw2_cin_eni_n_s)",
+      "sign": 1.0
+    },
+    "ngw2_cin_eni_n:b": {
+      "element": "ngw2_cin_eni_n",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_ngw2_cin_eni_n_b)",
+      "sign": 1.0
+    },
+    "ngw2_cin_cp:d": {
+      "element": "ngw2_cin_cp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "gw2_col_vm",
+      "vec": "i(va_ngw2_cin_cp_d)",
+      "sign": 1.0
+    },
+    "ngw2_cin_cp:g": {
+      "element": "ngw2_cin_cp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "gw2_cin_cg",
+      "vec": "i(va_ngw2_cin_cp_g)",
+      "sign": 1.0
+    },
+    "ngw2_cin_cp:s": {
+      "element": "ngw2_cin_cp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "vdd",
+      "vec": "i(va_ngw2_cin_cp_s)",
+      "sign": 1.0
+    },
+    "ngw2_cin_cp:b": {
+      "element": "ngw2_cin_cp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "vsrc",
+      "vec": "i(va_ngw2_cin_cp_b)",
+      "sign": 1.0
+    },
+    "ngw2_cin_bias:d": {
+      "element": "ngw2_cin_bias",
+      "kind": "M",
+      "terminal": "d",
+      "node": "ilimp_n",
+      "vec": "i(va_ngw2_cin_bias_d)",
+      "sign": 1.0
+    },
+    "ngw2_cin_bias:g": {
+      "element": "ngw2_cin_bias",
+      "kind": "M",
+      "terminal": "g",
+      "node": "gw2_gb",
+      "vec": "i(va_ngw2_cin_bias_g)",
+      "sign": 1.0
+    },
+    "ngw2_cin_bias:s": {
+      "element": "ngw2_cin_bias",
+      "kind": "M",
+      "terminal": "s",
+      "node": "gw2_cin_cg",
+      "vec": "i(va_ngw2_cin_bias_s)",
+      "sign": 1.0
+    },
+    "ngw2_cin_bias:b": {
+      "element": "ngw2_cin_bias",
+      "kind": "M",
+      "terminal": "b",
+      "node": "vsrc",
+      "vec": "i(va_ngw2_cin_bias_b)",
+      "sign": 1.0
+    },
+    "ngw2_cin_off:d": {
+      "element": "ngw2_cin_off",
+      "kind": "M",
+      "terminal": "d",
+      "node": "gw2_cin_cg",
+      "vec": "i(va_ngw2_cin_off_d)",
+      "sign": 1.0
+    },
+    "ngw2_cin_off:g": {
+      "element": "ngw2_cin_off",
+      "kind": "M",
+      "terminal": "g",
+      "node": "gw2_cin_ena",
+      "vec": "i(va_ngw2_cin_off_g)",
+      "sign": 1.0
+    },
+    "ngw2_cin_off:s": {
+      "element": "ngw2_cin_off",
+      "kind": "M",
+      "terminal": "s",
+      "node": "vdd",
+      "vec": "i(va_ngw2_cin_off_s)",
+      "sign": 1.0
+    },
+    "ngw2_cin_off:b": {
+      "element": "ngw2_cin_off",
+      "kind": "M",
+      "terminal": "b",
+      "node": "vsrc",
+      "vec": "i(va_ngw2_cin_off_b)",
+      "sign": 1.0
+    },
+    "nspwi1_eni_p:d": {
+      "element": "nspwi1_eni_p",
+      "kind": "M",
+      "terminal": "d",
+      "node": "spwi1_ena",
+      "vec": "i(va_nspwi1_eni_p_d)",
+      "sign": 1.0
+    },
+    "nspwi1_eni_p:g": {
+      "element": "nspwi1_eni_p",
+      "kind": "M",
+      "terminal": "g",
+      "node": "gw1_op_aqb",
+      "vec": "i(va_nspwi1_eni_p_g)",
+      "sign": 1.0
+    },
+    "nspwi1_eni_p:s": {
+      "element": "nspwi1_eni_p",
+      "kind": "M",
+      "terminal": "s",
+      "node": "vdd",
+      "vec": "i(va_nspwi1_eni_p_s)",
+      "sign": 1.0
+    },
+    "nspwi1_eni_p:b": {
+      "element": "nspwi1_eni_p",
+      "kind": "M",
+      "terminal": "b",
+      "node": "vsrc",
+      "vec": "i(va_nspwi1_eni_p_b)",
+      "sign": 1.0
+    },
+    "nspwi1_eni_n:d": {
+      "element": "nspwi1_eni_n",
+      "kind": "M",
+      "terminal": "d",
+      "node": "spwi1_ena",
+      "vec": "i(va_nspwi1_eni_n_d)",
+      "sign": 1.0
+    },
+    "nspwi1_eni_n:g": {
+      "element": "nspwi1_eni_n",
+      "kind": "M",
+      "terminal": "g",
+      "node": "gw1_op_aqb",
+      "vec": "i(va_nspwi1_eni_n_g)",
+      "sign": 1.0
+    },
+    "nspwi1_eni_n:s": {
+      "element": "nspwi1_eni_n",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_nspwi1_eni_n_s)",
+      "sign": 1.0
+    },
+    "nspwi1_eni_n:b": {
+      "element": "nspwi1_eni_n",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_nspwi1_eni_n_b)",
+      "sign": 1.0
+    },
+    "nspwi1_cp:d": {
+      "element": "nspwi1_cp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "spw1",
+      "vec": "i(va_nspwi1_cp_d)",
+      "sign": 1.0
+    },
+    "nspwi1_cp:g": {
+      "element": "nspwi1_cp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "spwi1_cg",
+      "vec": "i(va_nspwi1_cp_g)",
+      "sign": 1.0
+    },
+    "nspwi1_cp:s": {
+      "element": "nspwi1_cp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "vdd",
+      "vec": "i(va_nspwi1_cp_s)",
+      "sign": 1.0
+    },
+    "nspwi1_cp:b": {
+      "element": "nspwi1_cp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "vsrc",
+      "vec": "i(va_nspwi1_cp_b)",
+      "sign": 1.0
+    },
+    "nspwi1_bias:d": {
+      "element": "nspwi1_bias",
+      "kind": "M",
+      "terminal": "d",
+      "node": "irefp_n",
+      "vec": "i(va_nspwi1_bias_d)",
+      "sign": 1.0
+    },
+    "nspwi1_bias:g": {
+      "element": "nspwi1_bias",
+      "kind": "M",
+      "terminal": "g",
+      "node": "gw1_op_aqb",
+      "vec": "i(va_nspwi1_bias_g)",
+      "sign": 1.0
+    },
+    "nspwi1_bias:s": {
+      "element": "nspwi1_bias",
+      "kind": "M",
+      "terminal": "s",
+      "node": "spwi1_cg",
+      "vec": "i(va_nspwi1_bias_s)",
+      "sign": 1.0
+    },
+    "nspwi1_bias:b": {
+      "element": "nspwi1_bias",
+      "kind": "M",
+      "terminal": "b",
+      "node": "vsrc",
+      "vec": "i(va_nspwi1_bias_b)",
+      "sign": 1.0
+    },
+    "nspwi1_off:d": {
+      "element": "nspwi1_off",
+      "kind": "M",
+      "terminal": "d",
+      "node": "spwi1_cg",
+      "vec": "i(va_nspwi1_off_d)",
+      "sign": 1.0
+    },
+    "nspwi1_off:g": {
+      "element": "nspwi1_off",
+      "kind": "M",
+      "terminal": "g",
+      "node": "spwi1_ena",
+      "vec": "i(va_nspwi1_off_g)",
+      "sign": 1.0
+    },
+    "nspwi1_off:s": {
+      "element": "nspwi1_off",
+      "kind": "M",
+      "terminal": "s",
+      "node": "vdd",
+      "vec": "i(va_nspwi1_off_s)",
+      "sign": 1.0
+    },
+    "nspwi1_off:b": {
+      "element": "nspwi1_off",
+      "kind": "M",
+      "terminal": "b",
+      "node": "vsrc",
+      "vec": "i(va_nspwi1_off_b)",
+      "sign": 1.0
+    },
+    "nspwi2_eni_p:d": {
+      "element": "nspwi2_eni_p",
+      "kind": "M",
+      "terminal": "d",
+      "node": "spwi2_ena",
+      "vec": "i(va_nspwi2_eni_p_d)",
+      "sign": 1.0
+    },
+    "nspwi2_eni_p:g": {
+      "element": "nspwi2_eni_p",
+      "kind": "M",
+      "terminal": "g",
+      "node": "gw2_op_aqb",
+      "vec": "i(va_nspwi2_eni_p_g)",
+      "sign": 1.0
+    },
+    "nspwi2_eni_p:s": {
+      "element": "nspwi2_eni_p",
+      "kind": "M",
+      "terminal": "s",
+      "node": "vdd",
+      "vec": "i(va_nspwi2_eni_p_s)",
+      "sign": 1.0
+    },
+    "nspwi2_eni_p:b": {
+      "element": "nspwi2_eni_p",
+      "kind": "M",
+      "terminal": "b",
+      "node": "vsrc",
+      "vec": "i(va_nspwi2_eni_p_b)",
+      "sign": 1.0
+    },
+    "nspwi2_eni_n:d": {
+      "element": "nspwi2_eni_n",
+      "kind": "M",
+      "terminal": "d",
+      "node": "spwi2_ena",
+      "vec": "i(va_nspwi2_eni_n_d)",
+      "sign": 1.0
+    },
+    "nspwi2_eni_n:g": {
+      "element": "nspwi2_eni_n",
+      "kind": "M",
+      "terminal": "g",
+      "node": "gw2_op_aqb",
+      "vec": "i(va_nspwi2_eni_n_g)",
+      "sign": 1.0
+    },
+    "nspwi2_eni_n:s": {
+      "element": "nspwi2_eni_n",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_nspwi2_eni_n_s)",
+      "sign": 1.0
+    },
+    "nspwi2_eni_n:b": {
+      "element": "nspwi2_eni_n",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_nspwi2_eni_n_b)",
+      "sign": 1.0
+    },
+    "nspwi2_cp:d": {
+      "element": "nspwi2_cp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "spw2",
+      "vec": "i(va_nspwi2_cp_d)",
+      "sign": 1.0
+    },
+    "nspwi2_cp:g": {
+      "element": "nspwi2_cp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "spwi2_cg",
+      "vec": "i(va_nspwi2_cp_g)",
+      "sign": 1.0
+    },
+    "nspwi2_cp:s": {
+      "element": "nspwi2_cp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "vdd",
+      "vec": "i(va_nspwi2_cp_s)",
+      "sign": 1.0
+    },
+    "nspwi2_cp:b": {
+      "element": "nspwi2_cp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "vsrc",
+      "vec": "i(va_nspwi2_cp_b)",
+      "sign": 1.0
+    },
+    "nspwi2_bias:d": {
+      "element": "nspwi2_bias",
+      "kind": "M",
+      "terminal": "d",
+      "node": "irefp_n",
+      "vec": "i(va_nspwi2_bias_d)",
+      "sign": 1.0
+    },
+    "nspwi2_bias:g": {
+      "element": "nspwi2_bias",
+      "kind": "M",
+      "terminal": "g",
+      "node": "gw2_op_aqb",
+      "vec": "i(va_nspwi2_bias_g)",
+      "sign": 1.0
+    },
+    "nspwi2_bias:s": {
+      "element": "nspwi2_bias",
+      "kind": "M",
+      "terminal": "s",
+      "node": "spwi2_cg",
+      "vec": "i(va_nspwi2_bias_s)",
+      "sign": 1.0
+    },
+    "nspwi2_bias:b": {
+      "element": "nspwi2_bias",
+      "kind": "M",
+      "terminal": "b",
+      "node": "vsrc",
+      "vec": "i(va_nspwi2_bias_b)",
+      "sign": 1.0
+    },
+    "nspwi2_off:d": {
+      "element": "nspwi2_off",
+      "kind": "M",
+      "terminal": "d",
+      "node": "spwi2_cg",
+      "vec": "i(va_nspwi2_off_d)",
+      "sign": 1.0
+    },
+    "nspwi2_off:g": {
+      "element": "nspwi2_off",
+      "kind": "M",
+      "terminal": "g",
+      "node": "spwi2_ena",
+      "vec": "i(va_nspwi2_off_g)",
+      "sign": 1.0
+    },
+    "nspwi2_off:s": {
+      "element": "nspwi2_off",
+      "kind": "M",
+      "terminal": "s",
+      "node": "vdd",
+      "vec": "i(va_nspwi2_off_s)",
+      "sign": 1.0
+    },
+    "nspwi2_off:b": {
+      "element": "nspwi2_off",
+      "kind": "M",
+      "terminal": "b",
+      "node": "vsrc",
+      "vec": "i(va_nspwi2_off_b)",
+      "sign": 1.0
+    },
+    "nspwi3_eni_p:d": {
+      "element": "nspwi3_eni_p",
+      "kind": "M",
+      "terminal": "d",
+      "node": "spwi3_ena",
+      "vec": "i(va_nspwi3_eni_p_d)",
+      "sign": 1.0
+    },
+    "nspwi3_eni_p:g": {
+      "element": "nspwi3_eni_p",
+      "kind": "M",
+      "terminal": "g",
+      "node": "vdd",
+      "vec": "i(va_nspwi3_eni_p_g)",
+      "sign": 1.0
+    },
+    "nspwi3_eni_p:s": {
+      "element": "nspwi3_eni_p",
+      "kind": "M",
+      "terminal": "s",
+      "node": "vdd",
+      "vec": "i(va_nspwi3_eni_p_s)",
+      "sign": 1.0
+    },
+    "nspwi3_eni_p:b": {
+      "element": "nspwi3_eni_p",
+      "kind": "M",
+      "terminal": "b",
+      "node": "vsrc",
+      "vec": "i(va_nspwi3_eni_p_b)",
+      "sign": 1.0
+    },
+    "nspwi3_eni_n:d": {
+      "element": "nspwi3_eni_n",
+      "kind": "M",
+      "terminal": "d",
+      "node": "spwi3_ena",
+      "vec": "i(va_nspwi3_eni_n_d)",
+      "sign": 1.0
+    },
+    "nspwi3_eni_n:g": {
+      "element": "nspwi3_eni_n",
+      "kind": "M",
+      "terminal": "g",
+      "node": "vdd",
+      "vec": "i(va_nspwi3_eni_n_g)",
+      "sign": 1.0
+    },
+    "nspwi3_eni_n:s": {
+      "element": "nspwi3_eni_n",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_nspwi3_eni_n_s)",
+      "sign": 1.0
+    },
+    "nspwi3_eni_n:b": {
+      "element": "nspwi3_eni_n",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_nspwi3_eni_n_b)",
+      "sign": 1.0
+    },
+    "nspwi3_cp:d": {
+      "element": "nspwi3_cp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "spw3",
+      "vec": "i(va_nspwi3_cp_d)",
+      "sign": 1.0
+    },
+    "nspwi3_cp:g": {
+      "element": "nspwi3_cp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "spwi3_cg",
+      "vec": "i(va_nspwi3_cp_g)",
+      "sign": 1.0
+    },
+    "nspwi3_cp:s": {
+      "element": "nspwi3_cp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "vdd",
+      "vec": "i(va_nspwi3_cp_s)",
+      "sign": 1.0
+    },
+    "nspwi3_cp:b": {
+      "element": "nspwi3_cp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "vsrc",
+      "vec": "i(va_nspwi3_cp_b)",
+      "sign": 1.0
+    },
+    "nspwi3_bias:d": {
+      "element": "nspwi3_bias",
+      "kind": "M",
+      "terminal": "d",
+      "node": "irefp_n",
+      "vec": "i(va_nspwi3_bias_d)",
+      "sign": 1.0
+    },
+    "nspwi3_bias:g": {
+      "element": "nspwi3_bias",
+      "kind": "M",
+      "terminal": "g",
+      "node": "vdd",
+      "vec": "i(va_nspwi3_bias_g)",
+      "sign": 1.0
+    },
+    "nspwi3_bias:s": {
+      "element": "nspwi3_bias",
+      "kind": "M",
+      "terminal": "s",
+      "node": "spwi3_cg",
+      "vec": "i(va_nspwi3_bias_s)",
+      "sign": 1.0
+    },
+    "nspwi3_bias:b": {
+      "element": "nspwi3_bias",
+      "kind": "M",
+      "terminal": "b",
+      "node": "vsrc",
+      "vec": "i(va_nspwi3_bias_b)",
+      "sign": 1.0
+    },
+    "nspwi3_off:d": {
+      "element": "nspwi3_off",
+      "kind": "M",
+      "terminal": "d",
+      "node": "spwi3_cg",
+      "vec": "i(va_nspwi3_off_d)",
+      "sign": 1.0
+    },
+    "nspwi3_off:g": {
+      "element": "nspwi3_off",
+      "kind": "M",
+      "terminal": "g",
+      "node": "spwi3_ena",
+      "vec": "i(va_nspwi3_off_g)",
+      "sign": 1.0
+    },
+    "nspwi3_off:s": {
+      "element": "nspwi3_off",
+      "kind": "M",
+      "terminal": "s",
+      "node": "vdd",
+      "vec": "i(va_nspwi3_off_s)",
+      "sign": 1.0
+    },
+    "nspwi3_off:b": {
+      "element": "nspwi3_off",
+      "kind": "M",
+      "terminal": "b",
+      "node": "vsrc",
+      "vec": "i(va_nspwi3_off_b)",
+      "sign": 1.0
+    },
+    "nspwi4_eni_p:d": {
+      "element": "nspwi4_eni_p",
+      "kind": "M",
+      "terminal": "d",
+      "node": "spwi4_ena",
+      "vec": "i(va_nspwi4_eni_p_d)",
+      "sign": 1.0
+    },
+    "nspwi4_eni_p:g": {
+      "element": "nspwi4_eni_p",
+      "kind": "M",
+      "terminal": "g",
+      "node": "vdd",
+      "vec": "i(va_nspwi4_eni_p_g)",
+      "sign": 1.0
+    },
+    "nspwi4_eni_p:s": {
+      "element": "nspwi4_eni_p",
+      "kind": "M",
+      "terminal": "s",
+      "node": "vdd",
+      "vec": "i(va_nspwi4_eni_p_s)",
+      "sign": 1.0
+    },
+    "nspwi4_eni_p:b": {
+      "element": "nspwi4_eni_p",
+      "kind": "M",
+      "terminal": "b",
+      "node": "vsrc",
+      "vec": "i(va_nspwi4_eni_p_b)",
+      "sign": 1.0
+    },
+    "nspwi4_eni_n:d": {
+      "element": "nspwi4_eni_n",
+      "kind": "M",
+      "terminal": "d",
+      "node": "spwi4_ena",
+      "vec": "i(va_nspwi4_eni_n_d)",
+      "sign": 1.0
+    },
+    "nspwi4_eni_n:g": {
+      "element": "nspwi4_eni_n",
+      "kind": "M",
+      "terminal": "g",
+      "node": "vdd",
+      "vec": "i(va_nspwi4_eni_n_g)",
+      "sign": 1.0
+    },
+    "nspwi4_eni_n:s": {
+      "element": "nspwi4_eni_n",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_nspwi4_eni_n_s)",
+      "sign": 1.0
+    },
+    "nspwi4_eni_n:b": {
+      "element": "nspwi4_eni_n",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_nspwi4_eni_n_b)",
+      "sign": 1.0
+    },
+    "nspwi4_cp:d": {
+      "element": "nspwi4_cp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "spw4",
+      "vec": "i(va_nspwi4_cp_d)",
+      "sign": 1.0
+    },
+    "nspwi4_cp:g": {
+      "element": "nspwi4_cp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "spwi4_cg",
+      "vec": "i(va_nspwi4_cp_g)",
+      "sign": 1.0
+    },
+    "nspwi4_cp:s": {
+      "element": "nspwi4_cp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "vdd",
+      "vec": "i(va_nspwi4_cp_s)",
+      "sign": 1.0
+    },
+    "nspwi4_cp:b": {
+      "element": "nspwi4_cp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "vsrc",
+      "vec": "i(va_nspwi4_cp_b)",
+      "sign": 1.0
+    },
+    "nspwi4_bias:d": {
+      "element": "nspwi4_bias",
+      "kind": "M",
+      "terminal": "d",
+      "node": "irefp_n",
+      "vec": "i(va_nspwi4_bias_d)",
+      "sign": 1.0
+    },
+    "nspwi4_bias:g": {
+      "element": "nspwi4_bias",
+      "kind": "M",
+      "terminal": "g",
+      "node": "vdd",
+      "vec": "i(va_nspwi4_bias_g)",
+      "sign": 1.0
+    },
+    "nspwi4_bias:s": {
+      "element": "nspwi4_bias",
+      "kind": "M",
+      "terminal": "s",
+      "node": "spwi4_cg",
+      "vec": "i(va_nspwi4_bias_s)",
+      "sign": 1.0
+    },
+    "nspwi4_bias:b": {
+      "element": "nspwi4_bias",
+      "kind": "M",
+      "terminal": "b",
+      "node": "vsrc",
+      "vec": "i(va_nspwi4_bias_b)",
+      "sign": 1.0
+    },
+    "nspwi4_off:d": {
+      "element": "nspwi4_off",
+      "kind": "M",
+      "terminal": "d",
+      "node": "spwi4_cg",
+      "vec": "i(va_nspwi4_off_d)",
+      "sign": 1.0
+    },
+    "nspwi4_off:g": {
+      "element": "nspwi4_off",
+      "kind": "M",
+      "terminal": "g",
+      "node": "spwi4_ena",
+      "vec": "i(va_nspwi4_off_g)",
+      "sign": 1.0
+    },
+    "nspwi4_off:s": {
+      "element": "nspwi4_off",
+      "kind": "M",
+      "terminal": "s",
+      "node": "vdd",
+      "vec": "i(va_nspwi4_off_s)",
+      "sign": 1.0
+    },
+    "nspwi4_off:b": {
+      "element": "nspwi4_off",
+      "kind": "M",
+      "terminal": "b",
+      "node": "vsrc",
+      "vec": "i(va_nspwi4_off_b)",
+      "sign": 1.0
+    },
+    "nagw12f_eni_p:d": {
+      "element": "nagw12f_eni_p",
+      "kind": "M",
+      "terminal": "d",
+      "node": "agw12f_ena",
+      "vec": "i(va_nagw12f_eni_p_d)",
+      "sign": 1.0
+    },
+    "nagw12f_eni_p:g": {
+      "element": "nagw12f_eni_p",
+      "kind": "M",
+      "terminal": "g",
+      "node": "cdw12f_op_aqb",
+      "vec": "i(va_nagw12f_eni_p_g)",
+      "sign": 1.0
+    },
+    "nagw12f_eni_p:s": {
+      "element": "nagw12f_eni_p",
+      "kind": "M",
+      "terminal": "s",
+      "node": "vdd",
+      "vec": "i(va_nagw12f_eni_p_s)",
+      "sign": 1.0
+    },
+    "nagw12f_eni_p:b": {
+      "element": "nagw12f_eni_p",
+      "kind": "M",
+      "terminal": "b",
+      "node": "vsrc",
+      "vec": "i(va_nagw12f_eni_p_b)",
+      "sign": 1.0
+    },
+    "nagw12f_eni_n:d": {
+      "element": "nagw12f_eni_n",
+      "kind": "M",
+      "terminal": "d",
+      "node": "agw12f_ena",
+      "vec": "i(va_nagw12f_eni_n_d)",
+      "sign": 1.0
+    },
+    "nagw12f_eni_n:g": {
+      "element": "nagw12f_eni_n",
+      "kind": "M",
+      "terminal": "g",
+      "node": "cdw12f_op_aqb",
+      "vec": "i(va_nagw12f_eni_n_g)",
+      "sign": 1.0
+    },
+    "nagw12f_eni_n:s": {
+      "element": "nagw12f_eni_n",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_nagw12f_eni_n_s)",
+      "sign": 1.0
+    },
+    "nagw12f_eni_n:b": {
+      "element": "nagw12f_eni_n",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_nagw12f_eni_n_b)",
+      "sign": 1.0
+    },
+    "nagw12f_cp:d": {
+      "element": "nagw12f_cp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "load_pos",
+      "vec": "i(va_nagw12f_cp_d)",
+      "sign": 1.0
+    },
+    "nagw12f_cp:g": {
+      "element": "nagw12f_cp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "agw12f_cg",
+      "vec": "i(va_nagw12f_cp_g)",
+      "sign": 1.0
+    },
+    "nagw12f_cp:s": {
+      "element": "nagw12f_cp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "vdd",
+      "vec": "i(va_nagw12f_cp_s)",
+      "sign": 1.0
+    },
+    "nagw12f_cp:b": {
+      "element": "nagw12f_cp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "vsrc",
+      "vec": "i(va_nagw12f_cp_b)",
+      "sign": 1.0
+    },
+    "nagw12f_bias:d": {
+      "element": "nagw12f_bias",
+      "kind": "M",
+      "terminal": "d",
+      "node": "irefp_n",
+      "vec": "i(va_nagw12f_bias_d)",
+      "sign": 1.0
+    },
+    "nagw12f_bias:g": {
+      "element": "nagw12f_bias",
+      "kind": "M",
+      "terminal": "g",
+      "node": "cdw12f_op_aqb",
+      "vec": "i(va_nagw12f_bias_g)",
+      "sign": 1.0
+    },
+    "nagw12f_bias:s": {
+      "element": "nagw12f_bias",
+      "kind": "M",
+      "terminal": "s",
+      "node": "agw12f_cg",
+      "vec": "i(va_nagw12f_bias_s)",
+      "sign": 1.0
+    },
+    "nagw12f_bias:b": {
+      "element": "nagw12f_bias",
+      "kind": "M",
+      "terminal": "b",
+      "node": "vsrc",
+      "vec": "i(va_nagw12f_bias_b)",
+      "sign": 1.0
+    },
+    "nagw12f_off:d": {
+      "element": "nagw12f_off",
+      "kind": "M",
+      "terminal": "d",
+      "node": "agw12f_cg",
+      "vec": "i(va_nagw12f_off_d)",
+      "sign": 1.0
+    },
+    "nagw12f_off:g": {
+      "element": "nagw12f_off",
+      "kind": "M",
+      "terminal": "g",
+      "node": "agw12f_ena",
+      "vec": "i(va_nagw12f_off_g)",
+      "sign": 1.0
+    },
+    "nagw12f_off:s": {
+      "element": "nagw12f_off",
+      "kind": "M",
+      "terminal": "s",
+      "node": "vdd",
+      "vec": "i(va_nagw12f_off_s)",
+      "sign": 1.0
+    },
+    "nagw12f_off:b": {
+      "element": "nagw12f_off",
+      "kind": "M",
+      "terminal": "b",
+      "node": "vsrc",
+      "vec": "i(va_nagw12f_off_b)",
+      "sign": 1.0
+    },
+    "nagw12r_eni_p:d": {
+      "element": "nagw12r_eni_p",
+      "kind": "M",
+      "terminal": "d",
+      "node": "agw12r_ena",
+      "vec": "i(va_nagw12r_eni_p_d)",
+      "sign": 1.0
+    },
+    "nagw12r_eni_p:g": {
+      "element": "nagw12r_eni_p",
+      "kind": "M",
+      "terminal": "g",
+      "node": "cdw12r_op_aqb",
+      "vec": "i(va_nagw12r_eni_p_g)",
+      "sign": 1.0
+    },
+    "nagw12r_eni_p:s": {
+      "element": "nagw12r_eni_p",
+      "kind": "M",
+      "terminal": "s",
+      "node": "vdd",
+      "vec": "i(va_nagw12r_eni_p_s)",
+      "sign": 1.0
+    },
+    "nagw12r_eni_p:b": {
+      "element": "nagw12r_eni_p",
+      "kind": "M",
+      "terminal": "b",
+      "node": "vsrc",
+      "vec": "i(va_nagw12r_eni_p_b)",
+      "sign": 1.0
+    },
+    "nagw12r_eni_n:d": {
+      "element": "nagw12r_eni_n",
+      "kind": "M",
+      "terminal": "d",
+      "node": "agw12r_ena",
+      "vec": "i(va_nagw12r_eni_n_d)",
+      "sign": 1.0
+    },
+    "nagw12r_eni_n:g": {
+      "element": "nagw12r_eni_n",
+      "kind": "M",
+      "terminal": "g",
+      "node": "cdw12r_op_aqb",
+      "vec": "i(va_nagw12r_eni_n_g)",
+      "sign": 1.0
+    },
+    "nagw12r_eni_n:s": {
+      "element": "nagw12r_eni_n",
+      "kind": "M",
+      "terminal": "s",
+      "node": "0",
+      "vec": "i(va_nagw12r_eni_n_s)",
+      "sign": 1.0
+    },
+    "nagw12r_eni_n:b": {
+      "element": "nagw12r_eni_n",
+      "kind": "M",
+      "terminal": "b",
+      "node": "0",
+      "vec": "i(va_nagw12r_eni_n_b)",
+      "sign": 1.0
+    },
+    "nagw12r_cp:d": {
+      "element": "nagw12r_cp",
+      "kind": "M",
+      "terminal": "d",
+      "node": "load_neg",
+      "vec": "i(va_nagw12r_cp_d)",
+      "sign": 1.0
+    },
+    "nagw12r_cp:g": {
+      "element": "nagw12r_cp",
+      "kind": "M",
+      "terminal": "g",
+      "node": "agw12r_cg",
+      "vec": "i(va_nagw12r_cp_g)",
+      "sign": 1.0
+    },
+    "nagw12r_cp:s": {
+      "element": "nagw12r_cp",
+      "kind": "M",
+      "terminal": "s",
+      "node": "vdd",
+      "vec": "i(va_nagw12r_cp_s)",
+      "sign": 1.0
+    },
+    "nagw12r_cp:b": {
+      "element": "nagw12r_cp",
+      "kind": "M",
+      "terminal": "b",
+      "node": "vsrc",
+      "vec": "i(va_nagw12r_cp_b)",
+      "sign": 1.0
+    },
+    "nagw12r_bias:d": {
+      "element": "nagw12r_bias",
+      "kind": "M",
+      "terminal": "d",
+      "node": "irefp_n",
+      "vec": "i(va_nagw12r_bias_d)",
+      "sign": 1.0
+    },
+    "nagw12r_bias:g": {
+      "element": "nagw12r_bias",
+      "kind": "M",
+      "terminal": "g",
+      "node": "cdw12r_op_aqb",
+      "vec": "i(va_nagw12r_bias_g)",
+      "sign": 1.0
+    },
+    "nagw12r_bias:s": {
+      "element": "nagw12r_bias",
+      "kind": "M",
+      "terminal": "s",
+      "node": "agw12r_cg",
+      "vec": "i(va_nagw12r_bias_s)",
+      "sign": 1.0
+    },
+    "nagw12r_bias:b": {
+      "element": "nagw12r_bias",
+      "kind": "M",
+      "terminal": "b",
+      "node": "vsrc",
+      "vec": "i(va_nagw12r_bias_b)",
+      "sign": 1.0
+    },
+    "nagw12r_off:d": {
+      "element": "nagw12r_off",
+      "kind": "M",
+      "terminal": "d",
+      "node": "agw12r_cg",
+      "vec": "i(va_nagw12r_off_d)",
+      "sign": 1.0
+    },
+    "nagw12r_off:g": {
+      "element": "nagw12r_off",
+      "kind": "M",
+      "terminal": "g",
+      "node": "agw12r_ena",
+      "vec": "i(va_nagw12r_off_g)",
+      "sign": 1.0
+    },
+    "nagw12r_off:s": {
+      "element": "nagw12r_off",
+      "kind": "M",
+      "terminal": "s",
+      "node": "vdd",
+      "vec": "i(va_nagw12r_off_s)",
+      "sign": 1.0
+    },
+    "nagw12r_off:b": {
+      "element": "nagw12r_off",
+      "kind": "M",
+      "terminal": "b",
+      "node": "vsrc",
+      "vec": "i(va_nagw12r_off_b)",
+      "sign": 1.0
+    }
+  }
+}

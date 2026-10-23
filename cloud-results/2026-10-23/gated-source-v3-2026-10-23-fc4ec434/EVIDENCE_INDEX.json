@@ -1,0 +1,69 @@
+[
+  {
+    "case_id": "CHAIN_12_W_F",
+    "raw_available": false,
+    "reason": "Not started due first T0 failure.",
+    "raw_sha256": null,
+    "actual_end_s": null
+  },
+  {
+    "case_id": "CHAIN_STARTUP_0_3S",
+    "raw_available": false,
+    "reason": "Not started due first T0 failure.",
+    "raw_sha256": null,
+    "actual_end_s": null
+  },
+  {
+    "case_id": "DC_2P7",
+    "raw_available": false,
+    "reason": "Not started due first T0 failure.",
+    "raw_sha256": null,
+    "actual_end_s": null
+  },
+  {
+    "case_id": "DC_3",
+    "raw_available": false,
+    "reason": "Not started due first T0 failure.",
+    "raw_sha256": null,
+    "actual_end_s": null
+  },
+  {
+    "case_id": "DC_3P2",
+    "raw_available": false,
+    "reason": "Not started due first T0 failure.",
+    "raw_sha256": null,
+    "actual_end_s": null
+  },
+  {
+    "case_id": "G0_W",
+    "raw_available": false,
+    "reason": "Not started due first T0 failure.",
+    "raw_sha256": null,
+    "actual_end_s": null
+  },
+  {
+    "case_id": "Q1_MOTHER_HALFSTEP",
+    "raw_available": false,
+    "reason": "Not started due first T0 failure.",
+    "raw_sha256": null,
+    "actual_end_s": null
+  },
+  {
+    "case_id": "Q1_MOTHER_PROTOCOL",
+    "raw_available": false,
+    "reason": "Not started due first T0 failure.",
+    "raw_sha256": null,
+    "actual_end_s": null
+  },
+  {
+    "case_id": "T0_GATED_SOURCE_BENCH",
+    "raw_available": true,
+    "format": "original-binary-raw",
+    "file": "T0_GATED_SOURCE_BENCH.raw",
+    "raw_sha256": "4815fd431401ba21035fde8b4591f1058205550d074bd172cbffa9f0d48a7d2c",
+    "bytes": 3791536,
+    "actual_end_s": 0.06,
+    "byte_copy_identity_verified": true,
+    "large_waveforms_repacked": false
+  }
+]

@@ -1,0 +1,181 @@
+{
+  "status": "FROZEN_BEFORE_FIRST_SOLVE",
+  "parent_commit": "1faf29a6e6b5041032effbae1c5c4f367076ed67",
+  "physical_changed_files": [
+    "netlists/bundle_physical.py"
+  ],
+  "candidate_steps": [
+    "T0_GATED_SOURCE_BENCH",
+    "DC_3",
+    "CHAIN_STARTUP_0_3S",
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP",
+    "CHAIN_12_W_F",
+    "G0_W",
+    "DC_2P7",
+    "DC_3P2"
+  ],
+  "cases": {
+    "T0_GATED_SOURCE_BENCH": {
+      "directory": "/workspace/thermal-g3-repair/gated-source-v3-2026-10-23-fc4ec434/runs/T0_GATED_SOURCE_BENCH",
+      "plan_sha256": "674a40de01cc593b7aefc0b506f67023e5b62c30ebf3348ac2f893707b1b676d",
+      "deck_sha256": "9afb1f83a4306e02da862115dcb0a6c4f6e5958b5776482debe168da53b27a17"
+    },
+    "DC_3": {
+      "directory": "/workspace/thermal-g3-repair/gated-source-v3-2026-10-23-fc4ec434/runs/DC_3",
+      "plan_sha256": "35a6a3fb3e3931c42935c3bae218cf178fcb5468ebd36ccfd45262b899c6ae97",
+      "deck_sha256": "0b70fb49ab1d683f89a156e476dea726ed1acc6c3911a602b04fc8c26b6a95b6"
+    },
+    "CHAIN_STARTUP_0_3S": {
+      "directory": "/workspace/thermal-g3-repair/gated-source-v3-2026-10-23-fc4ec434/runs/CHAIN_STARTUP_0_3S",
+      "plan_sha256": "bc8021f40a8d7c9d2a40e49f9c41f4eb39ff98d555409c542c8d929e82494463",
+      "deck_sha256": "3d2f3beea208a0e98e08ce47f821dec10228a360bd3cb21289bd25e5edeb8317"
+    },
+    "Q1_MOTHER_PROTOCOL": {
+      "directory": "/workspace/thermal-g3-repair/gated-source-v3-2026-10-23-fc4ec434/runs/Q1_MOTHER_PROTOCOL",
+      "plan_sha256": "ae7b7278d5de5cc511b7c9608282c1c45672f7806415a3409440b5955703f62c",
+      "deck_sha256": "12a9034e345c21e894dde9ddfb129779f9dd2b566cffd833b69a1845c3812324"
+    },
+    "Q1_MOTHER_HALFSTEP": {
+      "directory": "/workspace/thermal-g3-repair/gated-source-v3-2026-10-23-fc4ec434/runs/Q1_MOTHER_HALFSTEP",
+      "plan_sha256": "d52cb5a73b69b0acadb1a58ce870acaec6970d7e4380aee313d036036dff0d2e",
+      "deck_sha256": "15d554089f141580219addd84a3b44f65632c3deb49d71c0c4aafe0a180b29d7"
+    },
+    "CHAIN_12_W_F": {
+      "directory": "/workspace/thermal-g3-repair/gated-source-v3-2026-10-23-fc4ec434/runs/CHAIN_12_W_F",
+      "plan_sha256": "7735c7f79c2e20a0618728e9ce149b7bd69647b5a6be3ab6ec3c9a3af74e14de",
+      "deck_sha256": "e4fc74d9dfe5d35f822fe898fbd678a3fd6a07300cb6edaec9b75f522990f690"
+    },
+    "G0_W": {
+      "directory": "/workspace/thermal-g3-repair/gated-source-v3-2026-10-23-fc4ec434/runs/G0_W",
+      "plan_sha256": "34caa7b4ec1d6c19bbe840079f04e18870fb7d83cc0a4933b85fe684c52d01b5",
+      "deck_sha256": "ff0e9ffe9d188d7390a3064d3b22e43830d795bf4a4d3532c846897eceac4fcc"
+    },
+    "DC_2P7": {
+      "directory": "/workspace/thermal-g3-repair/gated-source-v3-2026-10-23-fc4ec434/runs/DC_2P7",
+      "plan_sha256": "cb9b2162347a23ff74b2cda2508ced8ec39053b074d14cd4f07f1ae398c9b84c",
+      "deck_sha256": "82dee478f1f73331edbedd4e350a5ef628d1119765714f95ddf638002a5b6b97"
+    },
+    "DC_3P2": {
+      "directory": "/workspace/thermal-g3-repair/gated-source-v3-2026-10-23-fc4ec434/runs/DC_3P2",
+      "plan_sha256": "796ef9e8938fed4a23cbcc905d0c8b959fe395fe52d42b548d87b538f3333a61",
+      "deck_sha256": "dc1434e0eb383b783e6e58bdbfed18c21ba1d12375f1478334489ed3e7aee4ab"
+    }
+  },
+  "contract_sha256": "cc531dd483f90855276fffe09daa33d3450b8dbcf718574361e2e1dd6ed9fe66",
+  "candidate_software_sha256": {
+    "config.py": "88e05268899668035ad934d36983e8f93b3829a0c553940dcca57a33190e88b0",
+    "netlists/build.py": "399a4a315db623fa13070206f599e57793fde95bc327bb69ce92ff369ed1b2fc",
+    "netlists/bundle_physical.py": "f1db6795345b897efb055487ab69dd7ea63a4a82c90e3b98410914059223f9ca",
+    "netlists/params.py": "8055123dea9f9bf3e96977b3992053f5d760f04b9c7a350c5b4c2a49e182343c",
+    "netlists/neuron_mother.py": "58dff803a651914c58158c13a143b517c642c16e857b0674a88946ff44f81634",
+    "netlists/bench_mother.py": "7592338d0c61885c6658e61a62ea60d9befcf5b3480b279bee3299ab88e4d563",
+    "netlists/occurrence_port.py": "183cb02a7fda4b056712789b841f6d9f03ccf84d1c0b046b0f6ce57c235038f7",
+    "netlists/neuron_nrc.py": "da371dc4d26f2d74b821965d02989ec90ce31c48c3930b0174e2d9d33a3dad75",
+    "netlists/spatial_graph.py": "15452f5003e76a70e965fc24cbd75b9e8f24e2051ac5715c601d06f9245313ed",
+    "netlists/build_thermal_g3.py": "eb38c797cf1dbc9446172d4c7fb8b17b48f0a66f8c876a263c6c472b8b42ade5",
+    "netlists/ledger_plan.py": "81fac8428fb3a63ce54c5cbc7b22a8c911ec394277104b2b3d5b423b59b85729",
+    "netlists/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "analysis/input_bounds.py": "ecea492d1c727be6161ef61a121f7538d8ddcbd86f511b22c8db48e54d4feac1",
+    "analysis/raw_bounds.py": "871e078186b80c50501cb49622545612184040190bc7c41720064660d0dfc2f5",
+    "analysis/ekv26_static.py": "e4fe9ac0703a9ea2944eddd7ef2744c976d61db2cddc29514387da7c09d5ab7e",
+    "analysis/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtime/decks.py": "5c17b528bd3b4feb3c5a7973d56c2436e5edac7cad5e4df0a81590bcfc6f171f",
+    "runtime/supervisor.py": "c8a07650c88bf072b852fff0805ab847ef986a102e2ebb9280b9f94a1e8c1f69",
+    "runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtime/coordinator.py": "f9461c2a7e0c09b04cd13cb8322d3d21e3a3f03352f2b7b35d83954168b999d4",
+    "tools/source_manifest.py": "c020c40b2ddcc0d0fbb9ad1e5c6ff6b9f91e50541e7f1a4c4d1ed0389ef8e26e",
+    "tools/make_cloud_package.py": "f43c2a410818864c39eb762e5eb1ee29c0d6bd40f683bcd89ed4cb512b027751",
+    "tools/write_freeze.py": "5148c79c4a157d2ed55cec6dcd83aa30d97697d2a8453c2d963c2f1fd3e6b771",
+    "tools/selfcheck_all.py": "adc2b180207a0429fb9b7c42420f47a379b9fc77222e905e4a243d3a777f4937",
+    "tools/check_cloud_package.py": "08fd1b20bc0b901d54fb4f329145e9010fa7c1f5e5940e580c58c2e770b0b424",
+    "tools/register_backend.py": "5969a058b9840ee3ed8d5425b77145dc690b07ca0fca79b4c3d85eece3910ec0",
+    "tools/render_report.py": "565c15a4d37217f002dbe0b2417c22b8ad2d09fb76d91af1200fe2ffb51c8c7f",
+    "tools/static_check.py": "b203794843881b2c2a4b589d7017070c4db2df127f002533e4c25dd42027e705",
+    "tests/fake_ngspice.py": "882fce28acad7d151513698c040583a292dc22c0fc7a9407e708cd6079f4f758",
+    "tests/synth_raw.py": "73bce511d586cc59c37d6f19bba21e3b6a022627367edd809c5b2cb9fc2fabde",
+    "prereg/make_protocol.py": "c0d21e821fb610b0d56e61c4f6743c91eae5e4cdeed142142f033305e7ab6a21",
+    "prereg/make_cases.py": "ba4ffe5fa0d96fa942d4679c9530edd6a9b8858f591860a7df1bb859be35aa61",
+    "observers/judges.py": "bd91cf6a1c12ba8c38fc126719c43789c9f3ec0e0ec1bb96bdbd5906024d28f7",
+    "observers/halfstep_compare.py": "2186a431b692eefcfdd56509562963305cd2869777702e5115cf2a3384ee25b6",
+    "observers/observers_q1r.py": "4fc3d38ca66d62fcd2eda7761d81ea8da6963dad0c01bd78764eb53127af7a25",
+    "observers/ledger_q1r.py": "3b0bf8cf8a3eeedfde6511ec846c53e5aeb2a752ea51d3cbe6bfd442de0d2d9c",
+    "observers/support_q1r.py": "f80934294d38fd4cebef6e95bc56d17cb08ddfc94924519f8d7a794ae4aead5d",
+    "observers/criteria_q1r.py": "176477e00475211dcc75ddfd24f6b5a71a37cd781b231dd21a49e0a64541f4f2",
+    "observers/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/make_errata_table.py": "fa40cf7c21dd51ca76c3f54c71b27b140614d338d3a81b1b33a2e32c50ecca94",
+    "audit/reaudit_v1_dev.py": "b38a2b0e1a1a534a2422d6d807bd78ad79242a3394f0af841888ec9f2a507b2c",
+    "solver_adapter/read_raw_mmap.py": "b1397bd07835a9115647b575baa89681bc8e39faaa4602ea8c93c581bbbc803e",
+    "solver_adapter/read_raw.py": "97c1f437d4cb8564a15747b641398ff95fe5005a4e7aab5fe7943210e8a0d38a",
+    "solver_adapter/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "parent_software_sha256": {
+    "config.py": "88e05268899668035ad934d36983e8f93b3829a0c553940dcca57a33190e88b0",
+    "netlists/build.py": "399a4a315db623fa13070206f599e57793fde95bc327bb69ce92ff369ed1b2fc",
+    "netlists/bundle_physical.py": "f61a47ce2add2b38e6daf9e44507853a1ed1fb8a708df8a5a09f4e11cf1916f4",
+    "netlists/params.py": "8055123dea9f9bf3e96977b3992053f5d760f04b9c7a350c5b4c2a49e182343c",
+    "netlists/neuron_mother.py": "58dff803a651914c58158c13a143b517c642c16e857b0674a88946ff44f81634",
+    "netlists/bench_mother.py": "7592338d0c61885c6658e61a62ea60d9befcf5b3480b279bee3299ab88e4d563",
+    "netlists/occurrence_port.py": "183cb02a7fda4b056712789b841f6d9f03ccf84d1c0b046b0f6ce57c235038f7",
+    "netlists/neuron_nrc.py": "da371dc4d26f2d74b821965d02989ec90ce31c48c3930b0174e2d9d33a3dad75",
+    "netlists/spatial_graph.py": "15452f5003e76a70e965fc24cbd75b9e8f24e2051ac5715c601d06f9245313ed",
+    "netlists/build_thermal_g3.py": "eb38c797cf1dbc9446172d4c7fb8b17b48f0a66f8c876a263c6c472b8b42ade5",
+    "netlists/ledger_plan.py": "81fac8428fb3a63ce54c5cbc7b22a8c911ec394277104b2b3d5b423b59b85729",
+    "netlists/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "analysis/input_bounds.py": "ecea492d1c727be6161ef61a121f7538d8ddcbd86f511b22c8db48e54d4feac1",
+    "analysis/raw_bounds.py": "871e078186b80c50501cb49622545612184040190bc7c41720064660d0dfc2f5",
+    "analysis/ekv26_static.py": "e4fe9ac0703a9ea2944eddd7ef2744c976d61db2cddc29514387da7c09d5ab7e",
+    "analysis/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtime/decks.py": "5c17b528bd3b4feb3c5a7973d56c2436e5edac7cad5e4df0a81590bcfc6f171f",
+    "runtime/supervisor.py": "c8a07650c88bf072b852fff0805ab847ef986a102e2ebb9280b9f94a1e8c1f69",
+    "runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtime/coordinator.py": "f9461c2a7e0c09b04cd13cb8322d3d21e3a3f03352f2b7b35d83954168b999d4",
+    "tools/source_manifest.py": "c020c40b2ddcc0d0fbb9ad1e5c6ff6b9f91e50541e7f1a4c4d1ed0389ef8e26e",
+    "tools/make_cloud_package.py": "f43c2a410818864c39eb762e5eb1ee29c0d6bd40f683bcd89ed4cb512b027751",
+    "tools/write_freeze.py": "5148c79c4a157d2ed55cec6dcd83aa30d97697d2a8453c2d963c2f1fd3e6b771",
+    "tools/selfcheck_all.py": "adc2b180207a0429fb9b7c42420f47a379b9fc77222e905e4a243d3a777f4937",
+    "tools/check_cloud_package.py": "08fd1b20bc0b901d54fb4f329145e9010fa7c1f5e5940e580c58c2e770b0b424",
+    "tools/register_backend.py": "5969a058b9840ee3ed8d5425b77145dc690b07ca0fca79b4c3d85eece3910ec0",
+    "tools/render_report.py": "565c15a4d37217f002dbe0b2417c22b8ad2d09fb76d91af1200fe2ffb51c8c7f",
+    "tools/static_check.py": "b203794843881b2c2a4b589d7017070c4db2df127f002533e4c25dd42027e705",
+    "tests/fake_ngspice.py": "882fce28acad7d151513698c040583a292dc22c0fc7a9407e708cd6079f4f758",
+    "tests/synth_raw.py": "73bce511d586cc59c37d6f19bba21e3b6a022627367edd809c5b2cb9fc2fabde",
+    "prereg/make_protocol.py": "c0d21e821fb610b0d56e61c4f6743c91eae5e4cdeed142142f033305e7ab6a21",
+    "prereg/make_cases.py": "ba4ffe5fa0d96fa942d4679c9530edd6a9b8858f591860a7df1bb859be35aa61",
+    "observers/judges.py": "bd91cf6a1c12ba8c38fc126719c43789c9f3ec0e0ec1bb96bdbd5906024d28f7",
+    "observers/halfstep_compare.py": "2186a431b692eefcfdd56509562963305cd2869777702e5115cf2a3384ee25b6",
+    "observers/observers_q1r.py": "4fc3d38ca66d62fcd2eda7761d81ea8da6963dad0c01bd78764eb53127af7a25",
+    "observers/ledger_q1r.py": "3b0bf8cf8a3eeedfde6511ec846c53e5aeb2a752ea51d3cbe6bfd442de0d2d9c",
+    "observers/support_q1r.py": "f80934294d38fd4cebef6e95bc56d17cb08ddfc94924519f8d7a794ae4aead5d",
+    "observers/criteria_q1r.py": "176477e00475211dcc75ddfd24f6b5a71a37cd781b231dd21a49e0a64541f4f2",
+    "observers/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/make_errata_table.py": "fa40cf7c21dd51ca76c3f54c71b27b140614d338d3a81b1b33a2e32c50ecca94",
+    "audit/reaudit_v1_dev.py": "b38a2b0e1a1a534a2422d6d807bd78ad79242a3394f0af841888ec9f2a507b2c",
+    "solver_adapter/read_raw_mmap.py": "b1397bd07835a9115647b575baa89681bc8e39faaa4602ea8c93c581bbbc803e",
+    "solver_adapter/read_raw.py": "97c1f437d4cb8564a15747b641398ff95fe5005a4e7aab5fe7943210e8a0d38a",
+    "solver_adapter/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "assets": {
+    "/workspace/thermal-g3-env/host/native/bin/ngspice": "37d80c673bc4c03904ed4434bb3aa9aecd099ecfaeb66b86730a905e8c76ed89",
+    "/workspace/thermal-g3-env/host/native/models/ekv26_linux.osdi": "7c07ae3728941189b77bf0ecfca5ebe56473d01eedc6ea59c46cc32bfdb9a43f",
+    "/workspace/thermal-g3-repair/gated-source-v3-2026-10-23-fc4ec434/inputs/c05_ekv26_typ.lib": "f6acb2379baacfdb5f53cfc30015f3b7c5690bb1118a5e32a678b76c0b739634"
+  },
+  "global_start_before": 43,
+  "max_new_starts": 9,
+  "global_cap": 65,
+  "max_global_after": 52,
+  "effective_wall_cap_s": null,
+  "no_qualification_inherited": true,
+  "new_physical_function_interface_unchanged": true,
+  "diff_sha256": "52c4d12c971bc1287a6a68cb6c5e3a8feb8a0139b821c8b16a62e0375f086f8c",
+  "preflight_sha256": "604b674a9a8b89c49f86e9ba3ff164ff487c71d174c9d1eb0398ca199233e37c",
+  "executor_sha256": {
+    "/workspace/thermal-g3-repair/gated-source-v3-2026-10-23-fc4ec434/executor/v3_engineering.py": "8af1bc8bf649ba45852668e5fd937259c53fe9b7b50203b679e5adaf0ebfb86f",
+    "/workspace/thermal-g3-repair/gated-source-v3-2026-10-23-fc4ec434/executor/run_repair_v3.py": "7ea58b5b34bf2b581595bc6622303dfec1419533976dd8ec179a78abf0e1d802"
+  },
+  "inherited_v2_helpers_source_sha256": "237d01bd102865defa0bb1f40e640d7ba9e6c646601a966234d13b9b865c6cb4",
+  "smoke_inventory_sha256": "2508024eca28a0be2d1b56e4566a9761a1e9b1e571aa000ef6113424243bf8ce",
+  "smoke_gates_sha256": "5e901521aefc783f833530021ed8f6ae0f0ef1caa5cd7ee6174803cbd1f6d57d",
+  "no_added_diagnostics_change_formal_anchor_policy": true,
+  "scope_of_model_checks": "T0/T1/T2 all MOS; successor formal cases additionally save every changed gated source and retained POR clamp terminal voltage in diagnostic view, checked separately from unmodified original judge."
+}

@@ -1,0 +1,18 @@
+{
+  "user_instruction": "请执行，解除时间限制",
+  "scope": "One v3 gated-source candidate; T0-T8 exactly, one native start each, first science/engineering failure stops all remaining tests.",
+  "global_starts_before": 43,
+  "global_cap": 65,
+  "max_new_starts": 9,
+  "max_global_after": 52,
+  "minimum_slots_left_if_all_started": 13,
+  "budget_revision": "v2 max49 -> v3 max52; three additional version-specific validation slots explicitly part of authorized v3 plan.",
+  "effective_run_wall_cap_s": null,
+  "effective_batch_wall_cap_s": null,
+  "waiver_scope": "This v3 batch only. Counts, one candidate and first-failure stop remain enforced.",
+  "default_reference_batch_wall_s": 36600,
+  "exact_global_historical_wall_s": null,
+  "automatic_retries": 0,
+  "old_results_and_records_unchanged": true,
+  "old_qualification_inherited": false
+}

@@ -1,0 +1,67 @@
+{
+  "rt_ohm": 1000.0,
+  "rb_ohm": 500.0,
+  "alpha": 0.3333333333333333,
+  "rth_ohm": 333.3333333333333,
+  "reference_C_F": 1e-05,
+  "tau_s": 0.0033333333333333335,
+  "old_inferred_max_load_A": 1.987435440454371e-05,
+  "load_upper_bound_A": 2.4842943005679637e-05,
+  "load_margin_fraction": 0.25,
+  "epsilon_V": 0.0095,
+  "minimum_target_for_bound_V": 0.8817632609175085,
+  "maximum_bound_error_V": 0.008280981001893213,
+  "maximum_relative_error_bound": 0.009391388107139477,
+  "variation_assumption": "Up to 25% change from maximum old inferred load, checked independently at candidate DC; no fitting or adjustment after first solve.",
+  "additional_supply_drop_allowance_V": 0.02,
+  "coupled_prediction": [
+    {
+      "case": "DC_2P7",
+      "old_internal_vdd_V": 2.6652897827525255,
+      "new_internal_vdd_const_other_load_prediction_V": 2.6564643198957296,
+      "incremental_supply_current_A": 0.0008825462856795862,
+      "additional_internal_drop_V": 0.008825462856795863,
+      "old_unloaded_divider_power_W": 0.002367923208681668,
+      "new_unloaded_divider_power_W": 0.004704535121919388,
+      "loaded_vrest_constant_IL_prediction_V": 0.8801186399859909,
+      "disclaimer": "Estimated; candidate DC measures true load and other references/bias/model domain."
+    },
+    {
+      "case": "DC_3",
+      "old_internal_vdd_V": 2.960971126511531,
+      "new_internal_vdd_const_other_load_prediction_V": 2.9511665863575196,
+      "incremental_supply_current_A": 0.0009804540154011222,
+      "additional_internal_drop_V": 0.009804540154011221,
+      "old_unloaded_divider_power_W": 0.0029224500040116548,
+      "new_unloaded_divider_power_W": 0.005806256146955398,
+      "loaded_vrest_constant_IL_prediction_V": 0.9776004537715398,
+      "disclaimer": "Estimated; candidate DC measures true load and other references/bias/model domain."
+    },
+    {
+      "case": "DC_3P2",
+      "old_internal_vdd_V": 3.158100525537112,
+      "new_internal_vdd_const_other_load_prediction_V": 3.1476432390287115,
+      "incremental_supply_current_A": 0.001045728650840072,
+      "additional_internal_drop_V": 0.01045728650840072,
+      "old_unloaded_divider_power_W": 0.0033245329764659283,
+      "new_unloaded_divider_power_W": 0.006605105306802105,
+      "loaded_vrest_constant_IL_prediction_V": 1.0425896282080558,
+      "disclaimer": "Estimated; candidate DC measures true load and other references/bias/model domain."
+    }
+  ],
+  "clamp": {
+    "model": "nch original C05 EKV",
+    "W_m": 4e-06,
+    "L_m": 1e-06,
+    "drain": "<core>ko1",
+    "gate": "por_hold",
+    "source": "0",
+    "bulk": "0",
+    "high_supply_Ron_estimate_ohm": 1695.6555947138957,
+    "assumptions": "Long-channel linear-region order-of-magnitude estimate only; exact low-rail, contention and release require C2 measured currents. Tail bias approximately <=(3.2-0.61)/1e6=2.59uA per core at high rail.",
+    "full124core_contention_power_upper_order_W": 0.001027712,
+    "gate_oxide_added_F_estimate": 1.6863999999999998e-12,
+    "pulse_termination": "Unchanged vm/h comparator polarity, qb->h positive feedback and q->NMOS/Rdis discharge. Clamp overrides o1 only while actual por_hold is high. No gate inserted into feedback.",
+    "q_and_qb_consumers": "Original q/qb inverter chain and all consumer wiring retained. A forced-low o1 makes q low and qb high, disabling PMOS-controlled recovery/activity/history charge switches."
+  }
+}

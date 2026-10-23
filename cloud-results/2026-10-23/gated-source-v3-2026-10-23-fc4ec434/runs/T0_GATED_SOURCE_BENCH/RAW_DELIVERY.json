@@ -1,0 +1,10 @@
+{
+  "raw_available": true,
+  "format": "original-binary-raw",
+  "file": "T0_GATED_SOURCE_BENCH.raw",
+  "raw_sha256": "4815fd431401ba21035fde8b4591f1058205550d074bd172cbffa9f0d48a7d2c",
+  "bytes": 3791536,
+  "actual_end_s": 0.06,
+  "byte_copy_identity_verified": true,
+  "large_waveforms_repacked": false
+}

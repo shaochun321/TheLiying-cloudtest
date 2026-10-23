@@ -1,0 +1,43 @@
+{
+  "status": "REPAIR_FAILED",
+  "global_start_count": 44,
+  "new_starts": 1,
+  "solver_wall_s": 2.6146218920039246,
+  "active_case": null,
+  "cases": {
+    "T0_GATED_SOURCE_BENCH": "FAIL",
+    "DC_3": "BLOCKED_FIRST_FAILURE",
+    "CHAIN_STARTUP_0_3S": "BLOCKED_FIRST_FAILURE",
+    "Q1_MOTHER_PROTOCOL": "BLOCKED_FIRST_FAILURE",
+    "Q1_MOTHER_HALFSTEP": "BLOCKED_FIRST_FAILURE",
+    "CHAIN_12_W_F": "BLOCKED_FIRST_FAILURE",
+    "G0_W": "BLOCKED_FIRST_FAILURE",
+    "DC_2P7": "BLOCKED_FIRST_FAILURE",
+    "DC_3P2": "BLOCKED_FIRST_FAILURE"
+  },
+  "candidate_scientific_verdict": "NOT_GRANTED",
+  "candidate_cases": {
+    "T0_GATED_SOURCE_BENCH": {
+      "stage": "FINISHED",
+      "case_id": "T0_GATED_SOURCE_BENCH",
+      "result": "FAIL",
+      "original_or_engineering_judge_result": "FAIL",
+      "engineering_result": "FAIL",
+      "deck_sha256": "9afb1f83a4306e02da862115dcb0a6c4f6e5958b5776482debe168da53b27a17",
+      "raw_path": "/workspace/thermal-g3-repair/gated-source-v3-2026-10-23-fc4ec434/runs/T0_GATED_SOURCE_BENCH/T0_GATED_SOURCE_BENCH.raw",
+      "raw_sha256": "4815fd431401ba21035fde8b4591f1058205550d074bd172cbffa9f0d48a7d2c",
+      "actual_end_s": 0.06,
+      "solver_wall_s": 2.6146218920039246,
+      "offline_score_wall_s": 0.04454492298827972,
+      "global_start_count": 44,
+      "manifest_sha256": "36d194f048b66e2823f36f92a8f590f6758ac1deb0054e4350943c766c13a2ea",
+      "judge_output_sha256": "28619cdd8ff3dd6306f3e116e102094ae338c7fa50d9a6b88e3c71006e68a5b8",
+      "scoring_source_anchor_policy": "not applicable independent bench"
+    }
+  },
+  "stop_case": "T0_GATED_SOURCE_BENCH",
+  "stop_reason": "T0 completes60ms and passes57/57 model domain, but irefp_n/ilimp_n shift0.88237/0.90100V, exceeding frozen20mV reference-disturbance engineering limit; eight successor tests blocked.",
+  "finished_at": "2026-10-23T16:44:06.259389+08:00",
+  "remaining_global_start_slots": 21,
+  "all_new_solver_processes_reaped": true
+}

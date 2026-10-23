@@ -1,0 +1,108 @@
+{
+  "result": "PASS",
+  "native_starts": 0,
+  "per_actual_deck_checks": {
+    "T0_GATED_SOURCE_BENCH": {
+      "actual_generated_deck": true,
+      "second_analysis_rejected": true,
+      "initial_override_rejected": true,
+      "component_drift_rejected": true,
+      "source_and_model_drift_rejected": true,
+      "duplicate_control_rejected": true,
+      "uic_rejected": true,
+      "first_parameter_change_rejected": true,
+      "maximum_step_change_rejected": true
+    },
+    "DC_3": {
+      "actual_generated_deck": true,
+      "second_analysis_rejected": true,
+      "initial_override_rejected": true,
+      "component_drift_rejected": true,
+      "source_and_model_drift_rejected": true,
+      "duplicate_control_rejected": true
+    },
+    "CHAIN_STARTUP_0_3S": {
+      "actual_generated_deck": true,
+      "second_analysis_rejected": true,
+      "initial_override_rejected": true,
+      "component_drift_rejected": true,
+      "source_and_model_drift_rejected": true,
+      "duplicate_control_rejected": true,
+      "uic_rejected": true,
+      "first_parameter_change_rejected": true,
+      "maximum_step_change_rejected": true
+    },
+    "Q1_MOTHER_PROTOCOL": {
+      "actual_generated_deck": true,
+      "second_analysis_rejected": true,
+      "initial_override_rejected": true,
+      "component_drift_rejected": true,
+      "source_and_model_drift_rejected": true,
+      "duplicate_control_rejected": true,
+      "uic_rejected": true,
+      "first_parameter_change_rejected": true,
+      "maximum_step_change_rejected": true
+    },
+    "Q1_MOTHER_HALFSTEP": {
+      "actual_generated_deck": true,
+      "second_analysis_rejected": true,
+      "initial_override_rejected": true,
+      "component_drift_rejected": true,
+      "source_and_model_drift_rejected": true,
+      "duplicate_control_rejected": true,
+      "uic_rejected": true,
+      "first_parameter_change_rejected": true,
+      "maximum_step_change_rejected": true
+    },
+    "CHAIN_12_W_F": {
+      "actual_generated_deck": true,
+      "second_analysis_rejected": true,
+      "initial_override_rejected": true,
+      "component_drift_rejected": true,
+      "source_and_model_drift_rejected": true,
+      "duplicate_control_rejected": true,
+      "uic_rejected": true,
+      "first_parameter_change_rejected": true,
+      "maximum_step_change_rejected": true
+    },
+    "G0_W": {
+      "actual_generated_deck": true,
+      "second_analysis_rejected": true,
+      "initial_override_rejected": true,
+      "component_drift_rejected": true,
+      "source_and_model_drift_rejected": true,
+      "duplicate_control_rejected": true,
+      "uic_rejected": true,
+      "first_parameter_change_rejected": true,
+      "maximum_step_change_rejected": true
+    },
+    "DC_2P7": {
+      "actual_generated_deck": true,
+      "second_analysis_rejected": true,
+      "initial_override_rejected": true,
+      "component_drift_rejected": true,
+      "source_and_model_drift_rejected": true,
+      "duplicate_control_rejected": true
+    },
+    "DC_3P2": {
+      "actual_generated_deck": true,
+      "second_analysis_rejected": true,
+      "initial_override_rejected": true,
+      "component_drift_rejected": true,
+      "source_and_model_drift_rejected": true,
+      "duplicate_control_rejected": true
+    }
+  },
+  "all_33_static_cases_pass": true,
+  "focused_regression": {
+    "wrong_measured_input_current_rejected": true,
+    "opposite_charge_not_cancelled": true,
+    "missing_vectors_unmeasured": true,
+    "original_anchor_view_policy_preserved": true,
+    "other_bundle_functions_retained": true
+  },
+  "source_v2_full_software_selfcheck": "124/124 previously passed; not represented as a new v3 full suite run.",
+  "T0_one_transient_parallel_channels": true,
+  "source_numerics": "SPARSE Gear reltol1e-5 abstol1e-16, output parameter1ms, maximum125us or62.5us halfstep",
+  "no_initialization_override": true
+}
