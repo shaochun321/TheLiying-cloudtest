@@ -1,0 +1,50 @@
+{
+  "payload_complete": true,
+  "all_required_part_groups_uploaded_and_readback_verified": true,
+  "original_raw_count": 4,
+  "original_bytes": 2278212926,
+  "compressed_bytes": 1306433721,
+  "parts": 33,
+  "group_commits": [
+    {
+      "group": "SHORT_125US",
+      "commit": "90db68fd9e7391426689b9db96cc203b39ceba82",
+      "parent": "8f233e106d75e9399e6ab0fc1930262385ec31a1",
+      "files": 3,
+      "transport_bytes": 78582081,
+      "remote_verified": true,
+      "elapsed_push_and_readback_s": 26.404569419000836
+    },
+    {
+      "group": "Q1_MOTHER_PROTOCOL",
+      "commit": "a5dc9c6afb1b5563b6c9389d6f114673e17f7627",
+      "parent": "90db68fd9e7391426689b9db96cc203b39ceba82",
+      "files": 9,
+      "transport_bytes": 356038447,
+      "remote_verified": true,
+      "elapsed_push_and_readback_s": 22.171602320999227
+    },
+    {
+      "group": "Q1_MOTHER_HALFSTEP",
+      "commit": "b036b4ffd0efa26311552a36f9ab47d20076933f",
+      "parent": "a5dc9c6afb1b5563b6c9389d6f114673e17f7627",
+      "files": 17,
+      "transport_bytes": 686911603,
+      "remote_verified": true,
+      "elapsed_push_and_readback_s": 118.30602010700022
+    },
+    {
+      "group": "G0_W",
+      "commit": "0eea7a735f3831610995446bb81cdfaa248983dc",
+      "parent": "b036b4ffd0efa26311552a36f9ab47d20076933f",
+      "files": 5,
+      "transport_bytes": 184901590,
+      "remote_verified": true,
+      "elapsed_push_and_readback_s": 37.8255288979999
+    }
+  ],
+  "source_evidence_commit": "8f233e106d75e9399e6ab0fc1930262385ec31a1",
+  "solver_starts_unchanged": "54/84",
+  "originals_modified": false,
+  "remote_reconstruction_verification_recorded_separately": true
+}

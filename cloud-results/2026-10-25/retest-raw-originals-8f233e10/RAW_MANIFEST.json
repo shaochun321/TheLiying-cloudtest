@@ -1,0 +1,231 @@
+{
+  "schema": "thermal-g3.lossless-raw-parts.1",
+  "repository": "shaochun321/TheLiying-cloudtest",
+  "evidence_commit": "8f233e106d75e9399e6ab0fc1930262385ec31a1",
+  "raw_count": 4,
+  "original_total_bytes": 2278212926,
+  "chunk_limit_bytes": 41943040,
+  "transport": "gzip -n -6; byte-exact decompression; no waveform conversion",
+  "solver_starts_unchanged": "54/84",
+  "originals_modified": false,
+  "files": [
+    {
+      "name": "short_125us.raw",
+      "case": "SHORT_125US",
+      "source_path": "/workspace/thermal-g3-retests/short-convergence-2026-10-24-e17ea620/short_125us.raw",
+      "bytes": 129804587,
+      "sha256": "637fea05cdf1a5b75b20a6e49bbd7b768832ccdae2a2bb6d9084a393886a879d",
+      "end_s": 20.499988707436106,
+      "result": "DIAGNOSTIC_ONLY",
+      "gzip_bytes": 78582081,
+      "gzip_sha256": "c988900d5763100f594ac468d392a06a083a19161ee92ab49b180f155c17b88d",
+      "parts": [
+        {
+          "path": "parts/SHORT_125US/short_125us.raw.gz.part0000",
+          "bytes": 41943040,
+          "sha256": "06c611c762a4a59ee845f91574a734d22bb6335636d54bb1fdc2f4266771694e"
+        },
+        {
+          "path": "parts/SHORT_125US/short_125us.raw.gz.part0001",
+          "bytes": 36639041,
+          "sha256": "956812092c731c13b2c3deeaeec0eb53be59c34a06f67f62d83df49640136255"
+        }
+      ]
+    },
+    {
+      "name": "Q1_MOTHER_PROTOCOL.raw",
+      "case": "Q1_MOTHER_PROTOCOL",
+      "source_path": "/workspace/thermal-g3-retests/qualification-125-62p5us-2026-10-24-58804272/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw",
+      "bytes": 628906283,
+      "sha256": "30c6bb99e5aa17f65c41cce591c9aa7b8565a6705ed6892edd948ff3ade5acd4",
+      "end_s": 100.27,
+      "result": "PASS",
+      "gzip_bytes": 356038447,
+      "gzip_sha256": "2d1a830b1f5ec9ee9c7a8a8db3cdc51db22d97e58e0ad11a00f6e1d09385c404",
+      "parts": [
+        {
+          "path": "parts/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw.gz.part0000",
+          "bytes": 41943040,
+          "sha256": "90085a73180f3d34acb21b3126d325f55ceaefd0ecbbd73b8849179bb1b57791"
+        },
+        {
+          "path": "parts/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw.gz.part0001",
+          "bytes": 41943040,
+          "sha256": "f63830d0100dc9cd50a7c3f0c7c02043683ee517a24811904086adf621d5a1b5"
+        },
+        {
+          "path": "parts/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw.gz.part0002",
+          "bytes": 41943040,
+          "sha256": "aabeaca39d6cfd1821b6096d63e2a46e949b91dee22e532fa36697bfa1b1a347"
+        },
+        {
+          "path": "parts/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw.gz.part0003",
+          "bytes": 41943040,
+          "sha256": "a469ca431450cc09800a82e6281e861b022b34e8981c97f5260c23db192cd154"
+        },
+        {
+          "path": "parts/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw.gz.part0004",
+          "bytes": 41943040,
+          "sha256": "51920c173d96a8108c34568b2b79af9025ec0206b8152eb6cf69fce64d48bc57"
+        },
+        {
+          "path": "parts/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw.gz.part0005",
+          "bytes": 41943040,
+          "sha256": "b63dec1039e7a597e4f3139976057a10742ffa9130fc95017382a1f197b516ef"
+        },
+        {
+          "path": "parts/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw.gz.part0006",
+          "bytes": 41943040,
+          "sha256": "a4369310acc3c2e6cdae0dca8b21d90706040da8ba23e5548ae04e37b5edbc3e"
+        },
+        {
+          "path": "parts/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw.gz.part0007",
+          "bytes": 41943040,
+          "sha256": "16cfb00daa548e57da6b253ec4b85545e80af9862a7cb7663f719281fa15dec7"
+        },
+        {
+          "path": "parts/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw.gz.part0008",
+          "bytes": 20494127,
+          "sha256": "e0d1b6bb52eca1104d0ce922bee0a14457142c49c7eb1e246d21b9bddf25ddf1"
+        }
+      ]
+    },
+    {
+      "name": "Q1_MOTHER_HALFSTEP.raw",
+      "case": "Q1_MOTHER_HALFSTEP",
+      "source_path": "/workspace/thermal-g3-retests/qualification-125-62p5us-2026-10-24-58804272/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw",
+      "bytes": 1243871532,
+      "sha256": "45953dc90a8f41b65460052605616fb0d027257a1e22cb5665b68c6783c2dbe5",
+      "end_s": 100.27,
+      "result": "PASS",
+      "gzip_bytes": 686911603,
+      "gzip_sha256": "19fecc3dfec7026b9ea2c51e502c53f9f863c867a3c9b71020792334efa4bdd7",
+      "parts": [
+        {
+          "path": "parts/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw.gz.part0000",
+          "bytes": 41943040,
+          "sha256": "a0ff63923cf09e4ab7eb17ed06226eee4203d10b3d3db7eac3d6e203278274e0"
+        },
+        {
+          "path": "parts/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw.gz.part0001",
+          "bytes": 41943040,
+          "sha256": "6f82cc062da6cf12dc9d6df1c6d5727fab66cdc4df82c401457aad977232d6fa"
+        },
+        {
+          "path": "parts/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw.gz.part0002",
+          "bytes": 41943040,
+          "sha256": "bbea8eff54d9644dc4ccc3bad8d05b05a11a8263b7019b5c752e0329786bd169"
+        },
+        {
+          "path": "parts/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw.gz.part0003",
+          "bytes": 41943040,
+          "sha256": "f6957e489c7d9544a14fea0d319f59ecd4ac018edf201e5bc353200e75dde4f4"
+        },
+        {
+          "path": "parts/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw.gz.part0004",
+          "bytes": 41943040,
+          "sha256": "d0ebc9cb6c547affafd17bf36235b39c1da0fcd0f7a269ea629f7b3affb1d7f9"
+        },
+        {
+          "path": "parts/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw.gz.part0005",
+          "bytes": 41943040,
+          "sha256": "d142d43506c9c2908e9da4fa932c69d7b022c5c21555bd5c4e67f80f4eae89e4"
+        },
+        {
+          "path": "parts/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw.gz.part0006",
+          "bytes": 41943040,
+          "sha256": "373d2c93cdedbc32ac7bb064d9839741fec1b42b76d6caba5c313afbd0f46dca"
+        },
+        {
+          "path": "parts/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw.gz.part0007",
+          "bytes": 41943040,
+          "sha256": "1503c93269a3c9940eb8b96a476590db50eb86484647bf8400bb4e2741ec0c22"
+        },
+        {
+          "path": "parts/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw.gz.part0008",
+          "bytes": 41943040,
+          "sha256": "bdfa7d0f6e266dfa2319b2bc530c08697f838ba35a2f1eba179747f439a5f0d8"
+        },
+        {
+          "path": "parts/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw.gz.part0009",
+          "bytes": 41943040,
+          "sha256": "9087ac457b07e355cc8642c0acae23e2cf4acb652543509c066b9658554f31e2"
+        },
+        {
+          "path": "parts/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw.gz.part0010",
+          "bytes": 41943040,
+          "sha256": "5f99a10900c186891db9e248656d5ad9ef9230bbba1732025fe026162b8da9e5"
+        },
+        {
+          "path": "parts/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw.gz.part0011",
+          "bytes": 41943040,
+          "sha256": "f1217d17ce5b1ecaf3eec6d61b35e2eb53d390745247498ab567a90527994a5f"
+        },
+        {
+          "path": "parts/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw.gz.part0012",
+          "bytes": 41943040,
+          "sha256": "4f3e4993e5ab8d4ada594b2cb4b75a325d76ce8e6d1ef177a6f3c30905674069"
+        },
+        {
+          "path": "parts/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw.gz.part0013",
+          "bytes": 41943040,
+          "sha256": "d572ac936400651c7f6e2daf9e32d3a6436de5c2d681f3b9771193bc5bc3e18f"
+        },
+        {
+          "path": "parts/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw.gz.part0014",
+          "bytes": 41943040,
+          "sha256": "a1bea44be1966d437b25a6048694de4bf0928c1495aa23b895617752884302db"
+        },
+        {
+          "path": "parts/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw.gz.part0015",
+          "bytes": 41943040,
+          "sha256": "3c58edc25f3299732c177605f943212e38f93a95cb57f896a097171a116c1c58"
+        },
+        {
+          "path": "parts/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw.gz.part0016",
+          "bytes": 15822963,
+          "sha256": "2a1308be7e3100b4ecdb58b79b39749e5a8bef5b5912fa6e9fb8f226faaab229"
+        }
+      ]
+    },
+    {
+      "name": "G0_W.raw",
+      "case": "G0_W",
+      "source_path": "/workspace/thermal-g3-retests/formal-matrix-2026-10-24-f1d1ab7b/G0_W/G0_W.raw",
+      "bytes": 275630524,
+      "sha256": "acf7dbfb41016a16b4dd2350093bd8249b1c733cc7128d8f63723f28db98119f",
+      "end_s": 64.8,
+      "result": "FAIL",
+      "gzip_bytes": 184901590,
+      "gzip_sha256": "1d72cab2eb9b766fb0c515468b98d51e69d084b73ca2b7a2f2f175883269ac40",
+      "parts": [
+        {
+          "path": "parts/G0_W/G0_W.raw.gz.part0000",
+          "bytes": 41943040,
+          "sha256": "802a3257a532777a6720d3e10c177cfc327f329ddd9d8df380f851bda1b401fe"
+        },
+        {
+          "path": "parts/G0_W/G0_W.raw.gz.part0001",
+          "bytes": 41943040,
+          "sha256": "194c7922cd62ae5e0f58b5ecb2c43cb33dd4bf6aed2c90c25223c0f8637d4408"
+        },
+        {
+          "path": "parts/G0_W/G0_W.raw.gz.part0002",
+          "bytes": 41943040,
+          "sha256": "effb4a38f3bb779a0db3d27aa8e99e6327713fb1589e212f7b32b272d4b19f5e"
+        },
+        {
+          "path": "parts/G0_W/G0_W.raw.gz.part0003",
+          "bytes": 41943040,
+          "sha256": "fc6be379488fea5424813939b6d2497a74a886593d6996c15f24d8f4e2321de2"
+        },
+        {
+          "path": "parts/G0_W/G0_W.raw.gz.part0004",
+          "bytes": 17129430,
+          "sha256": "3bf56ff6012d453c26a5685d17e07c88cee3ace7373afe9e7fe1aa680a323e62"
+        }
+      ]
+    }
+  ],
+  "compressed_total_bytes": 1306433721
+}
