@@ -1,0 +1,119 @@
+{
+  "result": "FAIL",
+  "gates": {
+    "step1_recruitment_order": {
+      "result": "PASS",
+      "first_q_s": {
+        "1": 11.409124917693083,
+        "2": 11.482091593205064,
+        "3": 11.560595636230778,
+        "4": 11.646861882239293,
+        "5": 11.743653156046248,
+        "6": 11.85542844249241,
+        "7": 11.987523860689803,
+        "8": 12.148082658728981,
+        "9": 12.358695108437713,
+        "10": 12.652610416116172
+      }
+    },
+    "step1_and_in_common_trace_window": {
+      "result": "PASS",
+      "window": [
+        12.654051078304004,
+        16.719381125840094
+      ],
+      "t_and": 12.65405065232793
+    },
+    "step1_collector_after_and": {
+      "result": "PASS",
+      "t_col": 12.706982562643692
+    },
+    "step1_port_once_after_collector": {
+      "result": "PASS",
+      "n_p": 1
+    },
+    "step1_returned": {
+      "result": "PASS"
+    },
+    "step2_recruitment_order": {
+      "result": "PASS",
+      "first_q_s": {
+        "1": 38.58120555565288,
+        "2": 38.6571613965297,
+        "3": 38.73918776461602,
+        "4": 38.82972204616727,
+        "5": 38.93188495522416,
+        "6": 39.05189396761991,
+        "7": 39.19186494915312,
+        "8": 39.365692205211396,
+        "9": 39.59841409419392,
+        "10": 39.947090020644794
+      }
+    },
+    "step2_and_in_common_trace_window": {
+      "result": "PASS",
+      "window": [
+        39.948531810664996,
+        43.459613298942834
+      ],
+      "t_and": 39.94853139249078
+    },
+    "step2_collector_after_and": {
+      "result": "PASS",
+      "t_col": 40.00150503772546
+    },
+    "step2_port_once_after_collector": {
+      "result": "PASS",
+      "n_p": 1
+    },
+    "step2_returned": {
+      "result": "PASS"
+    },
+    "physical_ledger": {
+      "nodes": {
+        "gw1_col_vm": {
+          "kcl_p99": 6.330862641141485e-10,
+          "kcl_peak": 1.1162920218139794e-09,
+          "kcl": true,
+          "energy_net_J": 2.355535551757293e-18,
+          "energy_abs_J": 2.1674535284607237e-05,
+          "energy": true,
+          "cap_mismatch_J": 1.3639163104460103e-09,
+          "cap": false,
+          "n_terms": 8,
+          "result": "FAIL"
+        },
+        "gw1_col_vmd": {
+          "kcl_p99": 0.0,
+          "kcl_peak": 0.0,
+          "kcl": true,
+          "energy_net_J": 0.0,
+          "energy_abs_J": 1.3692509179749793e-06,
+          "energy": true,
+          "cap_mismatch_J": 2.80103134462793e-15,
+          "cap": true,
+          "n_terms": 3,
+          "result": "PASS"
+        },
+        "gw1_col_vms": {
+          "kcl_p99": 0.0,
+          "kcl_peak": 0.0,
+          "kcl": true,
+          "energy_net_J": 0.0,
+          "energy_abs_J": 1.5969563348631716e-05,
+          "energy": true,
+          "cap_mismatch_J": 1.7224094708682341e-15,
+          "cap": true,
+          "n_terms": 3,
+          "result": "PASS"
+        }
+      },
+      "scope": "KCL/charge/energy at ledger nodes only",
+      "supply_energy_J": 0.6721860309690038,
+      "fails": [
+        "gw1_col_vm"
+      ],
+      "result": "FAIL"
+    }
+  }
+}

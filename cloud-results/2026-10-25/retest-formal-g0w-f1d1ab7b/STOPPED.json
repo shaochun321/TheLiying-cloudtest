@@ -1,0 +1,9 @@
+{
+  "case_id": "G0_W",
+  "scientific": "FAIL",
+  "completion_failure": null,
+  "global_count": 54,
+  "automatic_retry": false,
+  "next_formal_case_started": false,
+  "automatic_repair_or_diagnostic_started": false
+}

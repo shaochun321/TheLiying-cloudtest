@@ -1,0 +1,21 @@
+{
+  "candidate": "SPARSE_GEAR_125us_original_physics_retest_2026-10-24",
+  "source_software": "/workspace/thermal-g3-qualification/sparse-qualification-2026-10-22-17fb81ea/software/thermal_g3_q1",
+  "qualification_results": "/workspace/thermal-g3-retests/qualification-125-62p5us-2026-10-24-58804272",
+  "qualification_result_sha256": "2e271ace3452980a334501efac750035369a700bb174fa4d68bb9522d98a70b2",
+  "stage_plan_sha256": "bde1b381dedc315c66853e112afe33b5f68312dec54122d2dbef642dd54cd3e9",
+  "global_count_before": 53,
+  "global_start_cap": 84,
+  "formal_cases_reserved": 31,
+  "wall_cap_s": null,
+  "stop_on_first_failure": true,
+  "automatic_retries": false,
+  "automatic_repairs_or_diagnostics": false,
+  "old_freezes_and_ledgers_preserved": true,
+  "ngspice": "/workspace/thermal-g3-env/host/native/bin/ngspice",
+  "ngspice_sha256": "37d80c673bc4c03904ed4434bb3aa9aecd099ecfaeb66b86730a905e8c76ed89",
+  "osdi": "/workspace/thermal-g3-env/host/native/models/ekv26_linux.osdi",
+  "osdi_sha256": "7c07ae3728941189b77bf0ecfca5ebe56473d01eedc6ea59c46cc32bfdb9a43f",
+  "model_card": "/workspace/thermal-g3-qualification/sparse-qualification-2026-10-22-17fb81ea/inputs/c05_ekv26_typ.lib",
+  "model_card_sha256": "f6acb2379baacfdb5f53cfc30015f3b7c5690bb1118a5e32a678b76c0b739634"
+}

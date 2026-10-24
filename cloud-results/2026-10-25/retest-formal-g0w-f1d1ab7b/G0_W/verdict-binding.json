@@ -1,0 +1,37 @@
+{
+  "case_id": "G0_W",
+  "scientific": "FAIL",
+  "completion": {
+    "case_id": "G0_W",
+    "actual_end_s": 64.8,
+    "raw_exists": true,
+    "completion_failure": null,
+    "raw_sha256": "acf7dbfb41016a16b4dd2350093bd8249b1c733cc7128d8f63723f28db98119f",
+    "raw_bytes": 275630524,
+    "raw_variables": 56,
+    "raw_points": 615243
+  },
+  "execution": {
+    "case_id": "G0_W",
+    "command": [
+      "/workspace/thermal-g3-env/host/native/bin/ngspice",
+      "-n",
+      "-b",
+      "/workspace/thermal-g3-retests/formal-matrix-2026-10-24-f1d1ab7b/G0_W/G0_W.cir"
+    ],
+    "actual_solver_launches": 1,
+    "conservative_starts_before": 53,
+    "conservative_starts_after": 54,
+    "global_start_cap": 84,
+    "wall_cap_s": null,
+    "automatic_retries": 0,
+    "timed_out": false,
+    "pid": 5022,
+    "started_at_UTC": "2026-10-24T15:35:23.151789+00:00",
+    "returncode": 0,
+    "elapsed_solver_wall_s": 3216.8011219190003,
+    "ended_at_UTC": "2026-10-24T16:28:59.951912+00:00",
+    "process_reaped": true
+  },
+  "judge_output_sha256": "5dac5378173950144c93aa0f89dce511ad5113c8b43949a8cb95db72e430b5d8"
+}

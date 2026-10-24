@@ -1,0 +1,10 @@
+{
+  "case_id": "G0_W",
+  "actual_end_s": 64.8,
+  "raw_exists": true,
+  "completion_failure": null,
+  "raw_sha256": "acf7dbfb41016a16b4dd2350093bd8249b1c733cc7128d8f63723f28db98119f",
+  "raw_bytes": 275630524,
+  "raw_variables": 56,
+  "raw_points": 615243
+}
