@@ -1,0 +1,10 @@
+{
+  "case_id": "Q1_MOTHER_PROTOCOL",
+  "raw_exists": true,
+  "actual_end_s": 100.27,
+  "completion_failure": null,
+  "raw_sha256": "30c6bb99e5aa17f65c41cce591c9aa7b8565a6705ed6892edd948ff3ade5acd4",
+  "raw_bytes": 628906283,
+  "raw_points": 818885,
+  "raw_variables": 96
+}

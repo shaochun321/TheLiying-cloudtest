@@ -1,0 +1,26 @@
+{
+  "scope": "one independent historical short-diagnostic replay; not qualification",
+  "source_deck": "/workspace/thermal-g3-qualification/sparse-qualification-2026-10-22-17fb81ea/runs/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.cir",
+  "source_deck_sha256": "90a5152086faef1fcb2cdfcbf3c1a4df28d3c39b6edf8dcb36a0b37f009d6b7a",
+  "source_raw": "/workspace/thermal-g3-qualification/sparse-qualification-2026-10-22-17fb81ea/runs/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw",
+  "source_raw_sha256": "69c950786ca768d5918f5dd79c716c0e7f8b75369f490c071c21acc5b2db7f23",
+  "source_raw_checksum_count_this_replay": 1,
+  "instructions": "/workspace/attachments/4a00890b-f639-4458-9d4d-bd7aad07ee9d/能量误差定位结果与单次短程收敛对照.md",
+  "target_end_s": 20.499988707436106,
+  "baseline_points_in_common_interval": 87375,
+  "baseline_tran": "tran 0.001 100.27 0 0.00025",
+  "diagnostic_tran": "tran 0.001 20.499988707436106 0 0.000125",
+  "modified_lines": [
+    "tran endpoint and maximum step",
+    "output RAW destination"
+  ],
+  "max_solver_launches": 1,
+  "wall_cap_s": null,
+  "conservative_global_starts_before": 50,
+  "global_start_cap": 65,
+  "budget_provenance": "Last available v4 conversation record: 50/65. Restored 30/65 snapshot is not a reset or new budget.",
+  "automatic_retry": false,
+  "automatic_next_case": false,
+  "original_scientific_FAIL_preserved": true,
+  "v4_recovered": false
+}

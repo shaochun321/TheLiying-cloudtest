@@ -1,0 +1,286 @@
+{
+  "result": "PASS",
+  "gates": {
+    "halfstep": {
+      "events": {
+        "v(g0_q)": {
+          "a": 6,
+          "b": 6,
+          "same": true,
+          "max_dt": 4.874004588373282e-06
+        },
+        "v(g0_op_aq)": {
+          "a": 3,
+          "b": 3,
+          "same": true,
+          "max_dt": 1.8392580969361916e-07
+        },
+        "v(g0_op_p)": {
+          "a": 3,
+          "b": 3,
+          "same": true,
+          "max_dt": 1.8392673695188932e-07
+        },
+        "v(sg_q)": {
+          "a": 6,
+          "b": 6,
+          "same": true,
+          "max_dt": 1.7386982072764567e-05
+        },
+        "v(sg_op_aq)": {
+          "a": 4,
+          "b": 4,
+          "same": true,
+          "max_dt": 7.329598687988437e-07
+        },
+        "v(sg_op_p)": {
+          "a": 4,
+          "b": 4,
+          "same": true,
+          "max_dt": 7.329597835337154e-07
+        },
+        "v(tc_q)": {
+          "a": 18,
+          "b": 18,
+          "same": true,
+          "max_dt": 5.7551668092514774e-05
+        },
+        "v(tc_op_aq)": {
+          "a": 3,
+          "b": 3,
+          "same": true,
+          "max_dt": 8.19072573676749e-06
+        },
+        "v(tc_op_p)": {
+          "a": 3,
+          "b": 3,
+          "same": true,
+          "max_dt": 8.190722411427487e-06
+        }
+      },
+      "charge": {
+        "g0_reset": {
+          "a": 1.1873964520474671e-07,
+          "b": 1.1873971642443379e-07,
+          "ok": true
+        },
+        "sg_reset": {
+          "a": 1.0528512809430728e-07,
+          "b": 1.0528623097933733e-07,
+          "ok": true
+        },
+        "tc_reset": {
+          "a": 4.16042756709412e-06,
+          "b": 4.160487967204015e-06,
+          "ok": true
+        },
+        "i(vg0_aweak)": {
+          "a": 1.8420570504003265e-07,
+          "b": 1.8420573776127316e-07,
+          "ok": true
+        },
+        "i(vg0_avalid)": {
+          "a": 3.246836555505428e-07,
+          "b": 3.2468391860604206e-07,
+          "ok": true
+        },
+        "i(vg0_amax)": {
+          "a": 1.3683616739558192e-06,
+          "b": 1.368361838012346e-06,
+          "ok": true
+        },
+        "i(vsg_aota)": {
+          "a": 6.785475725935307e-06,
+          "b": 6.785468778693269e-06,
+          "ok": true
+        },
+        "i(vtc_arel)": {
+          "a": 1.329859647032042e-05,
+          "b": 1.3298594540023733e-05,
+          "ok": true
+        }
+      },
+      "peaks": {
+        "v(g0_vm)": {
+          "a": 1.4806883930070436,
+          "b": 1.480688351095729,
+          "ok": true
+        },
+        "v(g0_h)": {
+          "a": 1.4835978502989045,
+          "b": 1.4835978503058986,
+          "ok": true
+        },
+        "v(g0_rec)": {
+          "a": 2.9597701455117282,
+          "b": 2.959765306793421,
+          "ok": true
+        },
+        "v(g0_op_at)": {
+          "a": 2.964313170519445,
+          "b": 2.9643110690439323,
+          "ok": true
+        },
+        "v(sg_vm)": {
+          "a": 1.2299286789837087,
+          "b": 1.229928698075353,
+          "ok": true
+        },
+        "v(sg_h)": {
+          "a": 1.232623620542912,
+          "b": 1.2326236205383216,
+          "ok": true
+        },
+        "v(sg_rec)": {
+          "a": 2.9571402439837726,
+          "b": 2.957121385263686,
+          "ok": true
+        },
+        "v(sg_op_at)": {
+          "a": 2.9632143834719273,
+          "b": 2.9632062538129476,
+          "ok": true
+        },
+        "v(tc_vm)": {
+          "a": 1.2294514247257013,
+          "b": 1.229451147784657,
+          "ok": true
+        },
+        "v(tc_h)": {
+          "a": 1.2326238742297264,
+          "b": 1.232623874225013,
+          "ok": true
+        },
+        "v(tc_rec)": {
+          "a": 2.9603346431919393,
+          "b": 2.9603343801889896,
+          "ok": true
+        },
+        "v(tc_op_at)": {
+          "a": 2.9645264838747463,
+          "b": 2.9645263313986114,
+          "ok": true
+        }
+      },
+      "fails": [],
+      "result": "PASS"
+    },
+    "physical_ledger": {
+      "nodes": {
+        "g0_vm": {
+          "kcl_p99": 3.990070849383623e-09,
+          "kcl_peak": 5.79817004837509e-09,
+          "kcl": true,
+          "energy_net_J": -2.4584410454724113e-17,
+          "energy_abs_J": 4.909645190839358e-06,
+          "energy": true,
+          "cap_mismatch_J": 1.0528615556042488e-10,
+          "cap": true,
+          "n_terms": 10,
+          "result": "PASS"
+        },
+        "g0_vmd": {
+          "kcl_p99": 0.0,
+          "kcl_peak": 0.0,
+          "kcl": true,
+          "energy_net_J": 0.0,
+          "energy_abs_J": 3.3568215750900326e-07,
+          "energy": true,
+          "cap_mismatch_J": 6.959576952444483e-16,
+          "cap": true,
+          "n_terms": 3,
+          "result": "PASS"
+        },
+        "g0_vms": {
+          "kcl_p99": 0.0,
+          "kcl_peak": 0.0,
+          "kcl": true,
+          "energy_net_J": 0.0,
+          "energy_abs_J": 2.8917174619652808e-06,
+          "energy": true,
+          "cap_mismatch_J": 3.0621243368834387e-16,
+          "cap": true,
+          "n_terms": 3,
+          "result": "PASS"
+        },
+        "sg_vm": {
+          "kcl_p99": 7.337722162881941e-12,
+          "kcl_peak": 1.1329741093442198e-11,
+          "kcl": true,
+          "energy_net_J": -2.8121391292744746e-19,
+          "energy_abs_J": 1.4511287569074738e-05,
+          "energy": true,
+          "cap_mismatch_J": 4.9278153232844644e-11,
+          "cap": true,
+          "n_terms": 8,
+          "result": "PASS"
+        },
+        "sg_vmd": {
+          "kcl_p99": 0.0,
+          "kcl_peak": 0.0,
+          "kcl": true,
+          "energy_net_J": 0.0,
+          "energy_abs_J": 2.2748280475229824e-07,
+          "energy": true,
+          "cap_mismatch_J": 2.4386716974463653e-16,
+          "cap": true,
+          "n_terms": 3,
+          "result": "PASS"
+        },
+        "sg_vms": {
+          "kcl_p99": 0.0,
+          "kcl_peak": 0.0,
+          "kcl": true,
+          "energy_net_J": 0.0,
+          "energy_abs_J": 1.8277323206338665e-06,
+          "energy": true,
+          "cap_mismatch_J": 1.0746540506907285e-16,
+          "cap": true,
+          "n_terms": 3,
+          "result": "PASS"
+        },
+        "tc_vm": {
+          "kcl_p99": 7.603517615695889e-08,
+          "kcl_peak": 1.5279729128078476e-07,
+          "kcl": true,
+          "energy_net_J": -2.519371402545969e-16,
+          "energy_abs_J": 4.370727824814024e-05,
+          "energy": true,
+          "cap_mismatch_J": 1.829792457414094e-12,
+          "cap": true,
+          "n_terms": 8,
+          "result": "PASS"
+        },
+        "tc_vmd": {
+          "kcl_p99": 0.0,
+          "kcl_peak": 0.0,
+          "kcl": true,
+          "energy_net_J": 0.0,
+          "energy_abs_J": 9.507124839040524e-06,
+          "energy": true,
+          "cap_mismatch_J": 1.7747003860913955e-15,
+          "cap": true,
+          "n_terms": 3,
+          "result": "PASS"
+        },
+        "tc_vms": {
+          "kcl_p99": 0.0,
+          "kcl_peak": 0.0,
+          "kcl": true,
+          "energy_net_J": 0.0,
+          "energy_abs_J": 1.4450949989225867e-05,
+          "energy": true,
+          "cap_mismatch_J": 1.0897029231830046e-15,
+          "cap": true,
+          "n_terms": 3,
+          "result": "PASS"
+        }
+      },
+      "scope": "KCL/charge/energy at ledger nodes only",
+      "supply_energy_J": 0.9937036575483067,
+      "fails": [],
+      "result": "PASS"
+    }
+  },
+  "own_full_scientific_result": "PASS"
+}

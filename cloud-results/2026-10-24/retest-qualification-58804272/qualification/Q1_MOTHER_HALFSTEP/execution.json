@@ -1,0 +1,22 @@
+{
+  "case_id": "Q1_MOTHER_HALFSTEP",
+  "command": [
+    "/workspace/thermal-g3-env/host/native/bin/ngspice",
+    "-n",
+    "-b",
+    "/workspace/thermal-g3-retests/qualification-125-62p5us-2026-10-24-58804272/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.cir"
+  ],
+  "actual_solver_launches": 1,
+  "conservative_starts_before": 52,
+  "conservative_starts_after": 53,
+  "global_start_cap": 65,
+  "wall_cap_s": null,
+  "automatic_retries": 0,
+  "timed_out": false,
+  "pid": 3062,
+  "started_at_UTC": "2026-10-24T14:58:50.054214+00:00",
+  "returncode": 0,
+  "elapsed_solver_wall_s": 1761.978767389,
+  "ended_at_UTC": "2026-10-24T15:28:12.032128+00:00",
+  "process_reaped": true
+}

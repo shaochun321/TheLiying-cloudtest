@@ -1,0 +1,10 @@
+{
+  "starts_before": 50,
+  "starts_after": 51,
+  "new_starts": 1,
+  "global_cap": 65,
+  "new_wall_charge_s": 192.2818949020001,
+  "exact_lifetime_wall_total_s": null,
+  "old_ledger_overwritten": false,
+  "budget_provenance": "Historical v4 chat record, not the restored old 30/65 snapshot."
+}

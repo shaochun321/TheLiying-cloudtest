@@ -1,0 +1,9 @@
+{
+  "approved_at_UTC": "2026-10-24T15:21:02.520582+00:00",
+  "approved_global_start_cap": 84,
+  "previous_cap": 65,
+  "user_instruction": "批准上限84，资格通过后继续正式阶段",
+  "formal_slots_reserved_after_both_qualification_runs": 31,
+  "stop_on_first_failure": true,
+  "automatic_repairs_or_extra_diagnostics_authorized": false
+}

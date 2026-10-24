@@ -1,0 +1,24 @@
+{
+  "scope": "Existing RAW originals retained in current runtime; no remote RAW delivery yet",
+  "raws": [
+    {
+      "path": "/workspace/thermal-g3-retests/short-convergence-2026-10-24-e17ea620/short_125us.raw",
+      "sha256": "637fea05cdf1a5b75b20a6e49bbd7b768832ccdae2a2bb6d9084a393886a879d",
+      "bytes": 129804587,
+      "included_in_git_delivery": false
+    },
+    {
+      "path": "/workspace/thermal-g3-retests/qualification-125-62p5us-2026-10-24-58804272/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw",
+      "sha256": "30c6bb99e5aa17f65c41cce591c9aa7b8565a6705ed6892edd948ff3ade5acd4",
+      "bytes": 628906283,
+      "included_in_git_delivery": false
+    },
+    {
+      "path": "/workspace/thermal-g3-retests/qualification-125-62p5us-2026-10-24-58804272/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw",
+      "sha256": "45953dc90a8f41b65460052605616fb0d027257a1e22cb5665b68c6783c2dbe5",
+      "bytes": 1243871532,
+      "included_in_git_delivery": false
+    }
+  ],
+  "restoration_limit": "These identities and paths do not replace RAW content. Download or remote transfer of the raw originals remains outstanding."
+}

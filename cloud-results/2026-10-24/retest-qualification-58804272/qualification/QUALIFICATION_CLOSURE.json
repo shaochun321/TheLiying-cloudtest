@@ -1,0 +1,21 @@
+{
+  "overall": "PASS",
+  "qualification_end_s": 100.27,
+  "mother_125us_wall_s": 935.456429716,
+  "half_62p5us_wall_s": 1761.978767389,
+  "halfstep_event_vectors": 9,
+  "max_corresponding_edge_difference_s": 5.7551668092514774e-05,
+  "charge_comparisons": 8,
+  "max_charge_relative_difference": 1.4517554279867696e-05,
+  "peak_comparisons": 12,
+  "max_peak_relative_difference": 6.377350592286921e-06,
+  "halfstep_physical_nodes_passed": 9,
+  "halfstep_own_functional_and_ledger_result": "PASS",
+  "halfstep_g0_vm_cap_mismatch_J": 1.0528615556042488e-10,
+  "source_protected_files_unchanged": true,
+  "conservative_starts_after": 53,
+  "currently_approved_cap": 84,
+  "offline_reader_correction_added_solver_starts": 0,
+  "old_v4_recovered": false,
+  "old_qualification_FAIL_preserved": true
+}

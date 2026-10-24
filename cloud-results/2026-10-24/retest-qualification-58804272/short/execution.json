@@ -1,0 +1,21 @@
+{
+  "actual_solver_launches": 1,
+  "conservative_starts_before": 50,
+  "conservative_starts_after": 51,
+  "global_start_cap": 65,
+  "automatic_retries": 0,
+  "timed_out": false,
+  "wall_cap_s": null,
+  "command": [
+    "/workspace/thermal-g3-env/host/native/bin/ngspice",
+    "-n",
+    "-b",
+    "/workspace/thermal-g3-retests/short-convergence-2026-10-24-e17ea620/short_125us.cir"
+  ],
+  "started_at_UTC": "2026-10-24T14:24:02.709884+00:00",
+  "pid": 1198,
+  "elapsed_solver_wall_s": 192.2818949020001,
+  "returncode": 0,
+  "ended_at_UTC": "2026-10-24T14:27:14.990941+00:00",
+  "process_reaped": true
+}

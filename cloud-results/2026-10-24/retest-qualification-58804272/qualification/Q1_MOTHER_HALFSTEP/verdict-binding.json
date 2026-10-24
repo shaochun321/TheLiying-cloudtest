@@ -1,0 +1,38 @@
+{
+  "case_id": "Q1_MOTHER_HALFSTEP",
+  "scientific": "PASS",
+  "completion": {
+    "case_id": "Q1_MOTHER_HALFSTEP",
+    "raw_exists": true,
+    "actual_end_s": 100.27,
+    "completion_failure": null,
+    "raw_sha256": "45953dc90a8f41b65460052605616fb0d027257a1e22cb5665b68c6783c2dbe5",
+    "raw_bytes": 1243871532,
+    "raw_points": 1619621,
+    "raw_variables": 96
+  },
+  "execution": {
+    "case_id": "Q1_MOTHER_HALFSTEP",
+    "command": [
+      "/workspace/thermal-g3-env/host/native/bin/ngspice",
+      "-n",
+      "-b",
+      "/workspace/thermal-g3-retests/qualification-125-62p5us-2026-10-24-58804272/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.cir"
+    ],
+    "actual_solver_launches": 1,
+    "conservative_starts_before": 52,
+    "conservative_starts_after": 53,
+    "global_start_cap": 65,
+    "wall_cap_s": null,
+    "automatic_retries": 0,
+    "timed_out": false,
+    "pid": 3062,
+    "started_at_UTC": "2026-10-24T14:58:50.054214+00:00",
+    "returncode": 0,
+    "elapsed_solver_wall_s": 1761.978767389,
+    "ended_at_UTC": "2026-10-24T15:28:12.032128+00:00",
+    "process_reaped": true
+  },
+  "deck_sha256": "c2bb1ea562584e2dda1033760c0ec0a3e46a23cdc07e9a3e5cbe2da8ac82e90e",
+  "judge_output_sha256": "5cc14b548dd3d61edba4080805550cef523c10ba8027d4c939ce0b7b1665ee58"
+}

@@ -1,0 +1,9 @@
+{
+  "scope": "offline scoring adapter correction only",
+  "reason": "Use unchanged original contiguous-array RAW reader instead of strided memmap vectors; scoring code and thresholds unchanged",
+  "solver_already_completed": true,
+  "solver_starts_added": 0,
+  "raw_preserved": true,
+  "offline_process_pid": 1756,
+  "signal": "SIGTERM"
+}

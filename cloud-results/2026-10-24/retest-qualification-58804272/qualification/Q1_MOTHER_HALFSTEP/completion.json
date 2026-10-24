@@ -1,0 +1,10 @@
+{
+  "case_id": "Q1_MOTHER_HALFSTEP",
+  "raw_exists": true,
+  "actual_end_s": 100.27,
+  "completion_failure": null,
+  "raw_sha256": "45953dc90a8f41b65460052605616fb0d027257a1e22cb5665b68c6783c2dbe5",
+  "raw_bytes": 1243871532,
+  "raw_points": 1619621,
+  "raw_variables": 96
+}

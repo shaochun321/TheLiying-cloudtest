@@ -1,0 +1,98 @@
+{
+  "scope": "short diagnostic replay only",
+  "execution": {
+    "actual_solver_launches": 1,
+    "conservative_starts_before": 50,
+    "conservative_starts_after": 51,
+    "global_start_cap": 65,
+    "automatic_retries": 0,
+    "timed_out": false,
+    "wall_cap_s": null,
+    "command": [
+      "/workspace/thermal-g3-env/host/native/bin/ngspice",
+      "-n",
+      "-b",
+      "/workspace/thermal-g3-retests/short-convergence-2026-10-24-e17ea620/short_125us.cir"
+    ],
+    "started_at_UTC": "2026-10-24T14:24:02.709884+00:00",
+    "pid": 1198,
+    "elapsed_solver_wall_s": 192.2818949020001,
+    "returncode": 0,
+    "ended_at_UTC": "2026-10-24T14:27:14.990941+00:00",
+    "process_reaped": true
+  },
+  "target_end_s": 20.499988707436106,
+  "raw_exists": true,
+  "raw_actual_end_s": 20.499988707436106,
+  "qualification_verdict": "NOT_RUN",
+  "formal_experiments_started": 0,
+  "next_case_started": false,
+  "original_protected_files_unchanged": true,
+  "raw_sha256": "637fea05cdf1a5b75b20a6e49bbd7b768832ccdae2a2bb6d9084a393886a879d",
+  "raw_bytes": 129804587,
+  "raw_points": 169013,
+  "comparison": [
+    {
+      "capacitor": "cg0_cm",
+      "baseline_error_J": 7.850483519793189e-10,
+      "diagnostic_error_J": 3.791311229291356e-10,
+      "absolute_error_ratio": 0.482939836728838,
+      "baseline_A_J": 8.469286117140508e-10,
+      "diagnostic_A_J": 4.2529428033001635e-10,
+      "baseline_B_J": -6.188025973471897e-11,
+      "diagnostic_B_J": -4.6163157400876054e-11
+    },
+    {
+      "capacitor": "cpar_g0_vm",
+      "baseline_error_J": 3.927302405581123e-16,
+      "diagnostic_error_J": 1.9165383224824487e-16,
+      "absolute_error_ratio": 0.4880037553917008,
+      "baseline_A_J": 4.236703699287412e-16,
+      "diagnostic_A_J": 2.1473541155527764e-16,
+      "baseline_B_J": -3.094012937063189e-17,
+      "diagnostic_B_J": -2.308157930702903e-17
+    }
+  ],
+  "G0_events_baseline": {
+    "rule": "G0 q crosses half instantaneous VDD while VDD > 2 V; diagnostic only",
+    "rising_s": [
+      13.55695695271028,
+      16.1037968829818,
+      16.51193115052303,
+      16.920348978137547,
+      19.66695967124288
+    ],
+    "falling_s": [
+      13.568847529508691,
+      16.117798864316264,
+      16.52593219354077,
+      16.93435048587601,
+      19.678847573150158
+    ]
+  },
+  "G0_events_diagnostic": {
+    "rule": "G0 q crosses half instantaneous VDD while VDD > 2 V; diagnostic only",
+    "rising_s": [
+      13.556956995795032,
+      16.103797029319264,
+      16.511918965600803,
+      16.920331698959423,
+      19.66695981183906
+    ],
+    "falling_s": [
+      13.568847192298161,
+      16.117799098005452,
+      16.52592010995281,
+      16.934333332453484,
+      19.678847370463345
+    ]
+  },
+  "G0_event_count_preserved": true,
+  "G0_vm_common_1ms_grid": {
+    "points": 20501,
+    "max_abs_difference_V": 0.0037117619437303517,
+    "rmse_V": 3.838047828973485e-05,
+    "diagnostic_metric_only": true
+  },
+  "status": "COMPLETED_COMMON_INTERVAL_DIAGNOSTIC"
+}

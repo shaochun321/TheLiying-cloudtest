@@ -1,0 +1,13 @@
+--- /workspace/thermal-g3-qualification/sparse-qualification-2026-10-22-17fb81ea/runs/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.cir
++++ /workspace/thermal-g3-retests/qualification-125-62p5us-2026-10-24-58804272/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.cir
+@@ -353,8 +353,8 @@
+ .control
+ pre_osdi /workspace/thermal-g3-env/host/native/models/ekv26_linux.osdi
+ set filetype=binary
+-tran 0.001 100.27 0 0.00025
+-write /workspace/thermal-g3-qualification/sparse-qualification-2026-10-22-17fb81ea/runs/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.raw
++tran 0.001 100.27 0 6.25e-05
++write /workspace/thermal-g3-retests/qualification-125-62p5us-2026-10-24-58804272/Q1_MOTHER_HALFSTEP/Q1_MOTHER_HALFSTEP.raw
+ quit
+ .endc
+ .end

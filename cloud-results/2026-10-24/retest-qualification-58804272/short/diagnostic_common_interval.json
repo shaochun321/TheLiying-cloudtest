@@ -1,0 +1,48 @@
+{
+  "start_s": 0.0,
+  "end_s": 20.499988707436106,
+  "points": 169013,
+  "capacitors": [
+    {
+      "capacitor": "cg0_cm",
+      "C_F": 1e-07,
+      "integrated_terminal_power_J": 4.9289613669929163e-08,
+      "stored_energy_change_J": 4.891048254700003e-08,
+      "signed_error_J": 3.791311229291356e-10,
+      "relative_abs_error": 0.007691906969853929,
+      "original_formula_limit_J": 4.928961366992917e-10,
+      "A_J": 4.2529428033001635e-10,
+      "B_J": -4.6163157400876054e-11,
+      "identity_residual_J": -4.652890945610781e-24
+    },
+    {
+      "capacitor": "cpar_g0_vm",
+      "C_F": 5e-14,
+      "integrated_terminal_power_J": 2.464689510574826e-14,
+      "stored_energy_change_J": 2.4455241273500016e-14,
+      "signed_error_J": 1.9165383224824487e-16,
+      "relative_abs_error": 0.007775982793205725,
+      "original_formula_limit_J": 1e-12,
+      "A_J": 2.1473541155527764e-16,
+      "B_J": -2.308157930702903e-17,
+      "identity_residual_J": -3.747089299799806e-30
+    }
+  ],
+  "G0_events": {
+    "rule": "G0 q crosses half instantaneous VDD while VDD > 2 V; diagnostic only",
+    "rising_s": [
+      13.556956995795032,
+      16.103797029319264,
+      16.511918965600803,
+      16.920331698959423,
+      19.66695981183906
+    ],
+    "falling_s": [
+      13.568847192298161,
+      16.117799098005452,
+      16.52592010995281,
+      16.934333332453484,
+      19.678847370463345
+    ]
+  }
+}

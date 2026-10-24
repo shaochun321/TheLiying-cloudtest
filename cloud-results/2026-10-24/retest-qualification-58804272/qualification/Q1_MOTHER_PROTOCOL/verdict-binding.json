@@ -1,0 +1,38 @@
+{
+  "case_id": "Q1_MOTHER_PROTOCOL",
+  "scientific": "PASS",
+  "completion": {
+    "case_id": "Q1_MOTHER_PROTOCOL",
+    "raw_exists": true,
+    "actual_end_s": 100.27,
+    "completion_failure": null,
+    "raw_sha256": "30c6bb99e5aa17f65c41cce591c9aa7b8565a6705ed6892edd948ff3ade5acd4",
+    "raw_bytes": 628906283,
+    "raw_points": 818885,
+    "raw_variables": 96
+  },
+  "execution": {
+    "case_id": "Q1_MOTHER_PROTOCOL",
+    "command": [
+      "/workspace/thermal-g3-env/host/native/bin/ngspice",
+      "-n",
+      "-b",
+      "/workspace/thermal-g3-retests/qualification-125-62p5us-2026-10-24-58804272/Q1_MOTHER_PROTOCOL/Q1_MOTHER_PROTOCOL.cir"
+    ],
+    "actual_solver_launches": 1,
+    "conservative_starts_before": 51,
+    "conservative_starts_after": 52,
+    "global_start_cap": 65,
+    "wall_cap_s": null,
+    "automatic_retries": 0,
+    "timed_out": false,
+    "pid": 1763,
+    "started_at_UTC": "2026-10-24T14:32:23.752881+00:00",
+    "returncode": 0,
+    "elapsed_solver_wall_s": 935.456429716,
+    "ended_at_UTC": "2026-10-24T14:47:59.203834+00:00",
+    "process_reaped": true
+  },
+  "deck_sha256": "46c8bdaddc44cc373333d95b38000052ff84ff93086bbf39314fe68f74ebf69b",
+  "judge_output_sha256": "47d9d2aa9c67c394ce41be2be6e49140722bd4067c79320147d1117f2b3ed097"
+}
