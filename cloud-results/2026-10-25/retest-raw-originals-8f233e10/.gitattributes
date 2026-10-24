@@ -1,0 +1,6 @@
+parts/** -text -filter -diff
+*.json text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+ORIGINAL_SHA256SUMS text eol=lf
+SHA256SUMS text eol=lf
