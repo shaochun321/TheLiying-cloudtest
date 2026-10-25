@@ -1,0 +1,2739 @@
+{
+  "case_id": "Q1_MOTHER_PROTOCOL",
+  "mos": {
+    "npori1p": {
+      "name": "npori1p",
+      "model": "pch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "por_hold",
+        "porx",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "npori1n": {
+      "name": "npori1n",
+      "model": "nch",
+      "W": 1.2e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "por_hold",
+        "porx",
+        "0",
+        "0"
+      ]
+    },
+    "npori2p": {
+      "name": "npori2p",
+      "model": "pch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "por_ok",
+        "por_hold",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "npori2n": {
+      "name": "npori2n",
+      "model": "nch",
+      "W": 1.2e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "por_ok",
+        "por_hold",
+        "0",
+        "0"
+      ]
+    },
+    "nirefd": {
+      "name": "nirefd",
+      "model": "nch",
+      "W": 4e-06,
+      "L": 4e-06,
+      "mult": 1,
+      "nodes": [
+        "iref_n",
+        "iref_n",
+        "0",
+        "0"
+      ]
+    },
+    "nistepd": {
+      "name": "nistepd",
+      "model": "nch",
+      "W": 4e-06,
+      "L": 4e-06,
+      "mult": 1,
+      "nodes": [
+        "istep_n",
+        "istep_n",
+        "0",
+        "0"
+      ]
+    },
+    "nirefm": {
+      "name": "nirefm",
+      "model": "nch",
+      "W": 4e-06,
+      "L": 4e-06,
+      "mult": 1,
+      "nodes": [
+        "irefp_n",
+        "iref_n",
+        "0",
+        "0"
+      ]
+    },
+    "nirefpd": {
+      "name": "nirefpd",
+      "model": "pch",
+      "W": 4e-06,
+      "L": 4e-06,
+      "mult": 1,
+      "nodes": [
+        "irefp_n",
+        "irefp_n",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "nilimd": {
+      "name": "nilimd",
+      "model": "nch",
+      "W": 4e-06,
+      "L": 4e-06,
+      "mult": 1,
+      "nodes": [
+        "ilim_n",
+        "ilim_n",
+        "0",
+        "0"
+      ]
+    },
+    "nilimm": {
+      "name": "nilimm",
+      "model": "nch",
+      "W": 4e-06,
+      "L": 4e-06,
+      "mult": 1,
+      "nodes": [
+        "ilimp_n",
+        "ilim_n",
+        "0",
+        "0"
+      ]
+    },
+    "nilimpd": {
+      "name": "nilimpd",
+      "model": "pch",
+      "W": 4e-06,
+      "L": 4e-06,
+      "mult": 1,
+      "nodes": [
+        "ilimp_n",
+        "ilimp_n",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ng0_kmb": {
+      "name": "ng0_kmb",
+      "model": "nch",
+      "W": 4e-06,
+      "L": 4e-06,
+      "mult": 1,
+      "nodes": [
+        "g0_knb",
+        "g0_knb",
+        "0",
+        "0"
+      ]
+    },
+    "ng0_kmt": {
+      "name": "ng0_kmt",
+      "model": "nch",
+      "W": 4e-06,
+      "L": 4e-06,
+      "mult": 1,
+      "nodes": [
+        "g0_ktail",
+        "g0_knb",
+        "0",
+        "0"
+      ]
+    },
+    "ng0_km1": {
+      "name": "ng0_km1",
+      "model": "nch",
+      "W": 4e-06,
+      "L": 4e-06,
+      "mult": 1,
+      "nodes": [
+        "g0_kd1",
+        "g0_vm",
+        "g0_ktail",
+        "0"
+      ]
+    },
+    "ng0_km2": {
+      "name": "ng0_km2",
+      "model": "nch",
+      "W": 4e-06,
+      "L": 4e-06,
+      "mult": 1,
+      "nodes": [
+        "g0_ko1",
+        "g0_h",
+        "g0_ktail",
+        "0"
+      ]
+    },
+    "ng0_km3": {
+      "name": "ng0_km3",
+      "model": "pch",
+      "W": 4e-06,
+      "L": 4e-06,
+      "mult": 1,
+      "nodes": [
+        "g0_kd1",
+        "g0_kd1",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ng0_km4": {
+      "name": "ng0_km4",
+      "model": "pch",
+      "W": 4e-06,
+      "L": 4e-06,
+      "mult": 1,
+      "nodes": [
+        "g0_ko1",
+        "g0_kd1",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ng0_ki1p": {
+      "name": "ng0_ki1p",
+      "model": "pch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "g0_qb",
+        "g0_ko1",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ng0_ki1n": {
+      "name": "ng0_ki1n",
+      "model": "nch",
+      "W": 1.2e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "g0_qb",
+        "g0_ko1",
+        "0",
+        "0"
+      ]
+    },
+    "ng0_ki2p": {
+      "name": "ng0_ki2p",
+      "model": "pch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "g0_q",
+        "g0_qb",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ng0_ki2n": {
+      "name": "ng0_ki2n",
+      "model": "nch",
+      "W": 1.2e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "g0_q",
+        "g0_qb",
+        "0",
+        "0"
+      ]
+    },
+    "ng0_dis": {
+      "name": "ng0_dis",
+      "model": "nch",
+      "W": 4e-06,
+      "L": 1e-06,
+      "mult": 1,
+      "nodes": [
+        "g0_vm",
+        "g0_q",
+        "g0_vmd",
+        "0"
+      ]
+    },
+    "ng0_rp": {
+      "name": "ng0_rp",
+      "model": "pch",
+      "W": 2e-06,
+      "L": 1e-06,
+      "mult": 1,
+      "nodes": [
+        "g0_rt",
+        "g0_qb",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ng0_sh1": {
+      "name": "ng0_sh1",
+      "model": "nch",
+      "W": 2e-06,
+      "L": 1e-06,
+      "mult": 1,
+      "nodes": [
+        "g0_vm",
+        "g0_rec",
+        "g0_vms",
+        "0"
+      ]
+    },
+    "ng0_sh2": {
+      "name": "ng0_sh2",
+      "model": "nch",
+      "W": 2e-06,
+      "L": 1e-06,
+      "mult": 1,
+      "nodes": [
+        "g0_vms",
+        "g0_qb",
+        "vrest",
+        "0"
+      ]
+    },
+    "ng0_porh": {
+      "name": "ng0_porh",
+      "model": "nch",
+      "W": 2e-06,
+      "L": 1e-06,
+      "mult": 1,
+      "nodes": [
+        "g0_h",
+        "por_hold",
+        "vthe",
+        "0"
+      ]
+    },
+    "ng0_porm": {
+      "name": "ng0_porm",
+      "model": "nch",
+      "W": 2e-06,
+      "L": 1e-06,
+      "mult": 1,
+      "nodes": [
+        "g0_vm",
+        "por_hold",
+        "vrest",
+        "0"
+      ]
+    },
+    "ng0_iweak_sw": {
+      "name": "ng0_iweak_sw",
+      "model": "pch",
+      "W": 4e-06,
+      "L": 1e-06,
+      "mult": 1,
+      "nodes": [
+        "g0_iweak_x",
+        "g0_gweak",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ng0_iweak_cp": {
+      "name": "ng0_iweak_cp",
+      "model": "pch",
+      "W": 1.2e-06,
+      "L": 4e-06,
+      "mult": 1,
+      "nodes": [
+        "g0_oweak",
+        "irefp_n",
+        "g0_iweak_x",
+        "vsrc"
+      ]
+    },
+    "ng0_ivalid_sw": {
+      "name": "ng0_ivalid_sw",
+      "model": "pch",
+      "W": 4e-06,
+      "L": 1e-06,
+      "mult": 1,
+      "nodes": [
+        "g0_ivalid_x",
+        "g0_gvalid",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ng0_ivalid_cp": {
+      "name": "ng0_ivalid_cp",
+      "model": "pch",
+      "W": 4e-06,
+      "L": 4e-06,
+      "mult": 1,
+      "nodes": [
+        "g0_ovalid",
+        "irefp_n",
+        "g0_ivalid_x",
+        "vsrc"
+      ]
+    },
+    "ng0_imax_sw": {
+      "name": "ng0_imax_sw",
+      "model": "pch",
+      "W": 4e-06,
+      "L": 1e-06,
+      "mult": 1,
+      "nodes": [
+        "g0_imax_x",
+        "g0_gmax",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ng0_imax_cp": {
+      "name": "ng0_imax_cp",
+      "model": "pch",
+      "W": 4e-06,
+      "L": 4e-06,
+      "mult": 1,
+      "nodes": [
+        "g0_omax",
+        "ilimp_n",
+        "g0_imax_x",
+        "vsrc"
+      ]
+    },
+    "ng0_op_tsw": {
+      "name": "ng0_op_tsw",
+      "model": "pch",
+      "W": 2e-06,
+      "L": 1e-06,
+      "mult": 1,
+      "nodes": [
+        "g0_op_tt",
+        "g0_qb",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ng0_op_sh1p": {
+      "name": "ng0_op_sh1p",
+      "model": "pch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "g0_op_an",
+        "g0_op_at",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ng0_op_sh1n": {
+      "name": "ng0_op_sh1n",
+      "model": "nch",
+      "W": 1.2e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "g0_op_an",
+        "g0_op_at",
+        "0",
+        "0"
+      ]
+    },
+    "ng0_op_sh2p": {
+      "name": "ng0_op_sh2p",
+      "model": "pch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "g0_op_aq",
+        "g0_op_an",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ng0_op_sh2n": {
+      "name": "ng0_op_sh2n",
+      "model": "nch",
+      "W": 1.2e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "g0_op_aq",
+        "g0_op_an",
+        "0",
+        "0"
+      ]
+    },
+    "ng0_op_abp": {
+      "name": "ng0_op_abp",
+      "model": "pch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "g0_op_aqb",
+        "g0_op_aq",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ng0_op_abn": {
+      "name": "ng0_op_abn",
+      "model": "nch",
+      "W": 1.2e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "g0_op_aqb",
+        "g0_op_aq",
+        "0",
+        "0"
+      ]
+    },
+    "ng0_op_d2p": {
+      "name": "ng0_op_d2p",
+      "model": "pch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "g0_op_adn",
+        "g0_op_ad",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ng0_op_d2n": {
+      "name": "ng0_op_d2n",
+      "model": "nch",
+      "W": 1.2e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "g0_op_adn",
+        "g0_op_ad",
+        "0",
+        "0"
+      ]
+    },
+    "ng0_op_gpa": {
+      "name": "ng0_op_gpa",
+      "model": "pch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "g0_op_pb",
+        "g0_op_aq",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ng0_op_gpb": {
+      "name": "ng0_op_gpb",
+      "model": "pch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "g0_op_pb",
+        "g0_op_adn",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ng0_op_gna": {
+      "name": "ng0_op_gna",
+      "model": "nch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "g0_op_pb",
+        "g0_op_aq",
+        "g0_op_gx",
+        "0"
+      ]
+    },
+    "ng0_op_gnb": {
+      "name": "ng0_op_gnb",
+      "model": "nch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "g0_op_gx",
+        "g0_op_adn",
+        "0",
+        "0"
+      ]
+    },
+    "ng0_op_op": {
+      "name": "ng0_op_op",
+      "model": "pch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "g0_op_p",
+        "g0_op_pb",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ng0_op_on": {
+      "name": "ng0_op_on",
+      "model": "nch",
+      "W": 1.2e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "g0_op_p",
+        "g0_op_pb",
+        "0",
+        "0"
+      ]
+    },
+    "ng0_ld_hsw": {
+      "name": "ng0_ld_hsw",
+      "model": "pch",
+      "W": 4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "vdd",
+        "g0_qb",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ng0_ld_mp0": {
+      "name": "ng0_ld_mp0",
+      "model": "nch",
+      "W": 4e-06,
+      "L": 1e-06,
+      "mult": 1,
+      "nodes": [
+        "0",
+        "g0_op_aq",
+        "0",
+        "0"
+      ]
+    },
+    "ng0_ld_mp1": {
+      "name": "ng0_ld_mp1",
+      "model": "nch",
+      "W": 4e-06,
+      "L": 1e-06,
+      "mult": 1,
+      "nodes": [
+        "0",
+        "g0_op_aq",
+        "0",
+        "0"
+      ]
+    },
+    "ng0_ld_inj": {
+      "name": "ng0_ld_inj",
+      "model": "pch",
+      "W": 4e-06,
+      "L": 1e-06,
+      "mult": 1,
+      "nodes": [
+        "vdd",
+        "g0_op_aqb",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "nsg_kmb": {
+      "name": "nsg_kmb",
+      "model": "nch",
+      "W": 4e-06,
+      "L": 4e-06,
+      "mult": 1,
+      "nodes": [
+        "sg_knb",
+        "sg_knb",
+        "0",
+        "0"
+      ]
+    },
+    "nsg_kmt": {
+      "name": "nsg_kmt",
+      "model": "nch",
+      "W": 4e-06,
+      "L": 4e-06,
+      "mult": 1,
+      "nodes": [
+        "sg_ktail",
+        "sg_knb",
+        "0",
+        "0"
+      ]
+    },
+    "nsg_km1": {
+      "name": "nsg_km1",
+      "model": "nch",
+      "W": 4e-06,
+      "L": 4e-06,
+      "mult": 1,
+      "nodes": [
+        "sg_kd1",
+        "sg_vm",
+        "sg_ktail",
+        "0"
+      ]
+    },
+    "nsg_km2": {
+      "name": "nsg_km2",
+      "model": "nch",
+      "W": 4e-06,
+      "L": 4e-06,
+      "mult": 1,
+      "nodes": [
+        "sg_ko1",
+        "sg_h",
+        "sg_ktail",
+        "0"
+      ]
+    },
+    "nsg_km3": {
+      "name": "nsg_km3",
+      "model": "pch",
+      "W": 4e-06,
+      "L": 4e-06,
+      "mult": 1,
+      "nodes": [
+        "sg_kd1",
+        "sg_kd1",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "nsg_km4": {
+      "name": "nsg_km4",
+      "model": "pch",
+      "W": 4e-06,
+      "L": 4e-06,
+      "mult": 1,
+      "nodes": [
+        "sg_ko1",
+        "sg_kd1",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "nsg_ki1p": {
+      "name": "nsg_ki1p",
+      "model": "pch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "sg_qb",
+        "sg_ko1",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "nsg_ki1n": {
+      "name": "nsg_ki1n",
+      "model": "nch",
+      "W": 1.2e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "sg_qb",
+        "sg_ko1",
+        "0",
+        "0"
+      ]
+    },
+    "nsg_ki2p": {
+      "name": "nsg_ki2p",
+      "model": "pch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "sg_q",
+        "sg_qb",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "nsg_ki2n": {
+      "name": "nsg_ki2n",
+      "model": "nch",
+      "W": 1.2e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "sg_q",
+        "sg_qb",
+        "0",
+        "0"
+      ]
+    },
+    "nsg_dis": {
+      "name": "nsg_dis",
+      "model": "nch",
+      "W": 4e-06,
+      "L": 1e-06,
+      "mult": 1,
+      "nodes": [
+        "sg_vm",
+        "sg_q",
+        "sg_vmd",
+        "0"
+      ]
+    },
+    "nsg_rp": {
+      "name": "nsg_rp",
+      "model": "pch",
+      "W": 2e-06,
+      "L": 1e-06,
+      "mult": 1,
+      "nodes": [
+        "sg_rt",
+        "sg_qb",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "nsg_sh1": {
+      "name": "nsg_sh1",
+      "model": "nch",
+      "W": 2e-06,
+      "L": 1e-06,
+      "mult": 1,
+      "nodes": [
+        "sg_vm",
+        "sg_rec",
+        "sg_vms",
+        "0"
+      ]
+    },
+    "nsg_sh2": {
+      "name": "nsg_sh2",
+      "model": "nch",
+      "W": 2e-06,
+      "L": 1e-06,
+      "mult": 1,
+      "nodes": [
+        "sg_vms",
+        "sg_qb",
+        "vrest",
+        "0"
+      ]
+    },
+    "nsg_porh": {
+      "name": "nsg_porh",
+      "model": "nch",
+      "W": 2e-06,
+      "L": 1e-06,
+      "mult": 1,
+      "nodes": [
+        "sg_h",
+        "por_hold",
+        "vthr",
+        "0"
+      ]
+    },
+    "nsg_porm": {
+      "name": "nsg_porm",
+      "model": "nch",
+      "W": 2e-06,
+      "L": 1e-06,
+      "mult": 1,
+      "nodes": [
+        "sg_vm",
+        "por_hold",
+        "vrest",
+        "0"
+      ]
+    },
+    "nsg_ota_mb": {
+      "name": "nsg_ota_mb",
+      "model": "nch",
+      "W": 4e-06,
+      "L": 4e-06,
+      "mult": 1,
+      "nodes": [
+        "sg_ota_nb",
+        "sg_ota_nb",
+        "0",
+        "0"
+      ]
+    },
+    "nsg_ota_mt": {
+      "name": "nsg_ota_mt",
+      "model": "nch",
+      "W": 4e-06,
+      "L": 4e-06,
+      "mult": 1,
+      "nodes": [
+        "sg_ota_tail",
+        "sg_ota_nb",
+        "0",
+        "0"
+      ]
+    },
+    "nsg_ota_m1": {
+      "name": "nsg_ota_m1",
+      "model": "nch",
+      "W": 1e-05,
+      "L": 2e-06,
+      "mult": 1,
+      "nodes": [
+        "sg_ota_d1",
+        "sg_sp",
+        "sg_ota_tail",
+        "0"
+      ]
+    },
+    "nsg_ota_m2": {
+      "name": "nsg_ota_m2",
+      "model": "nch",
+      "W": 1e-05,
+      "L": 2e-06,
+      "mult": 1,
+      "nodes": [
+        "sg_oo",
+        "sg_sn",
+        "sg_ota_tail",
+        "0"
+      ]
+    },
+    "nsg_ota_m3": {
+      "name": "nsg_ota_m3",
+      "model": "pch",
+      "W": 1e-05,
+      "L": 2e-06,
+      "mult": 1,
+      "nodes": [
+        "sg_ota_d1",
+        "sg_ota_d1",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "nsg_ota_m4": {
+      "name": "nsg_ota_m4",
+      "model": "pch",
+      "W": 1e-05,
+      "L": 2e-06,
+      "mult": 1,
+      "nodes": [
+        "sg_oo",
+        "sg_ota_d1",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "nsg_op_tsw": {
+      "name": "nsg_op_tsw",
+      "model": "pch",
+      "W": 2e-06,
+      "L": 1e-06,
+      "mult": 1,
+      "nodes": [
+        "sg_op_tt",
+        "sg_qb",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "nsg_op_sh1p": {
+      "name": "nsg_op_sh1p",
+      "model": "pch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "sg_op_an",
+        "sg_op_at",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "nsg_op_sh1n": {
+      "name": "nsg_op_sh1n",
+      "model": "nch",
+      "W": 1.2e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "sg_op_an",
+        "sg_op_at",
+        "0",
+        "0"
+      ]
+    },
+    "nsg_op_sh2p": {
+      "name": "nsg_op_sh2p",
+      "model": "pch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "sg_op_aq",
+        "sg_op_an",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "nsg_op_sh2n": {
+      "name": "nsg_op_sh2n",
+      "model": "nch",
+      "W": 1.2e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "sg_op_aq",
+        "sg_op_an",
+        "0",
+        "0"
+      ]
+    },
+    "nsg_op_abp": {
+      "name": "nsg_op_abp",
+      "model": "pch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "sg_op_aqb",
+        "sg_op_aq",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "nsg_op_abn": {
+      "name": "nsg_op_abn",
+      "model": "nch",
+      "W": 1.2e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "sg_op_aqb",
+        "sg_op_aq",
+        "0",
+        "0"
+      ]
+    },
+    "nsg_op_d2p": {
+      "name": "nsg_op_d2p",
+      "model": "pch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "sg_op_adn",
+        "sg_op_ad",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "nsg_op_d2n": {
+      "name": "nsg_op_d2n",
+      "model": "nch",
+      "W": 1.2e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "sg_op_adn",
+        "sg_op_ad",
+        "0",
+        "0"
+      ]
+    },
+    "nsg_op_gpa": {
+      "name": "nsg_op_gpa",
+      "model": "pch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "sg_op_pb",
+        "sg_op_aq",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "nsg_op_gpb": {
+      "name": "nsg_op_gpb",
+      "model": "pch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "sg_op_pb",
+        "sg_op_adn",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "nsg_op_gna": {
+      "name": "nsg_op_gna",
+      "model": "nch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "sg_op_pb",
+        "sg_op_aq",
+        "sg_op_gx",
+        "0"
+      ]
+    },
+    "nsg_op_gnb": {
+      "name": "nsg_op_gnb",
+      "model": "nch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "sg_op_gx",
+        "sg_op_adn",
+        "0",
+        "0"
+      ]
+    },
+    "nsg_op_op": {
+      "name": "nsg_op_op",
+      "model": "pch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "sg_op_p",
+        "sg_op_pb",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "nsg_op_on": {
+      "name": "nsg_op_on",
+      "model": "nch",
+      "W": 1.2e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "sg_op_p",
+        "sg_op_pb",
+        "0",
+        "0"
+      ]
+    },
+    "nsg_ld_hsw0": {
+      "name": "nsg_ld_hsw0",
+      "model": "pch",
+      "W": 4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "vdd",
+        "sg_op_aqb",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "nsg_ld_hsw1": {
+      "name": "nsg_ld_hsw1",
+      "model": "pch",
+      "W": 4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "vdd",
+        "sg_op_aqb",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ntc_kmb": {
+      "name": "ntc_kmb",
+      "model": "nch",
+      "W": 4e-06,
+      "L": 4e-06,
+      "mult": 1,
+      "nodes": [
+        "tc_knb",
+        "tc_knb",
+        "0",
+        "0"
+      ]
+    },
+    "ntc_kmt": {
+      "name": "ntc_kmt",
+      "model": "nch",
+      "W": 4e-06,
+      "L": 4e-06,
+      "mult": 1,
+      "nodes": [
+        "tc_ktail",
+        "tc_knb",
+        "0",
+        "0"
+      ]
+    },
+    "ntc_km1": {
+      "name": "ntc_km1",
+      "model": "nch",
+      "W": 4e-06,
+      "L": 4e-06,
+      "mult": 1,
+      "nodes": [
+        "tc_kd1",
+        "tc_vm",
+        "tc_ktail",
+        "0"
+      ]
+    },
+    "ntc_km2": {
+      "name": "ntc_km2",
+      "model": "nch",
+      "W": 4e-06,
+      "L": 4e-06,
+      "mult": 1,
+      "nodes": [
+        "tc_ko1",
+        "tc_h",
+        "tc_ktail",
+        "0"
+      ]
+    },
+    "ntc_km3": {
+      "name": "ntc_km3",
+      "model": "pch",
+      "W": 4e-06,
+      "L": 4e-06,
+      "mult": 1,
+      "nodes": [
+        "tc_kd1",
+        "tc_kd1",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ntc_km4": {
+      "name": "ntc_km4",
+      "model": "pch",
+      "W": 4e-06,
+      "L": 4e-06,
+      "mult": 1,
+      "nodes": [
+        "tc_ko1",
+        "tc_kd1",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ntc_ki1p": {
+      "name": "ntc_ki1p",
+      "model": "pch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "tc_qb",
+        "tc_ko1",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ntc_ki1n": {
+      "name": "ntc_ki1n",
+      "model": "nch",
+      "W": 1.2e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "tc_qb",
+        "tc_ko1",
+        "0",
+        "0"
+      ]
+    },
+    "ntc_ki2p": {
+      "name": "ntc_ki2p",
+      "model": "pch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "tc_q",
+        "tc_qb",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ntc_ki2n": {
+      "name": "ntc_ki2n",
+      "model": "nch",
+      "W": 1.2e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "tc_q",
+        "tc_qb",
+        "0",
+        "0"
+      ]
+    },
+    "ntc_dis": {
+      "name": "ntc_dis",
+      "model": "nch",
+      "W": 4e-06,
+      "L": 1e-06,
+      "mult": 1,
+      "nodes": [
+        "tc_vm",
+        "tc_q",
+        "tc_vmd",
+        "0"
+      ]
+    },
+    "ntc_rp": {
+      "name": "ntc_rp",
+      "model": "pch",
+      "W": 2e-06,
+      "L": 1e-06,
+      "mult": 1,
+      "nodes": [
+        "tc_rt",
+        "tc_qb",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ntc_sh1": {
+      "name": "ntc_sh1",
+      "model": "nch",
+      "W": 2e-06,
+      "L": 1e-06,
+      "mult": 1,
+      "nodes": [
+        "tc_vm",
+        "tc_rec",
+        "tc_vms",
+        "0"
+      ]
+    },
+    "ntc_sh2": {
+      "name": "ntc_sh2",
+      "model": "nch",
+      "W": 2e-06,
+      "L": 1e-06,
+      "mult": 1,
+      "nodes": [
+        "tc_vms",
+        "tc_qb",
+        "vrest",
+        "0"
+      ]
+    },
+    "ntc_porh": {
+      "name": "ntc_porh",
+      "model": "nch",
+      "W": 2e-06,
+      "L": 1e-06,
+      "mult": 1,
+      "nodes": [
+        "tc_h",
+        "por_hold",
+        "vthr",
+        "0"
+      ]
+    },
+    "ntc_porm": {
+      "name": "ntc_porm",
+      "model": "nch",
+      "W": 2e-06,
+      "L": 1e-06,
+      "mult": 1,
+      "nodes": [
+        "tc_vm",
+        "por_hold",
+        "vrest",
+        "0"
+      ]
+    },
+    "ntc_st_mh": {
+      "name": "ntc_st_mh",
+      "model": "nch",
+      "W": 2e-06,
+      "L": 4e-06,
+      "mult": 1,
+      "nodes": [
+        "tc_mi",
+        "tc_hs",
+        "tc_st_x",
+        "0"
+      ]
+    },
+    "ntc_st_mp": {
+      "name": "ntc_st_mp",
+      "model": "nch",
+      "W": 4e-06,
+      "L": 1e-06,
+      "mult": 1,
+      "nodes": [
+        "tc_st_x",
+        "tc_pg",
+        "0",
+        "0"
+      ]
+    },
+    "ntc_rm_md": {
+      "name": "ntc_rm_md",
+      "model": "pch",
+      "W": 4e-06,
+      "L": 2e-06,
+      "mult": 1,
+      "nodes": [
+        "tc_mi",
+        "tc_mi",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ntc_rm_mo": {
+      "name": "ntc_rm_mo",
+      "model": "pch",
+      "W": 1e-06,
+      "L": 8e-06,
+      "mult": 1,
+      "nodes": [
+        "tc_oo",
+        "tc_mi",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ntc_op_tsw": {
+      "name": "ntc_op_tsw",
+      "model": "pch",
+      "W": 2e-06,
+      "L": 1e-06,
+      "mult": 1,
+      "nodes": [
+        "tc_op_tt",
+        "tc_qb",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ntc_op_sh1p": {
+      "name": "ntc_op_sh1p",
+      "model": "pch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "tc_op_an",
+        "tc_op_at",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ntc_op_sh1n": {
+      "name": "ntc_op_sh1n",
+      "model": "nch",
+      "W": 1.2e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "tc_op_an",
+        "tc_op_at",
+        "0",
+        "0"
+      ]
+    },
+    "ntc_op_sh2p": {
+      "name": "ntc_op_sh2p",
+      "model": "pch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "tc_op_aq",
+        "tc_op_an",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ntc_op_sh2n": {
+      "name": "ntc_op_sh2n",
+      "model": "nch",
+      "W": 1.2e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "tc_op_aq",
+        "tc_op_an",
+        "0",
+        "0"
+      ]
+    },
+    "ntc_op_abp": {
+      "name": "ntc_op_abp",
+      "model": "pch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "tc_op_aqb",
+        "tc_op_aq",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ntc_op_abn": {
+      "name": "ntc_op_abn",
+      "model": "nch",
+      "W": 1.2e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "tc_op_aqb",
+        "tc_op_aq",
+        "0",
+        "0"
+      ]
+    },
+    "ntc_op_d2p": {
+      "name": "ntc_op_d2p",
+      "model": "pch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "tc_op_adn",
+        "tc_op_ad",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ntc_op_d2n": {
+      "name": "ntc_op_d2n",
+      "model": "nch",
+      "W": 1.2e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "tc_op_adn",
+        "tc_op_ad",
+        "0",
+        "0"
+      ]
+    },
+    "ntc_op_gpa": {
+      "name": "ntc_op_gpa",
+      "model": "pch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "tc_op_pb",
+        "tc_op_aq",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ntc_op_gpb": {
+      "name": "ntc_op_gpb",
+      "model": "pch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "tc_op_pb",
+        "tc_op_adn",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ntc_op_gna": {
+      "name": "ntc_op_gna",
+      "model": "nch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "tc_op_pb",
+        "tc_op_aq",
+        "tc_op_gx",
+        "0"
+      ]
+    },
+    "ntc_op_gnb": {
+      "name": "ntc_op_gnb",
+      "model": "nch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "tc_op_gx",
+        "tc_op_adn",
+        "0",
+        "0"
+      ]
+    },
+    "ntc_op_op": {
+      "name": "ntc_op_op",
+      "model": "pch",
+      "W": 2.4e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "tc_op_p",
+        "tc_op_pb",
+        "vdd",
+        "vsrc"
+      ]
+    },
+    "ntc_op_on": {
+      "name": "ntc_op_on",
+      "model": "nch",
+      "W": 1.2e-06,
+      "L": 5e-07,
+      "mult": 1,
+      "nodes": [
+        "tc_op_p",
+        "tc_op_pb",
+        "0",
+        "0"
+      ]
+    },
+    "ntc_ld_mp0": {
+      "name": "ntc_ld_mp0",
+      "model": "nch",
+      "W": 4e-06,
+      "L": 1e-06,
+      "mult": 1,
+      "nodes": [
+        "0",
+        "tc_op_aq",
+        "0",
+        "0"
+      ]
+    },
+    "ntc_ld_mp1": {
+      "name": "ntc_ld_mp1",
+      "model": "nch",
+      "W": 4e-06,
+      "L": 1e-06,
+      "mult": 1,
+      "nodes": [
+        "0",
+        "tc_op_aq",
+        "0",
+        "0"
+      ]
+    },
+    "ntc_ld_out": {
+      "name": "ntc_ld_out",
+      "model": "pch",
+      "W": 4e-06,
+      "L": 1e-06,
+      "mult": 1,
+      "nodes": [
+        "vdd",
+        "tc_op_aqb",
+        "vdd",
+        "vsrc"
+      ]
+    }
+  },
+  "logical_nodes": [
+    "g0_gmax",
+    "g0_gvalid",
+    "g0_gweak",
+    "g0_h",
+    "g0_imax_x",
+    "g0_ivalid_x",
+    "g0_iweak_x",
+    "g0_kd1",
+    "g0_knb",
+    "g0_ko1",
+    "g0_ktail",
+    "g0_omax",
+    "g0_op_ad",
+    "g0_op_adn",
+    "g0_op_an",
+    "g0_op_aq",
+    "g0_op_aqb",
+    "g0_op_at",
+    "g0_op_gx",
+    "g0_op_p",
+    "g0_op_pb",
+    "g0_op_tt",
+    "g0_ovalid",
+    "g0_oweak",
+    "g0_q",
+    "g0_qb",
+    "g0_rec",
+    "g0_rt",
+    "g0_vm",
+    "g0_vmd",
+    "g0_vms",
+    "ilim_n",
+    "ilimp_n",
+    "iref_n",
+    "irefp_n",
+    "istep_n",
+    "por_hold",
+    "por_ok",
+    "porc",
+    "porx",
+    "sg_h",
+    "sg_kd1",
+    "sg_knb",
+    "sg_ko1",
+    "sg_ktail",
+    "sg_oo",
+    "sg_op_ad",
+    "sg_op_adn",
+    "sg_op_an",
+    "sg_op_aq",
+    "sg_op_aqb",
+    "sg_op_at",
+    "sg_op_gx",
+    "sg_op_p",
+    "sg_op_pb",
+    "sg_op_tt",
+    "sg_ota_d1",
+    "sg_ota_nb",
+    "sg_ota_tail",
+    "sg_q",
+    "sg_qb",
+    "sg_rec",
+    "sg_rt",
+    "sg_sn",
+    "sg_sp",
+    "sg_vm",
+    "sg_vmd",
+    "sg_vms",
+    "tc_h",
+    "tc_hs",
+    "tc_kd1",
+    "tc_knb",
+    "tc_ko1",
+    "tc_ktail",
+    "tc_mi",
+    "tc_oo",
+    "tc_op_ad",
+    "tc_op_adn",
+    "tc_op_an",
+    "tc_op_aq",
+    "tc_op_aqb",
+    "tc_op_at",
+    "tc_op_gx",
+    "tc_op_p",
+    "tc_op_pb",
+    "tc_op_tt",
+    "tc_pg",
+    "tc_q",
+    "tc_qb",
+    "tc_rec",
+    "tc_rt",
+    "tc_st_x",
+    "tc_vm",
+    "tc_vmd",
+    "tc_vms",
+    "vdd",
+    "vmid",
+    "vrest",
+    "vsrc",
+    "vthe",
+    "vthr"
+  ],
+  "normalized": {
+    "vsrc": "vsrc vsrc 0 PWL(0 0 0.02 3.0)",
+    "rint": "rint vsrc vdd 10",
+    "cdec": "cdec vdd 0 1e-05",
+    "rvrestt": "rvrestt vdd vrest 2000",
+    "rvrestb": "rvrestb vrest 0 1000",
+    "cvrestc": "cvrestc vrest 0 1e-05",
+    "rvthet": "rvthet vdd vthe 2000",
+    "rvtheb": "rvtheb vthe 0 1800",
+    "cvthec": "cvthec vthe 0 1e-05",
+    "rvthrt": "rvthrt vdd vthr 2400",
+    "rvthrb": "rvthrb vthr 0 1500",
+    "cvthrc": "cvthrc vthr 0 1e-05",
+    "rvmidt": "rvmidt vdd vmid 2000",
+    "rvmidb": "rvmidb vmid 0 2000",
+    "cvmidc": "cvmidc vmid 0 1e-05",
+    "rporr": "rporr vdd porc 2.2e+06",
+    "cporc": "cporc porc 0 1e-06",
+    "rporra": "rporra porc porx 1e+06",
+    "rporrf": "rporrf por_ok porx 4e+06",
+    "npori1p": "npori1p por_hold porx vdd vsrc pch W=2.4e-06 L=5e-07",
+    "npori1n": "npori1n por_hold porx 0 0 nch W=1.2e-06 L=5e-07",
+    "npori2p": "npori2p por_ok por_hold vdd vsrc pch W=2.4e-06 L=5e-07",
+    "npori2n": "npori2n por_ok por_hold 0 0 nch W=1.2e-06 L=5e-07",
+    "riref": "riref vdd iref_n 2.2e+06",
+    "nirefd": "nirefd iref_n iref_n 0 0 nch W=4e-06 L=4e-06",
+    "ristep": "ristep vdd istep_n 5.6e+07",
+    "nistepd": "nistepd istep_n istep_n 0 0 nch W=4e-06 L=4e-06",
+    "nirefm": "nirefm irefp_n iref_n 0 0 nch W=4e-06 L=4e-06",
+    "nirefpd": "nirefpd irefp_n irefp_n vdd vsrc pch W=4e-06 L=4e-06",
+    "rilim": "rilim vdd ilim_n 1.85e+06",
+    "nilimd": "nilimd ilim_n ilim_n 0 0 nch W=4e-06 L=4e-06",
+    "nilimm": "nilimm ilimp_n ilim_n 0 0 nch W=4e-06 L=4e-06",
+    "nilimpd": "nilimpd ilimp_n ilimp_n vdd vsrc pch W=4e-06 L=4e-06",
+    "cg0_cm": "cg0_cm g0_vm 0 1e-07",
+    "rg0_rm": "rg0_rm g0_vm vrest 1e+06",
+    "rg0_kb": "rg0_kb vdd g0_knb 1e+06",
+    "ng0_kmb": "ng0_kmb g0_knb g0_knb 0 0 nch W=4e-06 L=4e-06",
+    "ng0_kmt": "ng0_kmt g0_ktail g0_knb 0 0 nch W=4e-06 L=4e-06",
+    "ng0_km1": "ng0_km1 g0_kd1 g0_vm g0_ktail 0 nch W=4e-06 L=4e-06",
+    "ng0_km2": "ng0_km2 g0_ko1 g0_h g0_ktail 0 nch W=4e-06 L=4e-06",
+    "ng0_km3": "ng0_km3 g0_kd1 g0_kd1 vdd vsrc pch W=4e-06 L=4e-06",
+    "ng0_km4": "ng0_km4 g0_ko1 g0_kd1 vdd vsrc pch W=4e-06 L=4e-06",
+    "ng0_ki1p": "ng0_ki1p g0_qb g0_ko1 vdd vsrc pch W=2.4e-06 L=5e-07",
+    "ng0_ki1n": "ng0_ki1n g0_qb g0_ko1 0 0 nch W=1.2e-06 L=5e-07",
+    "ng0_ki2p": "ng0_ki2p g0_q g0_qb vdd vsrc pch W=2.4e-06 L=5e-07",
+    "ng0_ki2n": "ng0_ki2n g0_q g0_qb 0 0 nch W=1.2e-06 L=5e-07",
+    "rg0_hra": "rg0_hra g0_h vthe 1e+06",
+    "rg0_hrf": "rg0_hrf g0_h g0_qb 1.9e+07",
+    "cg0_hc": "cg0_hc g0_h 0 2.1e-09",
+    "ng0_dis": "ng0_dis g0_vm g0_q g0_vmd 0 nch W=4e-06 L=1e-06",
+    "rg0_rdis": "rg0_rdis g0_vmd vrest 220000",
+    "ng0_rp": "ng0_rp g0_rt g0_qb vdd vsrc pch W=2e-06 L=1e-06",
+    "rg0_rrc": "rg0_rrc g0_rt g0_rec 10000",
+    "cg0_rc": "cg0_rc g0_rec 0 1e-07",
+    "rg0_rr": "rg0_rr g0_rec 0 8.2e+06",
+    "ng0_sh1": "ng0_sh1 g0_vm g0_rec g0_vms 0 nch W=2e-06 L=1e-06",
+    "ng0_sh2": "ng0_sh2 g0_vms g0_qb vrest 0 nch W=2e-06 L=1e-06",
+    "ng0_porh": "ng0_porh g0_h por_hold vthe 0 nch W=2e-06 L=1e-06",
+    "ng0_porm": "ng0_porm g0_vm por_hold vrest 0 nch W=2e-06 L=1e-06",
+    "vg0_gweak": "vg0_gweak g0_gweak 0 PWL(0 3 10.54 3 10.541 0 11.09 0 11.091 3)",
+    "ng0_iweak_sw": "ng0_iweak_sw g0_iweak_x g0_gweak vdd vsrc pch W=4e-06 L=1e-06",
+    "ng0_iweak_cp": "ng0_iweak_cp g0_oweak irefp_n g0_iweak_x vsrc pch W=1.2e-06 L=4e-06",
+    "vg0_aweak": "vg0_aweak g0_oweak g0_vm DC 0",
+    "vg0_gvalid": "vg0_gvalid g0_gvalid 0 PWL(0 3 13.49 3 13.491 0 13.65 0 13.651 3 19.6 3 19.601 0 19.76 0 19.761 3)",
+    "ng0_ivalid_sw": "ng0_ivalid_sw g0_ivalid_x g0_gvalid vdd vsrc pch W=4e-06 L=1e-06",
+    "ng0_ivalid_cp": "ng0_ivalid_cp g0_ovalid irefp_n g0_ivalid_x vsrc pch W=4e-06 L=4e-06",
+    "vg0_avalid": "vg0_avalid g0_ovalid g0_vm DC 0",
+    "vg0_gmax": "vg0_gmax g0_gmax 0 PWL(0 3 16.05 3 16.051 0 17.2 0 17.201 3)",
+    "ng0_imax_sw": "ng0_imax_sw g0_imax_x g0_gmax vdd vsrc pch W=4e-06 L=1e-06",
+    "ng0_imax_cp": "ng0_imax_cp g0_omax ilimp_n g0_imax_x vsrc pch W=4e-06 L=4e-06",
+    "vg0_amax": "vg0_amax g0_omax g0_vm DC 0",
+    "ng0_op_tsw": "ng0_op_tsw g0_op_tt g0_qb vdd vsrc pch W=2e-06 L=1e-06",
+    "rg0_op_trc": "rg0_op_trc g0_op_tt g0_op_at 10000",
+    "cg0_op_tc": "cg0_op_tc g0_op_at 0 1e-07",
+    "rg0_op_trl": "rg0_op_trl g0_op_at 0 2.2e+07",
+    "ng0_op_sh1p": "ng0_op_sh1p g0_op_an g0_op_at vdd vsrc pch W=2.4e-06 L=5e-07",
+    "ng0_op_sh1n": "ng0_op_sh1n g0_op_an g0_op_at 0 0 nch W=1.2e-06 L=5e-07",
+    "ng0_op_sh2p": "ng0_op_sh2p g0_op_aq g0_op_an vdd vsrc pch W=2.4e-06 L=5e-07",
+    "ng0_op_sh2n": "ng0_op_sh2n g0_op_aq g0_op_an 0 0 nch W=1.2e-06 L=5e-07",
+    "ng0_op_abp": "ng0_op_abp g0_op_aqb g0_op_aq vdd vsrc pch W=2.4e-06 L=5e-07",
+    "ng0_op_abn": "ng0_op_abn g0_op_aqb g0_op_aq 0 0 nch W=1.2e-06 L=5e-07",
+    "rg0_op_dr": "rg0_op_dr g0_op_aq g0_op_ad 1e+06",
+    "cg0_op_dc": "cg0_op_dc g0_op_ad 0 3.3e-07",
+    "ng0_op_d2p": "ng0_op_d2p g0_op_adn g0_op_ad vdd vsrc pch W=2.4e-06 L=5e-07",
+    "ng0_op_d2n": "ng0_op_d2n g0_op_adn g0_op_ad 0 0 nch W=1.2e-06 L=5e-07",
+    "ng0_op_gpa": "ng0_op_gpa g0_op_pb g0_op_aq vdd vsrc pch W=2.4e-06 L=5e-07",
+    "ng0_op_gpb": "ng0_op_gpb g0_op_pb g0_op_adn vdd vsrc pch W=2.4e-06 L=5e-07",
+    "ng0_op_gna": "ng0_op_gna g0_op_pb g0_op_aq g0_op_gx 0 nch W=2.4e-06 L=5e-07",
+    "ng0_op_gnb": "ng0_op_gnb g0_op_gx g0_op_adn 0 0 nch W=2.4e-06 L=5e-07",
+    "ng0_op_op": "ng0_op_op g0_op_p g0_op_pb vdd vsrc pch W=2.4e-06 L=5e-07",
+    "ng0_op_on": "ng0_op_on g0_op_p g0_op_pb 0 0 nch W=1.2e-06 L=5e-07",
+    "ng0_ld_hsw": "ng0_ld_hsw vdd g0_qb vdd vsrc pch W=4e-06 L=5e-07",
+    "ng0_ld_mp0": "ng0_ld_mp0 0 g0_op_aq 0 0 nch W=4e-06 L=1e-06",
+    "ng0_ld_mp1": "ng0_ld_mp1 0 g0_op_aq 0 0 nch W=4e-06 L=1e-06",
+    "ng0_ld_inj": "ng0_ld_inj vdd g0_op_aqb vdd vsrc pch W=4e-06 L=1e-06",
+    "csg_cm": "csg_cm sg_vm 0 1e-07",
+    "rsg_rm": "rsg_rm sg_vm vrest 1e+06",
+    "rsg_kb": "rsg_kb vdd sg_knb 1e+06",
+    "nsg_kmb": "nsg_kmb sg_knb sg_knb 0 0 nch W=4e-06 L=4e-06",
+    "nsg_kmt": "nsg_kmt sg_ktail sg_knb 0 0 nch W=4e-06 L=4e-06",
+    "nsg_km1": "nsg_km1 sg_kd1 sg_vm sg_ktail 0 nch W=4e-06 L=4e-06",
+    "nsg_km2": "nsg_km2 sg_ko1 sg_h sg_ktail 0 nch W=4e-06 L=4e-06",
+    "nsg_km3": "nsg_km3 sg_kd1 sg_kd1 vdd vsrc pch W=4e-06 L=4e-06",
+    "nsg_km4": "nsg_km4 sg_ko1 sg_kd1 vdd vsrc pch W=4e-06 L=4e-06",
+    "nsg_ki1p": "nsg_ki1p sg_qb sg_ko1 vdd vsrc pch W=2.4e-06 L=5e-07",
+    "nsg_ki1n": "nsg_ki1n sg_qb sg_ko1 0 0 nch W=1.2e-06 L=5e-07",
+    "nsg_ki2p": "nsg_ki2p sg_q sg_qb vdd vsrc pch W=2.4e-06 L=5e-07",
+    "nsg_ki2n": "nsg_ki2n sg_q sg_qb 0 0 nch W=1.2e-06 L=5e-07",
+    "rsg_hra": "rsg_hra sg_h vthr 1e+06",
+    "rsg_hrf": "rsg_hrf sg_h sg_qb 1.9e+07",
+    "csg_hc": "csg_hc sg_h 0 2.1e-09",
+    "nsg_dis": "nsg_dis sg_vm sg_q sg_vmd 0 nch W=4e-06 L=1e-06",
+    "rsg_rdis": "rsg_rdis sg_vmd vrest 75000",
+    "nsg_rp": "nsg_rp sg_rt sg_qb vdd vsrc pch W=2e-06 L=1e-06",
+    "rsg_rrc": "rsg_rrc sg_rt sg_rec 10000",
+    "csg_rc": "csg_rc sg_rec 0 1e-07",
+    "rsg_rr": "rsg_rr sg_rec 0 8.2e+06",
+    "nsg_sh1": "nsg_sh1 sg_vm sg_rec sg_vms 0 nch W=2e-06 L=1e-06",
+    "nsg_sh2": "nsg_sh2 sg_vms sg_qb vrest 0 nch W=2e-06 L=1e-06",
+    "nsg_porh": "nsg_porh sg_h por_hold vthr 0 nch W=2e-06 L=1e-06",
+    "nsg_porm": "nsg_porm sg_vm por_hold vrest 0 nch W=2e-06 L=1e-06",
+    "vsg_sp": "vsg_sp sg_sp 0 PWL(0 1.48361 22.16 1.48361 22.161 1.61003 22.71 1.61003 22.711 1.48361 25.12 1.48361 25.121 1.8123 25.32 1.8123 25.321 1.48361 27.73 1.48361 27.731 1.78361 28.91 1.78361 28.911 1.48361 31.32 1.48361 31.321 1.8123 31.52 1.8123 31.521 1.48361)",
+    "vsg_sn": "vsg_sn sg_sn 0 PWL(0 1.48361 22.16 1.48361 22.161 1.63531 22.71 1.63531 22.711 1.48361 25.12 1.48361 25.121 1.77184 25.32 1.77184 25.321 1.48361 27.73 1.48361 27.731 1.18361 28.91 1.18361 28.911 1.48361 31.32 1.48361 31.321 1.77184 31.52 1.77184 31.521 1.48361)",
+    "rsg_ota_b": "rsg_ota_b vdd sg_ota_nb 3.3e+06",
+    "nsg_ota_mb": "nsg_ota_mb sg_ota_nb sg_ota_nb 0 0 nch W=4e-06 L=4e-06",
+    "nsg_ota_mt": "nsg_ota_mt sg_ota_tail sg_ota_nb 0 0 nch W=4e-06 L=4e-06",
+    "nsg_ota_m1": "nsg_ota_m1 sg_ota_d1 sg_sp sg_ota_tail 0 nch W=1e-05 L=2e-06",
+    "nsg_ota_m2": "nsg_ota_m2 sg_oo sg_sn sg_ota_tail 0 nch W=1e-05 L=2e-06",
+    "nsg_ota_m3": "nsg_ota_m3 sg_ota_d1 sg_ota_d1 vdd vsrc pch W=1e-05 L=2e-06",
+    "nsg_ota_m4": "nsg_ota_m4 sg_oo sg_ota_d1 vdd vsrc pch W=1e-05 L=2e-06",
+    "vsg_aota": "vsg_aota sg_oo sg_vm DC 0",
+    "nsg_op_tsw": "nsg_op_tsw sg_op_tt sg_qb vdd vsrc pch W=2e-06 L=1e-06",
+    "rsg_op_trc": "rsg_op_trc sg_op_tt sg_op_at 10000",
+    "csg_op_tc": "csg_op_tc sg_op_at 0 1e-07",
+    "rsg_op_trl": "rsg_op_trl sg_op_at 0 2.2e+07",
+    "nsg_op_sh1p": "nsg_op_sh1p sg_op_an sg_op_at vdd vsrc pch W=2.4e-06 L=5e-07",
+    "nsg_op_sh1n": "nsg_op_sh1n sg_op_an sg_op_at 0 0 nch W=1.2e-06 L=5e-07",
+    "nsg_op_sh2p": "nsg_op_sh2p sg_op_aq sg_op_an vdd vsrc pch W=2.4e-06 L=5e-07",
+    "nsg_op_sh2n": "nsg_op_sh2n sg_op_aq sg_op_an 0 0 nch W=1.2e-06 L=5e-07",
+    "nsg_op_abp": "nsg_op_abp sg_op_aqb sg_op_aq vdd vsrc pch W=2.4e-06 L=5e-07",
+    "nsg_op_abn": "nsg_op_abn sg_op_aqb sg_op_aq 0 0 nch W=1.2e-06 L=5e-07",
+    "rsg_op_dr": "rsg_op_dr sg_op_aq sg_op_ad 1e+06",
+    "csg_op_dc": "csg_op_dc sg_op_ad 0 3.3e-07",
+    "nsg_op_d2p": "nsg_op_d2p sg_op_adn sg_op_ad vdd vsrc pch W=2.4e-06 L=5e-07",
+    "nsg_op_d2n": "nsg_op_d2n sg_op_adn sg_op_ad 0 0 nch W=1.2e-06 L=5e-07",
+    "nsg_op_gpa": "nsg_op_gpa sg_op_pb sg_op_aq vdd vsrc pch W=2.4e-06 L=5e-07",
+    "nsg_op_gpb": "nsg_op_gpb sg_op_pb sg_op_adn vdd vsrc pch W=2.4e-06 L=5e-07",
+    "nsg_op_gna": "nsg_op_gna sg_op_pb sg_op_aq sg_op_gx 0 nch W=2.4e-06 L=5e-07",
+    "nsg_op_gnb": "nsg_op_gnb sg_op_gx sg_op_adn 0 0 nch W=2.4e-06 L=5e-07",
+    "nsg_op_op": "nsg_op_op sg_op_p sg_op_pb vdd vsrc pch W=2.4e-06 L=5e-07",
+    "nsg_op_on": "nsg_op_on sg_op_p sg_op_pb 0 0 nch W=1.2e-06 L=5e-07",
+    "nsg_ld_hsw0": "nsg_ld_hsw0 vdd sg_op_aqb vdd vsrc pch W=4e-06 L=5e-07",
+    "nsg_ld_hsw1": "nsg_ld_hsw1 vdd sg_op_aqb vdd vsrc pch W=4e-06 L=5e-07",
+    "ctc_cm": "ctc_cm tc_vm 0 1.5e-06",
+    "rtc_rm": "rtc_rm tc_vm vrest 1e+06",
+    "rtc_kb": "rtc_kb vdd tc_knb 1e+06",
+    "ntc_kmb": "ntc_kmb tc_knb tc_knb 0 0 nch W=4e-06 L=4e-06",
+    "ntc_kmt": "ntc_kmt tc_ktail tc_knb 0 0 nch W=4e-06 L=4e-06",
+    "ntc_km1": "ntc_km1 tc_kd1 tc_vm tc_ktail 0 nch W=4e-06 L=4e-06",
+    "ntc_km2": "ntc_km2 tc_ko1 tc_h tc_ktail 0 nch W=4e-06 L=4e-06",
+    "ntc_km3": "ntc_km3 tc_kd1 tc_kd1 vdd vsrc pch W=4e-06 L=4e-06",
+    "ntc_km4": "ntc_km4 tc_ko1 tc_kd1 vdd vsrc pch W=4e-06 L=4e-06",
+    "ntc_ki1p": "ntc_ki1p tc_qb tc_ko1 vdd vsrc pch W=2.4e-06 L=5e-07",
+    "ntc_ki1n": "ntc_ki1n tc_qb tc_ko1 0 0 nch W=1.2e-06 L=5e-07",
+    "ntc_ki2p": "ntc_ki2p tc_q tc_qb vdd vsrc pch W=2.4e-06 L=5e-07",
+    "ntc_ki2n": "ntc_ki2n tc_q tc_qb 0 0 nch W=1.2e-06 L=5e-07",
+    "rtc_hra": "rtc_hra tc_h vthr 1e+06",
+    "rtc_hrf": "rtc_hrf tc_h tc_qb 1.9e+07",
+    "ctc_hc": "ctc_hc tc_h 0 2.1e-09",
+    "ntc_dis": "ntc_dis tc_vm tc_q tc_vmd 0 nch W=4e-06 L=1e-06",
+    "rtc_rdis": "rtc_rdis tc_vmd vrest 12000",
+    "ntc_rp": "ntc_rp tc_rt tc_qb vdd vsrc pch W=2e-06 L=1e-06",
+    "rtc_rrc": "rtc_rrc tc_rt tc_rec 10000",
+    "ctc_rc": "ctc_rc tc_rec 0 1e-07",
+    "rtc_rr": "rtc_rr tc_rec 0 8.2e+06",
+    "ntc_sh1": "ntc_sh1 tc_vm tc_rec tc_vms 0 nch W=2e-06 L=1e-06",
+    "ntc_sh2": "ntc_sh2 tc_vms tc_qb vrest 0 nch W=2e-06 L=1e-06",
+    "ntc_porh": "ntc_porh tc_h por_hold vthr 0 nch W=2e-06 L=1e-06",
+    "ntc_porm": "ntc_porm tc_vm por_hold vrest 0 nch W=2e-06 L=1e-06",
+    "vtc_hs": "vtc_hs tc_hs 0 PWL(0 0 33.93 0 33.931 0.279421 42.18 0.279421 42.181 0 52.23 0 52.231 1.18844 60.58 1.18844 60.581 0 70.63 0 70.631 2.40447 71.72 2.40447 71.721 0 81.77 0 81.771 1.18844 90.12 1.18844 90.121 0)",
+    "vtc_pg": "vtc_pg tc_pg 0 PWL(0 0 33.93 0 33.931 3 42.18 3 42.181 0 52.23 0 52.231 3 60.58 3 60.581 0 70.63 0 70.631 3 71.72 3 71.721 0 81.77 0 81.771 3 90.12 3 90.121 0)",
+    "ntc_st_mh": "ntc_st_mh tc_mi tc_hs tc_st_x 0 nch W=2e-06 L=4e-06",
+    "ntc_st_mp": "ntc_st_mp tc_st_x tc_pg 0 0 nch W=4e-06 L=1e-06",
+    "ntc_rm_md": "ntc_rm_md tc_mi tc_mi vdd vsrc pch W=4e-06 L=2e-06",
+    "ntc_rm_mo": "ntc_rm_mo tc_oo tc_mi vdd vsrc pch W=1e-06 L=8e-06",
+    "vtc_arel": "vtc_arel tc_oo tc_vm DC 0",
+    "ntc_op_tsw": "ntc_op_tsw tc_op_tt tc_qb vdd vsrc pch W=2e-06 L=1e-06",
+    "rtc_op_trc": "rtc_op_trc tc_op_tt tc_op_at 10000",
+    "ctc_op_tc": "ctc_op_tc tc_op_at 0 1e-07",
+    "rtc_op_trl": "rtc_op_trl tc_op_at 0 2.2e+07",
+    "ntc_op_sh1p": "ntc_op_sh1p tc_op_an tc_op_at vdd vsrc pch W=2.4e-06 L=5e-07",
+    "ntc_op_sh1n": "ntc_op_sh1n tc_op_an tc_op_at 0 0 nch W=1.2e-06 L=5e-07",
+    "ntc_op_sh2p": "ntc_op_sh2p tc_op_aq tc_op_an vdd vsrc pch W=2.4e-06 L=5e-07",
+    "ntc_op_sh2n": "ntc_op_sh2n tc_op_aq tc_op_an 0 0 nch W=1.2e-06 L=5e-07",
+    "ntc_op_abp": "ntc_op_abp tc_op_aqb tc_op_aq vdd vsrc pch W=2.4e-06 L=5e-07",
+    "ntc_op_abn": "ntc_op_abn tc_op_aqb tc_op_aq 0 0 nch W=1.2e-06 L=5e-07",
+    "rtc_op_dr": "rtc_op_dr tc_op_aq tc_op_ad 1e+06",
+    "ctc_op_dc": "ctc_op_dc tc_op_ad 0 3.3e-07",
+    "ntc_op_d2p": "ntc_op_d2p tc_op_adn tc_op_ad vdd vsrc pch W=2.4e-06 L=5e-07",
+    "ntc_op_d2n": "ntc_op_d2n tc_op_adn tc_op_ad 0 0 nch W=1.2e-06 L=5e-07",
+    "ntc_op_gpa": "ntc_op_gpa tc_op_pb tc_op_aq vdd vsrc pch W=2.4e-06 L=5e-07",
+    "ntc_op_gpb": "ntc_op_gpb tc_op_pb tc_op_adn vdd vsrc pch W=2.4e-06 L=5e-07",
+    "ntc_op_gna": "ntc_op_gna tc_op_pb tc_op_aq tc_op_gx 0 nch W=2.4e-06 L=5e-07",
+    "ntc_op_gnb": "ntc_op_gnb tc_op_gx tc_op_adn 0 0 nch W=2.4e-06 L=5e-07",
+    "ntc_op_op": "ntc_op_op tc_op_p tc_op_pb vdd vsrc pch W=2.4e-06 L=5e-07",
+    "ntc_op_on": "ntc_op_on tc_op_p tc_op_pb 0 0 nch W=1.2e-06 L=5e-07",
+    "ntc_ld_mp0": "ntc_ld_mp0 0 tc_op_aq 0 0 nch W=4e-06 L=1e-06",
+    "ntc_ld_mp1": "ntc_ld_mp1 0 tc_op_aq 0 0 nch W=4e-06 L=1e-06",
+    "ntc_ld_out": "ntc_ld_out vdd tc_op_aqb vdd vsrc pch W=4e-06 L=1e-06",
+    "cpar_g0_gmax": "cpar_g0_gmax g0_gmax 0 5e-14",
+    "cpar_g0_gvalid": "cpar_g0_gvalid g0_gvalid 0 5e-14",
+    "cpar_g0_gweak": "cpar_g0_gweak g0_gweak 0 5e-14",
+    "cpar_g0_h": "cpar_g0_h g0_h 0 5e-14",
+    "cpar_g0_imax_x": "cpar_g0_imax_x g0_imax_x 0 5e-14",
+    "cpar_g0_ivalid_x": "cpar_g0_ivalid_x g0_ivalid_x 0 5e-14",
+    "cpar_g0_iweak_x": "cpar_g0_iweak_x g0_iweak_x 0 5e-14",
+    "cpar_g0_kd1": "cpar_g0_kd1 g0_kd1 0 5e-14",
+    "cpar_g0_knb": "cpar_g0_knb g0_knb 0 5e-14",
+    "cpar_g0_ko1": "cpar_g0_ko1 g0_ko1 0 5e-14",
+    "cpar_g0_ktail": "cpar_g0_ktail g0_ktail 0 5e-14",
+    "cpar_g0_omax": "cpar_g0_omax g0_omax 0 5e-14",
+    "cpar_g0_op_ad": "cpar_g0_op_ad g0_op_ad 0 5e-14",
+    "cpar_g0_op_adn": "cpar_g0_op_adn g0_op_adn 0 5e-14",
+    "cpar_g0_op_an": "cpar_g0_op_an g0_op_an 0 5e-14",
+    "cpar_g0_op_aq": "cpar_g0_op_aq g0_op_aq 0 5e-14",
+    "cpar_g0_op_aqb": "cpar_g0_op_aqb g0_op_aqb 0 5e-14",
+    "cpar_g0_op_at": "cpar_g0_op_at g0_op_at 0 5e-14",
+    "cpar_g0_op_gx": "cpar_g0_op_gx g0_op_gx 0 5e-14",
+    "cpar_g0_op_p": "cpar_g0_op_p g0_op_p 0 5e-14",
+    "cpar_g0_op_pb": "cpar_g0_op_pb g0_op_pb 0 5e-14",
+    "cpar_g0_op_tt": "cpar_g0_op_tt g0_op_tt 0 5e-14",
+    "cpar_g0_ovalid": "cpar_g0_ovalid g0_ovalid 0 5e-14",
+    "cpar_g0_oweak": "cpar_g0_oweak g0_oweak 0 5e-14",
+    "cpar_g0_q": "cpar_g0_q g0_q 0 5e-14",
+    "cpar_g0_qb": "cpar_g0_qb g0_qb 0 5e-14",
+    "cpar_g0_rec": "cpar_g0_rec g0_rec 0 5e-14",
+    "cpar_g0_rt": "cpar_g0_rt g0_rt 0 5e-14",
+    "cpar_g0_vm": "cpar_g0_vm g0_vm 0 5e-14",
+    "cpar_g0_vmd": "cpar_g0_vmd g0_vmd 0 5e-14",
+    "cpar_g0_vms": "cpar_g0_vms g0_vms 0 5e-14",
+    "cpar_ilim_n": "cpar_ilim_n ilim_n 0 5e-14",
+    "cpar_ilimp_n": "cpar_ilimp_n ilimp_n 0 5e-14",
+    "cpar_iref_n": "cpar_iref_n iref_n 0 5e-14",
+    "cpar_irefp_n": "cpar_irefp_n irefp_n 0 5e-14",
+    "cpar_istep_n": "cpar_istep_n istep_n 0 5e-14",
+    "cpar_por_hold": "cpar_por_hold por_hold 0 5e-14",
+    "cpar_por_ok": "cpar_por_ok por_ok 0 5e-14",
+    "cpar_porc": "cpar_porc porc 0 5e-14",
+    "cpar_porx": "cpar_porx porx 0 5e-14",
+    "cpar_sg_h": "cpar_sg_h sg_h 0 5e-14",
+    "cpar_sg_kd1": "cpar_sg_kd1 sg_kd1 0 5e-14",
+    "cpar_sg_knb": "cpar_sg_knb sg_knb 0 5e-14",
+    "cpar_sg_ko1": "cpar_sg_ko1 sg_ko1 0 5e-14",
+    "cpar_sg_ktail": "cpar_sg_ktail sg_ktail 0 5e-14",
+    "cpar_sg_oo": "cpar_sg_oo sg_oo 0 5e-14",
+    "cpar_sg_op_ad": "cpar_sg_op_ad sg_op_ad 0 5e-14",
+    "cpar_sg_op_adn": "cpar_sg_op_adn sg_op_adn 0 5e-14",
+    "cpar_sg_op_an": "cpar_sg_op_an sg_op_an 0 5e-14",
+    "cpar_sg_op_aq": "cpar_sg_op_aq sg_op_aq 0 5e-14",
+    "cpar_sg_op_aqb": "cpar_sg_op_aqb sg_op_aqb 0 5e-14",
+    "cpar_sg_op_at": "cpar_sg_op_at sg_op_at 0 5e-14",
+    "cpar_sg_op_gx": "cpar_sg_op_gx sg_op_gx 0 5e-14",
+    "cpar_sg_op_p": "cpar_sg_op_p sg_op_p 0 5e-14",
+    "cpar_sg_op_pb": "cpar_sg_op_pb sg_op_pb 0 5e-14",
+    "cpar_sg_op_tt": "cpar_sg_op_tt sg_op_tt 0 5e-14",
+    "cpar_sg_ota_d1": "cpar_sg_ota_d1 sg_ota_d1 0 5e-14",
+    "cpar_sg_ota_nb": "cpar_sg_ota_nb sg_ota_nb 0 5e-14",
+    "cpar_sg_ota_tail": "cpar_sg_ota_tail sg_ota_tail 0 5e-14",
+    "cpar_sg_q": "cpar_sg_q sg_q 0 5e-14",
+    "cpar_sg_qb": "cpar_sg_qb sg_qb 0 5e-14",
+    "cpar_sg_rec": "cpar_sg_rec sg_rec 0 5e-14",
+    "cpar_sg_rt": "cpar_sg_rt sg_rt 0 5e-14",
+    "cpar_sg_sn": "cpar_sg_sn sg_sn 0 5e-14",
+    "cpar_sg_sp": "cpar_sg_sp sg_sp 0 5e-14",
+    "cpar_sg_vm": "cpar_sg_vm sg_vm 0 5e-14",
+    "cpar_sg_vmd": "cpar_sg_vmd sg_vmd 0 5e-14",
+    "cpar_sg_vms": "cpar_sg_vms sg_vms 0 5e-14",
+    "cpar_tc_h": "cpar_tc_h tc_h 0 5e-14",
+    "cpar_tc_hs": "cpar_tc_hs tc_hs 0 5e-14",
+    "cpar_tc_kd1": "cpar_tc_kd1 tc_kd1 0 5e-14",
+    "cpar_tc_knb": "cpar_tc_knb tc_knb 0 5e-14",
+    "cpar_tc_ko1": "cpar_tc_ko1 tc_ko1 0 5e-14",
+    "cpar_tc_ktail": "cpar_tc_ktail tc_ktail 0 5e-14",
+    "cpar_tc_mi": "cpar_tc_mi tc_mi 0 5e-14",
+    "cpar_tc_oo": "cpar_tc_oo tc_oo 0 5e-14",
+    "cpar_tc_op_ad": "cpar_tc_op_ad tc_op_ad 0 5e-14",
+    "cpar_tc_op_adn": "cpar_tc_op_adn tc_op_adn 0 5e-14",
+    "cpar_tc_op_an": "cpar_tc_op_an tc_op_an 0 5e-14",
+    "cpar_tc_op_aq": "cpar_tc_op_aq tc_op_aq 0 5e-14",
+    "cpar_tc_op_aqb": "cpar_tc_op_aqb tc_op_aqb 0 5e-14",
+    "cpar_tc_op_at": "cpar_tc_op_at tc_op_at 0 5e-14",
+    "cpar_tc_op_gx": "cpar_tc_op_gx tc_op_gx 0 5e-14",
+    "cpar_tc_op_p": "cpar_tc_op_p tc_op_p 0 5e-14",
+    "cpar_tc_op_pb": "cpar_tc_op_pb tc_op_pb 0 5e-14",
+    "cpar_tc_op_tt": "cpar_tc_op_tt tc_op_tt 0 5e-14",
+    "cpar_tc_pg": "cpar_tc_pg tc_pg 0 5e-14",
+    "cpar_tc_q": "cpar_tc_q tc_q 0 5e-14",
+    "cpar_tc_qb": "cpar_tc_qb tc_qb 0 5e-14",
+    "cpar_tc_rec": "cpar_tc_rec tc_rec 0 5e-14",
+    "cpar_tc_rt": "cpar_tc_rt tc_rt 0 5e-14",
+    "cpar_tc_st_x": "cpar_tc_st_x tc_st_x 0 5e-14",
+    "cpar_tc_vm": "cpar_tc_vm tc_vm 0 5e-14",
+    "cpar_tc_vmd": "cpar_tc_vmd tc_vmd 0 5e-14",
+    "cpar_tc_vms": "cpar_tc_vms tc_vms 0 5e-14",
+    "cpar_vdd": "cpar_vdd vdd 0 5e-14",
+    "cpar_vmid": "cpar_vmid vmid 0 5e-14",
+    "cpar_vrest": "cpar_vrest vrest 0 5e-14",
+    "cpar_vthe": "cpar_vthe vthe 0 5e-14",
+    "cpar_vthr": "cpar_vthr vthr 0 5e-14"
+  },
+  "original_scoring_vectors": [
+    "v(vdd)",
+    "v(vrest)",
+    "v(vthe)",
+    "v(vthr)",
+    "v(vmid)",
+    "v(por_ok)",
+    "v(g0_gweak)",
+    "v(g0_gvalid)",
+    "v(g0_gmax)",
+    "v(sg_sp)",
+    "v(sg_sn)",
+    "v(tc_hs)",
+    "v(tc_pg)",
+    "v(g0_vm)",
+    "v(g0_h)",
+    "v(g0_q)",
+    "v(g0_qb)",
+    "v(g0_rec)",
+    "v(g0_vmd)",
+    "v(g0_op_at)",
+    "v(g0_op_aq)",
+    "v(g0_op_aqb)",
+    "v(g0_op_p)",
+    "v(g0_op_pb)",
+    "i(vg0_aweak)",
+    "i(vg0_avalid)",
+    "i(vg0_amax)",
+    "v(sg_vm)",
+    "v(sg_h)",
+    "v(sg_q)",
+    "v(sg_qb)",
+    "v(sg_rec)",
+    "v(sg_vmd)",
+    "v(sg_op_at)",
+    "v(sg_op_aq)",
+    "v(sg_op_aqb)",
+    "v(sg_op_p)",
+    "v(sg_op_pb)",
+    "i(vsg_aota)",
+    "v(tc_vm)",
+    "v(tc_h)",
+    "v(tc_q)",
+    "v(tc_qb)",
+    "v(tc_rec)",
+    "v(tc_vmd)",
+    "v(tc_op_at)",
+    "v(tc_op_aq)",
+    "v(tc_op_aqb)",
+    "v(tc_op_p)",
+    "v(tc_op_pb)",
+    "i(vtc_arel)",
+    "v(g0_vms)",
+    "v(sg_vms)",
+    "v(tc_vms)",
+    "i(va_cg0_cm_p)",
+    "i(va_rg0_rm_p)",
+    "i(va_ng0_km1_g)",
+    "i(va_ng0_dis_d)",
+    "i(va_ng0_sh1_d)",
+    "i(va_ng0_porm_d)",
+    "i(va_cpar_g0_vm_p)",
+    "i(va_ng0_dis_s)",
+    "i(va_rg0_rdis_p)",
+    "i(va_cpar_g0_vmd_p)",
+    "i(va_ng0_sh1_s)",
+    "i(va_ng0_sh2_d)",
+    "i(va_cpar_g0_vms_p)",
+    "i(va_csg_cm_p)",
+    "i(va_rsg_rm_p)",
+    "i(va_nsg_km1_g)",
+    "i(va_nsg_dis_d)",
+    "i(va_nsg_sh1_d)",
+    "i(va_nsg_porm_d)",
+    "i(va_cpar_sg_vm_p)",
+    "i(va_nsg_dis_s)",
+    "i(va_rsg_rdis_p)",
+    "i(va_cpar_sg_vmd_p)",
+    "i(va_nsg_sh1_s)",
+    "i(va_nsg_sh2_d)",
+    "i(va_cpar_sg_vms_p)",
+    "i(va_ctc_cm_p)",
+    "i(va_rtc_rm_p)",
+    "i(va_ntc_km1_g)",
+    "i(va_ntc_dis_d)",
+    "i(va_ntc_sh1_d)",
+    "i(va_ntc_porm_d)",
+    "i(va_cpar_tc_vm_p)",
+    "i(va_ntc_dis_s)",
+    "i(va_rtc_rdis_p)",
+    "i(va_cpar_tc_vmd_p)",
+    "i(va_ntc_sh1_s)",
+    "i(va_ntc_sh2_d)",
+    "i(va_cpar_tc_vms_p)",
+    "v(vsrc)",
+    "i(vsrc)"
+  ],
+  "original_analysis": "tran 0.001 100.27 0 0.00025",
+  "preview_analysis": "tran 0.001 100.27 0 0.000125",
+  "save_vectors": [
+    "v(vdd)",
+    "v(vrest)",
+    "v(vthe)",
+    "v(vthr)",
+    "v(vmid)",
+    "v(por_ok)",
+    "v(g0_gweak)",
+    "v(g0_gvalid)",
+    "v(g0_gmax)",
+    "v(sg_sp)",
+    "v(sg_sn)",
+    "v(tc_hs)",
+    "v(tc_pg)",
+    "v(g0_vm)",
+    "v(g0_h)",
+    "v(g0_q)",
+    "v(g0_qb)",
+    "v(g0_rec)",
+    "v(g0_vmd)",
+    "v(g0_op_at)",
+    "v(g0_op_aq)",
+    "v(g0_op_aqb)",
+    "v(g0_op_p)",
+    "v(g0_op_pb)",
+    "i(vg0_aweak)",
+    "i(vg0_avalid)",
+    "i(vg0_amax)",
+    "v(sg_vm)",
+    "v(sg_h)",
+    "v(sg_q)",
+    "v(sg_qb)",
+    "v(sg_rec)",
+    "v(sg_vmd)",
+    "v(sg_op_at)",
+    "v(sg_op_aq)",
+    "v(sg_op_aqb)",
+    "v(sg_op_p)",
+    "v(sg_op_pb)",
+    "i(vsg_aota)",
+    "v(tc_vm)",
+    "v(tc_h)",
+    "v(tc_q)",
+    "v(tc_qb)",
+    "v(tc_rec)",
+    "v(tc_vmd)",
+    "v(tc_op_at)",
+    "v(tc_op_aq)",
+    "v(tc_op_aqb)",
+    "v(tc_op_p)",
+    "v(tc_op_pb)",
+    "i(vtc_arel)",
+    "v(g0_vms)",
+    "v(sg_vms)",
+    "v(tc_vms)",
+    "i(va_cg0_cm_p)",
+    "i(va_rg0_rm_p)",
+    "i(va_ng0_km1_g)",
+    "i(va_ng0_dis_d)",
+    "i(va_ng0_sh1_d)",
+    "i(va_ng0_porm_d)",
+    "i(va_cpar_g0_vm_p)",
+    "i(va_ng0_dis_s)",
+    "i(va_rg0_rdis_p)",
+    "i(va_cpar_g0_vmd_p)",
+    "i(va_ng0_sh1_s)",
+    "i(va_ng0_sh2_d)",
+    "i(va_cpar_g0_vms_p)",
+    "i(va_csg_cm_p)",
+    "i(va_rsg_rm_p)",
+    "i(va_nsg_km1_g)",
+    "i(va_nsg_dis_d)",
+    "i(va_nsg_sh1_d)",
+    "i(va_nsg_porm_d)",
+    "i(va_cpar_sg_vm_p)",
+    "i(va_nsg_dis_s)",
+    "i(va_rsg_rdis_p)",
+    "i(va_cpar_sg_vmd_p)",
+    "i(va_nsg_sh1_s)",
+    "i(va_nsg_sh2_d)",
+    "i(va_cpar_sg_vms_p)",
+    "i(va_ctc_cm_p)",
+    "i(va_rtc_rm_p)",
+    "i(va_ntc_km1_g)",
+    "i(va_ntc_dis_d)",
+    "i(va_ntc_sh1_d)",
+    "i(va_ntc_porm_d)",
+    "i(va_cpar_tc_vm_p)",
+    "i(va_ntc_dis_s)",
+    "i(va_rtc_rdis_p)",
+    "i(va_cpar_tc_vmd_p)",
+    "i(va_ntc_sh1_s)",
+    "i(va_ntc_sh2_d)",
+    "i(va_cpar_tc_vms_p)",
+    "v(vsrc)",
+    "i(vsrc)"
+  ],
+  "gated_sources": [],
+  "clamps": [],
+  "observed_four_terminal_devices": [],
+  "new_nodes": [],
+  "ledger_plan": {
+    "nodes": [
+      "g0_vm",
+      "g0_vmd",
+      "g0_vms",
+      "sg_vm",
+      "sg_vmd",
+      "sg_vms",
+      "tc_vm",
+      "tc_vmd",
+      "tc_vms"
+    ],
+    "terms": {
+      "g0_vm": [
+        {
+          "element": "cg0_cm",
+          "kind": "C",
+          "vec": "i(va_cg0_cm_p)",
+          "sign": 1.0,
+          "C": 1e-07,
+          "R": null,
+          "far": "0"
+        },
+        {
+          "element": "rg0_rm",
+          "kind": "R",
+          "vec": "i(va_rg0_rm_p)",
+          "sign": 1.0,
+          "C": null,
+          "R": 1000000.0,
+          "far": "vrest"
+        },
+        {
+          "element": "ng0_km1",
+          "kind": "M",
+          "vec": "i(va_ng0_km1_g)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "ng0_dis",
+          "kind": "M",
+          "vec": "i(va_ng0_dis_d)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "ng0_sh1",
+          "kind": "M",
+          "vec": "i(va_ng0_sh1_d)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "ng0_porm",
+          "kind": "M",
+          "vec": "i(va_ng0_porm_d)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "vg0_aweak",
+          "kind": "V",
+          "vec": "i(vg0_aweak)",
+          "sign": -1.0,
+          "C": null,
+          "R": null,
+          "far": "g0_oweak"
+        },
+        {
+          "element": "vg0_avalid",
+          "kind": "V",
+          "vec": "i(vg0_avalid)",
+          "sign": -1.0,
+          "C": null,
+          "R": null,
+          "far": "g0_ovalid"
+        },
+        {
+          "element": "vg0_amax",
+          "kind": "V",
+          "vec": "i(vg0_amax)",
+          "sign": -1.0,
+          "C": null,
+          "R": null,
+          "far": "g0_omax"
+        },
+        {
+          "element": "cpar_g0_vm",
+          "kind": "C",
+          "vec": "i(va_cpar_g0_vm_p)",
+          "sign": 1.0,
+          "C": 5e-14,
+          "R": null,
+          "far": "0"
+        }
+      ],
+      "g0_vmd": [
+        {
+          "element": "ng0_dis",
+          "kind": "M",
+          "vec": "i(va_ng0_dis_s)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "rg0_rdis",
+          "kind": "R",
+          "vec": "i(va_rg0_rdis_p)",
+          "sign": 1.0,
+          "C": null,
+          "R": 220000.0,
+          "far": "vrest"
+        },
+        {
+          "element": "cpar_g0_vmd",
+          "kind": "C",
+          "vec": "i(va_cpar_g0_vmd_p)",
+          "sign": 1.0,
+          "C": 5e-14,
+          "R": null,
+          "far": "0"
+        }
+      ],
+      "g0_vms": [
+        {
+          "element": "ng0_sh1",
+          "kind": "M",
+          "vec": "i(va_ng0_sh1_s)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "ng0_sh2",
+          "kind": "M",
+          "vec": "i(va_ng0_sh2_d)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "cpar_g0_vms",
+          "kind": "C",
+          "vec": "i(va_cpar_g0_vms_p)",
+          "sign": 1.0,
+          "C": 5e-14,
+          "R": null,
+          "far": "0"
+        }
+      ],
+      "sg_vm": [
+        {
+          "element": "csg_cm",
+          "kind": "C",
+          "vec": "i(va_csg_cm_p)",
+          "sign": 1.0,
+          "C": 1e-07,
+          "R": null,
+          "far": "0"
+        },
+        {
+          "element": "rsg_rm",
+          "kind": "R",
+          "vec": "i(va_rsg_rm_p)",
+          "sign": 1.0,
+          "C": null,
+          "R": 1000000.0,
+          "far": "vrest"
+        },
+        {
+          "element": "nsg_km1",
+          "kind": "M",
+          "vec": "i(va_nsg_km1_g)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "nsg_dis",
+          "kind": "M",
+          "vec": "i(va_nsg_dis_d)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "nsg_sh1",
+          "kind": "M",
+          "vec": "i(va_nsg_sh1_d)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "nsg_porm",
+          "kind": "M",
+          "vec": "i(va_nsg_porm_d)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "vsg_aota",
+          "kind": "V",
+          "vec": "i(vsg_aota)",
+          "sign": -1.0,
+          "C": null,
+          "R": null,
+          "far": "sg_oo"
+        },
+        {
+          "element": "cpar_sg_vm",
+          "kind": "C",
+          "vec": "i(va_cpar_sg_vm_p)",
+          "sign": 1.0,
+          "C": 5e-14,
+          "R": null,
+          "far": "0"
+        }
+      ],
+      "sg_vmd": [
+        {
+          "element": "nsg_dis",
+          "kind": "M",
+          "vec": "i(va_nsg_dis_s)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "rsg_rdis",
+          "kind": "R",
+          "vec": "i(va_rsg_rdis_p)",
+          "sign": 1.0,
+          "C": null,
+          "R": 75000.0,
+          "far": "vrest"
+        },
+        {
+          "element": "cpar_sg_vmd",
+          "kind": "C",
+          "vec": "i(va_cpar_sg_vmd_p)",
+          "sign": 1.0,
+          "C": 5e-14,
+          "R": null,
+          "far": "0"
+        }
+      ],
+      "sg_vms": [
+        {
+          "element": "nsg_sh1",
+          "kind": "M",
+          "vec": "i(va_nsg_sh1_s)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "nsg_sh2",
+          "kind": "M",
+          "vec": "i(va_nsg_sh2_d)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "cpar_sg_vms",
+          "kind": "C",
+          "vec": "i(va_cpar_sg_vms_p)",
+          "sign": 1.0,
+          "C": 5e-14,
+          "R": null,
+          "far": "0"
+        }
+      ],
+      "tc_vm": [
+        {
+          "element": "ctc_cm",
+          "kind": "C",
+          "vec": "i(va_ctc_cm_p)",
+          "sign": 1.0,
+          "C": 1.5e-06,
+          "R": null,
+          "far": "0"
+        },
+        {
+          "element": "rtc_rm",
+          "kind": "R",
+          "vec": "i(va_rtc_rm_p)",
+          "sign": 1.0,
+          "C": null,
+          "R": 1000000.0,
+          "far": "vrest"
+        },
+        {
+          "element": "ntc_km1",
+          "kind": "M",
+          "vec": "i(va_ntc_km1_g)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "ntc_dis",
+          "kind": "M",
+          "vec": "i(va_ntc_dis_d)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "ntc_sh1",
+          "kind": "M",
+          "vec": "i(va_ntc_sh1_d)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "ntc_porm",
+          "kind": "M",
+          "vec": "i(va_ntc_porm_d)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "vtc_arel",
+          "kind": "V",
+          "vec": "i(vtc_arel)",
+          "sign": -1.0,
+          "C": null,
+          "R": null,
+          "far": "tc_oo"
+        },
+        {
+          "element": "cpar_tc_vm",
+          "kind": "C",
+          "vec": "i(va_cpar_tc_vm_p)",
+          "sign": 1.0,
+          "C": 5e-14,
+          "R": null,
+          "far": "0"
+        }
+      ],
+      "tc_vmd": [
+        {
+          "element": "ntc_dis",
+          "kind": "M",
+          "vec": "i(va_ntc_dis_s)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "rtc_rdis",
+          "kind": "R",
+          "vec": "i(va_rtc_rdis_p)",
+          "sign": 1.0,
+          "C": null,
+          "R": 12000.0,
+          "far": "vrest"
+        },
+        {
+          "element": "cpar_tc_vmd",
+          "kind": "C",
+          "vec": "i(va_cpar_tc_vmd_p)",
+          "sign": 1.0,
+          "C": 5e-14,
+          "R": null,
+          "far": "0"
+        }
+      ],
+      "tc_vms": [
+        {
+          "element": "ntc_sh1",
+          "kind": "M",
+          "vec": "i(va_ntc_sh1_s)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "ntc_sh2",
+          "kind": "M",
+          "vec": "i(va_ntc_sh2_d)",
+          "sign": 1.0,
+          "C": null,
+          "R": null,
+          "far": null
+        },
+        {
+          "element": "cpar_tc_vms",
+          "kind": "C",
+          "vec": "i(va_cpar_tc_vms_p)",
+          "sign": 1.0,
+          "C": 5e-14,
+          "R": null,
+          "far": "0"
+        }
+      ]
+    },
+    "probes": {}
+  },
+  "diagnostic_reference_plan": null,
+  "checks": {
+    "no_duplicate_names": true,
+    "no_floating_nodes_in_topology_graph": true,
+    "geometry_within_card": true,
+    "saved_vectors_exist": true,
+    "required_vectors_saved": true,
+    "one_analysis_and_command_mutants": true
+  },
+  "source_anchor_policy": "Original scoring view retained separately; do not feed added por_hold into support scoring",
+  "dynamic_model_domain": "UNMEASURED",
+  "physical_function": "UNMEASURED",
+  "solver_starts": 0
+}

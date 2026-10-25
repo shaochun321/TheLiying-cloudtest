@@ -1,0 +1,16 @@
+{
+  "status": "PREPARED_UNQUALIFIED",
+  "numerical_script_normal_runs": 1,
+  "numerical_script_corrections": 0,
+  "static_initial_attempt": "ERROR: tuple/list container comparison in checker; candidate unchanged",
+  "static_checker_corrections": 1,
+  "static_corrected_attempt": "PASS",
+  "initial_empty_output_directory": "CANDIDATE_SOURCE/generated",
+  "accepted_output_directory": "CANDIDATE_SOURCE/generated-verified",
+  "new_solver_starts": 0,
+  "count_before": "54/84",
+  "count_after": "54/84",
+  "no_op_dc_tran_executed": true,
+  "no_old_STOPPED_continuation": true,
+  "no_formal_matrix_started": true
+}

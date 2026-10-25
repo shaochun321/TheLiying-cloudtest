@@ -1,0 +1,62 @@
+{
+  "result": "PASS",
+  "scope": "Algorithm validation only; no circuit qualification",
+  "passive_RC_refinements": [
+    {
+      "intervals": 40,
+      "max_step_s": 0.023425437534141613,
+      "error_J": 1.3519399240708733e-10
+    },
+    {
+      "intervals": 80,
+      "max_step_s": 0.011731382912844368,
+      "error_J": 3.380047037396696e-11
+    },
+    {
+      "intervals": 160,
+      "max_step_s": 0.005870348651308199,
+      "error_J": 8.450241795693037e-12
+    },
+    {
+      "intervals": 320,
+      "max_step_s": 0.002936337527096433,
+      "error_J": 2.1125683236496034e-12
+    }
+  ],
+  "error_reduction_ratios": [
+    3.9997665982546033,
+    3.9999412077408913,
+    3.9999850897577964
+  ],
+  "independent_BDF_checks": [
+    {
+      "order": 1,
+      "independent_weight_max_error": 1.3322676295501878e-15,
+      "result": "PASS"
+    },
+    {
+      "order": 2,
+      "independent_weight_max_error": 2.220446049250313e-15,
+      "result": "PASS"
+    }
+  ],
+  "non_ground_positive": {
+    "E_trap_J": -6.961902665915382e-08,
+    "delta_E_J": -6.961691409083017e-08,
+    "signed_mismatch_J": -2.1125683236496034e-12,
+    "Q_trap_C": -9.81694913227181e-08,
+    "C_delta_v_C": -9.816843611112657e-08,
+    "original_limit_J": 6.961902665915383e-10,
+    "original_cap_gate_pass": true,
+    "A_charge_consistency_J": -6.864266061331913e-13,
+    "B_product_quadrature_J": -1.4261417175087854e-12,
+    "decomposition_roundoff_J": -7.626782962323643e-24,
+    "max_interval_identity_error_J": 9.119333038550765e-24
+  },
+  "rejected_mutants": {
+    "current_sign_reversed": 1.39235940749984e-07,
+    "current_unit_A_vs_mA": -6.954940974506299e-05,
+    "wrong_capacitance": 6.961480152250653e-08,
+    "non_ground_far_voltage_omitted": -1.667764967704513e-08
+  }
+}

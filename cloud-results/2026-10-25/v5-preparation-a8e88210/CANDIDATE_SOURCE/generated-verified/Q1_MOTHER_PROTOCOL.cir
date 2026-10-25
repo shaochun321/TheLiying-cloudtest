@@ -1,0 +1,545 @@
+* THERMAL-G3-v5 static preview Q1_MOTHER_PROTOCOL
+.include ../software/models/c05_ekv26_typ.lib
+vsrc vsrc 0 PWL(0 0 0.02 3.0)
+rint vsrc vdd 10
+cdec vdd 0 1e-05
+va_rvrestt_n vrest rvrestt_n 0
+rvrestt vdd rvrestt_n 1000
+va_rvrestb_p vrest rvrestb_p 0
+rvrestb rvrestb_p 0 500
+va_cvrestc_p vrest cvrestc_p 0
+cvrestc cvrestc_p 0 1e-05
+rvthet vdd vthe 2000
+rvtheb vthe 0 1800
+cvthec vthe 0 1e-05
+rvthrt vdd vthr 2400
+rvthrb vthr 0 1500
+cvthrc vthr 0 1e-05
+rvmidt vdd vmid 2000
+rvmidb vmid 0 2000
+cvmidc vmid 0 1e-05
+va_rporr_n porc rporr_n 0
+rporr vdd rporr_n 2.2e+06
+va_cporc_p porc cporc_p 0
+cporc cporc_p 0 1e-06
+va_rporra_p porc rporra_p 0
+rporra rporra_p porx 1e+06
+va_rporrf_p por_ok rporrf_p 0
+rporrf rporrf_p porx 4e+06
+va_npori1p_d por_hold npori1p_d 0
+va_npori1p_g porx npori1p_g 0
+npori1p npori1p_d npori1p_g vdd vsrc pch W=2.4e-06 L=5e-07
+va_npori1n_d por_hold npori1n_d 0
+va_npori1n_g porx npori1n_g 0
+npori1n npori1n_d npori1n_g 0 0 nch W=1.2e-06 L=5e-07
+va_npori2p_d por_ok npori2p_d 0
+va_npori2p_g por_hold npori2p_g 0
+npori2p npori2p_d npori2p_g vdd vsrc pch W=2.4e-06 L=5e-07
+va_npori2n_d por_ok npori2n_d 0
+va_npori2n_g por_hold npori2n_g 0
+npori2n npori2n_d npori2n_g 0 0 nch W=1.2e-06 L=5e-07
+va_riref_n iref_n riref_n 0
+riref vdd riref_n 2.2e+06
+va_nirefd_d iref_n nirefd_d 0
+va_nirefd_g iref_n nirefd_g 0
+va_nirefd_s 0 nirefd_s 0
+va_nirefd_b 0 nirefd_b 0
+nirefd nirefd_d nirefd_g nirefd_s nirefd_b nch W=4e-06 L=4e-06
+ristep vdd istep_n 5.6e+07
+nistepd istep_n istep_n 0 0 nch W=4e-06 L=4e-06
+va_nirefm_d irefp_n nirefm_d 0
+va_nirefm_g iref_n nirefm_g 0
+va_nirefm_s 0 nirefm_s 0
+va_nirefm_b 0 nirefm_b 0
+nirefm nirefm_d nirefm_g nirefm_s nirefm_b nch W=4e-06 L=4e-06
+va_nirefpd_d irefp_n nirefpd_d 0
+va_nirefpd_g irefp_n nirefpd_g 0
+va_nirefpd_s vdd nirefpd_s 0
+va_nirefpd_b vsrc nirefpd_b 0
+nirefpd nirefpd_d nirefpd_g nirefpd_s nirefpd_b pch W=4e-06 L=4e-06
+va_rilim_n ilim_n rilim_n 0
+rilim vdd rilim_n 1.85e+06
+va_nilimd_d ilim_n nilimd_d 0
+va_nilimd_g ilim_n nilimd_g 0
+va_nilimd_s 0 nilimd_s 0
+va_nilimd_b 0 nilimd_b 0
+nilimd nilimd_d nilimd_g nilimd_s nilimd_b nch W=4e-06 L=4e-06
+va_nilimm_d ilimp_n nilimm_d 0
+va_nilimm_g ilim_n nilimm_g 0
+va_nilimm_s 0 nilimm_s 0
+va_nilimm_b 0 nilimm_b 0
+nilimm nilimm_d nilimm_g nilimm_s nilimm_b nch W=4e-06 L=4e-06
+va_nilimpd_d ilimp_n nilimpd_d 0
+va_nilimpd_g ilimp_n nilimpd_g 0
+va_nilimpd_s vdd nilimpd_s 0
+va_nilimpd_b vsrc nilimpd_b 0
+nilimpd nilimpd_d nilimpd_g nilimpd_s nilimpd_b pch W=4e-06 L=4e-06
+va_cg0_cm_p g0_vm cg0_cm_p 0
+cg0_cm cg0_cm_p 0 1e-07
+va_rg0_rm_p g0_vm rg0_rm_p 0
+rg0_rm rg0_rm_p vrest 1e+06
+rg0_kb vdd g0_knb 1e+06
+ng0_kmb g0_knb g0_knb 0 0 nch W=4e-06 L=4e-06
+ng0_kmt g0_ktail g0_knb 0 0 nch W=4e-06 L=4e-06
+va_ng0_km1_g g0_vm ng0_km1_g 0
+ng0_km1 g0_kd1 ng0_km1_g g0_ktail 0 nch W=4e-06 L=4e-06
+ng0_km2 g0_ko1 g0_h g0_ktail 0 nch W=4e-06 L=4e-06
+ng0_km3 g0_kd1 g0_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ng0_km4 g0_ko1 g0_kd1 vdd vsrc pch W=4e-06 L=4e-06
+va_ng0_kporclamp_d g0_ko1 ng0_kporclamp_d 0
+va_ng0_kporclamp_g por_hold ng0_kporclamp_g 0
+va_ng0_kporclamp_s 0 ng0_kporclamp_s 0
+va_ng0_kporclamp_b 0 ng0_kporclamp_b 0
+ng0_kporclamp ng0_kporclamp_d ng0_kporclamp_g ng0_kporclamp_s ng0_kporclamp_b nch W=4e-06 L=1e-06
+ng0_ki1p g0_qb g0_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+ng0_ki1n g0_qb g0_ko1 0 0 nch W=1.2e-06 L=5e-07
+ng0_ki2p g0_q g0_qb vdd vsrc pch W=2.4e-06 L=5e-07
+ng0_ki2n g0_q g0_qb 0 0 nch W=1.2e-06 L=5e-07
+rg0_hra g0_h vthe 1e+06
+rg0_hrf g0_h g0_qb 1.9e+07
+cg0_hc g0_h 0 2.1e-09
+va_ng0_dis_d g0_vm ng0_dis_d 0
+va_ng0_dis_s g0_vmd ng0_dis_s 0
+ng0_dis ng0_dis_d g0_q ng0_dis_s 0 nch W=4e-06 L=1e-06
+va_rg0_rdis_p g0_vmd rg0_rdis_p 0
+rg0_rdis rg0_rdis_p vrest 220000
+ng0_rp g0_rt g0_qb vdd vsrc pch W=2e-06 L=1e-06
+rg0_rrc g0_rt g0_rec 10000
+cg0_rc g0_rec 0 1e-07
+rg0_rr g0_rec 0 8.2e+06
+va_ng0_sh1_d g0_vm ng0_sh1_d 0
+va_ng0_sh1_s g0_vms ng0_sh1_s 0
+ng0_sh1 ng0_sh1_d g0_rec ng0_sh1_s 0 nch W=2e-06 L=1e-06
+va_ng0_sh2_d g0_vms ng0_sh2_d 0
+va_ng0_sh2_s vrest ng0_sh2_s 0
+ng0_sh2 ng0_sh2_d g0_qb ng0_sh2_s 0 nch W=2e-06 L=1e-06
+va_ng0_porh_g por_hold ng0_porh_g 0
+ng0_porh g0_h ng0_porh_g vthe 0 nch W=2e-06 L=1e-06
+va_ng0_porm_d g0_vm ng0_porm_d 0
+va_ng0_porm_g por_hold ng0_porm_g 0
+va_ng0_porm_s vrest ng0_porm_s 0
+ng0_porm ng0_porm_d ng0_porm_g ng0_porm_s 0 nch W=2e-06 L=1e-06
+vg0_gweak g0_gweak 0 PWL(0 3 10.54 3 10.541 0 11.09 0 11.091 3)
+va_ng0_iweak_refn_d g0_iweak_local_p ng0_iweak_refn_d 0
+va_ng0_iweak_refn_g iref_n ng0_iweak_refn_g 0
+va_ng0_iweak_refn_s 0 ng0_iweak_refn_s 0
+va_ng0_iweak_refn_b 0 ng0_iweak_refn_b 0
+ng0_iweak_refn ng0_iweak_refn_d ng0_iweak_refn_g ng0_iweak_refn_s ng0_iweak_refn_b nch W=4e-06 L=4e-06
+va_ng0_iweak_refp_d g0_iweak_local_p ng0_iweak_refp_d 0
+va_ng0_iweak_refp_g g0_iweak_local_p ng0_iweak_refp_g 0
+va_ng0_iweak_refp_s vdd ng0_iweak_refp_s 0
+va_ng0_iweak_refp_b vsrc ng0_iweak_refp_b 0
+ng0_iweak_refp ng0_iweak_refp_d ng0_iweak_refp_g ng0_iweak_refp_s ng0_iweak_refp_b pch W=4e-06 L=4e-06
+va_ng0_iweak_eni_p_d g0_iweak_ena ng0_iweak_eni_p_d 0
+va_ng0_iweak_eni_p_g g0_gweak ng0_iweak_eni_p_g 0
+va_ng0_iweak_eni_p_s vdd ng0_iweak_eni_p_s 0
+va_ng0_iweak_eni_p_b vsrc ng0_iweak_eni_p_b 0
+ng0_iweak_eni_p ng0_iweak_eni_p_d ng0_iweak_eni_p_g ng0_iweak_eni_p_s ng0_iweak_eni_p_b pch W=2.4e-06 L=5e-07
+va_ng0_iweak_eni_n_d g0_iweak_ena ng0_iweak_eni_n_d 0
+va_ng0_iweak_eni_n_g g0_gweak ng0_iweak_eni_n_g 0
+va_ng0_iweak_eni_n_s 0 ng0_iweak_eni_n_s 0
+va_ng0_iweak_eni_n_b 0 ng0_iweak_eni_n_b 0
+ng0_iweak_eni_n ng0_iweak_eni_n_d ng0_iweak_eni_n_g ng0_iweak_eni_n_s ng0_iweak_eni_n_b nch W=1.2e-06 L=5e-07
+va_ng0_iweak_cp_d g0_oweak ng0_iweak_cp_d 0
+va_ng0_iweak_cp_g g0_iweak_cg ng0_iweak_cp_g 0
+va_ng0_iweak_cp_s vdd ng0_iweak_cp_s 0
+va_ng0_iweak_cp_b vsrc ng0_iweak_cp_b 0
+ng0_iweak_cp ng0_iweak_cp_d ng0_iweak_cp_g ng0_iweak_cp_s ng0_iweak_cp_b pch W=1.2e-06 L=4e-06
+va_ng0_iweak_bias_d g0_iweak_local_p ng0_iweak_bias_d 0
+va_ng0_iweak_bias_g g0_gweak ng0_iweak_bias_g 0
+va_ng0_iweak_bias_s g0_iweak_cg ng0_iweak_bias_s 0
+va_ng0_iweak_bias_b vsrc ng0_iweak_bias_b 0
+ng0_iweak_bias ng0_iweak_bias_d ng0_iweak_bias_g ng0_iweak_bias_s ng0_iweak_bias_b pch W=1.2e-06 L=1e-06
+va_ng0_iweak_off_d g0_iweak_cg ng0_iweak_off_d 0
+va_ng0_iweak_off_g g0_iweak_ena ng0_iweak_off_g 0
+va_ng0_iweak_off_s vdd ng0_iweak_off_s 0
+va_ng0_iweak_off_b vsrc ng0_iweak_off_b 0
+ng0_iweak_off ng0_iweak_off_d ng0_iweak_off_g ng0_iweak_off_s ng0_iweak_off_b pch W=2.4e-06 L=1e-06
+vg0_aweak g0_oweak g0_vm DC 0
+vg0_gvalid g0_gvalid 0 PWL(0 3 13.49 3 13.491 0 13.65 0 13.651 3 19.6 3 19.601 0 19.76 0 19.761 3)
+va_ng0_ivalid_refn_d g0_ivalid_local_p ng0_ivalid_refn_d 0
+va_ng0_ivalid_refn_g iref_n ng0_ivalid_refn_g 0
+va_ng0_ivalid_refn_s 0 ng0_ivalid_refn_s 0
+va_ng0_ivalid_refn_b 0 ng0_ivalid_refn_b 0
+ng0_ivalid_refn ng0_ivalid_refn_d ng0_ivalid_refn_g ng0_ivalid_refn_s ng0_ivalid_refn_b nch W=4e-06 L=4e-06
+va_ng0_ivalid_refp_d g0_ivalid_local_p ng0_ivalid_refp_d 0
+va_ng0_ivalid_refp_g g0_ivalid_local_p ng0_ivalid_refp_g 0
+va_ng0_ivalid_refp_s vdd ng0_ivalid_refp_s 0
+va_ng0_ivalid_refp_b vsrc ng0_ivalid_refp_b 0
+ng0_ivalid_refp ng0_ivalid_refp_d ng0_ivalid_refp_g ng0_ivalid_refp_s ng0_ivalid_refp_b pch W=4e-06 L=4e-06
+va_ng0_ivalid_eni_p_d g0_ivalid_ena ng0_ivalid_eni_p_d 0
+va_ng0_ivalid_eni_p_g g0_gvalid ng0_ivalid_eni_p_g 0
+va_ng0_ivalid_eni_p_s vdd ng0_ivalid_eni_p_s 0
+va_ng0_ivalid_eni_p_b vsrc ng0_ivalid_eni_p_b 0
+ng0_ivalid_eni_p ng0_ivalid_eni_p_d ng0_ivalid_eni_p_g ng0_ivalid_eni_p_s ng0_ivalid_eni_p_b pch W=2.4e-06 L=5e-07
+va_ng0_ivalid_eni_n_d g0_ivalid_ena ng0_ivalid_eni_n_d 0
+va_ng0_ivalid_eni_n_g g0_gvalid ng0_ivalid_eni_n_g 0
+va_ng0_ivalid_eni_n_s 0 ng0_ivalid_eni_n_s 0
+va_ng0_ivalid_eni_n_b 0 ng0_ivalid_eni_n_b 0
+ng0_ivalid_eni_n ng0_ivalid_eni_n_d ng0_ivalid_eni_n_g ng0_ivalid_eni_n_s ng0_ivalid_eni_n_b nch W=1.2e-06 L=5e-07
+va_ng0_ivalid_cp_d g0_ovalid ng0_ivalid_cp_d 0
+va_ng0_ivalid_cp_g g0_ivalid_cg ng0_ivalid_cp_g 0
+va_ng0_ivalid_cp_s vdd ng0_ivalid_cp_s 0
+va_ng0_ivalid_cp_b vsrc ng0_ivalid_cp_b 0
+ng0_ivalid_cp ng0_ivalid_cp_d ng0_ivalid_cp_g ng0_ivalid_cp_s ng0_ivalid_cp_b pch W=4e-06 L=4e-06
+va_ng0_ivalid_bias_d g0_ivalid_local_p ng0_ivalid_bias_d 0
+va_ng0_ivalid_bias_g g0_gvalid ng0_ivalid_bias_g 0
+va_ng0_ivalid_bias_s g0_ivalid_cg ng0_ivalid_bias_s 0
+va_ng0_ivalid_bias_b vsrc ng0_ivalid_bias_b 0
+ng0_ivalid_bias ng0_ivalid_bias_d ng0_ivalid_bias_g ng0_ivalid_bias_s ng0_ivalid_bias_b pch W=1.2e-06 L=1e-06
+va_ng0_ivalid_off_d g0_ivalid_cg ng0_ivalid_off_d 0
+va_ng0_ivalid_off_g g0_ivalid_ena ng0_ivalid_off_g 0
+va_ng0_ivalid_off_s vdd ng0_ivalid_off_s 0
+va_ng0_ivalid_off_b vsrc ng0_ivalid_off_b 0
+ng0_ivalid_off ng0_ivalid_off_d ng0_ivalid_off_g ng0_ivalid_off_s ng0_ivalid_off_b pch W=2.4e-06 L=1e-06
+vg0_avalid g0_ovalid g0_vm DC 0
+vg0_gmax g0_gmax 0 PWL(0 3 16.05 3 16.051 0 17.2 0 17.201 3)
+va_ng0_imax_refn_d g0_imax_local_p ng0_imax_refn_d 0
+va_ng0_imax_refn_g ilim_n ng0_imax_refn_g 0
+va_ng0_imax_refn_s 0 ng0_imax_refn_s 0
+va_ng0_imax_refn_b 0 ng0_imax_refn_b 0
+ng0_imax_refn ng0_imax_refn_d ng0_imax_refn_g ng0_imax_refn_s ng0_imax_refn_b nch W=4e-06 L=4e-06
+va_ng0_imax_refp_d g0_imax_local_p ng0_imax_refp_d 0
+va_ng0_imax_refp_g g0_imax_local_p ng0_imax_refp_g 0
+va_ng0_imax_refp_s vdd ng0_imax_refp_s 0
+va_ng0_imax_refp_b vsrc ng0_imax_refp_b 0
+ng0_imax_refp ng0_imax_refp_d ng0_imax_refp_g ng0_imax_refp_s ng0_imax_refp_b pch W=4e-06 L=4e-06
+va_ng0_imax_eni_p_d g0_imax_ena ng0_imax_eni_p_d 0
+va_ng0_imax_eni_p_g g0_gmax ng0_imax_eni_p_g 0
+va_ng0_imax_eni_p_s vdd ng0_imax_eni_p_s 0
+va_ng0_imax_eni_p_b vsrc ng0_imax_eni_p_b 0
+ng0_imax_eni_p ng0_imax_eni_p_d ng0_imax_eni_p_g ng0_imax_eni_p_s ng0_imax_eni_p_b pch W=2.4e-06 L=5e-07
+va_ng0_imax_eni_n_d g0_imax_ena ng0_imax_eni_n_d 0
+va_ng0_imax_eni_n_g g0_gmax ng0_imax_eni_n_g 0
+va_ng0_imax_eni_n_s 0 ng0_imax_eni_n_s 0
+va_ng0_imax_eni_n_b 0 ng0_imax_eni_n_b 0
+ng0_imax_eni_n ng0_imax_eni_n_d ng0_imax_eni_n_g ng0_imax_eni_n_s ng0_imax_eni_n_b nch W=1.2e-06 L=5e-07
+va_ng0_imax_cp_d g0_omax ng0_imax_cp_d 0
+va_ng0_imax_cp_g g0_imax_cg ng0_imax_cp_g 0
+va_ng0_imax_cp_s vdd ng0_imax_cp_s 0
+va_ng0_imax_cp_b vsrc ng0_imax_cp_b 0
+ng0_imax_cp ng0_imax_cp_d ng0_imax_cp_g ng0_imax_cp_s ng0_imax_cp_b pch W=4e-06 L=4e-06
+va_ng0_imax_bias_d g0_imax_local_p ng0_imax_bias_d 0
+va_ng0_imax_bias_g g0_gmax ng0_imax_bias_g 0
+va_ng0_imax_bias_s g0_imax_cg ng0_imax_bias_s 0
+va_ng0_imax_bias_b vsrc ng0_imax_bias_b 0
+ng0_imax_bias ng0_imax_bias_d ng0_imax_bias_g ng0_imax_bias_s ng0_imax_bias_b pch W=1.2e-06 L=1e-06
+va_ng0_imax_off_d g0_imax_cg ng0_imax_off_d 0
+va_ng0_imax_off_g g0_imax_ena ng0_imax_off_g 0
+va_ng0_imax_off_s vdd ng0_imax_off_s 0
+va_ng0_imax_off_b vsrc ng0_imax_off_b 0
+ng0_imax_off ng0_imax_off_d ng0_imax_off_g ng0_imax_off_s ng0_imax_off_b pch W=2.4e-06 L=1e-06
+vg0_amax g0_omax g0_vm DC 0
+ng0_op_tsw g0_op_tt g0_qb vdd vsrc pch W=2e-06 L=1e-06
+rg0_op_trc g0_op_tt g0_op_at 10000
+cg0_op_tc g0_op_at 0 1e-07
+rg0_op_trl g0_op_at 0 2.2e+07
+ng0_op_sh1p g0_op_an g0_op_at vdd vsrc pch W=2.4e-06 L=5e-07
+ng0_op_sh1n g0_op_an g0_op_at 0 0 nch W=1.2e-06 L=5e-07
+ng0_op_sh2p g0_op_aq g0_op_an vdd vsrc pch W=2.4e-06 L=5e-07
+ng0_op_sh2n g0_op_aq g0_op_an 0 0 nch W=1.2e-06 L=5e-07
+ng0_op_abp g0_op_aqb g0_op_aq vdd vsrc pch W=2.4e-06 L=5e-07
+ng0_op_abn g0_op_aqb g0_op_aq 0 0 nch W=1.2e-06 L=5e-07
+rg0_op_dr g0_op_aq g0_op_ad 1e+06
+cg0_op_dc g0_op_ad 0 3.3e-07
+ng0_op_d2p g0_op_adn g0_op_ad vdd vsrc pch W=2.4e-06 L=5e-07
+ng0_op_d2n g0_op_adn g0_op_ad 0 0 nch W=1.2e-06 L=5e-07
+ng0_op_gpa g0_op_pb g0_op_aq vdd vsrc pch W=2.4e-06 L=5e-07
+ng0_op_gpb g0_op_pb g0_op_adn vdd vsrc pch W=2.4e-06 L=5e-07
+ng0_op_gna g0_op_pb g0_op_aq g0_op_gx 0 nch W=2.4e-06 L=5e-07
+ng0_op_gnb g0_op_gx g0_op_adn 0 0 nch W=2.4e-06 L=5e-07
+ng0_op_op g0_op_p g0_op_pb vdd vsrc pch W=2.4e-06 L=5e-07
+ng0_op_on g0_op_p g0_op_pb 0 0 nch W=1.2e-06 L=5e-07
+ng0_ld_hsw vdd g0_qb vdd vsrc pch W=4e-06 L=5e-07
+ng0_ld_mp0 0 g0_op_aq 0 0 nch W=4e-06 L=1e-06
+ng0_ld_mp1 0 g0_op_aq 0 0 nch W=4e-06 L=1e-06
+ng0_ld_inj vdd g0_op_aqb vdd vsrc pch W=4e-06 L=1e-06
+va_csg_cm_p sg_vm csg_cm_p 0
+csg_cm csg_cm_p 0 1e-07
+va_rsg_rm_p sg_vm rsg_rm_p 0
+rsg_rm rsg_rm_p vrest 1e+06
+rsg_kb vdd sg_knb 1e+06
+nsg_kmb sg_knb sg_knb 0 0 nch W=4e-06 L=4e-06
+nsg_kmt sg_ktail sg_knb 0 0 nch W=4e-06 L=4e-06
+va_nsg_km1_g sg_vm nsg_km1_g 0
+nsg_km1 sg_kd1 nsg_km1_g sg_ktail 0 nch W=4e-06 L=4e-06
+nsg_km2 sg_ko1 sg_h sg_ktail 0 nch W=4e-06 L=4e-06
+nsg_km3 sg_kd1 sg_kd1 vdd vsrc pch W=4e-06 L=4e-06
+nsg_km4 sg_ko1 sg_kd1 vdd vsrc pch W=4e-06 L=4e-06
+va_nsg_kporclamp_d sg_ko1 nsg_kporclamp_d 0
+va_nsg_kporclamp_g por_hold nsg_kporclamp_g 0
+va_nsg_kporclamp_s 0 nsg_kporclamp_s 0
+va_nsg_kporclamp_b 0 nsg_kporclamp_b 0
+nsg_kporclamp nsg_kporclamp_d nsg_kporclamp_g nsg_kporclamp_s nsg_kporclamp_b nch W=4e-06 L=1e-06
+nsg_ki1p sg_qb sg_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+nsg_ki1n sg_qb sg_ko1 0 0 nch W=1.2e-06 L=5e-07
+nsg_ki2p sg_q sg_qb vdd vsrc pch W=2.4e-06 L=5e-07
+nsg_ki2n sg_q sg_qb 0 0 nch W=1.2e-06 L=5e-07
+rsg_hra sg_h vthr 1e+06
+rsg_hrf sg_h sg_qb 1.9e+07
+csg_hc sg_h 0 2.1e-09
+va_nsg_dis_d sg_vm nsg_dis_d 0
+va_nsg_dis_s sg_vmd nsg_dis_s 0
+nsg_dis nsg_dis_d sg_q nsg_dis_s 0 nch W=4e-06 L=1e-06
+va_rsg_rdis_p sg_vmd rsg_rdis_p 0
+rsg_rdis rsg_rdis_p vrest 75000
+nsg_rp sg_rt sg_qb vdd vsrc pch W=2e-06 L=1e-06
+rsg_rrc sg_rt sg_rec 10000
+csg_rc sg_rec 0 1e-07
+rsg_rr sg_rec 0 8.2e+06
+va_nsg_sh1_d sg_vm nsg_sh1_d 0
+va_nsg_sh1_s sg_vms nsg_sh1_s 0
+nsg_sh1 nsg_sh1_d sg_rec nsg_sh1_s 0 nch W=2e-06 L=1e-06
+va_nsg_sh2_d sg_vms nsg_sh2_d 0
+va_nsg_sh2_s vrest nsg_sh2_s 0
+nsg_sh2 nsg_sh2_d sg_qb nsg_sh2_s 0 nch W=2e-06 L=1e-06
+va_nsg_porh_g por_hold nsg_porh_g 0
+nsg_porh sg_h nsg_porh_g vthr 0 nch W=2e-06 L=1e-06
+va_nsg_porm_d sg_vm nsg_porm_d 0
+va_nsg_porm_g por_hold nsg_porm_g 0
+va_nsg_porm_s vrest nsg_porm_s 0
+nsg_porm nsg_porm_d nsg_porm_g nsg_porm_s 0 nch W=2e-06 L=1e-06
+vsg_sp sg_sp 0 PWL(0 1.48361 22.16 1.48361 22.161 1.61003 22.71 1.61003 22.711 1.48361 25.12 1.48361 25.121 1.8123 25.32 1.8123 25.321 1.48361 27.73 1.48361 27.731 1.78361 28.91 1.78361 28.911 1.48361 31.32 1.48361 31.321 1.8123 31.52 1.8123 31.521 1.48361)
+vsg_sn sg_sn 0 PWL(0 1.48361 22.16 1.48361 22.161 1.63531 22.71 1.63531 22.711 1.48361 25.12 1.48361 25.121 1.77184 25.32 1.77184 25.321 1.48361 27.73 1.48361 27.731 1.18361 28.91 1.18361 28.911 1.48361 31.32 1.48361 31.321 1.77184 31.52 1.77184 31.521 1.48361)
+rsg_ota_b vdd sg_ota_nb 3.3e+06
+nsg_ota_mb sg_ota_nb sg_ota_nb 0 0 nch W=4e-06 L=4e-06
+nsg_ota_mt sg_ota_tail sg_ota_nb 0 0 nch W=4e-06 L=4e-06
+nsg_ota_m1 sg_ota_d1 sg_sp sg_ota_tail 0 nch W=1e-05 L=2e-06
+nsg_ota_m2 sg_oo sg_sn sg_ota_tail 0 nch W=1e-05 L=2e-06
+nsg_ota_m3 sg_ota_d1 sg_ota_d1 vdd vsrc pch W=1e-05 L=2e-06
+nsg_ota_m4 sg_oo sg_ota_d1 vdd vsrc pch W=1e-05 L=2e-06
+vsg_aota sg_oo sg_vm DC 0
+nsg_op_tsw sg_op_tt sg_qb vdd vsrc pch W=2e-06 L=1e-06
+rsg_op_trc sg_op_tt sg_op_at 10000
+csg_op_tc sg_op_at 0 1e-07
+rsg_op_trl sg_op_at 0 2.2e+07
+nsg_op_sh1p sg_op_an sg_op_at vdd vsrc pch W=2.4e-06 L=5e-07
+nsg_op_sh1n sg_op_an sg_op_at 0 0 nch W=1.2e-06 L=5e-07
+nsg_op_sh2p sg_op_aq sg_op_an vdd vsrc pch W=2.4e-06 L=5e-07
+nsg_op_sh2n sg_op_aq sg_op_an 0 0 nch W=1.2e-06 L=5e-07
+nsg_op_abp sg_op_aqb sg_op_aq vdd vsrc pch W=2.4e-06 L=5e-07
+nsg_op_abn sg_op_aqb sg_op_aq 0 0 nch W=1.2e-06 L=5e-07
+rsg_op_dr sg_op_aq sg_op_ad 1e+06
+csg_op_dc sg_op_ad 0 3.3e-07
+nsg_op_d2p sg_op_adn sg_op_ad vdd vsrc pch W=2.4e-06 L=5e-07
+nsg_op_d2n sg_op_adn sg_op_ad 0 0 nch W=1.2e-06 L=5e-07
+nsg_op_gpa sg_op_pb sg_op_aq vdd vsrc pch W=2.4e-06 L=5e-07
+nsg_op_gpb sg_op_pb sg_op_adn vdd vsrc pch W=2.4e-06 L=5e-07
+nsg_op_gna sg_op_pb sg_op_aq sg_op_gx 0 nch W=2.4e-06 L=5e-07
+nsg_op_gnb sg_op_gx sg_op_adn 0 0 nch W=2.4e-06 L=5e-07
+nsg_op_op sg_op_p sg_op_pb vdd vsrc pch W=2.4e-06 L=5e-07
+nsg_op_on sg_op_p sg_op_pb 0 0 nch W=1.2e-06 L=5e-07
+nsg_ld_hsw0 vdd sg_op_aqb vdd vsrc pch W=4e-06 L=5e-07
+nsg_ld_hsw1 vdd sg_op_aqb vdd vsrc pch W=4e-06 L=5e-07
+va_ctc_cm_p tc_vm ctc_cm_p 0
+ctc_cm ctc_cm_p 0 1.5e-06
+va_rtc_rm_p tc_vm rtc_rm_p 0
+rtc_rm rtc_rm_p vrest 1e+06
+rtc_kb vdd tc_knb 1e+06
+ntc_kmb tc_knb tc_knb 0 0 nch W=4e-06 L=4e-06
+ntc_kmt tc_ktail tc_knb 0 0 nch W=4e-06 L=4e-06
+va_ntc_km1_g tc_vm ntc_km1_g 0
+ntc_km1 tc_kd1 ntc_km1_g tc_ktail 0 nch W=4e-06 L=4e-06
+ntc_km2 tc_ko1 tc_h tc_ktail 0 nch W=4e-06 L=4e-06
+ntc_km3 tc_kd1 tc_kd1 vdd vsrc pch W=4e-06 L=4e-06
+ntc_km4 tc_ko1 tc_kd1 vdd vsrc pch W=4e-06 L=4e-06
+va_ntc_kporclamp_d tc_ko1 ntc_kporclamp_d 0
+va_ntc_kporclamp_g por_hold ntc_kporclamp_g 0
+va_ntc_kporclamp_s 0 ntc_kporclamp_s 0
+va_ntc_kporclamp_b 0 ntc_kporclamp_b 0
+ntc_kporclamp ntc_kporclamp_d ntc_kporclamp_g ntc_kporclamp_s ntc_kporclamp_b nch W=4e-06 L=1e-06
+ntc_ki1p tc_qb tc_ko1 vdd vsrc pch W=2.4e-06 L=5e-07
+ntc_ki1n tc_qb tc_ko1 0 0 nch W=1.2e-06 L=5e-07
+ntc_ki2p tc_q tc_qb vdd vsrc pch W=2.4e-06 L=5e-07
+ntc_ki2n tc_q tc_qb 0 0 nch W=1.2e-06 L=5e-07
+rtc_hra tc_h vthr 1e+06
+rtc_hrf tc_h tc_qb 1.9e+07
+ctc_hc tc_h 0 2.1e-09
+va_ntc_dis_d tc_vm ntc_dis_d 0
+va_ntc_dis_s tc_vmd ntc_dis_s 0
+ntc_dis ntc_dis_d tc_q ntc_dis_s 0 nch W=4e-06 L=1e-06
+va_rtc_rdis_p tc_vmd rtc_rdis_p 0
+rtc_rdis rtc_rdis_p vrest 12000
+ntc_rp tc_rt tc_qb vdd vsrc pch W=2e-06 L=1e-06
+rtc_rrc tc_rt tc_rec 10000
+ctc_rc tc_rec 0 1e-07
+rtc_rr tc_rec 0 8.2e+06
+va_ntc_sh1_d tc_vm ntc_sh1_d 0
+va_ntc_sh1_s tc_vms ntc_sh1_s 0
+ntc_sh1 ntc_sh1_d tc_rec ntc_sh1_s 0 nch W=2e-06 L=1e-06
+va_ntc_sh2_d tc_vms ntc_sh2_d 0
+va_ntc_sh2_s vrest ntc_sh2_s 0
+ntc_sh2 ntc_sh2_d tc_qb ntc_sh2_s 0 nch W=2e-06 L=1e-06
+va_ntc_porh_g por_hold ntc_porh_g 0
+ntc_porh tc_h ntc_porh_g vthr 0 nch W=2e-06 L=1e-06
+va_ntc_porm_d tc_vm ntc_porm_d 0
+va_ntc_porm_g por_hold ntc_porm_g 0
+va_ntc_porm_s vrest ntc_porm_s 0
+ntc_porm ntc_porm_d ntc_porm_g ntc_porm_s 0 nch W=2e-06 L=1e-06
+vtc_hs tc_hs 0 PWL(0 0 33.93 0 33.931 0.279421 42.18 0.279421 42.181 0 52.23 0 52.231 1.18844 60.58 1.18844 60.581 0 70.63 0 70.631 2.40447 71.72 2.40447 71.721 0 81.77 0 81.771 1.18844 90.12 1.18844 90.121 0)
+vtc_pg tc_pg 0 PWL(0 0 33.93 0 33.931 3 42.18 3 42.181 0 52.23 0 52.231 3 60.58 3 60.581 0 70.63 0 70.631 3 71.72 3 71.721 0 81.77 0 81.771 3 90.12 3 90.121 0)
+ntc_st_mh tc_mi tc_hs tc_st_x 0 nch W=2e-06 L=4e-06
+ntc_st_mp tc_st_x tc_pg 0 0 nch W=4e-06 L=1e-06
+ntc_rm_md tc_mi tc_mi vdd vsrc pch W=4e-06 L=2e-06
+ntc_rm_mo tc_oo tc_mi vdd vsrc pch W=1e-06 L=8e-06
+vtc_arel tc_oo tc_vm DC 0
+ntc_op_tsw tc_op_tt tc_qb vdd vsrc pch W=2e-06 L=1e-06
+rtc_op_trc tc_op_tt tc_op_at 10000
+ctc_op_tc tc_op_at 0 1e-07
+rtc_op_trl tc_op_at 0 2.2e+07
+ntc_op_sh1p tc_op_an tc_op_at vdd vsrc pch W=2.4e-06 L=5e-07
+ntc_op_sh1n tc_op_an tc_op_at 0 0 nch W=1.2e-06 L=5e-07
+ntc_op_sh2p tc_op_aq tc_op_an vdd vsrc pch W=2.4e-06 L=5e-07
+ntc_op_sh2n tc_op_aq tc_op_an 0 0 nch W=1.2e-06 L=5e-07
+ntc_op_abp tc_op_aqb tc_op_aq vdd vsrc pch W=2.4e-06 L=5e-07
+ntc_op_abn tc_op_aqb tc_op_aq 0 0 nch W=1.2e-06 L=5e-07
+rtc_op_dr tc_op_aq tc_op_ad 1e+06
+ctc_op_dc tc_op_ad 0 3.3e-07
+ntc_op_d2p tc_op_adn tc_op_ad vdd vsrc pch W=2.4e-06 L=5e-07
+ntc_op_d2n tc_op_adn tc_op_ad 0 0 nch W=1.2e-06 L=5e-07
+ntc_op_gpa tc_op_pb tc_op_aq vdd vsrc pch W=2.4e-06 L=5e-07
+ntc_op_gpb tc_op_pb tc_op_adn vdd vsrc pch W=2.4e-06 L=5e-07
+ntc_op_gna tc_op_pb tc_op_aq tc_op_gx 0 nch W=2.4e-06 L=5e-07
+ntc_op_gnb tc_op_gx tc_op_adn 0 0 nch W=2.4e-06 L=5e-07
+ntc_op_op tc_op_p tc_op_pb vdd vsrc pch W=2.4e-06 L=5e-07
+ntc_op_on tc_op_p tc_op_pb 0 0 nch W=1.2e-06 L=5e-07
+ntc_ld_mp0 0 tc_op_aq 0 0 nch W=4e-06 L=1e-06
+ntc_ld_mp1 0 tc_op_aq 0 0 nch W=4e-06 L=1e-06
+ntc_ld_out vdd tc_op_aqb vdd vsrc pch W=4e-06 L=1e-06
+cpar_g0_gmax g0_gmax 0 5e-14
+cpar_g0_gvalid g0_gvalid 0 5e-14
+cpar_g0_gweak g0_gweak 0 5e-14
+cpar_g0_h g0_h 0 5e-14
+cpar_g0_imax_cg g0_imax_cg 0 5e-14
+cpar_g0_imax_ena g0_imax_ena 0 5e-14
+va_cpar_g0_imax_local_p_p g0_imax_local_p cpar_g0_imax_local_p_p 0
+cpar_g0_imax_local_p cpar_g0_imax_local_p_p 0 5e-14
+cpar_g0_ivalid_cg g0_ivalid_cg 0 5e-14
+cpar_g0_ivalid_ena g0_ivalid_ena 0 5e-14
+va_cpar_g0_ivalid_local_p_p g0_ivalid_local_p cpar_g0_ivalid_local_p_p 0
+cpar_g0_ivalid_local_p cpar_g0_ivalid_local_p_p 0 5e-14
+cpar_g0_iweak_cg g0_iweak_cg 0 5e-14
+cpar_g0_iweak_ena g0_iweak_ena 0 5e-14
+va_cpar_g0_iweak_local_p_p g0_iweak_local_p cpar_g0_iweak_local_p_p 0
+cpar_g0_iweak_local_p cpar_g0_iweak_local_p_p 0 5e-14
+cpar_g0_kd1 g0_kd1 0 5e-14
+cpar_g0_knb g0_knb 0 5e-14
+cpar_g0_ko1 g0_ko1 0 5e-14
+cpar_g0_ktail g0_ktail 0 5e-14
+cpar_g0_omax g0_omax 0 5e-14
+cpar_g0_op_ad g0_op_ad 0 5e-14
+cpar_g0_op_adn g0_op_adn 0 5e-14
+cpar_g0_op_an g0_op_an 0 5e-14
+cpar_g0_op_aq g0_op_aq 0 5e-14
+cpar_g0_op_aqb g0_op_aqb 0 5e-14
+cpar_g0_op_at g0_op_at 0 5e-14
+cpar_g0_op_gx g0_op_gx 0 5e-14
+cpar_g0_op_p g0_op_p 0 5e-14
+cpar_g0_op_pb g0_op_pb 0 5e-14
+cpar_g0_op_tt g0_op_tt 0 5e-14
+cpar_g0_ovalid g0_ovalid 0 5e-14
+cpar_g0_oweak g0_oweak 0 5e-14
+cpar_g0_q g0_q 0 5e-14
+cpar_g0_qb g0_qb 0 5e-14
+cpar_g0_rec g0_rec 0 5e-14
+cpar_g0_rt g0_rt 0 5e-14
+va_cpar_g0_vm_p g0_vm cpar_g0_vm_p 0
+cpar_g0_vm cpar_g0_vm_p 0 5e-14
+va_cpar_g0_vmd_p g0_vmd cpar_g0_vmd_p 0
+cpar_g0_vmd cpar_g0_vmd_p 0 5e-14
+va_cpar_g0_vms_p g0_vms cpar_g0_vms_p 0
+cpar_g0_vms cpar_g0_vms_p 0 5e-14
+va_cpar_ilim_n_p ilim_n cpar_ilim_n_p 0
+cpar_ilim_n cpar_ilim_n_p 0 5e-14
+va_cpar_ilimp_n_p ilimp_n cpar_ilimp_n_p 0
+cpar_ilimp_n cpar_ilimp_n_p 0 5e-14
+va_cpar_iref_n_p iref_n cpar_iref_n_p 0
+cpar_iref_n cpar_iref_n_p 0 5e-14
+va_cpar_irefp_n_p irefp_n cpar_irefp_n_p 0
+cpar_irefp_n cpar_irefp_n_p 0 5e-14
+cpar_istep_n istep_n 0 5e-14
+va_cpar_por_hold_p por_hold cpar_por_hold_p 0
+cpar_por_hold cpar_por_hold_p 0 5e-14
+va_cpar_por_ok_p por_ok cpar_por_ok_p 0
+cpar_por_ok cpar_por_ok_p 0 5e-14
+va_cpar_porc_p porc cpar_porc_p 0
+cpar_porc cpar_porc_p 0 5e-14
+va_cpar_porx_p porx cpar_porx_p 0
+cpar_porx cpar_porx_p 0 5e-14
+cpar_sg_h sg_h 0 5e-14
+cpar_sg_kd1 sg_kd1 0 5e-14
+cpar_sg_knb sg_knb 0 5e-14
+cpar_sg_ko1 sg_ko1 0 5e-14
+cpar_sg_ktail sg_ktail 0 5e-14
+cpar_sg_oo sg_oo 0 5e-14
+cpar_sg_op_ad sg_op_ad 0 5e-14
+cpar_sg_op_adn sg_op_adn 0 5e-14
+cpar_sg_op_an sg_op_an 0 5e-14
+cpar_sg_op_aq sg_op_aq 0 5e-14
+cpar_sg_op_aqb sg_op_aqb 0 5e-14
+cpar_sg_op_at sg_op_at 0 5e-14
+cpar_sg_op_gx sg_op_gx 0 5e-14
+cpar_sg_op_p sg_op_p 0 5e-14
+cpar_sg_op_pb sg_op_pb 0 5e-14
+cpar_sg_op_tt sg_op_tt 0 5e-14
+cpar_sg_ota_d1 sg_ota_d1 0 5e-14
+cpar_sg_ota_nb sg_ota_nb 0 5e-14
+cpar_sg_ota_tail sg_ota_tail 0 5e-14
+cpar_sg_q sg_q 0 5e-14
+cpar_sg_qb sg_qb 0 5e-14
+cpar_sg_rec sg_rec 0 5e-14
+cpar_sg_rt sg_rt 0 5e-14
+cpar_sg_sn sg_sn 0 5e-14
+cpar_sg_sp sg_sp 0 5e-14
+va_cpar_sg_vm_p sg_vm cpar_sg_vm_p 0
+cpar_sg_vm cpar_sg_vm_p 0 5e-14
+va_cpar_sg_vmd_p sg_vmd cpar_sg_vmd_p 0
+cpar_sg_vmd cpar_sg_vmd_p 0 5e-14
+va_cpar_sg_vms_p sg_vms cpar_sg_vms_p 0
+cpar_sg_vms cpar_sg_vms_p 0 5e-14
+cpar_tc_h tc_h 0 5e-14
+cpar_tc_hs tc_hs 0 5e-14
+cpar_tc_kd1 tc_kd1 0 5e-14
+cpar_tc_knb tc_knb 0 5e-14
+cpar_tc_ko1 tc_ko1 0 5e-14
+cpar_tc_ktail tc_ktail 0 5e-14
+cpar_tc_mi tc_mi 0 5e-14
+cpar_tc_oo tc_oo 0 5e-14
+cpar_tc_op_ad tc_op_ad 0 5e-14
+cpar_tc_op_adn tc_op_adn 0 5e-14
+cpar_tc_op_an tc_op_an 0 5e-14
+cpar_tc_op_aq tc_op_aq 0 5e-14
+cpar_tc_op_aqb tc_op_aqb 0 5e-14
+cpar_tc_op_at tc_op_at 0 5e-14
+cpar_tc_op_gx tc_op_gx 0 5e-14
+cpar_tc_op_p tc_op_p 0 5e-14
+cpar_tc_op_pb tc_op_pb 0 5e-14
+cpar_tc_op_tt tc_op_tt 0 5e-14
+cpar_tc_pg tc_pg 0 5e-14
+cpar_tc_q tc_q 0 5e-14
+cpar_tc_qb tc_qb 0 5e-14
+cpar_tc_rec tc_rec 0 5e-14
+cpar_tc_rt tc_rt 0 5e-14
+cpar_tc_st_x tc_st_x 0 5e-14
+va_cpar_tc_vm_p tc_vm cpar_tc_vm_p 0
+cpar_tc_vm cpar_tc_vm_p 0 5e-14
+va_cpar_tc_vmd_p tc_vmd cpar_tc_vmd_p 0
+cpar_tc_vmd cpar_tc_vmd_p 0 5e-14
+va_cpar_tc_vms_p tc_vms cpar_tc_vms_p 0
+cpar_tc_vms cpar_tc_vms_p 0 5e-14
+cpar_vdd vdd 0 5e-14
+cpar_vmid vmid 0 5e-14
+va_cpar_vrest_p vrest cpar_vrest_p 0
+cpar_vrest cpar_vrest_p 0 5e-14
+cpar_vthe vthe 0 5e-14
+cpar_vthr vthr 0 5e-14
+.options sparse method=gear reltol=1e-5 abstol=1e-16
+.save v(vdd) v(vrest) v(vthe) v(vthr) v(vmid) v(por_ok) v(g0_gweak) v(g0_gvalid) v(g0_gmax) v(sg_sp) v(sg_sn) v(tc_hs) v(tc_pg) v(g0_vm) v(g0_h) v(g0_q) v(g0_qb) v(g0_rec) v(g0_vmd) v(g0_op_at) v(g0_op_aq) v(g0_op_aqb) v(g0_op_p) v(g0_op_pb) i(vg0_aweak) i(vg0_avalid) i(vg0_amax) v(sg_vm) v(sg_h) v(sg_q) v(sg_qb) v(sg_rec) v(sg_vmd) v(sg_op_at) v(sg_op_aq) v(sg_op_aqb) v(sg_op_p) v(sg_op_pb) i(vsg_aota) v(tc_vm) v(tc_h) v(tc_q) v(tc_qb) v(tc_rec) v(tc_vmd) v(tc_op_at) v(tc_op_aq) v(tc_op_aqb) v(tc_op_p) v(tc_op_pb) i(vtc_arel) v(g0_vms) v(sg_vms) v(tc_vms) i(va_cg0_cm_p) i(va_rg0_rm_p) i(va_ng0_km1_g) i(va_ng0_dis_d) i(va_ng0_sh1_d) i(va_ng0_porm_d) i(va_cpar_g0_vm_p) i(va_ng0_dis_s) i(va_rg0_rdis_p) i(va_cpar_g0_vmd_p) i(va_ng0_sh1_s) i(va_ng0_sh2_d) i(va_cpar_g0_vms_p) i(va_csg_cm_p) i(va_rsg_rm_p) i(va_nsg_km1_g) i(va_nsg_dis_d) i(va_nsg_sh1_d) i(va_nsg_porm_d) i(va_cpar_sg_vm_p) i(va_nsg_dis_s) i(va_rsg_rdis_p) i(va_cpar_sg_vmd_p) i(va_nsg_sh1_s) i(va_nsg_sh2_d) i(va_cpar_sg_vms_p) i(va_ctc_cm_p) i(va_rtc_rm_p) i(va_ntc_km1_g) i(va_ntc_dis_d) i(va_ntc_sh1_d) i(va_ntc_porm_d) i(va_cpar_tc_vm_p) i(va_ntc_dis_s) i(va_rtc_rdis_p) i(va_cpar_tc_vmd_p) i(va_ntc_sh1_s) i(va_ntc_sh2_d) i(va_cpar_tc_vms_p) v(vsrc) i(vsrc) v(g0_imax_cg) v(g0_imax_ena) v(g0_imax_local_p) v(g0_ivalid_cg) v(g0_ivalid_ena) v(g0_ivalid_local_p) v(g0_iweak_cg) v(g0_iweak_ena) v(g0_iweak_local_p) v(g0_kd1) v(g0_knb) v(g0_ko1) v(g0_ktail) v(g0_omax) v(g0_op_ad) v(g0_op_adn) v(g0_op_an) v(g0_op_gx) v(g0_op_tt) v(g0_ovalid) v(g0_oweak) v(g0_rt) v(ilim_n) v(ilimp_n) v(iref_n) v(irefp_n) v(istep_n) v(por_hold) v(porc) v(porx) v(sg_kd1) v(sg_knb) v(sg_ko1) v(sg_ktail) v(sg_oo) v(sg_op_ad) v(sg_op_adn) v(sg_op_an) v(sg_op_gx) v(sg_op_tt) v(sg_ota_d1) v(sg_ota_nb) v(sg_ota_tail) v(sg_rt) v(tc_kd1) v(tc_knb) v(tc_ko1) v(tc_ktail) v(tc_mi) v(tc_oo) v(tc_op_ad) v(tc_op_adn) v(tc_op_an) v(tc_op_gx) v(tc_op_tt) v(tc_rt) v(tc_st_x) i(va_rvrestt_n) i(va_rvrestb_p) i(va_cvrestc_p) i(va_rporr_n) i(va_cporc_p) i(va_rporra_p) i(va_rporrf_p) i(va_npori1p_d) i(va_npori1p_g) i(va_npori1n_d) i(va_npori1n_g) i(va_npori2p_d) i(va_npori2p_g) i(va_npori2n_d) i(va_npori2n_g) i(va_riref_n) i(va_nirefd_d) i(va_nirefd_g) i(va_nirefd_s) i(va_nirefd_b) i(va_nirefm_d) i(va_nirefm_g) i(va_nirefm_s) i(va_nirefm_b) i(va_nirefpd_d) i(va_nirefpd_g) i(va_nirefpd_s) i(va_nirefpd_b) i(va_rilim_n) i(va_nilimd_d) i(va_nilimd_g) i(va_nilimd_s) i(va_nilimd_b) i(va_nilimm_d) i(va_nilimm_g) i(va_nilimm_s) i(va_nilimm_b) i(va_nilimpd_d) i(va_nilimpd_g) i(va_nilimpd_s) i(va_nilimpd_b) i(va_ng0_kporclamp_d) i(va_ng0_kporclamp_g) i(va_ng0_kporclamp_s) i(va_ng0_kporclamp_b) i(va_ng0_sh2_s) i(va_ng0_porh_g) i(va_ng0_porm_g) i(va_ng0_porm_s) i(vg0_gweak) i(va_ng0_iweak_refn_d) i(va_ng0_iweak_refn_g) i(va_ng0_iweak_refn_s) i(va_ng0_iweak_refn_b) i(va_ng0_iweak_refp_d) i(va_ng0_iweak_refp_g) i(va_ng0_iweak_refp_s) i(va_ng0_iweak_refp_b) i(va_ng0_iweak_eni_p_d) i(va_ng0_iweak_eni_p_g) i(va_ng0_iweak_eni_p_s) i(va_ng0_iweak_eni_p_b) i(va_ng0_iweak_eni_n_d) i(va_ng0_iweak_eni_n_g) i(va_ng0_iweak_eni_n_s) i(va_ng0_iweak_eni_n_b) i(va_ng0_iweak_cp_d) i(va_ng0_iweak_cp_g) i(va_ng0_iweak_cp_s) i(va_ng0_iweak_cp_b) i(va_ng0_iweak_bias_d) i(va_ng0_iweak_bias_g) i(va_ng0_iweak_bias_s) i(va_ng0_iweak_bias_b) i(va_ng0_iweak_off_d) i(va_ng0_iweak_off_g) i(va_ng0_iweak_off_s) i(va_ng0_iweak_off_b) i(vg0_gvalid) i(va_ng0_ivalid_refn_d) i(va_ng0_ivalid_refn_g) i(va_ng0_ivalid_refn_s) i(va_ng0_ivalid_refn_b) i(va_ng0_ivalid_refp_d) i(va_ng0_ivalid_refp_g) i(va_ng0_ivalid_refp_s) i(va_ng0_ivalid_refp_b) i(va_ng0_ivalid_eni_p_d) i(va_ng0_ivalid_eni_p_g) i(va_ng0_ivalid_eni_p_s) i(va_ng0_ivalid_eni_p_b) i(va_ng0_ivalid_eni_n_d) i(va_ng0_ivalid_eni_n_g) i(va_ng0_ivalid_eni_n_s) i(va_ng0_ivalid_eni_n_b) i(va_ng0_ivalid_cp_d) i(va_ng0_ivalid_cp_g) i(va_ng0_ivalid_cp_s) i(va_ng0_ivalid_cp_b) i(va_ng0_ivalid_bias_d) i(va_ng0_ivalid_bias_g) i(va_ng0_ivalid_bias_s) i(va_ng0_ivalid_bias_b) i(va_ng0_ivalid_off_d) i(va_ng0_ivalid_off_g) i(va_ng0_ivalid_off_s) i(va_ng0_ivalid_off_b) i(vg0_gmax) i(va_ng0_imax_refn_d) i(va_ng0_imax_refn_g) i(va_ng0_imax_refn_s) i(va_ng0_imax_refn_b) i(va_ng0_imax_refp_d) i(va_ng0_imax_refp_g) i(va_ng0_imax_refp_s) i(va_ng0_imax_refp_b) i(va_ng0_imax_eni_p_d) i(va_ng0_imax_eni_p_g) i(va_ng0_imax_eni_p_s) i(va_ng0_imax_eni_p_b) i(va_ng0_imax_eni_n_d) i(va_ng0_imax_eni_n_g) i(va_ng0_imax_eni_n_s) i(va_ng0_imax_eni_n_b) i(va_ng0_imax_cp_d) i(va_ng0_imax_cp_g) i(va_ng0_imax_cp_s) i(va_ng0_imax_cp_b) i(va_ng0_imax_bias_d) i(va_ng0_imax_bias_g) i(va_ng0_imax_bias_s) i(va_ng0_imax_bias_b) i(va_ng0_imax_off_d) i(va_ng0_imax_off_g) i(va_ng0_imax_off_s) i(va_ng0_imax_off_b) i(va_nsg_kporclamp_d) i(va_nsg_kporclamp_g) i(va_nsg_kporclamp_s) i(va_nsg_kporclamp_b) i(va_nsg_sh2_s) i(va_nsg_porh_g) i(va_nsg_porm_g) i(va_nsg_porm_s) i(vsg_sp) i(vsg_sn) i(va_ntc_kporclamp_d) i(va_ntc_kporclamp_g) i(va_ntc_kporclamp_s) i(va_ntc_kporclamp_b) i(va_ntc_sh2_s) i(va_ntc_porh_g) i(va_ntc_porm_g) i(va_ntc_porm_s) i(vtc_hs) i(vtc_pg) i(va_cpar_g0_imax_local_p_p) i(va_cpar_g0_ivalid_local_p_p) i(va_cpar_g0_iweak_local_p_p) i(va_cpar_ilim_n_p) i(va_cpar_ilimp_n_p) i(va_cpar_iref_n_p) i(va_cpar_irefp_n_p) i(va_cpar_por_hold_p) i(va_cpar_por_ok_p) i(va_cpar_porc_p) i(va_cpar_porx_p) i(va_cpar_vrest_p)
+.control
+pre_osdi <OSDI>
+set filetype=binary
+tran 0.001 100.27 0 0.000125
+write <RAW>
+quit
+.endc
+.end

@@ -1,0 +1,354 @@
+{
+  "case": "CHAIN_12_W_F",
+  "direction_logic_changed": false,
+  "historical_reverse_support_issue": "RETAINED_UNRESOLVED",
+  "directions": [
+    {
+      "core": "cdw12f_",
+      "support_history": "cdw12f_hs",
+      "conflict_history": "cdw12f_hc",
+      "conflict_intermediate": "cdw12f_kx",
+      "support_implementation": [
+        {
+          "name": "ncdw12f_st_mh",
+          "model": "nch",
+          "W": 2e-06,
+          "L": 4e-06,
+          "mult": 1,
+          "nodes": [
+            "cdw12f_mi",
+            "cdw12f_hs",
+            "cdw12f_st_x",
+            "0"
+          ]
+        },
+        {
+          "name": "ncdw12f_st_mp",
+          "model": "nch",
+          "W": 4e-06,
+          "L": 1e-06,
+          "mult": 1,
+          "nodes": [
+            "cdw12f_st_x",
+            "thw12f_op_aq",
+            "0",
+            "0"
+          ]
+        }
+      ],
+      "conflict_implementation": [
+        {
+          "name": "ncdw12f_kh",
+          "model": "nch",
+          "W": 2e-06,
+          "L": 4e-06,
+          "mult": 1,
+          "nodes": [
+            "cdw12f_vm",
+            "cdw12f_hc",
+            "cdw12f_kx",
+            "0"
+          ]
+        },
+        {
+          "name": "ncdw12f_kp",
+          "model": "nch",
+          "W": 4e-06,
+          "L": 1e-06,
+          "mult": 1,
+          "nodes": [
+            "cdw12f_kx",
+            "thw12f_op_aq",
+            "vrest",
+            "0"
+          ]
+        }
+      ],
+      "saved_nodes": [
+        "cdw12f_hs",
+        "cdw12f_hc",
+        "cdw12f_kx",
+        "cdw12f_mi",
+        "cdw12f_vm",
+        "cdw12f_h",
+        "cdw12f_q",
+        "cdw12f_qb",
+        "cdw12f_ko1",
+        "cdw12f_op_at",
+        "cdw12f_op_aq",
+        "cdw12f_op_p",
+        "thw12f_vm",
+        "thw12f_q",
+        "thw12f_qb",
+        "thw12f_op_aq",
+        "thw12f_op_p",
+        "sgw12f_vm",
+        "sgw12f_q",
+        "sgw12f_qb",
+        "sgw12f_op_aq",
+        "sgw12f_op_p",
+        "sgw12r_q",
+        "sgw12r_qb",
+        "sgw12r_op_aq"
+      ],
+      "measured_current_plan": [
+        {
+          "device": "ncdw12f_st_mh",
+          "nodes_d_g_s_b": [
+            "cdw12f_mi",
+            "cdw12f_hs",
+            "cdw12f_st_x",
+            "0"
+          ],
+          "currents": {
+            "d": "i(va_ncdw12f_st_mh_d)",
+            "g": "i(va_ncdw12f_st_mh_g)",
+            "s": "i(va_ncdw12f_st_mh_s)",
+            "b": "i(va_ncdw12f_st_mh_b)"
+          },
+          "positive_convention": "Into named MOS terminal; injection into vm = minus drain current, conflict out of vm = kh drain current"
+        },
+        {
+          "device": "ncdw12f_st_mp",
+          "nodes_d_g_s_b": [
+            "cdw12f_st_x",
+            "thw12f_op_aq",
+            "0",
+            "0"
+          ],
+          "currents": {
+            "d": "i(va_ncdw12f_st_mp_d)",
+            "g": "i(va_ncdw12f_st_mp_g)",
+            "s": "i(va_ncdw12f_st_mp_s)",
+            "b": "i(va_ncdw12f_st_mp_b)"
+          },
+          "positive_convention": "Into named MOS terminal; injection into vm = minus drain current, conflict out of vm = kh drain current"
+        },
+        {
+          "device": "ncdw12f_rm_mo",
+          "nodes_d_g_s_b": [
+            "cdw12f_vm",
+            "cdw12f_mi",
+            "vdd",
+            "vsrc"
+          ],
+          "currents": {
+            "d": "i(va_ncdw12f_rm_mo_d)",
+            "g": "i(va_ncdw12f_rm_mo_g)",
+            "s": "i(va_ncdw12f_rm_mo_s)",
+            "b": "i(va_ncdw12f_rm_mo_b)"
+          },
+          "positive_convention": "Into named MOS terminal; injection into vm = minus drain current, conflict out of vm = kh drain current"
+        },
+        {
+          "device": "ncdw12f_kh",
+          "nodes_d_g_s_b": [
+            "cdw12f_vm",
+            "cdw12f_hc",
+            "cdw12f_kx",
+            "0"
+          ],
+          "currents": {
+            "d": "i(va_ncdw12f_kh_d)",
+            "g": "i(va_ncdw12f_kh_g)",
+            "s": "i(va_ncdw12f_kh_s)",
+            "b": "i(va_ncdw12f_kh_b)"
+          },
+          "positive_convention": "Into named MOS terminal; injection into vm = minus drain current, conflict out of vm = kh drain current"
+        },
+        {
+          "device": "ncdw12f_kp",
+          "nodes_d_g_s_b": [
+            "cdw12f_kx",
+            "thw12f_op_aq",
+            "vrest",
+            "0"
+          ],
+          "currents": {
+            "d": "i(va_ncdw12f_kp_d)",
+            "g": "i(va_ncdw12f_kp_g)",
+            "s": "i(va_ncdw12f_kp_s)",
+            "b": "i(va_ncdw12f_kp_b)"
+          },
+          "positive_convention": "Into named MOS terminal; injection into vm = minus drain current, conflict out of vm = kh drain current"
+        }
+      ],
+      "later_reverse_overlap": "Structurally possible; actual overlap/timing UNMEASURED",
+      "software_direction_latch_added": false
+    },
+    {
+      "core": "cdw12r_",
+      "support_history": "cdw12r_hs",
+      "conflict_history": "cdw12r_hc",
+      "conflict_intermediate": "cdw12r_kx",
+      "support_implementation": [
+        {
+          "name": "ncdw12r_st_mh",
+          "model": "nch",
+          "W": 2e-06,
+          "L": 4e-06,
+          "mult": 1,
+          "nodes": [
+            "cdw12r_mi",
+            "cdw12r_hs",
+            "cdw12r_st_x",
+            "0"
+          ]
+        },
+        {
+          "name": "ncdw12r_st_mp",
+          "model": "nch",
+          "W": 4e-06,
+          "L": 1e-06,
+          "mult": 1,
+          "nodes": [
+            "cdw12r_st_x",
+            "thw12r_op_aq",
+            "0",
+            "0"
+          ]
+        }
+      ],
+      "conflict_implementation": [
+        {
+          "name": "ncdw12r_kh",
+          "model": "nch",
+          "W": 2e-06,
+          "L": 4e-06,
+          "mult": 1,
+          "nodes": [
+            "cdw12r_vm",
+            "cdw12r_hc",
+            "cdw12r_kx",
+            "0"
+          ]
+        },
+        {
+          "name": "ncdw12r_kp",
+          "model": "nch",
+          "W": 4e-06,
+          "L": 1e-06,
+          "mult": 1,
+          "nodes": [
+            "cdw12r_kx",
+            "thw12r_op_aq",
+            "vrest",
+            "0"
+          ]
+        }
+      ],
+      "saved_nodes": [
+        "cdw12r_hs",
+        "cdw12r_hc",
+        "cdw12r_kx",
+        "cdw12r_mi",
+        "cdw12r_vm",
+        "cdw12r_h",
+        "cdw12r_q",
+        "cdw12r_qb",
+        "cdw12r_ko1",
+        "cdw12r_op_at",
+        "cdw12r_op_aq",
+        "cdw12r_op_p",
+        "thw12r_vm",
+        "thw12r_q",
+        "thw12r_qb",
+        "thw12r_op_aq",
+        "thw12r_op_p",
+        "sgw12r_vm",
+        "sgw12r_q",
+        "sgw12r_qb",
+        "sgw12r_op_aq",
+        "sgw12r_op_p",
+        "sgw12f_q",
+        "sgw12f_qb",
+        "sgw12f_op_aq"
+      ],
+      "measured_current_plan": [
+        {
+          "device": "ncdw12r_st_mh",
+          "nodes_d_g_s_b": [
+            "cdw12r_mi",
+            "cdw12r_hs",
+            "cdw12r_st_x",
+            "0"
+          ],
+          "currents": {
+            "d": "i(va_ncdw12r_st_mh_d)",
+            "g": "i(va_ncdw12r_st_mh_g)",
+            "s": "i(va_ncdw12r_st_mh_s)",
+            "b": "i(va_ncdw12r_st_mh_b)"
+          },
+          "positive_convention": "Into named MOS terminal; injection into vm = minus drain current, conflict out of vm = kh drain current"
+        },
+        {
+          "device": "ncdw12r_st_mp",
+          "nodes_d_g_s_b": [
+            "cdw12r_st_x",
+            "thw12r_op_aq",
+            "0",
+            "0"
+          ],
+          "currents": {
+            "d": "i(va_ncdw12r_st_mp_d)",
+            "g": "i(va_ncdw12r_st_mp_g)",
+            "s": "i(va_ncdw12r_st_mp_s)",
+            "b": "i(va_ncdw12r_st_mp_b)"
+          },
+          "positive_convention": "Into named MOS terminal; injection into vm = minus drain current, conflict out of vm = kh drain current"
+        },
+        {
+          "device": "ncdw12r_rm_mo",
+          "nodes_d_g_s_b": [
+            "cdw12r_vm",
+            "cdw12r_mi",
+            "vdd",
+            "vsrc"
+          ],
+          "currents": {
+            "d": "i(va_ncdw12r_rm_mo_d)",
+            "g": "i(va_ncdw12r_rm_mo_g)",
+            "s": "i(va_ncdw12r_rm_mo_s)",
+            "b": "i(va_ncdw12r_rm_mo_b)"
+          },
+          "positive_convention": "Into named MOS terminal; injection into vm = minus drain current, conflict out of vm = kh drain current"
+        },
+        {
+          "device": "ncdw12r_kh",
+          "nodes_d_g_s_b": [
+            "cdw12r_vm",
+            "cdw12r_hc",
+            "cdw12r_kx",
+            "0"
+          ],
+          "currents": {
+            "d": "i(va_ncdw12r_kh_d)",
+            "g": "i(va_ncdw12r_kh_g)",
+            "s": "i(va_ncdw12r_kh_s)",
+            "b": "i(va_ncdw12r_kh_b)"
+          },
+          "positive_convention": "Into named MOS terminal; injection into vm = minus drain current, conflict out of vm = kh drain current"
+        },
+        {
+          "device": "ncdw12r_kp",
+          "nodes_d_g_s_b": [
+            "cdw12r_kx",
+            "thw12r_op_aq",
+            "vrest",
+            "0"
+          ],
+          "currents": {
+            "d": "i(va_ncdw12r_kp_d)",
+            "g": "i(va_ncdw12r_kp_g)",
+            "s": "i(va_ncdw12r_kp_s)",
+            "b": "i(va_ncdw12r_kp_b)"
+          },
+          "positive_convention": "Into named MOS terminal; injection into vm = minus drain current, conflict out of vm = kh drain current"
+        }
+      ],
+      "later_reverse_overlap": "Structurally possible; actual overlap/timing UNMEASURED",
+      "software_direction_latch_added": false
+    }
+  ],
+  "new_solver_starts": 0
+}

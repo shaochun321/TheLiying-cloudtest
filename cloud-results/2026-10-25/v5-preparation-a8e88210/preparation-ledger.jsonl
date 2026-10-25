@@ -1,0 +1,1 @@
+{"at_UTC": "2026-10-25T03:25:47.543424+00:00", "record": "ZERO_SOLVER_PREPARATION_COMPLETE", "status": "PREPARED_UNQUALIFIED", "starts_before": 54, "actual_new_starts": 0, "starts_after": 54, "cap": 84, "solver_wall_s": 0, "original_STOPPED": "PRESERVED", "old_G0_W": "FAIL_UNCHANGED", "next_batch_started": false}

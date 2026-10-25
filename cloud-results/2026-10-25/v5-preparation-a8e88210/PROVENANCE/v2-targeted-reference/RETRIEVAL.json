@@ -1,0 +1,29 @@
+{
+  "commit": "1faf29a6e6b5041032effbae1c5c4f367076ed67",
+  "files": [
+    {
+      "path": "cloud-results/2026-10-23/executor-correction-v2-2026-10-23-b4ddf97a/candidate-source/netlists/neuron_nrc.py",
+      "git_blob": "cbbbea042e36755c087e563de070a4dda44e34a7",
+      "sha256": "da371dc4d26f2d74b821965d02989ec90ce31c48c3930b0174e2d9d33a3dad75",
+      "bytes": 8379
+    },
+    {
+      "path": "cloud-results/2026-10-23/executor-correction-v2-2026-10-23-b4ddf97a/candidate-source/netlists/params.py",
+      "git_blob": "3893f20d64ada27035e79a2033f52e301af76edc",
+      "sha256": "8055123dea9f9bf3e96977b3992053f5d760f04b9c7a350c5b4c2a49e182343c",
+      "bytes": 12228
+    },
+    {
+      "path": "cloud-results/2026-10-23/executor-correction-v2-2026-10-23-b4ddf97a/CANDIDATE_DESIGN.json",
+      "git_blob": "d6673bb8050ae3a806a8de44cc9f3355a26284a4",
+      "sha256": "cc15836f951cb2a3957018cbc1d4adedc4d463aa294ba114ff08354071ba2176",
+      "bytes": 3408
+    },
+    {
+      "path": "cloud-results/2026-10-23/executor-correction-v2-2026-10-23-b4ddf97a/STARTUP_CAUSAL_OBSERVATION.json",
+      "git_blob": "766793c4c3fc6e91ba13932c93dcaaec98a2c7ea",
+      "sha256": "b652ae7a094a1e93248cb50ffae320dff596db5e7372218ece56c07c972e323a",
+      "bytes": 46638
+    }
+  ]
+}

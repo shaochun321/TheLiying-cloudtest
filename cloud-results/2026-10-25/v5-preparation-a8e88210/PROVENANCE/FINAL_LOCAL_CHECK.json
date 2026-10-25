@@ -1,0 +1,12 @@
+{
+  "all_python_syntax": "PASS",
+  "python_files": 36,
+  "original_relevant_sources_unchanged": true,
+  "old_replay_records_unchanged": true,
+  "solver_starts_added": 0,
+  "static_cases_passed": 3,
+  "numerical_script_normal_runs": 1,
+  "numerical_script_corrections": 0,
+  "static_checker_corrections": 1,
+  "candidate_circuit_changed_after_static_acceptance": false
+}

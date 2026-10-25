@@ -1,0 +1,140 @@
+{
+  "candidate": "THERMAL-G3-v5",
+  "status": "PREPARED_UNQUALIFIED",
+  "baseline_path": "/workspace/thermal-g3-qualification/sparse-qualification-2026-10-22-17fb81ea/software/thermal_g3_q1",
+  "baseline_sha256": {
+    "analysis/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "analysis/ekv26_static.py": "e4fe9ac0703a9ea2944eddd7ef2744c976d61db2cddc29514387da7c09d5ab7e",
+    "analysis/input_bounds.json": "50661373a3055e4a65c9ba72b5d0d6dfa9f1f05435cde74c6787e6220721cff8",
+    "analysis/input_bounds.py": "ecea492d1c727be6161ef61a121f7538d8ddcbd86f511b22c8db48e54d4feac1",
+    "analysis/raw_bounds.py": "871e078186b80c50501cb49622545612184040190bc7c41720064660d0dfc2f5",
+    "config.py": "88e05268899668035ad934d36983e8f93b3829a0c553940dcca57a33190e88b0",
+    "models/c05_ekv26_typ.lib": "f6acb2379baacfdb5f53cfc30015f3b7c5690bb1118a5e32a678b76c0b739634",
+    "netlists/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "netlists/bench_mother.py": "7592338d0c61885c6658e61a62ea60d9befcf5b3480b279bee3299ab88e4d563",
+    "netlists/build.py": "399a4a315db623fa13070206f599e57793fde95bc327bb69ce92ff369ed1b2fc",
+    "netlists/build_thermal_g3.py": "eb38c797cf1dbc9446172d4c7fb8b17b48f0a66f8c876a263c6c472b8b42ade5",
+    "netlists/bundle_physical.py": "f61a47ce2add2b38e6daf9e44507853a1ed1fb8a708df8a5a09f4e11cf1916f4",
+    "netlists/ledger_plan.py": "81fac8428fb3a63ce54c5cbc7b22a8c911ec394277104b2b3d5b423b59b85729",
+    "netlists/neuron_mother.py": "58dff803a651914c58158c13a143b517c642c16e857b0674a88946ff44f81634",
+    "netlists/neuron_nrc.py": "dbedcaf0b2a9d8cace6eb29fef5795d341e6998281fbfd8e90d780795c2bea6c",
+    "netlists/occurrence_port.py": "183cb02a7fda4b056712789b841f6d9f03ccf84d1c0b046b0f6ce57c235038f7",
+    "netlists/params.py": "09a1a34c8990e5371b7518f112749ce692bbbc57e465d4aa48e5aa0aaed821b0",
+    "netlists/spatial_graph.py": "15452f5003e76a70e965fc24cbd75b9e8f24e2051ac5715c601d06f9245313ed",
+    "observers/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "observers/criteria_q1r.py": "176477e00475211dcc75ddfd24f6b5a71a37cd781b231dd21a49e0a64541f4f2",
+    "observers/halfstep_compare.py": "2186a431b692eefcfdd56509562963305cd2869777702e5115cf2a3384ee25b6",
+    "observers/judges.py": "bd91cf6a1c12ba8c38fc126719c43789c9f3ec0e0ec1bb96bdbd5906024d28f7",
+    "observers/ledger_q1r.py": "3b0bf8cf8a3eeedfde6511ec846c53e5aeb2a752ea51d3cbe6bfd442de0d2d9c",
+    "observers/observers_q1r.py": "4fc3d38ca66d62fcd2eda7761d81ea8da6963dad0c01bd78764eb53127af7a25",
+    "observers/support_q1r.py": "f80934294d38fd4cebef6e95bc56d17cb08ddfc94924519f8d7a794ae4aead5d",
+    "prereg/cases_q1r.json": "148a652db1c61c265222982712f123b9d6c5fcba4b9a2b870cf73c852d24f3a7",
+    "prereg/protocol_q1r_joint.json": "d0fc13f378949b7d6885bd7ca997abe7d31c6e0f2e691ac739b22d25132d5fb9",
+    "runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtime/decks.py": "5c17b528bd3b4feb3c5a7973d56c2436e5edac7cad5e4df0a81590bcfc6f171f",
+    "solver_adapter/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "solver_adapter/read_raw.py": "97c1f437d4cb8564a15747b641398ff95fe5005a4e7aab5fe7943210e8a0d38a",
+    "solver_adapter/read_raw_mmap.py": "b1397bd07835a9115647b575baa89681bc8e39faaa4602ea8c93c581bbbc803e"
+  },
+  "candidate_sha256": {
+    "analysis/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "analysis/ekv26_static.py": "e4fe9ac0703a9ea2944eddd7ef2744c976d61db2cddc29514387da7c09d5ab7e",
+    "analysis/input_bounds.json": "50661373a3055e4a65c9ba72b5d0d6dfa9f1f05435cde74c6787e6220721cff8",
+    "analysis/input_bounds.py": "ecea492d1c727be6161ef61a121f7538d8ddcbd86f511b22c8db48e54d4feac1",
+    "analysis/raw_bounds.py": "871e078186b80c50501cb49622545612184040190bc7c41720064660d0dfc2f5",
+    "config.py": "88e05268899668035ad934d36983e8f93b3829a0c553940dcca57a33190e88b0",
+    "models/c05_ekv26_typ.lib": "f6acb2379baacfdb5f53cfc30015f3b7c5690bb1118a5e32a678b76c0b739634",
+    "netlists/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "netlists/bench_mother.py": "140a6df94b88679571172ccc235874a331f241236815f5ee940363e3a0007d0b",
+    "netlists/build.py": "399a4a315db623fa13070206f599e57793fde95bc327bb69ce92ff369ed1b2fc",
+    "netlists/build_thermal_g3.py": "2367189a9c729652b014c728187234ff865a839e145ca207f32d59869e5a8528",
+    "netlists/bundle_physical.py": "669fba318178732d86b5f28a5014b988037930d745e49ad17d1a39f48a690ebe",
+    "netlists/ledger_plan.py": "81fac8428fb3a63ce54c5cbc7b22a8c911ec394277104b2b3d5b423b59b85729",
+    "netlists/neuron_mother.py": "58dff803a651914c58158c13a143b517c642c16e857b0674a88946ff44f81634",
+    "netlists/neuron_nrc.py": "da371dc4d26f2d74b821965d02989ec90ce31c48c3930b0174e2d9d33a3dad75",
+    "netlists/occurrence_port.py": "183cb02a7fda4b056712789b841f6d9f03ccf84d1c0b046b0f6ce57c235038f7",
+    "netlists/params.py": "8055123dea9f9bf3e96977b3992053f5d760f04b9c7a350c5b4c2a49e182343c",
+    "netlists/spatial_graph.py": "642d7e76809305c490cdfef24cbbce7684d9469275f271d3caf31e3b80393609",
+    "observers/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "observers/criteria_q1r.py": "176477e00475211dcc75ddfd24f6b5a71a37cd781b231dd21a49e0a64541f4f2",
+    "observers/halfstep_compare.py": "2186a431b692eefcfdd56509562963305cd2869777702e5115cf2a3384ee25b6",
+    "observers/judges.py": "bd91cf6a1c12ba8c38fc126719c43789c9f3ec0e0ec1bb96bdbd5906024d28f7",
+    "observers/ledger_q1r.py": "3b0bf8cf8a3eeedfde6511ec846c53e5aeb2a752ea51d3cbe6bfd442de0d2d9c",
+    "observers/observers_q1r.py": "4fc3d38ca66d62fcd2eda7761d81ea8da6963dad0c01bd78764eb53127af7a25",
+    "observers/support_q1r.py": "f80934294d38fd4cebef6e95bc56d17cb08ddfc94924519f8d7a794ae4aead5d",
+    "prereg/cases_q1r.json": "148a652db1c61c265222982712f123b9d6c5fcba4b9a2b870cf73c852d24f3a7",
+    "prereg/protocol_q1r_joint.json": "d0fc13f378949b7d6885bd7ca997abe7d31c6e0f2e691ac739b22d25132d5fb9",
+    "runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtime/decks.py": "4e238d13a36c557dd9b0906f0467db2e2da5090a750903d339a733dfb68dbd4b",
+    "solver_adapter/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "solver_adapter/read_raw.py": "97c1f437d4cb8564a15747b641398ff95fe5005a4e7aab5fe7943210e8a0d38a",
+    "solver_adapter/read_raw_mmap.py": "b1397bd07835a9115647b575baa89681bc8e39faaa4602ea8c93c581bbbc803e"
+  },
+  "changed_files": [
+    "netlists/bench_mother.py",
+    "netlists/build_thermal_g3.py",
+    "netlists/bundle_physical.py",
+    "netlists/neuron_nrc.py",
+    "netlists/params.py",
+    "netlists/spatial_graph.py",
+    "runtime/decks.py"
+  ],
+  "explicit_call_sites": [
+    {
+      "file": "netlists/bench_mother.py",
+      "line": 92,
+      "source": "gated_source(nl, f\"{p}i{lab}_\", diode, f\"{p}o{lab}\", f\"{p}g{lab}\", W=Wc, L=Lc, reference_bias_n=bias_n)"
+    },
+    {
+      "file": "netlists/build_thermal_g3.py",
+      "line": 126,
+      "source": "gated_source(nl, p + \"cin_\", \"ilimp_n\", col[\"vm\"], p + \"gb\", W=v(\"BIAS_W\"), reference_bias_n=\"ilim_n\")"
+    },
+    {
+      "file": "netlists/build_thermal_g3.py",
+      "line": 291,
+      "source": "gated_source(nl, f\"ag{pol}{i}{j}{d}_\", \"irefp_n\", out, rc[\"ab\"],\n                                 W=v(\"BIAS_W\"), reference_bias_n=\"iref_n\")"
+    },
+    {
+      "file": "netlists/spatial_graph.py",
+      "line": 23,
+      "source": "gated_source(nl, f\"sp{pol}i{s}_\", \"irefp_n\", n, act_b[s],\n                     W=v(\"BIAS_W\"), scale=v(\"SP_INJ_N\"), reference_bias_n=\"iref_n\")"
+    }
+  ],
+  "baseline_unchanged": true,
+  "v2_actual_source_retrieval": {
+    "commit": "1faf29a6e6b5041032effbae1c5c4f367076ed67",
+    "files": [
+      {
+        "path": "cloud-results/2026-10-23/executor-correction-v2-2026-10-23-b4ddf97a/candidate-source/netlists/neuron_nrc.py",
+        "git_blob": "cbbbea042e36755c087e563de070a4dda44e34a7",
+        "sha256": "da371dc4d26f2d74b821965d02989ec90ce31c48c3930b0174e2d9d33a3dad75",
+        "bytes": 8379
+      },
+      {
+        "path": "cloud-results/2026-10-23/executor-correction-v2-2026-10-23-b4ddf97a/candidate-source/netlists/params.py",
+        "git_blob": "3893f20d64ada27035e79a2033f52e301af76edc",
+        "sha256": "8055123dea9f9bf3e96977b3992053f5d760f04b9c7a350c5b4c2a49e182343c",
+        "bytes": 12228
+      },
+      {
+        "path": "cloud-results/2026-10-23/executor-correction-v2-2026-10-23-b4ddf97a/CANDIDATE_DESIGN.json",
+        "git_blob": "d6673bb8050ae3a806a8de44cc9f3355a26284a4",
+        "sha256": "cc15836f951cb2a3957018cbc1d4adedc4d463aa294ba114ff08354071ba2176",
+        "bytes": 3408
+      },
+      {
+        "path": "cloud-results/2026-10-23/executor-correction-v2-2026-10-23-b4ddf97a/STARTUP_CAUSAL_OBSERVATION.json",
+        "git_blob": "766793c4c3fc6e91ba13932c93dcaaec98a2c7ea",
+        "sha256": "b652ae7a094a1e93248cb50ffae320dff596db5e7372218ece56c07c972e323a",
+        "bytes": 46638
+      }
+    ]
+  },
+  "local_bias_prototype_sha256": "895b4764a6257059b6606e65a8dd226245e4c1632043eba322fa46e623a22912",
+  "new_solver_starts": 0,
+  "global_count": "54/84",
+  "old_v4_source_recovered": false,
+  "old_qualification_inherited": false,
+  "solver_execution_entrypoints_copied": false
+}

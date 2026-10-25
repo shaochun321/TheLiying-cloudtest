@@ -1,0 +1,14 @@
+{
+  "files": {
+    "/workspace/thermal-g3-retests/current-replay.json": "5e3d34c1052e03ea084387afc2c6858e884cfffba4fdc65937649433855e3dd8",
+    "/workspace/thermal-g3-retests/formal-matrix-2026-10-24-f1d1ab7b/STOPPED.json": "84074a8e2b2de3df6254569d4fed1d8969e8383fda0bc35e97abcedf1c22b40a",
+    "/workspace/thermal-g3-retests/formal-matrix-2026-10-24-f1d1ab7b/formal-retest-ledger.jsonl": "76b08a6dbe4e62723024907b1d84681dec8fd40be38300a1bc0e6d5e8e0e8bde",
+    "/workspace/thermal-g3-retests/formal-matrix-2026-10-24-f1d1ab7b/G0_W/execution.json": "e2e7cddb77cd863f9b03891c30003898f62dd62ec80c8d77459e9584812d60dc",
+    "/workspace/thermal-g3-retests/formal-matrix-2026-10-24-f1d1ab7b/G0_W/judge-output.json": "5dac5378173950144c93aa0f89dce511ad5113c8b43949a8cb95db72e430b5d8",
+    "/workspace/thermal-g3-retests/qualification-125-62p5us-2026-10-24-58804272/qualification-retest-result.json": "2e271ace3452980a334501efac750035369a700bb174fa4d68bb9522d98a70b2"
+  },
+  "scope": "Only directly relevant current replay records; no whole-repository audit",
+  "conservative_starts": 54,
+  "global_cap": 84,
+  "new_solver_starts": 0
+}

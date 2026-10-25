@@ -1,0 +1,305 @@
+{
+  "scope": "G0_W existing measured capacitor branches only",
+  "raw_sha256": "acf7dbfb41016a16b4dd2350093bd8249b1c733cc7128d8f63723f28db98119f",
+  "raw_bytes": 275630524,
+  "flags": "real",
+  "variables": 56,
+  "points": 615243,
+  "time_end_s": 64.8,
+  "new_solver_starts": 0,
+  "conservative_count": "54/84",
+  "actual_solver_order_and_coefficients": "UNMEASURED",
+  "original_formal_verdict": "FAIL_UNCHANGED",
+  "capacitors": [
+    {
+      "capacitor": "cgw1_col_cm",
+      "node": "gw1_col_vm",
+      "far": "0",
+      "C_F": 1e-07,
+      "current_vector": "i(va_cgw1_col_cm_p)",
+      "sign": 1.0,
+      "E_trap_J": 5.003005339922804e-08,
+      "delta_E_J": 4.866613708878203e-08,
+      "signed_mismatch_J": 1.3639163104460103e-09,
+      "Q_trap_C": 1.000756086751725e-07,
+      "C_delta_v_C": 9.865712046150751e-08,
+      "original_limit_J": 5.003005339922804e-10,
+      "original_cap_gate_pass": false,
+      "A_charge_consistency_J": 1.5286678544464296e-09,
+      "B_product_quadrature_J": -1.6475154400036694e-10,
+      "decomposition_roundoff_J": -5.2319173743979e-23,
+      "max_interval_identity_error_J": 2.2052298329890592e-23,
+      "discrete_hypotheses": [
+        {
+          "method": "fixed_BDF1",
+          "boundary_samples_retained": 1,
+          "comparison_domain": "k>=2 for both methods",
+          "current_residual_RMS_A": 2.7164249887141722e-08,
+          "relative_current_RMS": 0.021987746816174658,
+          "max_abs_current_difference_A": 1.160539530645153e-06,
+          "reconstructed_energy_gap_J": -3.2539357949414715e-08,
+          "measured_minus_reconstructed_gap_J": 3.3903274259860726e-08,
+          "scientific_pass_granted": false
+        },
+        {
+          "method": "fixed_BDF2",
+          "boundary_samples_retained": 2,
+          "comparison_domain": "k>=2 for both methods",
+          "current_residual_RMS_A": 9.841286234522138e-12,
+          "relative_current_RMS": 7.965900437862096e-06,
+          "max_abs_current_difference_A": 7.183845267979268e-09,
+          "reconstructed_energy_gap_J": 1.3639175682597746e-09,
+          "measured_minus_reconstructed_gap_J": -1.2578137643587799e-15,
+          "scientific_pass_granted": false
+        }
+      ],
+      "first_three_error_windows": [
+        {
+          "capacitor": "cgw1_col_cm",
+          "rank": 1,
+          "start_s": 16.37,
+          "end_s": 16.38,
+          "residual_J": 7.291280520436781e-11,
+          "A_J": 8.182710608073166e-11,
+          "B_J": -8.914300876370808e-12
+        },
+        {
+          "capacitor": "cgw1_col_cm",
+          "rank": 2,
+          "start_s": 14.34,
+          "end_s": 14.35,
+          "residual_J": 7.287324063467876e-11,
+          "A_J": 8.177586415386237e-11,
+          "B_J": -8.902623519182778e-12
+        },
+        {
+          "capacitor": "cgw1_col_cm",
+          "rank": 3,
+          "start_s": 13.530000000000001,
+          "end_s": 13.540000000000001,
+          "residual_J": 7.281872161230139e-11,
+          "A_J": 8.170088859771744e-11,
+          "B_J": -8.882166985422376e-12
+        }
+      ]
+    },
+    {
+      "capacitor": "cpar_gw1_col_vm",
+      "node": "gw1_col_vm",
+      "far": "0",
+      "C_F": 5e-14,
+      "current_vector": "i(va_cpar_gw1_col_vm_p)",
+      "sign": 1.0,
+      "E_trap_J": 2.5014829524422654e-14,
+      "delta_E_J": 2.4333068544391016e-14,
+      "signed_mismatch_J": 6.817609800316381e-16,
+      "Q_trap_C": 5.003759729858235e-14,
+      "C_delta_v_C": 4.932856023075376e-14,
+      "original_limit_J": 1e-12,
+      "original_cap_gate_pass": true,
+      "A_charge_consistency_J": 7.641367546953852e-16,
+      "B_product_quadrature_J": -8.237577466376679e-17,
+      "decomposition_roundoff_J": 1.9721522630525295e-29,
+      "max_interval_identity_error_J": 1.1026175762154581e-29,
+      "discrete_hypotheses": [
+        {
+          "method": "fixed_BDF1",
+          "boundary_samples_retained": 1,
+          "comparison_domain": "k>=2 for both methods",
+          "current_residual_RMS_A": 4.3958306267779944e-14,
+          "relative_current_RMS": 0.07099633026638086,
+          "max_abs_current_difference_A": 6.532053358687147e-12,
+          "reconstructed_energy_gap_J": -1.626967897470733e-14,
+          "measured_minus_reconstructed_gap_J": 1.695143995473897e-14,
+          "scientific_pass_granted": false
+        },
+        {
+          "method": "fixed_BDF2",
+          "boundary_samples_retained": 2,
+          "comparison_domain": "k>=2 for both methods",
+          "current_residual_RMS_A": 4.179942999635527e-14,
+          "relative_current_RMS": 0.06750956506126507,
+          "max_abs_current_difference_A": 6.532053879637815e-12,
+          "reconstructed_energy_gap_J": 6.819587841298801e-16,
+          "measured_minus_reconstructed_gap_J": -1.9780409824194087e-19,
+          "scientific_pass_granted": false
+        }
+      ],
+      "first_three_error_windows": [
+        {
+          "capacitor": "cpar_gw1_col_vm",
+          "rank": 1,
+          "start_s": 16.37,
+          "end_s": 16.38,
+          "residual_J": 3.645747980498407e-17,
+          "A_J": 4.0914630295001814e-17,
+          "B_J": -4.4571504900216275e-18
+        },
+        {
+          "capacitor": "cpar_gw1_col_vm",
+          "rank": 2,
+          "start_s": 14.34,
+          "end_s": 14.35,
+          "residual_J": 3.643562285421135e-17,
+          "A_J": 4.088693488210313e-17,
+          "B_J": -4.451312027890885e-18
+        },
+        {
+          "capacitor": "cpar_gw1_col_vm",
+          "rank": 3,
+          "start_s": 13.530000000000001,
+          "end_s": 13.540000000000001,
+          "residual_J": 3.6409552749368734e-17,
+          "A_J": 4.0850636504546435e-17,
+          "B_J": -4.441083755180334e-18
+        }
+      ]
+    },
+    {
+      "capacitor": "cpar_gw1_col_vmd",
+      "node": "gw1_col_vmd",
+      "far": "0",
+      "C_F": 5e-14,
+      "current_vector": "i(va_cpar_gw1_col_vmd_p)",
+      "sign": 1.0,
+      "E_trap_J": 2.153240793673245e-14,
+      "delta_E_J": 2.433343928136038e-14,
+      "signed_mismatch_J": -2.80103134462793e-15,
+      "Q_trap_C": 4.7745451591693304e-14,
+      "C_delta_v_C": 4.9328936012608647e-14,
+      "original_limit_J": 1e-12,
+      "original_cap_gate_pass": true,
+      "A_charge_consistency_J": -2.751738490564946e-15,
+      "B_product_quadrature_J": -4.929285406296024e-17,
+      "decomposition_roundoff_J": -2.3665827156630354e-29,
+      "max_interval_identity_error_J": 1.093408145404658e-29,
+      "discrete_hypotheses": [
+        {
+          "method": "fixed_BDF1",
+          "boundary_samples_retained": 1,
+          "comparison_domain": "k>=2 for both methods",
+          "current_residual_RMS_A": 4.92504207208759e-10,
+          "relative_current_RMS": 0.09520622599385611,
+          "max_abs_current_difference_A": 3.757556118946662e-08,
+          "reconstructed_energy_gap_J": 6.196465308681327e-14,
+          "measured_minus_reconstructed_gap_J": -6.47656844314412e-14,
+          "scientific_pass_granted": false
+        },
+        {
+          "method": "fixed_BDF2",
+          "boundary_samples_retained": 2,
+          "comparison_domain": "k>=2 for both methods",
+          "current_residual_RMS_A": 1.0579947896287448e-12,
+          "relative_current_RMS": 0.0002045214834053607,
+          "max_abs_current_difference_A": 8.211343116746081e-10,
+          "reconstructed_energy_gap_J": -2.80732371044996e-15,
+          "measured_minus_reconstructed_gap_J": 6.292365822030059e-18,
+          "scientific_pass_granted": false
+        }
+      ],
+      "first_three_error_windows": [
+        {
+          "capacitor": "cpar_gw1_col_vmd",
+          "rank": 1,
+          "start_s": 14.73,
+          "end_s": 14.74,
+          "residual_J": -4.560951737995842e-16,
+          "A_J": -4.4050522711451183e-16,
+          "B_J": -1.5589946685070556e-17
+        },
+        {
+          "capacitor": "cpar_gw1_col_vmd",
+          "rank": 2,
+          "start_s": 40.0,
+          "end_s": 40.01,
+          "residual_J": -4.254933257844215e-16,
+          "A_J": -4.107452224990639e-16,
+          "B_J": -1.4748103285357283e-17
+        },
+        {
+          "capacitor": "cpar_gw1_col_vmd",
+          "rank": 3,
+          "start_s": 15.540000000000001,
+          "end_s": 15.55,
+          "residual_J": -4.2524776535345107e-16,
+          "A_J": -4.105019900710382e-16,
+          "B_J": -1.4745775282413987e-17
+        }
+      ]
+    },
+    {
+      "capacitor": "cpar_gw1_col_vms",
+      "node": "gw1_col_vms",
+      "far": "0",
+      "C_F": 5e-14,
+      "current_vector": "i(va_cpar_gw1_col_vms_p)",
+      "sign": 1.0,
+      "E_trap_J": 2.605584876545058e-14,
+      "delta_E_J": 2.4333439294582344e-14,
+      "signed_mismatch_J": 1.7224094708682341e-15,
+      "Q_trap_C": 5.0771750001998375e-14,
+      "C_delta_v_C": 4.932893602601116e-14,
+      "original_limit_J": 1e-12,
+      "original_cap_gate_pass": true,
+      "A_charge_consistency_J": 1.8783228866998004e-15,
+      "B_product_quadrature_J": -1.5591341583158143e-16,
+      "decomposition_roundoff_J": 1.5185572425504477e-29,
+      "max_interval_identity_error_J": 1.0820517279387929e-29,
+      "discrete_hypotheses": [
+        {
+          "method": "fixed_BDF1",
+          "boundary_samples_retained": 1,
+          "comparison_domain": "k>=2 for both methods",
+          "current_residual_RMS_A": 8.484143773440176e-12,
+          "relative_current_RMS": 0.09327878054523475,
+          "max_abs_current_difference_A": 8.694227926217935e-10,
+          "reconstructed_energy_gap_J": 1.022409321872305e-14,
+          "measured_minus_reconstructed_gap_J": -8.501683747854816e-15,
+          "scientific_pass_granted": false
+        },
+        {
+          "method": "fixed_BDF2",
+          "boundary_samples_retained": 2,
+          "comparison_domain": "k>=2 for both methods",
+          "current_residual_RMS_A": 2.6335106788923706e-15,
+          "relative_current_RMS": 2.895409027001041e-05,
+          "max_abs_current_difference_A": 1.8672891999569492e-12,
+          "reconstructed_energy_gap_J": 1.7219279621415218e-15,
+          "measured_minus_reconstructed_gap_J": 4.815087267123177e-19,
+          "scientific_pass_granted": false
+        }
+      ],
+      "first_three_error_windows": [
+        {
+          "capacitor": "cpar_gw1_col_vms",
+          "rank": 1,
+          "start_s": 42.04,
+          "end_s": 42.050000000000004,
+          "residual_J": 8.690509747884381e-17,
+          "A_J": 8.906060522850122e-17,
+          "B_J": -2.155507749658519e-18
+        },
+        {
+          "capacitor": "cpar_gw1_col_vms",
+          "rank": 2,
+          "start_s": 41.230000000000004,
+          "end_s": 41.24,
+          "residual_J": 8.675911089632236e-17,
+          "A_J": 8.891384392270344e-17,
+          "B_J": -2.154733026381918e-18
+        },
+        {
+          "capacitor": "cpar_gw1_col_vms",
+          "rank": 3,
+          "start_s": 15.15,
+          "end_s": 15.16,
+          "residual_J": 8.671990621085209e-17,
+          "A_J": 8.887446432785063e-17,
+          "B_J": -2.1545581170021714e-18
+        }
+      ]
+    }
+  ],
+  "algorithm_validation": "PASS",
+  "new_physical_qualification": "UNMEASURED"
+}

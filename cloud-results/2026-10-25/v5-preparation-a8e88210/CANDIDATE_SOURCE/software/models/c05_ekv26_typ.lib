@@ -1,0 +1,37 @@
+* MFS0-R1 transistor model family: EPFL-EKV v2.6 (Verilog-A, compiled ekv26.osdi)
+* Parameter source (DEVICE): Alcatel-Mietec C05M 0.5um, EKV v2.6 parameter set,
+*   M. Bucher, LEG-DE-EPFL, 98/03/25, "Extracted from on-wafer DC measurements"
+*   (run 125/126, April 1997). File: chrisenz/EKV  EKV2.6/matlab/C05.lib
+*   Typical case: VarN = VarP = 0 (LOT/GAUSS and DEV/GAUSS statistics not applied here).
+* Validity range stated by the source: |Vg|<3.3V, |Vd|<3.3V, |Vs|<2V;
+*   W = 0.8um..10um, L = 0.5um..10um.
+* These are model parameters of a published extraction, not a re-measured process.
+* Model type name ekv26_va = module name in ekv26.va (line 67).
+
+.model nch ekv26_va (
++ TYPE=1
++ TNOM=25.5
++ COX=3.4m XJ=0.1u VTO=0.61 GAMMA=0.66 PHI=0.8 KP=169u
++ E0=99.0Meg UCRIT=4.3Meg DL=-0.07u DW=0.025u
++ LAMBDA=0.27 LETA=0.39 WETA=0.1 Q0=230u LK=0.66u
++ IBN=1.0 IBA=260Meg IBB=375Meg
++ TCV=1.7m BEX=-1.57 UCEX=1.6 IBBT=0.0
++ KF=1.6E-24 AF=1
++ HDIF=0.9u RSH=560
++ js=6.9u jsw=137p n=1.94
++ cj=740u cjsw=340p mj=0.35 mjsw=0.29 pb=0.73 pbsw=0.659
++ Cgso=138p Cgdo=138p Cgbo=345p )
+
+.model pch ekv26_va (
++ TYPE=-1
++ TNOM=25.5
++ COX=3.4m XJ=0.1u VTO=-0.57 GAMMA=0.64 PHI=0.68 KP=39.6u
++ E0=56.4Meg UCRIT=20.0Meg DL=-0.05u DW=0.14u
++ LAMBDA=1.2 LETA=0.51 WETA=0.01 Q0=180u LK=0.67u
++ TCV=-1.36m BEX=-1.22 UCEX=2.0
++ IBA=0
++ KF=2.06E-25 AF=1
++ HDIF=0.9u RSH=1230
++ js=4.0u jsw=730p n=1.82
++ cj=790u cjsw=430p mj=0.4 mjsw=0.38 pb=0.85 pbsw=0.869
++ Cgso=138p Cgdo=138p Cgbo=345p )

@@ -1,0 +1,12 @@
+{
+  "result": "PASS",
+  "candidate_package_commit": "8a23c2f915cd486d5686f4b038485316a088d54c",
+  "branch": "candidate/v5-preparation-2026-10-25-a8e88210",
+  "repository_path": "cloud-results/2026-10-25/v5-preparation-a8e88210/CANDIDATE_SOURCE.zip",
+  "bytes": 460123,
+  "sha256": "849a801113be29a245ca804a21f0baa32491b8653a8599b185f21e4c6e3ef76a",
+  "independent_GitHub_API_download": true,
+  "downloaded_zip_integrity": "PASS",
+  "zip_members": 86,
+  "solver_starts_added": 0
+}

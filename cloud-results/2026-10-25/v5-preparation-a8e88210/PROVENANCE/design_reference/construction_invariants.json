@@ -1,0 +1,274 @@
+{
+  "scope": "CONSTRUCTION_INVARIANTS_ONLY",
+  "new_solver_starts": 0,
+  "prototype_sha256": "895b4764a6257059b6606e65a8dd226245e4c1632043eba322fa46e623a22912",
+  "dimensions_within_declared_card_ranges": true,
+  "limitations": [
+    "No model-domain transient proof",
+    "MOS gate charge and supply coupling remain",
+    "No guarantee of OFF leakage, pulse charge or reference stability"
+  ],
+  "roles": [
+    {
+      "role": "collector",
+      "connection_invariant": "PASS",
+      "shared_p_reconnection_mutant_rejected": true,
+      "shared_n_channel_mutant_rejected": true,
+      "devices": [
+        {
+          "name": "collector_refn",
+          "d": "collector_local_p",
+          "g": "ilim_n",
+          "s": "0",
+          "b": "0",
+          "model": "nch",
+          "W": 4e-06,
+          "L": 4e-06,
+          "parameters": {}
+        },
+        {
+          "name": "collector_refp",
+          "d": "collector_local_p",
+          "g": "collector_local_p",
+          "s": "vdd",
+          "b": "vsrc",
+          "model": "pch",
+          "W": 4e-06,
+          "L": 4e-06,
+          "parameters": {}
+        },
+        {
+          "name": "collector_eni_p",
+          "d": "collector_ena",
+          "g": "enable_b",
+          "s": "vdd",
+          "b": "vsrc",
+          "model": "pch",
+          "W": 2.4e-06,
+          "L": 5e-07,
+          "parameters": {}
+        },
+        {
+          "name": "collector_eni_n",
+          "d": "collector_ena",
+          "g": "enable_b",
+          "s": "0",
+          "b": "0",
+          "model": "nch",
+          "W": 1.2e-06,
+          "L": 5e-07,
+          "parameters": {}
+        },
+        {
+          "name": "collector_cp",
+          "d": "out",
+          "g": "collector_cg",
+          "s": "vdd",
+          "b": "vsrc",
+          "model": "pch",
+          "W": 4e-06,
+          "L": 4e-06,
+          "parameters": {
+            "mult": 1
+          }
+        },
+        {
+          "name": "collector_bias",
+          "d": "collector_local_p",
+          "g": "enable_b",
+          "s": "collector_cg",
+          "b": "vsrc",
+          "model": "pch",
+          "W": 1.2e-06,
+          "L": 1e-06,
+          "parameters": {}
+        },
+        {
+          "name": "collector_off",
+          "d": "collector_cg",
+          "g": "collector_ena",
+          "s": "vdd",
+          "b": "vsrc",
+          "model": "pch",
+          "W": 2.4e-06,
+          "L": 1e-06,
+          "parameters": {}
+        }
+      ]
+    },
+    {
+      "role": "spatial",
+      "connection_invariant": "PASS",
+      "shared_p_reconnection_mutant_rejected": true,
+      "shared_n_channel_mutant_rejected": true,
+      "devices": [
+        {
+          "name": "spatial_refn",
+          "d": "spatial_local_p",
+          "g": "iref_n",
+          "s": "0",
+          "b": "0",
+          "model": "nch",
+          "W": 4e-06,
+          "L": 4e-06,
+          "parameters": {}
+        },
+        {
+          "name": "spatial_refp",
+          "d": "spatial_local_p",
+          "g": "spatial_local_p",
+          "s": "vdd",
+          "b": "vsrc",
+          "model": "pch",
+          "W": 4e-06,
+          "L": 4e-06,
+          "parameters": {}
+        },
+        {
+          "name": "spatial_eni_p",
+          "d": "spatial_ena",
+          "g": "enable_b",
+          "s": "vdd",
+          "b": "vsrc",
+          "model": "pch",
+          "W": 2.4e-06,
+          "L": 5e-07,
+          "parameters": {}
+        },
+        {
+          "name": "spatial_eni_n",
+          "d": "spatial_ena",
+          "g": "enable_b",
+          "s": "0",
+          "b": "0",
+          "model": "nch",
+          "W": 1.2e-06,
+          "L": 5e-07,
+          "parameters": {}
+        },
+        {
+          "name": "spatial_cp",
+          "d": "out",
+          "g": "spatial_cg",
+          "s": "vdd",
+          "b": "vsrc",
+          "model": "pch",
+          "W": 2e-06,
+          "L": 4e-06,
+          "parameters": {
+            "mult": 1
+          }
+        },
+        {
+          "name": "spatial_bias",
+          "d": "spatial_local_p",
+          "g": "enable_b",
+          "s": "spatial_cg",
+          "b": "vsrc",
+          "model": "pch",
+          "W": 1.2e-06,
+          "L": 1e-06,
+          "parameters": {}
+        },
+        {
+          "name": "spatial_off",
+          "d": "spatial_cg",
+          "g": "spatial_ena",
+          "s": "vdd",
+          "b": "vsrc",
+          "model": "pch",
+          "W": 2.4e-06,
+          "L": 1e-06,
+          "parameters": {}
+        }
+      ]
+    },
+    {
+      "role": "load",
+      "connection_invariant": "PASS",
+      "shared_p_reconnection_mutant_rejected": true,
+      "shared_n_channel_mutant_rejected": true,
+      "devices": [
+        {
+          "name": "load_refn",
+          "d": "load_local_p",
+          "g": "iref_n",
+          "s": "0",
+          "b": "0",
+          "model": "nch",
+          "W": 4e-06,
+          "L": 4e-06,
+          "parameters": {}
+        },
+        {
+          "name": "load_refp",
+          "d": "load_local_p",
+          "g": "load_local_p",
+          "s": "vdd",
+          "b": "vsrc",
+          "model": "pch",
+          "W": 4e-06,
+          "L": 4e-06,
+          "parameters": {}
+        },
+        {
+          "name": "load_eni_p",
+          "d": "load_ena",
+          "g": "enable_b",
+          "s": "vdd",
+          "b": "vsrc",
+          "model": "pch",
+          "W": 2.4e-06,
+          "L": 5e-07,
+          "parameters": {}
+        },
+        {
+          "name": "load_eni_n",
+          "d": "load_ena",
+          "g": "enable_b",
+          "s": "0",
+          "b": "0",
+          "model": "nch",
+          "W": 1.2e-06,
+          "L": 5e-07,
+          "parameters": {}
+        },
+        {
+          "name": "load_cp",
+          "d": "out",
+          "g": "load_cg",
+          "s": "vdd",
+          "b": "vsrc",
+          "model": "pch",
+          "W": 4e-06,
+          "L": 4e-06,
+          "parameters": {
+            "mult": 1
+          }
+        },
+        {
+          "name": "load_bias",
+          "d": "load_local_p",
+          "g": "enable_b",
+          "s": "load_cg",
+          "b": "vsrc",
+          "model": "pch",
+          "W": 1.2e-06,
+          "L": 1e-06,
+          "parameters": {}
+        },
+        {
+          "name": "load_off",
+          "d": "load_cg",
+          "g": "load_ena",
+          "s": "vdd",
+          "b": "vsrc",
+          "model": "pch",
+          "W": 2.4e-06,
+          "L": 1e-06,
+          "parameters": {}
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "scope": "Three selected decks only",
+  "cases": [
+    {
+      "case_id": "Q1_MOTHER_PROTOCOL",
+      "n_mos": 129,
+      "gated_source_instances": 0,
+      "POR_clamps": 0,
+      "saved_vectors": 95,
+      "observed_four_terminal_devices": 0,
+      "new_electrical_nodes": 0,
+      "static": "PASS",
+      "dynamic": "UNMEASURED"
+    },
+    {
+      "case_id": "CHAIN_12_W_F",
+      "n_mos": 1051,
+      "gated_source_instances": 0,
+      "POR_clamps": 0,
+      "saved_vectors": 178,
+      "observed_four_terminal_devices": 0,
+      "new_electrical_nodes": 0,
+      "static": "PASS",
+      "dynamic": "UNMEASURED"
+    },
+    {
+      "case_id": "G0_W",
+      "n_mos": 441,
+      "gated_source_instances": 0,
+      "POR_clamps": 0,
+      "saved_vectors": 55,
+      "observed_four_terminal_devices": 0,
+      "new_electrical_nodes": 0,
+      "static": "PASS",
+      "dynamic": "UNMEASURED"
+    }
+  ],
+  "no_solver_subprocess_allowed": true,
+  "new_solver_starts": 0,
+  "dynamic_qualification_inherited": false
+}

@@ -1,0 +1,12 @@
+{
+  "scanned_log": "/workspace/thermal-g3-retests/formal-matrix-2026-10-24-f1d1ab7b/G0_W/ngspice.log",
+  "sha256": "5e967675c1f76384d7b2294c49331502875ad871401233d1bc0d7d5598483b17",
+  "method_declared": ".options sparse method=gear reltol=1e-5 abstol=1e-16",
+  "order_or_coefficient_log_mentions": [],
+  "actual_time_varying_solver_order": "UNMEASURED",
+  "actual_time_varying_coefficients": "UNMEASURED",
+  "actual_order_trace_asset_recorded_in_run": false,
+  "missing_trace_not_inferred_from_fitted_voltage": "ENFORCED",
+  "fixed_BDF_comparisons_diagnostic_only": true,
+  "new_solver_starts": 0
+}

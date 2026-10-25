@@ -1,0 +1,30 @@
+{
+  "user_request": "评审后执行",
+  "decision": "ACCEPT_ZERO_SOLVER_PREPARATION",
+  "status": "PREPARED_UNQUALIFIED",
+  "solver_launches_added": 0,
+  "global_count_before": 54,
+  "global_count_after": 54,
+  "global_cap": 84,
+  "solver_wall_this_task_s": 0,
+  "original_G0_W_result": "FAIL_UNCHANGED",
+  "new_gate_effective": false,
+  "actual_solver_order_coefficients": "UNMEASURED",
+  "candidate_changes_supported_by": [
+    "Actual v2 source files recovered from specified commit and verified by Git blob IDs",
+    "Supplied local-bias prototype and existing interfaces verified against actual netlists"
+  ],
+  "limitations": [
+    "No old v4 integrated-source recovery claimed",
+    "No dynamic model-domain/POR/direction qualification inherited",
+    "Next batch requires separate authorization and listed prerequisites"
+  ],
+  "deliverables": [
+    "NUMERICAL_REVIEW",
+    "CANDIDATE_SOURCE",
+    "CHANGE_AND_LIMITS",
+    "NEXT_RUN_PLAN"
+  ],
+  "publish_environment": false,
+  "modify_main": false
+}

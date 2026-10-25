@@ -1,0 +1,8 @@
+{
+  "result": "PASS",
+  "raw": "C:\\Users\\shaoc\\Documents\\Codex\\2026-09-24\\files-mentioned-by-the-user-2026\\outputs\\thermal_g3_raw_review_20261025\\G0_W\\G0_W.raw",
+  "bytes": 275630524,
+  "sha256": "acf7dbfb41016a16b4dd2350093bd8249b1c733cc7128d8f63723f28db98119f",
+  "new_solver_starts": 0,
+  "scope": "G0_W only; other three RAWs not locally downloaded"
+}

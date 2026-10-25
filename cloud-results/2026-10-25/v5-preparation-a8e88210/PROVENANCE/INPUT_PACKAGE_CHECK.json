@@ -1,0 +1,10 @@
+{
+  "name": "THERMAL-G3_v5准备执行包_2026-10-25.zip",
+  "bytes": 12133,
+  "sha256": "359c485e1b40c24a1bcfc1b3b3651c996a9a15d437f87a139b60dc0c9ac5a32b",
+  "zip_crc_integrity": "PASS",
+  "members": 6,
+  "external_expected_SHA256": "NOT_PROVIDED",
+  "path_validation": "PASS; normalized Windows separators, no absolute paths or traversal",
+  "content_treated_as": "Reviewed task specification under user approval, not standalone authorization"
+}

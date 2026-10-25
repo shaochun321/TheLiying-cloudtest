@@ -1,0 +1,131 @@
+--- baseline/netlists/bench_mother.py
++++ candidate/netlists/bench_mother.py
+@@ -85,11 +85,11 @@
+     p = PREFIX["G0"]
+     g0 = nrc(nl, p, "vthe", bias_k=0, rdis=v("NRC_RDIS_G0"), cm=v("NM_CM"))
+     am = {}
+-    for lab, diode, Wc, Lc in (("weak", "irefp_n", 1.2e-6, 4e-6), ("valid", "irefp_n", 4e-6, 4e-6),
+-                               ("max", "ilimp_n", 4e-6, 4e-6)):
++    for lab, diode, bias_n, Wc, Lc in (("weak", "irefp_n", "iref_n", 1.2e-6, 4e-6), ("valid", "irefp_n", "iref_n", 4e-6, 4e-6),
++                               ("max", "ilimp_n", "ilim_n", 4e-6, 4e-6)):
+         labs = {lab} if lab != "valid" else {"valid", "reinput"}
+         nl.V(f"{p}g{lab}", f"{p}g{lab}", "0", pwl_levels(plan["G0"], {k: 0.0 for k in labs}, vdd, edge))
+-        gated_source(nl, f"{p}i{lab}_", diode, f"{p}o{lab}", f"{p}g{lab}", W=Wc, L=Lc)
++        gated_source(nl, f"{p}i{lab}_", diode, f"{p}o{lab}", f"{p}g{lab}", W=Wc, L=Lc, reference_bias_n=bias_n)
+         am[lab] = ammeter(nl, f"{p}a{lab}", f"{p}o{lab}", g0["vm"])
+         save.append(f"v({p}g{lab})")
+     meta["ammeters"]["G0"] = am
+--- baseline/netlists/build_thermal_g3.py
++++ candidate/netlists/build_thermal_g3.py
+@@ -123,7 +123,7 @@
+     gate = and_tree(nl, p + "and_", shaped)
+     inverter(nl, p + "gi", gate, p + "gb")
+     col = neuron_fn(nl, p + "col_", "vthe", bias_k=0)
+-    gated_source(nl, p + "cin_", "ilimp_n", col["vm"], p + "gb", W=v("BIAS_W"))
++    gated_source(nl, p + "cin_", "ilimp_n", col["vm"], p + "gb", W=v("BIAS_W"), reference_bias_n="ilim_n")
+     port = occurrence_port(nl, p + "op_", col[pulse_port])
+     # Merge collector ports: occurrence_port returns {a, ab, p, pb, trace}; add the variant-specific pulse key
+     port[pulse_port] = col[pulse_port]
+@@ -289,7 +289,7 @@
+                 for i, j in pairs:
+                     rc = TH[(pol, i, j, d, "cdir")]
+                     gated_source(nl, f"ag{pol}{i}{j}{d}_", "irefp_n", out, rc["ab"],
+-                                 W=v("BIAS_W"))
++                                 W=v("BIAS_W"), reference_bias_n="iref_n")
+     # element-name collision guard (ngspice is case-insensitive; duplicates would merge)
+     names = [l.split()[0].lower() for l in nl.lines if l and not l.startswith(".")]
+     dup = {n for n in names if names.count(n) > 1} if len(names) != len(set(names)) else set()
+--- baseline/netlists/bundle_physical.py
++++ candidate/netlists/bundle_physical.py
+@@ -32,15 +32,33 @@
+     return lvl[0]
+ 
+ 
+-def gated_source(nl, name, diode_p, out, enable_b, W, L=None, mult=1, scale=1.0):
+-    """Current copy of a PMOS diode reference into `out`, conducting only while enable_b is
+-    low (series PMOS switch). Both devices are real; no ideal current source.
++def gated_source(nl, name, diode_p, out, enable_b, W, L=None,
++                 mult=1, scale=1.0, *, reference_bias_n=None):
++    """Low-active gate; explicit physical NMOS-reference wiring is required.
+ 
+-    Args:
+-        scale: real multiplier (v1.1 corrected 2026-10-08); applied to W, NOT to mult
+-               (SPICE mult must be integer). Example: scale=0.3 sets W_eff = 0.3*W."""
++    diode_p is kept as a legacy provenance label, not connected to this bundle.
++    Callers explicitly supply iref_n (irefp_n family) or ilim_n (ilimp_n family).
++    The mapping is a construction-time wire, never selected by case/time/result.
++    Design dimensions are proposed values, not simulation-qualified values.
++    """
+     if not isinstance(mult, int) or mult < 1:
+-        raise ValueError(f"gated_source mult must be positive integer, got {mult}")
+-    W_eff = W * scale
+-    nl.M(name + "sw", name + "x", enable_b, "vdd", WELL, "pch", 4e-6, 1e-6)
+-    nl.M(name + "cp", out, diode_p, name + "x", WELL, "pch", W_eff, L or v("BIAS_L"), mult=mult)
++        raise ValueError("mult must be a positive integer")
++    if reference_bias_n is None or reference_bias_n == diode_p:
++        raise ValueError("explicit NMOS bias gate node required")
++    local_p = name + "local_p"
++    cg, enable_a = name + "cg", name + "ena"
++
++    # Clone the existing NMOS-to-PMOS bias conversion at each receiving branch.
++    # Only the gate of refn touches the shared n-bias; shared p-bias is untouched.
++    nl.M(name + "refn", local_p, reference_bias_n, "0", "0", "nch",
++         v("BIAS_W"), v("BIAS_L"))
++    nl.M(name + "refp", local_p, local_p, "vdd", WELL, "pch",
++         v("BIAS_W"), v("BIAS_L"))
++
++    inverter(nl, name + "eni_", enable_b, enable_a)
++    nl.M(name + "cp", out, cg, "vdd", WELL, "pch",
++         W * scale, L or v("BIAS_L"), mult=mult)
++    nl.M(name + "bias", local_p, enable_b, cg, WELL, "pch",
++         1.2e-6, 1e-6)
++    nl.M(name + "off", cg, enable_a, "vdd", WELL, "pch",
++         2.4e-6, 1e-6)
+--- baseline/netlists/neuron_nrc.py
++++ candidate/netlists/neuron_nrc.py
+@@ -95,6 +95,10 @@
+     nl.M(kp + "m2", kp + "o1", h, kp + "tail", "0", "nch", W, L)
+     nl.M(kp + "m3", kp + "d1", kp + "d1", "vdd", WELL, "pch", 4e-6, L)
+     nl.M(kp + "m4", kp + "o1", kp + "d1", "vdd", WELL, "pch", 4e-6, L)
++    # v2 repair: physical POR hold clamps comparator o1 LOW before both output inverters.
++    # vm/h, regenerative qb feedback and q-controlled real discharge stay wired as before.
++    # After physical POR release the clamp is off; no external timer or behavioral source.
++    nl.M(kp + "porclamp", kp + "o1", "por_hold", "0", "0", "nch", 4e-6, 1e-6)
+     # Output inverters: o1 -> qb -> q (v1.1 §4.2 minimal chain)
+     inverter(nl, kp + "i1", kp + "o1", p + "qb")         # qb = inv(o1)
+     inverter(nl, kp + "i2", p + "qb", p + "q")           # q = inv(qb)
+--- baseline/netlists/params.py
++++ candidate/netlists/params.py
+@@ -15,8 +15,8 @@
+     "T_RAMP": (20e-3, "DESIGN", "common supply rise 0->VDD (plan sec.5.1: real power-up, no DC-powered start)"),
+     "REF_C": (10e-6, "DESIGN", "decoupling on every reference divider node; dividers kept low-impedance (~1 kohm Thevenin) because all 124 membranes leak into vrest (shared-reference coupling is a real effect, recorded)"),
+     # dividers: node = VDD * Rb/(Rt+Rb)
+-    "VREST_RT": (2e3, "DERIVED", "vrest = VDD/3 = 1.0 V @3 V (plan rest ~1.0 V): Rt 2k / Rb 1k"),
+-    "VREST_RB": (1e3, "DERIVED", "see VREST_RT"),
++    "VREST_RT": (1e3, "DERIVED", "v2 single candidate: alpha=1/3, Rth=333.333 ohm; 25% load envelope from three old DC points; see candidate design"),
++    "VREST_RB": (500.0, "DERIVED", "v2: retain 1/3 divider ratio, see VREST_RT"),
+     "VTHE_RT": (2e3, "DERIVED", "ensemble threshold reference 0.47368 VDD = 1.421 V: with hysteresis weight 0.05, entry = 0.95*1.421+0.05*3 = 1.50 V, exit = 1.35 V (plan sec.8)"),
+     "VTHE_RB": (1.8e3, "DERIVED", "see VTHE_RT (1.8/3.8 = 0.47368)"),
+     "VTHR_RT": (2.4e3, "DERIVED", "receiver threshold reference 1.5/3.9 VDD = 1.154 V: entry 0.95*1.154+0.15 = 1.246 V, exit 1.096 V (rest + 0.25 / + 0.10, plan sec.8)"),
+--- baseline/netlists/spatial_graph.py
++++ candidate/netlists/spatial_graph.py
+@@ -21,7 +21,7 @@
+         # injection: unit PMOS copy of the I_ref diode, scaled by SP_INJ_N (1:2)
+         # v1.1 corrected 2026-10-08: use scale parameter instead of W multiplication
+         gated_source(nl, f"sp{pol}i{s}_", "irefp_n", n, act_b[s],
+-                     W=v("BIAS_W"), scale=v("SP_INJ_N"))
++                     W=v("BIAS_W"), scale=v("SP_INJ_N"), reference_bias_n="iref_n")
+     edges = {}
+     for i, j in zip(sites[:-1], sites[1:]):
+         e = f"{i}{j}"
+--- baseline/runtime/decks.py
++++ candidate/runtime/decks.py
+@@ -14,7 +14,7 @@
+ sys.path.insert(0, ROOT)
+ import config  # noqa: E402
+ 
+-OPTIONS = "klu method=gear reltol=1e-5 abstol=1e-16"   # inherited (v1 runner/dev.py; dev-008 itl4 lesson)
++OPTIONS = "sparse method=gear reltol=1e-5 abstol=1e-16"   # inherited (v1 runner/dev.py; dev-008 itl4 lesson)
+ 
+ 
+ def _fwd(p):

@@ -1,0 +1,18 @@
+{
+  "candidate_id": "THERMAL-G3-v5-preparation-2026-10-25-a8e88210",
+  "status": "PREPARED_UNQUALIFIED",
+  "source_identity": "CANDIDATE_SOURCE/SOURCE_IDENTITY.json",
+  "backend_identity": "PROVENANCE/ASSET_IDENTITY.json",
+  "accepted_static_artifacts": "CANDIDATE_SOURCE/generated-verified",
+  "numerical_profile": "CANDIDATE_SOURCE/CANDIDATE_NUMERICAL_PROFILE.json",
+  "scientific_observers_changed": false,
+  "original_energy_gate": "UNCHANGED",
+  "raw_input_commit": "692020eb690becbde69a74e031cba5f7e4e8309c",
+  "prior_small_evidence_commits": [
+    "bc3b3bc28bcad94134eec7bdd007be9b5f5b2859",
+    "8f233e106d75e9399e6ab0fc1930262385ec31a1"
+  ],
+  "new_solver_starts": 0,
+  "conservative_count": "54/84",
+  "original_v4_integrated_source_recovered": false
+}

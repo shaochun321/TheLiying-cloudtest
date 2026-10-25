@@ -1,0 +1,46 @@
+{
+  "status": "PROPOSAL_REQUIRES_SEPARATE_BATCH_AUTHORIZATION",
+  "current_starts": 54,
+  "cap": 84,
+  "proposed_maximum_starts": 3,
+  "maximum_after_if_authorized": 57,
+  "ordered_steps": [
+    {
+      "id": "T0_GATED_SOURCE_BENCH",
+      "starts": 1,
+      "depends_on": [],
+      "analysis": "tran 0.001 0.06 0 0.000125",
+      "stop_on_failure": true
+    },
+    {
+      "id": "DC_3",
+      "starts": 1,
+      "depends_on": [
+        "T0_GATED_SOURCE_BENCH"
+      ],
+      "analysis": "op",
+      "stop_on_failure": true
+    },
+    {
+      "id": "CHAIN_12_W_F",
+      "starts": 1,
+      "depends_on": [
+        "DC_3"
+      ],
+      "analysis": "tran 0.001 39.2 0 0.000125",
+      "stop_on_failure": true
+    }
+  ],
+  "authorization_granted_now": false,
+  "formal_31_auto_start": false,
+  "mother_qualifications_auto_start": false,
+  "wall_cap_authorized": false,
+  "prerequisites_not_claimed_complete": [
+    "Exact nine-channel output boundary and monitor implementation must match historical T0 code",
+    "Public NMOS bias perturbation engineering limit must be derived and preregistered before solve",
+    "Full-network DC_3 deck and per-batch executor locking/preflight must be generated and bound before solve"
+  ],
+  "historical_T0_contract": "../PROVENANCE/V3_TEST_CONTRACT.json",
+  "counter_policy": "Every actual start counts, including error, termination and timeout",
+  "original_energy_gate": "UNCHANGED; fixed BDF explanation cannot replace FAIL"
+}
