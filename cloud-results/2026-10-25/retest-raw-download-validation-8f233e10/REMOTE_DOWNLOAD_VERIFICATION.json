@@ -1,0 +1,46 @@
+{
+  "result": "PASS",
+  "repository": "shaochun321/TheLiying-cloudtest",
+  "branch": "raw/retest-originals-2026-10-25-8f233e10",
+  "verified_data_commit": "8d6d58c1b932e4b328264b5209373eb30d841e34",
+  "download_method": "Independent shallow bare clone over HTTPS; no local object reuse",
+  "clone_exit": 0,
+  "no_local_object_reuse": true,
+  "download_wall_s": 516.7915064690005,
+  "remote_commit_matches": true,
+  "all_parts_gzip_and_original_SHA256_checked": true,
+  "RAWs_actually_saved_after_remote_download": true,
+  "original_total_bytes": 2278212926,
+  "files": [
+    {
+      "name": "short_125us.raw",
+      "bytes": 129804587,
+      "sha256": "637fea05cdf1a5b75b20a6e49bbd7b768832ccdae2a2bb6d9084a393886a879d",
+      "result": "PASS"
+    },
+    {
+      "name": "Q1_MOTHER_PROTOCOL.raw",
+      "bytes": 628906283,
+      "sha256": "30c6bb99e5aa17f65c41cce591c9aa7b8565a6705ed6892edd948ff3ade5acd4",
+      "result": "PASS"
+    },
+    {
+      "name": "Q1_MOTHER_HALFSTEP.raw",
+      "bytes": 1243871532,
+      "sha256": "45953dc90a8f41b65460052605616fb0d027257a1e22cb5665b68c6783c2dbe5",
+      "result": "PASS"
+    },
+    {
+      "name": "G0_W.raw",
+      "bytes": 275630524,
+      "sha256": "acf7dbfb41016a16b4dd2350093bd8249b1c733cc7128d8f63723f28db98119f",
+      "result": "PASS"
+    }
+  ],
+  "original_source_RAWs_modified": false,
+  "scientific_results_changed": false,
+  "solver_starts_unchanged": "54/84",
+  "transport": "33 lossless gzip parts, not resampled or converted waveforms",
+  "release_attachment_route": "uploads.github.com returned HTTP 401; no RAW asset was uploaded through that route",
+  "ZIP_route": "Partial slow archive response preserved; full validation used independent HTTPS Git download"
+}
