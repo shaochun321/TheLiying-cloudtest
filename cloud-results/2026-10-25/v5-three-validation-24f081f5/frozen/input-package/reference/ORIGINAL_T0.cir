@@ -1,0 +1,437 @@
+* THERMAL-G3 v3 one candidate T0_GATED_SOURCE_BENCH
+.include /workspace/thermal-g3-repair/gated-source-v3-2026-10-23-fc4ec434/inputs/c05_ekv26_typ.lib
+vsrc vsrc 0 PWL(0 0 0.02 3.2)
+va_rint_p vsrc rint_p 0
+rint rint_p vdd 10
+va_cdec_p vdd cdec_p 0
+cdec cdec_p 0 1e-05
+va_rvrestt_p vdd rvrestt_p 0
+rvrestt rvrestt_p vrest 1000
+va_rvrestb_p vrest rvrestb_p 0
+rvrestb rvrestb_p 0 500
+va_cvrestc_p vrest cvrestc_p 0
+cvrestc cvrestc_p 0 1e-05
+va_rvthet_p vdd rvthet_p 0
+rvthet rvthet_p vthe 2000
+va_rvtheb_p vthe rvtheb_p 0
+rvtheb rvtheb_p 0 1800
+va_cvthec_p vthe cvthec_p 0
+cvthec cvthec_p 0 1e-05
+va_rvthrt_p vdd rvthrt_p 0
+rvthrt rvthrt_p vthr 2400
+va_rvthrb_p vthr rvthrb_p 0
+rvthrb rvthrb_p 0 1500
+va_cvthrc_p vthr cvthrc_p 0
+cvthrc cvthrc_p 0 1e-05
+va_rvmidt_p vdd rvmidt_p 0
+rvmidt rvmidt_p vmid 2000
+va_rvmidb_p vmid rvmidb_p 0
+rvmidb rvmidb_p 0 2000
+va_cvmidc_p vmid cvmidc_p 0
+cvmidc cvmidc_p 0 1e-05
+va_rporr_p vdd rporr_p 0
+rporr rporr_p porc 2.2e+06
+va_cporc_p porc cporc_p 0
+cporc cporc_p 0 1e-06
+va_rporra_p porc rporra_p 0
+rporra rporra_p porx 1e+06
+va_rporrf_p por_ok rporrf_p 0
+rporrf rporrf_p porx 4e+06
+va_npori1p_d por_hold npori1p_d 0
+va_npori1p_g porx npori1p_g 0
+va_npori1p_s vdd npori1p_s 0
+va_npori1p_b vsrc npori1p_b 0
+npori1p npori1p_d npori1p_g npori1p_s npori1p_b pch W=2.4e-06 L=5e-07
+va_npori1n_d por_hold npori1n_d 0
+va_npori1n_g porx npori1n_g 0
+va_npori1n_s 0 npori1n_s 0
+va_npori1n_b 0 npori1n_b 0
+npori1n npori1n_d npori1n_g npori1n_s npori1n_b nch W=1.2e-06 L=5e-07
+va_npori2p_d por_ok npori2p_d 0
+va_npori2p_g por_hold npori2p_g 0
+va_npori2p_s vdd npori2p_s 0
+va_npori2p_b vsrc npori2p_b 0
+npori2p npori2p_d npori2p_g npori2p_s npori2p_b pch W=2.4e-06 L=5e-07
+va_npori2n_d por_ok npori2n_d 0
+va_npori2n_g por_hold npori2n_g 0
+va_npori2n_s 0 npori2n_s 0
+va_npori2n_b 0 npori2n_b 0
+npori2n npori2n_d npori2n_g npori2n_s npori2n_b nch W=1.2e-06 L=5e-07
+va_riref_p vdd riref_p 0
+riref riref_p iref_n 2.2e+06
+va_nirefd_d iref_n nirefd_d 0
+va_nirefd_g iref_n nirefd_g 0
+va_nirefd_s 0 nirefd_s 0
+va_nirefd_b 0 nirefd_b 0
+nirefd nirefd_d nirefd_g nirefd_s nirefd_b nch W=4e-06 L=4e-06
+va_ristep_p vdd ristep_p 0
+ristep ristep_p istep_n 5.6e+07
+va_nistepd_d istep_n nistepd_d 0
+va_nistepd_g istep_n nistepd_g 0
+va_nistepd_s 0 nistepd_s 0
+va_nistepd_b 0 nistepd_b 0
+nistepd nistepd_d nistepd_g nistepd_s nistepd_b nch W=4e-06 L=4e-06
+va_nirefm_d irefp_n nirefm_d 0
+va_nirefm_g iref_n nirefm_g 0
+va_nirefm_s 0 nirefm_s 0
+va_nirefm_b 0 nirefm_b 0
+nirefm nirefm_d nirefm_g nirefm_s nirefm_b nch W=4e-06 L=4e-06
+va_nirefpd_d irefp_n nirefpd_d 0
+va_nirefpd_g irefp_n nirefpd_g 0
+va_nirefpd_s vdd nirefpd_s 0
+va_nirefpd_b vsrc nirefpd_b 0
+nirefpd nirefpd_d nirefpd_g nirefpd_s nirefpd_b pch W=4e-06 L=4e-06
+va_rilim_p vdd rilim_p 0
+rilim rilim_p ilim_n 1.85e+06
+va_nilimd_d ilim_n nilimd_d 0
+va_nilimd_g ilim_n nilimd_g 0
+va_nilimd_s 0 nilimd_s 0
+va_nilimd_b 0 nilimd_b 0
+nilimd nilimd_d nilimd_g nilimd_s nilimd_b nch W=4e-06 L=4e-06
+va_nilimm_d ilimp_n nilimm_d 0
+va_nilimm_g ilim_n nilimm_g 0
+va_nilimm_s 0 nilimm_s 0
+va_nilimm_b 0 nilimm_b 0
+nilimm nilimm_d nilimm_g nilimm_s nilimm_b nch W=4e-06 L=4e-06
+va_nilimpd_d ilimp_n nilimpd_d 0
+va_nilimpd_g ilimp_n nilimpd_g 0
+va_nilimpd_s vdd nilimpd_s 0
+va_nilimpd_b vsrc nilimpd_b 0
+nilimpd nilimpd_d nilimpd_g nilimpd_s nilimpd_b pch W=4e-06 L=4e-06
+venable enable_b 0 PWL(0 0 0.02 3.2 0.025 3.2 0.026 0 0.035 0 0.036 3.2 0.045 3.2 0.046 0 0.06 0)
+vt0_collector_low_boundary t0_collector_low_out 0 PWL(0 0 0.02 0)
+va_nt0_collector_low_eni_p_d t0_collector_low_ena nt0_collector_low_eni_p_d 0
+va_nt0_collector_low_eni_p_g enable_b nt0_collector_low_eni_p_g 0
+va_nt0_collector_low_eni_p_s vdd nt0_collector_low_eni_p_s 0
+va_nt0_collector_low_eni_p_b vsrc nt0_collector_low_eni_p_b 0
+nt0_collector_low_eni_p nt0_collector_low_eni_p_d nt0_collector_low_eni_p_g nt0_collector_low_eni_p_s nt0_collector_low_eni_p_b pch W=2.4e-06 L=5e-07
+va_nt0_collector_low_eni_n_d t0_collector_low_ena nt0_collector_low_eni_n_d 0
+va_nt0_collector_low_eni_n_g enable_b nt0_collector_low_eni_n_g 0
+va_nt0_collector_low_eni_n_s 0 nt0_collector_low_eni_n_s 0
+va_nt0_collector_low_eni_n_b 0 nt0_collector_low_eni_n_b 0
+nt0_collector_low_eni_n nt0_collector_low_eni_n_d nt0_collector_low_eni_n_g nt0_collector_low_eni_n_s nt0_collector_low_eni_n_b nch W=1.2e-06 L=5e-07
+va_nt0_collector_low_cp_d t0_collector_low_out nt0_collector_low_cp_d 0
+va_nt0_collector_low_cp_g t0_collector_low_cg nt0_collector_low_cp_g 0
+va_nt0_collector_low_cp_s vdd nt0_collector_low_cp_s 0
+va_nt0_collector_low_cp_b vsrc nt0_collector_low_cp_b 0
+nt0_collector_low_cp nt0_collector_low_cp_d nt0_collector_low_cp_g nt0_collector_low_cp_s nt0_collector_low_cp_b pch W=4e-06 L=4e-06
+va_nt0_collector_low_bias_d ilimp_n nt0_collector_low_bias_d 0
+va_nt0_collector_low_bias_g enable_b nt0_collector_low_bias_g 0
+va_nt0_collector_low_bias_s t0_collector_low_cg nt0_collector_low_bias_s 0
+va_nt0_collector_low_bias_b vsrc nt0_collector_low_bias_b 0
+nt0_collector_low_bias nt0_collector_low_bias_d nt0_collector_low_bias_g nt0_collector_low_bias_s nt0_collector_low_bias_b pch W=1.2e-06 L=1e-06
+va_nt0_collector_low_off_d t0_collector_low_cg nt0_collector_low_off_d 0
+va_nt0_collector_low_off_g t0_collector_low_ena nt0_collector_low_off_g 0
+va_nt0_collector_low_off_s vdd nt0_collector_low_off_s 0
+va_nt0_collector_low_off_b vsrc nt0_collector_low_off_b 0
+nt0_collector_low_off nt0_collector_low_off_d nt0_collector_low_off_g nt0_collector_low_off_s nt0_collector_low_off_b pch W=2.4e-06 L=1e-06
+vt0_collector_work_low_boundary t0_collector_work_low_out 0 PWL(0 0 0.02 1.05154312393)
+va_nt0_collector_work_low_eni_p_d t0_collector_work_low_ena nt0_collector_work_low_eni_p_d 0
+va_nt0_collector_work_low_eni_p_g enable_b nt0_collector_work_low_eni_p_g 0
+va_nt0_collector_work_low_eni_p_s vdd nt0_collector_work_low_eni_p_s 0
+va_nt0_collector_work_low_eni_p_b vsrc nt0_collector_work_low_eni_p_b 0
+nt0_collector_work_low_eni_p nt0_collector_work_low_eni_p_d nt0_collector_work_low_eni_p_g nt0_collector_work_low_eni_p_s nt0_collector_work_low_eni_p_b pch W=2.4e-06 L=5e-07
+va_nt0_collector_work_low_eni_n_d t0_collector_work_low_ena nt0_collector_work_low_eni_n_d 0
+va_nt0_collector_work_low_eni_n_g enable_b nt0_collector_work_low_eni_n_g 0
+va_nt0_collector_work_low_eni_n_s 0 nt0_collector_work_low_eni_n_s 0
+va_nt0_collector_work_low_eni_n_b 0 nt0_collector_work_low_eni_n_b 0
+nt0_collector_work_low_eni_n nt0_collector_work_low_eni_n_d nt0_collector_work_low_eni_n_g nt0_collector_work_low_eni_n_s nt0_collector_work_low_eni_n_b nch W=1.2e-06 L=5e-07
+va_nt0_collector_work_low_cp_d t0_collector_work_low_out nt0_collector_work_low_cp_d 0
+va_nt0_collector_work_low_cp_g t0_collector_work_low_cg nt0_collector_work_low_cp_g 0
+va_nt0_collector_work_low_cp_s vdd nt0_collector_work_low_cp_s 0
+va_nt0_collector_work_low_cp_b vsrc nt0_collector_work_low_cp_b 0
+nt0_collector_work_low_cp nt0_collector_work_low_cp_d nt0_collector_work_low_cp_g nt0_collector_work_low_cp_s nt0_collector_work_low_cp_b pch W=4e-06 L=4e-06
+va_nt0_collector_work_low_bias_d ilimp_n nt0_collector_work_low_bias_d 0
+va_nt0_collector_work_low_bias_g enable_b nt0_collector_work_low_bias_g 0
+va_nt0_collector_work_low_bias_s t0_collector_work_low_cg nt0_collector_work_low_bias_s 0
+va_nt0_collector_work_low_bias_b vsrc nt0_collector_work_low_bias_b 0
+nt0_collector_work_low_bias nt0_collector_work_low_bias_d nt0_collector_work_low_bias_g nt0_collector_work_low_bias_s nt0_collector_work_low_bias_b pch W=1.2e-06 L=1e-06
+va_nt0_collector_work_low_off_d t0_collector_work_low_cg nt0_collector_work_low_off_d 0
+va_nt0_collector_work_low_off_g t0_collector_work_low_ena nt0_collector_work_low_off_g 0
+va_nt0_collector_work_low_off_s vdd nt0_collector_work_low_off_s 0
+va_nt0_collector_work_low_off_b vsrc nt0_collector_work_low_off_b 0
+nt0_collector_work_low_off nt0_collector_work_low_off_d nt0_collector_work_low_off_g nt0_collector_work_low_off_s nt0_collector_work_low_off_b pch W=2.4e-06 L=1e-06
+vt0_collector_work_high_boundary t0_collector_work_high_out 0 PWL(0 0 0.02 1.65154312393)
+va_nt0_collector_work_high_eni_p_d t0_collector_work_high_ena nt0_collector_work_high_eni_p_d 0
+va_nt0_collector_work_high_eni_p_g enable_b nt0_collector_work_high_eni_p_g 0
+va_nt0_collector_work_high_eni_p_s vdd nt0_collector_work_high_eni_p_s 0
+va_nt0_collector_work_high_eni_p_b vsrc nt0_collector_work_high_eni_p_b 0
+nt0_collector_work_high_eni_p nt0_collector_work_high_eni_p_d nt0_collector_work_high_eni_p_g nt0_collector_work_high_eni_p_s nt0_collector_work_high_eni_p_b pch W=2.4e-06 L=5e-07
+va_nt0_collector_work_high_eni_n_d t0_collector_work_high_ena nt0_collector_work_high_eni_n_d 0
+va_nt0_collector_work_high_eni_n_g enable_b nt0_collector_work_high_eni_n_g 0
+va_nt0_collector_work_high_eni_n_s 0 nt0_collector_work_high_eni_n_s 0
+va_nt0_collector_work_high_eni_n_b 0 nt0_collector_work_high_eni_n_b 0
+nt0_collector_work_high_eni_n nt0_collector_work_high_eni_n_d nt0_collector_work_high_eni_n_g nt0_collector_work_high_eni_n_s nt0_collector_work_high_eni_n_b nch W=1.2e-06 L=5e-07
+va_nt0_collector_work_high_cp_d t0_collector_work_high_out nt0_collector_work_high_cp_d 0
+va_nt0_collector_work_high_cp_g t0_collector_work_high_cg nt0_collector_work_high_cp_g 0
+va_nt0_collector_work_high_cp_s vdd nt0_collector_work_high_cp_s 0
+va_nt0_collector_work_high_cp_b vsrc nt0_collector_work_high_cp_b 0
+nt0_collector_work_high_cp nt0_collector_work_high_cp_d nt0_collector_work_high_cp_g nt0_collector_work_high_cp_s nt0_collector_work_high_cp_b pch W=4e-06 L=4e-06
+va_nt0_collector_work_high_bias_d ilimp_n nt0_collector_work_high_bias_d 0
+va_nt0_collector_work_high_bias_g enable_b nt0_collector_work_high_bias_g 0
+va_nt0_collector_work_high_bias_s t0_collector_work_high_cg nt0_collector_work_high_bias_s 0
+va_nt0_collector_work_high_bias_b vsrc nt0_collector_work_high_bias_b 0
+nt0_collector_work_high_bias nt0_collector_work_high_bias_d nt0_collector_work_high_bias_g nt0_collector_work_high_bias_s nt0_collector_work_high_bias_b pch W=1.2e-06 L=1e-06
+va_nt0_collector_work_high_off_d t0_collector_work_high_cg nt0_collector_work_high_off_d 0
+va_nt0_collector_work_high_off_g t0_collector_work_high_ena nt0_collector_work_high_off_g 0
+va_nt0_collector_work_high_off_s vdd nt0_collector_work_high_off_s 0
+va_nt0_collector_work_high_off_b vsrc nt0_collector_work_high_off_b 0
+nt0_collector_work_high_off nt0_collector_work_high_off_d nt0_collector_work_high_off_g nt0_collector_work_high_off_s nt0_collector_work_high_off_b pch W=2.4e-06 L=1e-06
+vt0_spatial_low_boundary t0_spatial_low_out 0 PWL(0 0 0.02 0)
+va_nt0_spatial_low_eni_p_d t0_spatial_low_ena nt0_spatial_low_eni_p_d 0
+va_nt0_spatial_low_eni_p_g enable_b nt0_spatial_low_eni_p_g 0
+va_nt0_spatial_low_eni_p_s vdd nt0_spatial_low_eni_p_s 0
+va_nt0_spatial_low_eni_p_b vsrc nt0_spatial_low_eni_p_b 0
+nt0_spatial_low_eni_p nt0_spatial_low_eni_p_d nt0_spatial_low_eni_p_g nt0_spatial_low_eni_p_s nt0_spatial_low_eni_p_b pch W=2.4e-06 L=5e-07
+va_nt0_spatial_low_eni_n_d t0_spatial_low_ena nt0_spatial_low_eni_n_d 0
+va_nt0_spatial_low_eni_n_g enable_b nt0_spatial_low_eni_n_g 0
+va_nt0_spatial_low_eni_n_s 0 nt0_spatial_low_eni_n_s 0
+va_nt0_spatial_low_eni_n_b 0 nt0_spatial_low_eni_n_b 0
+nt0_spatial_low_eni_n nt0_spatial_low_eni_n_d nt0_spatial_low_eni_n_g nt0_spatial_low_eni_n_s nt0_spatial_low_eni_n_b nch W=1.2e-06 L=5e-07
+va_nt0_spatial_low_cp_d t0_spatial_low_out nt0_spatial_low_cp_d 0
+va_nt0_spatial_low_cp_g t0_spatial_low_cg nt0_spatial_low_cp_g 0
+va_nt0_spatial_low_cp_s vdd nt0_spatial_low_cp_s 0
+va_nt0_spatial_low_cp_b vsrc nt0_spatial_low_cp_b 0
+nt0_spatial_low_cp nt0_spatial_low_cp_d nt0_spatial_low_cp_g nt0_spatial_low_cp_s nt0_spatial_low_cp_b pch W=2e-06 L=4e-06
+va_nt0_spatial_low_bias_d irefp_n nt0_spatial_low_bias_d 0
+va_nt0_spatial_low_bias_g enable_b nt0_spatial_low_bias_g 0
+va_nt0_spatial_low_bias_s t0_spatial_low_cg nt0_spatial_low_bias_s 0
+va_nt0_spatial_low_bias_b vsrc nt0_spatial_low_bias_b 0
+nt0_spatial_low_bias nt0_spatial_low_bias_d nt0_spatial_low_bias_g nt0_spatial_low_bias_s nt0_spatial_low_bias_b pch W=1.2e-06 L=1e-06
+va_nt0_spatial_low_off_d t0_spatial_low_cg nt0_spatial_low_off_d 0
+va_nt0_spatial_low_off_g t0_spatial_low_ena nt0_spatial_low_off_g 0
+va_nt0_spatial_low_off_s vdd nt0_spatial_low_off_s 0
+va_nt0_spatial_low_off_b vsrc nt0_spatial_low_off_b 0
+nt0_spatial_low_off nt0_spatial_low_off_d nt0_spatial_low_off_g nt0_spatial_low_off_s nt0_spatial_low_off_b pch W=2.4e-06 L=1e-06
+vt0_spatial_work_low_boundary t0_spatial_work_low_out 0 PWL(0 0 0.02 1.5773146859)
+va_nt0_spatial_work_low_eni_p_d t0_spatial_work_low_ena nt0_spatial_work_low_eni_p_d 0
+va_nt0_spatial_work_low_eni_p_g enable_b nt0_spatial_work_low_eni_p_g 0
+va_nt0_spatial_work_low_eni_p_s vdd nt0_spatial_work_low_eni_p_s 0
+va_nt0_spatial_work_low_eni_p_b vsrc nt0_spatial_work_low_eni_p_b 0
+nt0_spatial_work_low_eni_p nt0_spatial_work_low_eni_p_d nt0_spatial_work_low_eni_p_g nt0_spatial_work_low_eni_p_s nt0_spatial_work_low_eni_p_b pch W=2.4e-06 L=5e-07
+va_nt0_spatial_work_low_eni_n_d t0_spatial_work_low_ena nt0_spatial_work_low_eni_n_d 0
+va_nt0_spatial_work_low_eni_n_g enable_b nt0_spatial_work_low_eni_n_g 0
+va_nt0_spatial_work_low_eni_n_s 0 nt0_spatial_work_low_eni_n_s 0
+va_nt0_spatial_work_low_eni_n_b 0 nt0_spatial_work_low_eni_n_b 0
+nt0_spatial_work_low_eni_n nt0_spatial_work_low_eni_n_d nt0_spatial_work_low_eni_n_g nt0_spatial_work_low_eni_n_s nt0_spatial_work_low_eni_n_b nch W=1.2e-06 L=5e-07
+va_nt0_spatial_work_low_cp_d t0_spatial_work_low_out nt0_spatial_work_low_cp_d 0
+va_nt0_spatial_work_low_cp_g t0_spatial_work_low_cg nt0_spatial_work_low_cp_g 0
+va_nt0_spatial_work_low_cp_s vdd nt0_spatial_work_low_cp_s 0
+va_nt0_spatial_work_low_cp_b vsrc nt0_spatial_work_low_cp_b 0
+nt0_spatial_work_low_cp nt0_spatial_work_low_cp_d nt0_spatial_work_low_cp_g nt0_spatial_work_low_cp_s nt0_spatial_work_low_cp_b pch W=2e-06 L=4e-06
+va_nt0_spatial_work_low_bias_d irefp_n nt0_spatial_work_low_bias_d 0
+va_nt0_spatial_work_low_bias_g enable_b nt0_spatial_work_low_bias_g 0
+va_nt0_spatial_work_low_bias_s t0_spatial_work_low_cg nt0_spatial_work_low_bias_s 0
+va_nt0_spatial_work_low_bias_b vsrc nt0_spatial_work_low_bias_b 0
+nt0_spatial_work_low_bias nt0_spatial_work_low_bias_d nt0_spatial_work_low_bias_g nt0_spatial_work_low_bias_s nt0_spatial_work_low_bias_b pch W=1.2e-06 L=1e-06
+va_nt0_spatial_work_low_off_d t0_spatial_work_low_cg nt0_spatial_work_low_off_d 0
+va_nt0_spatial_work_low_off_g t0_spatial_work_low_ena nt0_spatial_work_low_off_g 0
+va_nt0_spatial_work_low_off_s vdd nt0_spatial_work_low_off_s 0
+va_nt0_spatial_work_low_off_b vsrc nt0_spatial_work_low_off_b 0
+nt0_spatial_work_low_off nt0_spatial_work_low_off_d nt0_spatial_work_low_off_g nt0_spatial_work_low_off_s nt0_spatial_work_low_off_b pch W=2.4e-06 L=1e-06
+vt0_spatial_work_high_boundary t0_spatial_work_high_out 0 PWL(0 0 0.02 2.18158632052)
+va_nt0_spatial_work_high_eni_p_d t0_spatial_work_high_ena nt0_spatial_work_high_eni_p_d 0
+va_nt0_spatial_work_high_eni_p_g enable_b nt0_spatial_work_high_eni_p_g 0
+va_nt0_spatial_work_high_eni_p_s vdd nt0_spatial_work_high_eni_p_s 0
+va_nt0_spatial_work_high_eni_p_b vsrc nt0_spatial_work_high_eni_p_b 0
+nt0_spatial_work_high_eni_p nt0_spatial_work_high_eni_p_d nt0_spatial_work_high_eni_p_g nt0_spatial_work_high_eni_p_s nt0_spatial_work_high_eni_p_b pch W=2.4e-06 L=5e-07
+va_nt0_spatial_work_high_eni_n_d t0_spatial_work_high_ena nt0_spatial_work_high_eni_n_d 0
+va_nt0_spatial_work_high_eni_n_g enable_b nt0_spatial_work_high_eni_n_g 0
+va_nt0_spatial_work_high_eni_n_s 0 nt0_spatial_work_high_eni_n_s 0
+va_nt0_spatial_work_high_eni_n_b 0 nt0_spatial_work_high_eni_n_b 0
+nt0_spatial_work_high_eni_n nt0_spatial_work_high_eni_n_d nt0_spatial_work_high_eni_n_g nt0_spatial_work_high_eni_n_s nt0_spatial_work_high_eni_n_b nch W=1.2e-06 L=5e-07
+va_nt0_spatial_work_high_cp_d t0_spatial_work_high_out nt0_spatial_work_high_cp_d 0
+va_nt0_spatial_work_high_cp_g t0_spatial_work_high_cg nt0_spatial_work_high_cp_g 0
+va_nt0_spatial_work_high_cp_s vdd nt0_spatial_work_high_cp_s 0
+va_nt0_spatial_work_high_cp_b vsrc nt0_spatial_work_high_cp_b 0
+nt0_spatial_work_high_cp nt0_spatial_work_high_cp_d nt0_spatial_work_high_cp_g nt0_spatial_work_high_cp_s nt0_spatial_work_high_cp_b pch W=2e-06 L=4e-06
+va_nt0_spatial_work_high_bias_d irefp_n nt0_spatial_work_high_bias_d 0
+va_nt0_spatial_work_high_bias_g enable_b nt0_spatial_work_high_bias_g 0
+va_nt0_spatial_work_high_bias_s t0_spatial_work_high_cg nt0_spatial_work_high_bias_s 0
+va_nt0_spatial_work_high_bias_b vsrc nt0_spatial_work_high_bias_b 0
+nt0_spatial_work_high_bias nt0_spatial_work_high_bias_d nt0_spatial_work_high_bias_g nt0_spatial_work_high_bias_s nt0_spatial_work_high_bias_b pch W=1.2e-06 L=1e-06
+va_nt0_spatial_work_high_off_d t0_spatial_work_high_cg nt0_spatial_work_high_off_d 0
+va_nt0_spatial_work_high_off_g t0_spatial_work_high_ena nt0_spatial_work_high_off_g 0
+va_nt0_spatial_work_high_off_s vdd nt0_spatial_work_high_off_s 0
+va_nt0_spatial_work_high_off_b vsrc nt0_spatial_work_high_off_b 0
+nt0_spatial_work_high_off nt0_spatial_work_high_off_d nt0_spatial_work_high_off_g nt0_spatial_work_high_off_s nt0_spatial_work_high_off_b pch W=2.4e-06 L=1e-06
+vt0_load_low_boundary t0_load_low_out 0 PWL(0 0 0.02 0)
+va_nt0_load_low_eni_p_d t0_load_low_ena nt0_load_low_eni_p_d 0
+va_nt0_load_low_eni_p_g enable_b nt0_load_low_eni_p_g 0
+va_nt0_load_low_eni_p_s vdd nt0_load_low_eni_p_s 0
+va_nt0_load_low_eni_p_b vsrc nt0_load_low_eni_p_b 0
+nt0_load_low_eni_p nt0_load_low_eni_p_d nt0_load_low_eni_p_g nt0_load_low_eni_p_s nt0_load_low_eni_p_b pch W=2.4e-06 L=5e-07
+va_nt0_load_low_eni_n_d t0_load_low_ena nt0_load_low_eni_n_d 0
+va_nt0_load_low_eni_n_g enable_b nt0_load_low_eni_n_g 0
+va_nt0_load_low_eni_n_s 0 nt0_load_low_eni_n_s 0
+va_nt0_load_low_eni_n_b 0 nt0_load_low_eni_n_b 0
+nt0_load_low_eni_n nt0_load_low_eni_n_d nt0_load_low_eni_n_g nt0_load_low_eni_n_s nt0_load_low_eni_n_b nch W=1.2e-06 L=5e-07
+va_nt0_load_low_cp_d t0_load_low_out nt0_load_low_cp_d 0
+va_nt0_load_low_cp_g t0_load_low_cg nt0_load_low_cp_g 0
+va_nt0_load_low_cp_s vdd nt0_load_low_cp_s 0
+va_nt0_load_low_cp_b vsrc nt0_load_low_cp_b 0
+nt0_load_low_cp nt0_load_low_cp_d nt0_load_low_cp_g nt0_load_low_cp_s nt0_load_low_cp_b pch W=4e-06 L=4e-06
+va_nt0_load_low_bias_d irefp_n nt0_load_low_bias_d 0
+va_nt0_load_low_bias_g enable_b nt0_load_low_bias_g 0
+va_nt0_load_low_bias_s t0_load_low_cg nt0_load_low_bias_s 0
+va_nt0_load_low_bias_b vsrc nt0_load_low_bias_b 0
+nt0_load_low_bias nt0_load_low_bias_d nt0_load_low_bias_g nt0_load_low_bias_s nt0_load_low_bias_b pch W=1.2e-06 L=1e-06
+va_nt0_load_low_off_d t0_load_low_cg nt0_load_low_off_d 0
+va_nt0_load_low_off_g t0_load_low_ena nt0_load_low_off_g 0
+va_nt0_load_low_off_s vdd nt0_load_low_off_s 0
+va_nt0_load_low_off_b vsrc nt0_load_low_off_b 0
+nt0_load_low_off nt0_load_low_off_d nt0_load_low_off_g nt0_load_low_off_s nt0_load_low_off_b pch W=2.4e-06 L=1e-06
+vt0_load_work_low_boundary t0_load_work_low_out 0 PWL(0 0 0.02 1.5773146859)
+va_nt0_load_work_low_eni_p_d t0_load_work_low_ena nt0_load_work_low_eni_p_d 0
+va_nt0_load_work_low_eni_p_g enable_b nt0_load_work_low_eni_p_g 0
+va_nt0_load_work_low_eni_p_s vdd nt0_load_work_low_eni_p_s 0
+va_nt0_load_work_low_eni_p_b vsrc nt0_load_work_low_eni_p_b 0
+nt0_load_work_low_eni_p nt0_load_work_low_eni_p_d nt0_load_work_low_eni_p_g nt0_load_work_low_eni_p_s nt0_load_work_low_eni_p_b pch W=2.4e-06 L=5e-07
+va_nt0_load_work_low_eni_n_d t0_load_work_low_ena nt0_load_work_low_eni_n_d 0
+va_nt0_load_work_low_eni_n_g enable_b nt0_load_work_low_eni_n_g 0
+va_nt0_load_work_low_eni_n_s 0 nt0_load_work_low_eni_n_s 0
+va_nt0_load_work_low_eni_n_b 0 nt0_load_work_low_eni_n_b 0
+nt0_load_work_low_eni_n nt0_load_work_low_eni_n_d nt0_load_work_low_eni_n_g nt0_load_work_low_eni_n_s nt0_load_work_low_eni_n_b nch W=1.2e-06 L=5e-07
+va_nt0_load_work_low_cp_d t0_load_work_low_out nt0_load_work_low_cp_d 0
+va_nt0_load_work_low_cp_g t0_load_work_low_cg nt0_load_work_low_cp_g 0
+va_nt0_load_work_low_cp_s vdd nt0_load_work_low_cp_s 0
+va_nt0_load_work_low_cp_b vsrc nt0_load_work_low_cp_b 0
+nt0_load_work_low_cp nt0_load_work_low_cp_d nt0_load_work_low_cp_g nt0_load_work_low_cp_s nt0_load_work_low_cp_b pch W=4e-06 L=4e-06
+va_nt0_load_work_low_bias_d irefp_n nt0_load_work_low_bias_d 0
+va_nt0_load_work_low_bias_g enable_b nt0_load_work_low_bias_g 0
+va_nt0_load_work_low_bias_s t0_load_work_low_cg nt0_load_work_low_bias_s 0
+va_nt0_load_work_low_bias_b vsrc nt0_load_work_low_bias_b 0
+nt0_load_work_low_bias nt0_load_work_low_bias_d nt0_load_work_low_bias_g nt0_load_work_low_bias_s nt0_load_work_low_bias_b pch W=1.2e-06 L=1e-06
+va_nt0_load_work_low_off_d t0_load_work_low_cg nt0_load_work_low_off_d 0
+va_nt0_load_work_low_off_g t0_load_work_low_ena nt0_load_work_low_off_g 0
+va_nt0_load_work_low_off_s vdd nt0_load_work_low_off_s 0
+va_nt0_load_work_low_off_b vsrc nt0_load_work_low_off_b 0
+nt0_load_work_low_off nt0_load_work_low_off_d nt0_load_work_low_off_g nt0_load_work_low_off_s nt0_load_work_low_off_b pch W=2.4e-06 L=1e-06
+vt0_load_work_high_boundary t0_load_work_high_out 0 PWL(0 0 0.02 1.69816901282)
+va_nt0_load_work_high_eni_p_d t0_load_work_high_ena nt0_load_work_high_eni_p_d 0
+va_nt0_load_work_high_eni_p_g enable_b nt0_load_work_high_eni_p_g 0
+va_nt0_load_work_high_eni_p_s vdd nt0_load_work_high_eni_p_s 0
+va_nt0_load_work_high_eni_p_b vsrc nt0_load_work_high_eni_p_b 0
+nt0_load_work_high_eni_p nt0_load_work_high_eni_p_d nt0_load_work_high_eni_p_g nt0_load_work_high_eni_p_s nt0_load_work_high_eni_p_b pch W=2.4e-06 L=5e-07
+va_nt0_load_work_high_eni_n_d t0_load_work_high_ena nt0_load_work_high_eni_n_d 0
+va_nt0_load_work_high_eni_n_g enable_b nt0_load_work_high_eni_n_g 0
+va_nt0_load_work_high_eni_n_s 0 nt0_load_work_high_eni_n_s 0
+va_nt0_load_work_high_eni_n_b 0 nt0_load_work_high_eni_n_b 0
+nt0_load_work_high_eni_n nt0_load_work_high_eni_n_d nt0_load_work_high_eni_n_g nt0_load_work_high_eni_n_s nt0_load_work_high_eni_n_b nch W=1.2e-06 L=5e-07
+va_nt0_load_work_high_cp_d t0_load_work_high_out nt0_load_work_high_cp_d 0
+va_nt0_load_work_high_cp_g t0_load_work_high_cg nt0_load_work_high_cp_g 0
+va_nt0_load_work_high_cp_s vdd nt0_load_work_high_cp_s 0
+va_nt0_load_work_high_cp_b vsrc nt0_load_work_high_cp_b 0
+nt0_load_work_high_cp nt0_load_work_high_cp_d nt0_load_work_high_cp_g nt0_load_work_high_cp_s nt0_load_work_high_cp_b pch W=4e-06 L=4e-06
+va_nt0_load_work_high_bias_d irefp_n nt0_load_work_high_bias_d 0
+va_nt0_load_work_high_bias_g enable_b nt0_load_work_high_bias_g 0
+va_nt0_load_work_high_bias_s t0_load_work_high_cg nt0_load_work_high_bias_s 0
+va_nt0_load_work_high_bias_b vsrc nt0_load_work_high_bias_b 0
+nt0_load_work_high_bias nt0_load_work_high_bias_d nt0_load_work_high_bias_g nt0_load_work_high_bias_s nt0_load_work_high_bias_b pch W=1.2e-06 L=1e-06
+va_nt0_load_work_high_off_d t0_load_work_high_cg nt0_load_work_high_off_d 0
+va_nt0_load_work_high_off_g t0_load_work_high_ena nt0_load_work_high_off_g 0
+va_nt0_load_work_high_off_s vdd nt0_load_work_high_off_s 0
+va_nt0_load_work_high_off_b vsrc nt0_load_work_high_off_b 0
+nt0_load_work_high_off nt0_load_work_high_off_d nt0_load_work_high_off_g nt0_load_work_high_off_s nt0_load_work_high_off_b pch W=2.4e-06 L=1e-06
+vmonitor_boundary monitor_out 0 PWL(0 0 0.02 1.5773146859)
+va_nmonitor_cp_d monitor_out nmonitor_cp_d 0
+va_nmonitor_cp_g irefp_n nmonitor_cp_g 0
+va_nmonitor_cp_s vdd nmonitor_cp_s 0
+va_nmonitor_cp_b vsrc nmonitor_cp_b 0
+nmonitor_cp nmonitor_cp_d nmonitor_cp_g nmonitor_cp_s nmonitor_cp_b pch W=4e-06 L=4e-06
+va_cpar_enable_b_p enable_b cpar_enable_b_p 0
+cpar_enable_b cpar_enable_b_p 0 5e-14
+va_cpar_ilim_n_p ilim_n cpar_ilim_n_p 0
+cpar_ilim_n cpar_ilim_n_p 0 5e-14
+va_cpar_ilimp_n_p ilimp_n cpar_ilimp_n_p 0
+cpar_ilimp_n cpar_ilimp_n_p 0 5e-14
+va_cpar_iref_n_p iref_n cpar_iref_n_p 0
+cpar_iref_n cpar_iref_n_p 0 5e-14
+va_cpar_irefp_n_p irefp_n cpar_irefp_n_p 0
+cpar_irefp_n cpar_irefp_n_p 0 5e-14
+va_cpar_istep_n_p istep_n cpar_istep_n_p 0
+cpar_istep_n cpar_istep_n_p 0 5e-14
+va_cpar_monitor_out_p monitor_out cpar_monitor_out_p 0
+cpar_monitor_out cpar_monitor_out_p 0 5e-14
+va_cpar_por_hold_p por_hold cpar_por_hold_p 0
+cpar_por_hold cpar_por_hold_p 0 5e-14
+va_cpar_por_ok_p por_ok cpar_por_ok_p 0
+cpar_por_ok cpar_por_ok_p 0 5e-14
+va_cpar_porc_p porc cpar_porc_p 0
+cpar_porc cpar_porc_p 0 5e-14
+va_cpar_porx_p porx cpar_porx_p 0
+cpar_porx cpar_porx_p 0 5e-14
+va_cpar_t0_collector_low_cg_p t0_collector_low_cg cpar_t0_collector_low_cg_p 0
+cpar_t0_collector_low_cg cpar_t0_collector_low_cg_p 0 5e-14
+va_cpar_t0_collector_low_ena_p t0_collector_low_ena cpar_t0_collector_low_ena_p 0
+cpar_t0_collector_low_ena cpar_t0_collector_low_ena_p 0 5e-14
+va_cpar_t0_collector_low_out_p t0_collector_low_out cpar_t0_collector_low_out_p 0
+cpar_t0_collector_low_out cpar_t0_collector_low_out_p 0 5e-14
+va_cpar_t0_collector_work_high_cg_p t0_collector_work_high_cg cpar_t0_collector_work_high_cg_p 0
+cpar_t0_collector_work_high_cg cpar_t0_collector_work_high_cg_p 0 5e-14
+va_cpar_t0_collector_work_high_ena_p t0_collector_work_high_ena cpar_t0_collector_work_high_ena_p 0
+cpar_t0_collector_work_high_ena cpar_t0_collector_work_high_ena_p 0 5e-14
+va_cpar_t0_collector_work_high_out_p t0_collector_work_high_out cpar_t0_collector_work_high_out_p 0
+cpar_t0_collector_work_high_out cpar_t0_collector_work_high_out_p 0 5e-14
+va_cpar_t0_collector_work_low_cg_p t0_collector_work_low_cg cpar_t0_collector_work_low_cg_p 0
+cpar_t0_collector_work_low_cg cpar_t0_collector_work_low_cg_p 0 5e-14
+va_cpar_t0_collector_work_low_ena_p t0_collector_work_low_ena cpar_t0_collector_work_low_ena_p 0
+cpar_t0_collector_work_low_ena cpar_t0_collector_work_low_ena_p 0 5e-14
+va_cpar_t0_collector_work_low_out_p t0_collector_work_low_out cpar_t0_collector_work_low_out_p 0
+cpar_t0_collector_work_low_out cpar_t0_collector_work_low_out_p 0 5e-14
+va_cpar_t0_load_low_cg_p t0_load_low_cg cpar_t0_load_low_cg_p 0
+cpar_t0_load_low_cg cpar_t0_load_low_cg_p 0 5e-14
+va_cpar_t0_load_low_ena_p t0_load_low_ena cpar_t0_load_low_ena_p 0
+cpar_t0_load_low_ena cpar_t0_load_low_ena_p 0 5e-14
+va_cpar_t0_load_low_out_p t0_load_low_out cpar_t0_load_low_out_p 0
+cpar_t0_load_low_out cpar_t0_load_low_out_p 0 5e-14
+va_cpar_t0_load_work_high_cg_p t0_load_work_high_cg cpar_t0_load_work_high_cg_p 0
+cpar_t0_load_work_high_cg cpar_t0_load_work_high_cg_p 0 5e-14
+va_cpar_t0_load_work_high_ena_p t0_load_work_high_ena cpar_t0_load_work_high_ena_p 0
+cpar_t0_load_work_high_ena cpar_t0_load_work_high_ena_p 0 5e-14
+va_cpar_t0_load_work_high_out_p t0_load_work_high_out cpar_t0_load_work_high_out_p 0
+cpar_t0_load_work_high_out cpar_t0_load_work_high_out_p 0 5e-14
+va_cpar_t0_load_work_low_cg_p t0_load_work_low_cg cpar_t0_load_work_low_cg_p 0
+cpar_t0_load_work_low_cg cpar_t0_load_work_low_cg_p 0 5e-14
+va_cpar_t0_load_work_low_ena_p t0_load_work_low_ena cpar_t0_load_work_low_ena_p 0
+cpar_t0_load_work_low_ena cpar_t0_load_work_low_ena_p 0 5e-14
+va_cpar_t0_load_work_low_out_p t0_load_work_low_out cpar_t0_load_work_low_out_p 0
+cpar_t0_load_work_low_out cpar_t0_load_work_low_out_p 0 5e-14
+va_cpar_t0_spatial_low_cg_p t0_spatial_low_cg cpar_t0_spatial_low_cg_p 0
+cpar_t0_spatial_low_cg cpar_t0_spatial_low_cg_p 0 5e-14
+va_cpar_t0_spatial_low_ena_p t0_spatial_low_ena cpar_t0_spatial_low_ena_p 0
+cpar_t0_spatial_low_ena cpar_t0_spatial_low_ena_p 0 5e-14
+va_cpar_t0_spatial_low_out_p t0_spatial_low_out cpar_t0_spatial_low_out_p 0
+cpar_t0_spatial_low_out cpar_t0_spatial_low_out_p 0 5e-14
+va_cpar_t0_spatial_work_high_cg_p t0_spatial_work_high_cg cpar_t0_spatial_work_high_cg_p 0
+cpar_t0_spatial_work_high_cg cpar_t0_spatial_work_high_cg_p 0 5e-14
+va_cpar_t0_spatial_work_high_ena_p t0_spatial_work_high_ena cpar_t0_spatial_work_high_ena_p 0
+cpar_t0_spatial_work_high_ena cpar_t0_spatial_work_high_ena_p 0 5e-14
+va_cpar_t0_spatial_work_high_out_p t0_spatial_work_high_out cpar_t0_spatial_work_high_out_p 0
+cpar_t0_spatial_work_high_out cpar_t0_spatial_work_high_out_p 0 5e-14
+va_cpar_t0_spatial_work_low_cg_p t0_spatial_work_low_cg cpar_t0_spatial_work_low_cg_p 0
+cpar_t0_spatial_work_low_cg cpar_t0_spatial_work_low_cg_p 0 5e-14
+va_cpar_t0_spatial_work_low_ena_p t0_spatial_work_low_ena cpar_t0_spatial_work_low_ena_p 0
+cpar_t0_spatial_work_low_ena cpar_t0_spatial_work_low_ena_p 0 5e-14
+va_cpar_t0_spatial_work_low_out_p t0_spatial_work_low_out cpar_t0_spatial_work_low_out_p 0
+cpar_t0_spatial_work_low_out cpar_t0_spatial_work_low_out_p 0 5e-14
+va_cpar_vdd_p vdd cpar_vdd_p 0
+cpar_vdd cpar_vdd_p 0 5e-14
+va_cpar_vmid_p vmid cpar_vmid_p 0
+cpar_vmid cpar_vmid_p 0 5e-14
+va_cpar_vrest_p vrest cpar_vrest_p 0
+cpar_vrest cpar_vrest_p 0 5e-14
+va_cpar_vthe_p vthe cpar_vthe_p 0
+cpar_vthe cpar_vthe_p 0 5e-14
+va_cpar_vthr_p vthr cpar_vthr_p 0
+cpar_vthr cpar_vthr_p 0 5e-14
+.options sparse method=gear reltol=1e-5 abstol=1e-16
+.save v(enable_b) v(ilim_n) v(ilimp_n) v(iref_n) v(irefp_n) v(istep_n) v(monitor_out) v(por_hold) v(por_ok) v(porc) v(porx) v(t0_collector_low_cg) v(t0_collector_low_ena) v(t0_collector_low_out) v(t0_collector_work_high_cg) v(t0_collector_work_high_ena) v(t0_collector_work_high_out) v(t0_collector_work_low_cg) v(t0_collector_work_low_ena) v(t0_collector_work_low_out) v(t0_load_low_cg) v(t0_load_low_ena) v(t0_load_low_out) v(t0_load_work_high_cg) v(t0_load_work_high_ena) v(t0_load_work_high_out) v(t0_load_work_low_cg) v(t0_load_work_low_ena) v(t0_load_work_low_out) v(t0_spatial_low_cg) v(t0_spatial_low_ena) v(t0_spatial_low_out) v(t0_spatial_work_high_cg) v(t0_spatial_work_high_ena) v(t0_spatial_work_high_out) v(t0_spatial_work_low_cg) v(t0_spatial_work_low_ena) v(t0_spatial_work_low_out) v(vdd) v(vmid) v(vrest) v(vsrc) v(vthe) v(vthr) i(vsrc) i(va_rint_p) i(va_cdec_p) i(va_rvrestt_p) i(va_rvrestb_p) i(va_cvrestc_p) i(va_rvthet_p) i(va_rvtheb_p) i(va_cvthec_p) i(va_rvthrt_p) i(va_rvthrb_p) i(va_cvthrc_p) i(va_rvmidt_p) i(va_rvmidb_p) i(va_cvmidc_p) i(va_rporr_p) i(va_cporc_p) i(va_rporra_p) i(va_rporrf_p) i(va_npori1p_d) i(va_npori1p_g) i(va_npori1p_s) i(va_npori1p_b) i(va_npori1n_d) i(va_npori1n_g) i(va_npori1n_s) i(va_npori1n_b) i(va_npori2p_d) i(va_npori2p_g) i(va_npori2p_s) i(va_npori2p_b) i(va_npori2n_d) i(va_npori2n_g) i(va_npori2n_s) i(va_npori2n_b) i(va_riref_p) i(va_nirefd_d) i(va_nirefd_g) i(va_nirefd_s) i(va_nirefd_b) i(va_ristep_p) i(va_nistepd_d) i(va_nistepd_g) i(va_nistepd_s) i(va_nistepd_b) i(va_nirefm_d) i(va_nirefm_g) i(va_nirefm_s) i(va_nirefm_b) i(va_nirefpd_d) i(va_nirefpd_g) i(va_nirefpd_s) i(va_nirefpd_b) i(va_rilim_p) i(va_nilimd_d) i(va_nilimd_g) i(va_nilimd_s) i(va_nilimd_b) i(va_nilimm_d) i(va_nilimm_g) i(va_nilimm_s) i(va_nilimm_b) i(va_nilimpd_d) i(va_nilimpd_g) i(va_nilimpd_s) i(va_nilimpd_b) i(venable) i(vt0_collector_low_boundary) i(va_nt0_collector_low_eni_p_d) i(va_nt0_collector_low_eni_p_g) i(va_nt0_collector_low_eni_p_s) i(va_nt0_collector_low_eni_p_b) i(va_nt0_collector_low_eni_n_d) i(va_nt0_collector_low_eni_n_g) i(va_nt0_collector_low_eni_n_s) i(va_nt0_collector_low_eni_n_b) i(va_nt0_collector_low_cp_d) i(va_nt0_collector_low_cp_g) i(va_nt0_collector_low_cp_s) i(va_nt0_collector_low_cp_b) i(va_nt0_collector_low_bias_d) i(va_nt0_collector_low_bias_g) i(va_nt0_collector_low_bias_s) i(va_nt0_collector_low_bias_b) i(va_nt0_collector_low_off_d) i(va_nt0_collector_low_off_g) i(va_nt0_collector_low_off_s) i(va_nt0_collector_low_off_b) i(vt0_collector_work_low_boundary) i(va_nt0_collector_work_low_eni_p_d) i(va_nt0_collector_work_low_eni_p_g) i(va_nt0_collector_work_low_eni_p_s) i(va_nt0_collector_work_low_eni_p_b) i(va_nt0_collector_work_low_eni_n_d) i(va_nt0_collector_work_low_eni_n_g) i(va_nt0_collector_work_low_eni_n_s) i(va_nt0_collector_work_low_eni_n_b) i(va_nt0_collector_work_low_cp_d) i(va_nt0_collector_work_low_cp_g) i(va_nt0_collector_work_low_cp_s) i(va_nt0_collector_work_low_cp_b) i(va_nt0_collector_work_low_bias_d) i(va_nt0_collector_work_low_bias_g) i(va_nt0_collector_work_low_bias_s) i(va_nt0_collector_work_low_bias_b) i(va_nt0_collector_work_low_off_d) i(va_nt0_collector_work_low_off_g) i(va_nt0_collector_work_low_off_s) i(va_nt0_collector_work_low_off_b) i(vt0_collector_work_high_boundary) i(va_nt0_collector_work_high_eni_p_d) i(va_nt0_collector_work_high_eni_p_g) i(va_nt0_collector_work_high_eni_p_s) i(va_nt0_collector_work_high_eni_p_b) i(va_nt0_collector_work_high_eni_n_d) i(va_nt0_collector_work_high_eni_n_g) i(va_nt0_collector_work_high_eni_n_s) i(va_nt0_collector_work_high_eni_n_b) i(va_nt0_collector_work_high_cp_d) i(va_nt0_collector_work_high_cp_g) i(va_nt0_collector_work_high_cp_s) i(va_nt0_collector_work_high_cp_b) i(va_nt0_collector_work_high_bias_d) i(va_nt0_collector_work_high_bias_g) i(va_nt0_collector_work_high_bias_s) i(va_nt0_collector_work_high_bias_b) i(va_nt0_collector_work_high_off_d) i(va_nt0_collector_work_high_off_g) i(va_nt0_collector_work_high_off_s) i(va_nt0_collector_work_high_off_b) i(vt0_spatial_low_boundary) i(va_nt0_spatial_low_eni_p_d) i(va_nt0_spatial_low_eni_p_g) i(va_nt0_spatial_low_eni_p_s) i(va_nt0_spatial_low_eni_p_b) i(va_nt0_spatial_low_eni_n_d) i(va_nt0_spatial_low_eni_n_g) i(va_nt0_spatial_low_eni_n_s) i(va_nt0_spatial_low_eni_n_b) i(va_nt0_spatial_low_cp_d) i(va_nt0_spatial_low_cp_g) i(va_nt0_spatial_low_cp_s) i(va_nt0_spatial_low_cp_b) i(va_nt0_spatial_low_bias_d) i(va_nt0_spatial_low_bias_g) i(va_nt0_spatial_low_bias_s) i(va_nt0_spatial_low_bias_b) i(va_nt0_spatial_low_off_d) i(va_nt0_spatial_low_off_g) i(va_nt0_spatial_low_off_s) i(va_nt0_spatial_low_off_b) i(vt0_spatial_work_low_boundary) i(va_nt0_spatial_work_low_eni_p_d) i(va_nt0_spatial_work_low_eni_p_g) i(va_nt0_spatial_work_low_eni_p_s) i(va_nt0_spatial_work_low_eni_p_b) i(va_nt0_spatial_work_low_eni_n_d) i(va_nt0_spatial_work_low_eni_n_g) i(va_nt0_spatial_work_low_eni_n_s) i(va_nt0_spatial_work_low_eni_n_b) i(va_nt0_spatial_work_low_cp_d) i(va_nt0_spatial_work_low_cp_g) i(va_nt0_spatial_work_low_cp_s) i(va_nt0_spatial_work_low_cp_b) i(va_nt0_spatial_work_low_bias_d) i(va_nt0_spatial_work_low_bias_g) i(va_nt0_spatial_work_low_bias_s) i(va_nt0_spatial_work_low_bias_b) i(va_nt0_spatial_work_low_off_d) i(va_nt0_spatial_work_low_off_g) i(va_nt0_spatial_work_low_off_s) i(va_nt0_spatial_work_low_off_b) i(vt0_spatial_work_high_boundary) i(va_nt0_spatial_work_high_eni_p_d) i(va_nt0_spatial_work_high_eni_p_g) i(va_nt0_spatial_work_high_eni_p_s) i(va_nt0_spatial_work_high_eni_p_b) i(va_nt0_spatial_work_high_eni_n_d) i(va_nt0_spatial_work_high_eni_n_g) i(va_nt0_spatial_work_high_eni_n_s) i(va_nt0_spatial_work_high_eni_n_b) i(va_nt0_spatial_work_high_cp_d) i(va_nt0_spatial_work_high_cp_g) i(va_nt0_spatial_work_high_cp_s) i(va_nt0_spatial_work_high_cp_b) i(va_nt0_spatial_work_high_bias_d) i(va_nt0_spatial_work_high_bias_g) i(va_nt0_spatial_work_high_bias_s) i(va_nt0_spatial_work_high_bias_b) i(va_nt0_spatial_work_high_off_d) i(va_nt0_spatial_work_high_off_g) i(va_nt0_spatial_work_high_off_s) i(va_nt0_spatial_work_high_off_b) i(vt0_load_low_boundary) i(va_nt0_load_low_eni_p_d) i(va_nt0_load_low_eni_p_g) i(va_nt0_load_low_eni_p_s) i(va_nt0_load_low_eni_p_b) i(va_nt0_load_low_eni_n_d) i(va_nt0_load_low_eni_n_g) i(va_nt0_load_low_eni_n_s) i(va_nt0_load_low_eni_n_b) i(va_nt0_load_low_cp_d) i(va_nt0_load_low_cp_g) i(va_nt0_load_low_cp_s) i(va_nt0_load_low_cp_b) i(va_nt0_load_low_bias_d) i(va_nt0_load_low_bias_g) i(va_nt0_load_low_bias_s) i(va_nt0_load_low_bias_b) i(va_nt0_load_low_off_d) i(va_nt0_load_low_off_g) i(va_nt0_load_low_off_s) i(va_nt0_load_low_off_b) i(vt0_load_work_low_boundary) i(va_nt0_load_work_low_eni_p_d) i(va_nt0_load_work_low_eni_p_g) i(va_nt0_load_work_low_eni_p_s) i(va_nt0_load_work_low_eni_p_b) i(va_nt0_load_work_low_eni_n_d) i(va_nt0_load_work_low_eni_n_g) i(va_nt0_load_work_low_eni_n_s) i(va_nt0_load_work_low_eni_n_b) i(va_nt0_load_work_low_cp_d) i(va_nt0_load_work_low_cp_g) i(va_nt0_load_work_low_cp_s) i(va_nt0_load_work_low_cp_b) i(va_nt0_load_work_low_bias_d) i(va_nt0_load_work_low_bias_g) i(va_nt0_load_work_low_bias_s) i(va_nt0_load_work_low_bias_b) i(va_nt0_load_work_low_off_d) i(va_nt0_load_work_low_off_g) i(va_nt0_load_work_low_off_s) i(va_nt0_load_work_low_off_b) i(vt0_load_work_high_boundary) i(va_nt0_load_work_high_eni_p_d) i(va_nt0_load_work_high_eni_p_g) i(va_nt0_load_work_high_eni_p_s) i(va_nt0_load_work_high_eni_p_b) i(va_nt0_load_work_high_eni_n_d) i(va_nt0_load_work_high_eni_n_g) i(va_nt0_load_work_high_eni_n_s) i(va_nt0_load_work_high_eni_n_b) i(va_nt0_load_work_high_cp_d) i(va_nt0_load_work_high_cp_g) i(va_nt0_load_work_high_cp_s) i(va_nt0_load_work_high_cp_b) i(va_nt0_load_work_high_bias_d) i(va_nt0_load_work_high_bias_g) i(va_nt0_load_work_high_bias_s) i(va_nt0_load_work_high_bias_b) i(va_nt0_load_work_high_off_d) i(va_nt0_load_work_high_off_g) i(va_nt0_load_work_high_off_s) i(va_nt0_load_work_high_off_b) i(vmonitor_boundary) i(va_nmonitor_cp_d) i(va_nmonitor_cp_g) i(va_nmonitor_cp_s) i(va_nmonitor_cp_b) i(va_cpar_enable_b_p) i(va_cpar_ilim_n_p) i(va_cpar_ilimp_n_p) i(va_cpar_iref_n_p) i(va_cpar_irefp_n_p) i(va_cpar_istep_n_p) i(va_cpar_monitor_out_p) i(va_cpar_por_hold_p) i(va_cpar_por_ok_p) i(va_cpar_porc_p) i(va_cpar_porx_p) i(va_cpar_t0_collector_low_cg_p) i(va_cpar_t0_collector_low_ena_p) i(va_cpar_t0_collector_low_out_p) i(va_cpar_t0_collector_work_high_cg_p) i(va_cpar_t0_collector_work_high_ena_p) i(va_cpar_t0_collector_work_high_out_p) i(va_cpar_t0_collector_work_low_cg_p) i(va_cpar_t0_collector_work_low_ena_p) i(va_cpar_t0_collector_work_low_out_p) i(va_cpar_t0_load_low_cg_p) i(va_cpar_t0_load_low_ena_p) i(va_cpar_t0_load_low_out_p) i(va_cpar_t0_load_work_high_cg_p) i(va_cpar_t0_load_work_high_ena_p) i(va_cpar_t0_load_work_high_out_p) i(va_cpar_t0_load_work_low_cg_p) i(va_cpar_t0_load_work_low_ena_p) i(va_cpar_t0_load_work_low_out_p) i(va_cpar_t0_spatial_low_cg_p) i(va_cpar_t0_spatial_low_ena_p) i(va_cpar_t0_spatial_low_out_p) i(va_cpar_t0_spatial_work_high_cg_p) i(va_cpar_t0_spatial_work_high_ena_p) i(va_cpar_t0_spatial_work_high_out_p) i(va_cpar_t0_spatial_work_low_cg_p) i(va_cpar_t0_spatial_work_low_ena_p) i(va_cpar_t0_spatial_work_low_out_p) i(va_cpar_vdd_p) i(va_cpar_vmid_p) i(va_cpar_vrest_p) i(va_cpar_vthe_p) i(va_cpar_vthr_p)
+.control
+pre_osdi /workspace/thermal-g3-env/host/native/models/ekv26_linux.osdi
+set filetype=binary
+tran 0.001 0.06 0 0.000125
+write /workspace/thermal-g3-repair/gated-source-v3-2026-10-23-fc4ec434/runs/T0_GATED_SOURCE_BENCH/T0_GATED_SOURCE_BENCH.raw
+quit
+.endc
+.end

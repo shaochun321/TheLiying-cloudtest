@@ -1,0 +1,57 @@
+{
+  "status": "PROPOSED_PRE_RUN_ENGINEERING_LIMITS",
+  "method": "Finite current ratio on a fixed offline EKV grid; reserve half the logarithmic +/-10% allowance and round down to 0.1mV",
+  "temperature_C": 27.0,
+  "current_tolerance": 0.1,
+  "bias_motion_current_ratio_band": [
+    0.9486832980505138,
+    1.0488088481701516
+  ],
+  "records": {
+    "iref_n": {
+      "nominal_gate_V": 0.7375428333011813,
+      "gate_baseline_grid_V": [
+        0.7175428333011813,
+        0.7575428333011813
+      ],
+      "gate_grid_count": 17,
+      "drain_grid_V": [
+        0.05,
+        3.2
+      ],
+      "drain_grid_count": 33,
+      "raw_sampled_limit_V": 0.003885408740025014,
+      "engineering_limit_V": 0.0038,
+      "rounding_V": 0.0001,
+      "min_current_ratio_on_grid": 0.9536886789605676,
+      "max_current_ratio_on_grid": 1.0477200242621207
+    },
+    "ilim_n": {
+      "nominal_gate_V": 0.7527595004267271,
+      "gate_baseline_grid_V": [
+        0.7327595004267271,
+        0.7727595004267271
+      ],
+      "gate_grid_count": 17,
+      "drain_grid_V": [
+        0.05,
+        3.2
+      ],
+      "drain_grid_count": 33,
+      "raw_sampled_limit_V": 0.004156632286030798,
+      "engineering_limit_V": 0.0041,
+      "rounding_V": 0.0001,
+      "min_current_ratio_on_grid": 0.9532712705610101,
+      "max_current_ratio_on_grid": 1.0481340997549693
+    }
+  },
+  "assumptions": [
+    "Same original static EKV implementation and 4um/4um geometry",
+    "This samples a design box; it is not a rigorous continuous or manufacturing bound",
+    "At fixed drain only: drain motion, gate charge, selector loss and process mismatch are not covered",
+    "Actual independent monitor and all working-output current gates remain mandatory",
+    "After24ms baseline and observed drain voltages must lie in the registered design box; outside is UNMEASURED/stop, never an automatic limit change"
+  ],
+  "source_sha256": "e4fe9ac0703a9ea2944eddd7ef2744c976d61db2cddc29514387da7c09d5ab7e",
+  "new_solver_starts": 0
+}

@@ -1,0 +1,2719 @@
+{
+  "status": "FROZEN_AUTHORIZED_ONCE",
+  "analysis": "tran 0.001 0.06 0 0.000125",
+  "mos_nodes": {
+    "npori1p": [
+      "por_hold",
+      "porx",
+      "vdd",
+      "vsrc"
+    ],
+    "npori1n": [
+      "por_hold",
+      "porx",
+      "0",
+      "0"
+    ],
+    "npori2p": [
+      "por_ok",
+      "por_hold",
+      "vdd",
+      "vsrc"
+    ],
+    "npori2n": [
+      "por_ok",
+      "por_hold",
+      "0",
+      "0"
+    ],
+    "nirefd": [
+      "iref_n",
+      "iref_n",
+      "0",
+      "0"
+    ],
+    "nistepd": [
+      "istep_n",
+      "istep_n",
+      "0",
+      "0"
+    ],
+    "nirefm": [
+      "irefp_n",
+      "iref_n",
+      "0",
+      "0"
+    ],
+    "nirefpd": [
+      "irefp_n",
+      "irefp_n",
+      "vdd",
+      "vsrc"
+    ],
+    "nilimd": [
+      "ilim_n",
+      "ilim_n",
+      "0",
+      "0"
+    ],
+    "nilimm": [
+      "ilimp_n",
+      "ilim_n",
+      "0",
+      "0"
+    ],
+    "nilimpd": [
+      "ilimp_n",
+      "ilimp_n",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_collector_low_refn": [
+      "t0_collector_low_local_p",
+      "ilim_n",
+      "0",
+      "0"
+    ],
+    "nt0_collector_low_refp": [
+      "t0_collector_low_local_p",
+      "t0_collector_low_local_p",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_collector_low_eni_p": [
+      "t0_collector_low_ena",
+      "enable_b",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_collector_low_eni_n": [
+      "t0_collector_low_ena",
+      "enable_b",
+      "0",
+      "0"
+    ],
+    "nt0_collector_low_cp": [
+      "t0_collector_low_out",
+      "t0_collector_low_cg",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_collector_low_bias": [
+      "t0_collector_low_local_p",
+      "enable_b",
+      "t0_collector_low_cg",
+      "vsrc"
+    ],
+    "nt0_collector_low_off": [
+      "t0_collector_low_cg",
+      "t0_collector_low_ena",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_collector_work_low_refn": [
+      "t0_collector_work_low_local_p",
+      "ilim_n",
+      "0",
+      "0"
+    ],
+    "nt0_collector_work_low_refp": [
+      "t0_collector_work_low_local_p",
+      "t0_collector_work_low_local_p",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_collector_work_low_eni_p": [
+      "t0_collector_work_low_ena",
+      "enable_b",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_collector_work_low_eni_n": [
+      "t0_collector_work_low_ena",
+      "enable_b",
+      "0",
+      "0"
+    ],
+    "nt0_collector_work_low_cp": [
+      "t0_collector_work_low_out",
+      "t0_collector_work_low_cg",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_collector_work_low_bias": [
+      "t0_collector_work_low_local_p",
+      "enable_b",
+      "t0_collector_work_low_cg",
+      "vsrc"
+    ],
+    "nt0_collector_work_low_off": [
+      "t0_collector_work_low_cg",
+      "t0_collector_work_low_ena",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_collector_work_high_refn": [
+      "t0_collector_work_high_local_p",
+      "ilim_n",
+      "0",
+      "0"
+    ],
+    "nt0_collector_work_high_refp": [
+      "t0_collector_work_high_local_p",
+      "t0_collector_work_high_local_p",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_collector_work_high_eni_p": [
+      "t0_collector_work_high_ena",
+      "enable_b",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_collector_work_high_eni_n": [
+      "t0_collector_work_high_ena",
+      "enable_b",
+      "0",
+      "0"
+    ],
+    "nt0_collector_work_high_cp": [
+      "t0_collector_work_high_out",
+      "t0_collector_work_high_cg",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_collector_work_high_bias": [
+      "t0_collector_work_high_local_p",
+      "enable_b",
+      "t0_collector_work_high_cg",
+      "vsrc"
+    ],
+    "nt0_collector_work_high_off": [
+      "t0_collector_work_high_cg",
+      "t0_collector_work_high_ena",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_spatial_low_refn": [
+      "t0_spatial_low_local_p",
+      "iref_n",
+      "0",
+      "0"
+    ],
+    "nt0_spatial_low_refp": [
+      "t0_spatial_low_local_p",
+      "t0_spatial_low_local_p",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_spatial_low_eni_p": [
+      "t0_spatial_low_ena",
+      "enable_b",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_spatial_low_eni_n": [
+      "t0_spatial_low_ena",
+      "enable_b",
+      "0",
+      "0"
+    ],
+    "nt0_spatial_low_cp": [
+      "t0_spatial_low_out",
+      "t0_spatial_low_cg",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_spatial_low_bias": [
+      "t0_spatial_low_local_p",
+      "enable_b",
+      "t0_spatial_low_cg",
+      "vsrc"
+    ],
+    "nt0_spatial_low_off": [
+      "t0_spatial_low_cg",
+      "t0_spatial_low_ena",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_spatial_work_low_refn": [
+      "t0_spatial_work_low_local_p",
+      "iref_n",
+      "0",
+      "0"
+    ],
+    "nt0_spatial_work_low_refp": [
+      "t0_spatial_work_low_local_p",
+      "t0_spatial_work_low_local_p",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_spatial_work_low_eni_p": [
+      "t0_spatial_work_low_ena",
+      "enable_b",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_spatial_work_low_eni_n": [
+      "t0_spatial_work_low_ena",
+      "enable_b",
+      "0",
+      "0"
+    ],
+    "nt0_spatial_work_low_cp": [
+      "t0_spatial_work_low_out",
+      "t0_spatial_work_low_cg",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_spatial_work_low_bias": [
+      "t0_spatial_work_low_local_p",
+      "enable_b",
+      "t0_spatial_work_low_cg",
+      "vsrc"
+    ],
+    "nt0_spatial_work_low_off": [
+      "t0_spatial_work_low_cg",
+      "t0_spatial_work_low_ena",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_spatial_work_high_refn": [
+      "t0_spatial_work_high_local_p",
+      "iref_n",
+      "0",
+      "0"
+    ],
+    "nt0_spatial_work_high_refp": [
+      "t0_spatial_work_high_local_p",
+      "t0_spatial_work_high_local_p",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_spatial_work_high_eni_p": [
+      "t0_spatial_work_high_ena",
+      "enable_b",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_spatial_work_high_eni_n": [
+      "t0_spatial_work_high_ena",
+      "enable_b",
+      "0",
+      "0"
+    ],
+    "nt0_spatial_work_high_cp": [
+      "t0_spatial_work_high_out",
+      "t0_spatial_work_high_cg",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_spatial_work_high_bias": [
+      "t0_spatial_work_high_local_p",
+      "enable_b",
+      "t0_spatial_work_high_cg",
+      "vsrc"
+    ],
+    "nt0_spatial_work_high_off": [
+      "t0_spatial_work_high_cg",
+      "t0_spatial_work_high_ena",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_load_low_refn": [
+      "t0_load_low_local_p",
+      "iref_n",
+      "0",
+      "0"
+    ],
+    "nt0_load_low_refp": [
+      "t0_load_low_local_p",
+      "t0_load_low_local_p",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_load_low_eni_p": [
+      "t0_load_low_ena",
+      "enable_b",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_load_low_eni_n": [
+      "t0_load_low_ena",
+      "enable_b",
+      "0",
+      "0"
+    ],
+    "nt0_load_low_cp": [
+      "t0_load_low_out",
+      "t0_load_low_cg",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_load_low_bias": [
+      "t0_load_low_local_p",
+      "enable_b",
+      "t0_load_low_cg",
+      "vsrc"
+    ],
+    "nt0_load_low_off": [
+      "t0_load_low_cg",
+      "t0_load_low_ena",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_load_work_low_refn": [
+      "t0_load_work_low_local_p",
+      "iref_n",
+      "0",
+      "0"
+    ],
+    "nt0_load_work_low_refp": [
+      "t0_load_work_low_local_p",
+      "t0_load_work_low_local_p",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_load_work_low_eni_p": [
+      "t0_load_work_low_ena",
+      "enable_b",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_load_work_low_eni_n": [
+      "t0_load_work_low_ena",
+      "enable_b",
+      "0",
+      "0"
+    ],
+    "nt0_load_work_low_cp": [
+      "t0_load_work_low_out",
+      "t0_load_work_low_cg",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_load_work_low_bias": [
+      "t0_load_work_low_local_p",
+      "enable_b",
+      "t0_load_work_low_cg",
+      "vsrc"
+    ],
+    "nt0_load_work_low_off": [
+      "t0_load_work_low_cg",
+      "t0_load_work_low_ena",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_load_work_high_refn": [
+      "t0_load_work_high_local_p",
+      "iref_n",
+      "0",
+      "0"
+    ],
+    "nt0_load_work_high_refp": [
+      "t0_load_work_high_local_p",
+      "t0_load_work_high_local_p",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_load_work_high_eni_p": [
+      "t0_load_work_high_ena",
+      "enable_b",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_load_work_high_eni_n": [
+      "t0_load_work_high_ena",
+      "enable_b",
+      "0",
+      "0"
+    ],
+    "nt0_load_work_high_cp": [
+      "t0_load_work_high_out",
+      "t0_load_work_high_cg",
+      "vdd",
+      "vsrc"
+    ],
+    "nt0_load_work_high_bias": [
+      "t0_load_work_high_local_p",
+      "enable_b",
+      "t0_load_work_high_cg",
+      "vsrc"
+    ],
+    "nt0_load_work_high_off": [
+      "t0_load_work_high_cg",
+      "t0_load_work_high_ena",
+      "vdd",
+      "vsrc"
+    ],
+    "nmonitor_cp": [
+      "monitor_out",
+      "irefp_n",
+      "vdd",
+      "vsrc"
+    ]
+  },
+  "expected_mos_count": 75,
+  "channels": [
+    {
+      "prefix": "t0_collector_low_",
+      "role": "collector",
+      "certificate_role": "G0",
+      "boundary_class": "low",
+      "output_boundary_V": 0.0,
+      "diode": "ilimp_n",
+      "scale": 1.0,
+      "charge_limit_C": 4.945360433543721e-10,
+      "cp_drain_current_vector": "i(va_nt0_collector_low_cp_d)",
+      "gate_node": "t0_collector_low_cg",
+      "inverted_enable_node": "t0_collector_low_ena",
+      "output_node": "t0_collector_low_out",
+      "reference_current_resistor": "rilim",
+      "reference_bias_n": "ilim_n",
+      "local_reference_node": "t0_collector_low_local_p"
+    },
+    {
+      "prefix": "t0_collector_work_low_",
+      "role": "collector",
+      "certificate_role": "G0",
+      "boundary_class": "work_low",
+      "output_boundary_V": 1.0515431239325959,
+      "diode": "ilimp_n",
+      "scale": 1.0,
+      "charge_limit_C": 4.945360433543721e-10,
+      "cp_drain_current_vector": "i(va_nt0_collector_work_low_cp_d)",
+      "gate_node": "t0_collector_work_low_cg",
+      "inverted_enable_node": "t0_collector_work_low_ena",
+      "output_node": "t0_collector_work_low_out",
+      "reference_current_resistor": "rilim",
+      "reference_bias_n": "ilim_n",
+      "local_reference_node": "t0_collector_work_low_local_p"
+    },
+    {
+      "prefix": "t0_collector_work_high_",
+      "role": "collector",
+      "certificate_role": "G0",
+      "boundary_class": "work_high",
+      "output_boundary_V": 1.651543123932596,
+      "diode": "ilimp_n",
+      "scale": 1.0,
+      "charge_limit_C": 4.945360433543721e-10,
+      "cp_drain_current_vector": "i(va_nt0_collector_work_high_cp_d)",
+      "gate_node": "t0_collector_work_high_cg",
+      "inverted_enable_node": "t0_collector_work_high_ena",
+      "output_node": "t0_collector_work_high_out",
+      "reference_current_resistor": "rilim",
+      "reference_bias_n": "ilim_n",
+      "local_reference_node": "t0_collector_work_high_local_p"
+    },
+    {
+      "prefix": "t0_spatial_low_",
+      "role": "spatial",
+      "certificate_role": "Sigma",
+      "boundary_class": "low",
+      "output_boundary_V": 0.0,
+      "diode": "irefp_n",
+      "scale": 0.5,
+      "charge_limit_C": 2.43463898266768e-10,
+      "cp_drain_current_vector": "i(va_nt0_spatial_low_cp_d)",
+      "gate_node": "t0_spatial_low_cg",
+      "inverted_enable_node": "t0_spatial_low_ena",
+      "output_node": "t0_spatial_low_out",
+      "reference_current_resistor": "riref",
+      "reference_bias_n": "iref_n",
+      "local_reference_node": "t0_spatial_low_local_p"
+    },
+    {
+      "prefix": "t0_spatial_work_low_",
+      "role": "spatial",
+      "certificate_role": "Sigma",
+      "boundary_class": "work_low",
+      "output_boundary_V": 1.5773146858988938,
+      "diode": "irefp_n",
+      "scale": 0.5,
+      "charge_limit_C": 2.43463898266768e-10,
+      "cp_drain_current_vector": "i(va_nt0_spatial_work_low_cp_d)",
+      "gate_node": "t0_spatial_work_low_cg",
+      "inverted_enable_node": "t0_spatial_work_low_ena",
+      "output_node": "t0_spatial_work_low_out",
+      "reference_current_resistor": "riref",
+      "reference_bias_n": "iref_n",
+      "local_reference_node": "t0_spatial_work_low_local_p"
+    },
+    {
+      "prefix": "t0_spatial_work_high_",
+      "role": "spatial",
+      "certificate_role": "Sigma",
+      "boundary_class": "work_high",
+      "output_boundary_V": 2.1815863205230452,
+      "diode": "irefp_n",
+      "scale": 0.5,
+      "charge_limit_C": 2.43463898266768e-10,
+      "cp_drain_current_vector": "i(va_nt0_spatial_work_high_cp_d)",
+      "gate_node": "t0_spatial_work_high_cg",
+      "inverted_enable_node": "t0_spatial_work_high_ena",
+      "output_node": "t0_spatial_work_high_out",
+      "reference_current_resistor": "riref",
+      "reference_bias_n": "iref_n",
+      "local_reference_node": "t0_spatial_work_high_local_p"
+    },
+    {
+      "prefix": "t0_load_low_",
+      "role": "load",
+      "certificate_role": "Theta_Cdir",
+      "boundary_class": "low",
+      "output_boundary_V": 0.0,
+      "diode": "irefp_n",
+      "scale": 1.0,
+      "charge_limit_C": 3.6519584740015196e-09,
+      "cp_drain_current_vector": "i(va_nt0_load_low_cp_d)",
+      "gate_node": "t0_load_low_cg",
+      "inverted_enable_node": "t0_load_low_ena",
+      "output_node": "t0_load_low_out",
+      "reference_current_resistor": "riref",
+      "reference_bias_n": "iref_n",
+      "local_reference_node": "t0_load_low_local_p"
+    },
+    {
+      "prefix": "t0_load_work_low_",
+      "role": "load",
+      "certificate_role": "Theta_Cdir",
+      "boundary_class": "work_low",
+      "output_boundary_V": 1.5773146858988938,
+      "diode": "irefp_n",
+      "scale": 1.0,
+      "charge_limit_C": 3.6519584740015196e-09,
+      "cp_drain_current_vector": "i(va_nt0_load_work_low_cp_d)",
+      "gate_node": "t0_load_work_low_cg",
+      "inverted_enable_node": "t0_load_work_low_ena",
+      "output_node": "t0_load_work_low_out",
+      "reference_current_resistor": "riref",
+      "reference_bias_n": "iref_n",
+      "local_reference_node": "t0_load_work_low_local_p"
+    },
+    {
+      "prefix": "t0_load_work_high_",
+      "role": "load",
+      "certificate_role": "Theta_Cdir",
+      "boundary_class": "work_high",
+      "output_boundary_V": 1.6981690128237241,
+      "diode": "irefp_n",
+      "scale": 1.0,
+      "charge_limit_C": 3.6519584740015196e-09,
+      "cp_drain_current_vector": "i(va_nt0_load_work_high_cp_d)",
+      "gate_node": "t0_load_work_high_cg",
+      "inverted_enable_node": "t0_load_work_high_ena",
+      "output_node": "t0_load_work_high_out",
+      "reference_current_resistor": "riref",
+      "reference_bias_n": "iref_n",
+      "local_reference_node": "t0_load_work_high_local_p"
+    }
+  ],
+  "required_vectors": [
+    "v(enable_b)",
+    "v(ilim_n)",
+    "v(ilimp_n)",
+    "v(iref_n)",
+    "v(irefp_n)",
+    "v(istep_n)",
+    "v(monitor_out)",
+    "v(por_hold)",
+    "v(por_ok)",
+    "v(porc)",
+    "v(porx)",
+    "v(t0_collector_low_cg)",
+    "v(t0_collector_low_ena)",
+    "v(t0_collector_low_local_p)",
+    "v(t0_collector_low_out)",
+    "v(t0_collector_work_high_cg)",
+    "v(t0_collector_work_high_ena)",
+    "v(t0_collector_work_high_local_p)",
+    "v(t0_collector_work_high_out)",
+    "v(t0_collector_work_low_cg)",
+    "v(t0_collector_work_low_ena)",
+    "v(t0_collector_work_low_local_p)",
+    "v(t0_collector_work_low_out)",
+    "v(t0_load_low_cg)",
+    "v(t0_load_low_ena)",
+    "v(t0_load_low_local_p)",
+    "v(t0_load_low_out)",
+    "v(t0_load_work_high_cg)",
+    "v(t0_load_work_high_ena)",
+    "v(t0_load_work_high_local_p)",
+    "v(t0_load_work_high_out)",
+    "v(t0_load_work_low_cg)",
+    "v(t0_load_work_low_ena)",
+    "v(t0_load_work_low_local_p)",
+    "v(t0_load_work_low_out)",
+    "v(t0_spatial_low_cg)",
+    "v(t0_spatial_low_ena)",
+    "v(t0_spatial_low_local_p)",
+    "v(t0_spatial_low_out)",
+    "v(t0_spatial_work_high_cg)",
+    "v(t0_spatial_work_high_ena)",
+    "v(t0_spatial_work_high_local_p)",
+    "v(t0_spatial_work_high_out)",
+    "v(t0_spatial_work_low_cg)",
+    "v(t0_spatial_work_low_ena)",
+    "v(t0_spatial_work_low_local_p)",
+    "v(t0_spatial_work_low_out)",
+    "v(vdd)",
+    "v(vmid)",
+    "v(vrest)",
+    "v(vsrc)",
+    "v(vthe)",
+    "v(vthr)",
+    "i(vsrc)",
+    "i(va_rint_p)",
+    "i(va_cdec_p)",
+    "i(va_rvrestt_p)",
+    "i(va_rvrestb_p)",
+    "i(va_cvrestc_p)",
+    "i(va_rvthet_p)",
+    "i(va_rvtheb_p)",
+    "i(va_cvthec_p)",
+    "i(va_rvthrt_p)",
+    "i(va_rvthrb_p)",
+    "i(va_cvthrc_p)",
+    "i(va_rvmidt_p)",
+    "i(va_rvmidb_p)",
+    "i(va_cvmidc_p)",
+    "i(va_rporr_p)",
+    "i(va_cporc_p)",
+    "i(va_rporra_p)",
+    "i(va_rporrf_p)",
+    "i(va_npori1p_d)",
+    "i(va_npori1p_g)",
+    "i(va_npori1p_s)",
+    "i(va_npori1p_b)",
+    "i(va_npori1n_d)",
+    "i(va_npori1n_g)",
+    "i(va_npori1n_s)",
+    "i(va_npori1n_b)",
+    "i(va_npori2p_d)",
+    "i(va_npori2p_g)",
+    "i(va_npori2p_s)",
+    "i(va_npori2p_b)",
+    "i(va_npori2n_d)",
+    "i(va_npori2n_g)",
+    "i(va_npori2n_s)",
+    "i(va_npori2n_b)",
+    "i(va_riref_p)",
+    "i(va_nirefd_d)",
+    "i(va_nirefd_g)",
+    "i(va_nirefd_s)",
+    "i(va_nirefd_b)",
+    "i(va_ristep_p)",
+    "i(va_nistepd_d)",
+    "i(va_nistepd_g)",
+    "i(va_nistepd_s)",
+    "i(va_nistepd_b)",
+    "i(va_nirefm_d)",
+    "i(va_nirefm_g)",
+    "i(va_nirefm_s)",
+    "i(va_nirefm_b)",
+    "i(va_nirefpd_d)",
+    "i(va_nirefpd_g)",
+    "i(va_nirefpd_s)",
+    "i(va_nirefpd_b)",
+    "i(va_rilim_p)",
+    "i(va_nilimd_d)",
+    "i(va_nilimd_g)",
+    "i(va_nilimd_s)",
+    "i(va_nilimd_b)",
+    "i(va_nilimm_d)",
+    "i(va_nilimm_g)",
+    "i(va_nilimm_s)",
+    "i(va_nilimm_b)",
+    "i(va_nilimpd_d)",
+    "i(va_nilimpd_g)",
+    "i(va_nilimpd_s)",
+    "i(va_nilimpd_b)",
+    "i(venable)",
+    "i(vt0_collector_low_boundary)",
+    "i(va_nt0_collector_low_refn_d)",
+    "i(va_nt0_collector_low_refn_g)",
+    "i(va_nt0_collector_low_refn_s)",
+    "i(va_nt0_collector_low_refn_b)",
+    "i(va_nt0_collector_low_refp_d)",
+    "i(va_nt0_collector_low_refp_g)",
+    "i(va_nt0_collector_low_refp_s)",
+    "i(va_nt0_collector_low_refp_b)",
+    "i(va_nt0_collector_low_eni_p_d)",
+    "i(va_nt0_collector_low_eni_p_g)",
+    "i(va_nt0_collector_low_eni_p_s)",
+    "i(va_nt0_collector_low_eni_p_b)",
+    "i(va_nt0_collector_low_eni_n_d)",
+    "i(va_nt0_collector_low_eni_n_g)",
+    "i(va_nt0_collector_low_eni_n_s)",
+    "i(va_nt0_collector_low_eni_n_b)",
+    "i(va_nt0_collector_low_cp_d)",
+    "i(va_nt0_collector_low_cp_g)",
+    "i(va_nt0_collector_low_cp_s)",
+    "i(va_nt0_collector_low_cp_b)",
+    "i(va_nt0_collector_low_bias_d)",
+    "i(va_nt0_collector_low_bias_g)",
+    "i(va_nt0_collector_low_bias_s)",
+    "i(va_nt0_collector_low_bias_b)",
+    "i(va_nt0_collector_low_off_d)",
+    "i(va_nt0_collector_low_off_g)",
+    "i(va_nt0_collector_low_off_s)",
+    "i(va_nt0_collector_low_off_b)",
+    "i(vt0_collector_work_low_boundary)",
+    "i(va_nt0_collector_work_low_refn_d)",
+    "i(va_nt0_collector_work_low_refn_g)",
+    "i(va_nt0_collector_work_low_refn_s)",
+    "i(va_nt0_collector_work_low_refn_b)",
+    "i(va_nt0_collector_work_low_refp_d)",
+    "i(va_nt0_collector_work_low_refp_g)",
+    "i(va_nt0_collector_work_low_refp_s)",
+    "i(va_nt0_collector_work_low_refp_b)",
+    "i(va_nt0_collector_work_low_eni_p_d)",
+    "i(va_nt0_collector_work_low_eni_p_g)",
+    "i(va_nt0_collector_work_low_eni_p_s)",
+    "i(va_nt0_collector_work_low_eni_p_b)",
+    "i(va_nt0_collector_work_low_eni_n_d)",
+    "i(va_nt0_collector_work_low_eni_n_g)",
+    "i(va_nt0_collector_work_low_eni_n_s)",
+    "i(va_nt0_collector_work_low_eni_n_b)",
+    "i(va_nt0_collector_work_low_cp_d)",
+    "i(va_nt0_collector_work_low_cp_g)",
+    "i(va_nt0_collector_work_low_cp_s)",
+    "i(va_nt0_collector_work_low_cp_b)",
+    "i(va_nt0_collector_work_low_bias_d)",
+    "i(va_nt0_collector_work_low_bias_g)",
+    "i(va_nt0_collector_work_low_bias_s)",
+    "i(va_nt0_collector_work_low_bias_b)",
+    "i(va_nt0_collector_work_low_off_d)",
+    "i(va_nt0_collector_work_low_off_g)",
+    "i(va_nt0_collector_work_low_off_s)",
+    "i(va_nt0_collector_work_low_off_b)",
+    "i(vt0_collector_work_high_boundary)",
+    "i(va_nt0_collector_work_high_refn_d)",
+    "i(va_nt0_collector_work_high_refn_g)",
+    "i(va_nt0_collector_work_high_refn_s)",
+    "i(va_nt0_collector_work_high_refn_b)",
+    "i(va_nt0_collector_work_high_refp_d)",
+    "i(va_nt0_collector_work_high_refp_g)",
+    "i(va_nt0_collector_work_high_refp_s)",
+    "i(va_nt0_collector_work_high_refp_b)",
+    "i(va_nt0_collector_work_high_eni_p_d)",
+    "i(va_nt0_collector_work_high_eni_p_g)",
+    "i(va_nt0_collector_work_high_eni_p_s)",
+    "i(va_nt0_collector_work_high_eni_p_b)",
+    "i(va_nt0_collector_work_high_eni_n_d)",
+    "i(va_nt0_collector_work_high_eni_n_g)",
+    "i(va_nt0_collector_work_high_eni_n_s)",
+    "i(va_nt0_collector_work_high_eni_n_b)",
+    "i(va_nt0_collector_work_high_cp_d)",
+    "i(va_nt0_collector_work_high_cp_g)",
+    "i(va_nt0_collector_work_high_cp_s)",
+    "i(va_nt0_collector_work_high_cp_b)",
+    "i(va_nt0_collector_work_high_bias_d)",
+    "i(va_nt0_collector_work_high_bias_g)",
+    "i(va_nt0_collector_work_high_bias_s)",
+    "i(va_nt0_collector_work_high_bias_b)",
+    "i(va_nt0_collector_work_high_off_d)",
+    "i(va_nt0_collector_work_high_off_g)",
+    "i(va_nt0_collector_work_high_off_s)",
+    "i(va_nt0_collector_work_high_off_b)",
+    "i(vt0_spatial_low_boundary)",
+    "i(va_nt0_spatial_low_refn_d)",
+    "i(va_nt0_spatial_low_refn_g)",
+    "i(va_nt0_spatial_low_refn_s)",
+    "i(va_nt0_spatial_low_refn_b)",
+    "i(va_nt0_spatial_low_refp_d)",
+    "i(va_nt0_spatial_low_refp_g)",
+    "i(va_nt0_spatial_low_refp_s)",
+    "i(va_nt0_spatial_low_refp_b)",
+    "i(va_nt0_spatial_low_eni_p_d)",
+    "i(va_nt0_spatial_low_eni_p_g)",
+    "i(va_nt0_spatial_low_eni_p_s)",
+    "i(va_nt0_spatial_low_eni_p_b)",
+    "i(va_nt0_spatial_low_eni_n_d)",
+    "i(va_nt0_spatial_low_eni_n_g)",
+    "i(va_nt0_spatial_low_eni_n_s)",
+    "i(va_nt0_spatial_low_eni_n_b)",
+    "i(va_nt0_spatial_low_cp_d)",
+    "i(va_nt0_spatial_low_cp_g)",
+    "i(va_nt0_spatial_low_cp_s)",
+    "i(va_nt0_spatial_low_cp_b)",
+    "i(va_nt0_spatial_low_bias_d)",
+    "i(va_nt0_spatial_low_bias_g)",
+    "i(va_nt0_spatial_low_bias_s)",
+    "i(va_nt0_spatial_low_bias_b)",
+    "i(va_nt0_spatial_low_off_d)",
+    "i(va_nt0_spatial_low_off_g)",
+    "i(va_nt0_spatial_low_off_s)",
+    "i(va_nt0_spatial_low_off_b)",
+    "i(vt0_spatial_work_low_boundary)",
+    "i(va_nt0_spatial_work_low_refn_d)",
+    "i(va_nt0_spatial_work_low_refn_g)",
+    "i(va_nt0_spatial_work_low_refn_s)",
+    "i(va_nt0_spatial_work_low_refn_b)",
+    "i(va_nt0_spatial_work_low_refp_d)",
+    "i(va_nt0_spatial_work_low_refp_g)",
+    "i(va_nt0_spatial_work_low_refp_s)",
+    "i(va_nt0_spatial_work_low_refp_b)",
+    "i(va_nt0_spatial_work_low_eni_p_d)",
+    "i(va_nt0_spatial_work_low_eni_p_g)",
+    "i(va_nt0_spatial_work_low_eni_p_s)",
+    "i(va_nt0_spatial_work_low_eni_p_b)",
+    "i(va_nt0_spatial_work_low_eni_n_d)",
+    "i(va_nt0_spatial_work_low_eni_n_g)",
+    "i(va_nt0_spatial_work_low_eni_n_s)",
+    "i(va_nt0_spatial_work_low_eni_n_b)",
+    "i(va_nt0_spatial_work_low_cp_d)",
+    "i(va_nt0_spatial_work_low_cp_g)",
+    "i(va_nt0_spatial_work_low_cp_s)",
+    "i(va_nt0_spatial_work_low_cp_b)",
+    "i(va_nt0_spatial_work_low_bias_d)",
+    "i(va_nt0_spatial_work_low_bias_g)",
+    "i(va_nt0_spatial_work_low_bias_s)",
+    "i(va_nt0_spatial_work_low_bias_b)",
+    "i(va_nt0_spatial_work_low_off_d)",
+    "i(va_nt0_spatial_work_low_off_g)",
+    "i(va_nt0_spatial_work_low_off_s)",
+    "i(va_nt0_spatial_work_low_off_b)",
+    "i(vt0_spatial_work_high_boundary)",
+    "i(va_nt0_spatial_work_high_refn_d)",
+    "i(va_nt0_spatial_work_high_refn_g)",
+    "i(va_nt0_spatial_work_high_refn_s)",
+    "i(va_nt0_spatial_work_high_refn_b)",
+    "i(va_nt0_spatial_work_high_refp_d)",
+    "i(va_nt0_spatial_work_high_refp_g)",
+    "i(va_nt0_spatial_work_high_refp_s)",
+    "i(va_nt0_spatial_work_high_refp_b)",
+    "i(va_nt0_spatial_work_high_eni_p_d)",
+    "i(va_nt0_spatial_work_high_eni_p_g)",
+    "i(va_nt0_spatial_work_high_eni_p_s)",
+    "i(va_nt0_spatial_work_high_eni_p_b)",
+    "i(va_nt0_spatial_work_high_eni_n_d)",
+    "i(va_nt0_spatial_work_high_eni_n_g)",
+    "i(va_nt0_spatial_work_high_eni_n_s)",
+    "i(va_nt0_spatial_work_high_eni_n_b)",
+    "i(va_nt0_spatial_work_high_cp_d)",
+    "i(va_nt0_spatial_work_high_cp_g)",
+    "i(va_nt0_spatial_work_high_cp_s)",
+    "i(va_nt0_spatial_work_high_cp_b)",
+    "i(va_nt0_spatial_work_high_bias_d)",
+    "i(va_nt0_spatial_work_high_bias_g)",
+    "i(va_nt0_spatial_work_high_bias_s)",
+    "i(va_nt0_spatial_work_high_bias_b)",
+    "i(va_nt0_spatial_work_high_off_d)",
+    "i(va_nt0_spatial_work_high_off_g)",
+    "i(va_nt0_spatial_work_high_off_s)",
+    "i(va_nt0_spatial_work_high_off_b)",
+    "i(vt0_load_low_boundary)",
+    "i(va_nt0_load_low_refn_d)",
+    "i(va_nt0_load_low_refn_g)",
+    "i(va_nt0_load_low_refn_s)",
+    "i(va_nt0_load_low_refn_b)",
+    "i(va_nt0_load_low_refp_d)",
+    "i(va_nt0_load_low_refp_g)",
+    "i(va_nt0_load_low_refp_s)",
+    "i(va_nt0_load_low_refp_b)",
+    "i(va_nt0_load_low_eni_p_d)",
+    "i(va_nt0_load_low_eni_p_g)",
+    "i(va_nt0_load_low_eni_p_s)",
+    "i(va_nt0_load_low_eni_p_b)",
+    "i(va_nt0_load_low_eni_n_d)",
+    "i(va_nt0_load_low_eni_n_g)",
+    "i(va_nt0_load_low_eni_n_s)",
+    "i(va_nt0_load_low_eni_n_b)",
+    "i(va_nt0_load_low_cp_d)",
+    "i(va_nt0_load_low_cp_g)",
+    "i(va_nt0_load_low_cp_s)",
+    "i(va_nt0_load_low_cp_b)",
+    "i(va_nt0_load_low_bias_d)",
+    "i(va_nt0_load_low_bias_g)",
+    "i(va_nt0_load_low_bias_s)",
+    "i(va_nt0_load_low_bias_b)",
+    "i(va_nt0_load_low_off_d)",
+    "i(va_nt0_load_low_off_g)",
+    "i(va_nt0_load_low_off_s)",
+    "i(va_nt0_load_low_off_b)",
+    "i(vt0_load_work_low_boundary)",
+    "i(va_nt0_load_work_low_refn_d)",
+    "i(va_nt0_load_work_low_refn_g)",
+    "i(va_nt0_load_work_low_refn_s)",
+    "i(va_nt0_load_work_low_refn_b)",
+    "i(va_nt0_load_work_low_refp_d)",
+    "i(va_nt0_load_work_low_refp_g)",
+    "i(va_nt0_load_work_low_refp_s)",
+    "i(va_nt0_load_work_low_refp_b)",
+    "i(va_nt0_load_work_low_eni_p_d)",
+    "i(va_nt0_load_work_low_eni_p_g)",
+    "i(va_nt0_load_work_low_eni_p_s)",
+    "i(va_nt0_load_work_low_eni_p_b)",
+    "i(va_nt0_load_work_low_eni_n_d)",
+    "i(va_nt0_load_work_low_eni_n_g)",
+    "i(va_nt0_load_work_low_eni_n_s)",
+    "i(va_nt0_load_work_low_eni_n_b)",
+    "i(va_nt0_load_work_low_cp_d)",
+    "i(va_nt0_load_work_low_cp_g)",
+    "i(va_nt0_load_work_low_cp_s)",
+    "i(va_nt0_load_work_low_cp_b)",
+    "i(va_nt0_load_work_low_bias_d)",
+    "i(va_nt0_load_work_low_bias_g)",
+    "i(va_nt0_load_work_low_bias_s)",
+    "i(va_nt0_load_work_low_bias_b)",
+    "i(va_nt0_load_work_low_off_d)",
+    "i(va_nt0_load_work_low_off_g)",
+    "i(va_nt0_load_work_low_off_s)",
+    "i(va_nt0_load_work_low_off_b)",
+    "i(vt0_load_work_high_boundary)",
+    "i(va_nt0_load_work_high_refn_d)",
+    "i(va_nt0_load_work_high_refn_g)",
+    "i(va_nt0_load_work_high_refn_s)",
+    "i(va_nt0_load_work_high_refn_b)",
+    "i(va_nt0_load_work_high_refp_d)",
+    "i(va_nt0_load_work_high_refp_g)",
+    "i(va_nt0_load_work_high_refp_s)",
+    "i(va_nt0_load_work_high_refp_b)",
+    "i(va_nt0_load_work_high_eni_p_d)",
+    "i(va_nt0_load_work_high_eni_p_g)",
+    "i(va_nt0_load_work_high_eni_p_s)",
+    "i(va_nt0_load_work_high_eni_p_b)",
+    "i(va_nt0_load_work_high_eni_n_d)",
+    "i(va_nt0_load_work_high_eni_n_g)",
+    "i(va_nt0_load_work_high_eni_n_s)",
+    "i(va_nt0_load_work_high_eni_n_b)",
+    "i(va_nt0_load_work_high_cp_d)",
+    "i(va_nt0_load_work_high_cp_g)",
+    "i(va_nt0_load_work_high_cp_s)",
+    "i(va_nt0_load_work_high_cp_b)",
+    "i(va_nt0_load_work_high_bias_d)",
+    "i(va_nt0_load_work_high_bias_g)",
+    "i(va_nt0_load_work_high_bias_s)",
+    "i(va_nt0_load_work_high_bias_b)",
+    "i(va_nt0_load_work_high_off_d)",
+    "i(va_nt0_load_work_high_off_g)",
+    "i(va_nt0_load_work_high_off_s)",
+    "i(va_nt0_load_work_high_off_b)",
+    "i(vmonitor_boundary)",
+    "i(va_nmonitor_cp_d)",
+    "i(va_nmonitor_cp_g)",
+    "i(va_nmonitor_cp_s)",
+    "i(va_nmonitor_cp_b)",
+    "i(va_cpar_enable_b_p)",
+    "i(va_cpar_ilim_n_p)",
+    "i(va_cpar_ilimp_n_p)",
+    "i(va_cpar_iref_n_p)",
+    "i(va_cpar_irefp_n_p)",
+    "i(va_cpar_istep_n_p)",
+    "i(va_cpar_monitor_out_p)",
+    "i(va_cpar_por_hold_p)",
+    "i(va_cpar_por_ok_p)",
+    "i(va_cpar_porc_p)",
+    "i(va_cpar_porx_p)",
+    "i(va_cpar_t0_collector_low_cg_p)",
+    "i(va_cpar_t0_collector_low_ena_p)",
+    "i(va_cpar_t0_collector_low_local_p_p)",
+    "i(va_cpar_t0_collector_low_out_p)",
+    "i(va_cpar_t0_collector_work_high_cg_p)",
+    "i(va_cpar_t0_collector_work_high_ena_p)",
+    "i(va_cpar_t0_collector_work_high_local_p_p)",
+    "i(va_cpar_t0_collector_work_high_out_p)",
+    "i(va_cpar_t0_collector_work_low_cg_p)",
+    "i(va_cpar_t0_collector_work_low_ena_p)",
+    "i(va_cpar_t0_collector_work_low_local_p_p)",
+    "i(va_cpar_t0_collector_work_low_out_p)",
+    "i(va_cpar_t0_load_low_cg_p)",
+    "i(va_cpar_t0_load_low_ena_p)",
+    "i(va_cpar_t0_load_low_local_p_p)",
+    "i(va_cpar_t0_load_low_out_p)",
+    "i(va_cpar_t0_load_work_high_cg_p)",
+    "i(va_cpar_t0_load_work_high_ena_p)",
+    "i(va_cpar_t0_load_work_high_local_p_p)",
+    "i(va_cpar_t0_load_work_high_out_p)",
+    "i(va_cpar_t0_load_work_low_cg_p)",
+    "i(va_cpar_t0_load_work_low_ena_p)",
+    "i(va_cpar_t0_load_work_low_local_p_p)",
+    "i(va_cpar_t0_load_work_low_out_p)",
+    "i(va_cpar_t0_spatial_low_cg_p)",
+    "i(va_cpar_t0_spatial_low_ena_p)",
+    "i(va_cpar_t0_spatial_low_local_p_p)",
+    "i(va_cpar_t0_spatial_low_out_p)",
+    "i(va_cpar_t0_spatial_work_high_cg_p)",
+    "i(va_cpar_t0_spatial_work_high_ena_p)",
+    "i(va_cpar_t0_spatial_work_high_local_p_p)",
+    "i(va_cpar_t0_spatial_work_high_out_p)",
+    "i(va_cpar_t0_spatial_work_low_cg_p)",
+    "i(va_cpar_t0_spatial_work_low_ena_p)",
+    "i(va_cpar_t0_spatial_work_low_local_p_p)",
+    "i(va_cpar_t0_spatial_work_low_out_p)",
+    "i(va_cpar_vdd_p)",
+    "i(va_cpar_vmid_p)",
+    "i(va_cpar_vrest_p)",
+    "i(va_cpar_vthe_p)",
+    "i(va_cpar_vthr_p)"
+  ],
+  "all_MOS_terminal_measurements": {
+    "npori1p": [
+      [
+        "por_hold",
+        "i(va_npori1p_d)",
+        1.0
+      ],
+      [
+        "porx",
+        "i(va_npori1p_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_npori1p_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_npori1p_b)",
+        1.0
+      ]
+    ],
+    "npori1n": [
+      [
+        "por_hold",
+        "i(va_npori1n_d)",
+        1.0
+      ],
+      [
+        "porx",
+        "i(va_npori1n_g)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_npori1n_s)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_npori1n_b)",
+        1.0
+      ]
+    ],
+    "npori2p": [
+      [
+        "por_ok",
+        "i(va_npori2p_d)",
+        1.0
+      ],
+      [
+        "por_hold",
+        "i(va_npori2p_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_npori2p_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_npori2p_b)",
+        1.0
+      ]
+    ],
+    "npori2n": [
+      [
+        "por_ok",
+        "i(va_npori2n_d)",
+        1.0
+      ],
+      [
+        "por_hold",
+        "i(va_npori2n_g)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_npori2n_s)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_npori2n_b)",
+        1.0
+      ]
+    ],
+    "nirefd": [
+      [
+        "iref_n",
+        "i(va_nirefd_d)",
+        1.0
+      ],
+      [
+        "iref_n",
+        "i(va_nirefd_g)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nirefd_s)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nirefd_b)",
+        1.0
+      ]
+    ],
+    "nistepd": [
+      [
+        "istep_n",
+        "i(va_nistepd_d)",
+        1.0
+      ],
+      [
+        "istep_n",
+        "i(va_nistepd_g)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nistepd_s)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nistepd_b)",
+        1.0
+      ]
+    ],
+    "nirefm": [
+      [
+        "irefp_n",
+        "i(va_nirefm_d)",
+        1.0
+      ],
+      [
+        "iref_n",
+        "i(va_nirefm_g)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nirefm_s)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nirefm_b)",
+        1.0
+      ]
+    ],
+    "nirefpd": [
+      [
+        "irefp_n",
+        "i(va_nirefpd_d)",
+        1.0
+      ],
+      [
+        "irefp_n",
+        "i(va_nirefpd_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nirefpd_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nirefpd_b)",
+        1.0
+      ]
+    ],
+    "nilimd": [
+      [
+        "ilim_n",
+        "i(va_nilimd_d)",
+        1.0
+      ],
+      [
+        "ilim_n",
+        "i(va_nilimd_g)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nilimd_s)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nilimd_b)",
+        1.0
+      ]
+    ],
+    "nilimm": [
+      [
+        "ilimp_n",
+        "i(va_nilimm_d)",
+        1.0
+      ],
+      [
+        "ilim_n",
+        "i(va_nilimm_g)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nilimm_s)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nilimm_b)",
+        1.0
+      ]
+    ],
+    "nilimpd": [
+      [
+        "ilimp_n",
+        "i(va_nilimpd_d)",
+        1.0
+      ],
+      [
+        "ilimp_n",
+        "i(va_nilimpd_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nilimpd_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nilimpd_b)",
+        1.0
+      ]
+    ],
+    "nt0_collector_low_refn": [
+      [
+        "t0_collector_low_local_p",
+        "i(va_nt0_collector_low_refn_d)",
+        1.0
+      ],
+      [
+        "ilim_n",
+        "i(va_nt0_collector_low_refn_g)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_collector_low_refn_s)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_collector_low_refn_b)",
+        1.0
+      ]
+    ],
+    "nt0_collector_low_refp": [
+      [
+        "t0_collector_low_local_p",
+        "i(va_nt0_collector_low_refp_d)",
+        1.0
+      ],
+      [
+        "t0_collector_low_local_p",
+        "i(va_nt0_collector_low_refp_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_collector_low_refp_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_collector_low_refp_b)",
+        1.0
+      ]
+    ],
+    "nt0_collector_low_eni_p": [
+      [
+        "t0_collector_low_ena",
+        "i(va_nt0_collector_low_eni_p_d)",
+        1.0
+      ],
+      [
+        "enable_b",
+        "i(va_nt0_collector_low_eni_p_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_collector_low_eni_p_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_collector_low_eni_p_b)",
+        1.0
+      ]
+    ],
+    "nt0_collector_low_eni_n": [
+      [
+        "t0_collector_low_ena",
+        "i(va_nt0_collector_low_eni_n_d)",
+        1.0
+      ],
+      [
+        "enable_b",
+        "i(va_nt0_collector_low_eni_n_g)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_collector_low_eni_n_s)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_collector_low_eni_n_b)",
+        1.0
+      ]
+    ],
+    "nt0_collector_low_cp": [
+      [
+        "t0_collector_low_out",
+        "i(va_nt0_collector_low_cp_d)",
+        1.0
+      ],
+      [
+        "t0_collector_low_cg",
+        "i(va_nt0_collector_low_cp_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_collector_low_cp_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_collector_low_cp_b)",
+        1.0
+      ]
+    ],
+    "nt0_collector_low_bias": [
+      [
+        "t0_collector_low_local_p",
+        "i(va_nt0_collector_low_bias_d)",
+        1.0
+      ],
+      [
+        "enable_b",
+        "i(va_nt0_collector_low_bias_g)",
+        1.0
+      ],
+      [
+        "t0_collector_low_cg",
+        "i(va_nt0_collector_low_bias_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_collector_low_bias_b)",
+        1.0
+      ]
+    ],
+    "nt0_collector_low_off": [
+      [
+        "t0_collector_low_cg",
+        "i(va_nt0_collector_low_off_d)",
+        1.0
+      ],
+      [
+        "t0_collector_low_ena",
+        "i(va_nt0_collector_low_off_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_collector_low_off_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_collector_low_off_b)",
+        1.0
+      ]
+    ],
+    "nt0_collector_work_low_refn": [
+      [
+        "t0_collector_work_low_local_p",
+        "i(va_nt0_collector_work_low_refn_d)",
+        1.0
+      ],
+      [
+        "ilim_n",
+        "i(va_nt0_collector_work_low_refn_g)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_collector_work_low_refn_s)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_collector_work_low_refn_b)",
+        1.0
+      ]
+    ],
+    "nt0_collector_work_low_refp": [
+      [
+        "t0_collector_work_low_local_p",
+        "i(va_nt0_collector_work_low_refp_d)",
+        1.0
+      ],
+      [
+        "t0_collector_work_low_local_p",
+        "i(va_nt0_collector_work_low_refp_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_collector_work_low_refp_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_collector_work_low_refp_b)",
+        1.0
+      ]
+    ],
+    "nt0_collector_work_low_eni_p": [
+      [
+        "t0_collector_work_low_ena",
+        "i(va_nt0_collector_work_low_eni_p_d)",
+        1.0
+      ],
+      [
+        "enable_b",
+        "i(va_nt0_collector_work_low_eni_p_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_collector_work_low_eni_p_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_collector_work_low_eni_p_b)",
+        1.0
+      ]
+    ],
+    "nt0_collector_work_low_eni_n": [
+      [
+        "t0_collector_work_low_ena",
+        "i(va_nt0_collector_work_low_eni_n_d)",
+        1.0
+      ],
+      [
+        "enable_b",
+        "i(va_nt0_collector_work_low_eni_n_g)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_collector_work_low_eni_n_s)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_collector_work_low_eni_n_b)",
+        1.0
+      ]
+    ],
+    "nt0_collector_work_low_cp": [
+      [
+        "t0_collector_work_low_out",
+        "i(va_nt0_collector_work_low_cp_d)",
+        1.0
+      ],
+      [
+        "t0_collector_work_low_cg",
+        "i(va_nt0_collector_work_low_cp_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_collector_work_low_cp_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_collector_work_low_cp_b)",
+        1.0
+      ]
+    ],
+    "nt0_collector_work_low_bias": [
+      [
+        "t0_collector_work_low_local_p",
+        "i(va_nt0_collector_work_low_bias_d)",
+        1.0
+      ],
+      [
+        "enable_b",
+        "i(va_nt0_collector_work_low_bias_g)",
+        1.0
+      ],
+      [
+        "t0_collector_work_low_cg",
+        "i(va_nt0_collector_work_low_bias_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_collector_work_low_bias_b)",
+        1.0
+      ]
+    ],
+    "nt0_collector_work_low_off": [
+      [
+        "t0_collector_work_low_cg",
+        "i(va_nt0_collector_work_low_off_d)",
+        1.0
+      ],
+      [
+        "t0_collector_work_low_ena",
+        "i(va_nt0_collector_work_low_off_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_collector_work_low_off_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_collector_work_low_off_b)",
+        1.0
+      ]
+    ],
+    "nt0_collector_work_high_refn": [
+      [
+        "t0_collector_work_high_local_p",
+        "i(va_nt0_collector_work_high_refn_d)",
+        1.0
+      ],
+      [
+        "ilim_n",
+        "i(va_nt0_collector_work_high_refn_g)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_collector_work_high_refn_s)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_collector_work_high_refn_b)",
+        1.0
+      ]
+    ],
+    "nt0_collector_work_high_refp": [
+      [
+        "t0_collector_work_high_local_p",
+        "i(va_nt0_collector_work_high_refp_d)",
+        1.0
+      ],
+      [
+        "t0_collector_work_high_local_p",
+        "i(va_nt0_collector_work_high_refp_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_collector_work_high_refp_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_collector_work_high_refp_b)",
+        1.0
+      ]
+    ],
+    "nt0_collector_work_high_eni_p": [
+      [
+        "t0_collector_work_high_ena",
+        "i(va_nt0_collector_work_high_eni_p_d)",
+        1.0
+      ],
+      [
+        "enable_b",
+        "i(va_nt0_collector_work_high_eni_p_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_collector_work_high_eni_p_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_collector_work_high_eni_p_b)",
+        1.0
+      ]
+    ],
+    "nt0_collector_work_high_eni_n": [
+      [
+        "t0_collector_work_high_ena",
+        "i(va_nt0_collector_work_high_eni_n_d)",
+        1.0
+      ],
+      [
+        "enable_b",
+        "i(va_nt0_collector_work_high_eni_n_g)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_collector_work_high_eni_n_s)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_collector_work_high_eni_n_b)",
+        1.0
+      ]
+    ],
+    "nt0_collector_work_high_cp": [
+      [
+        "t0_collector_work_high_out",
+        "i(va_nt0_collector_work_high_cp_d)",
+        1.0
+      ],
+      [
+        "t0_collector_work_high_cg",
+        "i(va_nt0_collector_work_high_cp_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_collector_work_high_cp_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_collector_work_high_cp_b)",
+        1.0
+      ]
+    ],
+    "nt0_collector_work_high_bias": [
+      [
+        "t0_collector_work_high_local_p",
+        "i(va_nt0_collector_work_high_bias_d)",
+        1.0
+      ],
+      [
+        "enable_b",
+        "i(va_nt0_collector_work_high_bias_g)",
+        1.0
+      ],
+      [
+        "t0_collector_work_high_cg",
+        "i(va_nt0_collector_work_high_bias_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_collector_work_high_bias_b)",
+        1.0
+      ]
+    ],
+    "nt0_collector_work_high_off": [
+      [
+        "t0_collector_work_high_cg",
+        "i(va_nt0_collector_work_high_off_d)",
+        1.0
+      ],
+      [
+        "t0_collector_work_high_ena",
+        "i(va_nt0_collector_work_high_off_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_collector_work_high_off_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_collector_work_high_off_b)",
+        1.0
+      ]
+    ],
+    "nt0_spatial_low_refn": [
+      [
+        "t0_spatial_low_local_p",
+        "i(va_nt0_spatial_low_refn_d)",
+        1.0
+      ],
+      [
+        "iref_n",
+        "i(va_nt0_spatial_low_refn_g)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_spatial_low_refn_s)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_spatial_low_refn_b)",
+        1.0
+      ]
+    ],
+    "nt0_spatial_low_refp": [
+      [
+        "t0_spatial_low_local_p",
+        "i(va_nt0_spatial_low_refp_d)",
+        1.0
+      ],
+      [
+        "t0_spatial_low_local_p",
+        "i(va_nt0_spatial_low_refp_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_spatial_low_refp_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_spatial_low_refp_b)",
+        1.0
+      ]
+    ],
+    "nt0_spatial_low_eni_p": [
+      [
+        "t0_spatial_low_ena",
+        "i(va_nt0_spatial_low_eni_p_d)",
+        1.0
+      ],
+      [
+        "enable_b",
+        "i(va_nt0_spatial_low_eni_p_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_spatial_low_eni_p_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_spatial_low_eni_p_b)",
+        1.0
+      ]
+    ],
+    "nt0_spatial_low_eni_n": [
+      [
+        "t0_spatial_low_ena",
+        "i(va_nt0_spatial_low_eni_n_d)",
+        1.0
+      ],
+      [
+        "enable_b",
+        "i(va_nt0_spatial_low_eni_n_g)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_spatial_low_eni_n_s)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_spatial_low_eni_n_b)",
+        1.0
+      ]
+    ],
+    "nt0_spatial_low_cp": [
+      [
+        "t0_spatial_low_out",
+        "i(va_nt0_spatial_low_cp_d)",
+        1.0
+      ],
+      [
+        "t0_spatial_low_cg",
+        "i(va_nt0_spatial_low_cp_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_spatial_low_cp_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_spatial_low_cp_b)",
+        1.0
+      ]
+    ],
+    "nt0_spatial_low_bias": [
+      [
+        "t0_spatial_low_local_p",
+        "i(va_nt0_spatial_low_bias_d)",
+        1.0
+      ],
+      [
+        "enable_b",
+        "i(va_nt0_spatial_low_bias_g)",
+        1.0
+      ],
+      [
+        "t0_spatial_low_cg",
+        "i(va_nt0_spatial_low_bias_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_spatial_low_bias_b)",
+        1.0
+      ]
+    ],
+    "nt0_spatial_low_off": [
+      [
+        "t0_spatial_low_cg",
+        "i(va_nt0_spatial_low_off_d)",
+        1.0
+      ],
+      [
+        "t0_spatial_low_ena",
+        "i(va_nt0_spatial_low_off_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_spatial_low_off_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_spatial_low_off_b)",
+        1.0
+      ]
+    ],
+    "nt0_spatial_work_low_refn": [
+      [
+        "t0_spatial_work_low_local_p",
+        "i(va_nt0_spatial_work_low_refn_d)",
+        1.0
+      ],
+      [
+        "iref_n",
+        "i(va_nt0_spatial_work_low_refn_g)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_spatial_work_low_refn_s)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_spatial_work_low_refn_b)",
+        1.0
+      ]
+    ],
+    "nt0_spatial_work_low_refp": [
+      [
+        "t0_spatial_work_low_local_p",
+        "i(va_nt0_spatial_work_low_refp_d)",
+        1.0
+      ],
+      [
+        "t0_spatial_work_low_local_p",
+        "i(va_nt0_spatial_work_low_refp_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_spatial_work_low_refp_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_spatial_work_low_refp_b)",
+        1.0
+      ]
+    ],
+    "nt0_spatial_work_low_eni_p": [
+      [
+        "t0_spatial_work_low_ena",
+        "i(va_nt0_spatial_work_low_eni_p_d)",
+        1.0
+      ],
+      [
+        "enable_b",
+        "i(va_nt0_spatial_work_low_eni_p_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_spatial_work_low_eni_p_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_spatial_work_low_eni_p_b)",
+        1.0
+      ]
+    ],
+    "nt0_spatial_work_low_eni_n": [
+      [
+        "t0_spatial_work_low_ena",
+        "i(va_nt0_spatial_work_low_eni_n_d)",
+        1.0
+      ],
+      [
+        "enable_b",
+        "i(va_nt0_spatial_work_low_eni_n_g)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_spatial_work_low_eni_n_s)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_spatial_work_low_eni_n_b)",
+        1.0
+      ]
+    ],
+    "nt0_spatial_work_low_cp": [
+      [
+        "t0_spatial_work_low_out",
+        "i(va_nt0_spatial_work_low_cp_d)",
+        1.0
+      ],
+      [
+        "t0_spatial_work_low_cg",
+        "i(va_nt0_spatial_work_low_cp_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_spatial_work_low_cp_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_spatial_work_low_cp_b)",
+        1.0
+      ]
+    ],
+    "nt0_spatial_work_low_bias": [
+      [
+        "t0_spatial_work_low_local_p",
+        "i(va_nt0_spatial_work_low_bias_d)",
+        1.0
+      ],
+      [
+        "enable_b",
+        "i(va_nt0_spatial_work_low_bias_g)",
+        1.0
+      ],
+      [
+        "t0_spatial_work_low_cg",
+        "i(va_nt0_spatial_work_low_bias_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_spatial_work_low_bias_b)",
+        1.0
+      ]
+    ],
+    "nt0_spatial_work_low_off": [
+      [
+        "t0_spatial_work_low_cg",
+        "i(va_nt0_spatial_work_low_off_d)",
+        1.0
+      ],
+      [
+        "t0_spatial_work_low_ena",
+        "i(va_nt0_spatial_work_low_off_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_spatial_work_low_off_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_spatial_work_low_off_b)",
+        1.0
+      ]
+    ],
+    "nt0_spatial_work_high_refn": [
+      [
+        "t0_spatial_work_high_local_p",
+        "i(va_nt0_spatial_work_high_refn_d)",
+        1.0
+      ],
+      [
+        "iref_n",
+        "i(va_nt0_spatial_work_high_refn_g)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_spatial_work_high_refn_s)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_spatial_work_high_refn_b)",
+        1.0
+      ]
+    ],
+    "nt0_spatial_work_high_refp": [
+      [
+        "t0_spatial_work_high_local_p",
+        "i(va_nt0_spatial_work_high_refp_d)",
+        1.0
+      ],
+      [
+        "t0_spatial_work_high_local_p",
+        "i(va_nt0_spatial_work_high_refp_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_spatial_work_high_refp_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_spatial_work_high_refp_b)",
+        1.0
+      ]
+    ],
+    "nt0_spatial_work_high_eni_p": [
+      [
+        "t0_spatial_work_high_ena",
+        "i(va_nt0_spatial_work_high_eni_p_d)",
+        1.0
+      ],
+      [
+        "enable_b",
+        "i(va_nt0_spatial_work_high_eni_p_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_spatial_work_high_eni_p_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_spatial_work_high_eni_p_b)",
+        1.0
+      ]
+    ],
+    "nt0_spatial_work_high_eni_n": [
+      [
+        "t0_spatial_work_high_ena",
+        "i(va_nt0_spatial_work_high_eni_n_d)",
+        1.0
+      ],
+      [
+        "enable_b",
+        "i(va_nt0_spatial_work_high_eni_n_g)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_spatial_work_high_eni_n_s)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_spatial_work_high_eni_n_b)",
+        1.0
+      ]
+    ],
+    "nt0_spatial_work_high_cp": [
+      [
+        "t0_spatial_work_high_out",
+        "i(va_nt0_spatial_work_high_cp_d)",
+        1.0
+      ],
+      [
+        "t0_spatial_work_high_cg",
+        "i(va_nt0_spatial_work_high_cp_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_spatial_work_high_cp_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_spatial_work_high_cp_b)",
+        1.0
+      ]
+    ],
+    "nt0_spatial_work_high_bias": [
+      [
+        "t0_spatial_work_high_local_p",
+        "i(va_nt0_spatial_work_high_bias_d)",
+        1.0
+      ],
+      [
+        "enable_b",
+        "i(va_nt0_spatial_work_high_bias_g)",
+        1.0
+      ],
+      [
+        "t0_spatial_work_high_cg",
+        "i(va_nt0_spatial_work_high_bias_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_spatial_work_high_bias_b)",
+        1.0
+      ]
+    ],
+    "nt0_spatial_work_high_off": [
+      [
+        "t0_spatial_work_high_cg",
+        "i(va_nt0_spatial_work_high_off_d)",
+        1.0
+      ],
+      [
+        "t0_spatial_work_high_ena",
+        "i(va_nt0_spatial_work_high_off_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_spatial_work_high_off_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_spatial_work_high_off_b)",
+        1.0
+      ]
+    ],
+    "nt0_load_low_refn": [
+      [
+        "t0_load_low_local_p",
+        "i(va_nt0_load_low_refn_d)",
+        1.0
+      ],
+      [
+        "iref_n",
+        "i(va_nt0_load_low_refn_g)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_load_low_refn_s)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_load_low_refn_b)",
+        1.0
+      ]
+    ],
+    "nt0_load_low_refp": [
+      [
+        "t0_load_low_local_p",
+        "i(va_nt0_load_low_refp_d)",
+        1.0
+      ],
+      [
+        "t0_load_low_local_p",
+        "i(va_nt0_load_low_refp_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_load_low_refp_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_load_low_refp_b)",
+        1.0
+      ]
+    ],
+    "nt0_load_low_eni_p": [
+      [
+        "t0_load_low_ena",
+        "i(va_nt0_load_low_eni_p_d)",
+        1.0
+      ],
+      [
+        "enable_b",
+        "i(va_nt0_load_low_eni_p_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_load_low_eni_p_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_load_low_eni_p_b)",
+        1.0
+      ]
+    ],
+    "nt0_load_low_eni_n": [
+      [
+        "t0_load_low_ena",
+        "i(va_nt0_load_low_eni_n_d)",
+        1.0
+      ],
+      [
+        "enable_b",
+        "i(va_nt0_load_low_eni_n_g)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_load_low_eni_n_s)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_load_low_eni_n_b)",
+        1.0
+      ]
+    ],
+    "nt0_load_low_cp": [
+      [
+        "t0_load_low_out",
+        "i(va_nt0_load_low_cp_d)",
+        1.0
+      ],
+      [
+        "t0_load_low_cg",
+        "i(va_nt0_load_low_cp_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_load_low_cp_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_load_low_cp_b)",
+        1.0
+      ]
+    ],
+    "nt0_load_low_bias": [
+      [
+        "t0_load_low_local_p",
+        "i(va_nt0_load_low_bias_d)",
+        1.0
+      ],
+      [
+        "enable_b",
+        "i(va_nt0_load_low_bias_g)",
+        1.0
+      ],
+      [
+        "t0_load_low_cg",
+        "i(va_nt0_load_low_bias_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_load_low_bias_b)",
+        1.0
+      ]
+    ],
+    "nt0_load_low_off": [
+      [
+        "t0_load_low_cg",
+        "i(va_nt0_load_low_off_d)",
+        1.0
+      ],
+      [
+        "t0_load_low_ena",
+        "i(va_nt0_load_low_off_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_load_low_off_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_load_low_off_b)",
+        1.0
+      ]
+    ],
+    "nt0_load_work_low_refn": [
+      [
+        "t0_load_work_low_local_p",
+        "i(va_nt0_load_work_low_refn_d)",
+        1.0
+      ],
+      [
+        "iref_n",
+        "i(va_nt0_load_work_low_refn_g)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_load_work_low_refn_s)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_load_work_low_refn_b)",
+        1.0
+      ]
+    ],
+    "nt0_load_work_low_refp": [
+      [
+        "t0_load_work_low_local_p",
+        "i(va_nt0_load_work_low_refp_d)",
+        1.0
+      ],
+      [
+        "t0_load_work_low_local_p",
+        "i(va_nt0_load_work_low_refp_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_load_work_low_refp_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_load_work_low_refp_b)",
+        1.0
+      ]
+    ],
+    "nt0_load_work_low_eni_p": [
+      [
+        "t0_load_work_low_ena",
+        "i(va_nt0_load_work_low_eni_p_d)",
+        1.0
+      ],
+      [
+        "enable_b",
+        "i(va_nt0_load_work_low_eni_p_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_load_work_low_eni_p_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_load_work_low_eni_p_b)",
+        1.0
+      ]
+    ],
+    "nt0_load_work_low_eni_n": [
+      [
+        "t0_load_work_low_ena",
+        "i(va_nt0_load_work_low_eni_n_d)",
+        1.0
+      ],
+      [
+        "enable_b",
+        "i(va_nt0_load_work_low_eni_n_g)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_load_work_low_eni_n_s)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_load_work_low_eni_n_b)",
+        1.0
+      ]
+    ],
+    "nt0_load_work_low_cp": [
+      [
+        "t0_load_work_low_out",
+        "i(va_nt0_load_work_low_cp_d)",
+        1.0
+      ],
+      [
+        "t0_load_work_low_cg",
+        "i(va_nt0_load_work_low_cp_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_load_work_low_cp_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_load_work_low_cp_b)",
+        1.0
+      ]
+    ],
+    "nt0_load_work_low_bias": [
+      [
+        "t0_load_work_low_local_p",
+        "i(va_nt0_load_work_low_bias_d)",
+        1.0
+      ],
+      [
+        "enable_b",
+        "i(va_nt0_load_work_low_bias_g)",
+        1.0
+      ],
+      [
+        "t0_load_work_low_cg",
+        "i(va_nt0_load_work_low_bias_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_load_work_low_bias_b)",
+        1.0
+      ]
+    ],
+    "nt0_load_work_low_off": [
+      [
+        "t0_load_work_low_cg",
+        "i(va_nt0_load_work_low_off_d)",
+        1.0
+      ],
+      [
+        "t0_load_work_low_ena",
+        "i(va_nt0_load_work_low_off_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_load_work_low_off_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_load_work_low_off_b)",
+        1.0
+      ]
+    ],
+    "nt0_load_work_high_refn": [
+      [
+        "t0_load_work_high_local_p",
+        "i(va_nt0_load_work_high_refn_d)",
+        1.0
+      ],
+      [
+        "iref_n",
+        "i(va_nt0_load_work_high_refn_g)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_load_work_high_refn_s)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_load_work_high_refn_b)",
+        1.0
+      ]
+    ],
+    "nt0_load_work_high_refp": [
+      [
+        "t0_load_work_high_local_p",
+        "i(va_nt0_load_work_high_refp_d)",
+        1.0
+      ],
+      [
+        "t0_load_work_high_local_p",
+        "i(va_nt0_load_work_high_refp_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_load_work_high_refp_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_load_work_high_refp_b)",
+        1.0
+      ]
+    ],
+    "nt0_load_work_high_eni_p": [
+      [
+        "t0_load_work_high_ena",
+        "i(va_nt0_load_work_high_eni_p_d)",
+        1.0
+      ],
+      [
+        "enable_b",
+        "i(va_nt0_load_work_high_eni_p_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_load_work_high_eni_p_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_load_work_high_eni_p_b)",
+        1.0
+      ]
+    ],
+    "nt0_load_work_high_eni_n": [
+      [
+        "t0_load_work_high_ena",
+        "i(va_nt0_load_work_high_eni_n_d)",
+        1.0
+      ],
+      [
+        "enable_b",
+        "i(va_nt0_load_work_high_eni_n_g)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_load_work_high_eni_n_s)",
+        1.0
+      ],
+      [
+        "0",
+        "i(va_nt0_load_work_high_eni_n_b)",
+        1.0
+      ]
+    ],
+    "nt0_load_work_high_cp": [
+      [
+        "t0_load_work_high_out",
+        "i(va_nt0_load_work_high_cp_d)",
+        1.0
+      ],
+      [
+        "t0_load_work_high_cg",
+        "i(va_nt0_load_work_high_cp_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_load_work_high_cp_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_load_work_high_cp_b)",
+        1.0
+      ]
+    ],
+    "nt0_load_work_high_bias": [
+      [
+        "t0_load_work_high_local_p",
+        "i(va_nt0_load_work_high_bias_d)",
+        1.0
+      ],
+      [
+        "enable_b",
+        "i(va_nt0_load_work_high_bias_g)",
+        1.0
+      ],
+      [
+        "t0_load_work_high_cg",
+        "i(va_nt0_load_work_high_bias_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_load_work_high_bias_b)",
+        1.0
+      ]
+    ],
+    "nt0_load_work_high_off": [
+      [
+        "t0_load_work_high_cg",
+        "i(va_nt0_load_work_high_off_d)",
+        1.0
+      ],
+      [
+        "t0_load_work_high_ena",
+        "i(va_nt0_load_work_high_off_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nt0_load_work_high_off_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nt0_load_work_high_off_b)",
+        1.0
+      ]
+    ],
+    "nmonitor_cp": [
+      [
+        "monitor_out",
+        "i(va_nmonitor_cp_d)",
+        1.0
+      ],
+      [
+        "irefp_n",
+        "i(va_nmonitor_cp_g)",
+        1.0
+      ],
+      [
+        "vdd",
+        "i(va_nmonitor_cp_s)",
+        1.0
+      ],
+      [
+        "vsrc",
+        "i(va_nmonitor_cp_b)",
+        1.0
+      ]
+    ]
+  },
+  "new_solver_starts": 0,
+  "deck_sha256": "1a540279cb6ea99e7fcede42d46c13dd0e299748e4d2549a3279ec55cb9c767a",
+  "case_id": "T0_GATED_SOURCE_BENCH",
+  "deck": "/workspace/thermal-g3-retests/v5-three-validation-2026-10-25-24f081f5/T0_GATED_SOURCE_BENCH/T0_GATED_SOURCE_BENCH.cir",
+  "raw": "/workspace/thermal-g3-retests/v5-three-validation-2026-10-25-24f081f5/T0_GATED_SOURCE_BENCH/T0_GATED_SOURCE_BENCH.raw",
+  "command": [
+    "/workspace/thermal-g3-env/host/native/bin/ngspice",
+    "-n",
+    "-b",
+    "/workspace/thermal-g3-retests/v5-three-validation-2026-10-25-24f081f5/T0_GATED_SOURCE_BENCH/T0_GATED_SOURCE_BENCH.cir"
+  ],
+  "wall_cap_s": 600,
+  "maximum_actual_starts": 1,
+  "required_end_s": 0.06,
+  "max_step_s": 0.000125
+}

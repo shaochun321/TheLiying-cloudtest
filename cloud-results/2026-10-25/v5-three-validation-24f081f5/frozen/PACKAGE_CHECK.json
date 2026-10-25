@@ -1,0 +1,14 @@
+{
+  "zip_sha256": "ac8eb5e712f0dd4a8729378dd5b14934f664061ccc5b79d90a9392fd5cb07446",
+  "zip_integrity": "PASS",
+  "inner_hashes_verified": 14,
+  "manifest_filename_aliases": [
+    {
+      "listed_name": "THERMAL-G3_v5????????_2026-10-25.md",
+      "actual_name": "THERMAL-G3_v5三项验证执行方案_2026-10-25.md",
+      "sha256": "cfd0a12fb24a6c88eb85da9238ba166edb873ffbb2e5c006ab9c51253e9047b0",
+      "reason": "Question-mark filename in supplied manifest; exact unique content digest matched"
+    }
+  ],
+  "candidate_source_hashes_verified": 32
+}

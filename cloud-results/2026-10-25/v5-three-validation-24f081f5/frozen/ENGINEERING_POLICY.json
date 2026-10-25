@@ -1,0 +1,7 @@
+{
+  "T0": "All original gates + continuous monitor +/-10%, continuous working current after 254us, NMOS 3.8/4.1mV, design-box coverage, full 75/75 domain",
+  "DC": "Original ten gates + full coverage; complete vrest KCL with original ledger 1e-3 relative floor1pA; report full new device currents and supply",
+  "CHAIN": "Original eighteen gates and twenty-node ledger on original scoring whitelist; separate full domain, original 3s POR-release engineering boundary, no pre-stimulus q/aq/p, original ledger criteria at new reference nodes",
+  "all_original_energy_gates_unchanged": true,
+  "fixed_BDF_explanation_cannot_replace_FAIL": true
+}

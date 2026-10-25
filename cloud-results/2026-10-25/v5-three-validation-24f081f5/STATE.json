@@ -1,0 +1,23 @@
+{
+  "status": "CASE_PASS_DELIVERY_PENDING",
+  "actual_new_starts": 1,
+  "conservative_starts": 55,
+  "global_cap": 84,
+  "solver_wall_s": 1.831106961995829,
+  "results": [
+    {
+      "case_id": "T0_GATED_SOURCE_BENCH",
+      "result": "PASS",
+      "completion": "PASS",
+      "original": "PASS",
+      "engineering": "PASS",
+      "actual_end_s": 0.06,
+      "solver_wall_s": 1.831106961995829
+    }
+  ],
+  "current_case": "T0_GATED_SOURCE_BENCH",
+  "remaining_not_started": [
+    "DC_3",
+    "CHAIN_12_W_F"
+  ]
+}

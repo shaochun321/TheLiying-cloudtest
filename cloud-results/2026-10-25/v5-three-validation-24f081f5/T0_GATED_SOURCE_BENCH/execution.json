@@ -1,0 +1,22 @@
+{
+  "case_id": "T0_GATED_SOURCE_BENCH",
+  "command": [
+    "/workspace/thermal-g3-env/host/native/bin/ngspice",
+    "-n",
+    "-b",
+    "/workspace/thermal-g3-retests/v5-three-validation-2026-10-25-24f081f5/T0_GATED_SOURCE_BENCH/T0_GATED_SOURCE_BENCH.cir"
+  ],
+  "cwd": "/workspace/thermal-g3-retests/v5-three-validation-2026-10-25-24f081f5/T0_GATED_SOURCE_BENCH",
+  "actual_solver_starts": 1,
+  "wall_cap_s": 600,
+  "timed_out": false,
+  "automatic_retry": false,
+  "conservative_before": 54,
+  "pid": 50591,
+  "started_at_UTC": "2026-10-25T14:29:40.028876+00:00",
+  "conservative_after": 55,
+  "returncode": 0,
+  "elapsed_solver_wall_s": 1.831106961995829,
+  "ended_at_UTC": "2026-10-25T14:29:41.852346+00:00",
+  "process_reaped": true
+}

@@ -1,0 +1,2045 @@
+{
+  "kind": "INDEPENDENT_GATED_SOURCE_BENCH",
+  "model_domain": {
+    "covered": 75,
+    "total": 75,
+    "outside": [],
+    "result": "PASS",
+    "earliest_violation": null
+  },
+  "channels": [
+    {
+      "channel": "t0_collector_low_",
+      "role": "collector",
+      "boundary_class": "low",
+      "fixed_output_boundary_V": 0.0,
+      "charge_limit_C": 4.945360433543721e-10,
+      "ON_plateaus": [
+        {
+          "window_s": [
+            0.03,
+            0.034
+          ],
+          "current_min_A": 1.3596453868341629e-06,
+          "current_max_A": 1.3602531099281926e-06,
+          "measured_scaled_reference_mean_A": 1.2967475690139624e-06,
+          "within_original_10pct_band": true,
+          "max_gate_reference_error_V": 1.708155838997527e-09
+        },
+        {
+          "window_s": [
+            0.05,
+            0.058
+          ],
+          "current_min_A": 1.36121290979183e-06,
+          "current_max_A": 1.3613362514045915e-06,
+          "measured_scaled_reference_mean_A": 1.2979446493725204e-06,
+          "within_original_10pct_band": true,
+          "max_gate_reference_error_V": 4.715909440733412e-09
+        }
+      ],
+      "OFF_windows": [
+        {
+          "window_s": [
+            0.0,
+            0.025
+          ],
+          "positive_C": 1.50347972192347e-14,
+          "negative_magnitude_C": 4.073913365932554e-18,
+          "absolute_C": 1.5038871132600633e-14,
+          "net_C": 1.5030723305868765e-14
+        },
+        {
+          "window_s": [
+            0.0355,
+            0.045
+          ],
+          "positive_C": 1.9543870514552643e-16,
+          "negative_magnitude_C": 3.71379676849575e-18,
+          "absolute_C": 1.9915250191402217e-16,
+          "net_C": 1.917249083770307e-16
+        }
+      ],
+      "ON_feedthrough": [
+        {
+          "window_s": [
+            0.025,
+            0.026254
+          ],
+          "noncommanded_absolute_C": 1.4324674681229102e-20,
+          "full_commanded_transition_charge": {
+            "positive_C": 9.421206660759585e-10,
+            "negative_magnitude_C": 1.4324674681229102e-20,
+            "absolute_C": 9.421206660902832e-10,
+            "net_C": 9.421206660616338e-10
+          }
+        },
+        {
+          "window_s": [
+            0.045,
+            0.046253999999999997
+          ],
+          "noncommanded_absolute_C": 1.2977813027012455e-20,
+          "full_commanded_transition_charge": {
+            "positive_C": 9.448419079606884e-10,
+            "negative_magnitude_C": 1.2977813027012455e-20,
+            "absolute_C": 9.448419079736662e-10,
+            "net_C": 9.448419079477106e-10
+          }
+        }
+      ],
+      "establishment": [
+        {
+          "mode": "ON",
+          "edge_end_s": 0.026,
+          "last_invalid_sample_s": 0.026,
+          "establish_delay_s": 0.0,
+          "limit_s": 0.0002540000000000006
+        },
+        {
+          "mode": "OFF",
+          "edge_end_s": 0.036,
+          "last_invalid_sample_s": 0.036,
+          "establish_delay_s": 0.0,
+          "limit_s": 0.0002540000000000006
+        },
+        {
+          "mode": "ON",
+          "edge_end_s": 0.046,
+          "last_invalid_sample_s": 0.046,
+          "establish_delay_s": 0.0,
+          "limit_s": 0.0002540000000000006
+        }
+      ],
+      "failures": [],
+      "full_edge_absolute_charges": [
+        {
+          "window_s": [
+            0.025,
+            0.026
+          ],
+          "positive_C": 5.970316355077288e-10,
+          "negative_magnitude_C": 1.4324674681229102e-20,
+          "absolute_C": 5.970316355220534e-10,
+          "net_C": 5.970316354934041e-10
+        },
+        {
+          "window_s": [
+            0.035,
+            0.036
+          ],
+          "positive_C": 5.99388797808997e-10,
+          "negative_magnitude_C": 1.9847283682042335e-16,
+          "absolute_C": 5.993889962818339e-10,
+          "net_C": 5.993885993361602e-10
+        },
+        {
+          "window_s": [
+            0.045,
+            0.046
+          ],
+          "positive_C": 5.99131069429125e-10,
+          "negative_magnitude_C": 1.2977813027012455e-20,
+          "absolute_C": 5.991310694421028e-10,
+          "net_C": 5.991310694161472e-10
+        }
+      ]
+    },
+    {
+      "channel": "t0_collector_work_low_",
+      "role": "collector",
+      "boundary_class": "work_low",
+      "fixed_output_boundary_V": 1.0515431239325959,
+      "charge_limit_C": 4.945360433543721e-10,
+      "ON_plateaus": [
+        {
+          "window_s": [
+            0.03,
+            0.034
+          ],
+          "current_min_A": 1.3442016254463729e-06,
+          "current_max_A": 1.3448111851681357e-06,
+          "measured_scaled_reference_mean_A": 1.2967475690139624e-06,
+          "within_original_10pct_band": true,
+          "max_gate_reference_error_V": 1.7077361746942188e-09
+        },
+        {
+          "window_s": [
+            0.05,
+            0.058
+          ],
+          "current_min_A": 1.345773899892285e-06,
+          "current_max_A": 1.3458976173509734e-06,
+          "measured_scaled_reference_mean_A": 1.2979446493725204e-06,
+          "within_original_10pct_band": true,
+          "max_gate_reference_error_V": 4.7158761340426736e-09
+        }
+      ],
+      "OFF_windows": [
+        {
+          "window_s": [
+            0.0,
+            0.025
+          ],
+          "positive_C": 1.1708735632743548e-14,
+          "negative_magnitude_C": 4.115108184384614e-18,
+          "absolute_C": 1.1712850740927932e-14,
+          "net_C": 1.1704620524559163e-14
+        },
+        {
+          "window_s": [
+            0.0355,
+            0.045
+          ],
+          "positive_C": 1.9266380727525305e-16,
+          "negative_magnitude_C": 3.7420357115234924e-18,
+          "absolute_C": 1.9640584298677656e-16,
+          "net_C": 1.8892177156372959e-16
+        }
+      ],
+      "ON_feedthrough": [
+        {
+          "window_s": [
+            0.025,
+            0.026254
+          ],
+          "noncommanded_absolute_C": 1.4567888037034653e-20,
+          "full_commanded_transition_charge": {
+            "positive_C": 9.313842496636411e-10,
+            "negative_magnitude_C": 1.4567888037034653e-20,
+            "absolute_C": 9.31384249678209e-10,
+            "net_C": 9.313842496490732e-10
+          }
+        },
+        {
+          "window_s": [
+            0.045,
+            0.046253999999999997
+          ],
+          "noncommanded_absolute_C": 1.3240638200339486e-20,
+          "full_commanded_transition_charge": {
+            "positive_C": 9.340996530731439e-10,
+            "negative_magnitude_C": 1.3240638200339486e-20,
+            "absolute_C": 9.340996530863846e-10,
+            "net_C": 9.340996530599032e-10
+          }
+        }
+      ],
+      "establishment": [
+        {
+          "mode": "ON",
+          "edge_end_s": 0.026,
+          "last_invalid_sample_s": 0.026,
+          "establish_delay_s": 0.0,
+          "limit_s": 0.0002540000000000006
+        },
+        {
+          "mode": "OFF",
+          "edge_end_s": 0.036,
+          "last_invalid_sample_s": 0.036,
+          "establish_delay_s": 0.0,
+          "limit_s": 0.0002540000000000006
+        },
+        {
+          "mode": "ON",
+          "edge_end_s": 0.046,
+          "last_invalid_sample_s": 0.046,
+          "establish_delay_s": 0.0,
+          "limit_s": 0.0002540000000000006
+        }
+      ],
+      "failures": [],
+      "full_edge_absolute_charges": [
+        {
+          "window_s": [
+            0.025,
+            0.026
+          ],
+          "positive_C": 5.902187193062188e-10,
+          "negative_magnitude_C": 1.4567888037034653e-20,
+          "absolute_C": 5.902187193207866e-10,
+          "net_C": 5.90218719291651e-10
+        },
+        {
+          "window_s": [
+            0.035,
+            0.036
+          ],
+          "positive_C": 5.925667083758228e-10,
+          "negative_magnitude_C": 1.991918819773358e-16,
+          "absolute_C": 5.925669075677048e-10,
+          "net_C": 5.925665091839407e-10
+        },
+        {
+          "window_s": [
+            0.045,
+            0.046
+          ],
+          "positive_C": 5.923104368176736e-10,
+          "negative_magnitude_C": 1.3240638200339486e-20,
+          "absolute_C": 5.923104368309142e-10,
+          "net_C": 5.92310436804433e-10
+        }
+      ]
+    },
+    {
+      "channel": "t0_collector_work_high_",
+      "role": "collector",
+      "boundary_class": "work_high",
+      "fixed_output_boundary_V": 1.651543123932596,
+      "charge_limit_C": 4.945360433543721e-10,
+      "ON_plateaus": [
+        {
+          "window_s": [
+            0.03,
+            0.034
+          ],
+          "current_min_A": 1.3335839734598453e-06,
+          "current_max_A": 1.3341950410407092e-06,
+          "measured_scaled_reference_mean_A": 1.2967475690139624e-06,
+          "within_original_10pct_band": true,
+          "max_gate_reference_error_V": 1.7074563984920132e-09
+        },
+        {
+          "window_s": [
+            0.05,
+            0.058
+          ],
+          "current_min_A": 1.3351601461730967e-06,
+          "current_max_A": 1.3352841716176268e-06,
+          "measured_scaled_reference_mean_A": 1.2979446493725204e-06,
+          "within_original_10pct_band": true,
+          "max_gate_reference_error_V": 4.715851265046922e-09
+        }
+      ],
+      "OFF_windows": [
+        {
+          "window_s": [
+            0.0,
+            0.025
+          ],
+          "positive_C": 9.453938559026733e-15,
+          "negative_magnitude_C": 4.142820340964443e-18,
+          "absolute_C": 9.458081379367696e-15,
+          "net_C": 9.449795738685768e-15
+        },
+        {
+          "window_s": [
+            0.0355,
+            0.045
+          ],
+          "positive_C": 1.9082943838856436e-16,
+          "negative_magnitude_C": 3.7606993411577205e-18,
+          "absolute_C": 1.9459013772972209e-16,
+          "net_C": 1.8706873904740666e-16
+        }
+      ],
+      "ON_feedthrough": [
+        {
+          "window_s": [
+            0.025,
+            0.026254
+          ],
+          "noncommanded_absolute_C": 1.472858928499168e-20,
+          "full_commanded_transition_charge": {
+            "positive_C": 9.240033706112561e-10,
+            "negative_magnitude_C": 1.472858928499168e-20,
+            "absolute_C": 9.240033706259848e-10,
+            "net_C": 9.240033705965275e-10
+          }
+        },
+        {
+          "window_s": [
+            0.045,
+            0.046253999999999997
+          ],
+          "noncommanded_absolute_C": 1.3414314687021085e-20,
+          "full_commanded_transition_charge": {
+            "positive_C": 9.267154593278731e-10,
+            "negative_magnitude_C": 1.3414314687021085e-20,
+            "absolute_C": 9.267154593412874e-10,
+            "net_C": 9.267154593144588e-10
+          }
+        }
+      ],
+      "establishment": [
+        {
+          "mode": "ON",
+          "edge_end_s": 0.026,
+          "last_invalid_sample_s": 0.026,
+          "establish_delay_s": 0.0,
+          "limit_s": 0.0002540000000000006
+        },
+        {
+          "mode": "OFF",
+          "edge_end_s": 0.036,
+          "last_invalid_sample_s": 0.036,
+          "establish_delay_s": 0.0,
+          "limit_s": 0.0002540000000000006
+        },
+        {
+          "mode": "ON",
+          "edge_end_s": 0.046,
+          "last_invalid_sample_s": 0.046,
+          "establish_delay_s": 0.0,
+          "limit_s": 0.0002540000000000006
+        }
+      ],
+      "failures": [],
+      "full_edge_absolute_charges": [
+        {
+          "window_s": [
+            0.025,
+            0.026
+          ],
+          "positive_C": 5.855353689140571e-10,
+          "negative_magnitude_C": 1.472858928499168e-20,
+          "absolute_C": 5.855353689287857e-10,
+          "net_C": 5.855353688993285e-10
+        },
+        {
+          "window_s": [
+            0.035,
+            0.036
+          ],
+          "positive_C": 5.878775444441892e-10,
+          "negative_magnitude_C": 1.9966134904304083e-16,
+          "absolute_C": 5.878777441055383e-10,
+          "net_C": 5.878773447828403e-10
+        },
+        {
+          "window_s": [
+            0.045,
+            0.046
+          ],
+          "positive_C": 5.876222297238552e-10,
+          "negative_magnitude_C": 1.3414314687021085e-20,
+          "absolute_C": 5.876222297372695e-10,
+          "net_C": 5.876222297104409e-10
+        }
+      ]
+    },
+    {
+      "channel": "t0_spatial_low_",
+      "role": "spatial",
+      "boundary_class": "low",
+      "fixed_output_boundary_V": 0.0,
+      "charge_limit_C": 2.43463898266768e-10,
+      "ON_plateaus": [
+        {
+          "window_s": [
+            0.03,
+            0.034
+          ],
+          "current_min_A": 5.957141238956905e-07,
+          "current_max_A": 5.959806670080521e-07,
+          "measured_scaled_reference_mean_A": 5.486875743912599e-07,
+          "within_original_10pct_band": true,
+          "max_gate_reference_error_V": 2.548590671835882e-09
+        },
+        {
+          "window_s": [
+            0.05,
+            0.058
+          ],
+          "current_min_A": 5.964016287044852e-07,
+          "current_max_A": 5.964557255060509e-07,
+          "measured_scaled_reference_mean_A": 5.491921941053513e-07,
+          "within_original_10pct_band": true,
+          "max_gate_reference_error_V": 5.14120479522262e-09
+        }
+      ],
+      "OFF_windows": [
+        {
+          "window_s": [
+            0.0,
+            0.025
+          ],
+          "positive_C": 9.233901183086999e-15,
+          "negative_magnitude_C": 1.936247409312501e-18,
+          "absolute_C": 9.235837430496312e-15,
+          "net_C": 9.231964935677688e-15
+        },
+        {
+          "window_s": [
+            0.0355,
+            0.045
+          ],
+          "positive_C": 1.1463986618679651e-16,
+          "negative_magnitude_C": 1.4511087075388127e-18,
+          "absolute_C": 1.1609097489433534e-16,
+          "net_C": 1.131887574792577e-16
+        }
+      ],
+      "ON_feedthrough": [
+        {
+          "window_s": [
+            0.025,
+            0.026254
+          ],
+          "noncommanded_absolute_C": 8.024107837219667e-21,
+          "full_commanded_transition_charge": {
+            "positive_C": 4.1308593210225335e-10,
+            "negative_magnitude_C": 8.024107837219667e-21,
+            "absolute_C": 4.130859321102774e-10,
+            "net_C": 4.1308593209422923e-10
+          }
+        },
+        {
+          "window_s": [
+            0.045,
+            0.046253999999999997
+          ],
+          "noncommanded_absolute_C": 7.525478948970132e-21,
+          "full_commanded_transition_charge": {
+            "positive_C": 4.142532386468379e-10,
+            "negative_magnitude_C": 7.525478948970132e-21,
+            "absolute_C": 4.1425323865436336e-10,
+            "net_C": 4.142532386393124e-10
+          }
+        }
+      ],
+      "establishment": [
+        {
+          "mode": "ON",
+          "edge_end_s": 0.026,
+          "last_invalid_sample_s": 0.026,
+          "establish_delay_s": 0.0,
+          "limit_s": 0.0002540000000000006
+        },
+        {
+          "mode": "OFF",
+          "edge_end_s": 0.036,
+          "last_invalid_sample_s": 0.036,
+          "establish_delay_s": 0.0,
+          "limit_s": 0.0002540000000000006
+        },
+        {
+          "mode": "ON",
+          "edge_end_s": 0.046,
+          "last_invalid_sample_s": 0.046,
+          "establish_delay_s": 0.0,
+          "limit_s": 0.0002540000000000006
+        }
+      ],
+      "failures": [],
+      "full_edge_absolute_charges": [
+        {
+          "window_s": [
+            0.025,
+            0.026
+          ],
+          "positive_C": 2.6188897084056716e-10,
+          "negative_magnitude_C": 8.024107837219667e-21,
+          "absolute_C": 2.6188897084859123e-10,
+          "net_C": 2.6188897083254304e-10
+        },
+        {
+          "window_s": [
+            0.035,
+            0.036
+          ],
+          "positive_C": 2.628862803746598e-10,
+          "negative_magnitude_C": 1.0231764932652358e-16,
+          "absolute_C": 2.628863826923092e-10,
+          "net_C": 2.628861780570105e-10
+        },
+        {
+          "window_s": [
+            0.045,
+            0.046
+          ],
+          "positive_C": 2.627835567485147e-10,
+          "negative_magnitude_C": 7.525478948970132e-21,
+          "absolute_C": 2.627835567560402e-10,
+          "net_C": 2.6278355674098923e-10
+        }
+      ]
+    },
+    {
+      "channel": "t0_spatial_work_low_",
+      "role": "spatial",
+      "boundary_class": "work_low",
+      "fixed_output_boundary_V": 1.5773146858988938,
+      "charge_limit_C": 2.43463898266768e-10,
+      "ON_plateaus": [
+        {
+          "window_s": [
+            0.03,
+            0.034
+          ],
+          "current_min_A": 5.845525699024065e-07,
+          "current_max_A": 5.848206842712953e-07,
+          "measured_scaled_reference_mean_A": 5.486875743912599e-07,
+          "within_original_10pct_band": true,
+          "max_gate_reference_error_V": 2.548214528275139e-09
+        },
+        {
+          "window_s": [
+            0.05,
+            0.058
+          ],
+          "current_min_A": 5.852441381036088e-07,
+          "current_max_A": 5.852985561063124e-07,
+          "measured_scaled_reference_mean_A": 5.491921941053513e-07,
+          "within_original_10pct_band": true,
+          "max_gate_reference_error_V": 5.141170156264252e-09
+        }
+      ],
+      "OFF_windows": [
+        {
+          "window_s": [
+            0.0,
+            0.025
+          ],
+          "positive_C": 5.9812293788019866e-15,
+          "negative_magnitude_C": 1.958273615905196e-18,
+          "absolute_C": 5.983187652417892e-15,
+          "net_C": 5.979271105186082e-15
+        },
+        {
+          "window_s": [
+            0.0355,
+            0.045
+          ],
+          "positive_C": 1.1238493100493468e-16,
+          "negative_magnitude_C": 1.4715801866646863e-18,
+          "absolute_C": 1.1385651119159937e-16,
+          "net_C": 1.1091335081827e-16
+        }
+      ],
+      "ON_feedthrough": [
+        {
+          "window_s": [
+            0.025,
+            0.026254
+          ],
+          "noncommanded_absolute_C": 8.15691513946748e-21,
+          "full_commanded_transition_charge": {
+            "positive_C": 4.0532167483579045e-10,
+            "negative_magnitude_C": 8.15691513946748e-21,
+            "absolute_C": 4.053216748439474e-10,
+            "net_C": 4.053216748276335e-10
+          }
+        },
+        {
+          "window_s": [
+            0.045,
+            0.046253999999999997
+          ],
+          "noncommanded_absolute_C": 7.666998504488339e-21,
+          "full_commanded_transition_charge": {
+            "positive_C": 4.0648591316079044e-10,
+            "negative_magnitude_C": 7.666998504488339e-21,
+            "absolute_C": 4.064859131684574e-10,
+            "net_C": 4.0648591315312346e-10
+          }
+        }
+      ],
+      "establishment": [
+        {
+          "mode": "ON",
+          "edge_end_s": 0.026,
+          "last_invalid_sample_s": 0.026,
+          "establish_delay_s": 0.0,
+          "limit_s": 0.0002540000000000006
+        },
+        {
+          "mode": "OFF",
+          "edge_end_s": 0.036,
+          "last_invalid_sample_s": 0.036,
+          "establish_delay_s": 0.0,
+          "limit_s": 0.0002540000000000006
+        },
+        {
+          "mode": "ON",
+          "edge_end_s": 0.046,
+          "last_invalid_sample_s": 0.046,
+          "establish_delay_s": 0.0,
+          "limit_s": 0.0002540000000000006
+        }
+      ],
+      "failures": [],
+      "full_edge_absolute_charges": [
+        {
+          "window_s": [
+            0.025,
+            0.026
+          ],
+          "positive_C": 2.5696042014095894e-10,
+          "negative_magnitude_C": 8.15691513946748e-21,
+          "absolute_C": 2.569604201491158e-10,
+          "net_C": 2.56960420132802e-10
+        },
+        {
+          "window_s": [
+            0.035,
+            0.036
+          ],
+          "positive_C": 2.5795215456416247e-10,
+          "negative_magnitude_C": 1.0262648035698805e-16,
+          "absolute_C": 2.579522571906428e-10,
+          "net_C": 2.5795205193768207e-10
+        },
+        {
+          "window_s": [
+            0.045,
+            0.046
+          ],
+          "positive_C": 2.5785033109568227e-10,
+          "negative_magnitude_C": 7.666998504488339e-21,
+          "absolute_C": 2.5785033110334925e-10,
+          "net_C": 2.5785033108801523e-10
+        }
+      ]
+    },
+    {
+      "channel": "t0_spatial_work_high_",
+      "role": "spatial",
+      "boundary_class": "work_high",
+      "fixed_output_boundary_V": 2.1815863205230452,
+      "charge_limit_C": 2.43463898266768e-10,
+      "ON_plateaus": [
+        {
+          "window_s": [
+            0.03,
+            0.034
+          ],
+          "current_min_A": 5.789017634634924e-07,
+          "current_max_A": 5.791709275536516e-07,
+          "measured_scaled_reference_mean_A": 5.486875743912599e-07,
+          "within_original_10pct_band": true,
+          "max_gate_reference_error_V": 2.54803378396673e-09
+        },
+        {
+          "window_s": [
+            0.05,
+            0.058
+          ],
+          "current_min_A": 5.795960437621887e-07,
+          "current_max_A": 5.796506757947478e-07,
+          "measured_scaled_reference_mean_A": 5.491921941053513e-07,
+          "within_original_10pct_band": true,
+          "max_gate_reference_error_V": 5.141155057231117e-09
+        }
+      ],
+      "OFF_windows": [
+        {
+          "window_s": [
+            0.0,
+            0.025
+          ],
+          "positive_C": 4.3520938508838076e-15,
+          "negative_magnitude_C": 1.968829565007935e-18,
+          "absolute_C": 4.354062680448815e-15,
+          "net_C": 4.3501250213188e-15
+        },
+        {
+          "window_s": [
+            0.0355,
+            0.045
+          ],
+          "positive_C": 1.1130384111025497e-16,
+          "negative_magnitude_C": 1.4813923888007405e-18,
+          "absolute_C": 1.127852334990557e-16,
+          "net_C": 1.0982244872145422e-16
+        }
+      ],
+      "ON_feedthrough": [
+        {
+          "window_s": [
+            0.025,
+            0.026254
+          ],
+          "noncommanded_absolute_C": 8.220550695103521e-21,
+          "full_commanded_transition_charge": {
+            "positive_C": 4.0139096205755416e-10,
+            "negative_magnitude_C": 8.220550695103521e-21,
+            "absolute_C": 4.0139096206577474e-10,
+            "net_C": 4.013909620493336e-10
+          }
+        },
+        {
+          "window_s": [
+            0.045,
+            0.046253999999999997
+          ],
+          "noncommanded_absolute_C": 7.734815898111329e-21,
+          "full_commanded_transition_charge": {
+            "positive_C": 4.025543765483685e-10,
+            "negative_magnitude_C": 7.734815898111329e-21,
+            "absolute_C": 4.025543765561033e-10,
+            "net_C": 4.025543765406337e-10
+          }
+        }
+      ],
+      "establishment": [
+        {
+          "mode": "ON",
+          "edge_end_s": 0.026,
+          "last_invalid_sample_s": 0.026,
+          "establish_delay_s": 0.0,
+          "limit_s": 0.0002540000000000006
+        },
+        {
+          "mode": "OFF",
+          "edge_end_s": 0.036,
+          "last_invalid_sample_s": 0.036,
+          "establish_delay_s": 0.0,
+          "limit_s": 0.0002540000000000006
+        },
+        {
+          "mode": "ON",
+          "edge_end_s": 0.046,
+          "last_invalid_sample_s": 0.046,
+          "establish_delay_s": 0.0,
+          "limit_s": 0.0002540000000000006
+        }
+      ],
+      "failures": [],
+      "full_edge_absolute_charges": [
+        {
+          "window_s": [
+            0.025,
+            0.026
+          ],
+          "positive_C": 2.544654617420926e-10,
+          "negative_magnitude_C": 8.220550695103521e-21,
+          "absolute_C": 2.544654617503132e-10,
+          "net_C": 2.544654617338721e-10
+        },
+        {
+          "window_s": [
+            0.035,
+            0.036
+          ],
+          "positive_C": 2.5545489386675633e-10,
+          "negative_magnitude_C": 1.0298349546926186e-16,
+          "absolute_C": 2.554549968502518e-10,
+          "net_C": 2.5545479088326084e-10
+        },
+        {
+          "window_s": [
+            0.045,
+            0.046
+          ],
+          "positive_C": 2.5535347521246504e-10,
+          "negative_magnitude_C": 7.734815898111329e-21,
+          "absolute_C": 2.5535347522019985e-10,
+          "net_C": 2.553534752047302e-10
+        }
+      ]
+    },
+    {
+      "channel": "t0_load_low_",
+      "role": "load",
+      "boundary_class": "low",
+      "fixed_output_boundary_V": 0.0,
+      "charge_limit_C": 3.6519584740015196e-09,
+      "ON_plateaus": [
+        {
+          "window_s": [
+            0.03,
+            0.034
+          ],
+          "current_min_A": 1.1539324746249781e-06,
+          "current_max_A": 1.1544469664196657e-06,
+          "measured_scaled_reference_mean_A": 1.0973751487825199e-06,
+          "within_original_10pct_band": true,
+          "max_gate_reference_error_V": 2.2651689413066833e-09
+        },
+        {
+          "window_s": [
+            0.05,
+            0.058
+          ],
+          "current_min_A": 1.1552595212040009e-06,
+          "current_max_A": 1.1553639405579762e-06,
+          "measured_scaled_reference_mean_A": 1.0983843882107027e-06,
+          "within_original_10pct_band": true,
+          "max_gate_reference_error_V": 5.118185875119252e-09
+        }
+      ],
+      "OFF_windows": [
+        {
+          "window_s": [
+            0.0,
+            0.025
+          ],
+          "positive_C": 1.5034797220194966e-14,
+          "negative_magnitude_C": 4.073913365922074e-18,
+          "absolute_C": 1.503887113356089e-14,
+          "net_C": 1.5030723306829045e-14
+        },
+        {
+          "window_s": [
+            0.0355,
+            0.045
+          ],
+          "positive_C": 1.955029719379431e-16,
+          "negative_magnitude_C": 3.0343356808601558e-18,
+          "absolute_C": 1.9853730761880328e-16,
+          "net_C": 1.9246863625708296e-16
+        }
+      ],
+      "ON_feedthrough": [
+        {
+          "window_s": [
+            0.025,
+            0.026254
+          ],
+          "noncommanded_absolute_C": 1.6946231498957557e-20,
+          "full_commanded_transition_charge": {
+            "positive_C": 8.0016970121509e-10,
+            "negative_magnitude_C": 1.6946231498957557e-20,
+            "absolute_C": 8.001697012320362e-10,
+            "net_C": 8.001697011981438e-10
+          }
+        },
+        {
+          "window_s": [
+            0.045,
+            0.046253999999999997
+          ],
+          "noncommanded_absolute_C": 1.6027719431474788e-20,
+          "full_commanded_transition_charge": {
+            "positive_C": 8.02425761704951e-10,
+            "negative_magnitude_C": 1.6027719431474788e-20,
+            "absolute_C": 8.024257617209788e-10,
+            "net_C": 8.024257616889233e-10
+          }
+        }
+      ],
+      "establishment": [
+        {
+          "mode": "ON",
+          "edge_end_s": 0.026,
+          "last_invalid_sample_s": 0.026,
+          "establish_delay_s": 0.0,
+          "limit_s": 0.0002540000000000006
+        },
+        {
+          "mode": "OFF",
+          "edge_end_s": 0.036,
+          "last_invalid_sample_s": 0.036,
+          "establish_delay_s": 0.0,
+          "limit_s": 0.0002540000000000006
+        },
+        {
+          "mode": "ON",
+          "edge_end_s": 0.046,
+          "last_invalid_sample_s": 0.046,
+          "establish_delay_s": 0.0,
+          "limit_s": 0.0002540000000000006
+        }
+      ],
+      "failures": [],
+      "full_edge_absolute_charges": [
+        {
+          "window_s": [
+            0.025,
+            0.026
+          ],
+          "positive_C": 5.072917215275803e-10,
+          "negative_magnitude_C": 1.6946231498957557e-20,
+          "absolute_C": 5.072917215445266e-10,
+          "net_C": 5.072917215106341e-10
+        },
+        {
+          "window_s": [
+            0.035,
+            0.036
+          ],
+          "positive_C": 5.092334681589002e-10,
+          "negative_magnitude_C": 1.9913217655282607e-16,
+          "absolute_C": 5.092336672910768e-10,
+          "net_C": 5.092332690267237e-10
+        },
+        {
+          "window_s": [
+            0.045,
+            0.046
+          ],
+          "positive_C": 5.090213659591078e-10,
+          "negative_magnitude_C": 1.6027719431474788e-20,
+          "absolute_C": 5.090213659751356e-10,
+          "net_C": 5.090213659430801e-10
+        }
+      ]
+    },
+    {
+      "channel": "t0_load_work_low_",
+      "role": "load",
+      "boundary_class": "work_low",
+      "fixed_output_boundary_V": 1.5773146858988938,
+      "charge_limit_C": 3.6519584740015196e-09,
+      "ON_plateaus": [
+        {
+          "window_s": [
+            0.03,
+            0.034
+          ],
+          "current_min_A": 1.1323148321149735e-06,
+          "current_max_A": 1.132832391554859e-06,
+          "measured_scaled_reference_mean_A": 1.0973751487825199e-06,
+          "within_original_10pct_band": true,
+          "max_gate_reference_error_V": 2.2644304209507027e-09
+        },
+        {
+          "window_s": [
+            0.05,
+            0.058
+          ],
+          "current_min_A": 1.1336498116644762e-06,
+          "current_max_A": 1.1337548580725547e-06,
+          "measured_scaled_reference_mean_A": 1.0983843882107027e-06,
+          "within_original_10pct_band": true,
+          "max_gate_reference_error_V": 5.118129475789601e-09
+        }
+      ],
+      "OFF_windows": [
+        {
+          "window_s": [
+            0.0,
+            0.025
+          ],
+          "positive_C": 9.75243022216076e-15,
+          "negative_magnitude_C": 4.139193648443693e-18,
+          "absolute_C": 9.756569415809203e-15,
+          "net_C": 9.748291028512315e-15
+        },
+        {
+          "window_s": [
+            0.0355,
+            0.045
+          ],
+          "positive_C": 1.911332771260959e-16,
+          "negative_magnitude_C": 3.0741755680753683e-18,
+          "absolute_C": 1.9420745269417128e-16,
+          "net_C": 1.8805910155802053e-16
+        }
+      ],
+      "ON_feedthrough": [
+        {
+          "window_s": [
+            0.025,
+            0.026254
+          ],
+          "noncommanded_absolute_C": 1.7297669652922094e-20,
+          "full_commanded_transition_charge": {
+            "positive_C": 7.851319902936406e-10,
+            "negative_magnitude_C": 1.7297669652922094e-20,
+            "absolute_C": 7.851319903109382e-10,
+            "net_C": 7.851319902763429e-10
+          }
+        },
+        {
+          "window_s": [
+            0.045,
+            0.046253999999999997
+          ],
+          "noncommanded_absolute_C": 1.637689053117751e-20,
+          "full_commanded_transition_charge": {
+            "positive_C": 7.8738217664004e-10,
+            "negative_magnitude_C": 1.637689053117751e-20,
+            "absolute_C": 7.873821766564169e-10,
+            "net_C": 7.873821766236631e-10
+          }
+        }
+      ],
+      "establishment": [
+        {
+          "mode": "ON",
+          "edge_end_s": 0.026,
+          "last_invalid_sample_s": 0.026,
+          "establish_delay_s": 0.0,
+          "limit_s": 0.0002540000000000006
+        },
+        {
+          "mode": "OFF",
+          "edge_end_s": 0.036,
+          "last_invalid_sample_s": 0.036,
+          "establish_delay_s": 0.0,
+          "limit_s": 0.0002540000000000006
+        },
+        {
+          "mode": "ON",
+          "edge_end_s": 0.046,
+          "last_invalid_sample_s": 0.046,
+          "establish_delay_s": 0.0,
+          "limit_s": 0.0002540000000000006
+        }
+      ],
+      "failures": [],
+      "full_edge_absolute_charges": [
+        {
+          "window_s": [
+            0.025,
+            0.026
+          ],
+          "positive_C": 4.977462035683459e-10,
+          "negative_magnitude_C": 1.7297669652922094e-20,
+          "absolute_C": 4.977462035856436e-10,
+          "net_C": 4.977462035510482e-10
+        },
+        {
+          "window_s": [
+            0.035,
+            0.036
+          ],
+          "positive_C": 4.996769387887098e-10,
+          "negative_magnitude_C": 1.9969377884381011e-16,
+          "absolute_C": 4.996771384824886e-10,
+          "net_C": 4.99676739094931e-10
+        },
+        {
+          "window_s": [
+            0.045,
+            0.046
+          ],
+          "positive_C": 4.994668369299237e-10,
+          "negative_magnitude_C": 1.637689053117751e-20,
+          "absolute_C": 4.994668369463007e-10,
+          "net_C": 4.994668369135468e-10
+        }
+      ]
+    },
+    {
+      "channel": "t0_load_work_high_",
+      "role": "load",
+      "boundary_class": "work_high",
+      "fixed_output_boundary_V": 1.6981690128237241,
+      "charge_limit_C": 3.6519584740015196e-09,
+      "ON_plateaus": [
+        {
+          "window_s": [
+            0.03,
+            0.034
+          ],
+          "current_min_A": 1.1302934616911229e-06,
+          "current_max_A": 1.1308113616305655e-06,
+          "measured_scaled_reference_mean_A": 1.0973751487825199e-06,
+          "within_original_10pct_band": true,
+          "max_gate_reference_error_V": 2.2643629193908055e-09
+        },
+        {
+          "window_s": [
+            0.05,
+            0.058
+          ],
+          "current_min_A": 1.1316293212392684e-06,
+          "current_max_A": 1.1317344371315874e-06,
+          "measured_scaled_reference_mean_A": 1.0983843882107027e-06,
+          "within_original_10pct_band": true,
+          "max_gate_reference_error_V": 5.118123702629873e-09
+        }
+      ],
+      "OFF_windows": [
+        {
+          "window_s": [
+            0.0,
+            0.025
+          ],
+          "positive_C": 9.263101156699068e-15,
+          "negative_magnitude_C": 4.145131296152332e-18,
+          "absolute_C": 9.26724628799522e-15,
+          "net_C": 9.258956025402915e-15
+        },
+        {
+          "window_s": [
+            0.0355,
+            0.045
+          ],
+          "positive_C": 1.9074016067955514e-16,
+          "negative_magnitude_C": 3.0777590474590275e-18,
+          "absolute_C": 1.9381791972701418e-16,
+          "net_C": 1.876624016320961e-16
+        }
+      ],
+      "ON_feedthrough": [
+        {
+          "window_s": [
+            0.025,
+            0.026254
+          ],
+          "noncommanded_absolute_C": 1.7334403494455604e-20,
+          "full_commanded_transition_charge": {
+            "positive_C": 7.837259342718256e-10,
+            "negative_magnitude_C": 1.7334403494455604e-20,
+            "absolute_C": 7.8372593428916e-10,
+            "net_C": 7.837259342544912e-10
+          }
+        },
+        {
+          "window_s": [
+            0.045,
+            0.046253999999999997
+          ],
+          "noncommanded_absolute_C": 1.6408292808845524e-20,
+          "full_commanded_transition_charge": {
+            "positive_C": 7.859757252939165e-10,
+            "negative_magnitude_C": 1.6408292808845524e-20,
+            "absolute_C": 7.859757253103248e-10,
+            "net_C": 7.859757252775081e-10
+          }
+        }
+      ],
+      "establishment": [
+        {
+          "mode": "ON",
+          "edge_end_s": 0.026,
+          "last_invalid_sample_s": 0.026,
+          "establish_delay_s": 0.0,
+          "limit_s": 0.0002540000000000006
+        },
+        {
+          "mode": "OFF",
+          "edge_end_s": 0.036,
+          "last_invalid_sample_s": 0.036,
+          "establish_delay_s": 0.0,
+          "limit_s": 0.0002540000000000006
+        },
+        {
+          "mode": "ON",
+          "edge_end_s": 0.046,
+          "last_invalid_sample_s": 0.046,
+          "establish_delay_s": 0.0,
+          "limit_s": 0.0002540000000000006
+        }
+      ],
+      "failures": [],
+      "full_edge_absolute_charges": [
+        {
+          "window_s": [
+            0.025,
+            0.026
+          ],
+          "positive_C": 4.968537213816495e-10,
+          "negative_magnitude_C": 1.7334403494455604e-20,
+          "absolute_C": 4.968537213989839e-10,
+          "net_C": 4.968537213643151e-10
+        },
+        {
+          "window_s": [
+            0.035,
+            0.036
+          ],
+          "positive_C": 4.987835370957014e-10,
+          "negative_magnitude_C": 1.99743739717635e-16,
+          "absolute_C": 4.987837368394411e-10,
+          "net_C": 4.987833373519617e-10
+        },
+        {
+          "window_s": [
+            0.045,
+            0.046
+          ],
+          "positive_C": 4.985736111816786e-10,
+          "negative_magnitude_C": 1.6408292808845524e-20,
+          "absolute_C": 4.985736111980869e-10,
+          "net_C": 4.985736111652702e-10
+        }
+      ]
+    }
+  ],
+  "reference_perturbations": {
+    "irefp_n": {
+      "baseline_V": 2.261959874219934,
+      "max_abs_delta_V": 0.0088554216735508,
+      "peak_time_s": 0.06,
+      "first_excess_time_s": null,
+      "limit_V": 0.02
+    },
+    "ilimp_n": {
+      "baseline_V": 2.2341134464098857,
+      "max_abs_delta_V": 0.00880984597015333,
+      "peak_time_s": 0.06,
+      "first_excess_time_s": null,
+      "limit_V": 0.02
+    }
+  },
+  "failures": [],
+  "missing": [],
+  "actual_end_s": 0.06,
+  "MOS_port_energy": [
+    {
+      "device": "npori1p",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 1.4922899242896795e-14,
+      "max_abs_terminal_current_A": 3.9487722176145695e-11
+    },
+    {
+      "device": "npori1n",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 1.8082672063481592e-14,
+      "max_abs_terminal_current_A": 2.00080104443412e-12
+    },
+    {
+      "device": "npori2p",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 2.4010481743086038e-14,
+      "max_abs_terminal_current_A": 2.6330719215035642e-12
+    },
+    {
+      "device": "npori2n",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 1.781179724834433e-14,
+      "max_abs_terminal_current_A": 1.4049751632988397e-08
+    },
+    {
+      "device": "nirefd",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 3.847141750046903e-08,
+      "max_abs_terminal_current_A": 1.0993520626405195e-06
+    },
+    {
+      "device": "nistepd",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 1.2397151842212567e-09,
+      "max_abs_terminal_current_A": 4.638013578665552e-08
+    },
+    {
+      "device": "nirefm",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 1.1453713277884954e-07,
+      "max_abs_terminal_current_A": 1.1218412653944777e-06
+    },
+    {
+      "device": "nirefpd",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 4.681733516122303e-08,
+      "max_abs_terminal_current_A": 1.1218188495630576e-06
+    },
+    {
+      "device": "nilimd",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 4.6361070104884037e-08,
+      "max_abs_terminal_current_A": 1.2980104732575864e-06
+    },
+    {
+      "device": "nilimm",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 1.3342275353230062e-07,
+      "max_abs_terminal_current_A": 1.3227480931131864e-06
+    },
+    {
+      "device": "nilimpd",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 5.6927933207916155e-08,
+      "max_abs_terminal_current_A": 1.322748094260806e-06
+    },
+    {
+      "device": "nt0_collector_low_refn",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 1.3433776906781918e-07,
+      "max_abs_terminal_current_A": 1.335493968746332e-06
+    },
+    {
+      "device": "nt0_collector_low_refp",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 5.584101536641997e-08,
+      "max_abs_terminal_current_A": 1.3227480626247894e-06
+    },
+    {
+      "device": "nt0_collector_low_eni_p",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 9.25357268727094e-08,
+      "max_abs_terminal_current_A": 7.23932944968314e-05
+    },
+    {
+      "device": "nt0_collector_low_eni_n",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 6.775490623253711e-08,
+      "max_abs_terminal_current_A": 7.238918300442227e-05
+    },
+    {
+      "device": "nt0_collector_low_cp",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 1.0432795668664951e-07,
+      "max_abs_terminal_current_A": 1.3613548708589992e-06
+    },
+    {
+      "device": "nt0_collector_low_bias",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 1.813961415485973e-10,
+      "max_abs_terminal_current_A": 1.41911218212273e-06
+    },
+    {
+      "device": "nt0_collector_low_off",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 2.3025374895459434e-11,
+      "max_abs_terminal_current_A": 1.4845487081020073e-06
+    },
+    {
+      "device": "nt0_collector_work_low_refn",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 1.3433776909224893e-07,
+      "max_abs_terminal_current_A": 1.3354935361466278e-06
+    },
+    {
+      "device": "nt0_collector_work_low_refp",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 5.584101537367225e-08,
+      "max_abs_terminal_current_A": 1.322748062624952e-06
+    },
+    {
+      "device": "nt0_collector_work_low_eni_p",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 9.25357268727093e-08,
+      "max_abs_terminal_current_A": 7.239329449683132e-05
+    },
+    {
+      "device": "nt0_collector_work_low_eni_n",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 6.775490623254248e-08,
+      "max_abs_terminal_current_A": 7.238918300442237e-05
+    },
+    {
+      "device": "nt0_collector_work_low_cp",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 6.874320152408568e-08,
+      "max_abs_terminal_current_A": 1.3459162935675051e-06
+    },
+    {
+      "device": "nt0_collector_work_low_bias",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 1.8139613715376e-10,
+      "max_abs_terminal_current_A": 1.4191048854673982e-06
+    },
+    {
+      "device": "nt0_collector_work_low_off",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 2.3025365858900524e-11,
+      "max_abs_terminal_current_A": 1.4845623345930155e-06
+    },
+    {
+      "device": "nt0_collector_work_high_refn",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 1.343377691082492e-07,
+      "max_abs_terminal_current_A": 1.3354932530137238e-06
+    },
+    {
+      "device": "nt0_collector_work_high_refp",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 5.5841015378411114e-08,
+      "max_abs_terminal_current_A": 1.3227480626250537e-06
+    },
+    {
+      "device": "nt0_collector_work_high_eni_p",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 9.25357268727093e-08,
+      "max_abs_terminal_current_A": 7.23932944968313e-05
+    },
+    {
+      "device": "nt0_collector_work_high_eni_n",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 6.77549062325455e-08,
+      "max_abs_terminal_current_A": 7.238918300442242e-05
+    },
+    {
+      "device": "nt0_collector_work_high_cp",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 4.872693046520952e-08,
+      "max_abs_terminal_current_A": 1.3353028943430232e-06
+    },
+    {
+      "device": "nt0_collector_work_high_bias",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 1.8139613427122763e-10,
+      "max_abs_terminal_current_A": 1.4191001317918905e-06
+    },
+    {
+      "device": "nt0_collector_work_high_off",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 2.3025359121780622e-11,
+      "max_abs_terminal_current_A": 1.4845713271887524e-06
+    },
+    {
+      "device": "nt0_spatial_low_refn",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 1.153192397826809e-07,
+      "max_abs_terminal_current_A": 1.1341687679330864e-06
+    },
+    {
+      "device": "nt0_spatial_low_refp",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 4.590666098883419e-08,
+      "max_abs_terminal_current_A": 1.121006931877908e-06
+    },
+    {
+      "device": "nt0_spatial_low_eni_p",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 9.253572684364664e-08,
+      "max_abs_terminal_current_A": 7.239329441798047e-05
+    },
+    {
+      "device": "nt0_spatial_low_eni_n",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 6.775490626911963e-08,
+      "max_abs_terminal_current_A": 7.238918310497189e-05
+    },
+    {
+      "device": "nt0_spatial_low_cp",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 4.571291527777948e-08,
+      "max_abs_terminal_current_A": 5.964638918736676e-07
+    },
+    {
+      "device": "nt0_spatial_low_bias",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 1.3933678843474275e-10,
+      "max_abs_terminal_current_A": 1.212963684183154e-06
+    },
+    {
+      "device": "nt0_spatial_low_off",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 1.8409372261777448e-11,
+      "max_abs_terminal_current_A": 1.2681174108238599e-06
+    },
+    {
+      "device": "nt0_spatial_work_low_refn",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 1.153192398032803e-07,
+      "max_abs_terminal_current_A": 1.1341684910543332e-06
+    },
+    {
+      "device": "nt0_spatial_work_low_refp",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 4.590666099413586e-08,
+      "max_abs_terminal_current_A": 1.1210069318780672e-06
+    },
+    {
+      "device": "nt0_spatial_work_low_eni_p",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 9.253572684364568e-08,
+      "max_abs_terminal_current_A": 7.239329441798047e-05
+    },
+    {
+      "device": "nt0_spatial_work_low_eni_n",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 6.775490626912517e-08,
+      "max_abs_terminal_current_A": 7.238918310497189e-05
+    },
+    {
+      "device": "nt0_spatial_work_low_cp",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 2.2415933922063535e-08,
+      "max_abs_terminal_current_A": 5.853067709805939e-07
+    },
+    {
+      "device": "nt0_spatial_work_low_bias",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 1.3933678541815772e-10,
+      "max_abs_terminal_current_A": 1.212958229907302e-06
+    },
+    {
+      "device": "nt0_spatial_work_low_off",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 1.840936496422193e-11,
+      "max_abs_terminal_current_A": 1.268128830158742e-06
+    },
+    {
+      "device": "nt0_spatial_work_high_refn",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 1.1531923981300444e-07,
+      "max_abs_terminal_current_A": 1.134168360880482e-06
+    },
+    {
+      "device": "nt0_spatial_work_high_refp",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 4.590666099662702e-08,
+      "max_abs_terminal_current_A": 1.121006931878135e-06
+    },
+    {
+      "device": "nt0_spatial_work_high_eni_p",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 9.253572684364512e-08,
+      "max_abs_terminal_current_A": 7.239329441798052e-05
+    },
+    {
+      "device": "nt0_spatial_work_high_eni_n",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 6.775490626912734e-08,
+      "max_abs_terminal_current_A": 7.238918310497195e-05
+    },
+    {
+      "device": "nt0_spatial_work_high_cp",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 1.368523404479991e-08,
+      "max_abs_terminal_current_A": 5.796589229865939e-07
+    },
+    {
+      "device": "nt0_spatial_work_high_bias",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 1.3933678399171554e-10,
+      "max_abs_terminal_current_A": 1.2129556789435757e-06
+    },
+    {
+      "device": "nt0_spatial_work_high_off",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 1.840936072811619e-11,
+      "max_abs_terminal_current_A": 1.2681342828666208e-06
+    },
+    {
+      "device": "nt0_load_low_refn",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 1.1531924844675014e-07,
+      "max_abs_terminal_current_A": 1.1340696328151962e-06
+    },
+    {
+      "device": "nt0_load_low_refp",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 4.590665343754299e-08,
+      "max_abs_terminal_current_A": 1.121006931990736e-06
+    },
+    {
+      "device": "nt0_load_low_eni_p",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 9.253572684467616e-08,
+      "max_abs_terminal_current_A": 7.23932944179732e-05
+    },
+    {
+      "device": "nt0_load_low_eni_n",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 6.775490626784019e-08,
+      "max_abs_terminal_current_A": 7.238918310498124e-05
+    },
+    {
+      "device": "nt0_load_low_cp",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 8.854832617454986e-08,
+      "max_abs_terminal_current_A": 1.1553797035353762e-06
+    },
+    {
+      "device": "nt0_load_low_bias",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 1.3933654853921751e-10,
+      "max_abs_terminal_current_A": 1.2117437815984712e-06
+    },
+    {
+      "device": "nt0_load_low_off",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 1.840375898950478e-11,
+      "max_abs_terminal_current_A": 1.2732053853802114e-06
+    },
+    {
+      "device": "nt0_load_work_low_refn",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 1.1531924848635745e-07,
+      "max_abs_terminal_current_A": 1.134068847333831e-06
+    },
+    {
+      "device": "nt0_load_work_low_refp",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 4.5906653447763785e-08,
+      "max_abs_terminal_current_A": 1.1210069319910478e-06
+    },
+    {
+      "device": "nt0_load_work_low_eni_p",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 9.253572684467711e-08,
+      "max_abs_terminal_current_A": 7.239329441797308e-05
+    },
+    {
+      "device": "nt0_load_work_low_eni_n",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 6.77549062678472e-08,
+      "max_abs_terminal_current_A": 7.238918310498133e-05
+    },
+    {
+      "device": "nt0_load_work_low_cp",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 4.34209579862916e-08,
+      "max_abs_terminal_current_A": 1.1337707157451855e-06
+    },
+    {
+      "device": "nt0_load_work_low_bias",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 1.3933654273332768e-10,
+      "max_abs_terminal_current_A": 1.2117306848281667e-06
+    },
+    {
+      "device": "nt0_load_work_low_off",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 1.840374267818842e-11,
+      "max_abs_terminal_current_A": 1.2732213632186485e-06
+    },
+    {
+      "device": "nt0_load_work_high_refn",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 1.1531924848988282e-07,
+      "max_abs_terminal_current_A": 1.1340687773737444e-06
+    },
+    {
+      "device": "nt0_load_work_high_refp",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 4.5906653448670276e-08,
+      "max_abs_terminal_current_A": 1.1210069319910647e-06
+    },
+    {
+      "device": "nt0_load_work_high_eni_p",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 9.25357268446772e-08,
+      "max_abs_terminal_current_A": 7.23932944179731e-05
+    },
+    {
+      "device": "nt0_load_work_high_eni_n",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 6.775490626784773e-08,
+      "max_abs_terminal_current_A": 7.238918310498133e-05
+    },
+    {
+      "device": "nt0_load_work_high_cp",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 4.001878262119951e-08,
+      "max_abs_terminal_current_A": 1.1317503052965e-06
+    },
+    {
+      "device": "nt0_load_work_high_bias",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 1.3933654221598835e-10,
+      "max_abs_terminal_current_A": 1.2117295232652418e-06
+    },
+    {
+      "device": "nt0_load_work_high_off",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 1.8403741046201866e-11,
+      "max_abs_terminal_current_A": 1.2732227983769284e-06
+    },
+    {
+      "device": "nmonitor_cp",
+      "all_four_terminal_currents_saved": true,
+      "net_electrical_terminal_energy_J": 8.137920977772994e-08,
+      "max_abs_terminal_current_A": 1.1344808881466553e-06
+    }
+  ],
+  "supply_energy_J": 0.0007869633234449363,
+  "independent_reference_monitor": {
+    "baseline_current_A": 1.130462812959905e-06,
+    "min_current_after24ms_A": 1.1262230654672264e-06,
+    "max_current_after24ms_A": 1.1344808881466553e-06
+  },
+  "result": "PASS",
+  "qualification_claimed": false,
+  "original_engineering_result": "PASS",
+  "continuous_independent_monitor_gate": {
+    "result": "PASS",
+    "ratio_min": 1.029051473132751,
+    "ratio_max": 1.0349300363798255,
+    "first_failure_s": null,
+    "tolerance": 0.1
+  },
+  "NMOS_bias_gates": {
+    "iref_n": {
+      "result": "PASS",
+      "baseline_V": 0.7374730245264249,
+      "baseline_design_range_V": [
+        0.7175428333011813,
+        0.7575428333011813
+      ],
+      "limit_V": 0.0038,
+      "maximum_delta_V": 0.0003305877173164218,
+      "peak_time_s": 0.025552625104278675,
+      "first_failure_s": null,
+      "copied_NMOS_drains": [
+        {
+          "device": "nirefd",
+          "min_V": 0.7371424368091085,
+          "max_V": 0.7377871197289421,
+          "in_design_box": true
+        },
+        {
+          "device": "nirefm",
+          "min_V": 2.2582818468097203,
+          "max_V": 2.2708152958934846,
+          "in_design_box": true
+        },
+        {
+          "device": "nt0_spatial_low_refn",
+          "min_V": 2.2583189862668314,
+          "max_V": 3.1111656514639576,
+          "in_design_box": true
+        },
+        {
+          "device": "nt0_spatial_work_low_refn",
+          "min_V": 2.2583189862618873,
+          "max_V": 3.1111656514803587,
+          "in_design_box": true
+        },
+        {
+          "device": "nt0_spatial_work_high_refn",
+          "min_V": 2.2583189862595257,
+          "max_V": 3.1111656514881183,
+          "in_design_box": true
+        },
+        {
+          "device": "nt0_load_low_refn",
+          "min_V": 2.2583189938135666,
+          "max_V": 3.1111656575707816,
+          "in_design_box": true
+        },
+        {
+          "device": "nt0_load_work_low_refn",
+          "min_V": 2.258318993804029,
+          "max_V": 3.111165657602516,
+          "in_design_box": true
+        },
+        {
+          "device": "nt0_load_work_high_refn",
+          "min_V": 2.258318993803173,
+          "max_V": 3.1111656576053446,
+          "in_design_box": true
+        }
+      ]
+    },
+    "ilim_n": {
+      "result": "PASS",
+      "baseline_V": 0.7527044252377542,
+      "baseline_design_range_V": [
+        0.7327595004267271,
+        0.7727595004267271
+      ],
+      "limit_V": 0.0041,
+      "maximum_delta_V": 0.00025778038279855586,
+      "peak_time_s": 0.06,
+      "first_failure_s": null,
+      "copied_NMOS_drains": [
+        {
+          "device": "nilimd",
+          "min_V": 0.7524903694804677,
+          "max_V": 0.7529622056205527,
+          "in_design_box": true
+        },
+        {
+          "device": "nilimm",
+          "min_V": 2.230454314166579,
+          "max_V": 2.242923292380039,
+          "in_design_box": true
+        },
+        {
+          "device": "nt0_collector_low_refn",
+          "min_V": 2.2304891444943427,
+          "max_V": 3.103972628524967,
+          "in_design_box": true
+        },
+        {
+          "device": "nt0_collector_work_low_refn",
+          "min_V": 2.230489144489921,
+          "max_V": 3.1039726285478793,
+          "in_design_box": true
+        },
+        {
+          "device": "nt0_collector_work_high_refn",
+          "min_V": 2.230489144487008,
+          "max_V": 3.103972628562907,
+          "in_design_box": true
+        }
+      ]
+    }
+  },
+  "continuous_working_output_gates": [
+    {
+      "channel": "t0_collector_work_low_",
+      "window_s": [
+        0.026254,
+        0.035
+      ],
+      "result": "PASS",
+      "ratio_min": 1.036791556466649,
+      "ratio_max": 1.0368641678316803,
+      "first_failure_s": null,
+      "tolerance": 0.1
+    },
+    {
+      "channel": "t0_collector_work_low_",
+      "window_s": [
+        0.046253999999999997,
+        0.06
+      ],
+      "result": "PASS",
+      "ratio_min": 1.0368963508634583,
+      "ratio_max": 1.0369071137800698,
+      "first_failure_s": null,
+      "tolerance": 0.1
+    },
+    {
+      "channel": "t0_collector_work_high_",
+      "window_s": [
+        0.026254,
+        0.035
+      ],
+      "result": "PASS",
+      "ratio_min": 1.0285946738206762,
+      "ratio_max": 1.0286799850850596,
+      "first_failure_s": null,
+      "tolerance": 0.1
+    },
+    {
+      "channel": "t0_collector_work_high_",
+      "window_s": [
+        0.046253999999999997,
+        0.06
+      ],
+      "result": "PASS",
+      "ratio_min": 1.0287178009007705,
+      "ratio_max": 1.0287304469176137,
+      "first_failure_s": null,
+      "tolerance": 0.1
+    },
+    {
+      "channel": "t0_spatial_work_low_",
+      "window_s": [
+        0.026254,
+        0.035
+      ],
+      "result": "PASS",
+      "ratio_min": 1.0655554771220026,
+      "ratio_max": 1.0656498095399534,
+      "first_failure_s": null,
+      "tolerance": 0.1
+    },
+    {
+      "channel": "t0_spatial_work_low_",
+      "window_s": [
+        0.046253999999999997,
+        0.06
+      ],
+      "result": "PASS",
+      "ratio_min": 1.065691623222856,
+      "ratio_max": 1.065705606413558,
+      "first_failure_s": null,
+      "tolerance": 0.1
+    },
+    {
+      "channel": "t0_spatial_work_high_",
+      "window_s": [
+        0.026254,
+        0.035
+      ],
+      "result": "PASS",
+      "ratio_min": 1.0552447695926417,
+      "ratio_max": 1.0553562586476821,
+      "first_failure_s": null,
+      "tolerance": 0.1
+    },
+    {
+      "channel": "t0_spatial_work_high_",
+      "window_s": [
+        0.046253999999999997,
+        0.06
+      ],
+      "result": "PASS",
+      "ratio_min": 1.055405680539089,
+      "ratio_max": 1.0554222070582189,
+      "first_failure_s": null,
+      "tolerance": 0.1
+    },
+    {
+      "channel": "t0_load_work_low_",
+      "window_s": [
+        0.026254,
+        0.035
+      ],
+      "result": "PASS",
+      "ratio_min": 1.032026239351927,
+      "ratio_max": 1.0321131502505159,
+      "first_failure_s": null,
+      "tolerance": 0.1
+    },
+    {
+      "channel": "t0_load_work_low_",
+      "window_s": [
+        0.046253999999999997,
+        0.06
+      ],
+      "result": "PASS",
+      "ratio_min": 1.0321516736693381,
+      "ratio_max": 1.0321645571713514,
+      "first_failure_s": null,
+      "tolerance": 0.1
+    },
+    {
+      "channel": "t0_load_work_high_",
+      "window_s": [
+        0.026254,
+        0.035
+      ],
+      "result": "PASS",
+      "ratio_min": 1.0301821477674695,
+      "ratio_max": 1.0302720402829204,
+      "first_failure_s": null,
+      "tolerance": 0.1
+    },
+    {
+      "channel": "t0_load_work_high_",
+      "window_s": [
+        0.046253999999999997,
+        0.06
+      ],
+      "result": "PASS",
+      "ratio_min": 1.0303118860937448,
+      "ratio_max": 1.0303252116783774,
+      "first_failure_s": null,
+      "tolerance": 0.1
+    }
+  ],
+  "local_bias_diagnostics": [
+    {
+      "channel": "t0_collector_low_",
+      "local_bias_selector_peak_error_V": 0.9187566906891393,
+      "diagnostic_only": true,
+      "original_public_reference_gate_preserved": true
+    },
+    {
+      "channel": "t0_collector_work_low_",
+      "local_bias_selector_peak_error_V": 0.9187566904884195,
+      "diagnostic_only": true,
+      "original_public_reference_gate_preserved": true
+    },
+    {
+      "channel": "t0_collector_work_high_",
+      "local_bias_selector_peak_error_V": 0.9187566903745212,
+      "diagnostic_only": true,
+      "original_public_reference_gate_preserved": true
+    },
+    {
+      "channel": "t0_spatial_low_",
+      "local_bias_selector_peak_error_V": 0.8910342130040316,
+      "diagnostic_only": true,
+      "original_public_reference_gate_preserved": true
+    },
+    {
+      "channel": "t0_spatial_work_low_",
+      "local_bias_selector_peak_error_V": 0.8910342128486666,
+      "diagnostic_only": true,
+      "original_public_reference_gate_preserved": true
+    },
+    {
+      "channel": "t0_spatial_work_high_",
+      "local_bias_selector_peak_error_V": 0.8910342127897266,
+      "diagnostic_only": true,
+      "original_public_reference_gate_preserved": true
+    },
+    {
+      "channel": "t0_load_low_",
+      "local_bias_selector_peak_error_V": 0.8910342134505909,
+      "diagnostic_only": true,
+      "original_public_reference_gate_preserved": true
+    },
+    {
+      "channel": "t0_load_work_low_",
+      "local_bias_selector_peak_error_V": 0.8910342131500277,
+      "diagnostic_only": true,
+      "original_public_reference_gate_preserved": true
+    },
+    {
+      "channel": "t0_load_work_high_",
+      "local_bias_selector_peak_error_V": 0.8910342131271496,
+      "diagnostic_only": true,
+      "original_public_reference_gate_preserved": true
+    }
+  ],
+  "unmeasured": [],
+  "first_exact_failure_time_s": null,
+  "original_window_failures": []
+}

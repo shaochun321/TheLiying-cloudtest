@@ -1,0 +1,23 @@
+{
+  "ngspice": {
+    "path": "/workspace/thermal-g3-env/host/native/bin/ngspice",
+    "bytes": 8042384,
+    "sha256": "37d80c673bc4c03904ed4434bb3aa9aecd099ecfaeb66b86730a905e8c76ed89",
+    "matches_existing_execution_record": true,
+    "copied_to_small_package": false
+  },
+  "OSDI": {
+    "path": "/workspace/thermal-g3-env/host/native/models/ekv26_linux.osdi",
+    "bytes": 81976,
+    "sha256": "7c07ae3728941189b77bf0ecfca5ebe56473d01eedc6ea59c46cc32bfdb9a43f",
+    "matches_existing_execution_record": true,
+    "copied_to_small_package": false
+  },
+  "model_card": {
+    "path": "/workspace/thermal-g3-qualification/sparse-qualification-2026-10-22-17fb81ea/inputs/c05_ekv26_typ.lib",
+    "bytes": 1475,
+    "sha256": "f6acb2379baacfdb5f53cfc30015f3b7c5690bb1118a5e32a678b76c0b739634",
+    "matches_existing_execution_record": true,
+    "copied_to_small_package": true
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "user": "Explicit current message: same v5, T0 then DC_3 then CHAIN_12_W_F; predecessor all-pass; max3 starts; upload each case small files and lossless RAW fragments, verify remote retrieval",
+  "starts_before": 54,
+  "max_new_starts": 3,
+  "cap": 84,
+  "maximum_after": 57,
+  "per_case_wall_cap_s": {
+    "T0": 600,
+    "DC_3": 1800,
+    "CHAIN": 28800
+  },
+  "batch_wall_cap_s": 31200,
+  "chain_8h_is_not_forecast": true,
+  "retry": false,
+  "scan": false,
+  "retune": false,
+  "automatic_matrix": false,
+  "old_v4_qualification_inherited": false,
+  "main_modified": false
+}

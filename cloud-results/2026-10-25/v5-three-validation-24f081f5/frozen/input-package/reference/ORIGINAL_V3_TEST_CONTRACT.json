@@ -1,0 +1,117 @@
+{
+  "kind": "V3_FIXED_CONTRACT_BEFORE_FIRST_SOLVE",
+  "T0": {
+    "analysis": "tran 0.001 0.06 0 0.000125",
+    "source_setpoint_V": 3.2,
+    "supply_ramp_s": 0.02,
+    "edge_s": 0.001,
+    "commands_s": {
+      "first_ON_start": 0.025,
+      "first_ON_end_edge": 0.026,
+      "OFF_start": 0.035,
+      "OFF_end_edge": 0.036,
+      "second_ON_start": 0.045,
+      "second_ON_end_edge": 0.046
+    },
+    "steady_ON_windows_s": [
+      [
+        0.03,
+        0.034
+      ],
+      [
+        0.05,
+        0.058
+      ]
+    ],
+    "steady_OFF_windows_s": [
+      [
+        0.022,
+        0.024
+      ],
+      [
+        0.04,
+        0.044
+      ]
+    ],
+    "OFF_charge_windows_s": [
+      [
+        0.0,
+        0.025
+      ],
+      [
+        0.0355,
+        0.045
+      ]
+    ],
+    "OFF_charge_policy": "Original absolute logic midpoint at OFF rising edge defines disabled logical interval; full transition charge also separately reported. Integrate positive, negative and absolute magnitudes without cancellation.",
+    "ON_feedthrough_windows_s": [
+      [
+        0.025,
+        0.026254
+      ],
+      [
+        0.045,
+        0.046253999999999997
+      ]
+    ],
+    "ON_feedthrough_policy": "Non-commanded excess over original +10% measured-reference current envelope, plus negative output current; ordinary commanded ON transfer is reported separately.",
+    "role_mapping": {
+      "collector": "G0",
+      "spatial": "Sigma",
+      "load": "Theta_Cdir"
+    },
+    "charge_limit_C_by_certificate_role": {
+      "G0": 4.945360433543721e-10,
+      "Sigma": 2.43463898266768e-10,
+      "Theta_Cdir": 3.6519584740015196e-09
+    },
+    "current_relative_tolerance": 0.1,
+    "current_limit_source": "Original MIRROR_TOL=10% applied to actual physically measured reference resistor current, unchanged copy W/L scale; all actual working-output channel plateaus tested. Low output separately reported, not claimed ideal current source.",
+    "reference_perturbation_limit_V": 0.02,
+    "reference_perturbation_basis": "Original certificate DELTA_V=20mV allowance; peak deviation after24ms from pre-ON22-24ms baseline. Both ilimp_n and irefp_n, including switching transients.",
+    "selector_bias_error_limit_V": 0.02,
+    "establishment_after_edge_limit_s": 0.0002540000000000006,
+    "establishment_basis": "5% of original shortest certified pulse (5.08ms), reserve95% for physical pulse transfer; after external1ms edge. No result-dependent extension.",
+    "model_domain": "Every MOS: abs(Vsb)<2V; abs(Vgb),abs(Vdb)<3.3V; original W/L ranges. Entire0-60ms.",
+    "port_energy": "All actual MOS terminal currents and voltages, reference resistor currents, output boundary and supply currents saved.",
+    "boundary_voltage_source_policy": "Fixed testbench output PWLs only, not inserted into formal circuit; no source forces cg or internal selector state.",
+    "conditional_design_refs": {
+      "vsrc": 3.2,
+      "vdd": 3.1546293717977876,
+      "vrest": 1.0515431239325959,
+      "vthe": 1.4942981234831625,
+      "vthr": 1.2133189891529954,
+      "vmid": 1.5773146858988938,
+      "Iref": 1.0986756993166391e-06,
+      "Istep": 4.6386393734395385e-08,
+      "Ilim": 1.2983080385789517e-06,
+      "iref_n": 0.7375428333011813,
+      "irefp_n": 2.3502537186509325,
+      "ilimp_n": 2.3220541719253114
+    }
+  },
+  "default_reference_wall_s": {
+    "T0_GATED_SOURCE_BENCH": 300,
+    "DC_3": 900,
+    "CHAIN_STARTUP_0_3S": 1200,
+    "Q1_MOTHER_PROTOCOL": 3600,
+    "Q1_MOTHER_HALFSTEP": 3600,
+    "CHAIN_12_W_F": 14400,
+    "G0_W": 10800,
+    "DC_2P7": 900,
+    "DC_3P2": 900
+  },
+  "effective_wall_cap_s": null,
+  "stop_policy": "first science/engineering failure, no retry, no parameter scan",
+  "candidate_steps": [
+    "T0_GATED_SOURCE_BENCH",
+    "DC_3",
+    "CHAIN_STARTUP_0_3S",
+    "Q1_MOTHER_PROTOCOL",
+    "Q1_MOTHER_HALFSTEP",
+    "CHAIN_12_W_F",
+    "G0_W",
+    "DC_2P7",
+    "DC_3P2"
+  ]
+}

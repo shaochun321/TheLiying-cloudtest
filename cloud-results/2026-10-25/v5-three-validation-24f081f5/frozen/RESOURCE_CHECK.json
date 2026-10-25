@@ -1,0 +1,9 @@
+{
+  "disk_free_bytes": 22273626112,
+  "memory_max_bytes": 34359738368,
+  "chain_minimum_grid_payload_bytes": 3502284800,
+  "delivery_strategy": "Stream compression to <=40MiB parts; Git upload; independent API part download and streamed RAW restoration without a second large clone or restored RAW disk copy",
+  "original_RAW_retained": true,
+  "minimum_free_disk_before_CHAIN_bytes": 12000000000,
+  "runtime_disk_abort_below_bytes": 1000000000
+}
