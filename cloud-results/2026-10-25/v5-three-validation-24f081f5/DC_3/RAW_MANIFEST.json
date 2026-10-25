@@ -1,0 +1,22 @@
+{
+  "files": [
+    {
+      "name": "DC_3.raw",
+      "bytes": 1145305,
+      "sha256": "95492a4da9e0ec8593ea50e6aa0ef559a13fed732df341d160358b2a16db827d",
+      "parts": [
+        {
+          "path": "raw-parts/DC_3.raw.gz.part0000",
+          "bytes": 177647,
+          "sha256": "03ff197c2f12b75cefd599c6147c2e44bb33e3d23ef0491dac0bf1e9595255b3"
+        }
+      ],
+      "gzip_bytes": 177647,
+      "gzip_sha256": "03ff197c2f12b75cefd599c6147c2e44bb33e3d23ef0491dac0bf1e9595255b3"
+    }
+  ],
+  "compressed_total_bytes": 177647,
+  "original_raw_unchanged": true,
+  "compression": "Deterministic lossless gzip, <=40MiB parts",
+  "solver_starts_added_by_delivery": 0
+}

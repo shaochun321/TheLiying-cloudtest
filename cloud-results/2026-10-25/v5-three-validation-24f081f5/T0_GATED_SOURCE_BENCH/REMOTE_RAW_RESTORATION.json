@@ -1,0 +1,12 @@
+{
+  "result": "PASS",
+  "commit": "db8ed14878570ee590be9c3d2a1e3288f19eb716",
+  "branch": "validation/v5-three-2026-10-25-24f081f5",
+  "case_id": "T0_GATED_SOURCE_BENCH",
+  "method": "Independent GitHub API download of every part + streamed lossless RAW restoration",
+  "restored_bytes": 4387012,
+  "restored_sha256": "51c18f47613d2d19b95bf370eb3066a4439bada9594e544a9edc96d286fe73c2",
+  "all_parts_verified": 1,
+  "original_local_RAW_retained": true,
+  "second_restored_disk_copy_created": false
+}

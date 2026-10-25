@@ -1,9 +1,9 @@
 {
   "status": "CASE_PASS_DELIVERY_PENDING",
-  "actual_new_starts": 1,
-  "conservative_starts": 55,
+  "actual_new_starts": 2,
+  "conservative_starts": 56,
   "global_cap": 84,
-  "solver_wall_s": 1.831106961995829,
+  "solver_wall_s": 202.218074962002,
   "results": [
     {
       "case_id": "T0_GATED_SOURCE_BENCH",
@@ -13,11 +13,33 @@
       "engineering": "PASS",
       "actual_end_s": 0.06,
       "solver_wall_s": 1.831106961995829
+    },
+    {
+      "case_id": "DC_3",
+      "result": "PASS",
+      "completion": "PASS",
+      "original": "PASS",
+      "engineering": "PASS",
+      "actual_end_s": null,
+      "solver_wall_s": 200.38696800000616
     }
   ],
-  "current_case": "T0_GATED_SOURCE_BENCH",
+  "current_case": "DC_3",
   "remaining_not_started": [
-    "DC_3",
     "CHAIN_12_W_F"
+  ],
+  "deliveries": [
+    {
+      "result": "PASS",
+      "commit": "db8ed14878570ee590be9c3d2a1e3288f19eb716",
+      "branch": "validation/v5-three-2026-10-25-24f081f5",
+      "case_id": "T0_GATED_SOURCE_BENCH",
+      "method": "Independent GitHub API download of every part + streamed lossless RAW restoration",
+      "restored_bytes": 4387012,
+      "restored_sha256": "51c18f47613d2d19b95bf370eb3066a4439bada9594e544a9edc96d286fe73c2",
+      "all_parts_verified": 1,
+      "original_local_RAW_retained": true,
+      "second_restored_disk_copy_created": false
+    }
   ]
 }

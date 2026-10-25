@@ -1,0 +1,22 @@
+{
+  "case_id": "DC_3",
+  "command": [
+    "/workspace/thermal-g3-env/host/native/bin/ngspice",
+    "-n",
+    "-b",
+    "/workspace/thermal-g3-retests/v5-three-validation-2026-10-25-24f081f5/DC_3/DC_3.cir"
+  ],
+  "cwd": "/workspace/thermal-g3-retests/v5-three-validation-2026-10-25-24f081f5/DC_3",
+  "actual_solver_starts": 1,
+  "wall_cap_s": 1800,
+  "timed_out": false,
+  "automatic_retry": false,
+  "conservative_before": 55,
+  "pid": 50661,
+  "started_at_UTC": "2026-10-25T14:29:54.346342+00:00",
+  "conservative_after": 56,
+  "returncode": 0,
+  "elapsed_solver_wall_s": 200.38696800000616,
+  "ended_at_UTC": "2026-10-25T14:33:14.732538+00:00",
+  "process_reaped": true
+}

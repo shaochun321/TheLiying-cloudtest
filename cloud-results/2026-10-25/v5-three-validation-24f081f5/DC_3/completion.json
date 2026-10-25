@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "problems": [],
+  "missing": [],
+  "actual_end_s": null,
+  "points": 1,
+  "variables": 26469,
+  "raw_bytes": 1145305,
+  "raw_sha256": "95492a4da9e0ec8593ea50e6aa0ef559a13fed732df341d160358b2a16db827d"
+}
